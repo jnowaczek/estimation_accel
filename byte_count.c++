@@ -4,13 +4,17 @@ namespace bytecount {
 
 result_t byte_count(data_t input[]) {
 	static count_t appearances[COUNT_BUCKETS] = { };
+	static count_t appearances2[COUNT_BUCKETS] = { };
 
 	count_appearances(input, appearances);
 	return count_threshold(appearances);
 }
 
 void count_appearances(data_t input[], count_t appearances[]) {
+	APPEARANCES:
 	for (int i = 0; i < BLOCK_LENGTH; i++) {
+#pragma HLS UNROLL factor=16
+#pragma HLS PIPELINE II=128
 		data_t byte = input[i];
 		count_t count = appearances[byte];
 
@@ -23,6 +27,7 @@ void count_appearances(data_t input[], count_t appearances[]) {
 result_t count_threshold(count_t appearances[]) {
 	result_t over_thresh;
 
+	THRESHOLD:
 	for (int i = 0; i < COUNT_BUCKETS; i++) {
 		if (appearances[i] > BYTE_COUNT_THRESHOLD)
 			over_thresh += 1;
