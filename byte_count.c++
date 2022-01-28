@@ -3,27 +3,23 @@
 namespace bytecount {
 
 result_t byte_count(data_t input[BLOCK_LENGTH]) {
-	count_t* appearances;
-	appearances = count_appearances(input);
+	static count_t appearances[COUNT_BUCKETS] = {};
+#pragma HLS ARRAY_PARTITION variable=appearances type=complete
+	count_appearances(input, appearances);
 	return count_threshold(appearances);
 }
 
-count_t* count_appearances(data_t input[BLOCK_LENGTH]) {
-	static count_t appearances[COUNT_BUCKETS] = { };
-#pragma HLS ARRAY_PARTITION variable=appearances type=complete
-
+void count_appearances(data_t input[BLOCK_LENGTH], count_t* appearances) {
 	APPEARANCES: for (iter_t i = 0; i < BLOCK_LENGTH; i++) {
-#pragma HLS UNROLL factor=8
 #pragma HLS PIPELINE rewind
 		data_t byte = input[i];
 		count_t count = appearances[byte];
 
-		// Is this an optimization? Need to check with simulation.
-		if (count < COUNT_T_MAX)
-			appearances[byte] += 1;
-	}
+		if (count < COUNT_T_MAX) count += 1;
 
-	return appearances;
+		appearances[byte] = count;
+	}
+	return;
 }
 
 result_t count_threshold(count_t* appearances) {

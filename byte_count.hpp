@@ -30,7 +30,7 @@ typedef ap_uint<ITER_T_WIDTH> iter_t;
 // Function prototypes
 
 
-count_t* count_appearances(data_t* input);
+void count_appearances(data_t* input, count_t* appearances);
 
 result_t count_threshold(count_t* appearances);
 
