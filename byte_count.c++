@@ -2,19 +2,19 @@
 
 namespace bytecount {
 
-result_t byte_count(data_t input[]) {
-	static count_t appearances[COUNT_BUCKETS] = { };
-	static count_t appearances2[COUNT_BUCKETS] = { };
-
-	count_appearances(input, appearances);
+result_t byte_count(data_t input[BLOCK_LENGTH]) {
+	count_t* appearances;
+	appearances = count_appearances(input);
 	return count_threshold(appearances);
 }
 
-void count_appearances(data_t input[], count_t appearances[]) {
-	APPEARANCES:
-	for (int i = 0; i < BLOCK_LENGTH; i++) {
-#pragma HLS UNROLL factor=16
-#pragma HLS PIPELINE II=128
+count_t* count_appearances(data_t input[BLOCK_LENGTH]) {
+	static count_t appearances[COUNT_BUCKETS] = { };
+#pragma HLS ARRAY_PARTITION variable=appearances type=complete
+
+	APPEARANCES: for (iter_t i = 0; i < BLOCK_LENGTH; i++) {
+#pragma HLS UNROLL factor=8
+#pragma HLS PIPELINE rewind
 		data_t byte = input[i];
 		count_t count = appearances[byte];
 
@@ -22,13 +22,15 @@ void count_appearances(data_t input[], count_t appearances[]) {
 		if (count < COUNT_T_MAX)
 			appearances[byte] += 1;
 	}
+
+	return appearances;
 }
 
-result_t count_threshold(count_t appearances[]) {
-	result_t over_thresh;
+result_t count_threshold(count_t* appearances) {
+	result_t over_thresh = 0;
 
-	THRESHOLD:
-	for (int i = 0; i < COUNT_BUCKETS; i++) {
+	THRESHOLD: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
+#pragma HLS UNROLL
 		if (appearances[i] > BYTE_COUNT_THRESHOLD)
 			over_thresh += 1;
 	}

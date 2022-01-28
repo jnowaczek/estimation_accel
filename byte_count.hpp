@@ -7,6 +7,7 @@ namespace bytecount {
 #define DATA_T_WIDTH 8
 #define COUNT_T_WIDTH 3
 #define RESULT_T_WIDTH 8
+#define ITER_T_WIDTH 11
 
 #define COUNT_T_MAX 7 // (int)pow(2, COUNT_T_WIDTH) - 1
 
@@ -19,14 +20,20 @@ typedef ap_uint<DATA_T_WIDTH> data_t;
 // over the threshold and the amount over the threshold doesn't matter
 typedef ap_uint<COUNT_T_WIDTH> count_t;
 typedef ap_uint<RESULT_T_WIDTH> result_t;
+typedef ap_uint<ITER_T_WIDTH> iter_t;
+
+//typedef unsigned char data_t;
+//typedef unsigned char count_t;
+//typedef unsigned short result_t;
+//typedef unsigned short iter_t;
 
 // Function prototypes
 
 
-void count_appearances(data_t* input, count_t appearances[]);
+count_t* count_appearances(data_t* input);
 
-result_t count_threshold(count_t appearances[]);
+result_t count_threshold(count_t* appearances);
 
-result_t byte_count(data_t* input);
+result_t byte_count(data_t input[BLOCK_LENGTH]);
 
 }
