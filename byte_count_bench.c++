@@ -7,7 +7,7 @@
 #include "byte_count.hpp"
 
 int main() {
-	int result = 0;
+	int retval = 0;
 	std::vector<char> input;
 
 	std::ifstream file ("tb_data\\zeros", std::ios::in|std::ios::binary|std::ios::ate);
@@ -24,19 +24,20 @@ int main() {
 
 	std::vector<bytecount::data_t> data(input.begin(), input.end());
 
-	int retval = bytecount::byte_count(data.data());
+	int result = bytecount::byte_count(data.data());
 
-	if(retval == 1){
+	if(result == 1){
 		 std::cout << "    *** *** *** *** \n";
 	 	 std::cout << "    Results are good \n";
 	 	 std::cout << "    *** *** *** *** \n";
 	 } else {
 		 std::cout << "    *** *** *** *** \n";
-		 std::cout << "    Mismatch: retval=" << retval << " \n";
+		 std::cout << "    Mismatch: result=" << result << " \n";
 		 std::cout << "    *** *** *** *** \n";
+		 retval = -1;
 	 }
 
-	return 0;
+	return retval;
 }
 
 //int byte_count(std::vector<uint8_t> input) {

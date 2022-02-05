@@ -11,11 +11,11 @@ result_t byte_count(data_t input[BLOCK_LENGTH]) {
 
 void count_appearances(data_t input[BLOCK_LENGTH], count_t* appearances) {
 	APPEARANCES: for (iter_t i = 0; i < BLOCK_LENGTH; i++) {
-#pragma HLS PIPELINE rewind
 		data_t byte = input[i];
 		count_t count = appearances[byte];
 
-		if (count < COUNT_T_MAX) count += 1;
+		// Saturation rounding prevents overflow
+		count += 1;
 
 		appearances[byte] = count;
 	}
@@ -26,7 +26,6 @@ result_t count_threshold(count_t* appearances) {
 	result_t over_thresh = 0;
 
 	THRESHOLD: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
-#pragma HLS UNROLL
 		if (appearances[i] > BYTE_COUNT_THRESHOLD)
 			over_thresh += 1;
 	}
