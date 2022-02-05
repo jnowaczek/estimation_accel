@@ -7,10 +7,10 @@
 #include "byte_count.hpp"
 
 int main() {
-	int retval = 0;
+	char retval = 0;
 	std::vector<char> input;
 
-	std::ifstream file ("tb_data\\zeros", std::ios::in|std::ios::binary|std::ios::ate);
+	std::ifstream file ("tb_data/zeros", std::ios::in|std::ios::binary|std::ios::ate);
 
 	if (file.is_open()) {
 		std::streampos size = file.tellg();
@@ -19,7 +19,8 @@ int main() {
 //		file.read(input.data(), size);
 		file.read(input.data(), BLOCK_LENGTH);
 	} else {
-		return -1;
+		std::cerr << "Unable to open input file\n";
+		return 1;
 	}
 
 	std::vector<bytecount::data_t> data(input.begin(), input.end());
@@ -34,7 +35,7 @@ int main() {
 		 std::cout << "    *** *** *** *** \n";
 		 std::cout << "    Mismatch: result=" << result << " \n";
 		 std::cout << "    *** *** *** *** \n";
-		 retval = -1;
+		 retval = 2;
 	 }
 
 	return retval;
