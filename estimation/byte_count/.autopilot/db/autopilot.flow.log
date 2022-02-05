@@ -1,0 +1,1753 @@
+INFO-FLOW: Workspace C:/estimation/estimation/byte_count opened at Wed Feb 02 13:07:15 -0600 2022
+Execute     ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2021.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 0.492 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.147 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.66 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute     get_config_interface -m_axi_latency 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute     config_interface -m_axi_latency=64 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute     config_interface -m_axi_alignment_byte_size=64 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+Execute     get_config_interface -default_interface 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute     config_interface -default_interface=kernel 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute     config_rtl -register_reset_num=3 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vivado_clock=100MHz 
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=100MHz
+Execute     config_export -vivado_clock=100MHz 
+Command   open_solution done; 0.732 sec.
+Execute   set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+Execute     create_platform xc7z020-clg484-1 -board  
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.126 sec.
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.146 sec.
+Execute   create_clock -period 100MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 100MHz -name default 
+Execute   config_export -vivado_clock 100MHz 
+INFO: [HLS 200-1510] Running: config_export -vivado_clock 100MHz 
+Execute   source ./estimation/byte_count/directives.tcl 
+Execute     set_directive_top -name byte_count byte_count 
+INFO: [HLS 200-1510] Running: set_directive_top -name byte_count byte_count 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -hw_syn 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -pre_tcl 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 782.309 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count.c++' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling byte_count.c++ as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang byte_count.c++ -foptimization-record-file=C:/estimation/estimation/byte_count/.autopilot/db/byte_count.c++.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2021.2/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/estimation/estimation/byte_count/.autopilot/db/byte_count.c++.clang.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/byte_count.c++.clang.err.log 
+Command       ap_eval done; 0.25 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.3 seconds per iteration
+Execute       set_directive_top byte_count -name=byte_count 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/estimation/estimation/byte_count/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/estimation/estimation/byte_count/.autopilot/db/clang.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/clang.err.log 
+Command       ap_eval done; 0.731 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ std=gnu++14 -target fpga  -directive=C:/estimation/estimation/byte_count/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/estimation/estimation/byte_count/.autopilot/db/.systemc_flag -fix-errors C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.637 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ std=gnu++14 -target fpga  -directive=C:/estimation/estimation/byte_count/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/estimation/estimation/byte_count/.autopilot/db/all.directive.json -fix-errors C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.929 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert -desc constantarray_remove-assert C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.01 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.9 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.clang-tidy.loop-label.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 1.1 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 1.152 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.xilinx-dataflow-lawyer.diag.yml C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.xilinx-dataflow-lawyer.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.xilinx-dataflow-lawyer.err.log 
+Command       ap_eval done; 0.653 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++ -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.clang.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/byte_count.pp.0.c++.clang.err.log 
+Command       ap_eval done; 0.783 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 6.235 seconds; current allocated memory: 1.068 GB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc -args  "C:/estimation/estimation/byte_count/.autopilot/db/byte_count.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/estimation/estimation/byte_count/.autopilot/db/byte_count.g.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc > C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.1.lower.bc -args C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.1.lower.bc > C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.2.m1.bc -args C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2021.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2021.2/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2021.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2021.2/win64/lib/libhlsmc++_39.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.2.m1.bc > C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 2.927 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.931 sec.
+Execute       run_link_or_opt -opt -out C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.3.fpc.bc -args C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=byte_count -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=byte_count -reflow-float-conversion -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.3.fpc.bc > C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; 1.182 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.187 sec.
+Execute       run_link_or_opt -out C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.4.m2.bc -args C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2021.2/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2021.2/win64/lib/libfloatconversion_39.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.4.m2.bc > C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+Command         ap_eval done; 0.146 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.151 sec.
+Execute       run_link_or_opt -opt -out C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.5.gdce.bc -args C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=byte_count 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=byte_count -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.5.gdce.bc > C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_compile -instruction_warning_threshold 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_array_partition -throughput_driven 
+Execute       send_msg_by_id INFO @200-777@%s Vitis 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2021.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=byte_count -mllvm -hls-db-dir -mllvm C:/estimation/estimation/byte_count/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml -mllvm -top-io-mapping-info=C:/estimation/estimation/byte_count/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=true -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=64 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=512 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshhold=200000 -mllvm -assume-maxi-align=64 -mllvm -no-unaligned-maxi-accesses=false -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-disaggregate-bitwidth-threshold=4096 -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -enable-reflow-vitis-flow-setting=true -x ir C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.5.gdce.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.lto.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow > C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> C:/estimation/estimation/byte_count/.autopilot/db/a.g.ld.0.bc.clang.err.log 
+Command       ap_eval done; 1.569 sec.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<11, false>(ap_int_base<11, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<11, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<11, false>(ap_int_base<11, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:711)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator!() const' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:440:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<33, 33, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245:342)
+INFO: [HLS 214-131] Inlining function 'ap_uint<33>::ap_uint<33, false>(ap_int_base<33, false> const&)' into 'ap_int_base<33, false>::RType<33, false>::arg1 operator>><33, false>(ap_int_base<33, false> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1691:650)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<3, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust(bool, bool, bool, bool)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:395:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:707:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust(bool, bool, bool, bool)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:802:7)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, false>::operator==<33, false>(ap_int_base<33, false> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:776:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::RType<33, false>::arg1 operator>><33, false>(ap_int_base<33, false> const&, int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:776:49)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, false>::operator==<33, false>(ap_int_base<33, false> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:768:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::RType<33, false>::arg1 operator>><33, false>(ap_int_base<33, false> const&, int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:768:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:763:36)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1265:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1265:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& operator+=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:2274:6825)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& operator+=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:2274:6813)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<11, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<11>::ap_uint<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:925:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>& ap_int_base<11, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<11, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:924:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<11>::ap_uint(int)' into 'bytecount::count_appearances(ap_uint<8>*, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:13:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::operator++(int)' into 'bytecount::count_appearances(ap_uint<8>*, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:13:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator unsigned long long() const' into 'bytecount::count_appearances(ap_uint<8>*, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:20:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& operator+=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>&, int)' into 'bytecount::count_appearances(ap_uint<8>*, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:18:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator unsigned long long() const' into 'bytecount::count_appearances(ap_uint<8>*, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:15:31)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::operator unsigned long long() const' into 'bytecount::count_appearances(ap_uint<8>*, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:14:23)
+INFO: [HLS 214-131] Inlining function 'bool operator<<11, false>(ap_int_base<11, false> const&, int)' into 'bytecount::count_appearances(ap_uint<8>*, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:13:36)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator><3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:2274:9949)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator><32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'bool operator><3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:2274:9938)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<8, false>& operator+=<8, false>(ap_int_base<8, false>&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1749:167)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>& ap_int_base<8, false>::operator+=<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<8, false>& operator+=<8, false>(ap_int_base<8, false>&, int)' (C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1749:164)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint(int)' into 'bytecount::count_threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:26:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::operator++(int)' into 'bytecount::count_threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:28:41)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>& operator+=<8, false>(ap_int_base<8, false>&, int)' into 'bytecount::count_threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:30:16)
+INFO: [HLS 214-131] Inlining function 'bool operator><3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' into 'bytecount::count_threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:29:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::operator unsigned long long() const' into 'bytecount::count_threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:29:19)
+INFO: [HLS 214-131] Inlining function 'bool operator<<11, false>(ap_int_base<11, false> const&, int)' into 'bytecount::count_threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:28:34)
+INFO: [HLS 214-131] Inlining function 'ap_uint<11>::ap_uint(int)' into 'bytecount::count_threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count.c++:28:29)
+INFO: [HLS 214-178] Inlining function 'bytecount::count_appearances(ap_uint<8>*, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' into 'bytecount::byte_count(ap_uint<8>*)' (byte_count.c++:5:0)
+INFO: [HLS 214-178] Inlining function 'bytecount::count_threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' into 'bytecount::byte_count(ap_uint<8>*)' (byte_count.c++:5:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances': Complete partitioning on dimension 1. (byte_count.c++:6:0)
+INFO: [HLS 214-241] Aggregating maxi variable 'input' with compact=none mode in 8-bits (byte_count.c++:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 214-115] Multiple burst reads of length 16 and bit width 512 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (byte_count.c++:13:15)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint<8>s' into 'bytecount::byte_count(ap_uint<8>*)' (byte_count.c++:9:2)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml -> C:/estimation/estimation/byte_count/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 6 seconds. CPU system time: 0 seconds. Elapsed time: 12.22 seconds; current allocated memory: 1.068 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 1.068 GB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top byte_count -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/estimation/estimation/byte_count/.autopilot/db/a.g.0.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.507 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.534 seconds; current allocated memory: 1.068 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/estimation/estimation/byte_count/.autopilot/db/a.g.1.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.243 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/estimation/estimation/byte_count/.autopilot/db/a.g.2.prechk.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.g.2.bc -f -phase syn-check 
+Command         transform done; 0.119 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.377 seconds; current allocated memory: 1.068 GB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/estimation/estimation/byte_count/.autopilot/db/a.g.1.bc to C:/estimation/estimation/byte_count/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/estimation/estimation/byte_count/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/estimation/estimation/byte_count/.autopilot/db/a.o.1.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'APPEARANCES' (byte_count.c++:13) in function 'bytecount::byte_count' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'THRESHOLD' (byte_count.c++:28) in function 'bytecount::byte_count' automatically.
+Command         transform done; 0.954 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name C:/estimation/estimation/byte_count/.autopilot/db/a.o.1.tmp.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.392 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.358 seconds; current allocated memory: 1.068 GB.
+Execute         get_config_compile -enable_auto_rewind 
+Execute         get_config_compile -enable_loop_extract 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation2 -deadargelim -globaldce -mem2reg -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/estimation/estimation/byte_count/.autopilot/db/a.o.2.bc -o C:/estimation/estimation/byte_count/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+Command         transform done; 1.353 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.355 seconds; current allocated memory: 1.068 GB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 3.633 sec.
+Command     elaborate done; 22.121 sec.
+Execute     ap_eval exec zip -j C:/estimation/estimation/byte_count/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.137 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+Execute       ap_set_top_model byte_count 
+Execute       get_model_list byte_count -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model byte_count 
+Execute       preproc_iomode -model byte_count_Pipeline_THRESHOLD 
+Execute       preproc_iomode -model byte_count_Pipeline_APPEARANCES 
+Execute       get_model_list byte_count -filter all-wo-channel 
+INFO-FLOW: Model list for configure: byte_count_Pipeline_APPEARANCES byte_count_Pipeline_THRESHOLD byte_count
+INFO-FLOW: Configuring Module : byte_count_Pipeline_APPEARANCES ...
+Execute       set_default_model byte_count_Pipeline_APPEARANCES 
+Execute       apply_spec_resource_limit byte_count_Pipeline_APPEARANCES 
+INFO-FLOW: Configuring Module : byte_count_Pipeline_THRESHOLD ...
+Execute       set_default_model byte_count_Pipeline_THRESHOLD 
+Execute       apply_spec_resource_limit byte_count_Pipeline_THRESHOLD 
+INFO-FLOW: Configuring Module : byte_count ...
+Execute       set_default_model byte_count 
+Execute       apply_spec_resource_limit byte_count 
+INFO-FLOW: Model list for preprocess: byte_count_Pipeline_APPEARANCES byte_count_Pipeline_THRESHOLD byte_count
+INFO-FLOW: Preprocessing Module: byte_count_Pipeline_APPEARANCES ...
+Execute       set_default_model byte_count_Pipeline_APPEARANCES 
+Execute       cdfg_preprocess -model byte_count_Pipeline_APPEARANCES 
+Command       cdfg_preprocess done; 0.143 sec.
+Execute       rtl_gen_preprocess byte_count_Pipeline_APPEARANCES 
+INFO-FLOW: Preprocessing Module: byte_count_Pipeline_THRESHOLD ...
+Execute       set_default_model byte_count_Pipeline_THRESHOLD 
+Execute       cdfg_preprocess -model byte_count_Pipeline_THRESHOLD 
+Execute       rtl_gen_preprocess byte_count_Pipeline_THRESHOLD 
+INFO-FLOW: Preprocessing Module: byte_count ...
+Execute       set_default_model byte_count 
+Execute       cdfg_preprocess -model byte_count 
+Execute       rtl_gen_preprocess byte_count 
+INFO-FLOW: Model list for synthesis: byte_count_Pipeline_APPEARANCES byte_count_Pipeline_THRESHOLD byte_count
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model byte_count_Pipeline_APPEARANCES 
+Execute       schedule -model byte_count_Pipeline_APPEARANCES 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.946 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.358 seconds; current allocated memory: 1.068 GB.
+Execute       syn_report -verbosereport -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.187 sec.
+Execute       db_write -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.sched.adb -f 
+Command       db_write done; 0.245 sec.
+INFO-FLOW: Finish scheduling byte_count_Pipeline_APPEARANCES.
+Execute       set_default_model byte_count_Pipeline_APPEARANCES 
+Execute       bind -model byte_count_Pipeline_APPEARANCES 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.52 seconds; current allocated memory: 1.068 GB.
+Execute       syn_report -verbosereport -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.bind.adb -f 
+Command       db_write done; 0.205 sec.
+INFO-FLOW: Finish binding byte_count_Pipeline_APPEARANCES.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count_Pipeline_THRESHOLD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model byte_count_Pipeline_THRESHOLD 
+Execute       schedule -model byte_count_Pipeline_THRESHOLD 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'THRESHOLD'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'THRESHOLD'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.754 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.076 seconds; current allocated memory: 1.068 GB.
+Execute       syn_report -verbosereport -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.sched.adb -f 
+INFO-FLOW: Finish scheduling byte_count_Pipeline_THRESHOLD.
+Execute       set_default_model byte_count_Pipeline_THRESHOLD 
+Execute       bind -model byte_count_Pipeline_THRESHOLD 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.147 seconds; current allocated memory: 1.068 GB.
+Execute       syn_report -verbosereport -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.bind.adb -f 
+INFO-FLOW: Finish binding byte_count_Pipeline_THRESHOLD.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model byte_count 
+Execute       schedule -model byte_count 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.196 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.335 seconds; current allocated memory: 1.068 GB.
+Execute       syn_report -verbosereport -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.204 sec.
+Execute       db_write -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.sched.adb -f 
+INFO-FLOW: Finish scheduling byte_count.
+Execute       set_default_model byte_count 
+Execute       bind -model byte_count 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.197 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.44 seconds; current allocated memory: 1.068 GB.
+Execute       syn_report -verbosereport -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.bind.adb -f 
+INFO-FLOW: Finish binding byte_count.
+Execute       get_model_list byte_count -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess byte_count_Pipeline_APPEARANCES 
+Execute       rtl_gen_preprocess byte_count_Pipeline_THRESHOLD 
+Execute       rtl_gen_preprocess byte_count 
+INFO-FLOW: Model list for RTL generation: byte_count_Pipeline_APPEARANCES byte_count_Pipeline_THRESHOLD byte_count
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model byte_count_Pipeline_APPEARANCES -top_prefix byte_count_ -sub_prefix byte_count_ -mg_file C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'byte_count_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'byte_count_Pipeline_APPEARANCES/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mux_2568_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count_Pipeline_APPEARANCES'.
+Command       create_rtl_model done; 0.326 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.527 seconds; current allocated memory: 1.068 GB.
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       gen_rtl byte_count_Pipeline_APPEARANCES -style xilinx -f -lang vhdl -o C:/estimation/estimation/byte_count/syn/vhdl/byte_count_byte_count_Pipeline_APPEARANCES 
+Execute       gen_rtl byte_count_Pipeline_APPEARANCES -style xilinx -f -lang vlog -o C:/estimation/estimation/byte_count/syn/verilog/byte_count_byte_count_Pipeline_APPEARANCES 
+Execute       syn_report -csynth -model byte_count_Pipeline_APPEARANCES -o C:/estimation/estimation/byte_count/syn/report/byte_count_Pipeline_APPEARANCES_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.156 sec.
+Execute       syn_report -rtlxml -model byte_count_Pipeline_APPEARANCES -o C:/estimation/estimation/byte_count/syn/report/byte_count_Pipeline_APPEARANCES_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model byte_count_Pipeline_APPEARANCES -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.161 sec.
+Execute       db_write -model byte_count_Pipeline_APPEARANCES -f -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.adb 
+Command       db_write done; 0.274 sec.
+Execute       db_write -model byte_count_Pipeline_APPEARANCES -bindview -o C:/estimation/estimation/byte_count/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info byte_count_Pipeline_APPEARANCES -p C:/estimation/estimation/byte_count/.autopilot/db -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count_Pipeline_THRESHOLD' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model byte_count_Pipeline_THRESHOLD -top_prefix byte_count_ -sub_prefix byte_count_ -mg_file C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'byte_count_Pipeline_THRESHOLD' pipeline 'THRESHOLD' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mux_2569_3_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count_Pipeline_THRESHOLD'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.514 seconds; current allocated memory: 1.068 GB.
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       gen_rtl byte_count_Pipeline_THRESHOLD -style xilinx -f -lang vhdl -o C:/estimation/estimation/byte_count/syn/vhdl/byte_count_byte_count_Pipeline_THRESHOLD 
+Execute       gen_rtl byte_count_Pipeline_THRESHOLD -style xilinx -f -lang vlog -o C:/estimation/estimation/byte_count/syn/verilog/byte_count_byte_count_Pipeline_THRESHOLD 
+Execute       syn_report -csynth -model byte_count_Pipeline_THRESHOLD -o C:/estimation/estimation/byte_count/syn/report/byte_count_Pipeline_THRESHOLD_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model byte_count_Pipeline_THRESHOLD -o C:/estimation/estimation/byte_count/syn/report/byte_count_Pipeline_THRESHOLD_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model byte_count_Pipeline_THRESHOLD -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model byte_count_Pipeline_THRESHOLD -f -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.adb 
+Execute       db_write -model byte_count_Pipeline_THRESHOLD -bindview -o C:/estimation/estimation/byte_count/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info byte_count_Pipeline_THRESHOLD -p C:/estimation/estimation/byte_count/.autopilot/db -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model byte_count -top_prefix  -sub_prefix byte_count_ -mg_file C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 's_axilite & ap_ctrl_chain'.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_10_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_11_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_mulcount_ap_uint_8_appearances_0_0_0_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_13_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_mulcount_ap_uint_8_appearances_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_15_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_17_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_18_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_19_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_20_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_21_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_1_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_23_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_25_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_27_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_28_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_29_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_30_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_31_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_2_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_33_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_35_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_37_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_38_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_39_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_40_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_41_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_3_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_43_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_45_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_47_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_48_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_49_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_50_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_51_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_4_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_53_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_55_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_57_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_58_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_59_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_60_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_61_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_5_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_63_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_65_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_67_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_68_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_69_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_70_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_71_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_6_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_73_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_75_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_77_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_78_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_79_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_80_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_81_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_7_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_83_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_85_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_87_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_88_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_89_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_90_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_91_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_8_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_93_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_0_0_0_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_95_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'byte_count_ap_uint_8_appearances_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_97_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_98_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_99_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_100_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_101_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_102_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_103_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_104_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_105_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_106_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_107_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_108_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_109_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_110_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_111_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_112_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_113_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_114_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_115_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_116_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_117_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_118_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_119_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_120_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_121_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_122_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_123_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_124_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_125_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_126_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_127_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_128_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_129_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_130_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_131_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_132_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_133_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_134_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_135_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_136_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_137_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_138_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_139_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_140_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_141_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_142_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_143_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_144_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_145_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_146_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_147_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_148_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_149_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_150_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_151_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_152_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_153_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_154_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_155_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_156_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_157_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_158_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_159_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_160_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_161_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_162_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_163_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_164_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_165_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_166_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_167_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_168_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_169_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_170_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_171_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_172_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_173_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_174_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_175_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_176_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_177_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_178_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_179_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_180_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_181_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_182_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_183_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_184_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_185_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_186_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_187_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_188_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_189_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_190_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_191_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_192_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_193_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_194_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_195_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_196_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_197_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_198_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_199_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_200_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_201_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_202_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_203_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_204_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_205_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_206_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_207_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_208_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_209_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_210_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_211_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_212_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_213_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_214_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_215_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_216_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_217_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_218_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_219_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_220_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_221_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_222_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_223_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_224_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_225_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_226_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_227_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_228_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_229_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_230_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_231_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_232_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_233_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_234_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_235_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_236_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_237_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_238_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_239_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_240_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_241_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_242_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_243_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_244_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_245_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_246_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_247_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_248_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_249_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_250_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_251_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_252_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_253_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_254_0_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_255_0_0_0' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'return', 'input_r' and 'ap_local_deadlock' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+Command       create_rtl_model done; 2.794 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.067 seconds; current allocated memory: 1.068 GB.
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       gen_rtl byte_count -istop -style xilinx -f -lang vhdl -o C:/estimation/estimation/byte_count/syn/vhdl/byte_count 
+Execute       gen_rtl byte_count -istop -style xilinx -f -lang vlog -o C:/estimation/estimation/byte_count/syn/verilog/byte_count 
+Execute       syn_report -csynth -model byte_count -o C:/estimation/estimation/byte_count/syn/report/byte_count_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model byte_count -o C:/estimation/estimation/byte_count/syn/report/byte_count_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model byte_count -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.115 sec.
+Execute       db_write -model byte_count -f -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.adb 
+Execute       db_write -model byte_count -bindview -o C:/estimation/estimation/byte_count/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info byte_count -p C:/estimation/estimation/byte_count/.autopilot/db -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count 
+Execute       export_constraint_db -f -tool general -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.constraint.tcl 
+Execute       syn_report -designview -model byte_count -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.design.xml 
+Command       syn_report done; 0.187 sec.
+Execute       syn_report -csynthDesign -model byte_count -o C:/estimation/estimation/byte_count/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model byte_count -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model byte_count -o C:/estimation/estimation/byte_count/.autopilot/db/byte_count.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks byte_count 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain byte_count 
+INFO-FLOW: Model list for RTL component generation: byte_count_Pipeline_APPEARANCES byte_count_Pipeline_THRESHOLD byte_count
+INFO-FLOW: Handling components in module [byte_count_Pipeline_APPEARANCES] ... 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.compgen.tcl 
+INFO-FLOW: Found component byte_count_mux_2568_3_1_1.
+INFO-FLOW: Append model byte_count_mux_2568_3_1_1
+INFO-FLOW: Found component byte_count_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model byte_count_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [byte_count_Pipeline_THRESHOLD] ... 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.compgen.tcl 
+INFO-FLOW: Found component byte_count_mux_2569_3_1_1.
+INFO-FLOW: Append model byte_count_mux_2569_3_1_1
+INFO-FLOW: Found component byte_count_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model byte_count_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [byte_count] ... 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.tcl 
+INFO-FLOW: Found component byte_count_control_s_axi.
+INFO-FLOW: Append model byte_count_control_s_axi
+INFO-FLOW: Found component byte_count_gmem_m_axi.
+INFO-FLOW: Append model byte_count_gmem_m_axi
+INFO-FLOW: Append model byte_count_Pipeline_APPEARANCES
+INFO-FLOW: Append model byte_count_Pipeline_THRESHOLD
+INFO-FLOW: Append model byte_count
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: byte_count_mux_2568_3_1_1 byte_count_flow_control_loop_pipe_sequential_init byte_count_mux_2569_3_1_1 byte_count_flow_control_loop_pipe_sequential_init byte_count_control_s_axi byte_count_gmem_m_axi byte_count_Pipeline_APPEARANCES byte_count_Pipeline_THRESHOLD byte_count
+INFO-FLOW: Generating C:/estimation/estimation/byte_count/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model byte_count_mux_2568_3_1_1
+INFO-FLOW: To file: write model byte_count_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model byte_count_mux_2569_3_1_1
+INFO-FLOW: To file: write model byte_count_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model byte_count_control_s_axi
+INFO-FLOW: To file: write model byte_count_gmem_m_axi
+INFO-FLOW: To file: write model byte_count_Pipeline_APPEARANCES
+INFO-FLOW: To file: write model byte_count_Pipeline_THRESHOLD
+INFO-FLOW: To file: write model byte_count
+INFO-FLOW: Generating C:/estimation/estimation/byte_count/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.124 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/estimation/estimation/byte_count/.autopilot/db/vhdl' dstVlogDir='C:/estimation/estimation/byte_count/.autopilot/db/vlog' tclDir='C:/estimation/estimation/byte_count/.autopilot/db' modelList='byte_count_mux_2568_3_1_1
+byte_count_flow_control_loop_pipe_sequential_init
+byte_count_mux_2569_3_1_1
+byte_count_flow_control_loop_pipe_sequential_init
+byte_count_control_s_axi
+byte_count_gmem_m_axi
+byte_count_Pipeline_APPEARANCES
+byte_count_Pipeline_THRESHOLD
+byte_count
+' expOnly='0'
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.tcl 
+Execute         source ./control.slave.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.082 seconds; current allocated memory: 1.068 GB.
+INFO-FLOW: DBG:PROC: ::AP::create_csynth_xml bind_adapter_nodes_var='bind_adapter_nodes' bind_report_dict_var='bind_report_dict' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: No bind nodes found for module_name byte_count
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+Execute       get_config_op mul -impl 
+Execute       get_config_op mul -latency 
+Execute       get_config_op mul -precision 
+Execute       get_config_op add -impl 
+Execute       get_config_op add -latency 
+Execute       get_config_op add -precision 
+Execute       get_config_op sub -impl 
+Execute       get_config_op sub -latency 
+Execute       get_config_op sub -precision 
+Execute       get_config_op fadd -impl 
+Execute       get_config_op fadd -latency 
+Execute       get_config_op fadd -precision 
+Execute       get_config_op fsub -impl 
+Execute       get_config_op fsub -latency 
+Execute       get_config_op fsub -precision 
+Execute       get_config_op fdiv -impl 
+Execute       get_config_op fdiv -latency 
+Execute       get_config_op fdiv -precision 
+Execute       get_config_op fexp -impl 
+Execute       get_config_op fexp -latency 
+Execute       get_config_op fexp -precision 
+Execute       get_config_op flog -impl 
+Execute       get_config_op flog -latency 
+Execute       get_config_op flog -precision 
+Execute       get_config_op fmul -impl 
+Execute       get_config_op fmul -latency 
+Execute       get_config_op fmul -precision 
+Execute       get_config_op frsqrt -impl 
+Execute       get_config_op frsqrt -latency 
+Execute       get_config_op frsqrt -precision 
+Execute       get_config_op frecip -impl 
+Execute       get_config_op frecip -latency 
+Execute       get_config_op frecip -precision 
+Execute       get_config_op fsqrt -impl 
+Execute       get_config_op fsqrt -latency 
+Execute       get_config_op fsqrt -precision 
+Execute       get_config_op dadd -impl 
+Execute       get_config_op dadd -latency 
+Execute       get_config_op dadd -precision 
+Execute       get_config_op dsub -impl 
+Execute       get_config_op dsub -latency 
+Execute       get_config_op dsub -precision 
+Execute       get_config_op ddiv -impl 
+Execute       get_config_op ddiv -latency 
+Execute       get_config_op ddiv -precision 
+Execute       get_config_op dexp -impl 
+Execute       get_config_op dexp -latency 
+Execute       get_config_op dexp -precision 
+Execute       get_config_op dlog -impl 
+Execute       get_config_op dlog -latency 
+Execute       get_config_op dlog -precision 
+Execute       get_config_op dmul -impl 
+Execute       get_config_op dmul -latency 
+Execute       get_config_op dmul -precision 
+Execute       get_config_op drsqrt -impl 
+Execute       get_config_op drsqrt -latency 
+Execute       get_config_op drsqrt -precision 
+Execute       get_config_op drecip -impl 
+Execute       get_config_op drecip -latency 
+Execute       get_config_op drecip -precision 
+Execute       get_config_op dsqrt -impl 
+Execute       get_config_op dsqrt -latency 
+Execute       get_config_op dsqrt -precision 
+Execute       get_config_op hadd -impl 
+Execute       get_config_op hadd -latency 
+Execute       get_config_op hadd -precision 
+Execute       get_config_op hsub -impl 
+Execute       get_config_op hsub -latency 
+Execute       get_config_op hsub -precision 
+Execute       get_config_op hdiv -impl 
+Execute       get_config_op hdiv -latency 
+Execute       get_config_op hdiv -precision 
+Execute       get_config_op hmul -impl 
+Execute       get_config_op hmul -latency 
+Execute       get_config_op hmul -precision 
+Execute       get_config_op hsqrt -impl 
+Execute       get_config_op hsqrt -latency 
+Execute       get_config_op hsqrt -precision 
+Execute       get_config_op facc -impl 
+Execute       get_config_op facc -latency 
+Execute       get_config_op facc -precision 
+Execute       get_config_op fmacc -impl 
+Execute       get_config_op fmacc -latency 
+Execute       get_config_op fmacc -precision 
+Execute       get_config_op fmadd -impl 
+Execute       get_config_op fmadd -latency 
+Execute       get_config_op fmadd -precision 
+Execute       get_config_storage fifo -auto_srl_max_bits 
+Execute       get_config_storage fifo -auto_srl_max_depth 
+Execute       get_config_storage fifo -impl 
+Execute       get_solution -flow_target 
+Execute       get_config_array_partition -complete_threshold 
+Execute       get_config_array_partition -throughput_driven 
+Execute       get_config_compile -enable_auto_rewind 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_compile -no_signed_zeros 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pre_tcl 
+Execute       get_config_compile -unsafe_math_optimizations 
+Execute       get_config_dataflow -default_channel 
+Execute       get_config_dataflow -disable_fifo_sizing_opt 
+Execute       get_config_dataflow -fifo_depth 
+Execute       get_config_dataflow -override_user_fifo_depth 
+Execute       get_config_dataflow -scalar_fifo_depth 
+Execute       get_config_dataflow -start_fifo_depth 
+Execute       get_config_dataflow -strict_mode 
+Execute       get_config_dataflow -strict_stable_sync 
+Execute       get_config_dataflow -task_level_fifo_depth 
+Execute       get_config_debug -directory 
+Execute       get_config_debug -enable 
+Execute       get_config_export -deadlock_detection 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       get_config_export -format 
+Execute       get_config_export -ip_xdc_file 
+Execute       get_config_export -ip_xdc_ooc_file 
+Execute       get_config_export -ipname 
+Execute       get_config_export -library 
+Execute       get_config_export -output 
+Execute       get_config_export -rtl 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -vendor 
+Execute       get_config_export -version 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_max_timing_paths 
+Execute       get_config_export -vivado_optimization_level 
+Execute       get_config_export -vivado_pblock 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_export -vivado_report_level 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_interface -clock_enable 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_config_interface -m_axi_addr64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_buffer_impl 
+Execute       get_config_interface -m_axi_conservative_mode 
+Execute       get_config_interface -m_axi_flush_mode 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -register_io 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -s_axilite_mailbox 
+Execute       get_config_interface -s_axilite_status_regs 
+Execute       get_config_interface -s_axilite_sw_reset 
+Execute       get_config_rtl -header 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -mult_keep_attribute 
+Execute       get_config_rtl -register_all_io 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -reset 
+Execute       get_config_rtl -reset_async 
+Execute       get_config_rtl -reset_level 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_unroll -tripcount_threshold 
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:       create_csynth_xml wrote csynth_xml=C:/estimation/estimation/byte_count/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='byte_count_mux_2568_3_1_1
+byte_count_flow_control_loop_pipe_sequential_init
+byte_count_mux_2569_3_1_1
+byte_count_flow_control_loop_pipe_sequential_init
+byte_count_control_s_axi
+byte_count_gmem_m_axi
+byte_count_Pipeline_APPEARANCES
+byte_count_Pipeline_THRESHOLD
+byte_count
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute       get_solution -flow_target 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/top-io-be.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.tbgen.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.tbgen.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.constraint.tcl 
+Execute       sc_get_clocks byte_count 
+Execute       source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -ip_xdc_file 
+Execute       get_config_export -ip_xdc_ooc_file 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:PROC: ::AP::add_csynth_report_sections bind_adapter_nodes='{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE byte_count LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0} {BINDTYPE adapter DISPLAY {bind_adapter axi_master} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME gmem_m_axi_U SOURCE {} VARIABLE {} MODULE byte_count LOOP {} BUNDLEDNAME gmem DSP 0 BRAM 58 URAM 0}' bind_report_dict='TOP byte_count DATA {byte_count {DEPTH 1 CHILDREN {byte_count_Pipeline_APPEARANCES byte_count_Pipeline_THRESHOLD} AREA {DSP 0 BRAM 58 URAM 0}} byte_count_Pipeline_APPEARANCES {DEPTH 2 CHILDREN {} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln13_fu_1143_p2 SOURCE byte_count.c++:13 VARIABLE add_ln13 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ret_V_fu_2742_p2 SOURCE {C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245} VARIABLE ret_V LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME count_V_fu_2748_p2 SOURCE {C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:712} VARIABLE count_V LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} byte_count_Pipeline_THRESHOLD {DEPTH 2 CHILDREN {} BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_V_2_fu_2120_p2 SOURCE {C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885} VARIABLE i_V_2 LOOP THRESHOLD BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln885_fu_2658_p2 SOURCE {C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885} VARIABLE add_ln885 LOOP THRESHOLD BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}}}'
+INFO-FLOW: DBG:PUTS:       update_csynth_reports json2reportxml
+Execute       send_msg_by_id INFO @200-1603@%s  
+INFO: [HLS 200-1603] Design has inferred MAXI bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO-FLOW: Running: gen_csynth_pragma_report_xml
+INFO-FLOW: Done: gen_csynth_pragma_report_xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:       update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:       update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.858 seconds; current allocated memory: 1.068 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+Execute       syn_report -model byte_count -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+Command     autosyn done; 10.905 sec.
+Command   csynth_design done; 33.177 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 19 seconds. CPU system time: 2 seconds. Elapsed time: 33.177 seconds; current allocated memory: 333.613 MB.
+Command ap_source done; 34.147 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/estimation/estimation/byte_count opened at Wed Feb 02 13:08:30 -0600 2022
+Execute     ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2021.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 0.535 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.113 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.163 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.712 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute     get_config_interface -m_axi_latency 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute     config_interface -m_axi_latency=64 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute     config_interface -m_axi_alignment_byte_size=64 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+Execute     get_config_interface -default_interface 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute     config_interface -default_interface=kernel 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute     config_rtl -register_reset_num=3 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=xo 
+INFO: [HLS 200-1464] Running solution command: config_export -format=xo
+Execute     config_export -format=xo 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/estimation 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/estimation
+Execute     config_export -output=C:/estimation 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vivado_clock=100MHz 
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=100MHz
+Execute     config_export -vivado_clock=100MHz 
+Command   open_solution done; 0.786 sec.
+Execute   set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+Execute     create_platform xc7z020-clg484-1 -board  
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.123 sec.
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.144 sec.
+Execute   create_clock -period 100MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 100MHz -name default 
+Execute   config_export -format xo -output C:/estimation -vivado_clock 100MHz 
+INFO: [HLS 200-1510] Running: config_export -format xo -output C:/estimation -vivado_clock 100MHz 
+Execute   source ./estimation/byte_count/directives.tcl 
+Execute     set_directive_top -name byte_count byte_count 
+INFO: [HLS 200-1510] Running: set_directive_top -name byte_count byte_count 
+Execute   export_design -rtl verilog -format xo -output C:/estimation 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format xo -output C:/estimation 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=xo -output=C:/estimation -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format xo -rtl verilog
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_solution -flow_target 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.13 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=byte_count xml_exists=0
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_export -deadlock_detection 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to byte_count
+Execute     get_solution -flow_target 
+INFO-FLOW: DBG:PUTS:       kernel.xml check internal_kernel_xml(1)=C:/estimation/estimation/byte_count/.autopilot/db/kernel.internal.xml top=byte_count
+INFO-FLOW: DBG:PUTS:       kernel.xml check proj_kernel_xml    (1)=C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml
+INFO-FLOW: DBG:PUTS:       copy internal kernel.xml to project: C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml
+INFO-FLOW: DBG:PUTS:       update_final_kernel_xml C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml
+Execute     get_config_debug -enable 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     get_config_interface -s_axilite_sw_reset 
+Execute     get_config_interface -s_axilite_mailbox 
+Execute     get_config_interface -s_axilite_auto_restart_counter 
+Execute     get_config_export -deadlock_detection 
+INFO-FLOW: DBG:PUTS: Updating C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml with values: interrupt true debug false compileOptions {} name byte_count vlnv xilinx.com:hls:byte_count:1.0 swReset false mailbox none countedAutoRestart 0 deadlockDetection local
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=true #modelList=9 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='true' modelList='byte_count_mux_2568_3_1_1
+byte_count_flow_control_loop_pipe_sequential_init
+byte_count_mux_2569_3_1_1
+byte_count_flow_control_loop_pipe_sequential_init
+byte_count_control_s_axi
+byte_count_gmem_m_axi
+byte_count_Pipeline_APPEARANCES
+byte_count_Pipeline_THRESHOLD
+byte_count
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_solution -flow_target 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/top-io-be.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     get_config_export -format 
+Execute     get_config_export -output 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     get_solution -flow_target 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.constraint.tcl 
+Execute     sc_get_clocks byte_count 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_debug -directory 
+Execute     get_config_export -deadlock_detection 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to byte_count
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 C:/estimation/estimation/byte_count/.autopilot/db/driver
+Execute     get_config_export -format 
+Execute     get_config_export -output 
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=true is_sdsoc=true xo_file=C:/estimation/export.xo
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=byte_count
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_export -ip_xdc_file 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.constraint.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.122 sec.
+INFO-FLOW: DBG:PUTS:     IP package: exec C:/estimation/estimation/byte_count/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: failed result=1 C:/estimation/estimation/byte_count/impl/ip/pack.bat
+ERROR: [IMPL 213-28] Failed to generate IP.
+Command   export_design done; error code: 2; 13.189 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 13.189 seconds; current allocated memory: 411.727 MB.
+Command ap_source done; error code: 1; 14.183 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/estimation/estimation/byte_count opened at Wed Feb 02 13:11:03 -0600 2022
+Execute     ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020-clg484-1 
+Execute       create_platform xc7z020-clg484-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2021.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+Command       create_platform done; 0.511 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.151 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.677 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vitis 
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+Execute     get_config_interface -m_axi_latency 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_latency=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_latency=64
+Execute     config_interface -m_axi_latency=64 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_alignment_byte_size=64 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_alignment_byte_size=64
+Execute     config_interface -m_axi_alignment_byte_size=64 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_interface -m_axi_max_widen_bitwidth=512 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_interface -m_axi_max_widen_bitwidth=512
+Execute     config_interface -m_axi_max_widen_bitwidth=512 
+Execute     get_config_interface -default_interface 
+INFO-FLOW: Setting macro_cmd open_solution -flow_target vitis configuration: config_interface -default_interface=kernel
+Execute     config_interface -default_interface=kernel 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vitis' config_rtl -register_reset_num=3 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vitis' configuration: config_rtl -register_reset_num=3
+Execute     config_rtl -register_reset_num=3 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=xo 
+INFO: [HLS 200-1464] Running solution command: config_export -format=xo
+Execute     config_export -format=xo 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=C:/estimation 
+INFO: [HLS 200-1464] Running solution command: config_export -output=C:/estimation
+Execute     config_export -output=C:/estimation 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.0.0 
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+Execute     config_export -version=1.0.0 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vivado_clock=100MHz 
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=100MHz
+Execute     config_export -vivado_clock=100MHz 
+Command   open_solution done; 0.747 sec.
+Execute   set_part xc7z020-clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
+Execute     create_platform xc7z020-clg484-1 -board  
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.124 sec.
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.145 sec.
+Execute   create_clock -period 100MHz -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 100MHz -name default 
+Execute   config_export -format xo -output C:/estimation -rtl verilog -version 1.0.0 -vivado_clock 100MHz 
+INFO: [HLS 200-1510] Running: config_export -format xo -output C:/estimation -rtl verilog -version 1.0.0 -vivado_clock 100MHz 
+Execute   source ./estimation/byte_count/directives.tcl 
+Execute     set_directive_top -name byte_count byte_count 
+INFO: [HLS 200-1510] Running: set_directive_top -name byte_count byte_count 
+Execute   export_design -rtl verilog -format xo -output C:/estimation 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format xo -output C:/estimation 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=xo -output=C:/estimation -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format xo -rtl verilog -version 1.0.0
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_solution -flow_target 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.123 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=byte_count xml_exists=1
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_export -deadlock_detection 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to byte_count
+Execute     get_solution -flow_target 
+INFO-FLOW: DBG:PUTS:       kernel.xml check internal_kernel_xml(1)=C:/estimation/estimation/byte_count/.autopilot/db/kernel.internal.xml top=byte_count
+INFO-FLOW: DBG:PUTS:       kernel.xml check proj_kernel_xml    (1)=C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml
+INFO-FLOW: DBG:PUTS:       copy internal kernel.xml to project: C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml
+INFO-FLOW: DBG:PUTS:       update_final_kernel_xml C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml
+Execute     get_config_debug -enable 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     get_config_interface -s_axilite_sw_reset 
+Execute     get_config_interface -s_axilite_mailbox 
+Execute     get_config_interface -s_axilite_auto_restart_counter 
+Execute     get_config_export -deadlock_detection 
+INFO-FLOW: DBG:PUTS: Updating C:/estimation/estimation/byte_count/.autopilot/db/../../../kernel.xml with values: interrupt true debug false compileOptions {} name byte_count vlnv xilinx.com:hls:byte_count:1.0 swReset false mailbox none countedAutoRestart 0 deadlockDetection local
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=true #modelList=9 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='true' modelList='byte_count_mux_2568_3_1_1
+byte_count_flow_control_loop_pipe_sequential_init
+byte_count_mux_2569_3_1_1
+byte_count_flow_control_loop_pipe_sequential_init
+byte_count_control_s_axi
+byte_count_gmem_m_axi
+byte_count_Pipeline_APPEARANCES
+byte_count_Pipeline_THRESHOLD
+byte_count
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_solution -flow_target 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/top-io-be.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     get_config_export -format 
+Execute     get_config_export -output 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_APPEARANCES.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count_Pipeline_THRESHOLD.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     get_solution -flow_target 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.constraint.tcl 
+Execute     sc_get_clocks byte_count 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_debug -directory 
+Execute     get_config_export -deadlock_detection 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to byte_count
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 C:/estimation/estimation/byte_count/.autopilot/db/driver
+Execute     get_config_export -format 
+Execute     get_config_export -output 
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=true is_sdsoc=true xo_file=C:/estimation/export.xo
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=byte_count
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_export -ip_xdc_file 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.constraint.tcl 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/byte_count.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/estimation/estimation/byte_count/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.122 sec.
+INFO-FLOW: DBG:PUTS:     IP package: exec C:/estimation/estimation/byte_count/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success C:/estimation/estimation/byte_count/impl/ip/pack.bat
+Execute     get_config_export -output 
+Execute     send_msg_by_id INFO @200-802@%s export.xo 
+INFO: [HLS 200-802] Generated output file export.xo
+Command   export_design done; 14.66 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 14.66 seconds; current allocated memory: 402.875 MB.
+Command ap_source done; 15.632 sec.
+Execute cleanup_all 

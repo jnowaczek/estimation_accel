@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_byte_count.cpp
+   Compiling byte_count.c++_pre.c++.tb.c++
+   Compiling byte_count_bench.c++_pre.c++.tb.c++
+cosim.tv.mk:62: recipe for target 'obj/byte_count_bench.c++_pre.c++.tb.o' failed
