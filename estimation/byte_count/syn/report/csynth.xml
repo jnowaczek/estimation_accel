@@ -895,8 +895,8 @@
             </AreaEstimates>
             <BindNodes>
                 <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="APPEARANCES" OPTYPE="add" PRAGMA="" RTLNAME="add_ln13_fu_1143_p2" SOURCE="byte_count.c++:13" URAM="0" VARIABLE="add_ln13"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="APPEARANCES" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_2742_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="APPEARANCES" OPTYPE="add" PRAGMA="" RTLNAME="count_V_fu_2748_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_fixed_base.h:712" URAM="0" VARIABLE="count_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="APPEARANCES" OPTYPE="add" PRAGMA="" RTLNAME="ret_V_fu_2742_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="APPEARANCES" OPTYPE="add" PRAGMA="" RTLNAME="count_V_fu_2748_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h:712" URAM="0" VARIABLE="count_V"/>
             </BindNodes>
         </Module>
         <Module>
@@ -953,8 +953,8 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="THRESHOLD" OPTYPE="add" PRAGMA="" RTLNAME="i_V_2_fu_2120_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="i_V_2"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="THRESHOLD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_fu_2658_p2" SOURCE="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:885" URAM="0" VARIABLE="add_ln885"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="THRESHOLD" OPTYPE="add" PRAGMA="" RTLNAME="i_V_2_fu_2120_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:885" URAM="0" VARIABLE="i_V_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="THRESHOLD" OPTYPE="add" PRAGMA="" RTLNAME="add_ln885_fu_2658_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_base.h:885" URAM="0" VARIABLE="add_ln885"/>
             </BindNodes>
         </Module>
         <Module>
@@ -999,7 +999,7 @@
     </ModuleInformation>
     <FIFOInformation/>
     <UserConfigCommands>
-        <config_export vivado_clock="100MHz"/>
+        <config_export format="xo" output="C:/estimation" version="1.0.0" vivado_clock="100MHz"/>
     </UserConfigCommands>
     <Args>
         <Arg ArgName="input" index="0" direction="in" srcType="ap_uint&lt;8&gt;*" srcSize="8">

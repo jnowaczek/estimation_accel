@@ -97,7 +97,7 @@ newFuncRoot:3 %sext_ln13_cast = sext i58 %sext_ln13_read
 
 <Node id="263" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
 <![CDATA[
-newFuncRoot:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_15, i32 0, i32 0, void @empty_17, i32 64, i32 0, void @empty_16, void @empty_21, void @empty_17, i32 16, i32 16, i32 16, i32 16, void @empty_17, void @empty_17
+newFuncRoot:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_11, i32 0, i32 0, void @empty_9, i32 64, i32 0, void @empty_21, void @empty, void @empty_9, i32 16, i32 16, i32 16, i32 16, void @empty_9, void @empty_9
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -381,7 +381,7 @@ _ZN13ap_fixed_baseILi33ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi3ELi3ELb0EL
 
 <Node id="280" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-_ZN13ap_fixed_baseILi33ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi3ELi3ELb0ELS0_5ELS1_0ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.i.i.split:3 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
+_ZN13ap_fixed_baseILi33ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2ILi3ELi3ELb0ELS0_5ELS1_0ELi0EEERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE.exit.i.i.i.i.split:3 %specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln13"/></StgValue>
@@ -13447,23 +13447,23 @@ arrayidx316.0.0.068.i.case.255:1 %br_ln20 = br void %arrayidx316.0.0.068.i.exit
 </dataflow>
 <dataflow id="1099" from="gmem" to="specinterface_ln0" fromId="832" toId="11">
 </dataflow>
-<dataflow id="1101" from="empty_15" to="specinterface_ln0" fromId="1100" toId="11">
+<dataflow id="1101" from="empty_11" to="specinterface_ln0" fromId="1100" toId="11">
 </dataflow>
 <dataflow id="1103" from="StgValue_1102" to="specinterface_ln0" fromId="1102" toId="11">
 </dataflow>
 <dataflow id="1104" from="StgValue_1102" to="specinterface_ln0" fromId="1102" toId="11">
 </dataflow>
-<dataflow id="1106" from="empty_17" to="specinterface_ln0" fromId="1105" toId="11">
+<dataflow id="1106" from="empty_9" to="specinterface_ln0" fromId="1105" toId="11">
 </dataflow>
 <dataflow id="1108" from="StgValue_1107" to="specinterface_ln0" fromId="1107" toId="11">
 </dataflow>
 <dataflow id="1109" from="StgValue_1102" to="specinterface_ln0" fromId="1102" toId="11">
 </dataflow>
-<dataflow id="1111" from="empty_16" to="specinterface_ln0" fromId="1110" toId="11">
+<dataflow id="1111" from="empty_21" to="specinterface_ln0" fromId="1110" toId="11">
 </dataflow>
-<dataflow id="1113" from="empty_21" to="specinterface_ln0" fromId="1112" toId="11">
+<dataflow id="1113" from="empty" to="specinterface_ln0" fromId="1112" toId="11">
 </dataflow>
-<dataflow id="1114" from="empty_17" to="specinterface_ln0" fromId="1105" toId="11">
+<dataflow id="1114" from="empty_9" to="specinterface_ln0" fromId="1105" toId="11">
 </dataflow>
 <dataflow id="1116" from="StgValue_1115" to="specinterface_ln0" fromId="1115" toId="11">
 </dataflow>
@@ -13473,9 +13473,9 @@ arrayidx316.0.0.068.i.case.255:1 %br_ln20 = br void %arrayidx316.0.0.068.i.exit
 </dataflow>
 <dataflow id="1119" from="StgValue_1115" to="specinterface_ln0" fromId="1115" toId="11">
 </dataflow>
-<dataflow id="1120" from="empty_17" to="specinterface_ln0" fromId="1105" toId="11">
+<dataflow id="1120" from="empty_9" to="specinterface_ln0" fromId="1105" toId="11">
 </dataflow>
-<dataflow id="1121" from="empty_17" to="specinterface_ln0" fromId="1105" toId="11">
+<dataflow id="1121" from="empty_9" to="specinterface_ln0" fromId="1105" toId="11">
 </dataflow>
 <dataflow id="1123" from="StgValue_1122" to="store_ln0" fromId="1122" toId="12">
 </dataflow>
@@ -13545,7 +13545,7 @@ arrayidx316.0.0.068.i.case.255:1 %br_ln20 = br void %arrayidx316.0.0.068.i.exit
 </dataflow>
 <dataflow id="1168" from="_ssdm_op_SpecLoopName" to="specloopname_ln13" fromId="1167" toId="29">
 </dataflow>
-<dataflow id="1170" from="empty_18" to="specloopname_ln13" fromId="1169" toId="29">
+<dataflow id="1170" from="empty_20" to="specloopname_ln13" fromId="1169" toId="29">
 </dataflow>
 <dataflow id="1171" from="icmp_ln14" to="br_ln14" fromId="20" toId="30">
 </dataflow>

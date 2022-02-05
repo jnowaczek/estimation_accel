@@ -3,30 +3,27 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <packageLog>
-        <logs message="ERROR: [IMPL 213-28] Failed to generate IP." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:08:44.217-0600"/>
-        <logs message="ERROR: '2202021308' is an invalid argument. Please specify an integer value.&#xD;&#xD;&#xA;    while executing&#xD;&#xD;&#xA;&quot;rdi::set_property core_revision 2202021308 {component component_1}&quot;&#xD;&#xD;&#xA;    invoked from within&#xD;&#xD;&#xA;&quot;set_property core_revision $Revision $core&quot;&#xD;&#xD;&#xA;    (file &quot;run_ippack.tcl&quot; line 1089)&#xD;" projectName="estimation" solutionName="byte_count" date="2022-02-02T13:08:44.207-0600"/>
-      </packageLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:53:56.627-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:46:01.538-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:43:27.854-0600"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_255_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:47.084-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_254_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:47.062-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_253_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:47.052-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_252_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:47.040-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_251_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:47.029-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_250_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:47.013-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_249_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:47.002-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_248_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:46.992-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_247_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:46.979-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_246_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:46.966-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_245_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:46.953-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_244_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:46.942-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_243_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-02T13:07:46.931-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_255_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:33:56.083-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_254_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:33:56.081-0600" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_253_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:33:56.080-0600" type="Warning"/>
       </synLog>
+      <simLog/>
+      <mgLog/>
       <packageLog/>
+      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

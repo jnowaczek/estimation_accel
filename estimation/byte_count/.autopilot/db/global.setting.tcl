@@ -44,13 +44,13 @@ set SCTraceOption all
 set TargetInfo xc7z020:-clg484:-1
 set SourceFiles {sc {} c ../../byte_count.c++}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile C:/estimation/estimation/byte_count/byte_count.directive
-set TBFiles {verilog {../../byte_count_bench.c++ ../../tb_data/zeros ../../tb_data} bc {../../byte_count_bench.c++ ../../tb_data/zeros ../../tb_data} vhdl {../../byte_count_bench.c++ ../../tb_data/zeros ../../tb_data} sc {../../byte_count_bench.c++ ../../tb_data/zeros ../../tb_data} cas {../../byte_count_bench.c++ ../../tb_data/zeros ../../tb_data} c {}}
+set DirectiveFile /home/vivado/Desktop/estimation_hls/estimation/byte_count/byte_count.directive
+set TBFiles {verilog {../../tb_data ../../byte_count_bench.c++} bc {../../tb_data ../../byte_count_bench.c++} sc {../../tb_data ../../byte_count_bench.c++} vhdl {../../tb_data ../../byte_count_bench.c++} c {} cas {../../tb_data ../../byte_count_bench.c++}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

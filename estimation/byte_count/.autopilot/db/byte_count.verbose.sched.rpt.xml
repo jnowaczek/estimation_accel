@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'byte_count'" level="0">
-<item name = "Date">Wed Feb  2 13:07:41 2022
+<item name = "Date">Sat Feb  5 13:33:42 2022
 </item>
-<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)</item>
+<item name = "Version">2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)</item>
 <item name = "Project">estimation</item>
 <item name = "Solution">byte_count (Vitis Kernel Flow Target)</item>
 <item name = "Product family">zynq</item>

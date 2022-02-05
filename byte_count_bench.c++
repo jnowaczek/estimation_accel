@@ -7,7 +7,7 @@
 #include "byte_count.hpp"
 
 int main() {
-	char retval = 0;
+	int retval = 0;
 	std::vector<char> input;
 
 	std::ifstream file ("tb_data/zeros", std::ios::in|std::ios::binary|std::ios::ate);

@@ -1,6 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../byte_count.c++ in debug mode
+   Compiling ../../../../byte_count_bench.c++ in debug mode
    Generating csim.exe
     *** *** *** *** 
     Results are good 

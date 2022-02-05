@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'byte_count'
 ================================================================
-* Date:           Wed Feb  2 13:07:47 2022
+* Date:           Sat Feb  5 13:33:56 2022
 
-* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
 * Project:        estimation
 * Solution:       byte_count (Vitis Kernel Flow Target)
 * Product family: zynq
@@ -1070,13 +1070,13 @@ ST_75 : Operation 411 [1/2] (3.24ns)   --->   "%call_ln0 = call void @byte_count
 
 State 76 <SV = 75> <Delay = 0.00>
 ST_76 : Operation 412 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 0"   --->   Operation 412 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_76 : Operation 413 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_10"   --->   Operation 413 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
-ST_76 : Operation 414 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_12, i32 0, i32 0, void @empty_17, i32 0, i32 0, void @empty_17, void @empty_17, void @empty_17, i32 0, i32 0, i32 0, i32 0, void @empty_17, void @empty_17"   --->   Operation 414 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_76 : Operation 415 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_15, i32 0, i32 0, void @empty_17, i32 64, i32 0, void @empty_16, void @empty_21, void @empty_17, i32 16, i32 16, i32 16, i32 16, void @empty_17, void @empty_17"   --->   Operation 415 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_76 : Operation 413 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_17"   --->   Operation 413 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_76 : Operation 414 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_18, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 414 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_76 : Operation 415 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_11, i32 0, i32 0, void @empty_9, i32 64, i32 0, void @empty_21, void @empty, void @empty_9, i32 16, i32 16, i32 16, i32 16, void @empty_9, void @empty_9"   --->   Operation 415 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_76 : Operation 416 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i512 %gmem"   --->   Operation 416 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_76 : Operation 417 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_r, void @empty_9, i32 0, i32 0, void @empty_17, i32 0, i32 0, void @empty_13, void @empty_11, void @empty_17, i32 0, i32 0, i32 0, i32 0, void @empty_17, void @empty_20"   --->   Operation 417 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_76 : Operation 418 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_r, void @empty_19, i32 0, i32 0, void @empty_17, i32 0, i32 0, void @empty_17, void @empty_17, void @empty_17, i32 0, i32 0, i32 0, i32 0, void @empty_17, void @empty_20"   --->   Operation 418 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_76 : Operation 419 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_9, i32 0, i32 0, void @empty_17, i32 0, i32 0, void @empty_13, void @empty, void @empty_17, i32 0, i32 0, i32 0, i32 0, void @empty_17, void @empty_17"   --->   Operation 419 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_76 : Operation 417 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_r, void @empty_10, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_12, void @empty_13, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_14"   --->   Operation 417 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_76 : Operation 418 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_r, void @empty_15, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_9, void @empty_9, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_14"   --->   Operation 418 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_76 : Operation 419 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_10, i32 0, i32 0, void @empty_9, i32 0, i32 0, void @empty_12, void @empty_16, void @empty_9, i32 0, i32 0, i32 0, i32 0, void @empty_9, void @empty_9"   --->   Operation 419 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_76 : Operation 420 [1/1] (0.00ns)   --->   "%conv3_i_i74_i_loc_load = load i8 %conv3_i_i74_i_loc"   --->   Operation 420 'load' 'conv3_i_i74_i_loc_load' <Predicate = true> <Delay = 0.00>
 ST_76 : Operation 421 [1/1] (0.00ns)   --->   "%ret_ln9 = ret i8 %conv3_i_i74_i_loc_load" [byte_count.c++:9]   --->   Operation 421 'ret' 'ret_ln9' <Predicate = true> <Delay = 0.00>
 
@@ -4071,7 +4071,7 @@ ret_ln9                                                                  (ret   
 <pin id="541" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_17"/></StgValue>
 </bind>
 </comp>
 
@@ -4098,7 +4098,7 @@ ret_ln9                                                                  (ret   
 <pin id="547" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_12"/></StgValue>
+<StgValue><ssdm name="empty_18"/></StgValue>
 </bind>
 </comp>
 
@@ -4107,7 +4107,7 @@ ret_ln9                                                                  (ret   
 <pin id="549" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_17"/></StgValue>
+<StgValue><ssdm name="empty_9"/></StgValue>
 </bind>
 </comp>
 
@@ -4116,7 +4116,7 @@ ret_ln9                                                                  (ret   
 <pin id="551" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_15"/></StgValue>
+<StgValue><ssdm name="empty_11"/></StgValue>
 </bind>
 </comp>
 
@@ -4134,7 +4134,7 @@ ret_ln9                                                                  (ret   
 <pin id="555" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_16"/></StgValue>
+<StgValue><ssdm name="empty_21"/></StgValue>
 </bind>
 </comp>
 
@@ -4143,7 +4143,7 @@ ret_ln9                                                                  (ret   
 <pin id="557" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_21"/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </bind>
 </comp>
 
@@ -4152,7 +4152,7 @@ ret_ln9                                                                  (ret   
 <pin id="559" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_9"/></StgValue>
+<StgValue><ssdm name="empty_10"/></StgValue>
 </bind>
 </comp>
 
@@ -4161,7 +4161,7 @@ ret_ln9                                                                  (ret   
 <pin id="561" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_13"/></StgValue>
+<StgValue><ssdm name="empty_12"/></StgValue>
 </bind>
 </comp>
 
@@ -4170,7 +4170,7 @@ ret_ln9                                                                  (ret   
 <pin id="563" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_11"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -4179,7 +4179,7 @@ ret_ln9                                                                  (ret   
 <pin id="565" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_20"/></StgValue>
+<StgValue><ssdm name="empty_14"/></StgValue>
 </bind>
 </comp>
 
@@ -4188,7 +4188,7 @@ ret_ln9                                                                  (ret   
 <pin id="567" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_19"/></StgValue>
+<StgValue><ssdm name="empty_15"/></StgValue>
 </bind>
 </comp>
 
@@ -4197,7 +4197,7 @@ ret_ln9                                                                  (ret   
 <pin id="569" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name="empty_16"/></StgValue>
 </bind>
 </comp>
 

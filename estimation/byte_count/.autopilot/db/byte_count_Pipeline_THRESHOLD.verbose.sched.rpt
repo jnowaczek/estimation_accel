@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'byte_count_Pipeline_THRESHOLD'
 ================================================================
-* Date:           Wed Feb  2 13:07:41 2022
+* Date:           Sat Feb  5 13:33:41 2022
 
-* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
 * Project:        estimation
 * Solution:       byte_count (Vitis Kernel Flow Target)
 * Product family: zynq
@@ -361,7 +361,7 @@ ST_1 : Operation 283 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation
 
 State 2 <SV = 1> <Delay = 4.75>
 ST_2 : Operation 275 [1/1] (0.00ns)   --->   "%conv3_i_i74_i_load = load i8 %conv3_i_i74_i"   --->   Operation 275 'load' 'conv3_i_i74_i_load' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 276 [1/1] (0.00ns)   --->   "%specloopname_ln28 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [byte_count.c++:28]   --->   Operation 276 'specloopname' 'specloopname_ln28' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 276 [1/1] (0.00ns)   --->   "%specloopname_ln28 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [byte_count.c++:28]   --->   Operation 276 'specloopname' 'specloopname_ln28' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 277 [1/1] (1.91ns)   --->   "%add_ln885 = add i8 %conv3_i_i74_i_load, i8 1"   --->   Operation 277 'add' 'add_ln885' <Predicate = (icmp_ln1547)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 278 [1/1] (1.24ns)   --->   "%select_ln29 = select i1 %icmp_ln1547, i8 %add_ln885, i8 %conv3_i_i74_i_load" [byte_count.c++:29]   --->   Operation 278 'select' 'select_ln29' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 279 [1/1] (1.58ns)   --->   "%store_ln29 = store i8 %select_ln29, i8 %conv3_i_i74_i" [byte_count.c++:29]   --->   Operation 279 'store' 'store_ln29' <Predicate = true> <Delay = 1.58>

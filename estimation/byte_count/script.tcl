@@ -8,7 +8,6 @@ set_top byte_count
 add_files byte_count.c++
 add_files byte_count.hpp
 add_files -tb byte_count_bench.c++ -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
-add_files -tb tb_data/zeros -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 add_files -tb tb_data -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "byte_count" -flow_target vitis
 set_part {xc7z020-clg484-1}
