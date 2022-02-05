@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="byte_count.c++" path="C:\estimation\byte_count.c++"/>
+    <originFiles name="byte_count.hpp" path="C:\estimation\byte_count.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="byte_count_bench.c++" path="C:\estimation\byte_count_bench.c++"/>
+    <originFiles name="zeros" path="C:\estimation\tb_data\zeros"/>
+    <originFiles name="tb_data" path="C:\estimation\tb_data"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
