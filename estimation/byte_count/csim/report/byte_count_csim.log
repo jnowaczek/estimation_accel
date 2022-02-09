@@ -3,7 +3,7 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../byte_count_bench.c++ in debug mode
    Generating csim.exe
     *** *** *** *** 
-    Results are good 
+    Results are good: expected == actual == 1
     *** *** *** *** 
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

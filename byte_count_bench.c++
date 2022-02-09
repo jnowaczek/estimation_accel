@@ -6,6 +6,23 @@
 
 #include "byte_count.hpp"
 
+int byte_count_gold(bytecount::data_t input[BLOCK_LENGTH]) {
+	int count = 0;
+	int appearances[256] = {};
+
+	for (int i = 0; i < BLOCK_LENGTH; i++) {
+		appearances[input[i]] += 1;
+	}
+
+	for (auto bucket : appearances) {
+		if (bucket > BYTE_COUNT_THRESHOLD) {
+			count += 1;
+		}
+	}
+
+	return count;
+}
+
 int main() {
 	int retval = 0;
 	std::vector<char> input;
@@ -25,36 +42,19 @@ int main() {
 
 	std::vector<bytecount::data_t> data(input.begin(), input.end());
 
-	int result = bytecount::byte_count(data.data());
+	int expected = byte_count_gold(data.data());
+	int actual = bytecount::byte_count(data.data());
 
-	if(result == 1){
+	if(actual == expected){
 		 std::cout << "    *** *** *** *** \n";
-	 	 std::cout << "    Results are good \n";
+	 	 std::cout << "    Results are good: expected == actual == " << actual << "\n";
 	 	 std::cout << "    *** *** *** *** \n";
 	 } else {
 		 std::cout << "    *** *** *** *** \n";
-		 std::cout << "    Mismatch: result=" << result << " \n";
+		 std::cout << "    Mismatch: result=" << actual << ", expected=" << expected << "\n";
 		 std::cout << "    *** *** *** *** \n";
 		 retval = 2;
 	 }
 
 	return retval;
 }
-
-//int byte_count(std::vector<uint8_t> input) {
-//	int count = 0;
-//	std::array<int, 256> appearances;
-//	const int threshold = input.size() / 256;
-//
-//	for (int i = 0; i < input.size(); i++) {
-//		appearances[input[i]] += 1;
-//	}
-//
-//	for (auto bucket : appearances) {
-//		if (bucket > threshold) {
-//			count += 1;
-//		}
-//	}
-//
-//	return count;
-//}

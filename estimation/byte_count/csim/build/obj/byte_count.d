@@ -1,4 +1,5 @@
 obj/byte_count.o: ../../../../byte_count.c++ ../../../../byte_count.hpp \
+ /tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h \
  /tools/Xilinx/Vitis_HLS/2021.2/include/ap_fixed.h \
  /tools/Xilinx/Vitis_HLS/2021.2/include/ap_common.h \
  /tools/Xilinx/Vitis_HLS/2021.2/include/ap_decl.h \
@@ -7,7 +8,6 @@ obj/byte_count.o: ../../../../byte_count.c++ ../../../../byte_count.hpp \
  /tools/Xilinx/Vitis_HLS/2021.2/include/hls_half_fpo.h \
  /tools/Xilinx/Vitis_HLS/2021.2/include/hls_fpo.h \
  /tools/Xilinx/Vitis_HLS/2021.2/include/floating_point_v7_0_bitacc_cmodel.h \
- /tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h \
  /tools/Xilinx/Vitis_HLS/2021.2/include/mpfr.h \
  /tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h \
  /tools/Xilinx/Vitis_HLS/2021.2/include/mpfr.h \

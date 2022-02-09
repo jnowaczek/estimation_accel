@@ -158,6 +158,3748 @@ extern "C" {
 # 1 "./byte_count.hpp" 1
 
 
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h" 1
+# 27 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/iosfwd" 1 3
+# 37 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/iosfwd" 3
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 1 3
+# 196 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+namespace std
+{
+  typedef long unsigned int size_t;
+  typedef long int ptrdiff_t;
+
+
+  typedef decltype(nullptr) nullptr_t;
+
+}
+# 218 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+namespace std
+{
+  inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
+}
+namespace __gnu_cxx
+{
+  inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
+}
+# 495 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
+# 39 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/os_defines.h" 3
+# 1 "/usr/include/features.h" 1 3 4
+# 439 "/usr/include/features.h" 3 4
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 440 "/usr/include/features.h" 2 3 4
+# 461 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
+# 452 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 453 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 454 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
+# 462 "/usr/include/features.h" 2 3 4
+# 485 "/usr/include/features.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
+# 486 "/usr/include/features.h" 2 3 4
+# 40 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/os_defines.h" 2 3
+# 496 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/cpu_defines.h" 1 3
+# 499 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
+# 39 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/iosfwd" 2 3
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/stringfwd.h" 1 3
+# 38 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/stringfwd.h" 3
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/memoryfwd.h" 1 3
+# 47 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/memoryfwd.h" 3
+
+
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 63 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/memoryfwd.h" 3
+  template<typename>
+    class allocator;
+
+  template<>
+    class allocator<void>;
+
+
+  template<typename, typename>
+    struct uses_allocator;
+
+
+
+
+}
+# 41 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/stringfwd.h" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 52 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/stringfwd.h" 3
+  template<class _CharT>
+    struct char_traits;
+
+  template<> struct char_traits<char>;
+
+
+  template<> struct char_traits<wchar_t>;
+
+
+
+
+  template<> struct char_traits<char16_t>;
+  template<> struct char_traits<char32_t>;
+
+
+namespace __cxx11 {
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+           typename _Alloc = allocator<_CharT> >
+    class basic_string;
+
+
+  typedef basic_string<char> string;
+
+
+
+  typedef basic_string<wchar_t> wstring;
+
+
+
+
+
+  typedef basic_string<char16_t> u16string;
+
+
+  typedef basic_string<char32_t> u32string;
+
+
+}
+
+
+
+
+}
+# 40 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/iosfwd" 2 3
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/postypes.h" 1 3
+# 39 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/postypes.h" 3
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cwchar" 1 3
+# 40 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cwchar" 3
+
+
+
+
+# 1 "/usr/include/wchar.h" 1 3 4
+# 27 "/usr/include/wchar.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 28 "/usr/include/wchar.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
+# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
+# 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
+# 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
+# 214 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef float _Float32;
+# 251 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef double _Float64;
+# 268 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef double _Float32x;
+# 285 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+typedef long double _Float64x;
+# 121 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
+# 31 "/usr/include/wchar.h" 2 3 4
+
+
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 62 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3 4
+typedef long unsigned int size_t;
+# 36 "/usr/include/wchar.h" 2 3 4
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 1 3 4
+# 30 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+typedef __builtin_va_list va_list;
+# 48 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 39 "/usr/include/wchar.h" 2 3 4
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 41 "/usr/include/wchar.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 1 3 4
+# 20 "/usr/include/x86_64-linux-gnu/bits/types/wint_t.h" 3 4
+typedef unsigned int wint_t;
+# 42 "/usr/include/wchar.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 1 3 4
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 1 3 4
+# 13 "/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h" 3 4
+typedef struct
+{
+  int __count;
+  union
+  {
+    unsigned int __wch;
+    char __wchb[4];
+  } __value;
+} __mbstate_t;
+# 5 "/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h" 2 3 4
+
+typedef __mbstate_t mbstate_t;
+# 43 "/usr/include/wchar.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+typedef struct _IO_FILE __FILE;
+# 44 "/usr/include/wchar.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/FILE.h" 1 3 4
+
+
+
+struct _IO_FILE;
+
+
+typedef struct _IO_FILE FILE;
+# 47 "/usr/include/wchar.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 1 3 4
+# 22 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h" 3 4
+struct __locale_struct
+{
+
+  struct __locale_data *__locales[13];
+
+
+  const unsigned short int *__ctype_b;
+  const int *__ctype_tolower;
+  const int *__ctype_toupper;
+
+
+  const char *__names[13];
+};
+
+typedef struct __locale_struct *__locale_t;
+# 23 "/usr/include/x86_64-linux-gnu/bits/types/locale_t.h" 2 3 4
+
+typedef __locale_t locale_t;
+# 50 "/usr/include/wchar.h" 2 3 4
+# 79 "/usr/include/wchar.h" 3 4
+extern "C" {
+
+
+
+struct tm;
+
+
+
+extern wchar_t *wcscpy (wchar_t *__restrict __dest,
+   const wchar_t *__restrict __src)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern wchar_t *wcsncpy (wchar_t *__restrict __dest,
+    const wchar_t *__restrict __src, size_t __n)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern wchar_t *wcscat (wchar_t *__restrict __dest,
+   const wchar_t *__restrict __src)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+
+extern wchar_t *wcsncat (wchar_t *__restrict __dest,
+    const wchar_t *__restrict __src, size_t __n)
+     throw () __attribute__ ((__nonnull__ (1, 2)));
+
+
+extern int wcscmp (const wchar_t *__s1, const wchar_t *__s2)
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+extern int wcsncmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
+     throw () __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1, 2)));
+
+
+
+extern int wcscasecmp (const wchar_t *__s1, const wchar_t *__s2) throw ();
+
+
+extern int wcsncasecmp (const wchar_t *__s1, const wchar_t *__s2,
+   size_t __n) throw ();
+
+
+
+extern int wcscasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
+    locale_t __loc) throw ();
+
+extern int wcsncasecmp_l (const wchar_t *__s1, const wchar_t *__s2,
+     size_t __n, locale_t __loc) throw ();
+
+
+
+
+extern int wcscoll (const wchar_t *__s1, const wchar_t *__s2) throw ();
+
+
+
+extern size_t wcsxfrm (wchar_t *__restrict __s1,
+         const wchar_t *__restrict __s2, size_t __n) throw ();
+
+
+
+
+
+
+
+extern int wcscoll_l (const wchar_t *__s1, const wchar_t *__s2,
+        locale_t __loc) throw ();
+
+
+
+
+extern size_t wcsxfrm_l (wchar_t *__s1, const wchar_t *__s2,
+    size_t __n, locale_t __loc) throw ();
+
+
+extern wchar_t *wcsdup (const wchar_t *__s) throw () __attribute__ ((__malloc__));
+# 164 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcschr (const wchar_t *__wcs, wchar_t __wc)
+     throw () __attribute__ ((__pure__));
+# 174 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcsrchr (const wchar_t *__wcs, wchar_t __wc)
+     throw () __attribute__ ((__pure__));
+
+
+
+
+
+extern wchar_t *wcschrnul (const wchar_t *__s, wchar_t __wc)
+     throw () __attribute__ ((__pure__));
+
+
+
+
+extern size_t wcscspn (const wchar_t *__wcs, const wchar_t *__reject)
+     throw () __attribute__ ((__pure__));
+
+
+extern size_t wcsspn (const wchar_t *__wcs, const wchar_t *__accept)
+     throw () __attribute__ ((__pure__));
+# 201 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcspbrk (const wchar_t *__wcs, const wchar_t *__accept)
+     throw () __attribute__ ((__pure__));
+# 212 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcsstr (const wchar_t *__haystack, const wchar_t *__needle)
+     throw () __attribute__ ((__pure__));
+
+
+
+extern wchar_t *wcstok (wchar_t *__restrict __s,
+   const wchar_t *__restrict __delim,
+   wchar_t **__restrict __ptr) throw ();
+
+
+extern size_t wcslen (const wchar_t *__s) throw () __attribute__ ((__pure__));
+# 233 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcswcs (const wchar_t *__haystack, const wchar_t *__needle)
+     throw () __attribute__ ((__pure__));
+
+
+
+
+
+extern size_t wcsnlen (const wchar_t *__s, size_t __maxlen)
+     throw () __attribute__ ((__pure__));
+# 253 "/usr/include/wchar.h" 3 4
+extern wchar_t *wmemchr (const wchar_t *__s, wchar_t __c, size_t __n)
+     throw () __attribute__ ((__pure__));
+
+
+
+extern int wmemcmp (const wchar_t *__s1, const wchar_t *__s2, size_t __n)
+     throw () __attribute__ ((__pure__));
+
+
+extern wchar_t *wmemcpy (wchar_t *__restrict __s1,
+    const wchar_t *__restrict __s2, size_t __n) throw ();
+
+
+
+extern wchar_t *wmemmove (wchar_t *__s1, const wchar_t *__s2, size_t __n)
+     throw ();
+
+
+extern wchar_t *wmemset (wchar_t *__s, wchar_t __c, size_t __n) throw ();
+
+
+
+
+extern wchar_t *wmempcpy (wchar_t *__restrict __s1,
+     const wchar_t *__restrict __s2, size_t __n)
+     throw ();
+
+
+
+
+
+extern wint_t btowc (int __c) throw ();
+
+
+
+extern int wctob (wint_t __c) throw ();
+
+
+
+extern int mbsinit (const mbstate_t *__ps) throw () __attribute__ ((__pure__));
+
+
+
+extern size_t mbrtowc (wchar_t *__restrict __pwc,
+         const char *__restrict __s, size_t __n,
+         mbstate_t *__restrict __p) throw ();
+
+
+extern size_t wcrtomb (char *__restrict __s, wchar_t __wc,
+         mbstate_t *__restrict __ps) throw ();
+
+
+extern size_t __mbrlen (const char *__restrict __s, size_t __n,
+   mbstate_t *__restrict __ps) throw ();
+extern size_t mbrlen (const char *__restrict __s, size_t __n,
+        mbstate_t *__restrict __ps) throw ();
+# 337 "/usr/include/wchar.h" 3 4
+extern size_t mbsrtowcs (wchar_t *__restrict __dst,
+    const char **__restrict __src, size_t __len,
+    mbstate_t *__restrict __ps) throw ();
+
+
+
+extern size_t wcsrtombs (char *__restrict __dst,
+    const wchar_t **__restrict __src, size_t __len,
+    mbstate_t *__restrict __ps) throw ();
+
+
+
+
+
+extern size_t mbsnrtowcs (wchar_t *__restrict __dst,
+     const char **__restrict __src, size_t __nmc,
+     size_t __len, mbstate_t *__restrict __ps) throw ();
+
+
+
+extern size_t wcsnrtombs (char *__restrict __dst,
+     const wchar_t **__restrict __src,
+     size_t __nwc, size_t __len,
+     mbstate_t *__restrict __ps) throw ();
+
+
+
+
+
+
+extern int wcwidth (wchar_t __c) throw ();
+
+
+
+extern int wcswidth (const wchar_t *__s, size_t __n) throw ();
+
+
+
+
+
+extern double wcstod (const wchar_t *__restrict __nptr,
+        wchar_t **__restrict __endptr) throw ();
+
+
+
+extern float wcstof (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr) throw ();
+extern long double wcstold (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr) throw ();
+# 396 "/usr/include/wchar.h" 3 4
+extern _Float32 wcstof32 (const wchar_t *__restrict __nptr,
+     wchar_t **__restrict __endptr) throw ();
+
+
+
+extern _Float64 wcstof64 (const wchar_t *__restrict __nptr,
+     wchar_t **__restrict __endptr) throw ();
+# 411 "/usr/include/wchar.h" 3 4
+extern _Float32x wcstof32x (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr) throw ();
+
+
+
+extern _Float64x wcstof64x (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr) throw ();
+# 428 "/usr/include/wchar.h" 3 4
+extern long int wcstol (const wchar_t *__restrict __nptr,
+   wchar_t **__restrict __endptr, int __base) throw ();
+
+
+
+extern unsigned long int wcstoul (const wchar_t *__restrict __nptr,
+      wchar_t **__restrict __endptr, int __base)
+     throw ();
+
+
+
+
+__extension__
+extern long long int wcstoll (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr, int __base)
+     throw ();
+
+
+
+__extension__
+extern unsigned long long int wcstoull (const wchar_t *__restrict __nptr,
+     wchar_t **__restrict __endptr,
+     int __base) throw ();
+
+
+
+
+
+__extension__
+extern long long int wcstoq (const wchar_t *__restrict __nptr,
+        wchar_t **__restrict __endptr, int __base)
+     throw ();
+
+
+
+__extension__
+extern unsigned long long int wcstouq (const wchar_t *__restrict __nptr,
+           wchar_t **__restrict __endptr,
+           int __base) throw ();
+
+
+
+
+
+
+extern long int wcstol_l (const wchar_t *__restrict __nptr,
+     wchar_t **__restrict __endptr, int __base,
+     locale_t __loc) throw ();
+
+extern unsigned long int wcstoul_l (const wchar_t *__restrict __nptr,
+        wchar_t **__restrict __endptr,
+        int __base, locale_t __loc) throw ();
+
+__extension__
+extern long long int wcstoll_l (const wchar_t *__restrict __nptr,
+    wchar_t **__restrict __endptr,
+    int __base, locale_t __loc) throw ();
+
+__extension__
+extern unsigned long long int wcstoull_l (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr,
+       int __base, locale_t __loc)
+     throw ();
+
+extern double wcstod_l (const wchar_t *__restrict __nptr,
+   wchar_t **__restrict __endptr, locale_t __loc)
+     throw ();
+
+extern float wcstof_l (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr, locale_t __loc)
+     throw ();
+
+extern long double wcstold_l (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr,
+         locale_t __loc) throw ();
+# 511 "/usr/include/wchar.h" 3 4
+extern _Float32 wcstof32_l (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr,
+       locale_t __loc) throw ();
+
+
+
+extern _Float64 wcstof64_l (const wchar_t *__restrict __nptr,
+       wchar_t **__restrict __endptr,
+       locale_t __loc) throw ();
+# 529 "/usr/include/wchar.h" 3 4
+extern _Float32x wcstof32x_l (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr,
+         locale_t __loc) throw ();
+
+
+
+extern _Float64x wcstof64x_l (const wchar_t *__restrict __nptr,
+         wchar_t **__restrict __endptr,
+         locale_t __loc) throw ();
+# 551 "/usr/include/wchar.h" 3 4
+extern wchar_t *wcpcpy (wchar_t *__restrict __dest,
+   const wchar_t *__restrict __src) throw ();
+
+
+
+extern wchar_t *wcpncpy (wchar_t *__restrict __dest,
+    const wchar_t *__restrict __src, size_t __n)
+     throw ();
+# 567 "/usr/include/wchar.h" 3 4
+extern __FILE *open_wmemstream (wchar_t **__bufloc, size_t *__sizeloc) throw ();
+
+
+
+
+
+extern int fwide (__FILE *__fp, int __mode) throw ();
+
+
+
+
+
+
+extern int fwprintf (__FILE *__restrict __stream,
+       const wchar_t *__restrict __format, ...)
+                                                           ;
+
+
+
+
+extern int wprintf (const wchar_t *__restrict __format, ...)
+                                                           ;
+
+extern int swprintf (wchar_t *__restrict __s, size_t __n,
+       const wchar_t *__restrict __format, ...)
+     throw () ;
+
+
+
+
+
+extern int vfwprintf (__FILE *__restrict __s,
+        const wchar_t *__restrict __format,
+        __gnuc_va_list __arg)
+                                                           ;
+
+
+
+
+extern int vwprintf (const wchar_t *__restrict __format,
+       __gnuc_va_list __arg)
+                                                           ;
+
+
+extern int vswprintf (wchar_t *__restrict __s, size_t __n,
+        const wchar_t *__restrict __format,
+        __gnuc_va_list __arg)
+     throw () ;
+
+
+
+
+
+
+extern int fwscanf (__FILE *__restrict __stream,
+      const wchar_t *__restrict __format, ...)
+                                                          ;
+
+
+
+
+extern int wscanf (const wchar_t *__restrict __format, ...)
+                                                          ;
+
+extern int swscanf (const wchar_t *__restrict __s,
+      const wchar_t *__restrict __format, ...)
+     throw () ;
+
+
+
+
+
+
+extern int fwscanf (__FILE *__restrict __stream, const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc99_fwscanf")
+
+
+                                                          ;
+extern int wscanf (const wchar_t *__restrict __format, ...) __asm__ ("" "__isoc99_wscanf")
+
+                                                          ;
+extern int swscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, ...) throw () __asm__ ("" "__isoc99_swscanf")
+
+
+                                                          ;
+# 671 "/usr/include/wchar.h" 3 4
+extern int vfwscanf (__FILE *__restrict __s,
+       const wchar_t *__restrict __format,
+       __gnuc_va_list __arg)
+                                                          ;
+
+
+
+
+extern int vwscanf (const wchar_t *__restrict __format,
+      __gnuc_va_list __arg)
+                                                          ;
+
+extern int vswscanf (const wchar_t *__restrict __s,
+       const wchar_t *__restrict __format,
+       __gnuc_va_list __arg)
+     throw () ;
+
+
+
+
+
+
+extern int vfwscanf (__FILE *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfwscanf")
+
+
+                                                          ;
+extern int vwscanf (const wchar_t *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vwscanf")
+
+                                                          ;
+extern int vswscanf (const wchar_t *__restrict __s, const wchar_t *__restrict __format, __gnuc_va_list __arg) throw () __asm__ ("" "__isoc99_vswscanf")
+
+
+                                                          ;
+# 726 "/usr/include/wchar.h" 3 4
+extern wint_t fgetwc (__FILE *__stream);
+extern wint_t getwc (__FILE *__stream);
+
+
+
+
+
+extern wint_t getwchar (void);
+
+
+
+
+
+
+extern wint_t fputwc (wchar_t __wc, __FILE *__stream);
+extern wint_t putwc (wchar_t __wc, __FILE *__stream);
+
+
+
+
+
+extern wint_t putwchar (wchar_t __wc);
+
+
+
+
+
+
+
+extern wchar_t *fgetws (wchar_t *__restrict __ws, int __n,
+   __FILE *__restrict __stream);
+
+
+
+
+
+extern int fputws (const wchar_t *__restrict __ws,
+     __FILE *__restrict __stream);
+
+
+
+
+
+
+extern wint_t ungetwc (wint_t __wc, __FILE *__stream);
+# 781 "/usr/include/wchar.h" 3 4
+extern wint_t getwc_unlocked (__FILE *__stream);
+extern wint_t getwchar_unlocked (void);
+
+
+
+
+
+
+
+extern wint_t fgetwc_unlocked (__FILE *__stream);
+
+
+
+
+
+
+
+extern wint_t fputwc_unlocked (wchar_t __wc, __FILE *__stream);
+# 807 "/usr/include/wchar.h" 3 4
+extern wint_t putwc_unlocked (wchar_t __wc, __FILE *__stream);
+extern wint_t putwchar_unlocked (wchar_t __wc);
+# 817 "/usr/include/wchar.h" 3 4
+extern wchar_t *fgetws_unlocked (wchar_t *__restrict __ws, int __n,
+     __FILE *__restrict __stream);
+
+
+
+
+
+
+
+extern int fputws_unlocked (const wchar_t *__restrict __ws,
+       __FILE *__restrict __stream);
+
+
+
+
+
+
+extern size_t wcsftime (wchar_t *__restrict __s, size_t __maxsize,
+   const wchar_t *__restrict __format,
+   const struct tm *__restrict __tp) throw ();
+
+
+
+
+extern size_t wcsftime_l (wchar_t *__restrict __s, size_t __maxsize,
+     const wchar_t *__restrict __format,
+     const struct tm *__restrict __tp,
+     locale_t __loc) throw ();
+# 856 "/usr/include/wchar.h" 3 4
+}
+# 45 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cwchar" 2 3
+# 62 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cwchar" 3
+namespace std
+{
+  using ::mbstate_t;
+}
+# 135 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cwchar" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+
+
+  using ::wint_t;
+
+  using ::btowc;
+  using ::fgetwc;
+  using ::fgetws;
+  using ::fputwc;
+  using ::fputws;
+  using ::fwide;
+  using ::fwprintf;
+  using ::fwscanf;
+  using ::getwc;
+  using ::getwchar;
+  using ::mbrlen;
+  using ::mbrtowc;
+  using ::mbsinit;
+  using ::mbsrtowcs;
+  using ::putwc;
+  using ::putwchar;
+
+  using ::swprintf;
+
+  using ::swscanf;
+  using ::ungetwc;
+  using ::vfwprintf;
+
+  using ::vfwscanf;
+
+
+  using ::vswprintf;
+
+
+  using ::vswscanf;
+
+  using ::vwprintf;
+
+  using ::vwscanf;
+
+  using ::wcrtomb;
+  using ::wcscat;
+  using ::wcscmp;
+  using ::wcscoll;
+  using ::wcscpy;
+  using ::wcscspn;
+  using ::wcsftime;
+  using ::wcslen;
+  using ::wcsncat;
+  using ::wcsncmp;
+  using ::wcsncpy;
+  using ::wcsrtombs;
+  using ::wcsspn;
+  using ::wcstod;
+
+  using ::wcstof;
+
+  using ::wcstok;
+  using ::wcstol;
+  using ::wcstoul;
+  using ::wcsxfrm;
+  using ::wctob;
+  using ::wmemcmp;
+  using ::wmemcpy;
+  using ::wmemmove;
+  using ::wmemset;
+  using ::wprintf;
+  using ::wscanf;
+  using ::wcschr;
+  using ::wcspbrk;
+  using ::wcsrchr;
+  using ::wcsstr;
+  using ::wmemchr;
+
+
+  inline wchar_t*
+  wcschr(wchar_t* __p, wchar_t __c)
+  { return wcschr(const_cast<const wchar_t*>(__p), __c); }
+
+  inline wchar_t*
+  wcspbrk(wchar_t* __s1, const wchar_t* __s2)
+  { return wcspbrk(const_cast<const wchar_t*>(__s1), __s2); }
+
+  inline wchar_t*
+  wcsrchr(wchar_t* __p, wchar_t __c)
+  { return wcsrchr(const_cast<const wchar_t*>(__p), __c); }
+
+  inline wchar_t*
+  wcsstr(wchar_t* __s1, const wchar_t* __s2)
+  { return wcsstr(const_cast<const wchar_t*>(__s1), __s2); }
+
+  inline wchar_t*
+  wmemchr(wchar_t* __p, wchar_t __c, size_t __n)
+  { return wmemchr(const_cast<const wchar_t*>(__p), __c, __n); }
+
+
+
+}
+
+
+
+
+
+
+
+namespace __gnu_cxx
+{
+
+
+
+
+
+  using ::wcstold;
+# 257 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cwchar" 3
+  using ::wcstoll;
+  using ::wcstoull;
+
+}
+
+namespace std
+{
+  using ::__gnu_cxx::wcstold;
+  using ::__gnu_cxx::wcstoll;
+  using ::__gnu_cxx::wcstoull;
+}
+# 277 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cwchar" 3
+namespace std
+{
+
+  using std::wcstof;
+
+
+  using std::vfwscanf;
+
+
+  using std::vswscanf;
+
+
+  using std::vwscanf;
+
+
+
+  using std::wcstold;
+  using std::wcstoll;
+  using std::wcstoull;
+
+}
+# 41 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/postypes.h" 2 3
+# 68 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/postypes.h" 3
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 88 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/postypes.h" 3
+  typedef long streamoff;
+# 98 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/postypes.h" 3
+  typedef ptrdiff_t streamsize;
+# 111 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/postypes.h" 3
+  template<typename _StateT>
+    class fpos
+    {
+    private:
+      streamoff _M_off;
+      _StateT _M_state;
+
+    public:
+
+
+
+
+      fpos()
+      : _M_off(0), _M_state() { }
+# 133 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/bits/postypes.h" 3
+      fpos(streamoff __off)
+      : _M_off(__off), _M_state() { }
+
+
+      operator streamoff() const { return _M_off; }
+
+
+      void
+      state(_StateT __st)
+      { _M_state = __st; }
+
+
+      _StateT
+      state() const
+      { return _M_state; }
+
+
+
+
+
+      fpos&
+      operator+=(streamoff __off)
+      {
+ _M_off += __off;
+ return *this;
+      }
+
+
+
+
+
+      fpos&
+      operator-=(streamoff __off)
+      {
+ _M_off -= __off;
+ return *this;
+      }
+
+
+
+
+
+
+
+      fpos
+      operator+(streamoff __off) const
+      {
+ fpos __pos(*this);
+ __pos += __off;
+ return __pos;
+      }
+
+
+
+
+
+
+
+      fpos
+      operator-(streamoff __off) const
+      {
+ fpos __pos(*this);
+ __pos -= __off;
+ return __pos;
+      }
+
+
+
+
+
+
+      streamoff
+      operator-(const fpos& __other) const
+      { return _M_off - __other._M_off; }
+    };
+
+
+
+
+
+
+  template<typename _StateT>
+    inline bool
+    operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+    { return streamoff(__lhs) == streamoff(__rhs); }
+
+  template<typename _StateT>
+    inline bool
+    operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+    { return streamoff(__lhs) != streamoff(__rhs); }
+
+
+
+
+
+  typedef fpos<mbstate_t> streampos;
+
+  typedef fpos<mbstate_t> wstreampos;
+
+
+
+  typedef fpos<mbstate_t> u16streampos;
+
+  typedef fpos<mbstate_t> u32streampos;
+
+
+
+}
+# 41 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/iosfwd" 2 3
+
+namespace std __attribute__ ((__visibility__ ("default")))
+{
+# 74 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/iosfwd" 3
+  class ios_base;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_ios;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_streambuf;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_istream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_ostream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_iostream;
+
+
+namespace __cxx11 {
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+     typename _Alloc = allocator<_CharT> >
+    class basic_stringbuf;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+    typename _Alloc = allocator<_CharT> >
+    class basic_istringstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+    typename _Alloc = allocator<_CharT> >
+    class basic_ostringstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+    typename _Alloc = allocator<_CharT> >
+    class basic_stringstream;
+
+}
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_filebuf;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_ifstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_ofstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class basic_fstream;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class istreambuf_iterator;
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT> >
+    class ostreambuf_iterator;
+
+
+
+  typedef basic_ios<char> ios;
+
+
+  typedef basic_streambuf<char> streambuf;
+
+
+  typedef basic_istream<char> istream;
+
+
+  typedef basic_ostream<char> ostream;
+
+
+  typedef basic_iostream<char> iostream;
+
+
+  typedef basic_stringbuf<char> stringbuf;
+
+
+  typedef basic_istringstream<char> istringstream;
+
+
+  typedef basic_ostringstream<char> ostringstream;
+
+
+  typedef basic_stringstream<char> stringstream;
+
+
+  typedef basic_filebuf<char> filebuf;
+
+
+  typedef basic_ifstream<char> ifstream;
+
+
+  typedef basic_ofstream<char> ofstream;
+
+
+  typedef basic_fstream<char> fstream;
+
+
+
+  typedef basic_ios<wchar_t> wios;
+
+
+  typedef basic_streambuf<wchar_t> wstreambuf;
+
+
+  typedef basic_istream<wchar_t> wistream;
+
+
+  typedef basic_ostream<wchar_t> wostream;
+
+
+  typedef basic_iostream<wchar_t> wiostream;
+
+
+  typedef basic_stringbuf<wchar_t> wstringbuf;
+
+
+  typedef basic_istringstream<wchar_t> wistringstream;
+
+
+  typedef basic_ostringstream<wchar_t> wostringstream;
+
+
+  typedef basic_stringstream<wchar_t> wstringstream;
+
+
+  typedef basic_filebuf<wchar_t> wfilebuf;
+
+
+  typedef basic_ifstream<wchar_t> wifstream;
+
+
+  typedef basic_ofstream<wchar_t> wofstream;
+
+
+  typedef basic_fstream<wchar_t> wfstream;
+
+
+
+
+}
+# 28 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h" 2
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstdio" 1 3
+# 40 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstdio" 3
+
+
+# 1 "/usr/include/stdio.h" 1 3 4
+# 27 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 28 "/usr/include/stdio.h" 2 3 4
+
+extern "C" {
+
+
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3 4
+# 34 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/timesize.h" 1 3 4
+# 29 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned char __u_char;
+typedef unsigned short int __u_short;
+typedef unsigned int __u_int;
+typedef unsigned long int __u_long;
+
+
+typedef signed char __int8_t;
+typedef unsigned char __uint8_t;
+typedef signed short int __int16_t;
+typedef unsigned short int __uint16_t;
+typedef signed int __int32_t;
+typedef unsigned int __uint32_t;
+
+typedef signed long int __int64_t;
+typedef unsigned long int __uint64_t;
+
+
+
+
+
+
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
+
+typedef long int __quad_t;
+typedef unsigned long int __u_quad_t;
+
+
+
+
+
+
+
+typedef long int __intmax_t;
+typedef unsigned long int __uintmax_t;
+# 141 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/time64.h" 1 3 4
+# 143 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+
+
+typedef unsigned long int __dev_t;
+typedef unsigned int __uid_t;
+typedef unsigned int __gid_t;
+typedef unsigned long int __ino_t;
+typedef unsigned long int __ino64_t;
+typedef unsigned int __mode_t;
+typedef unsigned long int __nlink_t;
+typedef long int __off_t;
+typedef long int __off64_t;
+typedef int __pid_t;
+typedef struct { int __val[2]; } __fsid_t;
+typedef long int __clock_t;
+typedef unsigned long int __rlim_t;
+typedef unsigned long int __rlim64_t;
+typedef unsigned int __id_t;
+typedef long int __time_t;
+typedef unsigned int __useconds_t;
+typedef long int __suseconds_t;
+
+typedef int __daddr_t;
+typedef int __key_t;
+
+
+typedef int __clockid_t;
+
+
+typedef void * __timer_t;
+
+
+typedef long int __blksize_t;
+
+
+
+
+typedef long int __blkcnt_t;
+typedef long int __blkcnt64_t;
+
+
+typedef unsigned long int __fsblkcnt_t;
+typedef unsigned long int __fsblkcnt64_t;
+
+
+typedef unsigned long int __fsfilcnt_t;
+typedef unsigned long int __fsfilcnt64_t;
+
+
+typedef long int __fsword_t;
+
+typedef long int __ssize_t;
+
+
+typedef long int __syscall_slong_t;
+
+typedef unsigned long int __syscall_ulong_t;
+
+
+
+typedef __off64_t __loff_t;
+typedef char *__caddr_t;
+
+
+typedef long int __intptr_t;
+
+
+typedef unsigned int __socklen_t;
+
+
+
+
+typedef int __sig_atomic_t;
+# 39 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h" 3 4
+typedef struct _G_fpos_t
+{
+  __off_t __pos;
+  __mbstate_t __state;
+} __fpos_t;
+# 40 "/usr/include/stdio.h" 2 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 1 3 4
+# 10 "/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h" 3 4
+typedef struct _G_fpos64_t
+{
+  __off64_t __pos;
+  __mbstate_t __state;
+} __fpos64_t;
+# 41 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 1 3 4
+# 35 "/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h" 3 4
+struct _IO_FILE;
+struct _IO_marker;
+struct _IO_codecvt;
+struct _IO_wide_data;
+
+
+
+
+typedef void _IO_lock_t;
+
+
+
+
+
+struct _IO_FILE
+{
+  int _flags;
+
+
+  char *_IO_read_ptr;
+  char *_IO_read_end;
+  char *_IO_read_base;
+  char *_IO_write_base;
+  char *_IO_write_ptr;
+  char *_IO_write_end;
+  char *_IO_buf_base;
+  char *_IO_buf_end;
+
+
+  char *_IO_save_base;
+  char *_IO_backup_base;
+  char *_IO_save_end;
+
+  struct _IO_marker *_markers;
+
+  struct _IO_FILE *_chain;
+
+  int _fileno;
+  int _flags2;
+  __off_t _old_offset;
+
+
+  unsigned short _cur_column;
+  signed char _vtable_offset;
+  char _shortbuf[1];
+
+  _IO_lock_t *_lock;
+
+
+
+
+
+
+
+  __off64_t _offset;
+
+  struct _IO_codecvt *_codecvt;
+  struct _IO_wide_data *_wide_data;
+  struct _IO_FILE *_freeres_list;
+  void *_freeres_buf;
+  size_t __pad5;
+  int _mode;
+
+  char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+};
+# 44 "/usr/include/stdio.h" 2 3 4
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 1 3 4
+# 27 "/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h" 3 4
+typedef __ssize_t cookie_read_function_t (void *__cookie, char *__buf,
+                                          size_t __nbytes);
+
+
+
+
+
+
+
+typedef __ssize_t cookie_write_function_t (void *__cookie, const char *__buf,
+                                           size_t __nbytes);
+
+
+
+
+
+
+
+typedef int cookie_seek_function_t (void *__cookie, __off64_t *__pos, int __w);
+
+
+typedef int cookie_close_function_t (void *__cookie);
+
+
+
+
+
+
+typedef struct _IO_cookie_io_functions_t
+{
+  cookie_read_function_t *read;
+  cookie_write_function_t *write;
+  cookie_seek_function_t *seek;
+  cookie_close_function_t *close;
+} cookie_io_functions_t;
+# 47 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+
+typedef __gnuc_va_list va_list;
+# 63 "/usr/include/stdio.h" 3 4
+typedef __off_t off_t;
+
+
+
+
+
+
+typedef __off64_t off64_t;
+
+
+
+
+
+
+typedef __ssize_t ssize_t;
+
+
+
+
+
+
+typedef __fpos_t fpos_t;
+
+
+
+
+typedef __fpos64_t fpos64_t;
+# 133 "/usr/include/stdio.h" 3 4
+# 1 "/usr/include/x86_64-linux-gnu/bits/stdio_lim.h" 1 3 4
+# 134 "/usr/include/stdio.h" 2 3 4
+
+
+
+extern FILE *stdin;
+extern FILE *stdout;
+extern FILE *stderr;
+
+
+
+
+
+
+extern int remove (const char *__filename) throw ();
+
+extern int rename (const char *__old, const char *__new) throw ();
+
+
+
+extern int renameat (int __oldfd, const char *__old, int __newfd,
+       const char *__new) throw ();
+# 164 "/usr/include/stdio.h" 3 4
+extern int renameat2 (int __oldfd, const char *__old, int __newfd,
+        const char *__new, unsigned int __flags) throw ();
+
+
+
+
+
+
+
+extern FILE *tmpfile (void) ;
+# 183 "/usr/include/stdio.h" 3 4
+extern FILE *tmpfile64 (void) ;
+
+
+
+extern char *tmpnam (char *__s) throw () ;
+
+
+
+
+extern char *tmpnam_r (char *__s) throw () ;
+# 204 "/usr/include/stdio.h" 3 4
+extern char *tempnam (const char *__dir, const char *__pfx)
+     throw () __attribute__ ((__malloc__)) ;
+
+
+
+
+
+
+
+extern int fclose (FILE *__stream);
+
+
+
+
+extern int fflush (FILE *__stream);
+# 227 "/usr/include/stdio.h" 3 4
+extern int fflush_unlocked (FILE *__stream);
+# 237 "/usr/include/stdio.h" 3 4
+extern int fcloseall (void);
+# 246 "/usr/include/stdio.h" 3 4
+extern FILE *fopen (const char *__restrict __filename,
+      const char *__restrict __modes) ;
+
+
+
+
+extern FILE *freopen (const char *__restrict __filename,
+        const char *__restrict __modes,
+        FILE *__restrict __stream) ;
+# 270 "/usr/include/stdio.h" 3 4
+extern FILE *fopen64 (const char *__restrict __filename,
+        const char *__restrict __modes) ;
+extern FILE *freopen64 (const char *__restrict __filename,
+   const char *__restrict __modes,
+   FILE *__restrict __stream) ;
+
+
+
+
+extern FILE *fdopen (int __fd, const char *__modes) throw () ;
+
+
+
+
+
+extern FILE *fopencookie (void *__restrict __magic_cookie,
+     const char *__restrict __modes,
+     cookie_io_functions_t __io_funcs) throw () ;
+
+
+
+
+extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+  throw () ;
+
+
+
+
+extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) throw () ;
+
+
+
+
+
+extern void setbuf (FILE *__restrict __stream, char *__restrict __buf) throw ();
+
+
+
+extern int setvbuf (FILE *__restrict __stream, char *__restrict __buf,
+      int __modes, size_t __n) throw ();
+
+
+
+
+extern void setbuffer (FILE *__restrict __stream, char *__restrict __buf,
+         size_t __size) throw ();
+
+
+extern void setlinebuf (FILE *__stream) throw ();
+
+
+
+
+
+
+
+extern int fprintf (FILE *__restrict __stream,
+      const char *__restrict __format, ...);
+
+
+
+
+extern int printf (const char *__restrict __format, ...);
+
+extern int sprintf (char *__restrict __s,
+      const char *__restrict __format, ...) throw ();
+
+
+
+
+
+extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg);
+
+
+
+
+extern int vprintf (const char *__restrict __format, __gnuc_va_list __arg);
+
+extern int vsprintf (char *__restrict __s, const char *__restrict __format,
+       __gnuc_va_list __arg) throw ();
+
+
+
+extern int snprintf (char *__restrict __s, size_t __maxlen,
+       const char *__restrict __format, ...)
+     throw () __attribute__ ((__format__ (__printf__, 3, 4)));
+
+extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+        const char *__restrict __format, __gnuc_va_list __arg)
+     throw () __attribute__ ((__format__ (__printf__, 3, 0)));
+
+
+
+
+
+extern int vasprintf (char **__restrict __ptr, const char *__restrict __f,
+        __gnuc_va_list __arg)
+     throw () __attribute__ ((__format__ (__printf__, 2, 0))) ;
+extern int __asprintf (char **__restrict __ptr,
+         const char *__restrict __fmt, ...)
+     throw () __attribute__ ((__format__ (__printf__, 2, 3))) ;
+extern int asprintf (char **__restrict __ptr,
+       const char *__restrict __fmt, ...)
+     throw () __attribute__ ((__format__ (__printf__, 2, 3))) ;
+
+
+
+
+extern int vdprintf (int __fd, const char *__restrict __fmt,
+       __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__printf__, 2, 0)));
+extern int dprintf (int __fd, const char *__restrict __fmt, ...)
+     __attribute__ ((__format__ (__printf__, 2, 3)));
+
+
+
+
+
+
+
+extern int fscanf (FILE *__restrict __stream,
+     const char *__restrict __format, ...) ;
+
+
+
+
+extern int scanf (const char *__restrict __format, ...) ;
+
+extern int sscanf (const char *__restrict __s,
+     const char *__restrict __format, ...) throw ();
+
+
+
+
+
+
+extern int fscanf (FILE *__restrict __stream, const char *__restrict __format, ...) __asm__ ("" "__isoc99_fscanf") ;
+
+
+extern int scanf (const char *__restrict __format, ...) __asm__ ("" "__isoc99_scanf") ;
+
+extern int sscanf (const char *__restrict __s, const char *__restrict __format, ...) throw () __asm__ ("" "__isoc99_sscanf");
+# 432 "/usr/include/stdio.h" 3 4
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format,
+      __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 2, 0))) ;
+
+
+
+
+
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg)
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+
+
+extern int vsscanf (const char *__restrict __s,
+      const char *__restrict __format, __gnuc_va_list __arg)
+     throw () __attribute__ ((__format__ (__scanf__, 2, 0)));
+
+
+
+
+extern int vfscanf (FILE *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vfscanf")
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0))) ;
+extern int vscanf (const char *__restrict __format, __gnuc_va_list __arg) __asm__ ("" "__isoc99_vscanf")
+
+     __attribute__ ((__format__ (__scanf__, 1, 0))) ;
+extern int vsscanf (const char *__restrict __s, const char *__restrict __format, __gnuc_va_list __arg) throw () __asm__ ("" "__isoc99_vsscanf")
+
+
+
+     __attribute__ ((__format__ (__scanf__, 2, 0)));
+# 485 "/usr/include/stdio.h" 3 4
+extern int fgetc (FILE *__stream);
+extern int getc (FILE *__stream);
+
+
+
+
+
+extern int getchar (void);
+
+
+
+
+
+
+extern int getc_unlocked (FILE *__stream);
+extern int getchar_unlocked (void);
+# 510 "/usr/include/stdio.h" 3 4
+extern int fgetc_unlocked (FILE *__stream);
+# 521 "/usr/include/stdio.h" 3 4
+extern int fputc (int __c, FILE *__stream);
+extern int putc (int __c, FILE *__stream);
+
+
+
+
+
+extern int putchar (int __c);
+# 537 "/usr/include/stdio.h" 3 4
+extern int fputc_unlocked (int __c, FILE *__stream);
+
+
+
+
+
+
+
+extern int putc_unlocked (int __c, FILE *__stream);
+extern int putchar_unlocked (int __c);
+
+
+
+
+
+
+extern int getw (FILE *__stream);
+
+
+extern int putw (int __w, FILE *__stream);
+
+
+
+
+
+
+
+extern char *fgets (char *__restrict __s, int __n, FILE *__restrict __stream)
+          ;
+# 587 "/usr/include/stdio.h" 3 4
+extern char *fgets_unlocked (char *__restrict __s, int __n,
+        FILE *__restrict __stream) ;
+# 603 "/usr/include/stdio.h" 3 4
+extern __ssize_t __getdelim (char **__restrict __lineptr,
+                             size_t *__restrict __n, int __delimiter,
+                             FILE *__restrict __stream) ;
+extern __ssize_t getdelim (char **__restrict __lineptr,
+                           size_t *__restrict __n, int __delimiter,
+                           FILE *__restrict __stream) ;
+
+
+
+
+
+
+
+extern __ssize_t getline (char **__restrict __lineptr,
+                          size_t *__restrict __n,
+                          FILE *__restrict __stream) ;
+
+
+
+
+
+
+
+extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
+
+
+
+
+
+extern int puts (const char *__s);
+
+
+
+
+
+
+extern int ungetc (int __c, FILE *__stream);
+
+
+
+
+
+
+extern size_t fread (void *__restrict __ptr, size_t __size,
+       size_t __n, FILE *__restrict __stream) ;
+
+
+
+
+extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+        size_t __n, FILE *__restrict __s);
+# 662 "/usr/include/stdio.h" 3 4
+extern int fputs_unlocked (const char *__restrict __s,
+      FILE *__restrict __stream);
+# 673 "/usr/include/stdio.h" 3 4
+extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+         size_t __n, FILE *__restrict __stream) ;
+extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+          size_t __n, FILE *__restrict __stream);
+
+
+
+
+
+
+
+extern int fseek (FILE *__stream, long int __off, int __whence);
+
+
+
+
+extern long int ftell (FILE *__stream) ;
+
+
+
+
+extern void rewind (FILE *__stream);
+# 707 "/usr/include/stdio.h" 3 4
+extern int fseeko (FILE *__stream, __off_t __off, int __whence);
+
+
+
+
+extern __off_t ftello (FILE *__stream) ;
+# 731 "/usr/include/stdio.h" 3 4
+extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos);
+
+
+
+
+extern int fsetpos (FILE *__stream, const fpos_t *__pos);
+# 750 "/usr/include/stdio.h" 3 4
+extern int fseeko64 (FILE *__stream, __off64_t __off, int __whence);
+extern __off64_t ftello64 (FILE *__stream) ;
+extern int fgetpos64 (FILE *__restrict __stream, fpos64_t *__restrict __pos);
+extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos);
+
+
+
+extern void clearerr (FILE *__stream) throw ();
+
+extern int feof (FILE *__stream) throw () ;
+
+extern int ferror (FILE *__stream) throw () ;
+
+
+
+extern void clearerr_unlocked (FILE *__stream) throw ();
+extern int feof_unlocked (FILE *__stream) throw () ;
+extern int ferror_unlocked (FILE *__stream) throw () ;
+
+
+
+
+
+
+
+extern void perror (const char *__s);
+
+
+
+
+
+
+# 1 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 1 3 4
+# 26 "/usr/include/x86_64-linux-gnu/bits/sys_errlist.h" 3 4
+extern int sys_nerr;
+extern const char *const sys_errlist[];
+
+
+extern int _sys_nerr;
+extern const char *const _sys_errlist[];
+# 782 "/usr/include/stdio.h" 2 3 4
+
+
+
+
+extern int fileno (FILE *__stream) throw () ;
+
+
+
+
+extern int fileno_unlocked (FILE *__stream) throw () ;
+# 800 "/usr/include/stdio.h" 3 4
+extern FILE *popen (const char *__command, const char *__modes) ;
+
+
+
+
+
+extern int pclose (FILE *__stream);
+
+
+
+
+
+extern char *ctermid (char *__s) throw ();
+
+
+
+
+
+extern char *cuserid (char *__s);
+
+
+
+
+struct obstack;
+
+
+extern int obstack_printf (struct obstack *__restrict __obstack,
+      const char *__restrict __format, ...)
+     throw () __attribute__ ((__format__ (__printf__, 2, 3)));
+extern int obstack_vprintf (struct obstack *__restrict __obstack,
+       const char *__restrict __format,
+       __gnuc_va_list __args)
+     throw () __attribute__ ((__format__ (__printf__, 2, 0)));
+
+
+
+
+
+
+
+extern void flockfile (FILE *__stream) throw ();
+
+
+
+extern int ftrylockfile (FILE *__stream) throw () ;
+
+
+extern void funlockfile (FILE *__stream) throw ();
+# 858 "/usr/include/stdio.h" 3 4
+extern int __uflow (FILE *);
+extern int __overflow (FILE *, int);
+# 873 "/usr/include/stdio.h" 3 4
+}
+# 43 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstdio" 2 3
+# 96 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstdio" 3
+namespace std
+{
+  using ::FILE;
+  using ::fpos_t;
+
+  using ::clearerr;
+  using ::fclose;
+  using ::feof;
+  using ::ferror;
+  using ::fflush;
+  using ::fgetc;
+  using ::fgetpos;
+  using ::fgets;
+  using ::fopen;
+  using ::fprintf;
+  using ::fputc;
+  using ::fputs;
+  using ::fread;
+  using ::freopen;
+  using ::fscanf;
+  using ::fseek;
+  using ::fsetpos;
+  using ::ftell;
+  using ::fwrite;
+  using ::getc;
+  using ::getchar;
+
+
+
+
+  using ::perror;
+  using ::printf;
+  using ::putc;
+  using ::putchar;
+  using ::puts;
+  using ::remove;
+  using ::rename;
+  using ::rewind;
+  using ::scanf;
+  using ::setbuf;
+  using ::setvbuf;
+  using ::sprintf;
+  using ::sscanf;
+  using ::tmpfile;
+
+  using ::tmpnam;
+
+  using ::ungetc;
+  using ::vfprintf;
+  using ::vprintf;
+  using ::vsprintf;
+}
+# 157 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstdio" 3
+namespace __gnu_cxx
+{
+# 175 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstdio" 3
+  using ::snprintf;
+  using ::vfscanf;
+  using ::vscanf;
+  using ::vsnprintf;
+  using ::vsscanf;
+
+}
+
+namespace std
+{
+  using ::__gnu_cxx::snprintf;
+  using ::__gnu_cxx::vfscanf;
+  using ::__gnu_cxx::vscanf;
+  using ::__gnu_cxx::vsnprintf;
+  using ::__gnu_cxx::vsscanf;
+}
+# 29 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h" 2
+# 54 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstddef" 1 3
+# 43 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstddef" 3
+
+
+
+
+
+
+
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 1 3
+# 51 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
+typedef long int ptrdiff_t;
+# 118 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 3
+# 1 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/__stddef_max_align_t.h" 1 3
+# 35 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/__stddef_max_align_t.h" 3
+typedef struct {
+  long long __clang_max_align_nonce1
+      __attribute__((__aligned__(__alignof__(long long))));
+  long double __clang_max_align_nonce2
+      __attribute__((__aligned__(__alignof__(long double))));
+} max_align_t;
+# 119 "/tools/Xilinx/Vitis_HLS/2021.2/lnx64/tools/clang-3.9-csynth/lib/clang/7.0.0/include/stddef.h" 2 3
+# 51 "/tools/Xilinx/Vitis_HLS/2021.2/tps/lnx64/gcc-6.2.0/lib/gcc/x86_64-pc-linux-gnu/6.2.0/../../../../include/c++/6.2.0/cstddef" 2 3
+
+
+namespace std
+{
+
+  using ::max_align_t;
+}
+# 55 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h" 2
+# 202 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+typedef unsigned long int mp_limb_t;
+typedef long int mp_limb_signed_t;
+
+
+
+
+
+
+typedef unsigned long int mp_bitcnt_t;
+
+
+
+
+
+typedef struct
+{
+  int _mp_alloc;
+
+  int _mp_size;
+
+
+  mp_limb_t *_mp_d;
+} __mpz_struct;
+
+
+
+typedef __mpz_struct mpz_t[1];
+
+typedef mp_limb_t * mp_ptr;
+typedef const mp_limb_t * mp_srcptr;
+
+
+
+
+
+
+typedef long int mp_size_t;
+typedef long int mp_exp_t;
+
+
+typedef struct
+{
+  __mpz_struct _mp_num;
+  __mpz_struct _mp_den;
+} __mpq_struct;
+
+typedef __mpq_struct mpq_t[1];
+
+typedef struct
+{
+  int _mp_prec;
+
+
+
+  int _mp_size;
+
+
+  mp_exp_t _mp_exp;
+  mp_limb_t *_mp_d;
+} __mpf_struct;
+
+typedef __mpf_struct mpf_t[1];
+
+
+typedef enum
+{
+  GMP_RAND_ALG_DEFAULT = 0,
+  GMP_RAND_ALG_LC = GMP_RAND_ALG_DEFAULT
+} gmp_randalg_t;
+
+
+typedef struct
+{
+  mpz_t _mp_seed;
+  gmp_randalg_t _mp_alg;
+  union {
+    void *_mp_lc;
+  } _mp_algdata;
+} __gmp_randstate_struct;
+typedef __gmp_randstate_struct gmp_randstate_t[1];
+
+
+
+typedef const __mpz_struct *mpz_srcptr;
+typedef __mpz_struct *mpz_ptr;
+typedef const __mpf_struct *mpf_srcptr;
+typedef __mpf_struct *mpf_ptr;
+typedef const __mpq_struct *mpq_srcptr;
+typedef __mpq_struct *mpq_ptr;
+# 533 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+extern "C" {
+using std::FILE;
+
+
+
+               void __gmp_set_memory_functions (void *(*) (size_t), void *(*) (void *, size_t, size_t), void (*) (void *, size_t)) throw ();
+
+
+
+
+               void __gmp_get_memory_functions (void *(**) (size_t), void *(**) (void *, size_t, size_t), void (**) (void *, size_t)) throw ();
+
+
+
+
+               extern const int __gmp_bits_per_limb;
+
+
+               extern int __gmp_errno;
+
+
+               extern const char * const __gmp_version;
+
+
+               extern const char * const __mpir_version;
+
+
+
+
+
+               void __gmp_randinit_default (gmp_randstate_t);
+
+
+               void __gmp_randinit_lc_2exp (gmp_randstate_t, mpz_srcptr, unsigned long int, mp_bitcnt_t);
+
+
+
+
+               int __gmp_randinit_lc_2exp_size (gmp_randstate_t, mp_bitcnt_t);
+
+
+               void __gmp_randinit_mt (gmp_randstate_t);
+
+
+               void __gmp_randinit_set (gmp_randstate_t, const __gmp_randstate_struct *);
+
+
+               void __gmp_randseed (gmp_randstate_t, mpz_srcptr);
+
+
+               void __gmp_randseed_ui (gmp_randstate_t, unsigned long int);
+
+
+               void __gmp_randclear (gmp_randstate_t);
+
+
+               unsigned long __gmp_urandomb_ui (gmp_randstate_t, unsigned long);
+
+
+               unsigned long __gmp_urandomm_ui (gmp_randstate_t, unsigned long);
+
+
+
+
+
+               int __gmp_asprintf (char **, const char *, ...);
+
+
+
+               int __gmp_fprintf (FILE *, const char *, ...);
+# 616 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+               int __gmp_printf (const char *, ...);
+
+
+               int __gmp_snprintf (char *, size_t, const char *, ...);
+
+
+               int __gmp_sprintf (char *, const char *, ...);
+
+
+
+               int __gmp_vasprintf (char **, const char *, va_list);
+
+
+
+
+               int __gmp_vfprintf (FILE *, const char *, va_list);
+
+
+
+
+               int __gmp_vprintf (const char *, va_list);
+
+
+
+
+               int __gmp_vsnprintf (char *, size_t, const char *, va_list);
+
+
+
+
+               int __gmp_vsprintf (char *, const char *, va_list);
+
+
+
+
+
+
+
+               int __gmp_fscanf (FILE *, const char *, ...);
+
+
+
+               int __gmp_scanf (const char *, ...);
+
+
+               int __gmp_sscanf (const char *, const char *, ...);
+
+
+
+               int __gmp_vfscanf (FILE *, const char *, va_list);
+
+
+
+
+               int __gmp_vscanf (const char *, va_list);
+
+
+
+
+               int __gmp_vsscanf (const char *, const char *, va_list);
+# 685 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+               void *__gmpz_realloc (mpz_ptr, mp_size_t);
+
+
+
+
+               void __gmpz_abs (mpz_ptr, mpz_srcptr);
+
+
+
+
+               void __gmpz_add (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+
+               void __gmpz_add_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_addmul (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_addmul_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_and (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_array_init (mpz_ptr, mp_size_t, mp_size_t);
+
+
+               void __gmpz_bin_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_bin_uiui (mpz_ptr, unsigned long int, unsigned long int);
+
+
+               void __gmpz_cdiv_q (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_cdiv_q_2exp (mpz_ptr, mpz_srcptr, unsigned long);
+
+
+               unsigned long int __gmpz_cdiv_q_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_cdiv_qr (mpz_ptr, mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               unsigned long int __gmpz_cdiv_qr_ui (mpz_ptr, mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_cdiv_r (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_cdiv_r_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+               unsigned long int __gmpz_cdiv_r_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               unsigned long int __gmpz_cdiv_ui (mpz_srcptr, unsigned long int) __attribute__ ((__pure__));
+
+
+               void __gmpz_clear (mpz_ptr);
+
+
+               void __gmpz_clears (mpz_ptr, ...);
+
+
+               void __gmpz_clrbit (mpz_ptr, mp_bitcnt_t);
+
+
+               int __gmpz_cmp (mpz_srcptr, mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpz_cmp_d (mpz_srcptr, double) __attribute__ ((__pure__));
+
+
+               int __gmpz_cmp_si (mpz_srcptr, signed long int) throw () __attribute__ ((__pure__));
+
+
+               int __gmpz_cmp_ui (mpz_srcptr, unsigned long int) throw () __attribute__ ((__pure__));
+
+
+               int __gmpz_cmpabs (mpz_srcptr, mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpz_cmpabs_d (mpz_srcptr, double) __attribute__ ((__pure__));
+
+
+               int __gmpz_cmpabs_ui (mpz_srcptr, unsigned long int) throw () __attribute__ ((__pure__));
+
+
+               void __gmpz_com (mpz_ptr, mpz_srcptr);
+
+
+               void __gmpz_combit (mpz_ptr, mp_bitcnt_t);
+
+
+               int __gmpz_congruent_p (mpz_srcptr, mpz_srcptr, mpz_srcptr) __attribute__ ((__pure__));
+
+
+               int __gmpz_congruent_2exp_p (mpz_srcptr, mpz_srcptr, mp_bitcnt_t) throw () __attribute__ ((__pure__));
+
+
+               int __gmpz_congruent_ui_p (mpz_srcptr, unsigned long, unsigned long) __attribute__ ((__pure__));
+
+
+               void __gmpz_divexact (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_divexact_ui (mpz_ptr, mpz_srcptr, unsigned long);
+
+
+               int __gmpz_divisible_p (mpz_srcptr, mpz_srcptr) __attribute__ ((__pure__));
+
+
+               int __gmpz_divisible_ui_p (mpz_srcptr, unsigned long) __attribute__ ((__pure__));
+
+
+               int __gmpz_divisible_2exp_p (mpz_srcptr, mp_bitcnt_t) throw () __attribute__ ((__pure__));
+
+
+               void __gmpz_dump (mpz_srcptr);
+
+
+               void *__gmpz_export (void *, size_t *, int, size_t, int, size_t, mpz_srcptr);
+
+
+               void __gmpz_fac_ui (mpz_ptr, unsigned long int);
+
+
+               void __gmpz_fdiv_q (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_fdiv_q_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+               unsigned long int __gmpz_fdiv_q_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_fdiv_qr (mpz_ptr, mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               unsigned long int __gmpz_fdiv_qr_ui (mpz_ptr, mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_fdiv_r (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_fdiv_r_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+               unsigned long int __gmpz_fdiv_r_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               unsigned long int __gmpz_fdiv_ui (mpz_srcptr, unsigned long int) __attribute__ ((__pure__));
+
+
+               void __gmpz_fib_ui (mpz_ptr, unsigned long int);
+
+
+               void __gmpz_fib2_ui (mpz_ptr, mpz_ptr, unsigned long int);
+
+
+               int __gmpz_fits_sint_p (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpz_fits_slong_p (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpz_fits_sshort_p (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+
+               int __gmpz_fits_uint_p (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+
+
+               int __gmpz_fits_ulong_p (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+
+
+               int __gmpz_fits_ushort_p (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+
+               void __gmpz_gcd (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               unsigned long int __gmpz_gcd_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_gcdext (mpz_ptr, mpz_ptr, mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               double __gmpz_get_d (mpz_srcptr) __attribute__ ((__pure__));
+
+
+               double __gmpz_get_d_2exp (signed long int *, mpz_srcptr);
+
+
+                            long int __gmpz_get_si (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+               char *__gmpz_get_str (char *, int, mpz_srcptr);
+
+
+
+               unsigned long int __gmpz_get_ui (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+
+
+               mp_limb_t __gmpz_getlimbn (mpz_srcptr, mp_size_t) throw () __attribute__ ((__pure__));
+
+
+
+               mp_bitcnt_t __gmpz_hamdist (mpz_srcptr, mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+               void __gmpz_import (mpz_ptr, size_t, int, size_t, int, size_t, const void *);
+
+
+               void __gmpz_init (mpz_ptr);
+
+
+               void __gmpz_init2 (mpz_ptr, mp_bitcnt_t);
+
+
+               void __gmpz_inits (mpz_ptr, ...);
+
+
+               void __gmpz_init_set (mpz_ptr, mpz_srcptr);
+
+
+               void __gmpz_init_set_d (mpz_ptr, double);
+
+
+               void __gmpz_init_set_si (mpz_ptr, signed long int);
+
+
+               int __gmpz_init_set_str (mpz_ptr, const char *, int);
+
+
+               void __gmpz_init_set_ui (mpz_ptr, unsigned long int);
+
+
+
+               size_t __gmpz_inp_raw (mpz_ptr, FILE *);
+
+
+
+
+               size_t __gmpz_inp_str (mpz_ptr, FILE *, int);
+
+
+
+               int __gmpz_invert (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_ior (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               int __gmpz_jacobi (mpz_srcptr, mpz_srcptr) __attribute__ ((__pure__));
+
+
+
+
+               int __gmpz_kronecker_si (mpz_srcptr, long) __attribute__ ((__pure__));
+
+
+               int __gmpz_kronecker_ui (mpz_srcptr, unsigned long) __attribute__ ((__pure__));
+
+
+               int __gmpz_si_kronecker (long, mpz_srcptr) __attribute__ ((__pure__));
+
+
+               int __gmpz_ui_kronecker (unsigned long, mpz_srcptr) __attribute__ ((__pure__));
+
+
+               void __gmpz_lcm (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_lcm_ui (mpz_ptr, mpz_srcptr, unsigned long);
+
+
+
+
+               void __gmpz_lucnum_ui (mpz_ptr, unsigned long int);
+
+
+               void __gmpz_lucnum2_ui (mpz_ptr, mpz_ptr, unsigned long int);
+
+
+               int __gmpz_millerrabin (mpz_srcptr, int) __attribute__ ((__pure__));
+
+
+               void __gmpz_mod (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+
+
+
+               void __gmpz_mul (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_mul_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+
+               void __gmpz_mul_si (mpz_ptr, mpz_srcptr, long int);
+
+
+
+               void __gmpz_mul_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+
+
+               void __gmpz_neg (mpz_ptr, mpz_srcptr);
+
+
+
+               void __gmpz_nextprime (mpz_ptr, mpz_srcptr);
+
+
+               void __gmpz_next_likely_prime (mpz_ptr, mpz_srcptr,gmp_randstate_t);
+
+
+
+               size_t __gmpz_out_raw (FILE *, mpz_srcptr);
+
+
+
+
+               size_t __gmpz_out_str (FILE *, int, mpz_srcptr);
+
+
+
+               int __gmpz_perfect_power_p (mpz_srcptr) __attribute__ ((__pure__));
+
+
+
+               int __gmpz_perfect_square_p (mpz_srcptr) __attribute__ ((__pure__));
+
+
+
+
+               mp_bitcnt_t __gmpz_popcount (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+
+               void __gmpz_pow_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_powm (mpz_ptr, mpz_srcptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_powm_ui (mpz_ptr, mpz_srcptr, unsigned long int, mpz_srcptr);
+
+
+               int __gmpz_probab_prime_p (mpz_srcptr, int) __attribute__ ((__pure__));
+
+
+               int __gmpz_probable_prime_p (mpz_srcptr,gmp_randstate_t, int,unsigned long);
+
+
+               int __gmpz_likely_prime_p (mpz_srcptr,gmp_randstate_t, unsigned long);
+
+
+               void __gmpz_realloc2 (mpz_ptr, mp_bitcnt_t);
+
+
+               unsigned long int __gmpz_remove (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               int __gmpz_root (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_nthroot (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_rootrem (mpz_ptr,mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_rrandomb (mpz_ptr, gmp_randstate_t, mp_bitcnt_t);
+
+
+               mp_bitcnt_t __gmpz_scan0 (mpz_srcptr, mp_bitcnt_t) throw () __attribute__ ((__pure__));
+
+
+               mp_bitcnt_t __gmpz_scan1 (mpz_srcptr, mp_bitcnt_t) throw () __attribute__ ((__pure__));
+
+
+
+               void __gmpz_set (mpz_ptr, mpz_srcptr);
+
+
+               void __gmpz_set_d (mpz_ptr, double);
+
+
+               void __gmpz_set_f (mpz_ptr, mpf_srcptr);
+
+
+
+               void __gmpz_set_q (mpz_ptr, mpq_srcptr);
+
+
+
+
+               void __gmpz_set_si (mpz_ptr, signed long int);
+
+
+               int __gmpz_set_str (mpz_ptr, const char *, int);
+
+
+
+               void __gmpz_set_ui (mpz_ptr, unsigned long int);
+
+
+               void __gmpz_setbit (mpz_ptr, mp_bitcnt_t);
+
+
+
+               size_t __gmpz_size (mpz_srcptr) throw () __attribute__ ((__pure__));
+
+
+
+               size_t __gmpz_sizeinbase (mpz_srcptr, int) throw () __attribute__ ((__pure__));
+
+
+               void __gmpz_sqrt (mpz_ptr, mpz_srcptr);
+
+
+               void __gmpz_sqrtrem (mpz_ptr, mpz_ptr, mpz_srcptr);
+
+
+
+               void __gmpz_sub (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+
+               void __gmpz_sub_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+
+               void __gmpz_ui_sub (mpz_ptr, unsigned long int, mpz_srcptr);
+
+
+               void __gmpz_submul (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_submul_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_swap (mpz_ptr, mpz_ptr) throw ();
+
+
+               unsigned long int __gmpz_tdiv_ui (mpz_srcptr, unsigned long int) __attribute__ ((__pure__));
+
+
+               void __gmpz_tdiv_q (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_tdiv_q_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+               unsigned long int __gmpz_tdiv_q_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_tdiv_qr (mpz_ptr, mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               unsigned long int __gmpz_tdiv_qr_ui (mpz_ptr, mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               void __gmpz_tdiv_r (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+               void __gmpz_tdiv_r_2exp (mpz_ptr, mpz_srcptr, mp_bitcnt_t);
+
+
+               unsigned long int __gmpz_tdiv_r_ui (mpz_ptr, mpz_srcptr, unsigned long int);
+
+
+               int __gmpz_tstbit (mpz_srcptr, mp_bitcnt_t) throw () __attribute__ ((__pure__));
+
+
+               void __gmpz_ui_pow_ui (mpz_ptr, unsigned long int, unsigned long int);
+
+
+               void __gmpz_urandomb (mpz_ptr, gmp_randstate_t, mp_bitcnt_t);
+
+
+               void __gmpz_urandomm (mpz_ptr, gmp_randstate_t, mpz_srcptr);
+
+
+
+               void __gmpz_xor (mpz_ptr, mpz_srcptr, mpz_srcptr);
+
+
+
+
+
+
+               void __gmpq_abs (mpq_ptr, mpq_srcptr);
+
+
+
+               void __gmpq_add (mpq_ptr, mpq_srcptr, mpq_srcptr);
+
+
+               void __gmpq_canonicalize (mpq_ptr);
+
+
+               void __gmpq_clear (mpq_ptr);
+
+
+               void __gmpq_clears (mpq_ptr, ...);
+
+
+               int __gmpq_cmp (mpq_srcptr, mpq_srcptr) __attribute__ ((__pure__));
+
+
+               int __gmpq_cmp_si (mpq_srcptr, long, unsigned long) __attribute__ ((__pure__));
+
+
+               int __gmpq_cmp_ui (mpq_srcptr, unsigned long int, unsigned long int) __attribute__ ((__pure__));
+
+
+               void __gmpq_div (mpq_ptr, mpq_srcptr, mpq_srcptr);
+
+
+               void __gmpq_div_2exp (mpq_ptr, mpq_srcptr, mp_bitcnt_t);
+
+
+               int __gmpq_equal (mpq_srcptr, mpq_srcptr) throw () __attribute__ ((__pure__));
+
+
+               void __gmpq_get_num (mpz_ptr, mpq_srcptr);
+
+
+               void __gmpq_get_den (mpz_ptr, mpq_srcptr);
+
+
+               double __gmpq_get_d (mpq_srcptr) __attribute__ ((__pure__));
+
+
+               char *__gmpq_get_str (char *, int, mpq_srcptr);
+
+
+               void __gmpq_init (mpq_ptr);
+
+
+               void __gmpq_inits (mpq_ptr, ...);
+
+
+
+               size_t __gmpq_inp_str (mpq_ptr, FILE *, int);
+
+
+
+               void __gmpq_inv (mpq_ptr, mpq_srcptr);
+
+
+               void __gmpq_mul (mpq_ptr, mpq_srcptr, mpq_srcptr);
+
+
+               void __gmpq_mul_2exp (mpq_ptr, mpq_srcptr, mp_bitcnt_t);
+
+
+
+               void __gmpq_neg (mpq_ptr, mpq_srcptr);
+
+
+
+
+               size_t __gmpq_out_str (FILE *, int, mpq_srcptr);
+
+
+
+               void __gmpq_set (mpq_ptr, mpq_srcptr);
+
+
+               void __gmpq_set_d (mpq_ptr, double);
+
+
+               void __gmpq_set_den (mpq_ptr, mpz_srcptr);
+
+
+               void __gmpq_set_f (mpq_ptr, mpf_srcptr);
+
+
+               void __gmpq_set_num (mpq_ptr, mpz_srcptr);
+
+
+               void __gmpq_set_si (mpq_ptr, signed long int, unsigned long int);
+
+
+               int __gmpq_set_str (mpq_ptr, const char *, int);
+
+
+               void __gmpq_set_ui (mpq_ptr, unsigned long int, unsigned long int);
+
+
+               void __gmpq_set_z (mpq_ptr, mpz_srcptr);
+
+
+               void __gmpq_sub (mpq_ptr, mpq_srcptr, mpq_srcptr);
+
+
+               void __gmpq_swap (mpq_ptr, mpq_ptr) throw ();
+
+
+
+
+
+               void __gmpf_abs (mpf_ptr, mpf_srcptr);
+
+
+               void __gmpf_add (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+               void __gmpf_add_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+               void __gmpf_ceil (mpf_ptr, mpf_srcptr);
+
+
+               void __gmpf_clear (mpf_ptr);
+
+
+               void __gmpf_clears (mpf_ptr, ...);
+
+
+               int __gmpf_cmp (mpf_srcptr, mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpf_cmp_d (mpf_srcptr, double) __attribute__ ((__pure__));
+
+
+               int __gmpf_cmp_si (mpf_srcptr, signed long int) throw () __attribute__ ((__pure__));
+
+
+               int __gmpf_cmp_ui (mpf_srcptr, unsigned long int) throw () __attribute__ ((__pure__));
+
+
+               void __gmpf_div (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+               void __gmpf_div_2exp (mpf_ptr, mpf_srcptr, mp_bitcnt_t);
+
+
+               void __gmpf_div_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+
+               void __gmpf_dump (mpf_srcptr);
+
+
+               int __gmpf_eq (mpf_srcptr, mpf_srcptr, unsigned long int) __attribute__ ((__pure__));
+
+
+               int __gmpf_fits_sint_p (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpf_fits_slong_p (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpf_fits_sshort_p (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpf_fits_uint_p (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpf_fits_ulong_p (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               int __gmpf_fits_ushort_p (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               void __gmpf_floor (mpf_ptr, mpf_srcptr);
+
+
+               double __gmpf_get_d (mpf_srcptr) __attribute__ ((__pure__));
+
+
+               double __gmpf_get_d_2exp (signed long int *, mpf_srcptr);
+
+
+               mp_bitcnt_t __gmpf_get_default_prec (void) throw () __attribute__ ((__pure__));
+
+
+               mp_bitcnt_t __gmpf_get_prec (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               long __gmpf_get_si (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               char *__gmpf_get_str (char *, mp_exp_t *, int, size_t, mpf_srcptr);
+
+
+               unsigned long __gmpf_get_ui (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               void __gmpf_init (mpf_ptr);
+
+
+               void __gmpf_init2 (mpf_ptr, mp_bitcnt_t);
+
+
+               void __gmpf_inits (mpf_ptr, ...);
+
+
+               void __gmpf_init_set (mpf_ptr, mpf_srcptr);
+
+
+               void __gmpf_init_set_d (mpf_ptr, double);
+
+
+               void __gmpf_init_set_si (mpf_ptr, signed long int);
+
+
+               int __gmpf_init_set_str (mpf_ptr, const char *, int);
+
+
+               void __gmpf_init_set_ui (mpf_ptr, unsigned long int);
+
+
+
+               size_t __gmpf_inp_str (mpf_ptr, FILE *, int);
+
+
+
+               int __gmpf_integer_p (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               void __gmpf_mul (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+               void __gmpf_mul_2exp (mpf_ptr, mpf_srcptr, mp_bitcnt_t);
+
+
+               void __gmpf_mul_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+
+               void __gmpf_neg (mpf_ptr, mpf_srcptr);
+
+
+
+               size_t __gmpf_out_str (FILE *, int, size_t, mpf_srcptr);
+
+
+
+               void __gmpf_pow_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+
+               void __gmpf_random2 (mpf_ptr, mp_size_t, mp_exp_t);
+
+
+               void __gmpf_rrandomb (mpf_ptr, gmp_randstate_t, mp_size_t, mp_exp_t);
+
+
+               void __gmpf_reldiff (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+               void __gmpf_set (mpf_ptr, mpf_srcptr);
+
+
+               void __gmpf_set_d (mpf_ptr, double);
+
+
+               void __gmpf_set_default_prec (mp_bitcnt_t) throw ();
+
+
+               void __gmpf_set_prec (mpf_ptr, mp_bitcnt_t);
+
+
+               void __gmpf_set_prec_raw (mpf_ptr, mp_bitcnt_t) throw ();
+
+
+               void __gmpf_set_q (mpf_ptr, mpq_srcptr);
+
+
+               void __gmpf_set_si (mpf_ptr, signed long int);
+
+
+               int __gmpf_set_str (mpf_ptr, const char *, int);
+
+
+               void __gmpf_set_ui (mpf_ptr, unsigned long int);
+
+
+               void __gmpf_set_z (mpf_ptr, mpz_srcptr);
+
+
+               size_t __gmpf_size (mpf_srcptr) throw () __attribute__ ((__pure__));
+
+
+               void __gmpf_sqrt (mpf_ptr, mpf_srcptr);
+
+
+               void __gmpf_sqrt_ui (mpf_ptr, unsigned long int);
+
+
+               void __gmpf_sub (mpf_ptr, mpf_srcptr, mpf_srcptr);
+
+
+               void __gmpf_sub_ui (mpf_ptr, mpf_srcptr, unsigned long int);
+
+
+               void __gmpf_swap (mpf_ptr, mpf_ptr) throw ();
+
+
+               void __gmpf_trunc (mpf_ptr, mpf_srcptr);
+
+
+               void __gmpf_ui_div (mpf_ptr, unsigned long int, mpf_srcptr);
+
+
+               void __gmpf_ui_sub (mpf_ptr, unsigned long int, mpf_srcptr);
+
+
+               void __gmpf_urandomb (mpf_t, gmp_randstate_t, mp_bitcnt_t);
+# 1517 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+               mp_limb_t __gmpn_add (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr,mp_size_t);
+
+
+
+
+               mp_limb_t __gmpn_add_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t) throw ();
+
+
+
+               mp_limb_t __gmpn_add_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+               mp_limb_t __gmpn_addmul_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+               mp_limb_t __gmpn_bdivmod (mp_ptr, mp_ptr, mp_size_t, mp_srcptr, mp_size_t, unsigned long int);
+
+
+               mp_limb_t __gmpn_divrem (mp_ptr, mp_size_t, mp_ptr, mp_size_t, mp_srcptr, mp_size_t);
+
+
+               int __gmpn_mulmod_2expp1 (mp_ptr, mp_srcptr, mp_srcptr,int,unsigned long, mp_ptr);
+
+
+               void __gmpn_mulmod_2expm1 (mp_ptr, mp_ptr, mp_ptr,unsigned long, mp_ptr);
+
+
+
+               int __gmpn_cmp (mp_srcptr, mp_srcptr, mp_size_t) throw () __attribute__ ((__pure__));
+
+
+
+
+
+
+               mp_limb_t __gmpn_divexact_by3c (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+
+
+
+               mp_limb_t __gmpn_divrem_1 (mp_ptr, mp_size_t, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+               mp_limb_t __gmpn_divrem_2 (mp_ptr, mp_size_t, mp_ptr, mp_size_t, mp_srcptr);
+
+
+               void __gmpn_invert (mp_ptr xp, mp_srcptr ap, mp_size_t n);
+
+
+               mp_limb_t __gmpn_sb_divappr_q (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dip);
+
+
+
+               mp_limb_t __gmpn_dc_divappr_q_n (mp_ptr qp, mp_ptr np, mp_srcptr dp, mp_size_t n, mp_limb_t dip, mp_ptr tp);
+
+
+
+               void __gmpn_dc_bdiv_q_n (mp_ptr qp, mp_ptr wp, mp_ptr np, mp_srcptr dp, mp_size_t n, mp_limb_t dinv, mp_ptr scratch);
+
+
+
+               mp_limb_t __gmpn_inv_divappr_q_n (mp_ptr qp, mp_ptr np, mp_srcptr dp, mp_size_t n, mp_srcptr dip);
+
+
+
+               mp_limb_t __gmpn_dc_divappr_q (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t n, mp_limb_t dinv);
+
+
+
+               mp_limb_t __gmpn_dc_div_q (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dinv);
+
+
+
+               mp_limb_t __gmpn_inv_divappr_q (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t n, mp_srcptr dinv);
+
+
+
+               mp_limb_t __gmpn_inv_div_q (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_srcptr dinv);
+
+
+
+               mp_limb_t __gmpn_inv_div_qr (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_srcptr dinv);
+
+
+
+               mp_limb_t __gmpn_inv_div_qr_n (mp_ptr qp, mp_ptr np, mp_srcptr dp, mp_size_t dn, mp_srcptr dinv);
+
+
+
+               mp_limb_t __gmpn_dc_div_qr (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dinv);
+
+
+
+               mp_limb_t __gmpn_dc_div_qr_n (mp_ptr qp, mp_ptr np, mp_srcptr dp, mp_size_t n, mp_limb_t dinv, mp_ptr tp);
+
+
+
+               mp_limb_t __gmpn_sb_div_q (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dinv);
+
+
+
+               void __gmpn_sb_bdiv_q (mp_ptr qp, mp_ptr wp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dinv);
+
+
+
+               void __gmpn_dc_bdiv_q (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dinv);
+
+
+
+               mp_limb_t __gmpn_dc_bdiv_qr (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dinv);
+
+
+
+               mp_limb_t __gmpn_dc_bdiv_qr_n (mp_ptr qp, mp_ptr np, mp_srcptr dp, mp_size_t n, mp_limb_t dinv, mp_ptr tp);
+
+
+
+               mp_limb_t __gmpn_sb_div_qr (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dinv);
+
+
+
+               mp_limb_t __gmpn_sb_bdiv_qr (mp_ptr qp, mp_ptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn, mp_limb_t dinv);
+
+
+
+               void __gmpn_tdiv_q (mp_ptr qp, mp_srcptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn);
+
+
+
+               void __gmpn_divexact (mp_ptr qp, mp_srcptr np, mp_size_t nn, mp_srcptr dp, mp_size_t dn);
+
+
+
+               void __gmpn_redc_1 (mp_ptr, mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+               mp_size_t __gmpn_gcd (mp_ptr, mp_ptr, mp_size_t, mp_ptr, mp_size_t);
+
+
+               mp_limb_t __gmpn_gcd_1 (mp_srcptr, mp_size_t, mp_limb_t) __attribute__ ((__pure__));
+
+
+               mp_size_t __gmpn_gcdext (mp_ptr, mp_ptr, mp_size_t *, mp_ptr, mp_size_t, mp_ptr, mp_size_t);
+
+
+               size_t __gmpn_get_str (unsigned char *, int, mp_ptr, mp_size_t);
+
+
+               mp_bitcnt_t __gmpn_hamdist (mp_srcptr, mp_srcptr, mp_size_t) throw () __attribute__ ((__pure__));
+
+
+               mp_limb_t __gmpn_lshift (mp_ptr, mp_srcptr, mp_size_t, unsigned int);
+
+
+               mp_limb_t __gmpn_mod_1 (mp_srcptr, mp_size_t, mp_limb_t) __attribute__ ((__pure__));
+
+
+               mp_limb_t __gmpn_mul (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t);
+
+
+               mp_limb_t __gmpn_mul_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+               void __gmpn_mul_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+               void __gmpn_sqr (mp_ptr, mp_srcptr, mp_size_t);
+
+
+
+               mp_limb_t __gmpn_neg_n (mp_ptr, mp_srcptr, mp_size_t);
+
+
+
+               void __gmpn_com_n (mp_ptr, mp_srcptr, mp_size_t);
+
+
+               int __gmpn_perfect_square_p (mp_srcptr, mp_size_t) __attribute__ ((__pure__));
+
+
+               mp_bitcnt_t __gmpn_popcount (mp_srcptr, mp_size_t) throw () __attribute__ ((__pure__));
+
+
+               mp_size_t __gmpn_pow_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t, mp_ptr);
+
+
+
+               mp_limb_t __gmpn_preinv_mod_1 (mp_srcptr, mp_size_t, mp_limb_t, mp_limb_t) __attribute__ ((__pure__));
+
+
+               void __gmpn_random (mp_ptr, mp_size_t);
+
+
+               void __gmpn_random2 (mp_ptr, mp_size_t);
+
+
+               void __gmpn_urandomb (mp_ptr, gmp_randstate_t, unsigned long);
+
+
+               void __gmpn_urandomm (mp_ptr, gmp_randstate_t, mp_srcptr, mp_size_t);
+
+
+               void __gmpn_randomb (mp_ptr, gmp_randstate_t, mp_size_t);
+
+
+               void __gmpn_rrandom (mp_ptr, gmp_randstate_t, mp_size_t);
+
+
+               mp_limb_t __gmpn_rshift (mp_ptr, mp_srcptr, mp_size_t, unsigned int);
+
+
+               mp_bitcnt_t __gmpn_scan0 (mp_srcptr, mp_bitcnt_t) __attribute__ ((__pure__));
+
+
+               mp_bitcnt_t __gmpn_scan1 (mp_srcptr, mp_bitcnt_t) __attribute__ ((__pure__));
+
+
+               mp_size_t __gmpn_set_str (mp_ptr, const unsigned char *, size_t, int);
+
+
+               mp_size_t __gmpn_sqrtrem (mp_ptr, mp_ptr, mp_srcptr, mp_size_t);
+
+
+
+               mp_limb_t __gmpn_sub (mp_ptr, mp_srcptr, mp_size_t, mp_srcptr,mp_size_t);
+
+
+
+
+               mp_limb_t __gmpn_sub_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t) throw ();
+
+
+
+               mp_limb_t __gmpn_sub_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+               mp_limb_t __gmpn_submul_1 (mp_ptr, mp_srcptr, mp_size_t, mp_limb_t);
+
+
+               void __gmpn_tdiv_qr (mp_ptr, mp_ptr, mp_size_t, mp_srcptr, mp_size_t, mp_srcptr, mp_size_t);
+
+
+               void __gmpn_and_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_andn_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_nand_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_ior_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_iorn_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_nior_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_xor_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_xnor_n (mp_ptr, mp_srcptr, mp_srcptr, mp_size_t);
+
+
+               void __gmpn_copyi (mp_ptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_copyd (mp_ptr, mp_srcptr, mp_size_t);
+
+               void __gmpn_zero (mp_ptr, mp_size_t);
+# 1800 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+extern __inline__ __attribute__((__gnu_inline__)) void
+__gmpz_abs (mpz_ptr __gmp_w, mpz_srcptr __gmp_u)
+{
+  if (__gmp_w != __gmp_u)
+    __gmpz_set (__gmp_w, __gmp_u);
+  __gmp_w->_mp_size = ((__gmp_w->_mp_size) >= 0 ? (__gmp_w->_mp_size) : -(__gmp_w->_mp_size));
+}
+# 1824 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+extern __inline__ __attribute__((__gnu_inline__))
+
+int
+__gmpz_fits_uint_p (mpz_srcptr __gmp_z) throw ()
+{
+  mp_size_t __gmp_n = __gmp_z->_mp_size; mp_ptr __gmp_p = __gmp_z->_mp_d; return (__gmp_n == 0 || (__gmp_n == 1 && __gmp_p[0] <= (~ (unsigned) 0)));;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+int
+__gmpz_fits_ulong_p (mpz_srcptr __gmp_z) throw ()
+{
+  mp_size_t __gmp_n = __gmp_z->_mp_size; mp_ptr __gmp_p = __gmp_z->_mp_d; return (__gmp_n == 0 || (__gmp_n == 1 && __gmp_p[0] <= (~ (unsigned long) 0)));;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+int
+__gmpz_fits_ushort_p (mpz_srcptr __gmp_z) throw ()
+{
+  mp_size_t __gmp_n = __gmp_z->_mp_size; mp_ptr __gmp_p = __gmp_z->_mp_d; return (__gmp_n == 0 || (__gmp_n == 1 && __gmp_p[0] <= ((unsigned short) ~0)));;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+unsigned long
+__gmpz_get_ui (mpz_srcptr __gmp_z) throw ()
+{
+  mp_ptr __gmp_p = __gmp_z->_mp_d;
+  mp_size_t __gmp_n = __gmp_z->_mp_size;
+  mp_limb_t __gmp_l = __gmp_p[0];
+
+
+
+
+
+
+  return (unsigned long)(__gmp_n != 0 ? __gmp_l : 0);
+# 1880 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+mp_limb_t
+__gmpz_getlimbn (mpz_srcptr __gmp_z, mp_size_t __gmp_n) throw ()
+{
+  mp_limb_t __gmp_result = 0;
+  if (__builtin_expect ((__gmp_n >= 0 && __gmp_n < ((__gmp_z->_mp_size) >= 0 ? (__gmp_z->_mp_size) : -(__gmp_z->_mp_size))) != 0, 1))
+    __gmp_result = __gmp_z->_mp_d[__gmp_n];
+  return __gmp_result;
+}
+
+
+
+extern __inline__ __attribute__((__gnu_inline__)) void
+__gmpz_neg (mpz_ptr __gmp_w, mpz_srcptr __gmp_u)
+{
+  if (__gmp_w != __gmp_u)
+    __gmpz_set (__gmp_w, __gmp_u);
+  __gmp_w->_mp_size = - __gmp_w->_mp_size;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+int
+__gmpz_perfect_square_p (mpz_srcptr __gmp_a)
+{
+  mp_size_t __gmp_asize;
+  int __gmp_result;
+
+  __gmp_asize = __gmp_a->_mp_size;
+  __gmp_result = (__gmp_asize >= 0);
+  if (__builtin_expect ((__gmp_asize > 0) != 0, 1))
+    __gmp_result = __gmpn_perfect_square_p (__gmp_a->_mp_d, __gmp_asize);
+  return __gmp_result;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+mp_bitcnt_t
+__gmpz_popcount (mpz_srcptr __gmp_u) throw ()
+{
+  mp_size_t __gmp_usize;
+  mp_bitcnt_t __gmp_result;
+
+  __gmp_usize = __gmp_u->_mp_size;
+  __gmp_result = (__gmp_usize < 0 ? (~ (unsigned long) 0) : 0);
+  if (__builtin_expect ((__gmp_usize > 0) != 0, 1))
+    __gmp_result = __gmpn_popcount (__gmp_u->_mp_d, __gmp_usize);
+  return __gmp_result;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+void
+__gmpz_set_q (mpz_ptr __gmp_w, mpq_srcptr __gmp_u)
+{
+  __gmpz_tdiv_q (__gmp_w, (&((__gmp_u)->_mp_num)), (&((__gmp_u)->_mp_den)));
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+size_t
+__gmpz_size (mpz_srcptr __gmp_z) throw ()
+{
+  return ((__gmp_z->_mp_size) >= 0 ? (__gmp_z->_mp_size) : -(__gmp_z->_mp_size));
+}
+
+
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__)) void
+__gmpq_abs (mpq_ptr __gmp_w, mpq_srcptr __gmp_u)
+{
+  if (__gmp_w != __gmp_u)
+    __gmpq_set (__gmp_w, __gmp_u);
+  __gmp_w->_mp_num._mp_size = ((__gmp_w->_mp_num._mp_size) >= 0 ? (__gmp_w->_mp_num._mp_size) : -(__gmp_w->_mp_num._mp_size));
+}
+
+
+
+extern __inline__ __attribute__((__gnu_inline__)) void
+__gmpq_neg (mpq_ptr __gmp_w, mpq_srcptr __gmp_u)
+{
+  if (__gmp_w != __gmp_u)
+    __gmpq_set (__gmp_w, __gmp_u);
+  __gmp_w->_mp_num._mp_size = - __gmp_w->_mp_num._mp_size;
+}
+# 2221 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+extern __inline__ __attribute__((__gnu_inline__))
+
+mp_limb_t
+__gmpn_add (mp_ptr __gmp_wp, mp_srcptr __gmp_xp, mp_size_t __gmp_xsize, mp_srcptr __gmp_yp, mp_size_t __gmp_ysize)
+{
+  mp_limb_t __gmp_c;
+  VITIS_LOOP_2227_1: do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_add_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { VITIS_LOOP_2227_2: do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x + 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)) == 0)); } } if ((__gmp_wp) != (__gmp_xp)) VITIS_LOOP_2227_3: do { mp_size_t __gmp_j; VITIS_LOOP_2227_4: for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+  return __gmp_c;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+mp_limb_t
+__gmpn_add_1 (mp_ptr __gmp_dst, mp_srcptr __gmp_src, mp_size_t __gmp_size, mp_limb_t __gmp_n) throw ()
+{
+  mp_limb_t __gmp_c;
+  VITIS_LOOP_2240_1: do { mp_size_t __gmp_i; mp_limb_t __gmp_x, __gmp_r; __gmp_x = (__gmp_src)[0]; __gmp_r = __gmp_x + (__gmp_n); (__gmp_dst)[0] = __gmp_r; if (((__gmp_r) < ((__gmp_n)))) { (__gmp_c) = 1; VITIS_LOOP_2240_2: for (__gmp_i = 1; __gmp_i < (__gmp_size);) { __gmp_x = (__gmp_src)[__gmp_i]; __gmp_r = __gmp_x + 1; (__gmp_dst)[__gmp_i] = __gmp_r; ++__gmp_i; if (!((__gmp_r) < (1))) { if ((__gmp_src) != (__gmp_dst)) VITIS_LOOP_2240_3: do { mp_size_t __gmp_j; VITIS_LOOP_2240_4: for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_size); __gmp_j++) (__gmp_dst)[__gmp_j] = (__gmp_src)[__gmp_j]; } while (0); (__gmp_c) = 0; break; } } } else { if ((__gmp_src) != (__gmp_dst)) VITIS_LOOP_2240_5: do { mp_size_t __gmp_j; VITIS_LOOP_2240_6: for (__gmp_j = (1); __gmp_j < (__gmp_size); __gmp_j++) (__gmp_dst)[__gmp_j] = (__gmp_src)[__gmp_j]; } while (0); (__gmp_c) = 0; } } while (0);
+  return __gmp_c;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+int
+__gmpn_cmp (mp_srcptr __gmp_xp, mp_srcptr __gmp_yp, mp_size_t __gmp_size) throw ()
+{
+  int __gmp_result;
+  VITIS_LOOP_2253_1: do { mp_size_t __gmp_i; mp_limb_t __gmp_x, __gmp_y; (__gmp_result) = 0; __gmp_i = (__gmp_size); VITIS_LOOP_2253_2: while (--__gmp_i >= 0) { __gmp_x = (__gmp_xp)[__gmp_i]; __gmp_y = (__gmp_yp)[__gmp_i]; if (__gmp_x != __gmp_y) { (__gmp_result) = (__gmp_x > __gmp_y ? 1 : -1); break; } } } while (0);
+  return __gmp_result;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+mp_limb_t
+__gmpn_sub (mp_ptr __gmp_wp, mp_srcptr __gmp_xp, mp_size_t __gmp_xsize, mp_srcptr __gmp_yp, mp_size_t __gmp_ysize)
+{
+  mp_limb_t __gmp_c;
+  VITIS_LOOP_2266_1: do { mp_size_t __gmp_i; mp_limb_t __gmp_x; __gmp_i = (__gmp_ysize); if (__gmp_i != 0) { if (__gmpn_sub_n (__gmp_wp, __gmp_xp, __gmp_yp, __gmp_i)) { VITIS_LOOP_2266_2: do { if (__gmp_i >= (__gmp_xsize)) { (__gmp_c) = 1; goto __gmp_done; } __gmp_x = (__gmp_xp)[__gmp_i]; } while ((((__gmp_wp)[__gmp_i++] = (__gmp_x - 1) & ((~ (static_cast<mp_limb_t> (0))) >> 0)), __gmp_x == 0)); } } if ((__gmp_wp) != (__gmp_xp)) VITIS_LOOP_2266_3: do { mp_size_t __gmp_j; VITIS_LOOP_2266_4: for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_xsize); __gmp_j++) (__gmp_wp)[__gmp_j] = (__gmp_xp)[__gmp_j]; } while (0); (__gmp_c) = 0; __gmp_done: ; } while (0);
+  return __gmp_c;
+}
+
+
+
+
+extern __inline__ __attribute__((__gnu_inline__))
+
+mp_limb_t
+__gmpn_sub_1 (mp_ptr __gmp_dst, mp_srcptr __gmp_src, mp_size_t __gmp_size, mp_limb_t __gmp_n) throw ()
+{
+  mp_limb_t __gmp_c;
+  VITIS_LOOP_2279_1: do { mp_size_t __gmp_i; mp_limb_t __gmp_x, __gmp_r; __gmp_x = (__gmp_src)[0]; __gmp_r = __gmp_x - (__gmp_n); (__gmp_dst)[0] = __gmp_r; if (((__gmp_x) < ((__gmp_n)))) { (__gmp_c) = 1; VITIS_LOOP_2279_2: for (__gmp_i = 1; __gmp_i < (__gmp_size);) { __gmp_x = (__gmp_src)[__gmp_i]; __gmp_r = __gmp_x - 1; (__gmp_dst)[__gmp_i] = __gmp_r; ++__gmp_i; if (!((__gmp_x) < (1))) { if ((__gmp_src) != (__gmp_dst)) VITIS_LOOP_2279_3: do { mp_size_t __gmp_j; VITIS_LOOP_2279_4: for (__gmp_j = (__gmp_i); __gmp_j < (__gmp_size); __gmp_j++) (__gmp_dst)[__gmp_j] = (__gmp_src)[__gmp_j]; } while (0); (__gmp_c) = 0; break; } } } else { if ((__gmp_src) != (__gmp_dst)) VITIS_LOOP_2279_5: do { mp_size_t __gmp_j; VITIS_LOOP_2279_6: for (__gmp_j = (1); __gmp_j < (__gmp_size); __gmp_j++) (__gmp_dst)[__gmp_j] = (__gmp_src)[__gmp_j]; } while (0); (__gmp_c) = 0; } } while (0);
+  return __gmp_c;
+}
+
+
+
+}
+# 2329 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+                  std::ostream& operator<< (std::ostream &, mpz_srcptr);
+                  std::ostream& operator<< (std::ostream &, mpq_srcptr);
+                  std::ostream& operator<< (std::ostream &, mpf_srcptr);
+                  std::istream& operator>> (std::istream &, mpz_ptr);
+                  std::istream& operator>> (std::istream &, mpq_ptr);
+                  std::istream& operator>> (std::istream &, mpf_ptr);
+# 2349 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+typedef __mpz_struct MP_INT;
+typedef __mpq_struct MP_RAT;
+# 2359 "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+enum
+{
+  GMP_ERROR_NONE = 0,
+  GMP_ERROR_UNSUPPORTED_ARGUMENT = 1,
+  GMP_ERROR_DIVISION_BY_ZERO = 2,
+  GMP_ERROR_SQRT_OF_NEGATIVE = 4,
+  GMP_ERROR_INVALID_ARGUMENT = 8
+};
+# 6 "./byte_count.hpp" 2
+
 # 1 "/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed.h" 1
 # 55 "/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed.h"
 # 1 "/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_common.h" 1
@@ -5665,19 +9407,19 @@ inline bool operator!=(
 
 }
 # 412 "/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed.h" 2
-# 4 "./byte_count.hpp" 2
+# 8 "./byte_count.hpp" 2
 # 1 "/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int.h" 1
-# 5 "./byte_count.hpp" 2
+# 9 "./byte_count.hpp" 2
 
 namespace bytecount {
-# 21 "./byte_count.hpp"
+# 25 "./byte_count.hpp"
 typedef ap_uint<8> data_t;
 
 
 typedef ap_ufixed<3, 3, AP_TRN, AP_SAT> count_t;
 typedef ap_uint<8> result_t;
 typedef ap_uint<11> iter_t;
-# 36 "./byte_count.hpp"
+# 40 "./byte_count.hpp"
 void count_appearances(data_t* input, count_t* appearances);
 
 result_t count_threshold(count_t* appearances);

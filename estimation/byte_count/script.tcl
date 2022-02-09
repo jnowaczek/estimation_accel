@@ -18,5 +18,5 @@ config_rtl -register_reset_num 3
 source "./estimation/byte_count/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -tool modelsim
 export_design -rtl verilog -format xo -output C:/estimation

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'byte_count_Pipeline_APPEARANCES'
 ================================================================
-* Date:           Sat Feb  5 13:33:39 2022
+* Date:           Wed Feb  9 13:34:26 2022
 
 * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
 * Project:        estimation
@@ -930,7 +930,7 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'add' operation ('ret.V') [548]  (1.65 ns)
 	'select' operation ('count.V') [551]  (0.98 ns)
-	'store' operation ('store_ln20', byte_count.c++:20) of variable 'count.V' on static variable 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_128_0_0_0' [932]  (0 ns)
+	'store' operation ('store_ln20', byte_count.c++:20) of variable 'count.V' on static variable 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_120_0_0_0' [956]  (0 ns)
 
 
 ============================================================

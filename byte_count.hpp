@@ -1,5 +1,9 @@
 #pragma once
 
+// Workaround mpfr.h bug preventing cosimulation
+// Ref: https://support.xilinx.com/s/question/0D52E00006iHkfpSAC/vivado-20153-hls-bug-gmph
+#include "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
+
 #include "ap_fixed.h"
 #include "ap_int.h"
 

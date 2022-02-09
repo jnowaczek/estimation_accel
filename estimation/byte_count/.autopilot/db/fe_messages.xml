@@ -1,4 +1,22 @@
 <xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-4822" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h:2227:345" msg_body="equality comparison with extraneous parentheses">
+        <args ClangWarningOption="parentheses-equality"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4181" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h:2227:345" msg_body="remove extraneous parentheses around the comparison to silence this warning">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4182" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h:2227:345" msg_body="use '=' to turn this equality comparison into an assignment">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4822" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h:2227:383" msg_body="equality comparison with extraneous parentheses">
+        <args ClangWarningOption="parentheses-equality"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4181" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h:2227:383" msg_body="remove extraneous parentheses around the comparison to silence this warning">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4182" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h:2227:383" msg_body="use '=' to turn this equality comparison into an assignment">
+        <args/>
+    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int_ref.h:718:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>

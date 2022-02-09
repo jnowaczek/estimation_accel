@@ -2,27 +2,23 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog/>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***" projectName="estimation" solutionName="byte_count" date="2022-02-09T13:43:17.009-0600"/>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="estimation" solutionName="byte_count" date="2022-02-09T13:43:16.908-0600"/>
+        <logs message="ERROR: [COSIM 212-104] Cannot find Mentor Graphics ModelSim. Make sure it is accessible through the PATH variable." projectName="estimation" solutionName="byte_count" date="2022-02-09T13:43:16.905-0600"/>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***" projectName="estimation" solutionName="byte_count" date="2022-02-09T13:35:21.530-0600"/>
+      </simLog>
       <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:53:56.627-0600"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:46:01.538-0600"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:43:27.854-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="estimation" solutionName="byte_count" date="2022-02-09T13:51:32.766-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="estimation" solutionName="byte_count" date="2022-02-09T13:50:53.674-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="estimation" solutionName="byte_count" date="2022-02-09T13:50:17.594-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="estimation" solutionName="byte_count" date="2022-02-09T13:49:29.649-0600"/>
       </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_255_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:33:56.083-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_254_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:33:56.081-0600" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'p_ZZN9bytecount10byte_countEP7ap_uintILi8EEE11appearances_253_0_0_0' is power-on initialization." projectName="estimation" solutionName="byte_count" date="2022-02-05T13:33:56.080-0600" type="Warning"/>
-      </synLog>
       <simLog/>
-      <mgLog/>
-      <packageLog/>
       <csimLog/>
     </logs>
   </warningLogs>
