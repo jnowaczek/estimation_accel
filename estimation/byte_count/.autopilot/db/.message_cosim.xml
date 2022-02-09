@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Messages>
-	<Message severity="INFO" prefix="[COSIM 212-47]" key="COSIM_TCL_47_1115" tag="" content="Using Modelsim for RTL simulation." resolution=""/>
-	<Message severity="ERROR" prefix="[COSIM 212-104]" key="COSIM_TCL_104_1162" tag="" content="Cannot find Mentor Graphics ModelSim. Make sure it is accessible through the PATH variable." resolution=""/>
-	<Message severity="ERROR" prefix="[COSIM 212-5]" key="COSIM_TCL_5_1075" tag="" content="*** C/RTL co-simulation file generation failed. ***" resolution=""/>
-	<Message severity="ERROR" prefix="[COSIM 212-4]" key="COSIM_TCL_4_1074" tag="" content="*** C/RTL co-simulation finished: FAIL ***" resolution=""/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="RUNTIME" content="Finished Command cosim_design CPU user time: 2.73 seconds. CPU system time: 0.16 seconds. Elapsed time: 1.54 seconds; current allocated memory: 1.852 MB." resolution=""/>
-</Messages>
