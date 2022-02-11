@@ -6,7 +6,7 @@
 
 #include "byte_count.hpp"
 
-int byte_count_gold(bytecount::data_t input[BLOCK_LENGTH]) {
+int byte_count_gold(data_t input[BLOCK_LENGTH]) {
 	int count = 0;
 	int appearances[256] = {};
 
@@ -40,10 +40,11 @@ int main() {
 		return 1;
 	}
 
-	std::vector<bytecount::data_t> data(input.begin(), input.end());
+	std::vector<data_t> data(input.begin(), input.end());
 
 	int expected = byte_count_gold(data.data());
-	int actual = bytecount::byte_count(data.data());
+	result_t actual;
+	byte_count(data.data(), &actual);
 
 	if(actual == expected){
 		 std::cout << "    *** *** *** *** \n";

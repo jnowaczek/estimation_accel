@@ -7,8 +7,6 @@
 #include "ap_fixed.h"
 #include "ap_int.h"
 
-namespace bytecount {
-
 #define DATA_T_WIDTH 8
 #define RESULT_T_WIDTH 8
 #define ITER_T_WIDTH 11
@@ -36,11 +34,11 @@ typedef ap_uint<ITER_T_WIDTH> iter_t;
 
 // Function prototypes
 
+void count_appearances(data_t *input, count_t *appearances);
 
-void count_appearances(data_t* input, count_t* appearances);
+result_t count_threshold(count_t *appearances);
 
-result_t count_threshold(count_t* appearances);
-
-result_t byte_count(data_t input[BLOCK_LENGTH]);
-
+extern "C" {
+void byte_count(data_t input[BLOCK_LENGTH], result_t *output);
 }
+
