@@ -38,7 +38,4 @@ void count_appearances(data_t *input, count_t *appearances);
 
 result_t count_threshold(count_t *appearances);
 
-extern "C" {
-void byte_count(data_t input[BLOCK_LENGTH], result_t *output);
-}
-
+result_t byte_count(data_t input[BLOCK_LENGTH]);

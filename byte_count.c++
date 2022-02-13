@@ -1,10 +1,10 @@
 #include "byte_count.hpp"
 
-void byte_count(data_t input[BLOCK_LENGTH], result_t *output) {
+result_t byte_count(data_t input[BLOCK_LENGTH]) {
 	static count_t appearances[COUNT_BUCKETS] = { };
 #pragma HLS ARRAY_PARTITION variable=appearances type=complete
 	count_appearances(input, appearances);
-	*output = count_threshold(appearances);
+	return count_threshold(appearances);
 }
 
 void count_appearances(data_t input[BLOCK_LENGTH], count_t *appearances) {

@@ -43,8 +43,7 @@ int main() {
 	std::vector<data_t> data(input.begin(), input.end());
 
 	int expected = byte_count_gold(data.data());
-	result_t actual;
-	byte_count(data.data(), &actual);
+	result_t actual = byte_count(data.data());
 
 	if(actual == expected){
 		 std::cout << "    *** *** *** *** \n";
