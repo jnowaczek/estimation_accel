@@ -2,10 +2,9 @@
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
     <originFiles name="byte_count.hpp" path="/home/vivado/Desktop/estimation_hls/byte_count.hpp"/>
-    <originFiles name="byte_count.c++" path="/home/vivado/Desktop/estimation_hls/byte_count.c++"/>
+    <originFiles name="byte_count.cpp" path="/home/vivado/Desktop/estimation_hls/byte_count.cpp"/>
   </source>
   <testbench>
-    <originFiles name="tb_data" path="/home/vivado/Desktop/estimation_hls/tb_data"/>
-    <originFiles name="byte_count_bench.c++" path="/home/vivado/Desktop/estimation_hls/byte_count_bench.c++"/>
+    <originFiles name="byte_count_bench.cpp" path="/home/vivado/Desktop/estimation_hls/byte_count_bench.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -42,9 +42,9 @@
 			<location>/home/vivado/Desktop/estimation_hls/estimation/byte_count/.tcls</location>
 		</link>
 		<link>
-			<name>source/byte_count.c++</name>
+			<name>source/byte_count.cpp</name>
 			<type>1</type>
-			<location>/home/vivado/Desktop/estimation_hls/byte_count.c++</location>
+			<location>/home/vivado/Desktop/estimation_hls/byte_count.cpp</location>
 		</link>
 		<link>
 			<name>source/byte_count.hpp</name>
@@ -52,9 +52,9 @@
 			<location>/home/vivado/Desktop/estimation_hls/byte_count.hpp</location>
 		</link>
 		<link>
-			<name>testbench/byte_count_bench.c++</name>
+			<name>testbench/byte_count_bench.cpp</name>
 			<type>1</type>
-			<location>/home/vivado/Desktop/estimation_hls/byte_count_bench.c++</location>
+			<location>/home/vivado/Desktop/estimation_hls/byte_count_bench.cpp</location>
 		</link>
 		<link>
 			<name>testbench/tb_data</name>
