@@ -12,10 +12,10 @@ add_files -tb byte_count_bench.c++ -cflags "-Wno-unknown-pragmas" -csimflags "-W
 open_solution "byte_count" -flow_target vivado
 set_part {xc7z020-clg484-1}
 create_clock -period 100MHz -name default
-config_export -format ip_catalog -output /home/vivado/Desktop/estimation_hls -rtl verilog -vendor jnowaczek -version 1.0.0 -vivado_clock 100MHz
+config_export -format ip_catalog -library estimation -output /home/vivado/Desktop/estimation_hls -rtl verilog -vendor jnowaczek -version 1.0.0 -vivado_clock 100MHz
 config_rtl -reset state -reset_level low
 source "./estimation/byte_count/directives.tcl"
-csim_design
+csim_design -profile
 csynth_design
 cosim_design
-export_design -flow syn -rtl verilog -format ip_catalog -output /home/vivado/Desktop/estimation_hls
+export_design -rtl verilog -format ip_catalog -output /home/vivado/Desktop/estimation_hls

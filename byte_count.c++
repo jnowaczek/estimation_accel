@@ -1,6 +1,8 @@
 #include "byte_count.hpp"
 
 result_t byte_count(data_t input[BLOCK_LENGTH]) {
+#pragma HLS INTERFACE mode=s_axilite port=return
+#pragma HLS INTERFACE mode=m_axi port=input offset=slave
 	static count_t appearances[COUNT_BUCKETS] = { };
 #pragma HLS ARRAY_PARTITION variable=appearances type=complete
 	count_appearances(input, appearances);
