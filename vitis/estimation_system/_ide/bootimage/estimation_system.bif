@@ -1,0 +1,12 @@
+/* /tmp/bootgen_estimation_system17468423832094318623/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*zc702_estimation_platform*/
+the_ROM_image:
+{
+ [bootloader] /home/vivado/workspace/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/boot/fsbl.elf
+ /home/vivado/workspace/estimation/_ide/bitstream/zc702_estimation_platform.bit
+ /home/vivado/workspace/estimation/Debug/estimation.elf
+}
