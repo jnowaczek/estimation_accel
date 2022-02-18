@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="byte_count.hpp" path="/home/vivado/Desktop/estimation_hls/byte_count.hpp"/>
+    <originFiles name="byte_count.cpp" path="/home/vivado/Desktop/estimation_hls/byte_count.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="byte_count_bench.cpp" path="/home/vivado/Desktop/estimation_hls/byte_count_bench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,6 @@
+estimation/.vitis_hls_log_all.xml
+estimation/byte_count/*
+!estimation/byte_count/directives.tcl
+!estimation/byte_count/script.tcl
+vitis_hls.log
+export.zip
