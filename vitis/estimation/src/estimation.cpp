@@ -8,7 +8,7 @@
 XByte_count accel;
 XByte_count_Config *config;
 
-uint8_t data[1024] = { 0 };
+uint8_t data[1024] = {0};
 
 int main(void) {
 
@@ -43,8 +43,7 @@ int main(void) {
 	}
 
 	XByte_count_Set_input_r(&accel, (u64) &data);
-	std::cout << "INFO: Accelerator input set: 0x" << std::hex << &data
-			<< std::dec << "\n";
+	std::cout << "INFO: Accelerator input set: 0x" << std::hex << &data << std::dec << "\n";
 
 	XByte_count_Start(&accel);
 	std::cout << "INFO: Accelerator started\n";
@@ -56,7 +55,8 @@ int main(void) {
 
 	uint32_t result = XByte_count_Get_return(&accel);
 	std::cout << "INFO: Accelerator complete";
-	std::cout << "    Result: " << result << "\n";
+	std::cout << "    Result: " << result <<"\n";
+
 
 	return status;
 }
