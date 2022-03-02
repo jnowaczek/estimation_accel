@@ -13,7 +13,7 @@ open_solution "byte_count" -flow_target vivado
 set_part {xc7z010i-clg225-1L}
 create_clock -period 10 -name default
 #source "./estimation/byte_count/directives.tcl"
-csim_design -profile
+csim_design
 csynth_design
 cosim_design
 export_design -format ip_catalog

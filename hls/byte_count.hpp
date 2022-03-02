@@ -29,11 +29,6 @@ typedef ap_ufixed<COUNT_T_WIDTH, COUNT_T_INT_WIDTH, AP_TRN, AP_SAT> count_t;
 typedef ap_uint<RESULT_T_WIDTH> result_t;
 typedef ap_uint<ITER_T_WIDTH> iter_t;
 
-//typedef unsigned char data_t;
-//typedef unsigned char count_t;
-//typedef unsigned short result_t;
-//typedef unsigned short iter_t;
-
 // Function prototypes
 
 void count_appearances(data_t *input, count_t *appearances);
