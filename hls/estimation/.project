@@ -29,52 +29,62 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/vivado/Desktop/estimation_hls/estimation/.apc/.src</location>
+			<location>E:/estimation_accel/hls/estimation/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/vivado/Desktop/estimation_hls/estimation/.apc/.tb</location>
+			<location>E:/estimation_accel/hls/estimation/.apc/.tb</location>
 		</link>
 		<link>
 			<name>byte_count/constraints</name>
 			<type>2</type>
-			<location>/home/vivado/Desktop/estimation_hls/estimation/byte_count/.tcls</location>
+			<location>E:/estimation_accel/hls/estimation/byte_count/.tcls</location>
 		</link>
 		<link>
 			<name>source/byte_count.cpp</name>
 			<type>1</type>
-			<location>/home/vivado/Desktop/estimation_hls/byte_count.cpp</location>
+			<location>E:/estimation_accel/hls/byte_count.cpp</location>
 		</link>
 		<link>
 			<name>source/byte_count.hpp</name>
 			<type>1</type>
-			<location>/home/vivado/Desktop/estimation_hls/byte_count.hpp</location>
+			<location>E:/estimation_accel/hls/byte_count.hpp</location>
+		</link>
+		<link>
+			<name>source/byte_count_types.hpp</name>
+			<type>1</type>
+			<location>E:/estimation_accel/shared/byte_count_gold/byte_count_types.hpp</location>
 		</link>
 		<link>
 			<name>testbench/byte_count_bench.cpp</name>
 			<type>1</type>
-			<location>/home/vivado/Desktop/estimation_hls/byte_count_bench.cpp</location>
+			<location>E:/estimation_accel/hls/byte_count_bench.cpp</location>
+		</link>
+		<link>
+			<name>testbench/byte_count_gold.hpp</name>
+			<type>1</type>
+			<location>E:/estimation_accel/shared/byte_count_gold/byte_count_gold.hpp</location>
 		</link>
 		<link>
 			<name>testbench/tb_data</name>
 			<type>2</type>
-			<location>/home/vivado/Desktop/estimation_hls/tb_data</location>
+			<location>E:/estimation_accel/hls/tb_data</location>
 		</link>
 		<link>
 			<name>byte_count/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/vivado/Desktop/estimation_hls/estimation/byte_count/byte_count.directive</location>
+			<location>E:/estimation_accel/hls/estimation/byte_count/byte_count.directive</location>
 		</link>
 		<link>
 			<name>byte_count/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/vivado/Desktop/estimation_hls/estimation/byte_count/directives.tcl</location>
+			<location>E:/estimation_accel/hls/estimation/byte_count/directives.tcl</location>
 		</link>
 		<link>
 			<name>byte_count/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/vivado/Desktop/estimation_hls/estimation/byte_count/script.tcl</location>
+			<location>E:/estimation_accel/hls/estimation/byte_count/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
