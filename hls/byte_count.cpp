@@ -1,12 +1,13 @@
 #include "byte_count.hpp"
 
-void byte_count(data_t input0[BLOCK_LENGTH / 4],
+result_t byte_count(data_t input0[BLOCK_LENGTH / 4],
 		data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4],
-		data_t input3[BLOCK_LENGTH / 4], result_t *bytecount) {
-#pragma HLS interface mode=m_axi port=input0
-#pragma HLS interface mode=m_axi port=input1
-#pragma HLS interface mode=m_axi port=input2
-#pragma HLS interface mode=m_axi port=input3
+		data_t input3[BLOCK_LENGTH / 4]) {
+#pragma HLS INTERFACE mode=ap_ctrl_chain port=return
+//#pragma HLS interface mode=m_axi port=input0
+//#pragma HLS interface mode=m_axi port=input1
+//#pragma HLS interface mode=m_axi port=input2
+//#pragma HLS interface mode=m_axi port=input3
 #pragma HLS DATAFLOW
 
 	count_t appearances0[COUNT_BUCKETS];
@@ -23,7 +24,7 @@ void byte_count(data_t input0[BLOCK_LENGTH / 4],
 	reduce_appearances(appearances0, appearances1, appearances2, appearances3,
 			combined_appearances);
 
-	count_threshold(combined_appearances, bytecount);
+	return count_threshold(combined_appearances);
 }
 
 // Heavily borrowed from https://kastner.ucsd.edu/hlsbook/ page 162 as the
@@ -60,14 +61,14 @@ void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 		count_t appearances2[COUNT_BUCKETS],
 		count_t appearances3[COUNT_BUCKETS],
 		count_t combined_apperances[COUNT_BUCKETS]) {
-	for (iter_t i = 0; i < BLOCK_LENGTH / 4; i++) {
+	for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
 #pragma HLS PIPELINE II=1
 		combined_apperances[i] = appearances0[i] + appearances1[i]
 				+ appearances2[i] + appearances3[i];
 	}
 }
 
-void count_threshold(count_t appearances[COUNT_BUCKETS], result_t *bytecount) {
+result_t count_threshold(count_t appearances[COUNT_BUCKETS]) {
 	result_t over_thresh = 0;
 
 	THRESHOLD: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
@@ -75,5 +76,5 @@ void count_threshold(count_t appearances[COUNT_BUCKETS], result_t *bytecount) {
 			over_thresh += 1;
 	}
 
-	*bytecount = over_thresh;
+	return over_thresh;
 }

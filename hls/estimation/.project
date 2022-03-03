@@ -37,11 +37,6 @@
 			<location>E:/estimation_accel/hls/estimation/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ap_fixed.h</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vitis_HLS/2021.2/include/ap_fixed.h</location>
-		</link>
-		<link>
 			<name>byte_count/constraints</name>
 			<type>2</type>
 			<location>E:/estimation_accel/hls/estimation/byte_count/.tcls</location>
