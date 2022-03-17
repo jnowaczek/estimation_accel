@@ -1,13 +1,9 @@
 #include "byte_count.hpp"
 
-result_t byte_count(data_t input0[BLOCK_LENGTH / 4],
-		data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4],
-		data_t input3[BLOCK_LENGTH / 4]) {
+result_t byte_count(hls_stream<data_t> input) {
+#pragma HLS ARRAY_PARTITION dim=1 factor=4 type=block variable=input
 #pragma HLS INTERFACE mode=ap_ctrl_chain port=return
-//#pragma HLS interface mode=m_axi port=input0
-//#pragma HLS interface mode=m_axi port=input1
-//#pragma HLS interface mode=m_axi port=input2
-//#pragma HLS interface mode=m_axi port=input3
+#pragma HLS interface mode=m_axi port=input offset=slave
 #pragma HLS DATAFLOW
 
 	count_t appearances0[COUNT_BUCKETS];
@@ -16,10 +12,15 @@ result_t byte_count(data_t input0[BLOCK_LENGTH / 4],
 	count_t appearances3[COUNT_BUCKETS];
 	count_t combined_appearances[COUNT_BUCKETS];
 
-	count_appearances(input0, appearances0);
-	count_appearances(input1, appearances1);
-	count_appearances(input2, appearances2);
-	count_appearances(input3, appearances3);
+	// Calculating an offset from the input pointer doesn't work due to memory port limits
+	// Instead, trying a stream
+	for (iter_t i = 0; i < BLOCK_LENGTH / 4; i++) {
+		count_appearance(input.read(), appearances0);
+		count_appearances(input.read(), appearances1);
+		count_appearances(input.read(), appearances2);
+		count_appearances(input.read(), appearances3);
+	}
+
 
 	reduce_appearances(appearances0, appearances1, appearances2, appearances3,
 			combined_appearances);
@@ -29,7 +30,7 @@ result_t byte_count(data_t input0[BLOCK_LENGTH / 4],
 
 // Heavily borrowed from https://kastner.ucsd.edu/hlsbook/ page 162 as the
 // example is almost exactly what I want to do.
-void count_appearances(data_t input[BLOCK_LENGTH / 4],
+void count_appearances(data_t input[BLOCK_LENGTH],
 		count_t appearances[COUNT_BUCKETS]) {
 #pragma HLS DEPENDENCE variable=appearances intra RAW false
 	for (iter_t i = 0; i < BLOCK_LENGTH / 4; i++) {

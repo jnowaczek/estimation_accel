@@ -32,7 +32,7 @@ typedef ap_uint<ITER_T_WIDTH> iter_t;
 // Function prototypes
 
 void count_appearances(data_t input[BLOCK_LENGTH / 4],
-		count_t appearances[COUNT_BUCKETS]);
+		count_t appearances[COUNT_BUCKETS], ap_uint<2> chunk_offset);
 
 void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 		count_t appearances1[COUNT_BUCKETS],
@@ -42,6 +42,4 @@ void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 
 result_t count_threshold(count_t appearances[COUNT_BUCKETS]);
 
-result_t byte_count(data_t input0[BLOCK_LENGTH / 4],
-		data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4],
-		data_t input3[BLOCK_LENGTH / 4]);
+result_t byte_count(data_t input[BLOCK_LENGTH]);
