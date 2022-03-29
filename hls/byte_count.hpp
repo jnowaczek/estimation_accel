@@ -8,6 +8,7 @@
 
 #include "ap_fixed.h"
 #include "ap_int.h"
+#include "hls_stream.h"
 
 #define DATA_T_WIDTH 8
 #define RESULT_T_WIDTH 8
@@ -31,8 +32,14 @@ typedef ap_uint<ITER_T_WIDTH> iter_t;
 
 // Function prototypes
 
+void split((data_t* input,
+		data_t* chunk0,
+		data_t* chunk1,
+		data_t* chunk2,
+		data_t* chunk3);
+
 void count_appearances(data_t input[BLOCK_LENGTH / 4],
-		count_t appearances[COUNT_BUCKETS], ap_uint<2> chunk_offset);
+		count_t appearances[COUNT_BUCKETS]);
 
 void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 		count_t appearances1[COUNT_BUCKETS],
@@ -42,4 +49,4 @@ void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 
 result_t count_threshold(count_t appearances[COUNT_BUCKETS]);
 
-result_t byte_count(data_t input[BLOCK_LENGTH]);
+result_t byte_count(data_t* input);
