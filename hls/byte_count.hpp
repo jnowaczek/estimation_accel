@@ -8,7 +8,6 @@
 
 #include "ap_fixed.h"
 #include "ap_int.h"
-#include "hls_stream.h"
 
 #define DATA_T_WIDTH 8
 #define RESULT_T_WIDTH 8
@@ -23,20 +22,25 @@
 #define BLOCK_LENGTH 1024
 #define BYTE_COUNT_THRESHOLD (BLOCK_LENGTH / 256)
 
-typedef ap_uint<DATA_T_WIDTH> data_t;
-// Maximum count value is 7 since we just want to count the number
-// over the threshold and the amount over the threshold doesn't matter
-typedef ap_ufixed<COUNT_T_WIDTH, COUNT_T_INT_WIDTH, AP_TRN, AP_SAT> count_t;
-typedef ap_uint<RESULT_T_WIDTH> result_t;
-typedef ap_uint<ITER_T_WIDTH> iter_t;
+//typedef ap_uint<DATA_T_WIDTH> data_t;
+//// Maximum count value is 7 since we just want to count the number
+//// over the threshold and the amount over the threshold doesn't matter
+//typedef ap_ufixed<COUNT_T_WIDTH, COUNT_T_INT_WIDTH, AP_TRN, AP_SAT> count_t;
+//typedef ap_uint<RESULT_T_WIDTH> result_t;
+//typedef ap_uint<ITER_T_WIDTH> iter_t;
+
+// Debugging types
+typedef unsigned char data_t;
+typedef int count_t;
+typedef int result_t;
+typedef int iter_t;
+
 
 // Function prototypes
-
-void split((data_t* input,
-		data_t* chunk0,
-		data_t* chunk1,
-		data_t* chunk2,
-		data_t* chunk3);
+void clear_appearances(count_t appearances0[COUNT_BUCKETS],
+		count_t appearances1[COUNT_BUCKETS],
+		count_t appearances2[COUNT_BUCKETS],
+		count_t appearances3[COUNT_BUCKETS]);
 
 void count_appearances(data_t input[BLOCK_LENGTH / 4],
 		count_t appearances[COUNT_BUCKETS]);
@@ -49,4 +53,4 @@ void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 
 result_t count_threshold(count_t appearances[COUNT_BUCKETS]);
 
-result_t byte_count(data_t* input);
+result_t byte_count(data_t input[BLOCK_LENGTH]);

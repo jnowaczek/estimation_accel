@@ -25,44 +25,44 @@ int byte_count_gold(data_t input[BLOCK_LENGTH]) {
 
 int main() {
 	int retval = 0;
+
+	std::vector<std::string> paths = {"tb_data/zeros", "tb_data/count.bin", "tb_data/count_sorted.bin"};
 	std::vector<char> input;
 
-	std::ifstream file("tb_data/zeros",
-			std::ios::in | std::ios::binary | std::ios::ate);
+	for (std::string path : paths) {
+		std::ifstream file(path,
+					std::ios::in | std::ios::binary | std::ios::ate);
 
-	if (file.is_open()) {
-		std::streampos size = file.tellg();
-		input.resize(size);
-		file.seekg(0, std::ios::beg);
-//		file.read(input.data(), size);
-		file.read(input.data(), BLOCK_LENGTH);
-	} else {
-		std::cerr << "Unable to open input file\n";
-		return 1;
-	}
+			if (file.is_open()) {
+				std::streampos size = file.tellg();
+				input.resize(size);
+				file.seekg(0, std::ios::beg);
+		//		file.read(input.data(), size);
+				file.read(input.data(), BLOCK_LENGTH);
+			} else {
+				std::cerr << "Unable to open input file\n";
+				return 1;
+			}
 
-	std::vector<data_t> data(input.begin(), input.end());
-	std::vector<data_t> data0(input.begin(), input.begin() + BLOCK_LENGTH / 4);
-	std::vector<data_t> data1(input.begin() + BLOCK_LENGTH / 4,
-			input.begin() + BLOCK_LENGTH / 2);
-	std::vector<data_t> data2(input.begin() + BLOCK_LENGTH / 2,
-			input.end() - BLOCK_LENGTH / 4);
-	std::vector<data_t> data3(input.begin(), input.end());
+			std::vector<data_t> data(input.begin(), input.end());
 
-	int expected = byte_count_gold(data.data());
-	result_t actual = byte_count(data.data());
+			int expected = byte_count_gold(data.data());
+			result_t actual = byte_count(data.data());
 
-	if (actual == expected) {
-		std::cout << "    *** *** *** *** \n";
-		std::cout << "    Results are good: expected == actual == " << actual
-				<< "\n";
-		std::cout << "    *** *** *** *** \n";
-	} else {
-		std::cout << "    *** *** *** *** \n";
-		std::cout << "    Mismatch: result=" << actual << ", expected="
-				<< expected << "\n";
-		std::cout << "    *** *** *** *** \n";
-		retval = 2;
+			if (actual == expected) {
+				std::cout << "    *** *** *** *** \n";
+				std::cout << "    Input file: " << path << "\n";
+				std::cout << "    Results are good: expected == actual == " << actual
+						<< "\n";
+				std::cout << "    *** *** *** *** \n";
+			} else {
+				std::cout << "    *** *** *** *** \n";
+				std::cout << "    Input file: " << path << "\n";
+				std::cout << "    Mismatch: result=" << actual << ", expected="
+						<< expected << "\n";
+				std::cout << "    *** *** *** *** \n";
+				retval = 2;
+			}
 	}
 
 	return retval;
