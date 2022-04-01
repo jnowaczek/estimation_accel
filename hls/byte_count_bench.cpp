@@ -45,9 +45,15 @@ int main() {
 			}
 
 			std::vector<data_t> data(input.begin(), input.end());
+			std::vector<data_t> data0(input.begin(), input.begin() + BLOCK_LENGTH / 4);
+			std::vector<data_t> data1(input.begin() + BLOCK_LENGTH / 4,
+					input.begin() + BLOCK_LENGTH / 2);
+			std::vector<data_t> data2(input.begin() + BLOCK_LENGTH / 2,
+					input.end() - BLOCK_LENGTH / 4);
+			std::vector<data_t> data3(input.end() - BLOCK_LENGTH / 4, input.end());
 
 			int expected = byte_count_gold(data.data());
-			result_t actual = byte_count(data.data());
+			result_t actual = byte_count(data0.data(), data1.data(), data2.data(), data3.data());
 
 			if (actual == expected) {
 				std::cout << "    *** *** *** *** \n";

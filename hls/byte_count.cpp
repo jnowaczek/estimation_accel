@@ -1,20 +1,10 @@
-#include <cstring>
-
 #include "byte_count.hpp"
 
-result_t byte_count(data_t input[BLOCK_LENGTH]) {
-#pragma HLS INTERFACE mode=ap_ctrl_chain port=return
-#pragma HLS interface mode=m_axi port=input offset=slave
+#include "inttypes.h"
+
+result_t byte_count(data_t input0[BLOCK_LENGTH / 4], data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4], data_t input3[BLOCK_LENGTH / 4]) {
+#pragma HLS INTERFACE mode=ap_ctrl_hs port=return
 #pragma HLS DATAFLOW
-
-	data_t inputBuffer[BLOCK_LENGTH];
-#pragma HLS ARRAY_PARTITION variable=inputBuffer type=block factor=4
-	std::memcpy(inputBuffer, input, 1024 * sizeof(data_t));
-
-	data_t* input0 = inputBuffer;
-	data_t* input1 = input0 + 256 * sizeof(data_t);
-	data_t* input2 = input1 + 256 * sizeof(data_t);
-	data_t* input3 = input2 + 256 * sizeof(data_t);
 
 	count_t appearances0[COUNT_BUCKETS];
 	count_t appearances1[COUNT_BUCKETS];
@@ -28,24 +18,10 @@ result_t byte_count(data_t input[BLOCK_LENGTH]) {
 	count_appearances(input2, appearances2);
 	count_appearances(input3, appearances3);
 
-
 	reduce_appearances(appearances0, appearances1, appearances2, appearances3,
 			combined_appearances);
 
 	return count_threshold(combined_appearances);
-}
-
-void clear_appearances(count_t appearances0[COUNT_BUCKETS],
-		count_t appearances1[COUNT_BUCKETS],
-		count_t appearances2[COUNT_BUCKETS],
-		count_t appearances3[COUNT_BUCKETS]) {
-	RESET: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
-#pragma HLS PIPELINE II=1
-		appearances0[i] = 0;
-		appearances1[i] = 0;
-		appearances2[i] = 0;
-		appearances3[i] = 0;
-	}
 }
 
 // Heavily borrowed from https://kastner.ucsd.edu/hlsbook/ page 162 as the
@@ -53,6 +29,10 @@ void clear_appearances(count_t appearances0[COUNT_BUCKETS],
 void count_appearances(data_t input[BLOCK_LENGTH / 4],
 		count_t appearances[COUNT_BUCKETS]) {
 #pragma HLS DEPENDENCE variable=appearances intra RAW false
+	RESET: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
+#pragma HLS PIPELINE II=1
+			appearances[i] = 0;
+	}
 	count_t count = 0;
 	iter_t i;
 	data_t byte;
