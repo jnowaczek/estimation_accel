@@ -1,32 +1,58 @@
 #include "byte_count.hpp"
 
-#include "inttypes.h"
-
-result_t byte_count(data_t input0[BLOCK_LENGTH / 4], data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4], data_t input3[BLOCK_LENGTH / 4]) {
-#pragma HLS INTERFACE mode=ap_ctrl_hs port=return
+void byte_count(hls::stream<data_t> &input, hls::stream<result_t> &out) {
 #pragma HLS DATAFLOW
 
-	count_t appearances0[COUNT_BUCKETS];
-	count_t appearances1[COUNT_BUCKETS];
-	count_t appearances2[COUNT_BUCKETS];
-	count_t appearances3[COUNT_BUCKETS];
+	hls::stream<count_block_t> appearances;
+	hls::stream<count_block_t> combined_appearances;
 
-	count_t combined_appearances[COUNT_BUCKETS];
+	count_streaming(input, appearances);
+//	count_streaming(input, appearances[1]);
+//	count_streaming(input, appearances[2]);
+//	count_streaming(input, appearances[3]);
 
-	count_appearances(input0, appearances0);
-	count_appearances(input1, appearances1);
-	count_appearances(input2, appearances2);
-	count_appearances(input3, appearances3);
+	reduce_streaming(appearances, combined_appearances);
 
-	reduce_appearances(appearances0, appearances1, appearances2, appearances3,
-			combined_appearances);
-
-	return count_threshold(combined_appearances);
+	threshold_streaming(combined_appearances, out);
 }
+
+void count_streaming(hls::stream<block_t> &input, hls::stream<count_block_t> &output) {
+	block_t temp;
+	count_block_t appearances;
+#pragma HLS DEPENDENCE variable=appearances intra RAW false
+
+	if (input.read_nb(temp)) {
+
+		RESET: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
+#pragma HLS PIPELINE II=1
+			appearances.a[i] = 0;
+		}
+
+		int count = 0;
+		data_t byte;
+		data_t prev = temp.a[0];
+
+		for (iter_t i = 0; i < BLOCK_SIZE; i++) {
+			byte = temp.a[i];
+
+			if (prev == byte) {
+				count +=1;
+			} else {
+				appearances.a[prev] = count;
+				count = appearances.a[byte] + 1;
+			}
+
+			prev = byte;
+		}
+		appearances.a[prev] = count;
+		output.write(appearances);
+	}
+}
+
 
 // Heavily borrowed from https://kastner.ucsd.edu/hlsbook/ page 162 as the
 // example is almost exactly what I want to do.
-void count_appearances(data_t input[BLOCK_LENGTH / 4],
+void count_appearances(data_t input[INPUT_SIZE / WORKER_COUNT],
 		count_t appearances[COUNT_BUCKETS]) {
 #pragma HLS DEPENDENCE variable=appearances intra RAW false
 	RESET: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
@@ -37,7 +63,7 @@ void count_appearances(data_t input[BLOCK_LENGTH / 4],
 	iter_t i;
 	data_t byte;
 	data_t prev = input[0];
-	APPEARANCES: for (i = 0; i < BLOCK_LENGTH / 4; i++) {
+	APPEARANCES: for (i = 0; i < INPUT_SIZE / 4; i++) {
 #pragma HLS PIPELINE II=1
 		byte = input[i];
 
@@ -53,19 +79,30 @@ void count_appearances(data_t input[BLOCK_LENGTH / 4],
 	appearances[prev] = count;
 }
 
-void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
-		count_t appearances1[COUNT_BUCKETS],
-		count_t appearances2[COUNT_BUCKETS],
-		count_t appearances3[COUNT_BUCKETS],
-		count_t combined_apperances[COUNT_BUCKETS]) {
+void reduce_streaming(hls::stream<count_block_t> &input, hls::stream<count_block_t> &output) {
+	count_block_t combined_appearances = {0};
+	count_block_t appearances = input.read();
 	REDUCE: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
 #pragma HLS PIPELINE II=1
-		combined_apperances[i] = appearances0[i] + appearances1[i]
-				+ appearances2[i] + appearances3[i];
+		count_t prev = combined_appearances.a[i];
+		prev = prev + appearances.a[i];
+		combined_appearances.a[i] = prev;
+	}
+	output.write(combined_appearances);
+}
+
+void reduce_appearances(count_t appearances[WORKER_COUNT][COUNT_BUCKETS], count_t combined_apperances[COUNT_BUCKETS]) {
+	REDUCE: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
+#pragma HLS PIPELINE II=1
+		count_t total = 0;
+		for (int j = 0; j < WORKER_COUNT; j++) {
+			total += appearances[j][i];
+		}
+		combined_apperances[i] = total;
 	}
 }
 
-result_t count_threshold(count_t appearances[COUNT_BUCKETS]) {
+void count_threshold(count_t appearances[COUNT_BUCKETS], hls::stream<result_t> &output) {
 	result_t over_thresh = 0;
 
 	THRESHOLD: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
@@ -73,5 +110,18 @@ result_t count_threshold(count_t appearances[COUNT_BUCKETS]) {
 			over_thresh += 1;
 	}
 
-	return over_thresh;
+	output.write(over_thresh);
 }
+
+void threshold_streaming(hls::stream<count_block_t> &input, hls::stream<result_t> &output) {
+	count_block_t appearances = input.read();
+	result_t over_thresh = 0;
+
+	THRESHOLD: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
+		if (appearances.a[i] > BYTE_COUNT_THRESHOLD)
+			over_thresh += 1;
+	}
+
+	output.write(over_thresh);
+}
+
