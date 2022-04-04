@@ -15,5 +15,5 @@ create_clock -period 6.8 -name default
 source "./estimation/byte_count/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -disable_deadlock_detection
 export_design -format ip_catalog

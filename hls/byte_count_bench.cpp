@@ -53,7 +53,8 @@ int main() {
 			std::vector<data_t> data3(input.end() - BLOCK_LENGTH / 4, input.end());
 
 			int expected = byte_count_gold(data.data());
-			result_t actual = byte_count(data0.data(), data1.data(), data2.data(), data3.data());
+			result_t actual;
+			byte_count(data0.data(), data1.data(), data2.data(), data3.data(), actual);
 
 			if (actual == expected) {
 				std::cout << "    *** *** *** *** \n";

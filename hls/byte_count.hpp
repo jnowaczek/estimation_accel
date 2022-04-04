@@ -46,6 +46,6 @@ void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 		count_t appearances3[COUNT_BUCKETS],
 		count_t combined_apperances[COUNT_BUCKETS]);
 
-result_t count_threshold(count_t appearances[COUNT_BUCKETS]);
+void count_threshold(count_t appearances[COUNT_BUCKETS], result_t &out);
 
-result_t byte_count(data_t input0[BLOCK_LENGTH / 4], data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4], data_t input3[BLOCK_LENGTH / 4]);
+void byte_count(data_t input0[BLOCK_LENGTH / 4], data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4], data_t input3[BLOCK_LENGTH / 4], result_t &out);
