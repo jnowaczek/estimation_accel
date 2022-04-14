@@ -12,8 +12,10 @@ add_files -tb byte_count_bench.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-W
 open_solution "byte_count" -flow_target vivado
 set_part {xc7z010i-clg225-1L}
 create_clock -period 6.8 -name default
+config_export -format ip_catalog -output E:/estimation_accel/vivado/ip_repo -rtl verilog
+config_interface -m_axi_alignment_byte_size 64 -m_axi_max_widen_bitwidth 512
 source "./estimation/byte_count/directives.tcl"
 csim_design
 csynth_design
 cosim_design -disable_deadlock_detection
-export_design -format ip_catalog
+export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo

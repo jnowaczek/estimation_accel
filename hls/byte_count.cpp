@@ -1,8 +1,19 @@
 #include "byte_count.hpp"
 
-void byte_count(data_t input0[BLOCK_LENGTH / 4], data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4], data_t input3[BLOCK_LENGTH / 4], result_t &out) {
-#pragma HLS INTERFACE mode=ap_ctrl_chain port=return
+void byte_count(const packed_t input[BLOCK_LENGTH / 4], result_t &out) {
+#pragma HLS INTERFACE mode=m_axi max_read_burst_length=256 max_widen_bitwidth=1024 num_read_outstanding=2 num_write_outstanding=0 port=input
+#pragma HLS INTERFACE mode=s_axilite port=out
+#pragma HLS INTERFACE mode=ap_ctrl_none port=return
 #pragma HLS DATAFLOW
+
+	data_t input0[BLOCK_LENGTH / 4];
+#pragma HLS STABLE variable= input0
+	data_t input1[BLOCK_LENGTH / 4];
+#pragma HLS STABLE variable= input1
+	data_t input2[BLOCK_LENGTH / 4];
+#pragma HLS STABLE variable= input2
+	data_t input3[BLOCK_LENGTH / 4];
+#pragma HLS STABLE variable= input3
 
 	count_t appearances0[COUNT_BUCKETS];
 	count_t appearances1[COUNT_BUCKETS];
@@ -10,6 +21,8 @@ void byte_count(data_t input0[BLOCK_LENGTH / 4], data_t input1[BLOCK_LENGTH / 4]
 	count_t appearances3[COUNT_BUCKETS];
 
 	count_t combined_appearances[COUNT_BUCKETS];
+
+	split(input, input0, input1, input2, input3);
 
 	count_appearances(input0, appearances0);
 	count_appearances(input1, appearances1);
@@ -20,6 +33,20 @@ void byte_count(data_t input0[BLOCK_LENGTH / 4], data_t input1[BLOCK_LENGTH / 4]
 			combined_appearances);
 
 	count_threshold(combined_appearances, out);
+}
+
+void split(const packed_t input[BLOCK_LENGTH / 4],
+		data_t output0[BLOCK_LENGTH / 4], data_t output1[BLOCK_LENGTH / 4],
+		data_t output2[BLOCK_LENGTH / 4], data_t output3[BLOCK_LENGTH / 4]) {
+	packed_t temp = input[0];
+
+	for (iter_t i = 0; i < BLOCK_LENGTH / 4; i++) {
+		temp = input[i];
+		output0[i] = data_t(temp(7, 0));
+		output1[i] = data_t(temp(15, 8));
+		output2[i] = data_t(temp(23, 16));
+		output3[i] = data_t(temp(31, 24));
+	}
 }
 
 // Heavily borrowed from https://kastner.ucsd.edu/hlsbook/ page 162 as the

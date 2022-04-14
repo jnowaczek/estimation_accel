@@ -10,6 +10,7 @@
 #include "ap_int.h"
 
 #define DATA_T_WIDTH 8
+#define PACKED_T_WIDTH 32
 #define RESULT_T_WIDTH 8
 #define ITER_T_WIDTH 11
 
@@ -23,6 +24,7 @@
 #define BYTE_COUNT_THRESHOLD (BLOCK_LENGTH / 256)
 
 //typedef ap_uint<DATA_T_WIDTH> data_t;
+typedef ap_uint<PACKED_T_WIDTH> packed_t;
 //// Maximum count value is 7 since we just want to count the number
 //// over the threshold and the amount over the threshold doesn't matter
 //typedef ap_ufixed<COUNT_T_WIDTH, COUNT_T_INT_WIDTH, AP_TRN, AP_SAT> count_t;
@@ -37,6 +39,9 @@ typedef int iter_t;
 
 
 // Function prototypes
+void split(const packed_t input[BLOCK_LENGTH / 4], data_t output0[BLOCK_LENGTH / 4],
+		data_t output1[BLOCK_LENGTH / 4], data_t output2[BLOCK_LENGTH / 4], data_t output3[BLOCK_LENGTH / 4]);
+
 void count_appearances(data_t input[BLOCK_LENGTH / 4],
 		count_t appearances[COUNT_BUCKETS]);
 
@@ -48,4 +53,4 @@ void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 
 void count_threshold(count_t appearances[COUNT_BUCKETS], result_t &out);
 
-void byte_count(data_t input0[BLOCK_LENGTH / 4], data_t input1[BLOCK_LENGTH / 4], data_t input2[BLOCK_LENGTH / 4], data_t input3[BLOCK_LENGTH / 4], result_t &out);
+void byte_count(const packed_t input[BLOCK_LENGTH / 4], result_t &out);
