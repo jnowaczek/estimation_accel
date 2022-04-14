@@ -1,0 +1,214 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Apr 11 18:02:47 2022
+# Process ID: 2992
+# Current directory: E:/estimation_accel/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35356 E:\estimation_accel\vivado\zc702_estimation_platform.xpr
+# Log file: E:/estimation_accel/vivado/vivado.log
+# Journal file: E:/estimation_accel/vivado\vivado.jou
+# Running On: Omnya, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 6, Host memory: 17087 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/estimation_accel/vivado/zc702_estimation_platform.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from '/home/vivado/Desktop/zc702_estimation_platform' since last save.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'E:/estimation_accel/estimation_hls', nor could it be found using path 'E:/home/vivado/Desktop/estimation_hls'.
+INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1', nor could it be found using path 'E:/home/vivado/Desktop/zc702_estimation_platform/zc702_estimation_platform.gen/sources_1'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files', nor could it be found using path 'E:/home/vivado/Desktop/zc702_estimation_platform/zc702_estimation_platform.ip_user_files'.
+INFO: [BD 41-2613] The output directory e:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system for system cannot be found.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/estimation_accel/estimation_hls'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-529] Port Map 'ARID': Port named 'm_axi_gmem_ARID' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'ARUSER': Port named 'm_axi_gmem_ARUSER' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'AWID': Port named 'm_axi_gmem_AWID' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'AWUSER': Port named 'm_axi_gmem_AWUSER' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'BID': Port named 'm_axi_gmem_BID' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'BUSER': Port named 'm_axi_gmem_BUSER' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'RID': Port named 'm_axi_gmem_RID' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'RUSER': Port named 'm_axi_gmem_RUSER' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'WID': Port named 'm_axi_gmem_WID' does not exist.
+WARNING: [IP_Flow 19-529] Port Map 'WUSER': Port named 'm_axi_gmem_WUSER' does not exist.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+system_byte_count_0_2
+
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 1233.262 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {E:/estimation_accel/vivado/zc702_estimation_platform.srcs/sources_1/bd/system/system.bd}
+Reading block design file <E:/estimation_accel/vivado/zc702_estimation_platform.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- jnowaczek:estimation:byte_count:1.0 - byte_count_0
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_ARID' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_ARUSER' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_AWID' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_AWUSER' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_BID' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_BUSER' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_RID' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_RUSER' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_WID' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'm_axi_gmem_WUSER' specified in the portmap, is not found on the block! 
+Successfully read diagram <system> from block design file <E:/estimation_accel/vivado/zc702_estimation_platform.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1233.262 ; gain = 0.000
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  E:/estimation_accel/vivado/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/estimation_accel/vivado/ip_repo'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/estimation_accel/vivado/ip_repo'.
+update_ip_catalog -add_ip E:/estimation_accel/vivado/ip_repo/export.zip -repo_path e:/estimation_accel/vivado/ip_repo
+INFO: [IP_Flow 19-949] Unzipped 'E:/estimation_accel/vivado/ip_repo/export.zip' into repository 'e:/estimation_accel/vivado/ip_repo'.
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'e:/estimation_accel/vivado/ip_repo'
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:byte_count:1.0 byte_count_1
+endgroup
+delete_bd_objs [get_bd_intf_nets byte_count_0_m_axi_gmem] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells byte_count_0]
+set_property location {3.5 1082 595} [get_bd_cells byte_count_1]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins byte_count_1/ap_clk]
+set_property location {3 1069 569} [get_bd_cells byte_count_1]
+undo
+INFO: [Common 17-17] undo 'set_property location {3 1069 569} [get_bd_cells byte_count_1]'
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins byte_count_1/ap_clk]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3.5 1082 595} [get_bd_cells byte_count_1]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets byte_count_0_m_axi_gmem] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells byte_count_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv xilinx.com:hls:byte_count:1.0 byte_count_1'
+INFO: [Common 17-17] undo 'startgroup'
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'create_bd_cell -type ip -vlnv xilinx.com:hls:byte_count:1.0 byte_count_1'
+INFO: [Common 17-16] redo 'endgroup'
+redo
+INFO: [Common 17-16] redo 'delete_bd_objs [get_bd_intf_nets byte_count_0_m_axi_gmem] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells byte_count_0]'
+redo
+INFO: [Common 17-16] redo 'set_property location {3.5 1082 595} [get_bd_cells byte_count_1]'
+redo
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins byte_count_1/ap_clk]'
+redo
+INFO: [Common 17-16] redo 'set_property location {3 1069 569} [get_bd_cells byte_count_1]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3 1069 569} [get_bd_cells byte_count_1]'
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins byte_count_1/ap_clk]'
+undo
+INFO: [Common 17-17] undo 'set_property location {3.5 1082 595} [get_bd_cells byte_count_1]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets byte_count_0_m_axi_gmem] [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells byte_count_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'create_bd_cell -type ip -vlnv xilinx.com:hls:byte_count:1.0 byte_count_1'
+INFO: [Common 17-17] undo 'startgroup'
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'create_bd_cell -type ip -vlnv xilinx.com:hls:byte_count:1.0 byte_count_1'
+INFO: [Common 17-16] redo 'endgroup'
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI]'
+connect_bd_net [get_bd_pins byte_count_1/input0_q0] [get_bd_pins byte_count_1/input0_q1]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins byte_count_1/input0_q0] [get_bd_pins byte_count_1/input0_q1]'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_USE_DMA0 {1} CONFIG.PCW_USE_DMA1 {0}] [get_bd_cells processing_system7_0]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.PCW_USE_DMA0 {1} CONFIG.PCW_USE_DMA1 {0}] [get_bd_cells processing_system7_0]'
+INFO: [Common 17-17] undo 'startgroup'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_GP0 {1} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ACLK] [get_bd_pins byte_count_1/ap_clk]
+connect_bd_net [get_bd_pins byte_count_1/ap_rst] [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+set_property location {5 2331 499} [get_bd_cells byte_count_1]
+undo
+INFO: [Common 17-17] undo 'set_property location {5 2331 499} [get_bd_cells byte_count_1]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins byte_count_1/ap_rst] [get_bd_pins processing_system7_0/FCLK_RESET0_N]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins processing_system7_0/S_AXI_GP0_ACLK] [get_bd_pins byte_count_1/ap_clk]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.PCW_USE_S_AXI_GP0 {1} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]'
+INFO: [Common 17-17] undo 'startgroup'
+undo: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1554.594 ; gain = 0.000
