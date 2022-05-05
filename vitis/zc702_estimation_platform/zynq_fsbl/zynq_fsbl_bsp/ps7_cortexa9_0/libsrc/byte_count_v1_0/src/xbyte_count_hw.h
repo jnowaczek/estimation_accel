@@ -1,6 +1,7 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+// Tool Version Limit: 2022.04
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 // control
 // 0x00 : Control signals
@@ -9,6 +10,7 @@
 //        bit 2  - ap_idle (Read)
 //        bit 3  - ap_ready (Read/COR)
 //        bit 7  - auto_restart (Read/Write)
+//        bit 9  - interrupt (Read)
 //        others - reserved
 // 0x04 : Global Interrupt Enable Register
 //        bit 0  - Global Interrupt Enable (Read/Write)
@@ -16,29 +18,30 @@
 // 0x08 : IP Interrupt Enable Register (Read/Write)
 //        bit 0 - enable ap_done interrupt (Read/Write)
 //        bit 1 - enable ap_ready interrupt (Read/Write)
-//        bit 5 - enable ap_local_deadlock interrupt (Read/Write)
 //        others - reserved
-// 0x0c : IP Interrupt Status Register (Read/TOW)
-//        bit 0 - ap_done (COR/TOW)
-//        bit 1 - ap_ready (COR/TOW)
-//        bit 5 - ap_local_deadlock (COR/TOW)
+// 0x0c : IP Interrupt Status Register (Read/COR)
+//        bit 0 - ap_done (Read/COR)
+//        bit 1 - ap_ready (Read/COR)
 //        others - reserved
-// 0x10 : Data signal of ap_return
-//        bit 7~0 - ap_return[7:0] (Read)
-//        others  - reserved
-// 0x18 : Data signal of input_r
+// 0x10 : Data signal of input_r
 //        bit 31~0 - input_r[31:0] (Read/Write)
-// 0x1c : Data signal of input_r
+// 0x14 : Data signal of input_r
 //        bit 31~0 - input_r[63:32] (Read/Write)
-// 0x20 : reserved
+// 0x18 : reserved
+// 0x1c : Data signal of out_r
+//        bit 31~0 - out_r[31:0] (Read)
+// 0x20 : Control signal of out_r
+//        bit 0  - out_r_ap_vld (Read/COR)
+//        others - reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XBYTE_COUNT_CONTROL_ADDR_AP_CTRL      0x00
 #define XBYTE_COUNT_CONTROL_ADDR_GIE          0x04
 #define XBYTE_COUNT_CONTROL_ADDR_IER          0x08
 #define XBYTE_COUNT_CONTROL_ADDR_ISR          0x0c
-#define XBYTE_COUNT_CONTROL_ADDR_AP_RETURN    0x10
-#define XBYTE_COUNT_CONTROL_BITS_AP_RETURN    8
-#define XBYTE_COUNT_CONTROL_ADDR_INPUT_R_DATA 0x18
+#define XBYTE_COUNT_CONTROL_ADDR_INPUT_R_DATA 0x10
 #define XBYTE_COUNT_CONTROL_BITS_INPUT_R_DATA 64
+#define XBYTE_COUNT_CONTROL_ADDR_OUT_R_DATA   0x1c
+#define XBYTE_COUNT_CONTROL_BITS_OUT_R_DATA   32
+#define XBYTE_COUNT_CONTROL_ADDR_OUT_R_CTRL   0x20
 

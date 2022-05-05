@@ -1,9 +1,9 @@
 #include "byte_count.hpp"
 
 void byte_count(const packed_t input[BLOCK_LENGTH / 4], result_t &out) {
-#pragma HLS INTERFACE mode=m_axi max_read_burst_length=256 max_widen_bitwidth=1024 num_read_outstanding=2 num_write_outstanding=0 port=input
+#pragma HLS INTERFACE mode=m_axi max_read_burst_length=256 max_widen_bitwidth=1024 num_read_outstanding=2 num_write_outstanding=1 port=input
 #pragma HLS INTERFACE mode=s_axilite port=out
-#pragma HLS INTERFACE mode=ap_ctrl_none port=return
+#pragma HLS INTERFACE mode=s_axilite port=return
 #pragma HLS DATAFLOW
 
 	data_t input0[BLOCK_LENGTH / 4];

@@ -1,6 +1,7 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+// Tool Version Limit: 2022.04
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 /***************************** Include Files *********************************/
 #include "xbyte_count.h"
@@ -73,15 +74,6 @@ void XByte_count_DisableAutoRestart(XByte_count *InstancePtr) {
     XByte_count_WriteReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_AP_CTRL, 0);
 }
 
-u32 XByte_count_Get_return(XByte_count *InstancePtr) {
-    u32 Data;
-
-    Xil_AssertNonvoid(InstancePtr != NULL);
-    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
-
-    Data = XByte_count_ReadReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_AP_RETURN);
-    return Data;
-}
 void XByte_count_Set_input_r(XByte_count *InstancePtr, u64 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
@@ -99,6 +91,26 @@ u64 XByte_count_Get_input_r(XByte_count *InstancePtr) {
     Data = XByte_count_ReadReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_INPUT_R_DATA);
     Data += (u64)XByte_count_ReadReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_INPUT_R_DATA + 4) << 32;
     return Data;
+}
+
+u32 XByte_count_Get_out_r(XByte_count *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XByte_count_ReadReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_OUT_R_DATA);
+    return Data;
+}
+
+u32 XByte_count_Get_out_r_vld(XByte_count *InstancePtr) {
+    u32 Data;
+
+    Xil_AssertNonvoid(InstancePtr != NULL);
+    Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
+
+    Data = XByte_count_ReadReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_OUT_R_CTRL);
+    return Data & 0x1;
 }
 
 void XByte_count_InterruptGlobalEnable(XByte_count *InstancePtr) {
@@ -139,7 +151,7 @@ void XByte_count_InterruptClear(XByte_count *InstancePtr, u32 Mask) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
-    XByte_count_WriteReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_ISR, Mask);
+    //XByte_count_WriteReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_ISR, Mask);
 }
 
 u32 XByte_count_InterruptGetEnabled(XByte_count *InstancePtr) {
@@ -153,6 +165,7 @@ u32 XByte_count_InterruptGetStatus(XByte_count *InstancePtr) {
     Xil_AssertNonvoid(InstancePtr != NULL);
     Xil_AssertNonvoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
 
+    // Current Interrupt Clear Behavior is Clear on Read(COR).
     return XByte_count_ReadReg(InstancePtr->Control_BaseAddress, XBYTE_COUNT_CONTROL_ADDR_ISR);
 }
 

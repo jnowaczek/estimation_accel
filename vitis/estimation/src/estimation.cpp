@@ -3,6 +3,7 @@
 #include "sleep.h"
 #include "xbyte_count.h"
 #include "xparameters.h"
+#include "xtime_l.h"
 
 XByte_count accel;
 XByte_count_Config *config;
@@ -36,25 +37,27 @@ int main(void) {
 			<< "\n" << " |  Base Address: 0x" << std::hex
 			<< config->Control_BaseAddress << std::dec << "\n";
 
-	if (!XByte_count_IsReady(&accel)) {
+	while (!XByte_count_IsReady(&accel)) {
 		std::cerr << "Accelerator not ready";
-		return XST_DEVICE_BUSY;
+		sleep(1);
 	}
+
+	XTime start_time, end_time;
 
 	XByte_count_Set_input_r(&accel, (u64) &data);
 	std::cout << "INFO: Accelerator input set: 0x" << std::hex << &data << std::dec << "\n";
-
+	XTime_GetTime(&start_time);
 	XByte_count_Start(&accel);
-	std::cout << "INFO: Accelerator started\n";
+
 
 	while (!XByte_count_IsDone(&accel)) {
-		usleep(1);
-		std::cout << "INFO: Accelerator not done\n";
+		XTime_GetTime(&end_time);
 	}
 
-	uint32_t result = XByte_count_Get_return(&accel);
-	std::cout << "INFO: Accelerator complete";
-	std::cout << "    Result: " << result <<"\n";
+	uint32_t result = XByte_count_Get_out_r(&accel);
+	std::cout << "INFO: Accelerator complete" << "\n";
+	std::cout << "    Result: " << result << "\n";
+	std::cout << "    Took " << 1.0 * (end_time - start_time) / (COUNTS_PER_SECOND / 1000000) << "μs \n";
 
 
 	return status;

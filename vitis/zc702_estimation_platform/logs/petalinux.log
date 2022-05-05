@@ -1,0 +1,28 @@
+TRACE::2022-04-13.23:14:21::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/qemu/
+TRACE::2022-04-13.23:14:21::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/linux/qemu/
+TRACE::2022-04-13.23:14:21::SCWLinux:: Copying the user libraries. 
+TRACE::2022-04-13.23:14:21::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-04-13.23:17:06::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/qemu/
+TRACE::2022-04-13.23:17:06::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/linux/qemu/
+TRACE::2022-04-13.23:17:06::SCWLinux:: Copying the user libraries. 
+TRACE::2022-04-13.23:17:06::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-04-13.23:17:15::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/qemu/
+TRACE::2022-04-13.23:17:15::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/linux/qemu/
+TRACE::2022-04-13.23:17:15::SCWLinux:: Copying the user libraries. 
+TRACE::2022-04-13.23:17:15::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-04-13.23:18:38::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/qemu/
+TRACE::2022-04-13.23:18:38::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/linux/qemu/
+TRACE::2022-04-13.23:18:38::SCWLinux:: Copying the user libraries. 
+TRACE::2022-04-13.23:18:38::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-04-13.23:22:37::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/qemu/
+TRACE::2022-04-13.23:22:37::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/linux/qemu/
+TRACE::2022-04-13.23:22:37::SCWLinux:: Copying the user libraries. 
+TRACE::2022-04-13.23:22:37::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-04-13.23:22:46::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/qemu/
+TRACE::2022-04-13.23:22:46::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/linux/qemu/
+TRACE::2022-04-13.23:22:46::SCWLinux:: Copying the user libraries. 
+TRACE::2022-04-13.23:22:46::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2022-04-13.23:25:35::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/qemu/
+TRACE::2022-04-13.23:25:35::SCWLinux::Copying the qemu file from  C:/Xilinx/Vitis/2021.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt To E:/estimation_accel/vitis/zc702_estimation_platform/export/zc702_estimation_platform/sw/zc702_estimation_platform/linux/qemu/
+TRACE::2022-04-13.23:25:35::SCWLinux:: Copying the user libraries. 
+TRACE::2022-04-13.23:25:35::SCWLinux::Skipping the Petalinux build as image is already given.

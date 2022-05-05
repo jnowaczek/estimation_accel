@@ -1,6 +1,7 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
-// Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+// Tool Version Limit: 2022.04
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1ns/1ps
 module byte_count_control_s_axi
@@ -30,8 +31,7 @@ module byte_count_control_s_axi
     input  wire                          RREADY,
     output wire [63:0]                   input_r,
     input  wire [31:0]                   out_r,
-    input  wire                          out_r_ap_vld,
-    input  wire [0:0]                    ap_local_deadlock
+    input  wire                          out_r_ap_vld
 );
 //------------------------Address Info-------------------
 // 0x00 : reserved

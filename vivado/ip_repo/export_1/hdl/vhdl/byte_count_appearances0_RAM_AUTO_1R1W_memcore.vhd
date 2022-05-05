@@ -1,6 +1,7 @@
 -- ==============================================================
--- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.2 (64-bit)
--- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+-- Tool Version Limit: 2022.04
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- ==============================================================
 --
 library ieee; 
@@ -9,6 +10,7 @@ use ieee.std_logic_unsigned.all;
 
 entity byte_count_appearances0_RAM_AUTO_1R1W_memcore is 
     generic(
+            MEM_TYPE    : string := "auto"; 
             DataWidth     : integer := 32; 
             AddressWidth     : integer := 8; 
             AddressRange    : integer := 256
@@ -37,6 +39,10 @@ signal address1_tmp : std_logic_vector(AddressWidth-1 downto 0);
 type mem_array is array (0 to AddressRange-1) of std_logic_vector (DataWidth-1 downto 0); 
 shared variable ram : mem_array;
 
+attribute syn_ramstyle : string; 
+attribute syn_ramstyle of ram : variable is "auto";
+attribute ram_style : string;
+attribute ram_style of ram : variable is MEM_TYPE;
 
 begin 
 
