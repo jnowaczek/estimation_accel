@@ -19,8 +19,9 @@ XTime start_time, end_time;
 
 void AccelInterruptHandler(void *InstancePtr) {
 	XTime_GetTime(&end_time);
-	auto IntIDFull = XScuGic_CPUReadReg(&InterruptController, XSCUGIC_INT_ACK_OFFSET);
-	XScuGic_CPUWriteReg(&InterruptController, XSCUGIC_EOI_OFFSET, IntIDFull);
+
+	// Clear ISR
+	XByte_count_InterruptGetStatus(&AcceleratorHandle);
 }
 
 int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr)
@@ -101,7 +102,6 @@ int AccelInterruptSetup() {
 }
 
 int BytecountInterruptInit() {
-	XByte_count_DisableAutoRestart(&AcceleratorHandle);
 	// Interrupt 0 is ap_done, interrupt 1 is ap_ready
 	XByte_count_InterruptEnable(&AcceleratorHandle, 0b01);
 	XByte_count_InterruptGlobalEnable(&AcceleratorHandle);
@@ -154,11 +154,8 @@ int main(void) {
 
 	while (!XByte_count_IsReady(&AcceleratorHandle)) {
 		std::cerr << "Accelerator not ready";
-		sleep(1);
+		usleep(10);
 	}
-
-	std::cout << "Did interrupt trigger: " << XByte_count_InterruptGetStatus(&AcceleratorHandle) << "\n";
-
 
 	XByte_count_Set_input_r(&AcceleratorHandle, (u64) &data);
 	std::cout << "INFO: Accelerator input set: 0x" << std::hex << &data << std::dec << "\n";
@@ -174,8 +171,6 @@ int main(void) {
 	std::cout << "INFO: Accelerator complete" << "\n";
 	std::cout << "    Result: " << result << "\n";
 	std::cout << "    Took " << 1.0 * (end_time - start_time) / (COUNTS_PER_SECOND / 1000000) << "μs \n";
-
-	std::cout << "Did interrupt trigger: " << XByte_count_InterruptGetStatus(&AcceleratorHandle) << "\n";
 
 	return status;
 }
