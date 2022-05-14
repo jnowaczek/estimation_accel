@@ -6,7 +6,7 @@
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="3"/>
     </configBuildOptions>
     <lastBuildOptions xsi:type="systemproject:SystemOptions">
-      <applications name="estimation" domainName="standalone_domain" domainPrettyName="standalone on ps7_cortexa9_0" appBuildConfig="Debug"/>
+      <applications name="estimation" domainName="standalone" domainPrettyName="standalone" appBuildConfig="Debug"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="3"/>
     </lastBuildOptions>
   </configuration>

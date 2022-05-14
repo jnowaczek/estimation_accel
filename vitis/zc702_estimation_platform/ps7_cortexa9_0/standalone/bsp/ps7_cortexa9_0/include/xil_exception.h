@@ -1,5 +1,5 @@
 /******************************************************************************
-* Copyright (c) 2015 - 2021 Xilinx, Inc.  All rights reserved.
+* Copyright (c) 2015 - 2022 Xilinx, Inc.  All rights reserved.
 * SPDX-License-Identifier: MIT
 ******************************************************************************/
 
@@ -35,8 +35,21 @@
 *                         For Cortexa72, these macro's would not be supported
 *                         at EL3, as Cortexa72 is using GIC-500(GICv3),  which
 *                         triggeres only FIQ at EL3. Fix for CR#1062506
-# 7.6   mus      09/17/21 Updated flag checking to fix warning reported with
-#                         -Wundef compiler option CR#1110261
+* 7.6   mus      09/17/21 Updated flag checking to fix warning reported with
+*                         -Wundef compiler option CR#1110261
+* 7.7   mus      01/31/22 Few of the #defines in xil_exception.h in are treated
+*                         in different way based on "versal" flag. In existing
+*                         flow, this flag is defined only in xparameters.h and
+*                         BSP compiler flags, it is not defined in application
+*                         compiler flags. So, including xil_exception.h in
+*                         application source file, without including
+*                         xparameters.h results  in incorrect behavior.
+*                         Including xparameters.h in xil_exception.h to avoid
+*                         such issues. It fixes CR#1120498.
+* 7.7	sk	 03/02/22 Define XExc_VectorTableEntry structure to fix
+* 			  misra_c_2012_rule_5_6 violation.
+* 7.7	sk	 03/02/22 Add XExc_VectorTable as extern to fix misra_c_2012_
+* 			  rule_8_4 violation.
 * </pre>
 *
 ******************************************************************************/
@@ -53,6 +66,7 @@
 #include "xil_types.h"
 #include "xpseudo_asm.h"
 #include "bspconfig.h"
+#include "xparameters.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -98,6 +112,13 @@ extern "C" {
  */
 typedef void (*Xil_ExceptionHandler)(void *data);
 typedef void (*Xil_InterruptHandler)(void *data);
+
+typedef struct {
+        Xil_ExceptionHandler Handler;
+        void *Data;
+} XExc_VectorTableEntry;
+
+extern XExc_VectorTableEntry XExc_VectorTable[];
 
 /**
 *@endcond
