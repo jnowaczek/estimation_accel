@@ -1,4 +1,7 @@
 #include <iostream>
+#include <memory>
+#include <string>
+#include <vector>
 
 #include "ff.h"
 #include "sleep.h"
@@ -6,6 +9,13 @@
 #include "xparameters.h"
 #include "xtime_l.h"
 #include "xscugic.h"
+
+#include "CardIO.hpp"
+
+#ifndef VERBOSE
+// Default to verbose mode
+#define VERBOSE 1
+#endif
 
 // Interrupt controller driver
 XScuGic InterruptController;
@@ -131,6 +141,14 @@ int BytecountInterruptInit() {
 	return XST_SUCCESS;
 }
 
+FRESULT initializeFS() {
+	return f_mount(&FatFs, "", 0);
+}
+
+FRESULT cleanupFS() {
+	return f_unmount("");
+}
+
 int main(void) {
 
 	// Don't judge me
@@ -146,31 +164,22 @@ int main(void) {
 
 	int Status;
 
-	FIL Fil;
 	FRESULT Fr;
 
-	Fr = f_mount(&FatFs, "", 0);
-
-	Fr = f_open(&Fil, "0:/test.txt", FA_READ | FA_WRITE);
-
+	Fr = initializeFS();
 	if (Fr != FR_OK) {
-		std::cerr << "Failed to open file\n";
+		std::cerr << "Failed to mount filesystem\n";
 	}
 
-	auto size = f_size(&Fil);
-	std::cout << "File size: " << size << "\n";
+	std::vector<std::string> testFiles;
+	listTests("/test_data", testFiles);
 
-	size_t bw;
-	Fr = f_write(&Fil, "some stuff", 10, &bw);
-
-	if (Fr != FR_OK) {
-		std::cerr << "Failed to write to file\n";
-	} else {
-		std::cout << "Wrote " << bw << "bytes to file\n";
+	std::cout << "\nIndexed " << testFiles.size() << " test files\n";
+	if (VERBOSE == 1) {
+		for (auto file : testFiles) {
+			std::cout << " |  " << file << "\n";
+		}
 	}
-
-	f_close(&Fil);
-	f_unmount("");
 
 	Status = XByte_count_Initialize(&AcceleratorHandle,
 	XPAR_BYTE_COUNT_0_DEVICE_ID);
@@ -180,10 +189,11 @@ int main(void) {
 		return Status;
 	}
 
-	std::cout << "Accelerator initialization succeeded:\n"
-			<< " |  Device ID: 0x" << std::hex << AccelConfig->DeviceId
-			<< std::dec << "\n" << " |  Base Address: 0x" << std::hex
-			<< AccelConfig->Control_BaseAddress << std::dec << "\n";
+	if (VERBOSE)
+		std::cout << "\nAccelerator initialization succeeded:\n"
+				<< " |  Device ID: 0x" << std::hex << AccelConfig->DeviceId
+				<< std::dec << "\n" << " |  Base Address: 0x" << std::hex
+				<< AccelConfig->Control_BaseAddress << std::dec << "\n";
 
 	Status = AccelInterruptSetup();
 
@@ -199,29 +209,29 @@ int main(void) {
 		return Status;
 	}
 
-	std::cout << "Bytecount interrupt ready\n";
+	if (VERBOSE)
+		std::cout << " |  Bytecount interrupt ready\n";
 
 	while (!XByte_count_IsReady(&AcceleratorHandle)) {
 		std::cerr << "Accelerator not ready";
 		usleep(10);
 	}
 
-	XByte_count_Set_input_r(&AcceleratorHandle, (u64) &data);
-	std::cout << "INFO: Accelerator input set: 0x" << std::hex << &data
-			<< std::dec << "\n";
-	XTime_GetTime(&start_time);
-	XByte_count_Start(&AcceleratorHandle);
+	std::cout << "\n== BEGIN TESTS ==\n";
 
-	while (!XByte_count_IsDone(&AcceleratorHandle)) {
-		usleep(10);
+	for (auto test : testFiles) {
+		std::vector<uint8_t> testData;
+		try {
+			testData = std::vector<uint8_t>(1024);
+			loadTest(test, testData);
+		} catch (std::bad_alloc& e) {
+			std::cerr << "Failed to test buffer: " << e.what() << "\n";
+			continue;
+		}
+
+		std::cout << " |  First byte of test data: 0x" << std::hex
+				<< (int) testData[0] << std::dec << "\n";
 	}
-
-	uint32_t result = XByte_count_Get_out_r(&AcceleratorHandle);
-	std::cout << "INFO: Accelerator complete" << "\n";
-	std::cout << "    Result: " << result << "\n";
-	std::cout << "    Took "
-			<< 1.0 * (end_time - start_time) / (COUNTS_PER_SECOND / 1000000)
-			<< "μs \n";
 
 	return Status;
 }

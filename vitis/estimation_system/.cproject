@@ -29,7 +29,7 @@
                             							
                             <targetPlatform id="com.xilinx.sdx.system.managedbuilder.swemu.configuration.937267250..1477409766" name=""/>
                             							
-                            <builder buildPath="${workspace_loc:/estimation_system}/Emulation-SW" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.1028269822" managedBuildOn="true" name="System Project Builder.Emulation-SW" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
+                            <builder buildPath="${workspace_loc:/estimation_system}/Emulation-SW" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.1028269822" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="System Project Builder" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
                             							
                             <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.1867361258" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool"/>
                             						
@@ -71,7 +71,7 @@
                             							
                             <targetPlatform id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.1966772704..1750283622" name=""/>
                             							
-                            <builder buildPath="${workspace_loc:/estimation_system}/Emulation-HW" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.65932126" managedBuildOn="true" name="System Project Builder.Emulation-HW" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
+                            <builder buildPath="${workspace_loc:/estimation_system}/Emulation-HW" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.65932126" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="System Project Builder" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
                             							
                             <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.468755075" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool"/>
                             						
@@ -115,7 +115,11 @@
                             							
                             <builder buildPath="${workspace_loc:/estimation_system}/Hardware" enableAutoBuild="true" id="com.xilinx.sdx.system.managedbuilder.systemBuilder.187003448" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="System Project Builder" superClass="com.xilinx.sdx.system.managedbuilder.systemBuilder"/>
                             							
-                            <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.1084489523" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool"/>
+                            <tool id="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool.1084489523" name="System Builder" superClass="com.xilinx.sdx.system.managedbuilder.toolchain.cfjoinTool">
+                                								
+                                <option id="com.xilinx.sdx.system.managedbuilder.misc.other.438314398" name="Other flags" superClass="com.xilinx.sdx.system.managedbuilder.misc.other" useByScannerDiscovery="false" value="" valueType="string"/>
+                                							
+                            </tool>
                             						
                         </toolChain>
                         					
