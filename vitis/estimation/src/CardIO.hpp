@@ -58,7 +58,7 @@ void loadTest(std::string path, std::vector<uint8_t> &data) {
 	auto bufferSize = (size / 1024) * 1024;
 	if (VERBOSE)
 		std::cout << " |  Test size: " << size << " bytes (" << bufferSize
-				<< " bytes tested)\n";
+				<< " bytes testable)\n";
 
 	data.resize(bufferSize);
 

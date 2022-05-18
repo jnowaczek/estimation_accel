@@ -15,6 +15,10 @@
       <applications name="estimation" domainName="standalone" domainPrettyName="standalone" appBuildConfig="Debug"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="3"/>
     </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions" target="hw_emu">
+      <applications name="estimation" domainName="standalone" domainPrettyName="standalone" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="3"/>
+    </lastBuildOptions>
   </configuration>
   <configuration name="Hardware" id="com.xilinx.sdx.system.managedbuilder.hw.configuration.1546486519">
     <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw">

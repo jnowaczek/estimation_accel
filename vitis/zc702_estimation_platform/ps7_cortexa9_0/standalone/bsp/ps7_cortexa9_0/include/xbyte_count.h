@@ -87,11 +87,10 @@ u32 XByte_count_IsIdle(XByte_count *InstancePtr);
 u32 XByte_count_IsReady(XByte_count *InstancePtr);
 void XByte_count_EnableAutoRestart(XByte_count *InstancePtr);
 void XByte_count_DisableAutoRestart(XByte_count *InstancePtr);
+u32 XByte_count_Get_return(XByte_count *InstancePtr);
 
 void XByte_count_Set_input_r(XByte_count *InstancePtr, u64 Data);
 u64 XByte_count_Get_input_r(XByte_count *InstancePtr);
-u32 XByte_count_Get_out_r(XByte_count *InstancePtr);
-u32 XByte_count_Get_out_r_vld(XByte_count *InstancePtr);
 
 void XByte_count_InterruptGlobalEnable(XByte_count *InstancePtr);
 void XByte_count_InterruptGlobalDisable(XByte_count *InstancePtr);

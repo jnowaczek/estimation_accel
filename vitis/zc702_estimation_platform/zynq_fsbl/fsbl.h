@@ -215,6 +215,7 @@
 * 17.00a bsv 27/03/18	Fix for CR# 996973  Add code under JTAG_ENABLE_LEVEL_SHIFTERS macro
 * 						to enable level shifters in jtag boot mode.
 * 18.00a ka  10/29/18   Fix for CR# 1006294 Added macro for FORCE_USE_AES_EXCLUDE
+* 19.0   vns 03/18/22   Fixed CR#1125470, added FsblPrintArray() prototype
 *
 * </pre>
 *
@@ -312,8 +313,8 @@ extern "C" {
 /*
  * SDK release version
  */
-#define SDK_RELEASE_YEAR	2021
-#define SDK_RELEASE_QUARTER	2
+#define SDK_RELEASE_YEAR	2022
+#define SDK_RELEASE_QUARTER	1
 
 #define WORD_LENGTH_SHIFT	2
 
@@ -525,6 +526,7 @@ void FsblMeasurePerfTime (XTime tCur, XTime tEnd);
 void GetSiliconVersion(void);
 void FsblHandoffExit(u32 FsblStartAddr);
 void FsblHandoffJtagExit();
+void FsblPrintArray (u8 *Buf, u32 Len, char *Str);
 /************************** Variable Definitions *****************************/
 extern int SkipPartition;
 
