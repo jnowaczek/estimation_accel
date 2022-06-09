@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'byte_count'
+================================================================
+* Date:           Sun May 29 12:57:33 2022
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        estimation_mvp
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010i-clg225-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     1158|     1158|  11.580 us|  11.580 us|  1159|  1159|  dataflow|
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 5, States = { 1 2 3 4 5 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 6 [1/1] (1.00ns)   --->   "%input_r_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %input_r"   --->   Operation 6 'read' 'input_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%appearances = alloca i32 1" [byte_count_mvp.cpp:9]   --->   Operation 7 'alloca' 'appearances' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 8 [2/2] (7.30ns)   --->   "%call_ln11 = call void @count_appearances, i8 %gmem, i32 %input_r_read, i32 %appearances" [byte_count_mvp.cpp:11]   --->   Operation 8 'call' 'call_ln11' <Predicate = true> <Delay = 7.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln11 = call void @count_appearances, i8 %gmem, i32 %input_r_read, i32 %appearances" [byte_count_mvp.cpp:11]   --->   Operation 9 'call' 'call_ln11' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln12 = call void @count_threshold, i32 %appearances, i32 %output_r" [byte_count_mvp.cpp:12]   --->   Operation 10 'call' 'call_ln12' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 6.69>
+ST_5 : Operation 11 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln7 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_0" [byte_count_mvp.cpp:7]   --->   Operation 11 'specdataflowpipeline' 'specdataflowpipeline_ln7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 12 [1/1] (0.00ns)   --->   "%spectopmodule_ln3 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_9" [byte_count_mvp.cpp:3]   --->   Operation 12 'spectopmodule' 'spectopmodule_ln3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gmem, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %gmem"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %input_r, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_5, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_6, i32 4294967295, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %input_r, void @empty_7, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_6, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 17 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %output_r"   --->   Operation 17 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %output_r, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_8, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %output_r, void @empty_7, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_4, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 21 [1/2] (6.69ns)   --->   "%call_ln12 = call void @count_threshold, i32 %appearances, i32 %output_r" [byte_count_mvp.cpp:12]   --->   Operation 21 'call' 'call_ln12' <Predicate = true> <Delay = 6.69> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 22 [1/1] (0.00ns)   --->   "%ret_ln13 = ret" [byte_count_mvp.cpp:13]   --->   Operation 22 'ret' 'ret_ln13' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read operation ('input') on port 'input_r' [14]  (1 ns)
+
+ <State 2>: 7.3ns
+The critical path consists of the following:
+	'call' operation ('call_ln11', byte_count_mvp.cpp:11) to 'count_appearances' [16]  (7.3 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 6.69ns
+The critical path consists of the following:
+	'call' operation ('call_ln12', byte_count_mvp.cpp:12) to 'count_threshold' [17]  (6.69 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

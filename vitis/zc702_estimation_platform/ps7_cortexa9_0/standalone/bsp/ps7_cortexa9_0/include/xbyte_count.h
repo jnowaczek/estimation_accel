@@ -39,12 +39,12 @@ typedef uint64_t u64;
 #else
 typedef struct {
     u16 DeviceId;
-    u64 Control_BaseAddress;
+    u32 Control_BaseAddress;
 } XByte_count_Config;
 #endif
 
 typedef struct {
-    u64 Control_BaseAddress;
+    u32 Control_BaseAddress;
     u32 IsReady;
 } XByte_count;
 
@@ -89,8 +89,8 @@ void XByte_count_EnableAutoRestart(XByte_count *InstancePtr);
 void XByte_count_DisableAutoRestart(XByte_count *InstancePtr);
 u32 XByte_count_Get_return(XByte_count *InstancePtr);
 
-void XByte_count_Set_input_r(XByte_count *InstancePtr, u64 Data);
-u64 XByte_count_Get_input_r(XByte_count *InstancePtr);
+void XByte_count_Set_input_r(XByte_count *InstancePtr, u32 Data);
+u32 XByte_count_Get_input_r(XByte_count *InstancePtr);
 
 void XByte_count_InterruptGlobalEnable(XByte_count *InstancePtr);
 void XByte_count_InterruptGlobalDisable(XByte_count *InstancePtr);

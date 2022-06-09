@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1653847065866">
+  <ports id="1" name="gmem" type="PortType" coreId="1702129263" bitwidth="8" iftype="IfTypeFifo">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="input_r" type="PortType" originalName="input" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="output_r" type="PortType" originalName="output" coreId="2277" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="22" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="27" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="28" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="29" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="32" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="33" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="176" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="177" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="72" RegionName="byte_count">
+    <basic_blocks id="19" name="byte_count" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="input_r_read" originalName="input" coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <dataInputObjs>input_r</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="appearances" lineNumber="9" originalName="appearances" fileName="byte_count_mvp.cpp" fileDirectory=".." rtlName="appearances_U" coreName="RAM" implIndex="auto" control="no" opType="ram_t2p" coreId="82" contextFuncName="byte_count" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_mvp.cpp" linenumber="9" fileDirectory="E:\estimation_accel\hls" functionName="byte_count"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="_ln11" lineNumber="11" fileName="byte_count_mvp.cpp" fileDirectory=".." rtlName="count_appearances_U0" coreId="4294967295" contextFuncName="byte_count" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="7.3" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_mvp.cpp" linenumber="11" fileDirectory="E:\estimation_accel\hls" functionName="byte_count"/>
+        <dataInputObjs>gmem</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>count_appearances</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln12" lineNumber="12" fileName="byte_count_mvp.cpp" fileDirectory=".." rtlName="count_threshold_U0" coreId="4294967295" contextFuncName="byte_count" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_mvp.cpp" linenumber="12" fileDirectory="E:\estimation_accel\hls" functionName="byte_count"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>output_r</dataOutputObjs>
+        <constName>count_threshold</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="_ln13" lineNumber="13" fileName="byte_count_mvp.cpp" fileDirectory=".." coreId="1183391664" contextFuncName="byte_count" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_mvp.cpp" linenumber="13" fileDirectory="E:\estimation_accel\hls" functionName="byte_count"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="byte_count_mvp.cpp">
+        <validLinenumbers>9</validLinenumbers>
+        <validLinenumbers>11</validLinenumbers>
+        <validLinenumbers>12</validLinenumbers>
+        <validLinenumbers>13</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <regnodes realName="input_r_read_reg_75">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <expressionNodes realName="appearances_alloca_fu_50">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_count_threshold_fu_68">
+    <nodeIds>17</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_count_appearances_fu_60">
+    <nodeIds>16</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="input_r_read_read_fu_54">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioPorts name="gmem">
+    <contents name="call">
+      <nodeIds>16</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_r">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_r">
+    <contents name="call">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="16" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="16" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="17" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="2"/>
+      <operations id="18" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="byte_count" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1158" mMaxLatency="1158" mIsDfPipe="true">
+      <basicBlocks>19</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst">
+        <processe_list name="count_appearances_U0" ssdmobj_id="16">
+          <pins>
+            <port name="gmem" type="BUSType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_26" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="count_appearances_U0" ssdmobj_id="16" object_id="_32"/>
+          </pins>
+          <pins>
+            <port name="input" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_27" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="count_appearances_U0" ssdmobj_id="16" object_id="_32"/>
+          </pins>
+        </processe_list>
+        <processe_list name="count_threshold_U0" ssdmobj_id="17">
+          <pins>
+            <port name="output" dir="DirOut" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_28" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="count_threshold_U0" ssdmobj_id="17" object_id="_38"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="appearances" ssdmobj_id="15">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="count_appearances_U0" ssdmobj_id="16" object_id="_32"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="count_threshold_U0" ssdmobj_id="17" object_id="_38"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,9 +1,8 @@
 #include "byte_count.hpp"
 
-void byte_count(const packed_t input[BLOCK_LENGTH / 4], result_t &out) {
-#pragma HLS INTERFACE mode=m_axi max_read_burst_length=256 max_widen_bitwidth=1024 num_read_outstanding=2 num_write_outstanding=1 port=input
-#pragma HLS INTERFACE mode=s_axilite port=out
-#pragma HLS INTERFACE mode=ap_ctrl_chain port=return
+result_t byte_count(const packed_t input[BLOCK_LENGTH / 4]) {
+#pragma HLS INTERFACE mode=m_axi port=input
+#pragma HLS INTERFACE mode=s_axilite port=return
 #pragma HLS DATAFLOW
 
 	data_t input0[BLOCK_LENGTH / 4];
@@ -22,6 +21,8 @@ void byte_count(const packed_t input[BLOCK_LENGTH / 4], result_t &out) {
 
 	count_t combined_appearances[COUNT_BUCKETS];
 
+	result_t output = -1;
+
 	split(input, input0, input1, input2, input3);
 
 	count_appearances(input0, appearances0);
@@ -32,7 +33,9 @@ void byte_count(const packed_t input[BLOCK_LENGTH / 4], result_t &out) {
 	reduce_appearances(appearances0, appearances1, appearances2, appearances3,
 			combined_appearances);
 
-	count_threshold(combined_appearances, out);
+	count_threshold(combined_appearances, output);
+
+	return output;
 }
 
 void split(const packed_t input[BLOCK_LENGTH / 4],
@@ -51,11 +54,12 @@ void split(const packed_t input[BLOCK_LENGTH / 4],
 
 // Heavily borrowed from https://kastner.ucsd.edu/hlsbook/ page 162 as the
 // example is almost exactly what I want to do.
-void count_appearances(data_t input[BLOCK_LENGTH / 4], count_t appearances[COUNT_BUCKETS]) {
+void count_appearances(data_t input[BLOCK_LENGTH / 4],
+		count_t appearances[COUNT_BUCKETS]) {
 #pragma HLS DEPENDENCE variable=appearances intra RAW false
 	RESET: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
 #pragma HLS UNROLL
-			appearances[i] = 0;
+		appearances[i] = 0;
 	}
 	count_t count = 0;
 	data_t prev = input[0];
@@ -87,7 +91,7 @@ void reduce_appearances(count_t appearances0[COUNT_BUCKETS],
 	}
 }
 
-void count_threshold(count_t appearances[COUNT_BUCKETS], result_t &out) {
+void count_threshold(count_t appearances[COUNT_BUCKETS], result_t &output) {
 	result_t over_thresh = 0;
 
 	THRESHOLD: for (iter_t i = 0; i < COUNT_BUCKETS; i++) {
@@ -96,5 +100,5 @@ void count_threshold(count_t appearances[COUNT_BUCKETS], result_t &out) {
 			over_thresh += 1;
 	}
 
-	out = over_thresh;
+	output = over_thresh;
 }

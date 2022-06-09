@@ -95,7 +95,7 @@
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.symbols.defined.1536140427" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" valueType="definedSymbols">
+                                <option id="xilinx.gnu.compiler.symbols.defined.1536140427" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
                                     									
                                     <listOptionValue builtIn="false" value="VERBOSE=1"/>
                                     								

@@ -3,7 +3,10 @@
 #include <string>
 #include <vector>
 
+#include "boost/align.hpp"
 #include "ff.h"
+
+#include "ByteCountTypes.hpp"
 
 FRESULT listTests(std::string path, std::vector<std::string> &fileList) {
 	FRESULT res;
@@ -23,12 +26,12 @@ FRESULT listTests(std::string path, std::vector<std::string> &fileList) {
 				break; /* Break on error or end of dir */
 			}
 			if (fno.fattrib & AM_DIR) { /* It is a directory */
-				auto subdir = path + "/" + fno.fname;
+				std::string subdir = path + "/" + fno.fname;
 				res = listTests(subdir, fileList); /* Enter the directory */
 				if (res != FR_OK)
 					break;
 			} else { /* It is a file. */
-				auto filePath = path + "/" + fno.fname;
+				std::string filePath = path + "/" + fno.fname;
 				fileList.push_back(filePath);
 			}
 		}
@@ -41,10 +44,10 @@ FRESULT listTests(std::string path, std::vector<std::string> &fileList) {
 	return res;
 }
 
-void loadTest(std::string path, std::vector<uint8_t> &data) {
+void loadTest(std::string path, alignedDataVector_t &data) {
 	FRESULT res;
 	FIL fil;
-	UINT br;
+	UINT bytesRead;
 
 	if (VERBOSE)
 		std::cout << "Reading test file '" << path << "'\n";
@@ -54,16 +57,15 @@ void loadTest(std::string path, std::vector<uint8_t> &data) {
 	if (res != FR_OK)
 		std::cerr << "Failed to load test data '" << path << "'\n";
 
-	UINT size = f_size(&fil);
-	auto bufferSize = (size / 1024) * 1024;
+	UINT fileSize = f_size(&fil);
 	if (VERBOSE)
-		std::cout << " |  Test size: " << size << " bytes (" << bufferSize
+		std::cout << " |  Test size: " << fileSize << " bytes (" << 1024
 				<< " bytes testable)\n";
 
-	data.resize(bufferSize);
+	data.resize(fileSize);
 
-	res = f_read(&fil, data.data(), bufferSize, &br);
-	if (br < bufferSize)
+	res = f_read(&fil, data.data(), fileSize, &bytesRead);
+	if (bytesRead < fileSize)
 		std::cerr << "Something went wrong reading that file there boyo\n...";
 
 	f_close(&fil);

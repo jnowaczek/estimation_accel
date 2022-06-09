@@ -1,0 +1,1263 @@
+INFO-FLOW: Workspace E:/estimation_accel/hls/estimation_mvp/solution1 opened at Sun May 29 12:56:53 -0500 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z010i-clg225-1L 
+Execute       create_platform xc7z010i-clg225-1L -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+Command       create_platform done; 0.53 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.123 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.221 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.767 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vivado' config_interface -m_axi_alignment_byte_size=0 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=0
+Execute     config_interface -m_axi_alignment_byte_size=0 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=Byte_Count_MVP 
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+Execute     config_export -display_name=Byte_Count_MVP 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -library=byte_count_mvp 
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+Execute     config_export -library=byte_count_mvp 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=E:/estimation_accel/vivado/ip_repo 
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+Execute     config_export -output=E:/estimation_accel/vivado/ip_repo 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vendor=jnowaczek 
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+Execute     config_export -vendor=jnowaczek 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.4.0 
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.4.0
+Execute     config_export -version=1.4.0 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+Execute     config_interface -m_axi_addr64=0 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_alignment_byte_size=32 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=32
+Execute     config_interface -m_axi_alignment_byte_size=32 
+Command   open_solution done; 0.818 sec.
+Execute   set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+Execute     create_platform xc7z010i-clg225-1L -board  
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.122 sec.
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.139 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.4.0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.4.0 
+Execute   config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 32 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 32 
+Execute   source ./estimation_mvp/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./estimation_mvp/solution1/directives.tcl
+Execute     set_directive_top -name byte_count byte_count 
+INFO: [HLS 200-1510] Running: set_directive_top -name byte_count byte_count 
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -hw_syn 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -pre_tcl 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 849.594 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling byte_count_bench_mvp.cpp as C++
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang byte_count_bench_mvp.cpp -foptimization-record-file=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2022.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.cpp.clang.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.cpp.clang.err.log 
+Command       ap_eval done; 1.841 sec.
+INFO-FLOW: Done: GCC PP 39 time: 1.8 seconds per iteration
+Execute       set_directive_top byte_count -name=byte_count 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/clang.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/clang.err.log 
+Command       ap_eval done; 1.692 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/.systemc_flag -fix-errors E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.087 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/all.directive.json -fix-errors E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.893 sec.
+Execute       clang_tidy xilinx-remove-assert -desc remove-assert E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.076 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 2 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.clang-tidy.loop-label.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 1.782 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 1.936 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
+Command       ap_eval done; 1.072 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.clang.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.pp.0.cpp.clang.err.log 
+Command       ap_eval done; 1.905 sec.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling byte_count_mvp.cpp as C++
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang byte_count_mvp.cpp -foptimization-record-file=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2022.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.cpp.clang.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.cpp.clang.err.log 
+Command       ap_eval done; 0.955 sec.
+INFO-FLOW: Done: GCC PP 39 time: 1 seconds per iteration
+Execute       set_directive_top byte_count -name=byte_count 
+INFO-FLOW: Source syntax check for synthesis
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/clang.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/clang.err.log 
+Command       ap_eval done; 1.443 sec.
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/.systemc_flag -fix-errors E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.674 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/all.directive.json -fix-errors E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.972 sec.
+Execute       clang_tidy xilinx-remove-assert -desc remove-assert E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.581 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.6 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.clang-tidy.loop-label.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.clang-tidy.loop-label.err.log 
+Command         ap_eval done; 1.094 sec.
+Command       clang_tidy done; 1.146 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
+Command       ap_eval done; 0.75 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.clang.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.pp.0.cpp.clang.err.log 
+Command       ap_eval done; 1.505 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 19.809 seconds; current allocated memory: 1.099 GB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc -args  "E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.g.bc" "E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_bench_mvp.g.bc E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_mvp.g.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log 
+Command         ap_eval done; 0.156 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.159 sec.
+Execute       run_link_or_opt -opt -out E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.1.lower.bc -args E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.1.lower.bc > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log 
+Command         ap_eval done; 0.199 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.203 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.2.m1.bc -args E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsmc++_39.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.2.m1.bc > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
+Command         ap_eval done; 3.069 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 3.073 sec.
+Execute       run_link_or_opt -opt -out E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=byte_count -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=byte_count -reflow-float-conversion -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.3.fpc.bc > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
+Command         ap_eval done; 1.299 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.304 sec.
+Execute       run_link_or_opt -out E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.4.m2.bc -args E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libfloatconversion_39.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.4.m2.bc > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=byte_count 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=byte_count -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.5.gdce.bc > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_compile -instruction_warning_threshold 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_dataflow -strict_mode 
+Execute       get_config_array_partition -throughput_driven 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+Execute       get_clock_period -ns -default 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=byte_count -mllvm -hls-db-dir -mllvm E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -assume-maxi-align=32 -mllvm -no-unaligned-maxi-accesses=false -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -reflow-enable-maxi-addr-32bits -x ir E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.ld.0.bc.clang.err.log 
+Command       ap_eval done; 1.448 sec.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:47:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:44:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:20:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:17:0)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 8 in loop 'APPEARANCES'(byte_count_mvp.cpp:28:15) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (byte_count_mvp.cpp:28:15)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.514 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.099 GB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top byte_count -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.0.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.344 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.386 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.1.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.152 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 1.099 GB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.g.1.bc to E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.o.1.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+Command         transform done; 1.01 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.282 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.302 seconds; current allocated memory: 1.099 GB.
+Execute         get_config_compile -enable_auto_rewind 
+Execute         get_config_compile -enable_loop_extract 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.o.2.bc -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:22:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:35:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:41:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:17).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:17).
+Command         transform done; 1.564 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.568 seconds; current allocated memory: 1.099 GB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 3.434 sec.
+Command     elaborate done; 29.777 sec.
+Execute     ap_eval exec zip -j E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.128 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+Execute       ap_set_top_model byte_count 
+Execute       get_model_list byte_count -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model byte_count 
+Execute       preproc_iomode -model count_threshold 
+Execute       preproc_iomode -model count_appearances 
+Execute       preproc_iomode -model count_appearances_Pipeline_APPEARANCES 
+Execute       get_model_list byte_count -filter all-wo-channel 
+INFO-FLOW: Model list for configure: count_appearances_Pipeline_APPEARANCES count_appearances count_threshold byte_count
+INFO-FLOW: Configuring Module : count_appearances_Pipeline_APPEARANCES ...
+Execute       set_default_model count_appearances_Pipeline_APPEARANCES 
+Execute       apply_spec_resource_limit count_appearances_Pipeline_APPEARANCES 
+INFO-FLOW: Configuring Module : count_appearances ...
+Execute       set_default_model count_appearances 
+Execute       apply_spec_resource_limit count_appearances 
+INFO-FLOW: Configuring Module : count_threshold ...
+Execute       set_default_model count_threshold 
+Execute       apply_spec_resource_limit count_threshold 
+INFO-FLOW: Configuring Module : byte_count ...
+Execute       set_default_model byte_count 
+Execute       apply_spec_resource_limit byte_count 
+INFO-FLOW: Model list for preprocess: count_appearances_Pipeline_APPEARANCES count_appearances count_threshold byte_count
+INFO-FLOW: Preprocessing Module: count_appearances_Pipeline_APPEARANCES ...
+Execute       set_default_model count_appearances_Pipeline_APPEARANCES 
+Execute       cdfg_preprocess -model count_appearances_Pipeline_APPEARANCES 
+Execute       rtl_gen_preprocess count_appearances_Pipeline_APPEARANCES 
+INFO-FLOW: Preprocessing Module: count_appearances ...
+Execute       set_default_model count_appearances 
+Execute       cdfg_preprocess -model count_appearances 
+Execute       rtl_gen_preprocess count_appearances 
+INFO-FLOW: Preprocessing Module: count_threshold ...
+Execute       set_default_model count_threshold 
+Execute       cdfg_preprocess -model count_threshold 
+Execute       rtl_gen_preprocess count_threshold 
+INFO-FLOW: Preprocessing Module: byte_count ...
+Execute       set_default_model byte_count 
+Execute       cdfg_preprocess -model byte_count 
+Execute       rtl_gen_preprocess byte_count 
+INFO-FLOW: Model list for synthesis: count_appearances_Pipeline_APPEARANCES count_appearances count_threshold byte_count
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model count_appearances_Pipeline_APPEARANCES 
+Execute       schedule -model count_appearances_Pipeline_APPEARANCES 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.283 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.sched.adb -f 
+INFO-FLOW: Finish scheduling count_appearances_Pipeline_APPEARANCES.
+Execute       set_default_model count_appearances_Pipeline_APPEARANCES 
+Execute       bind -model count_appearances_Pipeline_APPEARANCES 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.bind.adb -f 
+INFO-FLOW: Finish binding count_appearances_Pipeline_APPEARANCES.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model count_appearances 
+Execute       schedule -model count_appearances 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.564 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.615 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.431 sec.
+Execute       db_write -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.sched.adb -f 
+Command       db_write done; 0.12 sec.
+INFO-FLOW: Finish scheduling count_appearances.
+Execute       set_default_model count_appearances 
+Execute       bind -model count_appearances 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.306 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.857 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.183 sec.
+Execute       db_write -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.bind.adb -f 
+Command       db_write done; 0.155 sec.
+INFO-FLOW: Finish binding count_appearances.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model count_threshold 
+Execute       schedule -model count_threshold 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 2.474 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.84 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.909 sec.
+Execute       db_write -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.sched.adb -f 
+Command       db_write done; 0.249 sec.
+INFO-FLOW: Finish scheduling count_threshold.
+Execute       set_default_model count_threshold 
+Execute       bind -model count_threshold 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 1.152 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.311 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 1.931 sec.
+Execute       db_write -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.bind.adb -f 
+Command       db_write done; 0.297 sec.
+INFO-FLOW: Finish binding count_threshold.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model byte_count 
+Execute       schedule -model byte_count 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.284 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.sched.adb -f 
+INFO-FLOW: Finish scheduling byte_count.
+Execute       set_default_model byte_count 
+Execute       bind -model byte_count 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.567 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.586 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 1.401 sec.
+Execute       db_write -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.bind.adb -f 
+INFO-FLOW: Finish binding byte_count.
+Execute       get_model_list byte_count -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess count_appearances_Pipeline_APPEARANCES 
+Execute       rtl_gen_preprocess count_appearances 
+Execute       rtl_gen_preprocess count_threshold 
+Execute       rtl_gen_preprocess byte_count 
+INFO-FLOW: Model list for RTL generation: count_appearances_Pipeline_APPEARANCES count_appearances count_threshold byte_count
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model count_appearances_Pipeline_APPEARANCES -top_prefix byte_count_ -sub_prefix byte_count_ -mg_file E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_appearances_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances_Pipeline_APPEARANCES'.
+Command       create_rtl_model done; 0.164 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.611 seconds; current allocated memory: 1.099 GB.
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       gen_rtl count_appearances_Pipeline_APPEARANCES -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/vhdl/byte_count_count_appearances_Pipeline_APPEARANCES 
+Execute       gen_rtl count_appearances_Pipeline_APPEARANCES -style xilinx -f -lang vlog -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/verilog/byte_count_count_appearances_Pipeline_APPEARANCES 
+Execute       syn_report -csynth -model count_appearances_Pipeline_APPEARANCES -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/count_appearances_Pipeline_APPEARANCES_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model count_appearances_Pipeline_APPEARANCES -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/count_appearances_Pipeline_APPEARANCES_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model count_appearances_Pipeline_APPEARANCES -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model count_appearances_Pipeline_APPEARANCES -f -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.adb 
+Execute       db_write -model count_appearances_Pipeline_APPEARANCES -bindview -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info count_appearances_Pipeline_APPEARANCES -p E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model count_appearances -top_prefix byte_count_ -sub_prefix byte_count_ -mg_file E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+Command       create_rtl_model done; 0.226 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.413 seconds; current allocated memory: 1.099 GB.
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       gen_rtl count_appearances -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/vhdl/byte_count_count_appearances 
+Execute       gen_rtl count_appearances -style xilinx -f -lang vlog -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/verilog/byte_count_count_appearances 
+Execute       syn_report -csynth -model count_appearances -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/count_appearances_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model count_appearances -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/count_appearances_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model count_appearances -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.162 sec.
+Execute       db_write -model count_appearances -f -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.adb 
+Command       db_write done; 0.14 sec.
+Execute       db_write -model count_appearances -bindview -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info count_appearances -p E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model count_threshold -top_prefix byte_count_ -sub_prefix byte_count_ -mg_file E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+Command       create_rtl_model done; 0.534 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.27 seconds; current allocated memory: 1.099 GB.
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       gen_rtl count_threshold -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/vhdl/byte_count_count_threshold 
+Execute       gen_rtl count_threshold -style xilinx -f -lang vlog -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/verilog/byte_count_count_threshold 
+Execute       syn_report -csynth -model count_threshold -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/count_threshold_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 1.064 sec.
+Execute       syn_report -rtlxml -model count_threshold -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/count_threshold_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.49 sec.
+Execute       syn_report -verbosereport -model count_threshold -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 2.508 sec.
+Execute       db_write -model count_threshold -f -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.adb 
+Command       db_write done; 0.729 sec.
+Execute       db_write -model count_threshold -bindview -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/design.bindinfo.xml 
+Command       db_write done; 0.114 sec.
+Execute       gen_tb_info count_threshold -p E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model byte_count -top_prefix  -sub_prefix byte_count_ -mg_file E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r', 'output_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+Command       create_rtl_model done; 0.121 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.738 seconds; current allocated memory: 1.099 GB.
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       gen_rtl byte_count -istop -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/vhdl/byte_count 
+Execute       gen_rtl byte_count -istop -style xilinx -f -lang vlog -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/verilog/byte_count 
+Execute       syn_report -csynth -model byte_count -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/byte_count_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model byte_count -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/byte_count_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model byte_count -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 1.439 sec.
+Execute       db_write -model byte_count -f -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.adb 
+Execute       db_write -model byte_count -bindview -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info byte_count -p E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count 
+Execute       export_constraint_db -f -tool general -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.constraint.tcl 
+Execute       syn_report -designview -model byte_count -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.design.xml 
+Command       syn_report done; 1.014 sec.
+Execute       syn_report -csynthDesign -model byte_count -o E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model byte_count -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model byte_count -o E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks byte_count 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain byte_count 
+INFO-FLOW: Model list for RTL component generation: count_appearances_Pipeline_APPEARANCES count_appearances count_threshold byte_count
+INFO-FLOW: Handling components in module [count_appearances_Pipeline_APPEARANCES] ... 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.compgen.tcl 
+INFO-FLOW: Found component byte_count_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model byte_count_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [count_appearances] ... 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.compgen.tcl 
+INFO-FLOW: Handling components in module [count_threshold] ... 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.compgen.tcl 
+INFO-FLOW: Handling components in module [byte_count] ... 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.tcl 
+INFO-FLOW: Found component byte_count_appearances_RAM_AUTO_1R1W_memcore.
+INFO-FLOW: Append model byte_count_appearances_RAM_AUTO_1R1W_memcore
+INFO-FLOW: Found component byte_count_appearances_RAM_AUTO_1R1W.
+INFO-FLOW: Append model byte_count_appearances_RAM_AUTO_1R1W
+INFO-FLOW: Found component byte_count_gmem_m_axi.
+INFO-FLOW: Append model byte_count_gmem_m_axi
+INFO-FLOW: Found component byte_count_control_s_axi.
+INFO-FLOW: Append model byte_count_control_s_axi
+INFO-FLOW: Append model count_appearances_Pipeline_APPEARANCES
+INFO-FLOW: Append model count_appearances
+INFO-FLOW: Append model count_threshold
+INFO-FLOW: Append model byte_count
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: byte_count_flow_control_loop_pipe_sequential_init byte_count_appearances_RAM_AUTO_1R1W_memcore byte_count_appearances_RAM_AUTO_1R1W byte_count_gmem_m_axi byte_count_control_s_axi count_appearances_Pipeline_APPEARANCES count_appearances count_threshold byte_count
+INFO-FLOW: Generating E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model byte_count_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model byte_count_appearances_RAM_AUTO_1R1W_memcore
+INFO-FLOW: To file: write model byte_count_appearances_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model byte_count_gmem_m_axi
+INFO-FLOW: To file: write model byte_count_control_s_axi
+INFO-FLOW: To file: write model count_appearances_Pipeline_APPEARANCES
+INFO-FLOW: To file: write model count_appearances
+INFO-FLOW: To file: write model count_threshold
+INFO-FLOW: To file: write model byte_count
+INFO-FLOW: Generating E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.122 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/vhdl' dstVlogDir='E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/vlog' tclDir='E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db' modelList='byte_count_flow_control_loop_pipe_sequential_init
+byte_count_appearances_RAM_AUTO_1R1W_memcore
+byte_count_appearances_RAM_AUTO_1R1W
+byte_count_gmem_m_axi
+byte_count_control_s_axi
+count_appearances_Pipeline_APPEARANCES
+count_appearances
+count_threshold
+byte_count
+' expOnly='0'
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.compgen.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.compgen.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.compgen.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.tcl 
+Execute         send_msg_by_id INFO @200-740@%s byte_count_appearances_RAM_AUTO_1R1W_memcore 
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         source ./control.slave.tcl 
+Command       ap_source done; 0.121 sec.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.05 seconds; current allocated memory: 1.099 GB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='byte_count_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: No bind nodes found for module_name count_appearances
+INFO-FLOW: Done: create_csynth_xml bind info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+Execute       get_config_op mul -impl 
+Execute       get_config_op mul -latency 
+Execute       get_config_op mul -precision 
+Execute       get_config_op add -impl 
+Execute       get_config_op add -latency 
+Execute       get_config_op add -precision 
+Execute       get_config_op sub -impl 
+Execute       get_config_op sub -latency 
+Execute       get_config_op sub -precision 
+Execute       get_config_op fadd -impl 
+Execute       get_config_op fadd -latency 
+Execute       get_config_op fadd -precision 
+Execute       get_config_op fsub -impl 
+Execute       get_config_op fsub -latency 
+Execute       get_config_op fsub -precision 
+Execute       get_config_op fdiv -impl 
+Execute       get_config_op fdiv -latency 
+Execute       get_config_op fdiv -precision 
+Execute       get_config_op fexp -impl 
+Execute       get_config_op fexp -latency 
+Execute       get_config_op fexp -precision 
+Execute       get_config_op flog -impl 
+Execute       get_config_op flog -latency 
+Execute       get_config_op flog -precision 
+Execute       get_config_op fmul -impl 
+Execute       get_config_op fmul -latency 
+Execute       get_config_op fmul -precision 
+Execute       get_config_op frsqrt -impl 
+Execute       get_config_op frsqrt -latency 
+Execute       get_config_op frsqrt -precision 
+Execute       get_config_op frecip -impl 
+Execute       get_config_op frecip -latency 
+Execute       get_config_op frecip -precision 
+Execute       get_config_op fsqrt -impl 
+Execute       get_config_op fsqrt -latency 
+Execute       get_config_op fsqrt -precision 
+Execute       get_config_op dadd -impl 
+Execute       get_config_op dadd -latency 
+Execute       get_config_op dadd -precision 
+Execute       get_config_op dsub -impl 
+Execute       get_config_op dsub -latency 
+Execute       get_config_op dsub -precision 
+Execute       get_config_op ddiv -impl 
+Execute       get_config_op ddiv -latency 
+Execute       get_config_op ddiv -precision 
+Execute       get_config_op dexp -impl 
+Execute       get_config_op dexp -latency 
+Execute       get_config_op dexp -precision 
+Execute       get_config_op dlog -impl 
+Execute       get_config_op dlog -latency 
+Execute       get_config_op dlog -precision 
+Execute       get_config_op dmul -impl 
+Execute       get_config_op dmul -latency 
+Execute       get_config_op dmul -precision 
+Execute       get_config_op drsqrt -impl 
+Execute       get_config_op drsqrt -latency 
+Execute       get_config_op drsqrt -precision 
+Execute       get_config_op drecip -impl 
+Execute       get_config_op drecip -latency 
+Execute       get_config_op drecip -precision 
+Execute       get_config_op dsqrt -impl 
+Execute       get_config_op dsqrt -latency 
+Execute       get_config_op dsqrt -precision 
+Execute       get_config_op hadd -impl 
+Execute       get_config_op hadd -latency 
+Execute       get_config_op hadd -precision 
+Execute       get_config_op hsub -impl 
+Execute       get_config_op hsub -latency 
+Execute       get_config_op hsub -precision 
+Execute       get_config_op hdiv -impl 
+Execute       get_config_op hdiv -latency 
+Execute       get_config_op hdiv -precision 
+Execute       get_config_op hmul -impl 
+Execute       get_config_op hmul -latency 
+Execute       get_config_op hmul -precision 
+Execute       get_config_op hsqrt -impl 
+Execute       get_config_op hsqrt -latency 
+Execute       get_config_op hsqrt -precision 
+Execute       get_config_op facc -impl 
+Execute       get_config_op facc -latency 
+Execute       get_config_op facc -precision 
+Execute       get_config_op fmacc -impl 
+Execute       get_config_op fmacc -latency 
+Execute       get_config_op fmacc -precision 
+Execute       get_config_op fmadd -impl 
+Execute       get_config_op fmadd -latency 
+Execute       get_config_op fmadd -precision 
+Execute       get_config_storage fifo -auto_srl_max_bits 
+Execute       get_config_storage fifo -auto_srl_max_depth 
+Execute       get_config_storage fifo -impl 
+Execute       get_solution -flow_target 
+Execute       get_config_array_partition -complete_threshold 
+Execute       get_config_array_partition -throughput_driven 
+Execute       get_config_compile -enable_auto_rewind 
+Execute       get_config_compile -ignore_long_run_time 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_compile -no_signed_zeros 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -pipeline_style 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pre_tcl 
+Execute       get_config_compile -unsafe_math_optimizations 
+Execute       get_config_dataflow -default_channel 
+Execute       get_config_dataflow -disable_fifo_sizing_opt 
+Execute       get_config_dataflow -fifo_depth 
+Execute       get_config_dataflow -override_user_fifo_depth 
+Execute       get_config_dataflow -scalar_fifo_depth 
+Execute       get_config_dataflow -start_fifo_depth 
+Execute       get_config_dataflow -strict_mode 
+Execute       get_config_dataflow -strict_stable_sync 
+Execute       get_config_dataflow -task_level_fifo_depth 
+Execute       get_config_debug -directory 
+Execute       get_config_debug -enable 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       get_config_export -format 
+Execute       get_config_export -ip_xdc_file 
+Execute       get_config_export -ip_xdc_ooc_file 
+Execute       get_config_export -ipname 
+Execute       get_config_export -library 
+Execute       get_config_export -output 
+Execute       get_config_export -rtl 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -vendor 
+Execute       get_config_export -version 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_max_timing_paths 
+Execute       get_config_export -vivado_optimization_level 
+Execute       get_config_export -vivado_pblock 
+Execute       get_config_export -vivado_phys_opt 
+Execute       get_config_export -vivado_report_level 
+Execute       get_config_export -vivado_synth_design_args 
+Execute       get_config_export -vivado_synth_strategy 
+Execute       get_config_interface -clock_enable 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_config_interface -m_axi_addr64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_buffer_impl 
+Execute       get_config_interface -m_axi_conservative_mode 
+Execute       get_config_interface -m_axi_flush_mode 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -register_io 
+Execute       get_config_interface -s_axilite_auto_restart_counter 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -s_axilite_interrupt_mode 
+Execute       get_config_interface -s_axilite_mailbox 
+Execute       get_config_interface -s_axilite_status_regs 
+Execute       get_config_interface -s_axilite_sw_reset 
+Execute       get_config_rtl -deadlock_detection 
+Execute       get_config_rtl -header 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -mult_keep_attribute 
+Execute       get_config_rtl -register_all_io 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -reset 
+Execute       get_config_rtl -reset_async 
+Execute       get_config_rtl -reset_level 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_unroll -tripcount_threshold 
+INFO-FLOW: Done: create_csynth_xml config info time: 0.1 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=E:/estimation_accel/hls/estimation_mvp/solution1/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='byte_count_flow_control_loop_pipe_sequential_init
+byte_count_appearances_RAM_AUTO_1R1W_memcore
+byte_count_appearances_RAM_AUTO_1R1W
+byte_count_gmem_m_axi
+byte_count_control_s_axi
+count_appearances_Pipeline_APPEARANCES
+count_appearances
+count_threshold
+byte_count
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute       get_config_interface -s_axilite_interrupt_mode 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       get_config_export -vendor 
+Execute       get_config_export -library 
+Execute       get_config_export -version 
+Execute       get_config_export -ipname 
+Execute       get_config_export -taxonomy 
+Execute       get_config_export -description 
+Execute       get_config_export -display_name 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.tbgen.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.tbgen.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.tbgen.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.constraint.tcl 
+Execute       sc_get_clocks byte_count 
+Execute       source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -ip_xdc_file 
+Execute       get_config_export -ip_xdc_ooc_file 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE byte_count LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0} {BINDTYPE adapter DISPLAY {bind_adapter axi_master} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME gmem_m_axi_U SOURCE {} VARIABLE {} MODULE byte_count LOOP {} BUNDLEDNAME gmem DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST byte_count MODULE2INSTS {byte_count byte_count count_appearances count_appearances_U0 count_appearances_Pipeline_APPEARANCES grp_count_appearances_Pipeline_APPEARANCES_fu_2893 count_threshold count_threshold_U0} INST2MODULE {byte_count byte_count count_appearances_U0 count_appearances grp_count_appearances_Pipeline_APPEARANCES_fu_2893 count_appearances_Pipeline_APPEARANCES count_threshold_U0 count_threshold} INSTDATA {byte_count {DEPTH 1 CHILDREN {count_appearances_U0 count_threshold_U0}} count_appearances_U0 {DEPTH 2 CHILDREN grp_count_appearances_Pipeline_APPEARANCES_fu_2893} grp_count_appearances_Pipeline_APPEARANCES_fu_2893 {DEPTH 3 CHILDREN {}} count_threshold_U0 {DEPTH 2 CHILDREN {}}} MODULEDATA {count_appearances_Pipeline_APPEARANCES {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln28_fu_148_p2 SOURCE byte_count_mvp.cpp:28 VARIABLE add_ln28 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME count_1_fu_198_p2 SOURCE byte_count_mvp.cpp:25 VARIABLE count_1 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} count_threshold {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_2_fu_2885_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_fu_2902_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_5_fu_2915_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_2_fu_2929_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_8_fu_2940_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_4_fu_2957_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_11_fu_2970_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_11 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_6_fu_2984_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_14_fu_2995_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_14 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_8_fu_3009_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_17_fu_3020_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_17 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_10_fu_3034_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_10 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_20_fu_3045_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_20 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_12_fu_3062_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_12 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_23_fu_3075_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_23 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_14_fu_3089_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_14 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_26_fu_3100_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_26 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_16_fu_3114_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_16 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_29_fu_3125_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_29 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_18_fu_3139_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_18 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_32_fu_3150_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_32 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_20_fu_3164_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_20 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_35_fu_3175_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_35 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_22_fu_3189_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_22 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_38_fu_3200_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_38 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_24_fu_3214_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_24 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_41_fu_3225_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_41 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_26_fu_3239_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_26 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_44_fu_3250_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_44 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_28_fu_3267_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_28 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_47_fu_3280_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_47 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_30_fu_3294_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_30 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_50_fu_3305_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_50 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_32_fu_3319_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_32 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_53_fu_3330_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_53 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_34_fu_3344_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_34 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_56_fu_3355_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_56 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_36_fu_3369_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_36 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_59_fu_3380_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_59 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_38_fu_3394_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_38 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_62_fu_3405_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_62 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_40_fu_3419_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_40 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_65_fu_3430_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_65 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_42_fu_3444_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_42 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_68_fu_3455_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_68 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_44_fu_3469_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_44 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_71_fu_3480_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_71 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_46_fu_3494_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_46 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_74_fu_3505_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_74 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_48_fu_3519_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_48 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_77_fu_3530_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_77 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_50_fu_3544_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_50 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_80_fu_3555_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_80 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_52_fu_3569_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_52 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_83_fu_3580_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_83 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_54_fu_3594_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_54 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_86_fu_3605_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_86 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_56_fu_3619_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_56 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_89_fu_3630_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_89 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_58_fu_3644_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_58 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_92_fu_3655_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_92 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_60_fu_3672_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_60 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_95_fu_3685_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_95 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_62_fu_3699_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_62 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_98_fu_3710_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_98 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_64_fu_3724_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_64 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_101_fu_3735_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_101 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_66_fu_3749_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_66 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_104_fu_3760_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_104 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_68_fu_3774_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_68 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_107_fu_3785_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_107 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_70_fu_3799_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_70 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_110_fu_3810_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_110 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_72_fu_3824_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_72 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_113_fu_3835_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_113 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_74_fu_3849_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_74 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_116_fu_3860_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_116 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_76_fu_3874_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_76 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_119_fu_3885_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_119 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_78_fu_3899_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_78 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_122_fu_3910_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_122 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_80_fu_3924_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_80 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_125_fu_3935_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_125 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_82_fu_3949_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_82 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_128_fu_3960_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_128 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_84_fu_3974_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_84 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_131_fu_3985_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_131 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_86_fu_3999_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_86 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_134_fu_4010_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_134 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_88_fu_4024_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_88 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_137_fu_4035_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_137 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_90_fu_4049_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_90 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_140_fu_4060_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_140 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_92_fu_4074_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_92 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_143_fu_4085_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_143 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_94_fu_4099_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_94 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_146_fu_4110_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_146 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_96_fu_4124_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_96 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_149_fu_4135_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_149 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_98_fu_4149_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_98 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_152_fu_4160_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_152 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_100_fu_4174_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_100 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_155_fu_4185_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_155 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_102_fu_4199_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_102 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_158_fu_4210_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_158 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_104_fu_4224_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_104 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_161_fu_4235_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_161 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_106_fu_4249_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_106 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_164_fu_4260_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_164 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_108_fu_4274_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_108 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_167_fu_4285_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_167 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_110_fu_4299_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_110 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_170_fu_4310_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_170 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_112_fu_4324_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_112 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_173_fu_4335_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_173 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_114_fu_4349_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_114 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_176_fu_4360_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_176 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_116_fu_4374_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_116 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_179_fu_4385_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_179 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_118_fu_4399_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_118 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_182_fu_4410_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_182 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_120_fu_4424_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_120 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_185_fu_4435_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_185 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_122_fu_4449_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_122 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_188_fu_4460_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_188 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_124_fu_4477_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_124 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_191_fu_4490_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_191 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_126_fu_4504_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_126 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_194_fu_4515_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_194 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_128_fu_4529_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_128 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_197_fu_4540_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_197 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_130_fu_4554_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_130 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_200_fu_4565_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_200 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_132_fu_4579_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_132 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_203_fu_4590_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_203 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_134_fu_4604_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_134 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_206_fu_4615_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_206 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_136_fu_4629_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_136 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_209_fu_4640_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_209 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_138_fu_4654_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_138 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_212_fu_4665_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_212 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_140_fu_4679_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_140 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_215_fu_4690_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_215 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_142_fu_4704_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_142 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_218_fu_4715_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_218 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_144_fu_4729_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_144 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_221_fu_4740_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_221 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_146_fu_4754_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_146 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_224_fu_4765_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_224 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_148_fu_4779_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_148 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_227_fu_4790_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_227 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_150_fu_4804_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_150 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_230_fu_4815_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_230 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_152_fu_4829_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_152 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_233_fu_4840_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_233 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_154_fu_4854_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_154 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_236_fu_4865_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_236 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_156_fu_4879_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_156 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_239_fu_4890_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_239 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_158_fu_4904_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_158 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_242_fu_4915_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_242 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_160_fu_4929_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_160 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_245_fu_4940_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_245 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_162_fu_4954_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_162 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_248_fu_4965_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_248 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_164_fu_4979_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_164 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_251_fu_4990_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_251 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_166_fu_5004_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_166 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_254_fu_5015_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_254 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_168_fu_5029_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_168 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_257_fu_5040_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_257 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_170_fu_5054_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_170 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_260_fu_5065_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_260 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_172_fu_5079_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_172 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_263_fu_5090_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_263 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_174_fu_5104_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_174 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_266_fu_5115_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_266 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_176_fu_5129_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_176 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_269_fu_5140_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_269 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_178_fu_5154_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_178 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_272_fu_5165_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_272 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_180_fu_5179_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_180 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_275_fu_5190_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_275 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_182_fu_5204_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_182 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_278_fu_5215_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_278 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_184_fu_5229_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_184 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_281_fu_5240_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_281 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_186_fu_5254_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_186 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_284_fu_5265_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_284 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_188_fu_5279_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_188 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_287_fu_5290_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_287 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_190_fu_5304_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_190 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_290_fu_5315_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_290 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_192_fu_5329_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_192 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_293_fu_5340_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_293 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_194_fu_5354_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_194 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_296_fu_5365_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_296 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_196_fu_5379_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_196 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_299_fu_5390_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_299 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_198_fu_5404_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_198 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_302_fu_5415_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_302 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_200_fu_5429_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_200 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_305_fu_5440_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_305 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_202_fu_5454_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_202 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_308_fu_5465_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_308 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_204_fu_5479_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_204 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_311_fu_5490_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_311 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_206_fu_5504_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_206 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_314_fu_5515_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_314 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_208_fu_5529_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_208 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_317_fu_5540_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_317 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_210_fu_5554_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_210 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_320_fu_5565_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_320 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_212_fu_5579_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_212 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_323_fu_5590_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_323 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_214_fu_5604_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_214 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_326_fu_5615_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_326 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_216_fu_5629_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_216 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_329_fu_5640_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_329 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_218_fu_5654_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_218 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_332_fu_5665_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_332 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_220_fu_5679_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_220 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_335_fu_5690_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_335 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_222_fu_5704_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_222 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_338_fu_5715_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_338 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_224_fu_5729_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_224 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_341_fu_5740_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_341 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_226_fu_5754_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_226 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_344_fu_5765_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_344 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_228_fu_5779_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_228 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_347_fu_5790_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_347 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_230_fu_5804_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_230 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_350_fu_5815_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_350 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_232_fu_5829_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_232 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_353_fu_5840_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_353 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_234_fu_5854_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_234 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_356_fu_5865_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_356 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_236_fu_5879_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_236 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_359_fu_5890_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_359 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_238_fu_5904_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_238 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_362_fu_5915_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_362 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_240_fu_5929_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_240 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_365_fu_5940_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_365 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_242_fu_5954_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_242 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_368_fu_5965_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_368 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_244_fu_5979_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_244 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_371_fu_5990_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_371 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_246_fu_6004_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_246 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_374_fu_6015_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_374 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_248_fu_6029_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_248 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_377_fu_6041_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_377 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_250_fu_6052_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_250 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME over_thresh_380_fu_6066_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE over_thresh_380 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln50_252_fu_6081_p2 SOURCE byte_count_mvp.cpp:50 VARIABLE add_ln50_252 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} byte_count {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME appearances_U SOURCE byte_count_mvp.cpp:9 VARIABLE appearances LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 DISPNAME {bind_storage ram_t2p}}} AREA {DSP 0 BRAM 4 URAM 0}} count_appearances {AREA {DSP 0 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+Execute       send_msg_by_id INFO @200-1603@%s  and missed bursts 
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.229 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+Execute       syn_report -model byte_count -printsummary 
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+Command     autosyn done; 23.125 sec.
+Command   csynth_design done; 53.038 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 27 seconds. CPU system time: 2 seconds. Elapsed time: 53.038 seconds; current allocated memory: 287.648 MB.
+Command ap_source done; 54.07 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/estimation_accel/hls/estimation_mvp/solution1 opened at Sun May 29 12:58:42 -0500 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z010i-clg225-1L 
+Execute       create_platform xc7z010i-clg225-1L -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+Command       create_platform done; 0.508 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.126 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.646 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     send_msg_by_id INFO @200-435@%s%s 'open_solution -flow_target vivado' config_interface -m_axi_alignment_byte_size=0 
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=0
+Execute     config_interface -m_axi_alignment_byte_size=0 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name=Byte_Count_MVP 
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+Execute     config_export -display_name=Byte_Count_MVP 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -library=byte_count_mvp 
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+Execute     config_export -library=byte_count_mvp 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=E:/estimation_accel/vivado/ip_repo 
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+Execute     config_export -output=E:/estimation_accel/vivado/ip_repo 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vendor=jnowaczek 
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+Execute     config_export -vendor=jnowaczek 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.5.0 
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.5.0
+Execute     config_export -version=1.5.0 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+Execute     config_interface -m_axi_addr64=0 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_alignment_byte_size=32 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=32
+Execute     config_interface -m_axi_alignment_byte_size=32 
+Command   open_solution done; 0.7 sec.
+Execute   set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+Execute     create_platform xc7z010i-clg225-1L -board  
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.117 sec.
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.136 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.5.0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.5.0 
+Execute   config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 32 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 32 
+Execute   source ./estimation_mvp/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./estimation_mvp/solution1/directives.tcl
+Execute     set_directive_top -name byte_count byte_count 
+INFO: [HLS 200-1510] Running: set_directive_top -name byte_count byte_count 
+Execute   export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -ipname 
+Execute     get_config_export -library 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -output=E:/estimation_accel/vivado/ip_repo -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog -vendor jnowaczek -library byte_count_mvp -version 1.5.0 -display_name Byte_Count_MVP
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.101 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.156 sec.
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=byte_count xml_exists=0
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_rtl -deadlock_detection 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_rtl -deadlock_detection 
+Execute     get_config_rtl -deadlock_detection 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to byte_count
+Execute     get_config_rtl -deadlock_detection 
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=3
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=9 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='byte_count_flow_control_loop_pipe_sequential_init
+byte_count_appearances_RAM_AUTO_1R1W_memcore
+byte_count_appearances_RAM_AUTO_1R1W
+byte_count_gmem_m_axi
+byte_count_control_s_axi
+count_appearances_Pipeline_APPEARANCES
+count_appearances
+count_threshold
+byte_count
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     get_config_interface -s_axilite_interrupt_mode 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     get_config_export -format 
+Execute     get_config_export -vendor 
+Execute     get_config_export -library 
+Execute     get_config_export -version 
+Execute     get_config_export -ipname 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances_Pipeline_APPEARANCES.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_appearances.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/count_threshold.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     get_solution -flow_target 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.constraint.tcl 
+Execute     sc_get_clocks byte_count 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_debug -directory 
+Execute     get_config_rtl -deadlock_detection 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     get_config_rtl -deadlock_detection 
+Execute     get_config_rtl -deadlock_detection 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to byte_count
+Execute     get_config_rtl -deadlock_detection 
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_5 E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/driver
+Execute     get_config_export -format 
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     get_config_interface -s_axilite_interrupt_mode 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.compgen.dataonly.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=byte_count
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.rtl_wrap.cfg.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_export -ip_xdc_file 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.constraint.tcl 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/byte_count.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/generic/autopilot/interface.gen 
+Execute     source E:/estimation_accel/hls/estimation_mvp/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.12 sec.
+INFO-FLOW: DBG:PUTS:     IP package: exec E:/estimation_accel/hls/estimation_mvp/solution1/impl/ip/pack.bat
+INFO-FLOW: DBG:PUTS:     IP package: success E:/estimation_accel/hls/estimation_mvp/solution1/impl/ip/pack.bat
+Execute     get_config_export -output 
+Execute     send_msg_by_id INFO @200-802@%s E:/estimation_accel/vivado/ip_repo/export.zip 
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+Command   export_design done; 12.579 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 12.579 seconds; current allocated memory: 401.594 MB.
+Command ap_source done; 13.504 sec.
+Execute cleanup_all 

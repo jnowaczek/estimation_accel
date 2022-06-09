@@ -1,0 +1,1589 @@
+<profile>
+    <ReportVersion>
+        <Version>2022.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z010i-clg225-1L</Part>
+        <TopModelName>byte_count</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>dataflow</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>1158</Best-caseLatency>
+            <Average-caseLatency>1158</Average-caseLatency>
+            <Worst-caseLatency>1158</Worst-caseLatency>
+            <Best-caseRealTimeLatency>11.580 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>11.580 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>11.580 us</Worst-caseRealTimeLatency>
+            <DataflowPipelineThroughput>1159</DataflowPipelineThroughput>
+            <Interval-min>1159</Interval-min>
+            <Interval-max>1159</Interval-max>
+        </SummaryOfOverallLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>4</BRAM_18K>
+            <FF>2272</FF>
+            <LUT>11665</LUT>
+            <URAM>0</URAM>
+            <DSP>0</DSP>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>120</BRAM_18K>
+            <DSP>80</DSP>
+            <FF>35200</FF>
+            <LUT>17600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>5</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>5</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>byte_count</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>byte_count</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>byte_count</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWVALID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWREADY</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWADDR</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWLEN</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWSIZE</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWBURST</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWLOCK</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWCACHE</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWPROT</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWQOS</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWREGION</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_AWUSER</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_WVALID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_WREADY</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_WDATA</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_WSTRB</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_WLAST</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_WID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_WUSER</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARVALID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARREADY</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARADDR</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARLEN</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARSIZE</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARBURST</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARLOCK</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARCACHE</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARPROT</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARQOS</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARREGION</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_ARUSER</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_RVALID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_RREADY</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_RDATA</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_RLAST</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_RID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_RUSER</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_RRESP</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_BVALID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_BREADY</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_BRESP</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_BID</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_BUSER</name>
+            <Object>gmem</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>byte_count</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>count_appearances_U0</InstName>
+                    <ModuleName>count_appearances</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>60</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_count_appearances_Pipeline_APPEARANCES_fu_2893</InstName>
+                            <ModuleName>count_appearances_Pipeline_APPEARANCES</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>2893</ID>
+                            <BindInstances>add_ln28_fu_148_p2 count_1_fu_198_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                </Instance>
+                <Instance>
+                    <InstName>count_threshold_U0</InstName>
+                    <ModuleName>count_threshold</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>68</ID>
+                    <BindInstances>over_thresh_2_fu_2885_p2 add_ln50_fu_2902_p2 over_thresh_5_fu_2915_p2 add_ln50_2_fu_2929_p2 over_thresh_8_fu_2940_p2 add_ln50_4_fu_2957_p2 over_thresh_11_fu_2970_p2 add_ln50_6_fu_2984_p2 over_thresh_14_fu_2995_p2 add_ln50_8_fu_3009_p2 over_thresh_17_fu_3020_p2 add_ln50_10_fu_3034_p2 over_thresh_20_fu_3045_p2 add_ln50_12_fu_3062_p2 over_thresh_23_fu_3075_p2 add_ln50_14_fu_3089_p2 over_thresh_26_fu_3100_p2 add_ln50_16_fu_3114_p2 over_thresh_29_fu_3125_p2 add_ln50_18_fu_3139_p2 over_thresh_32_fu_3150_p2 add_ln50_20_fu_3164_p2 over_thresh_35_fu_3175_p2 add_ln50_22_fu_3189_p2 over_thresh_38_fu_3200_p2 add_ln50_24_fu_3214_p2 over_thresh_41_fu_3225_p2 add_ln50_26_fu_3239_p2 over_thresh_44_fu_3250_p2 add_ln50_28_fu_3267_p2 over_thresh_47_fu_3280_p2 add_ln50_30_fu_3294_p2 over_thresh_50_fu_3305_p2 add_ln50_32_fu_3319_p2 over_thresh_53_fu_3330_p2 add_ln50_34_fu_3344_p2 over_thresh_56_fu_3355_p2 add_ln50_36_fu_3369_p2 over_thresh_59_fu_3380_p2 add_ln50_38_fu_3394_p2 over_thresh_62_fu_3405_p2 add_ln50_40_fu_3419_p2 over_thresh_65_fu_3430_p2 add_ln50_42_fu_3444_p2 over_thresh_68_fu_3455_p2 add_ln50_44_fu_3469_p2 over_thresh_71_fu_3480_p2 add_ln50_46_fu_3494_p2 over_thresh_74_fu_3505_p2 add_ln50_48_fu_3519_p2 over_thresh_77_fu_3530_p2 add_ln50_50_fu_3544_p2 over_thresh_80_fu_3555_p2 add_ln50_52_fu_3569_p2 over_thresh_83_fu_3580_p2 add_ln50_54_fu_3594_p2 over_thresh_86_fu_3605_p2 add_ln50_56_fu_3619_p2 over_thresh_89_fu_3630_p2 add_ln50_58_fu_3644_p2 over_thresh_92_fu_3655_p2 add_ln50_60_fu_3672_p2 over_thresh_95_fu_3685_p2 add_ln50_62_fu_3699_p2 over_thresh_98_fu_3710_p2 add_ln50_64_fu_3724_p2 over_thresh_101_fu_3735_p2 add_ln50_66_fu_3749_p2 over_thresh_104_fu_3760_p2 add_ln50_68_fu_3774_p2 over_thresh_107_fu_3785_p2 add_ln50_70_fu_3799_p2 over_thresh_110_fu_3810_p2 add_ln50_72_fu_3824_p2 over_thresh_113_fu_3835_p2 add_ln50_74_fu_3849_p2 over_thresh_116_fu_3860_p2 add_ln50_76_fu_3874_p2 over_thresh_119_fu_3885_p2 add_ln50_78_fu_3899_p2 over_thresh_122_fu_3910_p2 add_ln50_80_fu_3924_p2 over_thresh_125_fu_3935_p2 add_ln50_82_fu_3949_p2 over_thresh_128_fu_3960_p2 add_ln50_84_fu_3974_p2 over_thresh_131_fu_3985_p2 add_ln50_86_fu_3999_p2 over_thresh_134_fu_4010_p2 add_ln50_88_fu_4024_p2 over_thresh_137_fu_4035_p2 add_ln50_90_fu_4049_p2 over_thresh_140_fu_4060_p2 add_ln50_92_fu_4074_p2 over_thresh_143_fu_4085_p2 add_ln50_94_fu_4099_p2 over_thresh_146_fu_4110_p2 add_ln50_96_fu_4124_p2 over_thresh_149_fu_4135_p2 add_ln50_98_fu_4149_p2 over_thresh_152_fu_4160_p2 add_ln50_100_fu_4174_p2 over_thresh_155_fu_4185_p2 add_ln50_102_fu_4199_p2 over_thresh_158_fu_4210_p2 add_ln50_104_fu_4224_p2 over_thresh_161_fu_4235_p2 add_ln50_106_fu_4249_p2 over_thresh_164_fu_4260_p2 add_ln50_108_fu_4274_p2 over_thresh_167_fu_4285_p2 add_ln50_110_fu_4299_p2 over_thresh_170_fu_4310_p2 add_ln50_112_fu_4324_p2 over_thresh_173_fu_4335_p2 add_ln50_114_fu_4349_p2 over_thresh_176_fu_4360_p2 add_ln50_116_fu_4374_p2 over_thresh_179_fu_4385_p2 add_ln50_118_fu_4399_p2 over_thresh_182_fu_4410_p2 add_ln50_120_fu_4424_p2 over_thresh_185_fu_4435_p2 add_ln50_122_fu_4449_p2 over_thresh_188_fu_4460_p2 add_ln50_124_fu_4477_p2 over_thresh_191_fu_4490_p2 add_ln50_126_fu_4504_p2 over_thresh_194_fu_4515_p2 add_ln50_128_fu_4529_p2 over_thresh_197_fu_4540_p2 add_ln50_130_fu_4554_p2 over_thresh_200_fu_4565_p2 add_ln50_132_fu_4579_p2 over_thresh_203_fu_4590_p2 add_ln50_134_fu_4604_p2 over_thresh_206_fu_4615_p2 add_ln50_136_fu_4629_p2 over_thresh_209_fu_4640_p2 add_ln50_138_fu_4654_p2 over_thresh_212_fu_4665_p2 add_ln50_140_fu_4679_p2 over_thresh_215_fu_4690_p2 add_ln50_142_fu_4704_p2 over_thresh_218_fu_4715_p2 add_ln50_144_fu_4729_p2 over_thresh_221_fu_4740_p2 add_ln50_146_fu_4754_p2 over_thresh_224_fu_4765_p2 add_ln50_148_fu_4779_p2 over_thresh_227_fu_4790_p2 add_ln50_150_fu_4804_p2 over_thresh_230_fu_4815_p2 add_ln50_152_fu_4829_p2 over_thresh_233_fu_4840_p2 add_ln50_154_fu_4854_p2 over_thresh_236_fu_4865_p2 add_ln50_156_fu_4879_p2 over_thresh_239_fu_4890_p2 add_ln50_158_fu_4904_p2 over_thresh_242_fu_4915_p2 add_ln50_160_fu_4929_p2 over_thresh_245_fu_4940_p2 add_ln50_162_fu_4954_p2 over_thresh_248_fu_4965_p2 add_ln50_164_fu_4979_p2 over_thresh_251_fu_4990_p2 add_ln50_166_fu_5004_p2 over_thresh_254_fu_5015_p2 add_ln50_168_fu_5029_p2 over_thresh_257_fu_5040_p2 add_ln50_170_fu_5054_p2 over_thresh_260_fu_5065_p2 add_ln50_172_fu_5079_p2 over_thresh_263_fu_5090_p2 add_ln50_174_fu_5104_p2 over_thresh_266_fu_5115_p2 add_ln50_176_fu_5129_p2 over_thresh_269_fu_5140_p2 add_ln50_178_fu_5154_p2 over_thresh_272_fu_5165_p2 add_ln50_180_fu_5179_p2 over_thresh_275_fu_5190_p2 add_ln50_182_fu_5204_p2 over_thresh_278_fu_5215_p2 add_ln50_184_fu_5229_p2 over_thresh_281_fu_5240_p2 add_ln50_186_fu_5254_p2 over_thresh_284_fu_5265_p2 add_ln50_188_fu_5279_p2 over_thresh_287_fu_5290_p2 add_ln50_190_fu_5304_p2 over_thresh_290_fu_5315_p2 add_ln50_192_fu_5329_p2 over_thresh_293_fu_5340_p2 add_ln50_194_fu_5354_p2 over_thresh_296_fu_5365_p2 add_ln50_196_fu_5379_p2 over_thresh_299_fu_5390_p2 add_ln50_198_fu_5404_p2 over_thresh_302_fu_5415_p2 add_ln50_200_fu_5429_p2 over_thresh_305_fu_5440_p2 add_ln50_202_fu_5454_p2 over_thresh_308_fu_5465_p2 add_ln50_204_fu_5479_p2 over_thresh_311_fu_5490_p2 add_ln50_206_fu_5504_p2 over_thresh_314_fu_5515_p2 add_ln50_208_fu_5529_p2 over_thresh_317_fu_5540_p2 add_ln50_210_fu_5554_p2 over_thresh_320_fu_5565_p2 add_ln50_212_fu_5579_p2 over_thresh_323_fu_5590_p2 add_ln50_214_fu_5604_p2 over_thresh_326_fu_5615_p2 add_ln50_216_fu_5629_p2 over_thresh_329_fu_5640_p2 add_ln50_218_fu_5654_p2 over_thresh_332_fu_5665_p2 add_ln50_220_fu_5679_p2 over_thresh_335_fu_5690_p2 add_ln50_222_fu_5704_p2 over_thresh_338_fu_5715_p2 add_ln50_224_fu_5729_p2 over_thresh_341_fu_5740_p2 add_ln50_226_fu_5754_p2 over_thresh_344_fu_5765_p2 add_ln50_228_fu_5779_p2 over_thresh_347_fu_5790_p2 add_ln50_230_fu_5804_p2 over_thresh_350_fu_5815_p2 add_ln50_232_fu_5829_p2 over_thresh_353_fu_5840_p2 add_ln50_234_fu_5854_p2 over_thresh_356_fu_5865_p2 add_ln50_236_fu_5879_p2 over_thresh_359_fu_5890_p2 add_ln50_238_fu_5904_p2 over_thresh_362_fu_5915_p2 add_ln50_240_fu_5929_p2 over_thresh_365_fu_5940_p2 add_ln50_242_fu_5954_p2 over_thresh_368_fu_5965_p2 add_ln50_244_fu_5979_p2 over_thresh_371_fu_5990_p2 add_ln50_246_fu_6004_p2 over_thresh_374_fu_6015_p2 add_ln50_248_fu_6029_p2 over_thresh_377_fu_6041_p2 add_ln50_250_fu_6052_p2 over_thresh_380_fu_6066_p2 add_ln50_252_fu_6081_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>appearances_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>count_appearances_Pipeline_APPEARANCES</Name>
+            <Loops>
+                <APPEARANCES/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1028</Best-caseLatency>
+                    <Average-caseLatency>1028</Average-caseLatency>
+                    <Worst-caseLatency>1028</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>10.280 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>10.280 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>10.280 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1028</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <APPEARANCES>
+                        <Name>APPEARANCES</Name>
+                        <TripCount>1024</TripCount>
+                        <Latency>1026</Latency>
+                        <AbsoluteTimeLatency>10.260 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </APPEARANCES>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>69</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>177</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="APPEARANCES" OPTYPE="add" PRAGMA="" RTLNAME="add_ln28_fu_148_p2" SOURCE="byte_count_mvp.cpp:28" URAM="0" VARIABLE="add_ln28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="APPEARANCES" OPTYPE="add" PRAGMA="" RTLNAME="count_1_fu_198_p2" SOURCE="byte_count_mvp.cpp:25" URAM="0" VARIABLE="count_1"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>count_appearances</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1158</Best-caseLatency>
+                    <Average-caseLatency>1158</Average-caseLatency>
+                    <Worst-caseLatency>1158</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>11.580 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>11.580 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>11.580 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1158</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>242</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>2499</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>14</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>count_threshold</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.975</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>129</Best-caseLatency>
+                    <Average-caseLatency>129</Average-caseLatency>
+                    <Worst-caseLatency>129</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>1.290 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.290 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.290 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>129</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1164</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>7558</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>42</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_2_fu_2885_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_fu_2902_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_5_fu_2915_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_2_fu_2929_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_8_fu_2940_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_4_fu_2957_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_11_fu_2970_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_11"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_6_fu_2984_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_14_fu_2995_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_8_fu_3009_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_8"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_17_fu_3020_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_17"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_10_fu_3034_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_10"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_20_fu_3045_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_12_fu_3062_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_12"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_23_fu_3075_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_23"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_14_fu_3089_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_26_fu_3100_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_16_fu_3114_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_16"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_29_fu_3125_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_29"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_18_fu_3139_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_18"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_32_fu_3150_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_32"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_20_fu_3164_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_20"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_35_fu_3175_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_35"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_22_fu_3189_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_22"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_38_fu_3200_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_38"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_24_fu_3214_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_24"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_41_fu_3225_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_41"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_26_fu_3239_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_44_fu_3250_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_28_fu_3267_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_28"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_47_fu_3280_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_47"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_30_fu_3294_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_30"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_50_fu_3305_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_50"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_32_fu_3319_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_32"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_53_fu_3330_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_53"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_34_fu_3344_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_34"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_56_fu_3355_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_56"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_36_fu_3369_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_36"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_59_fu_3380_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_59"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_38_fu_3394_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_38"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_62_fu_3405_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_62"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_40_fu_3419_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_40"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_65_fu_3430_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_65"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_42_fu_3444_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_42"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_68_fu_3455_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_68"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_44_fu_3469_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_44"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_71_fu_3480_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_71"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_46_fu_3494_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_46"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_74_fu_3505_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_74"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_48_fu_3519_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_48"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_77_fu_3530_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_77"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_50_fu_3544_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_50"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_80_fu_3555_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_80"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_52_fu_3569_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_52"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_83_fu_3580_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_83"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_54_fu_3594_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_54"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_86_fu_3605_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_86"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_56_fu_3619_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_56"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_89_fu_3630_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_89"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_58_fu_3644_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_58"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_92_fu_3655_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_92"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_60_fu_3672_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_60"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_95_fu_3685_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_95"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_62_fu_3699_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_62"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_98_fu_3710_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_98"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_64_fu_3724_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_64"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_101_fu_3735_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_101"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_66_fu_3749_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_66"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_104_fu_3760_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_104"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_68_fu_3774_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_68"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_107_fu_3785_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_107"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_70_fu_3799_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_70"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_110_fu_3810_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_110"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_72_fu_3824_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_72"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_113_fu_3835_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_113"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_74_fu_3849_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_74"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_116_fu_3860_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_116"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_76_fu_3874_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_76"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_119_fu_3885_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_119"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_78_fu_3899_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_78"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_122_fu_3910_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_122"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_80_fu_3924_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_80"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_125_fu_3935_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_125"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_82_fu_3949_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_82"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_128_fu_3960_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_128"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_84_fu_3974_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_84"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_131_fu_3985_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_131"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_86_fu_3999_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_86"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_134_fu_4010_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_134"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_88_fu_4024_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_88"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_137_fu_4035_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_137"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_90_fu_4049_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_90"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_140_fu_4060_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_140"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_92_fu_4074_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_92"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_143_fu_4085_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_143"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_94_fu_4099_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_94"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_146_fu_4110_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_146"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_96_fu_4124_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_96"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_149_fu_4135_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_149"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_98_fu_4149_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_98"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_152_fu_4160_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_152"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_100_fu_4174_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_100"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_155_fu_4185_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_155"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_102_fu_4199_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_102"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_158_fu_4210_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_158"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_104_fu_4224_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_104"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_161_fu_4235_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_161"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_106_fu_4249_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_106"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_164_fu_4260_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_164"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_108_fu_4274_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_108"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_167_fu_4285_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_167"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_110_fu_4299_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_110"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_170_fu_4310_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_170"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_112_fu_4324_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_112"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_173_fu_4335_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_173"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_114_fu_4349_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_114"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_176_fu_4360_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_176"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_116_fu_4374_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_116"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_179_fu_4385_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_179"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_118_fu_4399_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_118"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_182_fu_4410_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_182"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_120_fu_4424_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_120"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_185_fu_4435_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_185"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_122_fu_4449_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_122"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_188_fu_4460_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_188"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_124_fu_4477_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_124"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_191_fu_4490_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_191"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_126_fu_4504_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_126"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_194_fu_4515_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_194"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_128_fu_4529_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_128"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_197_fu_4540_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_197"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_130_fu_4554_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_130"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_200_fu_4565_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_200"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_132_fu_4579_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_132"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_203_fu_4590_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_203"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_134_fu_4604_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_134"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_206_fu_4615_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_206"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_136_fu_4629_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_136"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_209_fu_4640_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_209"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_138_fu_4654_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_138"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_212_fu_4665_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_212"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_140_fu_4679_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_140"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_215_fu_4690_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_215"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_142_fu_4704_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_142"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_218_fu_4715_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_218"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_144_fu_4729_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_144"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_221_fu_4740_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_221"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_146_fu_4754_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_146"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_224_fu_4765_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_224"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_148_fu_4779_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_148"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_227_fu_4790_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_227"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_150_fu_4804_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_150"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_230_fu_4815_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_230"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_152_fu_4829_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_152"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_233_fu_4840_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_233"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_154_fu_4854_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_154"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_236_fu_4865_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_236"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_156_fu_4879_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_156"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_239_fu_4890_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_239"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_158_fu_4904_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_158"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_242_fu_4915_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_242"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_160_fu_4929_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_160"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_245_fu_4940_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_245"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_162_fu_4954_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_162"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_248_fu_4965_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_248"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_164_fu_4979_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_164"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_251_fu_4990_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_251"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_166_fu_5004_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_166"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_254_fu_5015_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_254"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_168_fu_5029_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_168"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_257_fu_5040_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_257"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_170_fu_5054_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_170"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_260_fu_5065_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_260"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_172_fu_5079_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_172"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_263_fu_5090_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_263"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_174_fu_5104_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_174"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_266_fu_5115_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_266"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_176_fu_5129_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_176"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_269_fu_5140_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_269"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_178_fu_5154_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_178"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_272_fu_5165_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_272"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_180_fu_5179_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_180"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_275_fu_5190_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_275"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_182_fu_5204_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_182"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_278_fu_5215_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_278"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_184_fu_5229_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_184"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_281_fu_5240_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_281"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_186_fu_5254_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_186"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_284_fu_5265_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_284"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_188_fu_5279_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_188"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_287_fu_5290_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_287"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_190_fu_5304_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_190"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_290_fu_5315_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_290"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_192_fu_5329_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_192"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_293_fu_5340_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_293"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_194_fu_5354_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_194"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_296_fu_5365_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_296"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_196_fu_5379_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_196"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_299_fu_5390_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_299"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_198_fu_5404_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_198"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_302_fu_5415_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_302"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_200_fu_5429_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_200"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_305_fu_5440_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_305"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_202_fu_5454_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_202"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_308_fu_5465_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_308"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_204_fu_5479_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_204"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_311_fu_5490_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_311"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_206_fu_5504_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_206"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_314_fu_5515_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_314"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_208_fu_5529_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_208"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_317_fu_5540_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_317"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_210_fu_5554_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_210"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_320_fu_5565_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_320"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_212_fu_5579_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_212"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_323_fu_5590_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_323"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_214_fu_5604_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_214"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_326_fu_5615_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_326"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_216_fu_5629_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_216"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_329_fu_5640_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_329"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_218_fu_5654_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_218"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_332_fu_5665_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_332"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_220_fu_5679_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_220"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_335_fu_5690_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_335"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_222_fu_5704_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_222"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_338_fu_5715_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_338"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_224_fu_5729_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_224"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_341_fu_5740_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_341"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_226_fu_5754_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_226"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_344_fu_5765_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_344"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_228_fu_5779_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_228"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_347_fu_5790_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_347"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_230_fu_5804_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_230"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_350_fu_5815_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_350"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_232_fu_5829_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_232"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_353_fu_5840_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_353"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_234_fu_5854_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_234"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_356_fu_5865_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_356"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_236_fu_5879_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_236"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_359_fu_5890_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_359"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_238_fu_5904_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_238"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_362_fu_5915_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_362"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_240_fu_5929_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_240"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_365_fu_5940_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_365"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_242_fu_5954_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_242"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_368_fu_5965_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_368"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_244_fu_5979_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_244"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_371_fu_5990_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_371"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_246_fu_6004_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_246"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_374_fu_6015_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_374"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_248_fu_6029_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_248"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_377_fu_6041_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_377"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_250_fu_6052_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_250"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="over_thresh_380_fu_6066_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="over_thresh_380"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln50_252_fu_6081_p2" SOURCE="byte_count_mvp.cpp:50" URAM="0" VARIABLE="add_ln50_252"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>byte_count</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.300</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1158</Best-caseLatency>
+                    <Average-caseLatency>1158</Average-caseLatency>
+                    <Worst-caseLatency>1158</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>11.580 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>11.580 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>11.580 us</Worst-caseRealTimeLatency>
+                    <DataflowPipelineThroughput>1159</DataflowPipelineThroughput>
+                    <PipelineInitiationInterval>1159</PipelineInitiationInterval>
+                    <PipelineType>dataflow</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>4</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>3</UTIL_BRAM>
+                    <FF>2272</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>6</UTIL_FF>
+                    <LUT>11665</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>66</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="appearances_U" SOURCE="byte_count_mvp.cpp:9" URAM="0" VARIABLE="appearances"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_op>
+            <ENTRY impl="all mul" latency="-1 mul" op="mul" precision="mul standard"/>
+            <ENTRY impl="all add" latency="-1 add" op="add" precision="add standard"/>
+            <ENTRY impl="all sub" latency="-1 sub" op="sub" precision="sub standard"/>
+            <ENTRY impl="all fadd" latency="-1 fadd" op="fadd" precision="fadd standard"/>
+            <ENTRY impl="all fsub" latency="-1 fsub" op="fsub" precision="fsub standard"/>
+            <ENTRY impl="all fdiv" latency="-1 fdiv" op="fdiv" precision="fdiv standard"/>
+            <ENTRY impl="all fexp" latency="-1 fexp" op="fexp" precision="fexp standard"/>
+            <ENTRY impl="all flog" latency="-1 flog" op="flog" precision="flog standard"/>
+            <ENTRY impl="all fmul" latency="-1 fmul" op="fmul" precision="fmul standard"/>
+            <ENTRY impl="all frsqrt" latency="-1 frsqrt" op="frsqrt" precision="frsqrt standard"/>
+            <ENTRY impl="all frecip" latency="-1 frecip" op="frecip" precision="frecip standard"/>
+            <ENTRY impl="all fsqrt" latency="-1 fsqrt" op="fsqrt" precision="fsqrt standard"/>
+            <ENTRY impl="all dadd" latency="-1 dadd" op="dadd" precision="dadd standard"/>
+            <ENTRY impl="all dsub" latency="-1 dsub" op="dsub" precision="dsub standard"/>
+            <ENTRY impl="all ddiv" latency="-1 ddiv" op="ddiv" precision="ddiv standard"/>
+            <ENTRY impl="all dexp" latency="-1 dexp" op="dexp" precision="dexp standard"/>
+            <ENTRY impl="all dlog" latency="-1 dlog" op="dlog" precision="dlog standard"/>
+            <ENTRY impl="all dmul" latency="-1 dmul" op="dmul" precision="dmul standard"/>
+            <ENTRY impl="all drsqrt" latency="-1 drsqrt" op="drsqrt" precision="drsqrt standard"/>
+            <ENTRY impl="all drecip" latency="-1 drecip" op="drecip" precision="drecip standard"/>
+            <ENTRY impl="all dsqrt" latency="-1 dsqrt" op="dsqrt" precision="dsqrt standard"/>
+            <ENTRY impl="all hadd" latency="-1 hadd" op="hadd" precision="hadd standard"/>
+            <ENTRY impl="all hsub" latency="-1 hsub" op="hsub" precision="hsub standard"/>
+            <ENTRY impl="all hdiv" latency="-1 hdiv" op="hdiv" precision="hdiv standard"/>
+            <ENTRY impl="all hmul" latency="-1 hmul" op="hmul" precision="hmul standard"/>
+            <ENTRY impl="all hsqrt" latency="-1 hsqrt" op="hsqrt" precision="hsqrt standard"/>
+            <ENTRY impl="all facc" latency="-1 facc" op="facc" precision="facc standard"/>
+            <ENTRY impl="all fmacc" latency="-1 fmacc" op="fmacc" precision="fmacc standard"/>
+            <ENTRY impl="all fmadd" latency="-1 fmadd" op="fmadd" precision="fmadd standard"/>
+        </config_op>
+        <config_storage>
+            <ENTRY auto_srl_max_bits="1024 fifo" auto_srl_max_depth="2 fifo" impl="autosrl fifo" type="fifo"/>
+        </config_storage>
+        <config_export display_name="Byte_Count_MVP" library="byte_count_mvp" output="E:/estimation_accel/vivado/ip_repo" vendor="jnowaczek" version="1.4.0"/>
+        <config_interface m_axi_addr64="0" m_axi_alignment_byte_size="32"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="input" index="0" direction="in" srcType="unsigned char*" srcSize="8">
+            <hwRefs>
+                <hwRef type="interface" interface="m_axi_gmem" name="" usage="data" direction="in"/>
+                <hwRef type="interface" interface="s_axi_control" name="" usage="address" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="output" index="1" direction="out" srcType="int&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="s_axi_control" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="5" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
+            <ports>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="R" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="R" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="input_r" access="W" description="Data signal of input_r" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="input_r" access="W" description="Bit 31 to 0 of input_r"/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="output_r" access="R" description="Data signal of output_r" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="output_r" access="R" description="Bit 31 to 0 of output_r"/>
+                    </fields>
+                </register>
+                <register offset="0x1c" name="output_r_ctrl" access="R" description="Control signal of output_r" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="output_r_ap_vld" access="R" description="Control signal output_r_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="input"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="output"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control:m_axi_gmem</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="m_axi_gmem" type="axi4full" busTypeName="aximm" mode="master" dataWidth="32" addrWidth="32" portPrefix="m_axi_gmem_" paramPrefix="C_M_AXI_GMEM_" preferredUsageValue="MEMORY">
+            <busParams>
+                <busParam busParamName="NUM_READ_OUTSTANDING">16</busParam>
+                <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
+                <busParam busParamName="MAX_READ_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_WRITE_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_BURST_LENGTH">256</busParam>
+                <busParam busParamName="PROTOCOL">AXI4</busParam>
+                <busParam busParamName="READ_WRITE_MODE">READ_ONLY</busParam>
+                <busParam busParamName="HAS_BURST">0</busParam>
+                <busParam busParamName="SUPPORTS_NARROW_BURST">0</busParam>
+            </busParams>
+            <ports>
+                <port>m_axi_gmem_ARADDR</port>
+                <port>m_axi_gmem_ARBURST</port>
+                <port>m_axi_gmem_ARCACHE</port>
+                <port>m_axi_gmem_ARID</port>
+                <port>m_axi_gmem_ARLEN</port>
+                <port>m_axi_gmem_ARLOCK</port>
+                <port>m_axi_gmem_ARPROT</port>
+                <port>m_axi_gmem_ARQOS</port>
+                <port>m_axi_gmem_ARREADY</port>
+                <port>m_axi_gmem_ARREGION</port>
+                <port>m_axi_gmem_ARSIZE</port>
+                <port>m_axi_gmem_ARUSER</port>
+                <port>m_axi_gmem_ARVALID</port>
+                <port>m_axi_gmem_AWADDR</port>
+                <port>m_axi_gmem_AWBURST</port>
+                <port>m_axi_gmem_AWCACHE</port>
+                <port>m_axi_gmem_AWID</port>
+                <port>m_axi_gmem_AWLEN</port>
+                <port>m_axi_gmem_AWLOCK</port>
+                <port>m_axi_gmem_AWPROT</port>
+                <port>m_axi_gmem_AWQOS</port>
+                <port>m_axi_gmem_AWREADY</port>
+                <port>m_axi_gmem_AWREGION</port>
+                <port>m_axi_gmem_AWSIZE</port>
+                <port>m_axi_gmem_AWUSER</port>
+                <port>m_axi_gmem_AWVALID</port>
+                <port>m_axi_gmem_BID</port>
+                <port>m_axi_gmem_BREADY</port>
+                <port>m_axi_gmem_BRESP</port>
+                <port>m_axi_gmem_BUSER</port>
+                <port>m_axi_gmem_BVALID</port>
+                <port>m_axi_gmem_RDATA</port>
+                <port>m_axi_gmem_RID</port>
+                <port>m_axi_gmem_RLAST</port>
+                <port>m_axi_gmem_RREADY</port>
+                <port>m_axi_gmem_RRESP</port>
+                <port>m_axi_gmem_RUSER</port>
+                <port>m_axi_gmem_RVALID</port>
+                <port>m_axi_gmem_WDATA</port>
+                <port>m_axi_gmem_WID</port>
+                <port>m_axi_gmem_WLAST</port>
+                <port>m_axi_gmem_WREADY</port>
+                <port>m_axi_gmem_WSTRB</port>
+                <port>m_axi_gmem_WUSER</port>
+                <port>m_axi_gmem_WVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="0" num_read_outstanding="16" num_write_outstanding="16" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="0" argName="input"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="8" final_bitwidth="8" argName="input"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="M_AXI">
+                <table isCollapsed="0">
+                    <keys size="11">Interface, Data Width (SW-&gt;HW), Address Width, Latency, Offset, Register, Max Widen Bitwidth, Max Read Burst Length, Max Write Burst Length, Num Read Outstanding, Num Write Outstanding</keys>
+                    <column name="m_axi_gmem">8 -&gt; 8, 32, 0, slave, 0, 0, 16, 16, 16, 16, , , , </column>
+                </table>
+            </item>
+            <item name="S_AXILITE Interfaces">
+                <table isCollapsed="0">
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_control">32, 5, 16, 0, , , , , </column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table isCollapsed="0">
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_control">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_control">input_r, 0x10, 32, W, Data signal of input_r, </column>
+                    <column name="s_axi_control">output_r, 0x18, 32, R, Data signal of output_r, </column>
+                    <column name="s_axi_control">output_r_ctrl, 0x1c, 32, R, Control signal of output_r, 0=output_r_ap_vld</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk, </column>
+                    <column name="ap_rst_n">reset, ap_rst_n, </column>
+                    <column name="interrupt">interrupt, interrupt, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="input">in, unsigned char*</column>
+                    <column name="output">out, int&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="input">m_axi_gmem, interface, , </column>
+                    <column name="input">s_axi_control, interface, offset, </column>
+                    <column name="output">s_axi_control, interface, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.">
+            <item name="Inferred Burst Summary">
+                <table>
+                    <keys size="6">HW Interface, Loop, Direction, Length, Width, Location</keys>
+                    <column name="m_axi_gmem">APPEARANCES, read, 1024, 8, byte_count_mvp.cpp:28:15</column>
+                </table>
+            </item>
+            <item name="Inferred Bursts and Widening Missed">
+                <table>
+                    <keys size="6">HW Interface, Variable, Loop, Problem, Resolution, Location</keys>
+                    <column name="m_axi_gmem">input, APPEARANCES, Could not widen since type i8 size is greater than or equal to the max_widen_bitwidth threshold of 0, 214-353, byte_count_mvp.cpp:28:15</column>
+                </table>
+            </item>
+        </section>
+    </ReportBurst>
+    <PragmaReport>
+        <Pragma type="interface" location="byte_count_mvp.cpp:4" status="valid" parentFunction="byte_count" variable="input" isDirective="0" options="mode=m_axi port=input offset=slave"/>
+        <Pragma type="interface" location="byte_count_mvp.cpp:5" status="valid" parentFunction="byte_count" variable="output" isDirective="0" options="mode=s_axilite port=output"/>
+        <Pragma type="interface" location="byte_count_mvp.cpp:6" status="valid" parentFunction="byte_count" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
+        <Pragma type="dataflow" location="byte_count_mvp.cpp:7" status="valid" parentFunction="byte_count" variable="" isDirective="0" options=""/>
+        <Pragma type="dependence" location="byte_count_mvp.cpp:18" status="valid" parentFunction="count_appearances" variable="appearances" isDirective="0" options="variable=appearances intra RAW false"/>
+        <Pragma type="unroll" location="byte_count_mvp.cpp:21" status="valid" parentFunction="count_appearances" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="byte_count_mvp.cpp:29" status="valid" parentFunction="count_appearances" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="unroll" location="byte_count_mvp.cpp:48" status="valid" parentFunction="count_threshold" variable="" isDirective="0" options=""/>
+    </PragmaReport>
+</profile>
+

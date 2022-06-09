@@ -1,0 +1,1632 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 834.055 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+ERROR: [HLS 207-3335] functions that differ only in their return type cannot be overloaded (byte_count_mvp.cpp:3:6)
+INFO: [HLS 207-70] previous declaration is here (./byte_count_mvp.hpp:45:10)
+ERROR: [HLS 207-3339] no matching function for call to 'count_appearances' (byte_count_mvp.cpp:8:2)
+INFO: [HLS 207-4380] candidate function not viable: 1st argument ('const data_t *' (aka 'const unsigned char *')) would lose const qualifier (./byte_count_mvp.hpp:41:6)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.793 seconds; current allocated memory: 312.414 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 4.533 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 753.969 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 18.013 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:44:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:41:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:17:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:14:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.516 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.374 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.181 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.931 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:19:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:38:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.203 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.797 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.779 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.626 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.122 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.157 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.515 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.586 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.141 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.194 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.529 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.619 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 24 seconds. CPU system time: 2 seconds. Elapsed time: 47.415 seconds; current allocated memory: 384.797 MB.
+INFO: [HLS 200-112] Total CPU user time: 25 seconds. Total CPU system time: 3 seconds. Total elapsed time: 48.905 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.072 seconds; current allocated memory: 372.750 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.489 seconds; peak allocated memory: 1.100 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.606 seconds; current allocated memory: 369.934 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.081 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 801.273 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 17.266 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:44:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:41:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:17:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:14:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.085 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.37 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.169 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.962 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:19:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:38:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.143 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.784 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.718 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.96 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.811 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.201 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.491 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.568 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.668 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 5.19 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.516 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.6 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 25 seconds. CPU system time: 2 seconds. Elapsed time: 47.664 seconds; current allocated memory: 343.680 MB.
+INFO: [HLS 200-112] Total CPU user time: 26 seconds. Total CPU system time: 3 seconds. Total elapsed time: 49.157 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.8ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 6.8 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.8ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 748.004 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 17.495 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:44:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:41:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:17:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:14:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.964 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.326 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.163 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.981 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:19:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:38:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.237 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.761 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.845 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.9 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.704 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.222 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.486 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.561 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.448 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.411 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 2.525 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.6 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 25 seconds. CPU system time: 2 seconds. Elapsed time: 47.782 seconds; current allocated memory: 393.355 MB.
+INFO: [HLS 200-112] Total CPU user time: 26 seconds. Total CPU system time: 3 seconds. Total elapsed time: 49.237 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 824.629 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 17.282 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:44:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:41:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:17:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:14:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.828 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.352 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.931 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:19:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:38:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.273 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.786 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.78 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.547 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.162 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.235 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.462 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.56 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.171 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.283 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.522 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.609 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 24 seconds. CPU system time: 1 seconds. Elapsed time: 46.106 seconds; current allocated memory: 317.055 MB.
+INFO: [HLS 200-112] Total CPU user time: 25 seconds. Total CPU system time: 2 seconds. Total elapsed time: 47.571 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.0.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 15.761 seconds; current allocated memory: 315.566 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 17.219 seconds; peak allocated memory: 1.108 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.0.0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 705.109 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 17.428 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:45:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:42:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:18:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:15:0)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 8 in loop 'APPEARANCES'(byte_count_mvp.cpp:26:15) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (byte_count_mvp.cpp:26:15)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.911 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.331 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.195 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.095 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:20:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:33:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:39:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:15).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:15).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.231 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.192 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.622 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.814 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.695 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.228 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.198 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.473 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_appearances_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances_Pipeline_APPEARANCES'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.415 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.401 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.198 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.4 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 2.915 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.02 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 26 seconds. CPU system time: 2 seconds. Elapsed time: 47.978 seconds; current allocated memory: 433.938 MB.
+INFO: [HLS 200-112] Total CPU user time: 27 seconds. Total CPU system time: 3 seconds. Total elapsed time: 49.465 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.0.0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 804.254 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 17.207 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:44:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:41:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:17:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:14:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.962 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.376 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.199 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.002 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:19:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:38:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:14).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.223 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.847 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.841 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.894 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.314 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.219 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.495 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.598 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.237 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 5.932 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.006 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.536 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 153.66 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 26 seconds. CPU system time: 2 seconds. Elapsed time: 48.048 seconds; current allocated memory: 333.676 MB.
+INFO: [HLS 200-112] Total CPU user time: 27 seconds. Total CPU system time: 3 seconds. Total elapsed time: 49.603 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.0.0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 766.141 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 17.784 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:45:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:42:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:18:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:15:0)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 8 in loop 'APPEARANCES'(byte_count_mvp.cpp:26:15) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (byte_count_mvp.cpp:26:15)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.913 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.006 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.291 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.095 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:20:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:33:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:39:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:15).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:15).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.322 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.061 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.706 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.83 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.576 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.197 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.455 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.52 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_appearances_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances_Pipeline_APPEARANCES'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.848 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.389 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.303 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.718 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.921 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.074 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 27 seconds. CPU system time: 1 seconds. Elapsed time: 49.575 seconds; current allocated memory: 371.984 MB.
+INFO: [HLS 200-112] Total CPU user time: 28 seconds. Total CPU system time: 2 seconds. Total elapsed time: 51.031 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.0.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 10.913 seconds; current allocated memory: 378.707 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.337 seconds; peak allocated memory: 1.111 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.0
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.1.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 11.36 seconds; current allocated memory: 313.465 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 12.931 seconds; peak allocated memory: 1.110 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.0
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.1.0 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.021 seconds; current allocated memory: 375.121 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.466 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.1.0
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.1.0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.019 seconds; current allocated memory: 799.594 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 17.28 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:46:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:43:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:19:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:16:0)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 8 in loop 'APPEARANCES'(byte_count_mvp.cpp:27:15) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (byte_count_mvp.cpp:27:15)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.922 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.322 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 1.100 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.011 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:21:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:34:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:40:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:16).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:16).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.272 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.26 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.64 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.85 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.702 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.15 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.135 seconds; current allocated memory: 1.100 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.519 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_appearances_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances_Pipeline_APPEARANCES'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.471 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.283 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r' and 'output_r' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 5.254 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 2.758 seconds; current allocated memory: 1.100 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.971 seconds; current allocated memory: 1.100 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 25 seconds. CPU system time: 2 seconds. Elapsed time: 47.615 seconds; current allocated memory: 341.277 MB.
+INFO: [HLS 200-112] Total CPU user time: 26 seconds. Total CPU system time: 3 seconds. Total elapsed time: 49.103 seconds; peak allocated memory: 1.100 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.2.0
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.2.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 10.898 seconds; current allocated memory: 350.406 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 12.358 seconds; peak allocated memory: 1.110 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.2.0
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -format ip_catalog -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -rtl verilog -vendor jnowaczek -version 1.2.0 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 749.031 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 18.287 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:47:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:44:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:20:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:17:0)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 8 in loop 'APPEARANCES'(byte_count_mvp.cpp:28:15) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (byte_count_mvp.cpp:28:15)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.806 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.298 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.155 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.011 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:22:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:35:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:41:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:17).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:17).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.225 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.193 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.627 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.786 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.79 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.233 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.264 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.503 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_appearances_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances_Pipeline_APPEARANCES'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.56 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.365 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.18 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r', 'output_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.472 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.795 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.037 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 26 seconds. CPU system time: 2 seconds. Elapsed time: 48.818 seconds; current allocated memory: 389.371 MB.
+INFO: [HLS 200-112] Total CPU user time: 27 seconds. Total CPU system time: 3 seconds. Total elapsed time: 50.319 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.3.0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=8
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.3.0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 8 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 11.26 seconds; current allocated memory: 386.996 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 12.72 seconds; peak allocated memory: 1.109 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.3.0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=8
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.3.0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 8 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.032 seconds; current allocated memory: 1.046 GB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 19.22 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:47:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:44:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:20:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:17:0)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 8 in loop 'APPEARANCES'(byte_count_mvp.cpp:28:15) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (byte_count_mvp.cpp:28:15)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.439 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.426 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.192 seconds; current allocated memory: 1.104 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.069 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:22:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:35:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:41:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:17).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:17).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.285 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.382 seconds; current allocated memory: 1.104 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.083 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.785 seconds; current allocated memory: 1.104 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.803 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.851 seconds; current allocated memory: 1.104 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.052 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.253 seconds; current allocated memory: 1.104 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.544 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_appearances_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances_Pipeline_APPEARANCES'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.537 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.399 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.374 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r', 'output_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 5.339 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.88 seconds; current allocated memory: 1.104 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.22 seconds; current allocated memory: 1.104 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 25 seconds. CPU system time: 1 seconds. Elapsed time: 51.354 seconds; current allocated memory: 84.113 MB.
+INFO: [HLS 200-112] Total CPU user time: 27 seconds. Total CPU system time: 3 seconds. Total elapsed time: 57.397 seconds; peak allocated memory: 1.104 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.4.0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=8
+INFO: [HLS 200-1510] Running: set_part xc7z010iclg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.4.0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 8 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 23.379 seconds; current allocated memory: 380.238 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 24.875 seconds; peak allocated memory: 1.110 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.4.0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=32
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.4.0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 32 
+INFO: [HLS 200-1510] Running: source ./estimation_mvp/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name byte_count byte_count 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.016 seconds; current allocated memory: 849.594 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_bench_mvp.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'byte_count_mvp.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 19.809 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:47:13) in function 'count_threshold' completely with a factor of 256 (byte_count_mvp.cpp:44:0)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_mvp.cpp:20:9) in function 'count_appearances' completely with a factor of 256 (byte_count_mvp.cpp:17:0)
+INFO: [HLS 214-115] Multiple burst reads of length 1024 and bit width 8 in loop 'APPEARANCES'(byte_count_mvp.cpp:28:15) has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (byte_count_mvp.cpp:28:15)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.514 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.386 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.176 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-786] Detected dataflow-on-top in function  'byte_count' (byte_count_mvp.cpp:3)  with default interface mode 'ap_ctrl_hs'. Overlapped execution of successive kernel calls will not happen unless interface mode 'ap_ctrl_chain' is used (or 'ap_ctrl_none' for a purely data-driven design).
+INFO: [XFORM 203-712] Applying dataflow to function 'byte_count' (byte_count_mvp.cpp:3), detected/extracted 2 process function(s): 
+	 'count_appearances'
+	 'count_threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.302 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:22:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:35:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'appearances' (byte_count_mvp.cpp:41:20)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:17).
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appearances' (byte_count_mvp.cpp:17).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.568 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'byte_count' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.283 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.615 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.857 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 2.84 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.311 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.284 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.586 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_appearances_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'count_appearances_Pipeline_APPEARANCES/m_axi_gmem_ARUSER' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances_Pipeline_APPEARANCES'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.611 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_appearances' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_appearances'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.413 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.27 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'byte_count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/input_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'byte_count/output_r' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'byte_count' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r', 'output_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'byte_count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.738 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO byte_count_appearances_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'byte_count_appearances_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 3.05 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-1603] Design has inferred MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.229 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for byte_count.
+INFO: [VLOG 209-307] Generating Verilog RTL for byte_count.
+INFO: [HLS 200-789] **** Estimated Fmax: 136.99 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 27 seconds. CPU system time: 2 seconds. Elapsed time: 53.038 seconds; current allocated memory: 287.648 MB.
+INFO: [HLS 200-112] Total CPU user time: 28 seconds. Total CPU system time: 3 seconds. Total elapsed time: 54.646 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_alignment_byte_size=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name=Byte_Count_MVP
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_mvp
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.5.0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=32
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte_Count_MVP -library byte_count_mvp -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.5.0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 32 
+INFO: [HLS 200-1510] Running: source ./estimation_mvp/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name byte_count byte_count 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 12.579 seconds; current allocated memory: 401.594 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 14.053 seconds; peak allocated memory: 1.110 GB.

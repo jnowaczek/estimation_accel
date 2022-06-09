@@ -1,0 +1,57 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/estimation_accel/hls/estimation_mvp/solution1/csynth.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="byte_count" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=byte_count" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/estimation_accel/hls/estimation_mvp/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="byte_count" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=byte_count" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_mvp.cpp:4:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="byte_count" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=input offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_mvp.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="byte_count" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=output" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_mvp.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="byte_count" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_mvp.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="byte_count" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_mvp.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count_appearances" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=appearances intra RAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_mvp.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count_appearances" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_mvp.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count_appearances" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_mvp.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count_threshold" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="byte_count_mvp.cpp:44:0" msg_body="Unrolling loop 'THRESHOLD' (byte_count_mvp.cpp:47:13) in function 'count_threshold' completely with a factor of 256">
+        <args Factor="256" LoopLoc="byte_count_mvp.cpp:47:13" LoopName="THRESHOLD"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="byte_count_mvp.cpp:17:0" msg_body="Unrolling loop 'RESET' (byte_count_mvp.cpp:20:9) in function 'count_appearances' completely with a factor of 256">
+        <args Factor="256" LoopLoc="byte_count_mvp.cpp:20:9" LoopName="RESET"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

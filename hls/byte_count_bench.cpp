@@ -26,7 +26,13 @@ int byte_count_gold(data_t input[BLOCK_LENGTH]) {
 int main() {
 	int retval = 0;
 
-	std::vector<std::string> paths = {"tb_data/zeros", "tb_data/count.bin", "tb_data/count_sorted.bin"};
+	std::vector<std::string> paths = { "tb_data/zeros", "tb_data/count.bin",
+			"tb_data/count_sorted.bin", "tb_data/cantrbry/alice29.txt",
+			"tb_data/cantrbry/asyoulik.txt", "tb_data/cantrbry/cp.html",
+			"tb_data/cantrbry/fields.c", "tb_data/cantrbry/grammar.lsp",
+			"tb_data/cantrbry/kennedy.xls", "tb_data/cantrbry/lcet10.txt",
+			"tb_data/cantrbry/plrabn12.txt", "tb_data/cantrbry/ptt5",
+			"tb_data/cantrbry/sum", "tb_data/cantrbry/xargs.1" };
 	std::vector<char> input;
 
 	for (std::string path : paths) {
@@ -54,8 +60,7 @@ int main() {
 //			std::vector<data_t> data3(input.end() - BLOCK_LENGTH / 4, input.end());
 
 			int expected = byte_count_gold(data.data());
-			result_t actual;
-			byte_count(packed_data, actual);
+			result_t actual = byte_count(packed_data);
 
 			if (actual == expected) {
 				std::cout << "    *** *** *** *** \n";

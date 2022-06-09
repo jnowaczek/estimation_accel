@@ -27,9 +27,7 @@
 //        bit 31~0 - ap_return[31:0] (Read)
 // 0x18 : Data signal of input_r
 //        bit 31~0 - input_r[31:0] (Read/Write)
-// 0x1c : Data signal of input_r
-//        bit 31~0 - input_r[63:32] (Read/Write)
-// 0x20 : reserved
+// 0x1c : reserved
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 #define XBYTE_COUNT_CONTROL_ADDR_AP_CTRL      0x00
@@ -39,5 +37,5 @@
 #define XBYTE_COUNT_CONTROL_ADDR_AP_RETURN    0x10
 #define XBYTE_COUNT_CONTROL_BITS_AP_RETURN    32
 #define XBYTE_COUNT_CONTROL_ADDR_INPUT_R_DATA 0x18
-#define XBYTE_COUNT_CONTROL_BITS_INPUT_R_DATA 64
+#define XBYTE_COUNT_CONTROL_BITS_INPUT_R_DATA 32
 

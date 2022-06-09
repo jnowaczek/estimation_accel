@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="byte_count_mvp.hpp" path="E:\estimation_accel\hls\byte_count_mvp.hpp"/>
+    <originFiles name="byte_count_mvp.cpp" path="E:\estimation_accel\hls\byte_count_mvp.cpp"/>
+    <originFiles name="byte_count_bench_mvp.cpp" path="E:\estimation_accel\hls\byte_count_bench_mvp.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_data" path="E:\estimation_accel\hls\tb_data"/>
+    <originFiles name="byte_count_bench_mvp.cpp" path="E:\estimation_accel\hls\byte_count_bench_mvp.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

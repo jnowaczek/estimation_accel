@@ -1,0 +1,50 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "byte_count",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "E:\/estimation_accel\/hls\/estimation_mvp\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "byte_count"
+              }]
+          }
+        },
+        {
+          "functionName": "byte_count",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "E:\/estimation_accel\/hls\/estimation_mvp\/solution1\/csynth.tcl",
+          "sourceLine": "19",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "byte_count"
+              }]
+          }
+        },
+        {
+          "functionName": "byte_count",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "E:\/estimation_accel\/hls\/estimation_mvp\/solution1\/csynth.tcl",
+          "sourceLine": "19",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "byte_count"
+              }]
+          }
+        }
+      ]
+    }]}
