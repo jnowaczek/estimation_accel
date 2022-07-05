@@ -27,11 +27,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>ap_fixed_base.h</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_fixed_base.h</location>
-		</link>
-		<link>
 			<name>source</name>
 			<type>2</type>
 			<location>E:/estimation_accel/hls/estimation/.apc/.src</location>

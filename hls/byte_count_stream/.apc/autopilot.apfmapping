@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="byte_count_stream.cpp" path="E:\estimation_accel\hls\byte_count_stream\src\byte_count_stream.cpp"/>
+    <originFiles name="byte_count_stream.hpp" path="E:\estimation_accel\hls\byte_count_stream\src\byte_count_stream.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="byte_count_stream_bench.cpp" path="E:\estimation_accel\hls\byte_count_stream\src\byte_count_stream_bench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

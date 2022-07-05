@@ -1,0 +1,288 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5292" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:309:77" msg_body="unused parameter 'name'">
+        <args ClangWarningOption="unused-parameter"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_strb_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:172:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:178:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:182:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:191:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:195:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:199:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:203:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:209:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:213:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:231:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:291:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:302:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:312:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:327:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:370:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:378:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:388:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:399:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:409:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:425:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/estimation_accel/hls/byte_count_stream/solution1/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=accelerator" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_chain port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=count_blocks compact=none" ARG_PragmaType="aggregate" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="split" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=outL intra RAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-273" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:311:0" msg_body="In function 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::stream_of_blocks(int, char*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form">
+        <args Function="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::stream_of_blocks(int, char*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-273" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:55:0" msg_body="In function 'hls::stream_buf&lt;unsigned char [256]&gt;::stream_buf(int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form">
+        <args Function="hls::stream_buf&lt;unsigned char [256]&gt;::stream_buf(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:309:86" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [256]&gt;::stream_buf(int)' into 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::stream_of_blocks(int, char*)'">
+        <args Callee="hls::stream_buf&lt;unsigned char [256]&gt;::stream_buf(int)" Caller="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::stream_of_blocks(int, char*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:330:84" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [1024]&gt;::write_acquire()' into 'hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::write_acquire()'">
+        <args Callee="hls::stream_buf&lt;unsigned char [1024]&gt;::write_acquire()" Caller="hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::write_acquire()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:284:105" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::write_acquire()' into 'hls::write_lock&lt;unsigned char [1024]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::write_acquire()" Caller="hls::write_lock&lt;unsigned char [1024]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:332:68" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [1024]&gt;::write_release()' into 'hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::write_release()'">
+        <args Callee="hls::stream_buf&lt;unsigned char [1024]&gt;::write_release()" Caller="hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::write_release()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:290:61" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::write_release()' into 'hls::write_lock&lt;unsigned char [1024]&gt;::~write_lock()'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::write_release()" Caller="hls::write_lock&lt;unsigned char [1024]&gt;::~write_lock()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:28:32" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [1024]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)' into 'split(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [1024]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)" Caller="split(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:34:1" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [1024]&gt;::~write_lock()' into 'split(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [1024]&gt;::~write_lock()" Caller="split(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:32:3" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [1024]&gt;::operator unsigned char (&amp;) [1024]()' into 'split(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [1024]&gt;::operator unsigned char (&amp;) [1024]()" Caller="split(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:330:84" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [256]&gt;::write_acquire()' into 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::write_acquire()'">
+        <args Callee="hls::stream_buf&lt;unsigned char [256]&gt;::write_acquire()" Caller="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::write_acquire()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:284:105" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::write_acquire()' into 'hls::write_lock&lt;unsigned char [256]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::write_acquire()" Caller="hls::write_lock&lt;unsigned char [256]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:326:83" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [1024]&gt;::read_acquire()' into 'hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::read_acquire()'">
+        <args Callee="hls::stream_buf&lt;unsigned char [1024]&gt;::read_acquire()" Caller="hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::read_acquire()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:265:104" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::read_acquire()' into 'hls::read_lock&lt;unsigned char [1024]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::read_acquire()" Caller="hls::read_lock&lt;unsigned char [1024]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:328:67" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [1024]&gt;::read_release()' into 'hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::read_release()'">
+        <args Callee="hls::stream_buf&lt;unsigned char [1024]&gt;::read_release()" Caller="hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::read_release()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:271:60" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::read_release()' into 'hls::read_lock&lt;unsigned char [1024]&gt;::~read_lock()'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;::read_release()" Caller="hls::read_lock&lt;unsigned char [1024]&gt;::~read_lock()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:332:68" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [256]&gt;::write_release()' into 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::write_release()'">
+        <args Callee="hls::stream_buf&lt;unsigned char [256]&gt;::write_release()" Caller="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::write_release()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:290:61" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::write_release()' into 'hls::write_lock&lt;unsigned char [256]&gt;::~write_lock()'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::write_release()" Caller="hls::write_lock&lt;unsigned char [256]&gt;::~write_lock()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:39:33" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:67:1" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::~write_lock()' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::~write_lock()" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:67:1" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [1024]&gt;::~read_lock()' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [1024]&gt;::~read_lock()" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:66:2" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:61:12" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:60:4" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:55:16" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [1024]&gt;::operator unsigned char (&amp;) [1024]()' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [1024]&gt;::operator unsigned char (&amp;) [1024]()" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:51:16" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [1024]&gt;::operator unsigned char (&amp;) [1024]()' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [1024]&gt;::operator unsigned char (&amp;) [1024]()" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:48:31" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [1024]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [1024]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;)" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:45:2" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()' into 'count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()" Caller="count(hls::stream_of_blocks&lt;unsigned char [1024], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:326:83" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [256]&gt;::read_acquire()' into 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::read_acquire()'">
+        <args Callee="hls::stream_buf&lt;unsigned char [256]&gt;::read_acquire()" Caller="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::read_acquire()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:265:104" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::read_acquire()' into 'hls::read_lock&lt;unsigned char [256]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::read_acquire()" Caller="hls::read_lock&lt;unsigned char [256]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:328:67" msg_body="Inlining function 'hls::stream_buf&lt;unsigned char [256]&gt;::read_release()' into 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::read_release()'">
+        <args Callee="hls::stream_buf&lt;unsigned char [256]&gt;::read_release()" Caller="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::read_release()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:271:60" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::read_release()' into 'hls::read_lock&lt;unsigned char [256]&gt;::~read_lock()'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::read_release()" Caller="hls::read_lock&lt;unsigned char [256]&gt;::~read_lock()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:72:32" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [256]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)' into 'reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [256]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)" Caller="reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:78:1" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [256]&gt;::~read_lock()' into 'reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [256]&gt;::~read_lock()" Caller="reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:78:1" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::~write_lock()' into 'reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::~write_lock()" Caller="reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:76:3" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()' into 'reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()" Caller="reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:76:13" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()' into 'reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()" Caller="reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:73:33" msg_body="Inlining function 'hls::write_lock&lt;unsigned char [256]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)' into 'reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)'">
+        <args Callee="hls::write_lock&lt;unsigned char [256]&gt;::write_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)" Caller="reduce(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:83:32" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [256]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)' into 'threshold(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [256]&gt;::read_lock(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;)" Caller="threshold(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:92:1" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [256]&gt;::~read_lock()' into 'threshold(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [256]&gt;::~read_lock()" Caller="threshold(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:87:7" msg_body="Inlining function 'hls::read_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()' into 'threshold(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)'">
+        <args Callee="hls::read_lock&lt;unsigned char [256]&gt;::operator unsigned char (&amp;) [256]()" Caller="threshold(hls::stream_of_blocks&lt;unsigned char [256], 2&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:15:39" msg_body="Inlining function 'hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::stream_of_blocks(int, char*)' into 'accelerator(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)'">
+        <args Callee="hls::stream_of_blocks&lt;unsigned char [256], 2&gt;::stream_of_blocks(int, char*)" Caller="accelerator(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;int, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:36:0" msg_body="Unrolling loop 'RESET' (byte_count_stream/src/byte_count_stream.cpp:43:9) in function 'count' completely with a factor of 256">
+        <args Factor="256" LoopLoc="byte_count_stream/src/byte_count_stream.cpp:43:9" LoopName="RESET"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:10:0" msg_body="Aggregating fifo (hls::stream) variable 'Out' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="fifo (hls::stream)" Name="Out"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:10:0" msg_body="Aggregating fifo (hls::stream) variable 'In' with compact=bit mode in 8-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="8" HwTyName="fifo (hls::stream)" Name="In"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:15:39" msg_body="Aggregating scalar variable 'count_blocks' with compact=none mode in 2048-bits">
+        <args AggregateTypeName="compact=none" Bitwidth="2048" HwTyName="scalar" Name="count_blocks"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

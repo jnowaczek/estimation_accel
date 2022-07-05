@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'accelerator'
+================================================================
+* Date:           Mon Jul  4 22:30:47 2022
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        byte_count_stream
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010i-clg225-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  10.00 ns|  10.996 ns|     2.70 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     2579|     2579|  28.359 us|  28.359 us|  1033|  1033|  dataflow|
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%count_blocks_channel = alloca i32 1"   --->   Operation 9 'alloca' 'count_blocks_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2048> <Depth = 2> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%input_blocks_buf_data = alloca i32 1" [byte_count_stream/src/byte_count_stream.cpp:14]   --->   Operation 10 'alloca' 'input_blocks_buf_data' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%count_blocks = alloca i32 1"   --->   Operation 11 'alloca' 'count_blocks' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%reduced_blocks_buf_data = alloca i32 1" [byte_count_stream/src/byte_count_stream.cpp:15]   --->   Operation 12 'alloca' 'reduced_blocks_buf_data' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln19 = call void @split, i8 %In_r, i8 %input_blocks_buf_data" [byte_count_stream/src/byte_count_stream.cpp:19]   --->   Operation 13 'call' 'call_ln19' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 14 [1/2] (0.00ns)   --->   "%call_ln19 = call void @split, i8 %In_r, i8 %input_blocks_buf_data" [byte_count_stream/src/byte_count_stream.cpp:19]   --->   Operation 14 'call' 'call_ln19' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 15 [2/2] (0.00ns)   --->   "%call_ln20 = call void @count, i8 %input_blocks_buf_data, i2048 %count_blocks_channel" [byte_count_stream/src/byte_count_stream.cpp:20]   --->   Operation 15 'call' 'call_ln20' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 16 [1/2] (0.00ns)   --->   "%call_ln20 = call void @count, i8 %input_blocks_buf_data, i2048 %count_blocks_channel" [byte_count_stream/src/byte_count_stream.cpp:20]   --->   Operation 16 'call' 'call_ln20' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 17 [2/2] (0.00ns)   --->   "%call_ln21 = call void @reduce, i2048 %count_blocks_channel, i8 %reduced_blocks_buf_data" [byte_count_stream/src/byte_count_stream.cpp:21]   --->   Operation 17 'call' 'call_ln21' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln21 = call void @reduce, i2048 %count_blocks_channel, i8 %reduced_blocks_buf_data" [byte_count_stream/src/byte_count_stream.cpp:21]   --->   Operation 18 'call' 'call_ln21' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln22 = call void @threshold, i8 %reduced_blocks_buf_data, i32 %Out_r" [byte_count_stream/src/byte_count_stream.cpp:22]   --->   Operation 19 'call' 'call_ln22' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 20 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln12 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty" [byte_count_stream/src/byte_count_stream.cpp:12]   --->   Operation 20 'specdataflowpipeline' 'specdataflowpipeline_ln12' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%spectopmodule_ln10 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 21 'spectopmodule' 'spectopmodule_ln10' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln10 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 22 'specinterface' 'specinterface_ln10' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %In_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %In_r"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Out_r"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specpipodepth_ln57 = specpipodepth void @_ssdm_op_SpecPipoDepth, i2048 %count_blocks, i32 2, void @empty" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:57]   --->   Operation 27 'specpipodepth' 'specpipodepth_ln57' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln22 = call void @threshold, i8 %reduced_blocks_buf_data, i32 %Out_r" [byte_count_stream/src/byte_count_stream.cpp:22]   --->   Operation 28 'call' 'call_ln22' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln23 = ret" [byte_count_stream/src/byte_count_stream.cpp:23]   --->   Operation 29 'ret' 'ret_ln23' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
