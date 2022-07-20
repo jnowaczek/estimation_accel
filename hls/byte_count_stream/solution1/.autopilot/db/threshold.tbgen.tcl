@@ -73,12 +73,12 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "in_r", "Type" : "MemFifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57", "Port" : "in_r", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+					{"ID" : "1", "SubInstance" : "grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57", "Port" : "in_r", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
 			{"Name" : "Out_r", "Type" : "Fifo", "Direction" : "O",
 				"BlockSignal" : [
 					{"Name" : "Out_r_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57", "Parent" : "0", "Child" : ["2"],
-		"CDFG" : "threshold_Pipeline_VITIS_LOOP_86_1",
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57", "Parent" : "0", "Child" : ["2"],
+		"CDFG" : "threshold_Pipeline_VITIS_LOOP_214_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -95,16 +95,16 @@ set RtlHierarchyInfo {[
 			{"Name" : "in_r", "Type" : "MemFifo", "Direction" : "I"},
 			{"Name" : "over_thresh_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_86_1", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_214_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	threshold {
 		in_r {Type I LastRead 2 FirstWrite -1}
 		Out_r {Type O LastRead -1 FirstWrite 2}}
-	threshold_Pipeline_VITIS_LOOP_86_1 {
+	threshold_Pipeline_VITIS_LOOP_214_1 {
 		in_r {Type I LastRead 0 FirstWrite -1}
 		over_thresh_out {Type O LastRead -1 FirstWrite 0}}}
 

@@ -3,28 +3,23 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'threshold_Pipeline_VITIS_LOOP_86_1/in_r_read' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-04T22:30:48.821-0500" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count/out_r' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-04T22:30:48.373-0500" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count_Pipeline_APPEARANCES/in_r_read' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-04T22:30:48.063-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 200-1016] The critical path in module 'count_Pipeline_APPEARANCES' consists of the following:&#x9;'load' operation ('count_load_1', byte_count_stream/src/byte_count_stream.cpp:60) on local variable 'count' [24]  (0 ns)&#xD;&#xA;&#x9;'shl' operation ('shl_ln60_1', byte_count_stream/src/byte_count_stream.cpp:60) [38]  (0 ns)&#xD;&#xA;&#x9;'or' operation ('or_ln60', byte_count_stream/src/byte_count_stream.cpp:60) [41]  (3.46 ns)&#xD;&#xA;&#x9;'lshr' operation ('lshr_ln61', byte_count_stream/src/byte_count_stream.cpp:61) [44]  (0 ns)&#xD;&#xA;&#x9;'select' operation ('select_ln57_1', byte_count_stream/src/byte_count_stream.cpp:57) [47]  (0 ns)&#xD;&#xA;&#x9;'add' operation ('count', byte_count_stream/src/byte_count_stream.cpp:50) [48]  (5.94 ns)&#xD;&#xA;&#x9;'store' operation ('count_1_1_write_ln53', byte_count_stream/src/byte_count_stream.cpp:53) of variable 'count', byte_count_stream/src/byte_count_stream.cpp:50 on local variable 'count' [52]  (1.59 ns)&#xD;&#xA;&#xA;&#xD;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1016.html" projectName="byte_count_stream" solutionName="solution1" date="2022-07-04T22:30:46.256-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 200-871] Estimated clock period (10.996ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).&#xD;&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-871.html" projectName="byte_count_stream" solutionName="solution1" date="2022-07-04T22:30:46.238-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 214-273] In function 'hls::stream_buf&lt;unsigned char [256]>::stream_buf(int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:55:0)" projectName="byte_count_stream" solutionName="solution1" date="2022-07-04T22:30:44.833-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 214-273] In function 'hls::stream_of_blocks&lt;unsigned char [256], 2>::stream_of_blocks(int, char*)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:311:0)" projectName="byte_count_stream" solutionName="solution1" date="2022-07-04T22:30:44.818-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 207-5292] unused parameter 'name' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:309:77)" projectName="byte_count_stream" solutionName="solution1" date="2022-07-04T22:30:34.909-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'threshold_Pipeline_VITIS_LOOP_214_1/in_r_read' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:02.692-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count3/out_r' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:02.141-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count3_Pipeline_APPEARANCES/in_r_read' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:01.793-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count2/out_r' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:01.536-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count2_Pipeline_APPEARANCES/in_r_read' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:01.230-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count1/out_r' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:00.988-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count1_Pipeline_APPEARANCES/in_r_read' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:00.707-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count0/out_r' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:00.434-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'count0_Pipeline_APPEARANCES/in_r_read' to 0." projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:36:00.141-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1016] The critical path in module 'count3_Pipeline_APPEARANCES' consists of the following:&#x9;'load' operation ('count_load_1', byte_count_stream/src/byte_count_stream.cpp:179) on local variable 'count' [24]  (0 ns)&#xD;&#xA;&#x9;'shl' operation ('shl_ln179_1', byte_count_stream/src/byte_count_stream.cpp:179) [38]  (0 ns)&#xD;&#xA;&#x9;'or' operation ('or_ln179', byte_count_stream/src/byte_count_stream.cpp:179) [41]  (3.46 ns)&#xD;&#xA;&#x9;'lshr' operation ('lshr_ln180', byte_count_stream/src/byte_count_stream.cpp:180) [44]  (0 ns)&#xD;&#xA;&#x9;'select' operation ('select_ln176_1', byte_count_stream/src/byte_count_stream.cpp:176) [47]  (0 ns)&#xD;&#xA;&#x9;'add' operation ('count', byte_count_stream/src/byte_count_stream.cpp:166) [48]  (5.94 ns)&#xD;&#xA;&#x9;'store' operation ('count_write_ln172', byte_count_stream/src/byte_count_stream.cpp:172) of variable 'count', byte_count_stream/src/byte_count_stream.cpp:166 on local variable 'count' [52]  (1.59 ns)&#xD;&#xA;&#xA;&#xD;&#xA;Resolution: For help on HLS 200-1016 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1016.html" projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:35:57.981-0500" type="Warning"/>
+        <logs message="WARNING: [HLS 200-871] Estimated clock period (10.996ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).&#xD;&#xA;Resolution: For help on HLS 200-871 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-871.html" projectName="byte_count_stream" solutionName="solution1" date="2022-07-19T19:35:57.968-0500" type="Warning"/>
       </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

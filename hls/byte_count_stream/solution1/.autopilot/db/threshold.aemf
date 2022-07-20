@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1656991849042">
-  <ports id="1" name="in_r" type="PortType" coreName="RAM" coreId="1702129263" bitwidth="8" iftype="IfTypeBus" arraysize="256">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1658277362935">
+  <ports id="1" name="in_r" type="PortType" coreName="RAM" coreId="0" bitwidth="8" iftype="IfTypeBus" arraysize="256">
     <dataOutputObjs>readreq</dataOutputObjs>
     <dataOutputObjs>call</dataOutputObjs>
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="Out_r" type="PortType" coreName="FIFO" coreId="1702129263" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="2" name="Out_r" type="PortType" coreName="FIFO" coreId="1936683105" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="17" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.1"/>
@@ -20,22 +20,22 @@
   <edges id="80" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
   <edges id="81" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
   <blocks id="12" name="threshold" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="over_thresh_loc" coreId="1701273971" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="over_thresh_loc" coreId="0" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <dataOutputObjs>call</dataOutputObjs>
       <dataOutputObjs>load</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="_ln82" lineNumber="82" fileName="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" fileDirectory=".." coreId="1931502951" contextFuncName="read_acquire" opcode="readreq" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="_ln82" lineNumber="82" fileName="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" fileDirectory=".." coreId="0" contextFuncName="read_acquire" opcode="readreq" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" linenumber="82" fileDirectory="E:\estimation_accel\hls" functionName="read_acquire"/>
       <dataInputObjs>in_r</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="_ln0" rtlName="grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57" coreId="1869635878" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="_ln0" rtlName="grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57" coreId="0" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <dataInputObjs>in_r</dataInputObjs>
       <dataInputObjs>alloca</dataInputObjs>
-      <constName>threshold_Pipeline_VITIS_LOOP_86_1</constName>
+      <constName>threshold_Pipeline_VITIS_LOOP_214_1</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="over_thresh_loc_load" coreId="1836597052" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="over_thresh_loc_load" coreId="0" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
       <dataInputObjs>alloca</dataInputObjs>
       <dataOutputObjs>write</dataOutputObjs>
     </node_objs>
@@ -44,13 +44,13 @@
       <dataInputObjs>load</dataInputObjs>
       <dataOutputObjs>Out_r</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="_ln102" lineNumber="102" fileName="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" fileDirectory=".." coreId="1948262962" contextFuncName="read_release" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="_ln102" lineNumber="102" fileName="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" fileDirectory=".." coreId="0" contextFuncName="read_release" opcode="read" nodeLabel="2.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" linenumber="102" fileDirectory="E:\estimation_accel\hls" functionName="read_release"/>
       <dataInputObjs>in_r</dataInputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="_ln92" lineNumber="92" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="817424442" contextFuncName="threshold" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="92" fileDirectory="E:\estimation_accel\hls" functionName="threshold"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="_ln220" lineNumber="220" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="0" contextFuncName="threshold" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="220" fileDirectory="E:\estimation_accel\hls" functionName="threshold"/>
     </node_objs>
     <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h">
       <validLinenumbers>82</validLinenumbers>
@@ -60,7 +60,7 @@
       <validLinenumbers>174</validLinenumbers>
     </fileValidLineNumbers>
     <fileValidLineNumbers fileName="byte_count_stream/src/byte_count_stream.cpp">
-      <validLinenumbers>92</validLinenumbers>
+      <validLinenumbers>220</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <ScheduleInfo time="0"/>
@@ -72,7 +72,7 @@
   <expressionNodes realName="over_thresh_loc_fu_30">
     <nodeIds>3</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57">
+  <moduleNodes realName="grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57">
     <nodeIds>7</nodeIds>
   </moduleNodes>
   <ioNodes realName="readreq_ln82_readreq_fu_34">

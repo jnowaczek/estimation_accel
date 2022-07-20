@@ -13,14 +13,20 @@ set hasInterrupt 0
 set C_modelName {reduce}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ in_r int 2048 regular {pointer 0}  }
+	{ in0 int 2048 regular {pointer 0}  }
+	{ in1 int 2048 regular {pointer 0}  }
+	{ in2 int 2048 regular {pointer 0}  }
+	{ in3 int 2048 regular {pointer 0}  }
 	{ out_r int 8 regular {array 256 { 0 3 } 0 1 }  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "in_r", "interface" : "wire", "bitwidth" : 2048, "direction" : "READONLY"} , 
+	{ "Name" : "in0", "interface" : "wire", "bitwidth" : 2048, "direction" : "READONLY"} , 
+ 	{ "Name" : "in1", "interface" : "wire", "bitwidth" : 2048, "direction" : "READONLY"} , 
+ 	{ "Name" : "in2", "interface" : "wire", "bitwidth" : 2048, "direction" : "READONLY"} , 
+ 	{ "Name" : "in3", "interface" : "wire", "bitwidth" : 2048, "direction" : "READONLY"} , 
  	{ "Name" : "out_r", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 19
+set portNum 28
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -32,15 +38,24 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ start_out sc_out sc_logic 1 signal -1 } 
 	{ start_write sc_out sc_logic 1 signal -1 } 
-	{ in_r sc_in sc_lv 2048 signal 0 } 
-	{ out_r_address0 sc_out sc_lv 8 signal 1 } 
-	{ out_r_ce0 sc_out sc_logic 1 signal 1 } 
-	{ out_r_we0 sc_out sc_logic 1 signal 1 } 
-	{ out_r_d0 sc_out sc_lv 8 signal 1 } 
+	{ in0 sc_in sc_lv 2048 signal 0 } 
+	{ in1 sc_in sc_lv 2048 signal 1 } 
+	{ in2 sc_in sc_lv 2048 signal 2 } 
+	{ in3 sc_in sc_lv 2048 signal 3 } 
+	{ out_r_address0 sc_out sc_lv 8 signal 4 } 
+	{ out_r_ce0 sc_out sc_logic 1 signal 4 } 
+	{ out_r_we0 sc_out sc_logic 1 signal 4 } 
+	{ out_r_d0 sc_out sc_lv 8 signal 4 } 
 	{ out_r_full_n sc_in sc_logic 1 signal -1 } 
 	{ out_r_write sc_out sc_logic 1 signal -1 } 
-	{ in_r_empty_n sc_in sc_logic 1 signal -1 } 
-	{ in_r_read sc_out sc_logic 1 signal -1 } 
+	{ in0_empty_n sc_in sc_logic 1 signal -1 } 
+	{ in1_empty_n sc_in sc_logic 1 signal -1 } 
+	{ in2_empty_n sc_in sc_logic 1 signal -1 } 
+	{ in3_empty_n sc_in sc_logic 1 signal -1 } 
+	{ in0_read sc_out sc_logic 1 signal -1 } 
+	{ in1_read sc_out sc_logic 1 signal -1 } 
+	{ in2_read sc_out sc_logic 1 signal -1 } 
+	{ in3_read sc_out sc_logic 1 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -53,15 +68,24 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "start_out", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_out", "role": "default" }} , 
  	{ "name": "start_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_write", "role": "default" }} , 
- 	{ "name": "in_r", "direction": "in", "datatype": "sc_lv", "bitwidth":2048, "type": "signal", "bundle":{"name": "in_r", "role": "default" }} , 
+ 	{ "name": "in0", "direction": "in", "datatype": "sc_lv", "bitwidth":2048, "type": "signal", "bundle":{"name": "in0", "role": "default" }} , 
+ 	{ "name": "in1", "direction": "in", "datatype": "sc_lv", "bitwidth":2048, "type": "signal", "bundle":{"name": "in1", "role": "default" }} , 
+ 	{ "name": "in2", "direction": "in", "datatype": "sc_lv", "bitwidth":2048, "type": "signal", "bundle":{"name": "in2", "role": "default" }} , 
+ 	{ "name": "in3", "direction": "in", "datatype": "sc_lv", "bitwidth":2048, "type": "signal", "bundle":{"name": "in3", "role": "default" }} , 
  	{ "name": "out_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "out_r", "role": "address0" }} , 
  	{ "name": "out_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_r", "role": "ce0" }} , 
  	{ "name": "out_r_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_r", "role": "we0" }} , 
  	{ "name": "out_r_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "out_r", "role": "d0" }} , 
  	{ "name": "out_r_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_r_full_n", "role": "default" }} , 
  	{ "name": "out_r_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_r_write", "role": "default" }} , 
- 	{ "name": "in_r_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in_r_empty_n", "role": "default" }} , 
- 	{ "name": "in_r_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in_r_read", "role": "default" }}  ]}
+ 	{ "name": "in0_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in0_empty_n", "role": "default" }} , 
+ 	{ "name": "in1_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in1_empty_n", "role": "default" }} , 
+ 	{ "name": "in2_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in2_empty_n", "role": "default" }} , 
+ 	{ "name": "in3_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in3_empty_n", "role": "default" }} , 
+ 	{ "name": "in0_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in0_read", "role": "default" }} , 
+ 	{ "name": "in1_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in1_read", "role": "default" }} , 
+ 	{ "name": "in2_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in2_read", "role": "default" }} , 
+ 	{ "name": "in3_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "in3_read", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -79,16 +103,22 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "in_r", "Type" : "MemFifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "2", "DependentChanType" : "1"},
+			{"Name" : "in0", "Type" : "MemFifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "2", "DependentChanType" : "1"},
+			{"Name" : "in1", "Type" : "MemFifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "2", "DependentChanType" : "1"},
+			{"Name" : "in2", "Type" : "MemFifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "2", "DependentChanType" : "1"},
+			{"Name" : "in3", "Type" : "MemFifo", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0", "DependentChanDepth" : "2", "DependentChanType" : "1"},
 			{"Name" : "out_r", "Type" : "MemFifo", "Direction" : "O", "DependentProc" : ["0"], "DependentChan" : "0"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_75_1", "PipelineType" : "pipeline",
+			{"Name" : "VITIS_LOOP_201_1", "PipelineType" : "pipeline",
 				"LoopDec" : {"FSMBitwidth" : "3", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "PreState" : ["ap_ST_fsm_state1"], "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "PostState" : ["ap_ST_fsm_state4"]}}]}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	reduce {
-		in_r {Type I LastRead 2 FirstWrite -1}
+		in0 {Type I LastRead 2 FirstWrite -1}
+		in1 {Type I LastRead 2 FirstWrite -1}
+		in2 {Type I LastRead 2 FirstWrite -1}
+		in3 {Type I LastRead 2 FirstWrite -1}
 		out_r {Type O LastRead 0 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0
@@ -103,6 +133,9 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	in_r { mem_fifo {  { in_r in_data 0 2048 } } }
+	in0 { mem_fifo {  { in0 in_data 0 2048 } } }
+	in1 { mem_fifo {  { in1 in_data 0 2048 } } }
+	in2 { mem_fifo {  { in2 in_data 0 2048 } } }
+	in3 { mem_fifo {  { in3 in_data 0 2048 } } }
 	out_r { mem_fifo {  { out_r_address0 mem_address 1 8 }  { out_r_ce0 mem_ce 1 1 }  { out_r_we0 mem_we 1 1 }  { out_r_d0 mem_din 1 8 } } }
 }

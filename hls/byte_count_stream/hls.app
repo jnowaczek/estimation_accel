@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="accelerator" name="byte_count_stream">
+<project xmlns="com.autoesl.autopilot.project" name="byte_count_stream" top="accelerator">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

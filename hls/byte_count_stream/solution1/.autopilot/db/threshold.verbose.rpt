@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'threshold'
 ================================================================
-* Date:           Mon Jul  4 22:30:48 2022
+* Date:           Tue Jul 19 19:36:02 2022
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
 * Project:        byte_count_stream
@@ -34,12 +34,12 @@
 
     + Detail: 
         * Instance: 
-        +----------------------------------------------+------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |                                              |                                    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
-        |                   Instance                   |               Module               |   min   |   max   |    min   |    max   | min | max |   Type  |
-        +----------------------------------------------+------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57  |threshold_Pipeline_VITIS_LOOP_86_1  |      258|      258|  2.580 us|  2.580 us|  258|  258|       no|
-        +----------------------------------------------+------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                               |                                     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                    Instance                   |                Module               |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57  |threshold_Pipeline_VITIS_LOOP_214_1  |      258|      258|  2.580 us|  2.580 us|  258|  258|       no|
+        +-----------------------------------------------+-------------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
         N/A
@@ -70,13 +70,13 @@
 
 + Detail: 
     * Instance: 
-    +----------------------------------------------+------------------------------------+---------+----+----+-----+-----+
-    |                   Instance                   |               Module               | BRAM_18K| DSP| FF | LUT | URAM|
-    +----------------------------------------------+------------------------------------+---------+----+----+-----+-----+
-    |grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57  |threshold_Pipeline_VITIS_LOOP_86_1  |        0|   0|  44|  154|    0|
-    +----------------------------------------------+------------------------------------+---------+----+----+-----+-----+
-    |Total                                         |                                    |        0|   0|  44|  154|    0|
-    +----------------------------------------------+------------------------------------+---------+----+----+-----+-----+
+    +-----------------------------------------------+-------------------------------------+---------+----+----+-----+-----+
+    |                    Instance                   |                Module               | BRAM_18K| DSP| FF | LUT | URAM|
+    +-----------------------------------------------+-------------------------------------+---------+----+----+-----+-----+
+    |grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57  |threshold_Pipeline_VITIS_LOOP_214_1  |        0|   0|  44|  154|    0|
+    +-----------------------------------------------+-------------------------------------+---------+----+----+-----+-----+
+    |Total                                          |                                     |        0|   0|  44|  154|    0|
+    +-----------------------------------------------+-------------------------------------+---------+----+----+-----+-----+
 
     * DSP: 
     N/A
@@ -110,15 +110,15 @@
     +-------------+----+-----------+-----+-----------+
 
     * Register: 
-    +-----------------------------------------------------------+---+----+-----+-----------+
-    |                            Name                           | FF| LUT| Bits| Const Bits|
-    +-----------------------------------------------------------+---+----+-----+-----------+
-    |ap_CS_fsm                                                  |  3|   0|    3|          0|
-    |ap_done_reg                                                |  1|   0|    1|          0|
-    |grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start_reg  |  1|   0|    1|          0|
-    +-----------------------------------------------------------+---+----+-----+-----------+
-    |Total                                                      |  5|   0|    5|          0|
-    +-----------------------------------------------------------+---+----+-----+-----------+
+    +------------------------------------------------------------+---+----+-----+-----------+
+    |                            Name                            | FF| LUT| Bits| Const Bits|
+    +------------------------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                                   |  3|   0|    3|          0|
+    |ap_done_reg                                                 |  1|   0|    1|          0|
+    |grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start_reg  |  1|   0|    1|          0|
+    +------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                       |  5|   0|    5|          0|
+    +------------------------------------------------------------+---+----+-----+-----------+
 
 
 
@@ -186,18 +186,18 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%over_thresh_loc = alloca i32 1"   --->   Operation 4 'alloca' 'over_thresh_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%readreq_ln82 = readreq void @_ssdm_op_ReadReq, i8 %in_r, i32 2" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:82]   --->   Operation 5 'readreq' 'readreq_ln82' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_86_1, i8 %in_r, i32 %over_thresh_loc"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_214_1, i8 %in_r, i32 %over_thresh_loc"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 3.24>
-ST_2 : Operation 7 [1/2] (3.24ns)   --->   "%call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_86_1, i8 %in_r, i32 %over_thresh_loc"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 3.24> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 7 [1/2] (3.24ns)   --->   "%call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_214_1, i8 %in_r, i32 %over_thresh_loc"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 3.24> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 3.47>
 ST_3 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln267 = specinterface void @_ssdm_op_SpecInterface, i8 %in_r, void @empty_1, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 2, i32 2, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:267]   --->   Operation 9 'specinterface' 'specinterface_ln267' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln267 = specinterface void @_ssdm_op_SpecInterface, i8 %in_r, void @empty_2, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 2, i32 2, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:267]   --->   Operation 9 'specinterface' 'specinterface_ln267' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%over_thresh_loc_load = load i32 %over_thresh_loc"   --->   Operation 10 'load' 'over_thresh_loc_load' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 11 [1/1] (3.47ns)   --->   "%write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %Out_r, i32 %over_thresh_loc_load" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 11 'write' 'write_ln174' <Predicate = true> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
 ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%read_ln102 = read void @_ssdm_op_Read, i8 %in_r, i32 2" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:102]   --->   Operation 12 'read' 'read_ln102' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln92 = ret" [byte_count_stream/src/byte_count_stream.cpp:92]   --->   Operation 13 'ret' 'ret_ln92' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%ret_ln220 = ret" [byte_count_stream/src/byte_count_stream.cpp:220]   --->   Operation 13 'ret' 'ret_ln220' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -227,7 +227,7 @@ specinterface_ln267  (specinterface) [ 0000]
 over_thresh_loc_load (load         ) [ 0000]
 write_ln174          (write        ) [ 0000]
 read_ln102           (read         ) [ 0000]
-ret_ln92             (ret          ) [ 0000]
+ret_ln220            (ret          ) [ 0000]
 </LifeTime>
 
 <model>
@@ -284,7 +284,7 @@ ret_ln92             (ret          ) [ 0000]
 <pin id="11" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="threshold_Pipeline_VITIS_LOOP_86_1"/></StgValue>
+<StgValue><ssdm name="threshold_Pipeline_VITIS_LOOP_214_1"/></StgValue>
 </bind>
 </comp>
 
@@ -338,7 +338,7 @@ ret_ln92             (ret          ) [ 0000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_1"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
@@ -419,7 +419,7 @@ ret_ln92             (ret          ) [ 0000]
 </bind>
 </comp>
 
-<comp id="57" class="1004" name="grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57">
+<comp id="57" class="1004" name="grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57">
 <pin_list>
 <pin id="58" dir="0" index="0" bw="0" slack="0"/>
 <pin id="59" dir="0" index="1" bw="8" slack="0"/>
@@ -510,19 +510,19 @@ ret_ln92             (ret          ) [ 0000]
 ============================================================
 
 * Functional unit list:
-|----------|----------------------------------------------|---------|---------|---------|
-| Operation|                Functional Unit               |  Delay  |    FF   |   LUT   |
-|----------|----------------------------------------------|---------|---------|---------|
-|   call   | grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57 |  1.588  |    49   |   116   |
-|----------|----------------------------------------------|---------|---------|---------|
-|  readreq |          readreq_ln82_readreq_fu_34          |    0    |    0    |    0    |
-|----------|----------------------------------------------|---------|---------|---------|
-|   write  |            write_ln174_write_fu_42           |    0    |    0    |    0    |
-|----------|----------------------------------------------|---------|---------|---------|
-|   read   |             read_ln102_read_fu_49            |    0    |    0    |    0    |
-|----------|----------------------------------------------|---------|---------|---------|
-|   Total  |                                              |  1.588  |    49   |   116   |
-|----------|----------------------------------------------|---------|---------|---------|
+|----------|-----------------------------------------------|---------|---------|---------|
+| Operation|                Functional Unit                |  Delay  |    FF   |   LUT   |
+|----------|-----------------------------------------------|---------|---------|---------|
+|   call   | grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57 |  1.588  |    49   |   116   |
+|----------|-----------------------------------------------|---------|---------|---------|
+|  readreq |           readreq_ln82_readreq_fu_34          |    0    |    0    |    0    |
+|----------|-----------------------------------------------|---------|---------|---------|
+|   write  |            write_ln174_write_fu_42            |    0    |    0    |    0    |
+|----------|-----------------------------------------------|---------|---------|---------|
+|   read   |             read_ln102_read_fu_49             |    0    |    0    |    0    |
+|----------|-----------------------------------------------|---------|---------|---------|
+|   Total  |                                               |  1.588  |    49   |   116   |
+|----------|-----------------------------------------------|---------|---------|---------|
 
 Memories:
 N/A

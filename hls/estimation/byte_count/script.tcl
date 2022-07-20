@@ -14,7 +14,7 @@ set_part {xc7z010i-clg225-1L}
 create_clock -period 6.8 -name default
 config_export -library bytecount -output E:/estimation_accel/vivado/ip_repo -vendor jnowaczek -version 1.9 -vivado_clock 6.8
 config_interface -m_axi_addr64=0 -m_axi_alignment_byte_size 32 -m_axi_max_widen_bitwidth 512
-#source "./estimation/byte_count/directives.tcl"
+source "./estimation/byte_count/directives.tcl"
 csim_design
 csynth_design
 cosim_design

@@ -6,5 +6,6 @@
   </source>
   <testbench>
     <originFiles name="byte_count_bench.cpp" path="E:\estimation_accel\hls\byte_count_bench.cpp"/>
+    <originFiles name="tb_data" path="E:\estimation_accel\hls\tb_data"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

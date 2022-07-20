@@ -50,16 +50,16 @@ attribute shreg_extract : string;
     signal Out_r_blk_n : STD_LOGIC;
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start : STD_LOGIC;
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_done : STD_LOGIC;
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_idle : STD_LOGIC;
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_ready : STD_LOGIC;
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_ce0 : STD_LOGIC;
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_read : STD_LOGIC;
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_over_thresh_out : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_over_thresh_out_ap_vld : STD_LOGIC;
-    signal grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start_reg : STD_LOGIC := '0';
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start : STD_LOGIC;
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_done : STD_LOGIC;
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_idle : STD_LOGIC;
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_ready : STD_LOGIC;
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_ce0 : STD_LOGIC;
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_read : STD_LOGIC;
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_over_thresh_out : STD_LOGIC_VECTOR (31 downto 0);
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_over_thresh_out_ap_vld : STD_LOGIC;
+    signal grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start_reg : STD_LOGIC := '0';
     signal ap_block_state1_ignore_call4 : BOOLEAN;
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
@@ -70,7 +70,7 @@ attribute shreg_extract : string;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component accelerator_threshold_Pipeline_VITIS_LOOP_86_1 IS
+    component accelerator_threshold_Pipeline_VITIS_LOOP_214_1 IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -90,21 +90,21 @@ attribute shreg_extract : string;
 
 
 begin
-    grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57 : component accelerator_threshold_Pipeline_VITIS_LOOP_86_1
+    grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57 : component accelerator_threshold_Pipeline_VITIS_LOOP_214_1
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start,
-        ap_done => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_done,
-        ap_idle => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_idle,
-        ap_ready => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_ready,
-        in_r_address0 => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_address0,
-        in_r_ce0 => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_ce0,
+        ap_start => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start,
+        ap_done => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_done,
+        ap_idle => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_idle,
+        ap_ready => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_ready,
+        in_r_address0 => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_address0,
+        in_r_ce0 => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_ce0,
         in_r_q0 => in_r_q0,
         in_r_empty_n => in_r_empty_n,
-        in_r_read => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_read,
-        over_thresh_out => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_over_thresh_out,
-        over_thresh_out_ap_vld => grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_over_thresh_out_ap_vld);
+        in_r_read => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_read,
+        over_thresh_out => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_over_thresh_out,
+        over_thresh_out_ap_vld => grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_over_thresh_out_ap_vld);
 
 
 
@@ -138,23 +138,23 @@ begin
     end process;
 
 
-    grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start_reg_assign_proc : process(ap_clk)
+    grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start_reg <= ap_const_logic_0;
+                grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start_reg <= ap_const_logic_0;
             else
                 if ((not(((ap_start = ap_const_logic_0) or (in_r_empty_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                    grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_ready = ap_const_logic_1)) then 
-                    grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start_reg <= ap_const_logic_0;
+                    grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_ready = ap_const_logic_1)) then 
+                    grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
     end process;
 
 
-    ap_NS_fsm_assign_proc : process (ap_start, ap_done_reg, ap_CS_fsm, ap_CS_fsm_state1, in_r_empty_n, Out_r_full_n, ap_CS_fsm_state3, grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_done, ap_CS_fsm_state2)
+    ap_NS_fsm_assign_proc : process (ap_start, ap_done_reg, ap_CS_fsm, ap_CS_fsm_state1, in_r_empty_n, Out_r_full_n, ap_CS_fsm_state3, grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_done, ap_CS_fsm_state2)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -164,7 +164,7 @@ begin
                     ap_NS_fsm <= ap_ST_fsm_state1;
                 end if;
             when ap_ST_fsm_state2 => 
-                if (((grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
+                if (((grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then
                     ap_NS_fsm <= ap_ST_fsm_state3;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state2;
@@ -189,7 +189,7 @@ begin
         end if; 
     end process;
 
-    Out_r_din <= grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_over_thresh_out;
+    Out_r_din <= grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_over_thresh_out;
 
     Out_r_write_assign_proc : process(Out_r_full_n, ap_CS_fsm_state3)
     begin
@@ -214,9 +214,9 @@ begin
     end process;
 
 
-    ap_ST_fsm_state2_blk_assign_proc : process(grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_done)
+    ap_ST_fsm_state2_blk_assign_proc : process(grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_done)
     begin
-        if ((grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_done = ap_const_logic_0)) then 
+        if ((grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state2_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state2_blk <= ap_const_logic_0;
@@ -275,25 +275,25 @@ begin
         end if; 
     end process;
 
-    grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start <= grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_ap_start_reg;
-    in_r_address0 <= grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_address0;
+    grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start <= grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_ap_start_reg;
+    in_r_address0 <= grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_address0;
 
-    in_r_ce0_assign_proc : process(grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_ce0, ap_CS_fsm_state2)
+    in_r_ce0_assign_proc : process(grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_ce0, ap_CS_fsm_state2)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
-            in_r_ce0 <= grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_ce0;
+            in_r_ce0 <= grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_ce0;
         else 
             in_r_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    in_r_read_assign_proc : process(ap_CS_fsm_state1, Out_r_full_n, ap_CS_fsm_state3, grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_read, ap_CS_fsm_state2)
+    in_r_read_assign_proc : process(ap_CS_fsm_state1, Out_r_full_n, ap_CS_fsm_state3, grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_read, ap_CS_fsm_state2)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state3) and (ap_const_logic_1 = Out_r_full_n))) then 
             in_r_read <= ap_const_logic_1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-            in_r_read <= grp_threshold_Pipeline_VITIS_LOOP_86_1_fu_57_in_r_read;
+            in_r_read <= grp_threshold_Pipeline_VITIS_LOOP_214_1_fu_57_in_r_read;
         else 
             in_r_read <= ap_const_logic_0;
         end if; 

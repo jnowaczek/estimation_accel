@@ -18,7 +18,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_In_r \
     op interface \
-    ports { In_r_dout { I 8 vector } In_r_empty_n { I 1 bit } In_r_read { O 1 bit } } \
+    ports { In_r_dout { I 32 vector } In_r_empty_n { I 1 bit } In_r_read { O 1 bit } } \
 } "
 }
 
@@ -26,14 +26,59 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 2 \
-    name out_r \
+    name out0 \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_out_r \
+    corename dc_out0 \
     op interface \
-    ports { out_r_address0 { O 10 vector } out_r_ce0 { O 1 bit } out_r_we0 { O 1 bit } out_r_d0 { O 8 vector } } \
+    ports { out0_address0 { O 9 vector } out0_ce0 { O 1 bit } out0_we0 { O 1 bit } out0_d0 { O 8 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 3 \
+    name out1 \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_out1 \
+    op interface \
+    ports { out1_address0 { O 9 vector } out1_ce0 { O 1 bit } out1_we0 { O 1 bit } out1_d0 { O 8 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 4 \
+    name out2 \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_out2 \
+    op interface \
+    ports { out2_address0 { O 9 vector } out2_ce0 { O 1 bit } out2_we0 { O 1 bit } out2_d0 { O 8 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 5 \
+    name out3 \
+    type other \
+    dir O \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_out3 \
+    op interface \
+    ports { out3_address0 { O 9 vector } out3_ce0 { O 1 bit } out3_we0 { O 1 bit } out3_d0 { O 8 vector } } \
 } "
 }
 

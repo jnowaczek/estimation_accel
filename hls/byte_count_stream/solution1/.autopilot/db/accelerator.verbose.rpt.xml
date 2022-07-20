@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'accelerator'" level="0">
-<item name = "Date">Mon Jul  4 22:30:49 2022
+<item name = "Date">Tue Jul 19 19:36:03 2022
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)</item>
 <item name = "Project">byte_count_stream</item>
@@ -24,15 +24,18 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2579, 2579, 28.359 us, 28.359 us, 1033, 1033, dataflow</column>
+<column name="">1043, 1043, 11.469 us, 11.469 us, 265, 265, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="split_U0">split, 1026, 1026, 10.260 us, 10.260 us, 1026, 1026, no</column>
-<column name="count_U0">count, 1032, 1032, 11.348 us, 11.348 us, 1032, 1032, no</column>
+<column name="split_U0">split, 258, 258, 2.580 us, 2.580 us, 258, 258, no</column>
+<column name="count0_U0">count0, 264, 264, 2.903 us, 2.903 us, 264, 264, no</column>
+<column name="count1_U0">count1, 264, 264, 2.903 us, 2.903 us, 264, 264, no</column>
+<column name="count2_U0">count2, 264, 264, 2.903 us, 2.903 us, 264, 264, no</column>
+<column name="count3_U0">count3, 264, 264, 2.903 us, 2.903 us, 264, 264, no</column>
 <column name="reduce_U0">reduce, 258, 258, 2.580 us, 2.580 us, 258, 258, no</column>
 <column name="threshold_U0">threshold, 260, 260, 2.600 us, 2.600 us, 260, 260, no</column>
 </table>
@@ -51,23 +54,26 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 2, -</column>
-<column name="FIFO">-, -, 99, 68, -</column>
-<column name="Instance">-, -, 2223, 17500, -</column>
-<column name="Memory">2, -, 0, 0, 0</column>
+<column name="Expression">-, -, 0, 6, -</column>
+<column name="FIFO">-, -, 396, 272, -</column>
+<column name="Instance">-, -, 8569, 68805, -</column>
+<column name="Memory">5, -, 0, 0, 0</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">1, 0, 6, 99, 0</specialColumn>
+<specialColumn name="Utilization (%)">4, 0, 25, 392, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="count_U0">count, 0, 0, 2114, 14918, 0</column>
-<column name="reduce_U0">reduce, 0, 0, 32, 2263, 0</column>
-<column name="split_U0">split, 0, 0, 28, 102, 0</column>
+<column name="count0_U0">count0, 0, 0, 2112, 14919, 0</column>
+<column name="count1_U0">count1, 0, 0, 2112, 14919, 0</column>
+<column name="count2_U0">count2, 0, 0, 2112, 14919, 0</column>
+<column name="count3_U0">count3, 0, 0, 2112, 14919, 0</column>
+<column name="reduce_U0">reduce, 0, 0, 48, 8807, 0</column>
+<column name="split_U0">split, 0, 0, 24, 105, 0</column>
 <column name="threshold_U0">threshold, 0, 0, 49, 217, 0</column>
 </table>
 </item>
@@ -77,18 +83,26 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="input_blocks_buf_data_U">input_blocks_buf_data_RAM_AUTO_1R1W, 1, 0, 0, 0, 1024, 8, 1, 8192</column>
+<column name="input0_buf_data_U">input0_buf_data_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 2, 8192</column>
+<column name="input1_buf_data_U">input0_buf_data_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 2, 8192</column>
+<column name="input2_buf_data_U">input0_buf_data_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 2, 8192</column>
+<column name="input3_buf_data_U">input0_buf_data_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 1, 4096</column>
 <column name="reduced_blocks_buf_data_U">reduced_blocks_buf_data_RAM_AUTO_1R1W, 1, 0, 0, 0, 256, 8, 1, 2048</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
-<column name="count_blocks_channel_U">0, 99, 0, -, 2, 2048, 4096</column>
+<column name="appear0_channel_U">0, 99, 0, -, 2, 2048, 4096</column>
+<column name="appear1_channel_U">0, 99, 0, -, 2, 2048, 4096</column>
+<column name="appear2_channel_U">0, 99, 0, -, 2, 2048, 4096</column>
+<column name="appear3_channel_U">0, 99, 0, -, 2, 2048, 4096</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="reduce_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="split_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -113,7 +127,7 @@
 <column name="ap_ready">out, 1, ap_ctrl_chain, accelerator, return value</column>
 <column name="ap_idle">out, 1, ap_ctrl_chain, accelerator, return value</column>
 <column name="ap_continue">in, 1, ap_ctrl_chain, accelerator, return value</column>
-<column name="In_r_dout">in, 8, ap_fifo, In_r, pointer</column>
+<column name="In_r_dout">in, 32, ap_fifo, In_r, pointer</column>
 <column name="In_r_empty_n">in, 1, ap_fifo, In_r, pointer</column>
 <column name="In_r_read">out, 1, ap_fifo, In_r, pointer</column>
 <column name="Out_r_din">out, 32, ap_fifo, Out_r, pointer</column>

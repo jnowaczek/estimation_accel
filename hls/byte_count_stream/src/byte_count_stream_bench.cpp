@@ -1,26 +1,33 @@
 #include <array>
 #include <fstream>
+#include <limits>
 #include <iostream>
 #include <string>
 #include <vector>
+#include <unistd.h>
 
 #include "byte_count_stream.hpp"
 
-int byte_count_gold(data_t input[BLOCK_LENGTH]) {
-	int count = 0;
-	int appearances[256] = { };
+void byte_count_gold(data_t *input, size_t length,
+		std::vector<result_t> &results) {
+	assert((length % 1024) == 0);
 
-	for (int i = 0; i < BLOCK_LENGTH; i++) {
-		appearances[input[i]] += 1;
-	}
+	for (int b = 0; b < length; b += 1024) {
+		int count = 0;
+		int appearances[256] = { };
 
-	for (auto bucket : appearances) {
-		if (bucket > BYTE_COUNT_THRESHOLD) {
-			count += 1;
+		for (int i = 0; i < BLOCK_LENGTH; i++) {
+			appearances[input[(1024 * b) + i]] += 1;
 		}
-	}
 
-	return count;
+		for (auto bucket : appearances) {
+			if (bucket > BYTE_COUNT_THRESHOLD) {
+				count += 1;
+			}
+		}
+
+		results.push_back(count);
+	}
 }
 
 int main() {
@@ -36,48 +43,70 @@ int main() {
 	std::vector<char> input;
 
 	for (std::string path : paths) {
-		std::ifstream file(path,
-					std::ios::in | std::ios::binary | std::ios::ate);
+		std::ifstream file(path, std::ios::in | std::ios::binary);
 
-			if (file.is_open()) {
-				std::streampos size = file.tellg();
-				input.resize(size);
-				file.seekg(0, std::ios::beg);
-		//		file.read(input.data(), size);
-				file.read(input.data(), BLOCK_LENGTH);
-			} else {
-				std::cerr << "Unable to open input file\n";
-				return 1;
+		if (file.is_open()) {
+			// Yoinked from https://stackoverflow.com/questions/22984956/tellg-function-give-wrong-size-of-file/22986486#22986486
+			file.ignore( std::numeric_limits<std::streamsize>::max() );
+			std::streamsize length = file.gcount();
+			file.clear();   //  Since ignore will have set eof.
+			int trimmedSize = (length / 1024) * 1024;
+
+			file.seekg(0, std::ios::beg);
+
+			input.resize(trimmedSize);
+			file.read(input.data(), trimmedSize);
+			file.close();
+		} else {
+			std::cerr << "Unable to open input file '" << path << "'\n";
+			return 1;
+		}
+
+		std::vector<data_t> data(input.begin(), input.end());
+		hls::stream<packed_t> inputStream("Input Stream");
+		hls::stream<result_t> outputStream("Output Stream");
+
+		for (int i = 0; i < data.size(); i += 2) {
+			packed_t upper = data[i];
+			data_t lower = data[i + 1];
+			upper = upper << 8;
+			upper = upper | lower;
+			inputStream << upper;
+		}
+
+		std::vector<result_t> expected;
+		byte_count_gold(data.data(), data.size(), expected);
+
+		std::vector<result_t> actual;
+		accelerator(inputStream, outputStream);
+		while (!outputStream.empty()) {
+			actual.push_back(outputStream.read());
+		}
+
+		assert(inputStream.empty());
+
+		if (actual == expected) {
+			std::cout << "    *** *** *** *** \n";
+			std::cout << "    Input file: " << path << "\n";
+			std::cout << "    Results are good: expected == actual:\n";
+			for (result_t n : actual) {
+				std::cout << n << ", ";
 			}
-
-			std::vector<data_t> data(input.begin(), input.end());
-			hls::stream<data_t> inputStream;
-			hls::stream<result_t> outputStream;
-
-			for (int i = 0; i < BLOCK_LENGTH; i++) {
-				inputStream.write(data[i]);
+			std::cout << "    *** *** *** *** \n";
+		} else {
+			std::cout << "    *** *** *** *** \n";
+			std::cout << "    Input file: " << path << "\n";
+			std::cout << "    Result mismatch.\n    Actual:\n";
+			for (result_t n : actual) {
+				std::cout << n << ", ";
 			}
-
-			int expected = byte_count_gold(data.data());
-			accelerator(inputStream, outputStream);
-			int actual = outputStream.read();
-
-			assert(inputStream.empty());
-
-			if (actual == expected) {
-				std::cout << "    *** *** *** *** \n";
-				std::cout << "    Input file: " << path << "\n";
-				std::cout << "    Results are good: expected == actual == " << actual
-						<< "\n";
-				std::cout << "    *** *** *** *** \n";
-			} else {
-				std::cout << "    *** *** *** *** \n";
-				std::cout << "    Input file: " << path << "\n";
-				std::cout << "    Mismatch: result=" << actual << ", expected="
-						<< expected << "\n";
-				std::cout << "    *** *** *** *** \n";
-				retval = 2;
+			std::cout << "\n\n    Expected:\n";
+			for (result_t n : expected) {
+				std::cout << n << ", ";
 			}
+			std::cout << "\n    *** *** *** *** \n";
+			retval = 2;
+		}
 	}
 
 	return retval;

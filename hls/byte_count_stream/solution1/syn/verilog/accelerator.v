@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=10.996000,HLS_SYN_LAT=2579,HLS_SYN_TPT=1033,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=2322,HLS_SYN_LUT=17570,HLS_VERSION=2022_1}" *)
+(* CORE_GENERATION_INFO="accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=10.996000,HLS_SYN_LAT=1043,HLS_SYN_TPT=265,HLS_SYN_MEM=5,HLS_SYN_DSP=0,HLS_SYN_FF=8965,HLS_SYN_LUT=69083,HLS_VERSION=2022_1}" *)
 
 module accelerator (
         ap_clk,
@@ -28,7 +28,7 @@ module accelerator (
 
 input   ap_clk;
 input   ap_rst;
-input  [7:0] In_r_dout;
+input  [31:0] In_r_dout;
 input   In_r_empty_n;
 output   In_r_read;
 output  [31:0] Out_r_din;
@@ -40,11 +40,18 @@ output   ap_ready;
 output   ap_idle;
 input   ap_continue;
 
-wire   [7:0] input_blocks_buf_data_i_q0;
-wire   [7:0] input_blocks_buf_data_t_q0;
+wire   [7:0] input0_buf_data_i_q0;
+wire   [7:0] input0_buf_data_t_q0;
+wire   [7:0] input1_buf_data_i_q0;
+wire   [7:0] input1_buf_data_t_q0;
+wire   [7:0] input2_buf_data_i_q0;
+wire   [7:0] input2_buf_data_t_q0;
+wire   [7:0] input3_buf_data_i_q0;
+wire   [7:0] input3_buf_data_t_q0;
 wire   [7:0] reduced_blocks_buf_data_i_q0;
 wire   [7:0] reduced_blocks_buf_data_t_q0;
 wire    split_U0_ap_start;
+wire    split_U0_start_full_n;
 wire    split_U0_ap_done;
 wire    split_U0_ap_continue;
 wire    split_U0_ap_idle;
@@ -52,22 +59,70 @@ wire    split_U0_ap_ready;
 wire    split_U0_start_out;
 wire    split_U0_start_write;
 wire    split_U0_In_r_read;
-wire   [9:0] split_U0_out_r_address0;
-wire    split_U0_out_r_ce0;
-wire    split_U0_out_r_we0;
-wire   [7:0] split_U0_out_r_d0;
-wire    split_U0_out_r_write;
-wire    count_U0_ap_start;
-wire    count_U0_ap_done;
-wire    count_U0_ap_continue;
-wire    count_U0_ap_idle;
-wire    count_U0_ap_ready;
-wire   [9:0] count_U0_in_r_address0;
-wire    count_U0_in_r_ce0;
-wire    count_U0_in_r_read;
-wire   [2047:0] count_U0_out_r;
-wire    count_U0_out_r_write;
-wire    count_blocks_channel_full_n;
+wire   [8:0] split_U0_out0_address0;
+wire    split_U0_out0_ce0;
+wire    split_U0_out0_we0;
+wire   [7:0] split_U0_out0_d0;
+wire    split_U0_out0_write;
+wire   [8:0] split_U0_out1_address0;
+wire    split_U0_out1_ce0;
+wire    split_U0_out1_we0;
+wire   [7:0] split_U0_out1_d0;
+wire    split_U0_out1_write;
+wire   [8:0] split_U0_out2_address0;
+wire    split_U0_out2_ce0;
+wire    split_U0_out2_we0;
+wire   [7:0] split_U0_out2_d0;
+wire    split_U0_out2_write;
+wire   [8:0] split_U0_out3_address0;
+wire    split_U0_out3_ce0;
+wire    split_U0_out3_we0;
+wire   [7:0] split_U0_out3_d0;
+wire    split_U0_out3_write;
+wire    count0_U0_ap_start;
+wire    count0_U0_ap_done;
+wire    count0_U0_ap_continue;
+wire    count0_U0_ap_idle;
+wire    count0_U0_ap_ready;
+wire   [8:0] count0_U0_in_r_address0;
+wire    count0_U0_in_r_ce0;
+wire    count0_U0_in_r_read;
+wire   [2047:0] count0_U0_out_r;
+wire    count0_U0_out_r_write;
+wire    appear0_channel_full_n;
+wire    count1_U0_ap_start;
+wire    count1_U0_ap_done;
+wire    count1_U0_ap_continue;
+wire    count1_U0_ap_idle;
+wire    count1_U0_ap_ready;
+wire   [8:0] count1_U0_in_r_address0;
+wire    count1_U0_in_r_ce0;
+wire    count1_U0_in_r_read;
+wire   [2047:0] count1_U0_out_r;
+wire    count1_U0_out_r_write;
+wire    appear1_channel_full_n;
+wire    count2_U0_ap_start;
+wire    count2_U0_ap_done;
+wire    count2_U0_ap_continue;
+wire    count2_U0_ap_idle;
+wire    count2_U0_ap_ready;
+wire   [8:0] count2_U0_in_r_address0;
+wire    count2_U0_in_r_ce0;
+wire    count2_U0_in_r_read;
+wire   [2047:0] count2_U0_out_r;
+wire    count2_U0_out_r_write;
+wire    appear2_channel_full_n;
+wire    count3_U0_ap_start;
+wire    count3_U0_ap_done;
+wire    count3_U0_ap_continue;
+wire    count3_U0_ap_idle;
+wire    count3_U0_ap_ready;
+wire   [8:0] count3_U0_in_r_address0;
+wire    count3_U0_in_r_ce0;
+wire    count3_U0_in_r_read;
+wire   [2047:0] count3_U0_out_r;
+wire    count3_U0_out_r_write;
+wire    appear3_channel_full_n;
 wire    reduce_U0_ap_start;
 wire    reduce_U0_ap_done;
 wire    reduce_U0_ap_continue;
@@ -80,7 +135,10 @@ wire    reduce_U0_out_r_ce0;
 wire    reduce_U0_out_r_we0;
 wire   [7:0] reduce_U0_out_r_d0;
 wire    reduce_U0_out_r_write;
-wire    reduce_U0_in_r_read;
+wire    reduce_U0_in0_read;
+wire    reduce_U0_in1_read;
+wire    reduce_U0_in2_read;
+wire    reduce_U0_in3_read;
 wire    threshold_U0_ap_start;
 wire    threshold_U0_ap_done;
 wire    threshold_U0_ap_continue;
@@ -91,46 +149,151 @@ wire    threshold_U0_in_r_ce0;
 wire    threshold_U0_in_r_read;
 wire   [31:0] threshold_U0_Out_r_din;
 wire    threshold_U0_Out_r_write;
-wire    input_blocks_buf_data_i_full_n;
-wire    input_blocks_buf_data_t_empty_n;
+wire    input0_buf_data_i_full_n;
+wire    input0_buf_data_t_empty_n;
+wire    input1_buf_data_i_full_n;
+wire    input1_buf_data_t_empty_n;
+wire    input2_buf_data_i_full_n;
+wire    input2_buf_data_t_empty_n;
+wire    input3_buf_data_i_full_n;
+wire    input3_buf_data_t_empty_n;
 wire    reduced_blocks_buf_data_i_full_n;
 wire    reduced_blocks_buf_data_t_empty_n;
-wire   [2047:0] count_blocks_channel_dout;
-wire   [1:0] count_blocks_channel_num_data_valid;
-wire   [1:0] count_blocks_channel_fifo_cap;
-wire    count_blocks_channel_empty_n;
-wire   [0:0] start_for_count_U0_din;
-wire    start_for_count_U0_full_n;
-wire   [0:0] start_for_count_U0_dout;
-wire    start_for_count_U0_empty_n;
+wire   [2047:0] appear0_channel_dout;
+wire   [1:0] appear0_channel_num_data_valid;
+wire   [1:0] appear0_channel_fifo_cap;
+wire    appear0_channel_empty_n;
+wire   [2047:0] appear1_channel_dout;
+wire   [1:0] appear1_channel_num_data_valid;
+wire   [1:0] appear1_channel_fifo_cap;
+wire    appear1_channel_empty_n;
+wire   [2047:0] appear2_channel_dout;
+wire   [1:0] appear2_channel_num_data_valid;
+wire   [1:0] appear2_channel_fifo_cap;
+wire    appear2_channel_empty_n;
+wire   [2047:0] appear3_channel_dout;
+wire   [1:0] appear3_channel_num_data_valid;
+wire   [1:0] appear3_channel_fifo_cap;
+wire    appear3_channel_empty_n;
+wire   [0:0] start_for_count0_U0_din;
+wire    start_for_count0_U0_full_n;
+wire   [0:0] start_for_count0_U0_dout;
+wire    start_for_count0_U0_empty_n;
+wire   [0:0] start_for_count1_U0_din;
+wire    start_for_count1_U0_full_n;
+wire   [0:0] start_for_count1_U0_dout;
+wire    start_for_count1_U0_empty_n;
+wire   [0:0] start_for_count2_U0_din;
+wire    start_for_count2_U0_full_n;
+wire   [0:0] start_for_count2_U0_dout;
+wire    start_for_count2_U0_empty_n;
+wire   [0:0] start_for_count3_U0_din;
+wire    start_for_count3_U0_full_n;
+wire   [0:0] start_for_count3_U0_dout;
+wire    start_for_count3_U0_empty_n;
 wire   [0:0] start_for_threshold_U0_din;
 wire    start_for_threshold_U0_full_n;
 wire   [0:0] start_for_threshold_U0_dout;
 wire    start_for_threshold_U0_empty_n;
 
-accelerator_input_blocks_buf_data_RAM_AUTO_1R1W #(
+accelerator_input0_buf_data_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 1024 ),
-    .AddressWidth( 10 ))
-input_blocks_buf_data_U(
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+input0_buf_data_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .i_address0(split_U0_out_r_address0),
-    .i_ce0(split_U0_out_r_ce0),
-    .i_we0(split_U0_out_r_we0),
-    .i_d0(split_U0_out_r_d0),
-    .i_q0(input_blocks_buf_data_i_q0),
-    .t_address0(count_U0_in_r_address0),
-    .t_ce0(count_U0_in_r_ce0),
+    .i_address0(split_U0_out0_address0),
+    .i_ce0(split_U0_out0_ce0),
+    .i_we0(split_U0_out0_we0),
+    .i_d0(split_U0_out0_d0),
+    .i_q0(input0_buf_data_i_q0),
+    .t_address0(count0_U0_in_r_address0),
+    .t_ce0(count0_U0_in_r_ce0),
     .t_we0(1'b0),
     .t_d0(8'd0),
-    .t_q0(input_blocks_buf_data_t_q0),
+    .t_q0(input0_buf_data_t_q0),
     .i_ce(1'b1),
     .t_ce(1'b1),
-    .i_full_n(input_blocks_buf_data_i_full_n),
-    .i_write(split_U0_out_r_write),
-    .t_empty_n(input_blocks_buf_data_t_empty_n),
-    .t_read(count_U0_in_r_read)
+    .i_full_n(input0_buf_data_i_full_n),
+    .i_write(split_U0_out0_write),
+    .t_empty_n(input0_buf_data_t_empty_n),
+    .t_read(count0_U0_in_r_read)
+);
+
+accelerator_input0_buf_data_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+input1_buf_data_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .i_address0(split_U0_out1_address0),
+    .i_ce0(split_U0_out1_ce0),
+    .i_we0(split_U0_out1_we0),
+    .i_d0(split_U0_out1_d0),
+    .i_q0(input1_buf_data_i_q0),
+    .t_address0(count1_U0_in_r_address0),
+    .t_ce0(count1_U0_in_r_ce0),
+    .t_we0(1'b0),
+    .t_d0(8'd0),
+    .t_q0(input1_buf_data_t_q0),
+    .i_ce(1'b1),
+    .t_ce(1'b1),
+    .i_full_n(input1_buf_data_i_full_n),
+    .i_write(split_U0_out1_write),
+    .t_empty_n(input1_buf_data_t_empty_n),
+    .t_read(count1_U0_in_r_read)
+);
+
+accelerator_input0_buf_data_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+input2_buf_data_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .i_address0(split_U0_out2_address0),
+    .i_ce0(split_U0_out2_ce0),
+    .i_we0(split_U0_out2_we0),
+    .i_d0(split_U0_out2_d0),
+    .i_q0(input2_buf_data_i_q0),
+    .t_address0(count2_U0_in_r_address0),
+    .t_ce0(count2_U0_in_r_ce0),
+    .t_we0(1'b0),
+    .t_d0(8'd0),
+    .t_q0(input2_buf_data_t_q0),
+    .i_ce(1'b1),
+    .t_ce(1'b1),
+    .i_full_n(input2_buf_data_i_full_n),
+    .i_write(split_U0_out2_write),
+    .t_empty_n(input2_buf_data_t_empty_n),
+    .t_read(count2_U0_in_r_read)
+);
+
+accelerator_input0_buf_data_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+input3_buf_data_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .i_address0(split_U0_out3_address0),
+    .i_ce0(split_U0_out3_ce0),
+    .i_we0(split_U0_out3_we0),
+    .i_d0(split_U0_out3_d0),
+    .i_q0(input3_buf_data_i_q0),
+    .t_address0(count3_U0_in_r_address0),
+    .t_ce0(count3_U0_in_r_ce0),
+    .t_we0(1'b0),
+    .t_d0(8'd0),
+    .t_q0(input3_buf_data_t_q0),
+    .i_ce(1'b1),
+    .t_ce(1'b1),
+    .i_full_n(input3_buf_data_i_full_n),
+    .i_write(split_U0_out3_write),
+    .t_empty_n(input3_buf_data_t_empty_n),
+    .t_read(count3_U0_in_r_read)
 );
 
 accelerator_reduced_blocks_buf_data_RAM_AUTO_1R1W #(
@@ -162,7 +325,7 @@ accelerator_split split_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
     .ap_start(split_U0_ap_start),
-    .start_full_n(start_for_count_U0_full_n),
+    .start_full_n(split_U0_start_full_n),
     .ap_done(split_U0_ap_done),
     .ap_continue(split_U0_ap_continue),
     .ap_idle(split_U0_ap_idle),
@@ -172,29 +335,101 @@ accelerator_split split_U0(
     .In_r_dout(In_r_dout),
     .In_r_empty_n(In_r_empty_n),
     .In_r_read(split_U0_In_r_read),
-    .out_r_address0(split_U0_out_r_address0),
-    .out_r_ce0(split_U0_out_r_ce0),
-    .out_r_we0(split_U0_out_r_we0),
-    .out_r_d0(split_U0_out_r_d0),
-    .out_r_full_n(input_blocks_buf_data_i_full_n),
-    .out_r_write(split_U0_out_r_write)
+    .out0_address0(split_U0_out0_address0),
+    .out0_ce0(split_U0_out0_ce0),
+    .out0_we0(split_U0_out0_we0),
+    .out0_d0(split_U0_out0_d0),
+    .out0_full_n(input0_buf_data_i_full_n),
+    .out0_write(split_U0_out0_write),
+    .out1_address0(split_U0_out1_address0),
+    .out1_ce0(split_U0_out1_ce0),
+    .out1_we0(split_U0_out1_we0),
+    .out1_d0(split_U0_out1_d0),
+    .out1_full_n(input1_buf_data_i_full_n),
+    .out1_write(split_U0_out1_write),
+    .out2_address0(split_U0_out2_address0),
+    .out2_ce0(split_U0_out2_ce0),
+    .out2_we0(split_U0_out2_we0),
+    .out2_d0(split_U0_out2_d0),
+    .out2_full_n(input2_buf_data_i_full_n),
+    .out2_write(split_U0_out2_write),
+    .out3_address0(split_U0_out3_address0),
+    .out3_ce0(split_U0_out3_ce0),
+    .out3_we0(split_U0_out3_we0),
+    .out3_d0(split_U0_out3_d0),
+    .out3_full_n(input3_buf_data_i_full_n),
+    .out3_write(split_U0_out3_write)
 );
 
-accelerator_count count_U0(
+accelerator_count0 count0_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(count_U0_ap_start),
-    .ap_done(count_U0_ap_done),
-    .ap_continue(count_U0_ap_continue),
-    .ap_idle(count_U0_ap_idle),
-    .ap_ready(count_U0_ap_ready),
-    .in_r_address0(count_U0_in_r_address0),
-    .in_r_ce0(count_U0_in_r_ce0),
-    .in_r_q0(input_blocks_buf_data_t_q0),
-    .in_r_empty_n(input_blocks_buf_data_t_empty_n),
-    .in_r_read(count_U0_in_r_read),
-    .out_r(count_U0_out_r),
-    .out_r_write(count_U0_out_r_write),
+    .ap_start(count0_U0_ap_start),
+    .ap_done(count0_U0_ap_done),
+    .ap_continue(count0_U0_ap_continue),
+    .ap_idle(count0_U0_ap_idle),
+    .ap_ready(count0_U0_ap_ready),
+    .in_r_address0(count0_U0_in_r_address0),
+    .in_r_ce0(count0_U0_in_r_ce0),
+    .in_r_q0(input0_buf_data_t_q0),
+    .in_r_empty_n(input0_buf_data_t_empty_n),
+    .in_r_read(count0_U0_in_r_read),
+    .out_r(count0_U0_out_r),
+    .out_r_write(count0_U0_out_r_write),
+    .out_r_full_n(1'b0)
+);
+
+accelerator_count1 count1_U0(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(count1_U0_ap_start),
+    .ap_done(count1_U0_ap_done),
+    .ap_continue(count1_U0_ap_continue),
+    .ap_idle(count1_U0_ap_idle),
+    .ap_ready(count1_U0_ap_ready),
+    .in_r_address0(count1_U0_in_r_address0),
+    .in_r_ce0(count1_U0_in_r_ce0),
+    .in_r_q0(input1_buf_data_t_q0),
+    .in_r_empty_n(input1_buf_data_t_empty_n),
+    .in_r_read(count1_U0_in_r_read),
+    .out_r(count1_U0_out_r),
+    .out_r_write(count1_U0_out_r_write),
+    .out_r_full_n(1'b0)
+);
+
+accelerator_count2 count2_U0(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(count2_U0_ap_start),
+    .ap_done(count2_U0_ap_done),
+    .ap_continue(count2_U0_ap_continue),
+    .ap_idle(count2_U0_ap_idle),
+    .ap_ready(count2_U0_ap_ready),
+    .in_r_address0(count2_U0_in_r_address0),
+    .in_r_ce0(count2_U0_in_r_ce0),
+    .in_r_q0(input2_buf_data_t_q0),
+    .in_r_empty_n(input2_buf_data_t_empty_n),
+    .in_r_read(count2_U0_in_r_read),
+    .out_r(count2_U0_out_r),
+    .out_r_write(count2_U0_out_r_write),
+    .out_r_full_n(1'b0)
+);
+
+accelerator_count3 count3_U0(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(count3_U0_ap_start),
+    .ap_done(count3_U0_ap_done),
+    .ap_continue(count3_U0_ap_continue),
+    .ap_idle(count3_U0_ap_idle),
+    .ap_ready(count3_U0_ap_ready),
+    .in_r_address0(count3_U0_in_r_address0),
+    .in_r_ce0(count3_U0_in_r_ce0),
+    .in_r_q0(input3_buf_data_t_q0),
+    .in_r_empty_n(input3_buf_data_t_empty_n),
+    .in_r_read(count3_U0_in_r_read),
+    .out_r(count3_U0_out_r),
+    .out_r_write(count3_U0_out_r_write),
     .out_r_full_n(1'b0)
 );
 
@@ -209,15 +444,24 @@ accelerator_reduce reduce_U0(
     .ap_ready(reduce_U0_ap_ready),
     .start_out(reduce_U0_start_out),
     .start_write(reduce_U0_start_write),
-    .in_r(count_blocks_channel_dout),
+    .in0(appear0_channel_dout),
+    .in1(appear1_channel_dout),
+    .in2(appear2_channel_dout),
+    .in3(appear3_channel_dout),
     .out_r_address0(reduce_U0_out_r_address0),
     .out_r_ce0(reduce_U0_out_r_ce0),
     .out_r_we0(reduce_U0_out_r_we0),
     .out_r_d0(reduce_U0_out_r_d0),
     .out_r_full_n(reduced_blocks_buf_data_i_full_n),
     .out_r_write(reduce_U0_out_r_write),
-    .in_r_empty_n(1'b0),
-    .in_r_read(reduce_U0_in_r_read)
+    .in0_empty_n(1'b0),
+    .in1_empty_n(1'b0),
+    .in2_empty_n(1'b0),
+    .in3_empty_n(1'b0),
+    .in0_read(reduce_U0_in0_read),
+    .in1_read(reduce_U0_in1_read),
+    .in2_read(reduce_U0_in2_read),
+    .in3_read(reduce_U0_in3_read)
 );
 
 accelerator_threshold threshold_U0(
@@ -238,32 +482,116 @@ accelerator_threshold threshold_U0(
     .Out_r_write(threshold_U0_Out_r_write)
 );
 
-accelerator_fifo_w2048_d2_S count_blocks_channel_U(
+accelerator_fifo_w2048_d2_S appear0_channel_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(count_U0_out_r),
-    .if_full_n(count_blocks_channel_full_n),
-    .if_write(count_U0_ap_done),
-    .if_dout(count_blocks_channel_dout),
-    .if_num_data_valid(count_blocks_channel_num_data_valid),
-    .if_fifo_cap(count_blocks_channel_fifo_cap),
-    .if_empty_n(count_blocks_channel_empty_n),
+    .if_din(count0_U0_out_r),
+    .if_full_n(appear0_channel_full_n),
+    .if_write(count0_U0_ap_done),
+    .if_dout(appear0_channel_dout),
+    .if_num_data_valid(appear0_channel_num_data_valid),
+    .if_fifo_cap(appear0_channel_fifo_cap),
+    .if_empty_n(appear0_channel_empty_n),
     .if_read(reduce_U0_ap_ready)
 );
 
-accelerator_start_for_count_U0 start_for_count_U0_U(
+accelerator_fifo_w2048_d2_S appear1_channel_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_count_U0_din),
-    .if_full_n(start_for_count_U0_full_n),
+    .if_din(count1_U0_out_r),
+    .if_full_n(appear1_channel_full_n),
+    .if_write(count1_U0_ap_done),
+    .if_dout(appear1_channel_dout),
+    .if_num_data_valid(appear1_channel_num_data_valid),
+    .if_fifo_cap(appear1_channel_fifo_cap),
+    .if_empty_n(appear1_channel_empty_n),
+    .if_read(reduce_U0_ap_ready)
+);
+
+accelerator_fifo_w2048_d2_S appear2_channel_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(count2_U0_out_r),
+    .if_full_n(appear2_channel_full_n),
+    .if_write(count2_U0_ap_done),
+    .if_dout(appear2_channel_dout),
+    .if_num_data_valid(appear2_channel_num_data_valid),
+    .if_fifo_cap(appear2_channel_fifo_cap),
+    .if_empty_n(appear2_channel_empty_n),
+    .if_read(reduce_U0_ap_ready)
+);
+
+accelerator_fifo_w2048_d2_S appear3_channel_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(count3_U0_out_r),
+    .if_full_n(appear3_channel_full_n),
+    .if_write(count3_U0_ap_done),
+    .if_dout(appear3_channel_dout),
+    .if_num_data_valid(appear3_channel_num_data_valid),
+    .if_fifo_cap(appear3_channel_fifo_cap),
+    .if_empty_n(appear3_channel_empty_n),
+    .if_read(reduce_U0_ap_ready)
+);
+
+accelerator_start_for_count0_U0 start_for_count0_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_count0_U0_din),
+    .if_full_n(start_for_count0_U0_full_n),
     .if_write(split_U0_start_write),
-    .if_dout(start_for_count_U0_dout),
-    .if_empty_n(start_for_count_U0_empty_n),
-    .if_read(count_U0_ap_ready)
+    .if_dout(start_for_count0_U0_dout),
+    .if_empty_n(start_for_count0_U0_empty_n),
+    .if_read(count0_U0_ap_ready)
+);
+
+accelerator_start_for_count1_U0 start_for_count1_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_count1_U0_din),
+    .if_full_n(start_for_count1_U0_full_n),
+    .if_write(split_U0_start_write),
+    .if_dout(start_for_count1_U0_dout),
+    .if_empty_n(start_for_count1_U0_empty_n),
+    .if_read(count1_U0_ap_ready)
+);
+
+accelerator_start_for_count2_U0 start_for_count2_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_count2_U0_din),
+    .if_full_n(start_for_count2_U0_full_n),
+    .if_write(split_U0_start_write),
+    .if_dout(start_for_count2_U0_dout),
+    .if_empty_n(start_for_count2_U0_empty_n),
+    .if_read(count2_U0_ap_ready)
+);
+
+accelerator_start_for_count3_U0 start_for_count3_U0_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(start_for_count3_U0_din),
+    .if_full_n(start_for_count3_U0_full_n),
+    .if_write(split_U0_start_write),
+    .if_dout(start_for_count3_U0_dout),
+    .if_empty_n(start_for_count3_U0_empty_n),
+    .if_read(count3_U0_ap_ready)
 );
 
 accelerator_start_for_threshold_U0 start_for_threshold_U0_U(
@@ -287,23 +615,43 @@ assign Out_r_write = threshold_U0_Out_r_write;
 
 assign ap_done = threshold_U0_ap_done;
 
-assign ap_idle = (threshold_U0_ap_idle & split_U0_ap_idle & reduce_U0_ap_idle & (count_blocks_channel_empty_n ^ 1'b1) & (reduced_blocks_buf_data_t_empty_n ^ 1'b1) & (input_blocks_buf_data_t_empty_n ^ 1'b1) & count_U0_ap_idle);
+assign ap_idle = (threshold_U0_ap_idle & split_U0_ap_idle & reduce_U0_ap_idle & (appear3_channel_empty_n ^ 1'b1) & (appear2_channel_empty_n ^ 1'b1) & (appear1_channel_empty_n ^ 1'b1) & (appear0_channel_empty_n ^ 1'b1) & (reduced_blocks_buf_data_t_empty_n ^ 1'b1) & (input3_buf_data_t_empty_n ^ 1'b1) & (input2_buf_data_t_empty_n ^ 1'b1) & (input1_buf_data_t_empty_n ^ 1'b1) & (input0_buf_data_t_empty_n ^ 1'b1) & count3_U0_ap_idle & count2_U0_ap_idle & count1_U0_ap_idle & count0_U0_ap_idle);
 
 assign ap_ready = split_U0_ap_ready;
 
-assign count_U0_ap_continue = count_blocks_channel_full_n;
+assign count0_U0_ap_continue = appear0_channel_full_n;
 
-assign count_U0_ap_start = start_for_count_U0_empty_n;
+assign count0_U0_ap_start = start_for_count0_U0_empty_n;
+
+assign count1_U0_ap_continue = appear1_channel_full_n;
+
+assign count1_U0_ap_start = start_for_count1_U0_empty_n;
+
+assign count2_U0_ap_continue = appear2_channel_full_n;
+
+assign count2_U0_ap_start = start_for_count2_U0_empty_n;
+
+assign count3_U0_ap_continue = appear3_channel_full_n;
+
+assign count3_U0_ap_start = start_for_count3_U0_empty_n;
 
 assign reduce_U0_ap_continue = 1'b1;
 
-assign reduce_U0_ap_start = count_blocks_channel_empty_n;
+assign reduce_U0_ap_start = (appear3_channel_empty_n & appear2_channel_empty_n & appear1_channel_empty_n & appear0_channel_empty_n);
 
 assign split_U0_ap_continue = 1'b1;
 
 assign split_U0_ap_start = ap_start;
 
-assign start_for_count_U0_din = 1'b1;
+assign split_U0_start_full_n = (start_for_count3_U0_full_n & start_for_count2_U0_full_n & start_for_count1_U0_full_n & start_for_count0_U0_full_n);
+
+assign start_for_count0_U0_din = 1'b1;
+
+assign start_for_count1_U0_din = 1'b1;
+
+assign start_for_count2_U0_din = 1'b1;
+
+assign start_for_count3_U0_din = 1'b1;
 
 assign start_for_threshold_U0_din = 1'b1;
 

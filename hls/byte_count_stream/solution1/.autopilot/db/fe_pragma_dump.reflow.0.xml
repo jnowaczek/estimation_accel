@@ -1,46 +1,66 @@
 <pragmas>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="129" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="330" pragmaType="inline" parentfunction="write_acquire" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="113" pragmaType="inline" parentfunction="write_acquire" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="332" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="284" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [1024]>::write_lock(hls::stream_of_blocks<unsigned char [1024], 2>&)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="332" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="100" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="290" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [256]>::~write_lock()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="292" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [512]>::operator unsigned char (&) [512]()" off="0" region="0" recursive="0"/>
 <pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="326" pragmaType="inline" parentfunction="read_acquire" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="284" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [512]>::write_lock(hls::stream_of_blocks<unsigned char [512], 2>&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="290" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [512]>::~write_lock()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="100" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="129" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="273" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [512]>::operator unsigned char (&) [512]()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="271" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [512]>::~read_lock()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h" line="711" pragmaType="inline" parentfunction="to_uint64" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h" line="349" pragmaType="inline" parentfunction="ap_range_ref<32, false>::ap_range_ref(ap_int_base<32, false>*, int, int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int.h" line="230" pragmaType="inline" parentfunction="ap_uint<32>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="144" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="80" pragmaType="inline" parentfunction="read_acquire" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="328" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h" line="361" pragmaType="inline" parentfunction="ap_range_ref<32, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="265" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [512]>::read_lock(hls::stream_of_blocks<unsigned char [512], 2>&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="1091" pragmaType="inline" parentfunction="range" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<32, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="332" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
 <pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="154" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="32" pragmaType="inline" parentfunction="split" off="1" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="292" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="173" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="290" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [256]>::~write_lock()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="100" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="284" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [256]>::write_lock(hls::stream_of_blocks<unsigned char [256], 2>&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="332" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="129" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="328" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="51" pragmaType="inline" parentfunction="count0" off="1" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="68" pragmaType="pipeline" parentfunction="count0" off="0" ii="1" rewind="0" style=""/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="59" pragmaType="unroll" parentfunction="count0" factor="-1" skip_exit_check="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="56" pragmaType="dependence" parentfunction="count0" class="" direction="RAW" type="intra" distance="0" variable="outL"/>
 <pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="330" pragmaType="inline" parentfunction="write_acquire" off="0" region="0" recursive="0"/>
 <pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="113" pragmaType="inline" parentfunction="write_acquire" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="45" pragmaType="inline" parentfunction="hls::stream_buf<unsigned char [256]>::stream_buf(int)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="271" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [1024]>::~read_lock()" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="292" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [1024]>::operator unsigned char (&) [1024]()" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="290" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [1024]>::~write_lock()" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="273" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [1024]>::operator unsigned char (&) [1024]()" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="144" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="129" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="80" pragmaType="inline" parentfunction="read_acquire" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="292" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="265" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [1024]>::read_lock(hls::stream_of_blocks<unsigned char [1024], 2>&)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="328" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="284" pragmaType="inline" parentfunction="hls::write_lock<unsigned char [256]>::write_lock(hls::stream_of_blocks<unsigned char [256], 2>&)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="100" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="265" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [256]>::read_lock(hls::stream_of_blocks<unsigned char [256], 2>&)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="128" pragmaType="inline" parentfunction="hls::stream<int, 0>::operator<<(int const&)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="173" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="273" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [256]>::operator unsigned char (&) [256]()" off="0" region="0" recursive="0"/>
 <pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="80" pragmaType="inline" parentfunction="read_acquire" off="0" region="0" recursive="0"/>
 <pragma file="byte_count_stream/src/byte_count_stream.cpp" line="12" pragmaType="dataflow" parentfunction="accelerator" disable_start_propagation="0"/>
 <pragma file="byte_count_stream/src/byte_count_stream.cpp" line="11" pragmaType="interface" parentfunction="accelerator" mode="ap_ctrl_chain" port="return" name=""/>
-<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="17" pragmaType="aggregate" parentfunction="accelerator" compact="0" variable="count_blocks"/>
-<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="26" pragmaType="inline" parentfunction="split" off="1" region="0" recursive="0"/>
-<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="37" pragmaType="inline" parentfunction="count" off="1" region="0" recursive="0"/>
-<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="54" pragmaType="pipeline" parentfunction="count" off="0" ii="1" rewind="0" style=""/>
-<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="44" pragmaType="unroll" parentfunction="count" factor="-1" skip_exit_check="0"/>
-<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="41" pragmaType="dependence" parentfunction="count" class="" direction="RAW" type="intra" distance="0" variable="outL"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="328" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="326" pragmaType="inline" parentfunction="read_acquire" off="0" region="0" recursive="0"/>
-<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="70" pragmaType="inline" parentfunction="reduce" off="1" region="0" recursive="0"/>
-<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="81" pragmaType="inline" parentfunction="threshold" off="1" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="273" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [256]>::operator unsigned char (&) [256]()" off="0" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="155" pragmaType="inline" parentfunction="count3" off="1" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="173" pragmaType="pipeline" parentfunction="count3" off="0" ii="1" rewind="0" style=""/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="162" pragmaType="unroll" parentfunction="count3" factor="-1" skip_exit_check="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="159" pragmaType="dependence" parentfunction="count3" class="" direction="RAW" type="intra" distance="0" variable="outL"/>
 <pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="271" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [256]>::~read_lock()" off="0" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="85" pragmaType="inline" parentfunction="count1" off="1" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="103" pragmaType="pipeline" parentfunction="count1" off="0" ii="1" rewind="0" style=""/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="92" pragmaType="unroll" parentfunction="count1" factor="-1" skip_exit_check="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="89" pragmaType="dependence" parentfunction="count1" class="" direction="RAW" type="intra" distance="0" variable="outL"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="326" pragmaType="inline" parentfunction="read_acquire" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="265" pragmaType="inline" parentfunction="hls::read_lock<unsigned char [256]>::read_lock(hls::stream_of_blocks<unsigned char [256], 2>&)" off="0" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="209" pragmaType="inline" parentfunction="threshold" off="1" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="193" pragmaType="inline" parentfunction="reduce" off="1" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="128" pragmaType="inline" parentfunction="hls::stream<int, 0>::operator<<(int const&)" off="0" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="120" pragmaType="inline" parentfunction="count2" off="1" region="0" recursive="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="138" pragmaType="pipeline" parentfunction="count2" off="0" ii="1" rewind="0" style=""/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="127" pragmaType="unroll" parentfunction="count2" factor="-1" skip_exit_check="0"/>
+<pragma file="byte_count_stream/src/byte_count_stream.cpp" line="124" pragmaType="dependence" parentfunction="count2" class="" direction="RAW" type="intra" distance="0" variable="outL"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="330" pragmaType="inline" parentfunction="write_acquire" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="45" pragmaType="inline" parentfunction="hls::stream_buf<unsigned char [256]>::stream_buf(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="45" pragmaType="inline" parentfunction="hls::stream_buf<unsigned char [512]>::stream_buf(int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="113" pragmaType="inline" parentfunction="write_acquire" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="0" pragmaType="inline" parentfunction="hls::stream_of_blocks<unsigned char [512], 2>::stream_of_blocks(int, char*)" off="0" region="0" recursive="0"/>
 <pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h" line="0" pragmaType="inline" parentfunction="hls::stream_of_blocks<unsigned char [256], 2>::stream_of_blocks(int, char*)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<32, false>::ssdm_int()" off="0" region="0" recursive="0"/>
 </pragmas>
