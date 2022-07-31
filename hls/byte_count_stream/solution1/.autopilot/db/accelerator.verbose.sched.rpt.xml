@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'accelerator'" level="0">
-<item name = "Date">Tue Jul 19 19:35:59 2022
+<item name = "Date">Mon Jul 25 22:36:29 2022
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)</item>
 <item name = "Project">byte_count_stream</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 10.996 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 7.091 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1043, 1043, 11.469 us, 11.469 us, 265, 265, dataflow</column>
+<column name="">1158, 1158, 11.580 us, 11.580 us, 1159, 1159, dataflow</column>
 </table>
 </item>
 <item name = "Detail">

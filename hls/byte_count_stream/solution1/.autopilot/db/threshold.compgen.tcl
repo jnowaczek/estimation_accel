@@ -7,25 +7,29 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# Direct connection:
+# XIL_BRAM:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 41 \
-    name in_r \
-    type other \
-    dir I \
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 9 \
+    name appear \
     reset_level 1 \
     sync_rst true \
-    corename dc_in_r \
+    dir I \
+    corename appear \
     op interface \
-    ports { in_r_address0 { O 8 vector } in_r_ce0 { O 1 bit } in_r_q0 { I 8 vector } } \
+    ports { appear_address0 { O 8 vector } appear_ce0 { O 1 bit } appear_q0 { I 8 vector } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'appear'"
 }
+}
+
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 42 \
+    id 10 \
     name Out_r \
     type fifo \
     dir O \

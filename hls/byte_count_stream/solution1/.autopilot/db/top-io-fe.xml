@@ -1,8 +1,8 @@
 <root versionMajor = "1" versionMinor = "5">
   <kernel src_name="accelerator" language="c" hwCtrl="ap_ctrl_chain" mem_layout="fpga64-xilinx-none">
     <args>
-      <arg id="0" access_type="r" src_name="In" src_type="stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
-        <hw hw_usage="data" hw_interface="FIFO" hw_name="In_r" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="false">
+      <arg id="0" access_type="r" src_name="In" src_type="stream&lt;unsigned char, 0&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="FIFO" hw_name="In_r" hw_bitwidth="8" hw_size_or_depth="0" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0"/>
         </hw>
       </arg>

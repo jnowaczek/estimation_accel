@@ -345,7 +345,7 @@ long __xlx_apatb_param_In_r_stream_buf_final_size;
         } // end transaction
       } // end file is good
     } // end post check logic bolck
-  for (long i = 0; i < __xlx_apatb_param_In_r_stream_buf_final_size; ++i)((hls::stream<int>*)__xlx_apatb_param_In_r)->read();
+  for (long i = 0; i < __xlx_apatb_param_In_r_stream_buf_final_size; ++i)((hls::stream<char>*)__xlx_apatb_param_In_r)->read();
 long __xlx_apatb_param_Out_r_stream_buf_final_size;
 {
       static ifstream rtl_tv_out_file;
@@ -444,26 +444,26 @@ aesl_fh.touch(WRAPC_STREAM_INGRESS_STATUS_In_r);
 aesl_fh.touch(WRAPC_STREAM_SIZE_OUT_Out_r);
 aesl_fh.touch(WRAPC_STREAM_EGRESS_STATUS_Out_r);
 CodeState = DUMP_INPUTS;
-std::vector<int> __xlx_apatb_param_In_r_stream_buf;
+std::vector<char> __xlx_apatb_param_In_r_stream_buf;
 {
-  while (!((hls::stream<int>*)__xlx_apatb_param_In_r)->empty())
-    __xlx_apatb_param_In_r_stream_buf.push_back(((hls::stream<int>*)__xlx_apatb_param_In_r)->read());
+  while (!((hls::stream<char>*)__xlx_apatb_param_In_r)->empty())
+    __xlx_apatb_param_In_r_stream_buf.push_back(((hls::stream<char>*)__xlx_apatb_param_In_r)->read());
   for (int i = 0; i < __xlx_apatb_param_In_r_stream_buf.size(); ++i)
-    ((hls::stream<int>*)__xlx_apatb_param_In_r)->write(__xlx_apatb_param_In_r_stream_buf[i]);
+    ((hls::stream<char>*)__xlx_apatb_param_In_r)->write(__xlx_apatb_param_In_r_stream_buf[i]);
   }
-long __xlx_apatb_param_In_r_stream_buf_size = ((hls::stream<int>*)__xlx_apatb_param_In_r)->size();
+long __xlx_apatb_param_In_r_stream_buf_size = ((hls::stream<char>*)__xlx_apatb_param_In_r)->size();
 std::vector<int> __xlx_apatb_param_Out_r_stream_buf;
 long __xlx_apatb_param_Out_r_stream_buf_size = ((hls::stream<int>*)__xlx_apatb_param_Out_r)->size();
 CodeState = CALL_C_DUT;
 accelerator_hw_stub_wrapper(__xlx_apatb_param_In_r, __xlx_apatb_param_Out_r);
 CodeState = DUMP_OUTPUTS;
-long __xlx_apatb_param_In_r_stream_buf_final_size = __xlx_apatb_param_In_r_stream_buf_size - ((hls::stream<int>*)__xlx_apatb_param_In_r)->size();
+long __xlx_apatb_param_In_r_stream_buf_final_size = __xlx_apatb_param_In_r_stream_buf_size - ((hls::stream<char>*)__xlx_apatb_param_In_r)->size();
 // print In_r Transactions
 {
 aesl_fh.write(AUTOTB_TVIN_In_r, begin_str(AESL_transaction));
 for (int i = 0; i < __xlx_apatb_param_In_r_stream_buf_final_size; ++i) {
 unsigned char *pos = (unsigned char*)(__xlx_apatb_param_In_r_stream_buf.data()+i);
-std::string s(formatData(pos, 32));
+std::string s(formatData(pos, 8));
 aesl_fh.write(AUTOTB_TVIN_In_r, s);
 }
 

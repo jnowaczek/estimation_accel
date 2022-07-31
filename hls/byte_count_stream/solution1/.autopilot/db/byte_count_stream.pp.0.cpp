@@ -6423,186 +6423,7 @@ private:
 # 10 "byte_count_stream/src/byte_count_stream.hpp"
 # 1 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\ap_int.h" 1
 # 11 "byte_count_stream/src/byte_count_stream.hpp" 2
-
-# 1 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h" 1
-# 31 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h"
-namespace hls {
-template <typename __STREAM_T__>
-class stream_buf {
-
-  __STREAM_T__ data __attribute__((no_ctor));
-# 44 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h"
- public:
-  inline __attribute__((always_inline)) stream_buf(
-  int depth
-
-
-
-
-  )
-
-
-
-  {
-
-    __fpga_set_stream_of_blocks_depth(&data, depth);
-
-  }
-# 80 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h"
-  inline __attribute__((always_inline)) __STREAM_T__& read_acquire() {
-
-    __fpga_pipo_pop_acquire(&data);
-    return data;
-# 98 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h"
-  }
-
-  inline __attribute__((always_inline)) void read_release() {
-
-    __fpga_pipo_pop_release(&data);
-# 111 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h"
-  }
-
-  inline __attribute__((always_inline)) __STREAM_T__& write_acquire() {
-
-    __fpga_pipo_push_acquire(&data);
-    return data;
-# 127 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h"
-  }
-
-  inline __attribute__((always_inline)) void write_release() {
-
-    __fpga_pipo_push_release(&data);
-
-
-
-
-
-
-
-  }
-
-  inline __attribute__((always_inline)) bool empty() const {
-
-
-    return !__fpga_pipo_not_empty(&data);
-
-
-
-  }
-
-  inline __attribute__((always_inline)) bool full() const {
-
-
-    return !__fpga_pipo_not_full(&data);
-
-
-
-  }
-# 166 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h"
-  template <typename>
-  friend class read_lock;
-  template <typename>
-  friend class write_lock;
-};
-
-template<typename __STREAM_T__, int DEPTH=2>
-class stream_of_blocks;
-# 259 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\hls_streamofblocks.h"
-template <typename __STREAM_T__>
-class read_lock {
-  stream_of_blocks<__STREAM_T__>& res;
-  __STREAM_T__& buf;
-
- public:
-  inline __attribute__((always_inline)) read_lock(stream_of_blocks<__STREAM_T__>& s) : res(s), buf(res.read_acquire()) {
-
-    __fpga_set_stream_of_blocks_depth(&res.buf.data, 0);
-
-  }
-
-  inline __attribute__((always_inline)) ~read_lock() { res.read_release(); }
-
-  inline __attribute__((always_inline)) operator __STREAM_T__&() { return buf; }
-
-  inline __attribute__((always_inline)) __STREAM_T__& operator=(const __STREAM_T__& val) { return buf = val; }
-};
-
-template <typename __STREAM_T__>
-class write_lock {
-  stream_of_blocks<__STREAM_T__>& res;
-  __STREAM_T__& buf;
-
- public:
-  inline __attribute__((always_inline)) write_lock(stream_of_blocks<__STREAM_T__>& s) : res(s), buf(res.write_acquire()) {
-
-    __fpga_set_stream_of_blocks_depth(&res.buf.data, 0);
-
-  }
-
-  inline __attribute__((always_inline)) ~write_lock() { res.write_release(); }
-
-  inline __attribute__((always_inline)) operator __STREAM_T__&() { return buf; }
-
-  inline __attribute__((always_inline)) __STREAM_T__& operator=(const __STREAM_T__& val) { return buf = val; }
-};
-
-template <typename __STREAM_T__>
-class stream_of_blocks<__STREAM_T__, 2> {
-
-
-
-
-  friend class read_lock<__STREAM_T__>;
-  friend class write_lock<__STREAM_T__>;
-
-  stream_buf<__STREAM_T__> buf;
-
- public:
-  inline __attribute__((always_inline)) stream_of_blocks(int depth=2, char *name=0): buf(
-
-    depth) { }
-
-
-
-
-  inline __attribute__((always_inline)) bool full() { return buf.full(); }
-
-  inline __attribute__((always_inline)) bool empty() { return buf.empty(); }
-
-
-
-
-
-
- private:
-  inline __attribute__((always_inline)) __STREAM_T__& read_acquire() { return buf.read_acquire(); }
-
-  inline __attribute__((always_inline)) void read_release() { buf.read_release(); }
-
-  inline __attribute__((always_inline)) __STREAM_T__& write_acquire() { return buf.write_acquire(); }
-
-  inline __attribute__((always_inline)) void write_release() { buf.write_release(); }
-
-
-
-};
-
-template <typename __STREAM_T__, int DEPTH>
-class stream_of_blocks: public stream_of_blocks<__STREAM_T__, 2> {
-
-
-
-
-  friend class read_lock<__STREAM_T__>;
-  friend class write_lock<__STREAM_T__>;
-
- public:
-  inline __attribute__((always_inline)) stream_of_blocks(): stream_of_blocks<__STREAM_T__, 2>(DEPTH) {}
-};
-
-}
-# 13 "byte_count_stream/src/byte_count_stream.hpp" 2
-# 29 "byte_count_stream/src/byte_count_stream.hpp"
+# 28 "byte_count_stream/src/byte_count_stream.hpp"
 typedef ap_uint<32> packed_t;
 
 
@@ -6620,253 +6441,71 @@ typedef data_t block_data_t[1024 / 2];
 typedef count_t block_count_t[256];
 
 
-void split(hls::stream<packed_t> &in, hls::stream_of_blocks<block_data_t> &out0,
-  hls::stream_of_blocks<block_data_t> &out1,
-  hls::stream_of_blocks<block_data_t> &out2,
-  hls::stream_of_blocks<block_data_t> &out3);
+void count(hls::stream<data_t> &in, count_t appear[256]);
 
-void count0(hls::stream_of_blocks<block_data_t> &in,
-  hls::stream_of_blocks<block_count_t> &out);
+void threshold(count_t appear[1024], hls::stream<result_t> &out);
 
-void count1(hls::stream_of_blocks<block_data_t> &in,
-  hls::stream_of_blocks<block_count_t> &out);
-
-void count2(hls::stream_of_blocks<block_data_t> &in,
-  hls::stream_of_blocks<block_count_t> &out);
-
-void count3(hls::stream_of_blocks<block_data_t> &in,
-  hls::stream_of_blocks<block_count_t> &out);
-
-void reduce(hls::stream_of_blocks<block_count_t> &in0,
-  hls::stream_of_blocks<block_count_t> &in1,
-  hls::stream_of_blocks<block_count_t> &in2,
-  hls::stream_of_blocks<block_count_t> &in3,
-  hls::stream_of_blocks<block_count_t> &out);
-
-void threshold(hls::stream_of_blocks<block_count_t> &in,
-  hls::stream<result_t> &out);
-
-__attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<packed_t> &In, hls::stream<result_t> &Out);
+void accelerator(hls::stream<packed_t> &In, hls::stream<result_t> &Out);
 # 5 "byte_count_stream/src/byte_count_stream.cpp" 2
 
-
-
-
-
-__attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<packed_t> &In, hls::stream<result_t> &Out) {
+__attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_t> &In, hls::stream<result_t> &Out) {
 #line 17 "E:/estimation_accel/hls/byte_count_stream/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=accelerator
-# 10 "byte_count_stream/src/byte_count_stream.cpp"
+# 6 "byte_count_stream/src/byte_count_stream.cpp"
 
 #line 6 "E:/estimation_accel/hls/byte_count_stream/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=accelerator
-# 10 "byte_count_stream/src/byte_count_stream.cpp"
+# 6 "byte_count_stream/src/byte_count_stream.cpp"
 
 #pragma HLS INTERFACE mode=ap_ctrl_chain port=return
 #pragma HLS DATAFLOW
 
- hls::stream_of_blocks<block_data_t> input0, input1, input2,
-   input3 __attribute((no_ctor));
- hls::stream_of_blocks<block_count_t> appear0, appear1, appear2, appear3,
-   reduced_blocks __attribute((no_ctor));
+ count_t appear[256];
 
- split(In, input0, input1, input2, input3);
- count0(input0, appear0);
- count1(input1, appear1);
- count2(input2, appear2);
- count3(input3, appear3);
- reduce(appear0, appear1, appear2, appear3, reduced_blocks);
- threshold(reduced_blocks, Out);
+ count(In, appear);
+ threshold(appear, Out);
 }
 
-void split(hls::stream<packed_t> &in, hls::stream_of_blocks<block_data_t> &out0,
-  hls::stream_of_blocks<block_data_t> &out1,
-  hls::stream_of_blocks<block_data_t> &out2,
-  hls::stream_of_blocks<block_data_t> &out3) {
+void count(hls::stream<data_t> &in, count_t appear[256]) {
 #pragma HLS INLINE off
-
- hls::write_lock<block_data_t> outL0(out0);
- hls::write_lock<block_data_t> outL1(out1);
- hls::write_lock<block_data_t> outL2(out2);
- hls::write_lock<block_data_t> outL3(out3);
-
- VITIS_LOOP_39_1: for (int i = 0; i < 1024 / 4; i += 1) {
-  packed_t p = in.read();
-
-  outL0[i] = p.range(7, 0);
-  outL1[i] = p.range(15, 8);
-  outL2[i] = p.range(23, 16);
-  outL3[i] = p.range(31, 24);
- }
-}
-
-void count0(hls::stream_of_blocks<block_data_t> &in,
-  hls::stream_of_blocks<block_count_t> &out) {
-#pragma HLS INLINE off
-
- hls::write_lock<block_count_t> outL(out);
- hls::read_lock<block_data_t> inL(in);
-
-#pragma HLS DEPENDENCE variable=outL intra RAW false
+#pragma HLS DEPENDENCE variable=appear intra RAW false
 
  RESET: for (iter_t i = 0; i < 256; i++) {
 #pragma HLS UNROLL
- outL[i] = 0;
+ appear[i] = 0;
  }
 
  count_t count = 0;
 
- data_t prev = inL[0];
+ data_t prev;
 
- APPEARANCES: for (int i = 0; i < 1024 / 4; i++) {
+ APPEARANCES: for (int i = 0; i < 1024; i++) {
 #pragma HLS PIPELINE II=1
- data_t byte = inL[i];
+ data_t byte = in.read();
+
+  if (i == 0) {
+   prev = byte;
+  }
 
   if (prev == byte) {
    count += 1;
   } else {
-   outL[prev] = count;
-   count = outL[byte] + 1;
+   appear[prev] = count;
+   count = appear[byte] + 1;
   }
 
   prev = byte;
  }
- outL[prev] = count;
+ appear[prev] = count;
 }
 
-void count1(hls::stream_of_blocks<block_data_t> &in,
-  hls::stream_of_blocks<block_count_t> &out) {
+void threshold(count_t appear[1024], hls::stream<result_t> &out) {
 #pragma HLS INLINE off
 
- hls::write_lock<block_count_t> outL(out);
-
-#pragma HLS DEPENDENCE variable=outL intra RAW false
-
- RESET: for (iter_t i = 0; i < 256; i++) {
-#pragma HLS UNROLL
- outL[i] = 0;
- }
-
- count_t count = 0;
-
- hls::read_lock<block_data_t> inL(in);
-
- data_t prev = inL[0];
-
- APPEARANCES: for (int i = 0; i < 1024 / 4; i++) {
-#pragma HLS PIPELINE II=1
- data_t byte = inL[i];
-
-  if (prev == byte) {
-   count += 1;
-  } else {
-   outL[prev] = count;
-   count = outL[byte] + 1;
-  }
-
-  prev = byte;
- }
- outL[prev] = count;
-}
-
-void count2(hls::stream_of_blocks<block_data_t> &in,
-  hls::stream_of_blocks<block_count_t> &out) {
-#pragma HLS INLINE off
-
- hls::write_lock<block_count_t> outL(out);
-
-#pragma HLS DEPENDENCE variable=outL intra RAW false
-
- RESET: for (iter_t i = 0; i < 256; i++) {
-#pragma HLS UNROLL
- outL[i] = 0;
- }
-
- count_t count = 0;
-
- hls::read_lock<block_data_t> inL(in);
-
- data_t prev = inL[0];
-
- APPEARANCES: for (int i = 0; i < 1024 / 4; i++) {
-#pragma HLS PIPELINE II=1
- data_t byte = inL[i];
-
-  if (prev == byte) {
-   count += 1;
-  } else {
-   outL[prev] = count;
-   count = outL[byte] + 1;
-  }
-
-  prev = byte;
- }
- outL[prev] = count;
-}
-
-void count3(hls::stream_of_blocks<block_data_t> &in,
-  hls::stream_of_blocks<block_count_t> &out) {
-#pragma HLS INLINE off
-
- hls::write_lock<block_count_t> outL(out);
-
-#pragma HLS DEPENDENCE variable=outL intra RAW false
-
- RESET: for (iter_t i = 0; i < 256; i++) {
-#pragma HLS UNROLL
- outL[i] = 0;
- }
-
- count_t count = 0;
-
- hls::read_lock<block_data_t> inL(in);
-
- data_t prev = inL[0];
-
- APPEARANCES: for (int i = 0; i < 1024 / 4; i++) {
-#pragma HLS PIPELINE II=1
- data_t byte = inL[i];
-
-  if (prev == byte) {
-   count += 1;
-  } else {
-   outL[prev] = count;
-   count = outL[byte] + 1;
-  }
-
-  prev = byte;
- }
- outL[prev] = count;
-}
-
-void reduce(hls::stream_of_blocks<block_count_t> &in0,
-  hls::stream_of_blocks<block_count_t> &in1,
-  hls::stream_of_blocks<block_count_t> &in2,
-  hls::stream_of_blocks<block_count_t> &in3,
-  hls::stream_of_blocks<block_count_t> &out) {
-#pragma HLS INLINE off
-
- hls::read_lock<block_count_t> inL0(in0);
- hls::read_lock<block_count_t> inL1(in1);
- hls::read_lock<block_count_t> inL2(in2);
- hls::read_lock<block_count_t> inL3(in3);
- hls::write_lock<block_count_t> outL(out);
-
- VITIS_LOOP_201_1: for (int i = 0; i < 256; i += 1) {
-  count_t total = inL0[i] + inL1[i] + inL2[i] + inL3[i];
-  outL[i] = total;
- }
-}
-
-void threshold(hls::stream_of_blocks<block_count_t> &in,
-  hls::stream<result_t> &out) {
-#pragma HLS INLINE off
-
- hls::read_lock<block_count_t> inL(in);
  result_t over_thresh = 0;
 
- VITIS_LOOP_214_1: for (int i = 0; i < 256; i += 1) {
-  if (inL[i] > (1024 / 256)) {
+ VITIS_LOOP_54_1: for (int i = 0; i < 256; i += 1) {
+  if (appear[i] > (1024 / 256)) {
    over_thresh += 1;
   }
  }

@@ -13,7 +13,7 @@ entity accelerator is
 port (
     ap_clk : IN STD_LOGIC;
     ap_rst : IN STD_LOGIC;
-    In_r_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+    In_r_dout : IN STD_LOGIC_VECTOR (7 downto 0);
     In_r_empty_n : IN STD_LOGIC;
     In_r_read : OUT STD_LOGIC;
     Out_r_din : OUT STD_LOGIC_VECTOR (31 downto 0);
@@ -30,319 +30,62 @@ end;
 architecture behav of accelerator is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=10.996000,HLS_SYN_LAT=1043,HLS_SYN_TPT=265,HLS_SYN_MEM=5,HLS_SYN_DSP=0,HLS_SYN_FF=8965,HLS_SYN_LUT=69083,HLS_VERSION=2022_1}";
+    "accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=7.091000,HLS_SYN_LAT=1158,HLS_SYN_TPT=1159,HLS_SYN_MEM=2,HLS_SYN_DSP=0,HLS_SYN_FF=229,HLS_SYN_LUT=2521,HLS_VERSION=2022_1}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
 
-    signal input0_buf_data_i_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal input0_buf_data_t_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal input1_buf_data_i_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal input1_buf_data_t_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal input2_buf_data_i_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal input2_buf_data_t_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal input3_buf_data_i_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal input3_buf_data_t_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal reduced_blocks_buf_data_i_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal reduced_blocks_buf_data_t_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal split_U0_ap_start : STD_LOGIC;
-    signal split_U0_start_full_n : STD_LOGIC;
-    signal split_U0_ap_done : STD_LOGIC;
-    signal split_U0_ap_continue : STD_LOGIC;
-    signal split_U0_ap_idle : STD_LOGIC;
-    signal split_U0_ap_ready : STD_LOGIC;
-    signal split_U0_start_out : STD_LOGIC;
-    signal split_U0_start_write : STD_LOGIC;
-    signal split_U0_In_r_read : STD_LOGIC;
-    signal split_U0_out0_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal split_U0_out0_ce0 : STD_LOGIC;
-    signal split_U0_out0_we0 : STD_LOGIC;
-    signal split_U0_out0_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal split_U0_out0_write : STD_LOGIC;
-    signal split_U0_out1_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal split_U0_out1_ce0 : STD_LOGIC;
-    signal split_U0_out1_we0 : STD_LOGIC;
-    signal split_U0_out1_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal split_U0_out1_write : STD_LOGIC;
-    signal split_U0_out2_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal split_U0_out2_ce0 : STD_LOGIC;
-    signal split_U0_out2_we0 : STD_LOGIC;
-    signal split_U0_out2_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal split_U0_out2_write : STD_LOGIC;
-    signal split_U0_out3_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal split_U0_out3_ce0 : STD_LOGIC;
-    signal split_U0_out3_we0 : STD_LOGIC;
-    signal split_U0_out3_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal split_U0_out3_write : STD_LOGIC;
-    signal count0_U0_ap_start : STD_LOGIC;
-    signal count0_U0_ap_done : STD_LOGIC;
-    signal count0_U0_ap_continue : STD_LOGIC;
-    signal count0_U0_ap_idle : STD_LOGIC;
-    signal count0_U0_ap_ready : STD_LOGIC;
-    signal count0_U0_in_r_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal count0_U0_in_r_ce0 : STD_LOGIC;
-    signal count0_U0_in_r_read : STD_LOGIC;
-    signal count0_U0_out_r : STD_LOGIC_VECTOR (2047 downto 0);
-    signal count0_U0_out_r_write : STD_LOGIC;
-    signal appear0_channel_full_n : STD_LOGIC;
-    signal count1_U0_ap_start : STD_LOGIC;
-    signal count1_U0_ap_done : STD_LOGIC;
-    signal count1_U0_ap_continue : STD_LOGIC;
-    signal count1_U0_ap_idle : STD_LOGIC;
-    signal count1_U0_ap_ready : STD_LOGIC;
-    signal count1_U0_in_r_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal count1_U0_in_r_ce0 : STD_LOGIC;
-    signal count1_U0_in_r_read : STD_LOGIC;
-    signal count1_U0_out_r : STD_LOGIC_VECTOR (2047 downto 0);
-    signal count1_U0_out_r_write : STD_LOGIC;
-    signal appear1_channel_full_n : STD_LOGIC;
-    signal count2_U0_ap_start : STD_LOGIC;
-    signal count2_U0_ap_done : STD_LOGIC;
-    signal count2_U0_ap_continue : STD_LOGIC;
-    signal count2_U0_ap_idle : STD_LOGIC;
-    signal count2_U0_ap_ready : STD_LOGIC;
-    signal count2_U0_in_r_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal count2_U0_in_r_ce0 : STD_LOGIC;
-    signal count2_U0_in_r_read : STD_LOGIC;
-    signal count2_U0_out_r : STD_LOGIC_VECTOR (2047 downto 0);
-    signal count2_U0_out_r_write : STD_LOGIC;
-    signal appear2_channel_full_n : STD_LOGIC;
-    signal count3_U0_ap_start : STD_LOGIC;
-    signal count3_U0_ap_done : STD_LOGIC;
-    signal count3_U0_ap_continue : STD_LOGIC;
-    signal count3_U0_ap_idle : STD_LOGIC;
-    signal count3_U0_ap_ready : STD_LOGIC;
-    signal count3_U0_in_r_address0 : STD_LOGIC_VECTOR (8 downto 0);
-    signal count3_U0_in_r_ce0 : STD_LOGIC;
-    signal count3_U0_in_r_read : STD_LOGIC;
-    signal count3_U0_out_r : STD_LOGIC_VECTOR (2047 downto 0);
-    signal count3_U0_out_r_write : STD_LOGIC;
-    signal appear3_channel_full_n : STD_LOGIC;
-    signal reduce_U0_ap_start : STD_LOGIC;
-    signal reduce_U0_ap_done : STD_LOGIC;
-    signal reduce_U0_ap_continue : STD_LOGIC;
-    signal reduce_U0_ap_idle : STD_LOGIC;
-    signal reduce_U0_ap_ready : STD_LOGIC;
-    signal reduce_U0_start_out : STD_LOGIC;
-    signal reduce_U0_start_write : STD_LOGIC;
-    signal reduce_U0_out_r_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal reduce_U0_out_r_ce0 : STD_LOGIC;
-    signal reduce_U0_out_r_we0 : STD_LOGIC;
-    signal reduce_U0_out_r_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal reduce_U0_out_r_write : STD_LOGIC;
-    signal reduce_U0_in0_read : STD_LOGIC;
-    signal reduce_U0_in1_read : STD_LOGIC;
-    signal reduce_U0_in2_read : STD_LOGIC;
-    signal reduce_U0_in3_read : STD_LOGIC;
+    signal appear_i_q0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal appear_i_q1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal appear_t_q0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal appear_t_q1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal count_U0_ap_start : STD_LOGIC;
+    signal count_U0_ap_done : STD_LOGIC;
+    signal count_U0_ap_continue : STD_LOGIC;
+    signal count_U0_ap_idle : STD_LOGIC;
+    signal count_U0_ap_ready : STD_LOGIC;
+    signal count_U0_In_r_read : STD_LOGIC;
+    signal count_U0_appear_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal count_U0_appear_ce0 : STD_LOGIC;
+    signal count_U0_appear_we0 : STD_LOGIC;
+    signal count_U0_appear_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal count_U0_appear_address1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal count_U0_appear_ce1 : STD_LOGIC;
+    signal count_U0_appear_we1 : STD_LOGIC;
+    signal count_U0_appear_d1 : STD_LOGIC_VECTOR (7 downto 0);
     signal threshold_U0_ap_start : STD_LOGIC;
     signal threshold_U0_ap_done : STD_LOGIC;
     signal threshold_U0_ap_continue : STD_LOGIC;
     signal threshold_U0_ap_idle : STD_LOGIC;
     signal threshold_U0_ap_ready : STD_LOGIC;
-    signal threshold_U0_in_r_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal threshold_U0_in_r_ce0 : STD_LOGIC;
-    signal threshold_U0_in_r_read : STD_LOGIC;
+    signal threshold_U0_appear_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal threshold_U0_appear_ce0 : STD_LOGIC;
     signal threshold_U0_Out_r_din : STD_LOGIC_VECTOR (31 downto 0);
     signal threshold_U0_Out_r_write : STD_LOGIC;
-    signal input0_buf_data_i_full_n : STD_LOGIC;
-    signal input0_buf_data_t_empty_n : STD_LOGIC;
-    signal input1_buf_data_i_full_n : STD_LOGIC;
-    signal input1_buf_data_t_empty_n : STD_LOGIC;
-    signal input2_buf_data_i_full_n : STD_LOGIC;
-    signal input2_buf_data_t_empty_n : STD_LOGIC;
-    signal input3_buf_data_i_full_n : STD_LOGIC;
-    signal input3_buf_data_t_empty_n : STD_LOGIC;
-    signal reduced_blocks_buf_data_i_full_n : STD_LOGIC;
-    signal reduced_blocks_buf_data_t_empty_n : STD_LOGIC;
-    signal appear0_channel_dout : STD_LOGIC_VECTOR (2047 downto 0);
-    signal appear0_channel_num_data_valid : STD_LOGIC_VECTOR (1 downto 0);
-    signal appear0_channel_fifo_cap : STD_LOGIC_VECTOR (1 downto 0);
-    signal appear0_channel_empty_n : STD_LOGIC;
-    signal appear1_channel_dout : STD_LOGIC_VECTOR (2047 downto 0);
-    signal appear1_channel_num_data_valid : STD_LOGIC_VECTOR (1 downto 0);
-    signal appear1_channel_fifo_cap : STD_LOGIC_VECTOR (1 downto 0);
-    signal appear1_channel_empty_n : STD_LOGIC;
-    signal appear2_channel_dout : STD_LOGIC_VECTOR (2047 downto 0);
-    signal appear2_channel_num_data_valid : STD_LOGIC_VECTOR (1 downto 0);
-    signal appear2_channel_fifo_cap : STD_LOGIC_VECTOR (1 downto 0);
-    signal appear2_channel_empty_n : STD_LOGIC;
-    signal appear3_channel_dout : STD_LOGIC_VECTOR (2047 downto 0);
-    signal appear3_channel_num_data_valid : STD_LOGIC_VECTOR (1 downto 0);
-    signal appear3_channel_fifo_cap : STD_LOGIC_VECTOR (1 downto 0);
-    signal appear3_channel_empty_n : STD_LOGIC;
-    signal start_for_count0_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_count0_U0_full_n : STD_LOGIC;
-    signal start_for_count0_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_count0_U0_empty_n : STD_LOGIC;
-    signal start_for_count1_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_count1_U0_full_n : STD_LOGIC;
-    signal start_for_count1_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_count1_U0_empty_n : STD_LOGIC;
-    signal start_for_count2_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_count2_U0_full_n : STD_LOGIC;
-    signal start_for_count2_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_count2_U0_empty_n : STD_LOGIC;
-    signal start_for_count3_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_count3_U0_full_n : STD_LOGIC;
-    signal start_for_count3_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_count3_U0_empty_n : STD_LOGIC;
-    signal start_for_threshold_U0_din : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_threshold_U0_full_n : STD_LOGIC;
-    signal start_for_threshold_U0_dout : STD_LOGIC_VECTOR (0 downto 0);
-    signal start_for_threshold_U0_empty_n : STD_LOGIC;
+    signal appear_i_full_n : STD_LOGIC;
+    signal appear_t_empty_n : STD_LOGIC;
 
-    component accelerator_split IS
+    component accelerator_count IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
         ap_start : IN STD_LOGIC;
-        start_full_n : IN STD_LOGIC;
         ap_done : OUT STD_LOGIC;
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        start_out : OUT STD_LOGIC;
-        start_write : OUT STD_LOGIC;
-        In_r_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+        In_r_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         In_r_empty_n : IN STD_LOGIC;
         In_r_read : OUT STD_LOGIC;
-        out0_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        out0_ce0 : OUT STD_LOGIC;
-        out0_we0 : OUT STD_LOGIC;
-        out0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        out0_full_n : IN STD_LOGIC;
-        out0_write : OUT STD_LOGIC;
-        out1_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        out1_ce0 : OUT STD_LOGIC;
-        out1_we0 : OUT STD_LOGIC;
-        out1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        out1_full_n : IN STD_LOGIC;
-        out1_write : OUT STD_LOGIC;
-        out2_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        out2_ce0 : OUT STD_LOGIC;
-        out2_we0 : OUT STD_LOGIC;
-        out2_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        out2_full_n : IN STD_LOGIC;
-        out2_write : OUT STD_LOGIC;
-        out3_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        out3_ce0 : OUT STD_LOGIC;
-        out3_we0 : OUT STD_LOGIC;
-        out3_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        out3_full_n : IN STD_LOGIC;
-        out3_write : OUT STD_LOGIC );
-    end component;
-
-
-    component accelerator_count0 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_continue : IN STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        in_r_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        in_r_ce0 : OUT STD_LOGIC;
-        in_r_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        in_r_empty_n : IN STD_LOGIC;
-        in_r_read : OUT STD_LOGIC;
-        out_r : OUT STD_LOGIC_VECTOR (2047 downto 0);
-        out_r_write : OUT STD_LOGIC;
-        out_r_full_n : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_count1 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_continue : IN STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        in_r_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        in_r_ce0 : OUT STD_LOGIC;
-        in_r_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        in_r_empty_n : IN STD_LOGIC;
-        in_r_read : OUT STD_LOGIC;
-        out_r : OUT STD_LOGIC_VECTOR (2047 downto 0);
-        out_r_write : OUT STD_LOGIC;
-        out_r_full_n : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_count2 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_continue : IN STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        in_r_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        in_r_ce0 : OUT STD_LOGIC;
-        in_r_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        in_r_empty_n : IN STD_LOGIC;
-        in_r_read : OUT STD_LOGIC;
-        out_r : OUT STD_LOGIC_VECTOR (2047 downto 0);
-        out_r_write : OUT STD_LOGIC;
-        out_r_full_n : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_count3 IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_continue : IN STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        in_r_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
-        in_r_ce0 : OUT STD_LOGIC;
-        in_r_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        in_r_empty_n : IN STD_LOGIC;
-        in_r_read : OUT STD_LOGIC;
-        out_r : OUT STD_LOGIC_VECTOR (2047 downto 0);
-        out_r_write : OUT STD_LOGIC;
-        out_r_full_n : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_reduce IS
-    port (
-        ap_clk : IN STD_LOGIC;
-        ap_rst : IN STD_LOGIC;
-        ap_start : IN STD_LOGIC;
-        start_full_n : IN STD_LOGIC;
-        ap_done : OUT STD_LOGIC;
-        ap_continue : IN STD_LOGIC;
-        ap_idle : OUT STD_LOGIC;
-        ap_ready : OUT STD_LOGIC;
-        start_out : OUT STD_LOGIC;
-        start_write : OUT STD_LOGIC;
-        in0 : IN STD_LOGIC_VECTOR (2047 downto 0);
-        in1 : IN STD_LOGIC_VECTOR (2047 downto 0);
-        in2 : IN STD_LOGIC_VECTOR (2047 downto 0);
-        in3 : IN STD_LOGIC_VECTOR (2047 downto 0);
-        out_r_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        out_r_ce0 : OUT STD_LOGIC;
-        out_r_we0 : OUT STD_LOGIC;
-        out_r_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        out_r_full_n : IN STD_LOGIC;
-        out_r_write : OUT STD_LOGIC;
-        in0_empty_n : IN STD_LOGIC;
-        in1_empty_n : IN STD_LOGIC;
-        in2_empty_n : IN STD_LOGIC;
-        in3_empty_n : IN STD_LOGIC;
-        in0_read : OUT STD_LOGIC;
-        in1_read : OUT STD_LOGIC;
-        in2_read : OUT STD_LOGIC;
-        in3_read : OUT STD_LOGIC );
+        appear_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        appear_ce0 : OUT STD_LOGIC;
+        appear_we0 : OUT STD_LOGIC;
+        appear_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        appear_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        appear_ce1 : OUT STD_LOGIC;
+        appear_we1 : OUT STD_LOGIC;
+        appear_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        appear_q1 : IN STD_LOGIC_VECTOR (7 downto 0) );
     end component;
 
 
@@ -355,45 +98,16 @@ architecture behav of accelerator is
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        in_r_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        in_r_ce0 : OUT STD_LOGIC;
-        in_r_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        in_r_empty_n : IN STD_LOGIC;
-        in_r_read : OUT STD_LOGIC;
+        appear_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        appear_ce0 : OUT STD_LOGIC;
+        appear_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
         Out_r_din : OUT STD_LOGIC_VECTOR (31 downto 0);
         Out_r_full_n : IN STD_LOGIC;
         Out_r_write : OUT STD_LOGIC );
     end component;
 
 
-    component accelerator_input0_buf_data_RAM_AUTO_1R1W IS
-    generic (
-        DataWidth : INTEGER;
-        AddressRange : INTEGER;
-        AddressWidth : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        i_address0 : IN STD_LOGIC_VECTOR (8 downto 0);
-        i_ce0 : IN STD_LOGIC;
-        i_we0 : IN STD_LOGIC;
-        i_d0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        i_q0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        t_address0 : IN STD_LOGIC_VECTOR (8 downto 0);
-        t_ce0 : IN STD_LOGIC;
-        t_we0 : IN STD_LOGIC;
-        t_d0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        t_q0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        i_ce : IN STD_LOGIC;
-        t_ce : IN STD_LOGIC;
-        i_full_n : OUT STD_LOGIC;
-        i_write : IN STD_LOGIC;
-        t_empty_n : OUT STD_LOGIC;
-        t_read : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_reduced_blocks_buf_data_RAM_AUTO_1R1W IS
+    component accelerator_appear_RAM_AUTO_1R1W IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -406,11 +120,21 @@ architecture behav of accelerator is
         i_we0 : IN STD_LOGIC;
         i_d0 : IN STD_LOGIC_VECTOR (7 downto 0);
         i_q0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        i_address1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        i_ce1 : IN STD_LOGIC;
+        i_we1 : IN STD_LOGIC;
+        i_d1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        i_q1 : OUT STD_LOGIC_VECTOR (7 downto 0);
         t_address0 : IN STD_LOGIC_VECTOR (7 downto 0);
         t_ce0 : IN STD_LOGIC;
         t_we0 : IN STD_LOGIC;
         t_d0 : IN STD_LOGIC_VECTOR (7 downto 0);
         t_q0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        t_address1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        t_ce1 : IN STD_LOGIC;
+        t_we1 : IN STD_LOGIC;
+        t_d1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        t_q1 : OUT STD_LOGIC_VECTOR (7 downto 0);
         i_ce : IN STD_LOGIC;
         t_ce : IN STD_LOGIC;
         i_full_n : OUT STD_LOGIC;
@@ -420,201 +144,9 @@ architecture behav of accelerator is
     end component;
 
 
-    component accelerator_fifo_w2048_d2_S IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (2047 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (2047 downto 0);
-        if_num_data_valid : OUT STD_LOGIC_VECTOR (1 downto 0);
-        if_fifo_cap : OUT STD_LOGIC_VECTOR (1 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_start_for_count0_U0 IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (0 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (0 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_start_for_count1_U0 IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (0 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (0 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_start_for_count2_U0 IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (0 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (0 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_start_for_count3_U0 IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (0 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (0 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
-    component accelerator_start_for_threshold_U0 IS
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
-        if_din : IN STD_LOGIC_VECTOR (0 downto 0);
-        if_full_n : OUT STD_LOGIC;
-        if_write : IN STD_LOGIC;
-        if_dout : OUT STD_LOGIC_VECTOR (0 downto 0);
-        if_empty_n : OUT STD_LOGIC;
-        if_read : IN STD_LOGIC );
-    end component;
-
-
 
 begin
-    input0_buf_data_U : component accelerator_input0_buf_data_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 8,
-        AddressRange => 512,
-        AddressWidth => 9)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        i_address0 => split_U0_out0_address0,
-        i_ce0 => split_U0_out0_ce0,
-        i_we0 => split_U0_out0_we0,
-        i_d0 => split_U0_out0_d0,
-        i_q0 => input0_buf_data_i_q0,
-        t_address0 => count0_U0_in_r_address0,
-        t_ce0 => count0_U0_in_r_ce0,
-        t_we0 => ap_const_logic_0,
-        t_d0 => ap_const_lv8_0,
-        t_q0 => input0_buf_data_t_q0,
-        i_ce => ap_const_logic_1,
-        t_ce => ap_const_logic_1,
-        i_full_n => input0_buf_data_i_full_n,
-        i_write => split_U0_out0_write,
-        t_empty_n => input0_buf_data_t_empty_n,
-        t_read => count0_U0_in_r_read);
-
-    input1_buf_data_U : component accelerator_input0_buf_data_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 8,
-        AddressRange => 512,
-        AddressWidth => 9)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        i_address0 => split_U0_out1_address0,
-        i_ce0 => split_U0_out1_ce0,
-        i_we0 => split_U0_out1_we0,
-        i_d0 => split_U0_out1_d0,
-        i_q0 => input1_buf_data_i_q0,
-        t_address0 => count1_U0_in_r_address0,
-        t_ce0 => count1_U0_in_r_ce0,
-        t_we0 => ap_const_logic_0,
-        t_d0 => ap_const_lv8_0,
-        t_q0 => input1_buf_data_t_q0,
-        i_ce => ap_const_logic_1,
-        t_ce => ap_const_logic_1,
-        i_full_n => input1_buf_data_i_full_n,
-        i_write => split_U0_out1_write,
-        t_empty_n => input1_buf_data_t_empty_n,
-        t_read => count1_U0_in_r_read);
-
-    input2_buf_data_U : component accelerator_input0_buf_data_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 8,
-        AddressRange => 512,
-        AddressWidth => 9)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        i_address0 => split_U0_out2_address0,
-        i_ce0 => split_U0_out2_ce0,
-        i_we0 => split_U0_out2_we0,
-        i_d0 => split_U0_out2_d0,
-        i_q0 => input2_buf_data_i_q0,
-        t_address0 => count2_U0_in_r_address0,
-        t_ce0 => count2_U0_in_r_ce0,
-        t_we0 => ap_const_logic_0,
-        t_d0 => ap_const_lv8_0,
-        t_q0 => input2_buf_data_t_q0,
-        i_ce => ap_const_logic_1,
-        t_ce => ap_const_logic_1,
-        i_full_n => input2_buf_data_i_full_n,
-        i_write => split_U0_out2_write,
-        t_empty_n => input2_buf_data_t_empty_n,
-        t_read => count2_U0_in_r_read);
-
-    input3_buf_data_U : component accelerator_input0_buf_data_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 8,
-        AddressRange => 512,
-        AddressWidth => 9)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        i_address0 => split_U0_out3_address0,
-        i_ce0 => split_U0_out3_ce0,
-        i_we0 => split_U0_out3_we0,
-        i_d0 => split_U0_out3_d0,
-        i_q0 => input3_buf_data_i_q0,
-        t_address0 => count3_U0_in_r_address0,
-        t_ce0 => count3_U0_in_r_ce0,
-        t_we0 => ap_const_logic_0,
-        t_d0 => ap_const_lv8_0,
-        t_q0 => input3_buf_data_t_q0,
-        i_ce => ap_const_logic_1,
-        t_ce => ap_const_logic_1,
-        i_full_n => input3_buf_data_i_full_n,
-        i_write => split_U0_out3_write,
-        t_empty_n => input3_buf_data_t_empty_n,
-        t_read => count3_U0_in_r_read);
-
-    reduced_blocks_buf_data_U : component accelerator_reduced_blocks_buf_data_RAM_AUTO_1R1W
+    appear_U : component accelerator_appear_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
         AddressRange => 256,
@@ -622,165 +154,54 @@ begin
     port map (
         clk => ap_clk,
         reset => ap_rst,
-        i_address0 => reduce_U0_out_r_address0,
-        i_ce0 => reduce_U0_out_r_ce0,
-        i_we0 => reduce_U0_out_r_we0,
-        i_d0 => reduce_U0_out_r_d0,
-        i_q0 => reduced_blocks_buf_data_i_q0,
-        t_address0 => threshold_U0_in_r_address0,
-        t_ce0 => threshold_U0_in_r_ce0,
+        i_address0 => count_U0_appear_address0,
+        i_ce0 => count_U0_appear_ce0,
+        i_we0 => count_U0_appear_we0,
+        i_d0 => count_U0_appear_d0,
+        i_q0 => appear_i_q0,
+        i_address1 => count_U0_appear_address1,
+        i_ce1 => count_U0_appear_ce1,
+        i_we1 => count_U0_appear_we1,
+        i_d1 => count_U0_appear_d1,
+        i_q1 => appear_i_q1,
+        t_address0 => threshold_U0_appear_address0,
+        t_ce0 => threshold_U0_appear_ce0,
         t_we0 => ap_const_logic_0,
         t_d0 => ap_const_lv8_0,
-        t_q0 => reduced_blocks_buf_data_t_q0,
+        t_q0 => appear_t_q0,
+        t_address1 => ap_const_lv8_0,
+        t_ce1 => ap_const_logic_0,
+        t_we1 => ap_const_logic_0,
+        t_d1 => ap_const_lv8_0,
+        t_q1 => appear_t_q1,
         i_ce => ap_const_logic_1,
         t_ce => ap_const_logic_1,
-        i_full_n => reduced_blocks_buf_data_i_full_n,
-        i_write => reduce_U0_out_r_write,
-        t_empty_n => reduced_blocks_buf_data_t_empty_n,
-        t_read => threshold_U0_in_r_read);
+        i_full_n => appear_i_full_n,
+        i_write => count_U0_ap_done,
+        t_empty_n => appear_t_empty_n,
+        t_read => threshold_U0_ap_ready);
 
-    split_U0 : component accelerator_split
+    count_U0 : component accelerator_count
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => split_U0_ap_start,
-        start_full_n => split_U0_start_full_n,
-        ap_done => split_U0_ap_done,
-        ap_continue => split_U0_ap_continue,
-        ap_idle => split_U0_ap_idle,
-        ap_ready => split_U0_ap_ready,
-        start_out => split_U0_start_out,
-        start_write => split_U0_start_write,
+        ap_start => count_U0_ap_start,
+        ap_done => count_U0_ap_done,
+        ap_continue => count_U0_ap_continue,
+        ap_idle => count_U0_ap_idle,
+        ap_ready => count_U0_ap_ready,
         In_r_dout => In_r_dout,
         In_r_empty_n => In_r_empty_n,
-        In_r_read => split_U0_In_r_read,
-        out0_address0 => split_U0_out0_address0,
-        out0_ce0 => split_U0_out0_ce0,
-        out0_we0 => split_U0_out0_we0,
-        out0_d0 => split_U0_out0_d0,
-        out0_full_n => input0_buf_data_i_full_n,
-        out0_write => split_U0_out0_write,
-        out1_address0 => split_U0_out1_address0,
-        out1_ce0 => split_U0_out1_ce0,
-        out1_we0 => split_U0_out1_we0,
-        out1_d0 => split_U0_out1_d0,
-        out1_full_n => input1_buf_data_i_full_n,
-        out1_write => split_U0_out1_write,
-        out2_address0 => split_U0_out2_address0,
-        out2_ce0 => split_U0_out2_ce0,
-        out2_we0 => split_U0_out2_we0,
-        out2_d0 => split_U0_out2_d0,
-        out2_full_n => input2_buf_data_i_full_n,
-        out2_write => split_U0_out2_write,
-        out3_address0 => split_U0_out3_address0,
-        out3_ce0 => split_U0_out3_ce0,
-        out3_we0 => split_U0_out3_we0,
-        out3_d0 => split_U0_out3_d0,
-        out3_full_n => input3_buf_data_i_full_n,
-        out3_write => split_U0_out3_write);
-
-    count0_U0 : component accelerator_count0
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => count0_U0_ap_start,
-        ap_done => count0_U0_ap_done,
-        ap_continue => count0_U0_ap_continue,
-        ap_idle => count0_U0_ap_idle,
-        ap_ready => count0_U0_ap_ready,
-        in_r_address0 => count0_U0_in_r_address0,
-        in_r_ce0 => count0_U0_in_r_ce0,
-        in_r_q0 => input0_buf_data_t_q0,
-        in_r_empty_n => input0_buf_data_t_empty_n,
-        in_r_read => count0_U0_in_r_read,
-        out_r => count0_U0_out_r,
-        out_r_write => count0_U0_out_r_write,
-        out_r_full_n => ap_const_logic_0);
-
-    count1_U0 : component accelerator_count1
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => count1_U0_ap_start,
-        ap_done => count1_U0_ap_done,
-        ap_continue => count1_U0_ap_continue,
-        ap_idle => count1_U0_ap_idle,
-        ap_ready => count1_U0_ap_ready,
-        in_r_address0 => count1_U0_in_r_address0,
-        in_r_ce0 => count1_U0_in_r_ce0,
-        in_r_q0 => input1_buf_data_t_q0,
-        in_r_empty_n => input1_buf_data_t_empty_n,
-        in_r_read => count1_U0_in_r_read,
-        out_r => count1_U0_out_r,
-        out_r_write => count1_U0_out_r_write,
-        out_r_full_n => ap_const_logic_0);
-
-    count2_U0 : component accelerator_count2
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => count2_U0_ap_start,
-        ap_done => count2_U0_ap_done,
-        ap_continue => count2_U0_ap_continue,
-        ap_idle => count2_U0_ap_idle,
-        ap_ready => count2_U0_ap_ready,
-        in_r_address0 => count2_U0_in_r_address0,
-        in_r_ce0 => count2_U0_in_r_ce0,
-        in_r_q0 => input2_buf_data_t_q0,
-        in_r_empty_n => input2_buf_data_t_empty_n,
-        in_r_read => count2_U0_in_r_read,
-        out_r => count2_U0_out_r,
-        out_r_write => count2_U0_out_r_write,
-        out_r_full_n => ap_const_logic_0);
-
-    count3_U0 : component accelerator_count3
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => count3_U0_ap_start,
-        ap_done => count3_U0_ap_done,
-        ap_continue => count3_U0_ap_continue,
-        ap_idle => count3_U0_ap_idle,
-        ap_ready => count3_U0_ap_ready,
-        in_r_address0 => count3_U0_in_r_address0,
-        in_r_ce0 => count3_U0_in_r_ce0,
-        in_r_q0 => input3_buf_data_t_q0,
-        in_r_empty_n => input3_buf_data_t_empty_n,
-        in_r_read => count3_U0_in_r_read,
-        out_r => count3_U0_out_r,
-        out_r_write => count3_U0_out_r_write,
-        out_r_full_n => ap_const_logic_0);
-
-    reduce_U0 : component accelerator_reduce
-    port map (
-        ap_clk => ap_clk,
-        ap_rst => ap_rst,
-        ap_start => reduce_U0_ap_start,
-        start_full_n => start_for_threshold_U0_full_n,
-        ap_done => reduce_U0_ap_done,
-        ap_continue => reduce_U0_ap_continue,
-        ap_idle => reduce_U0_ap_idle,
-        ap_ready => reduce_U0_ap_ready,
-        start_out => reduce_U0_start_out,
-        start_write => reduce_U0_start_write,
-        in0 => appear0_channel_dout,
-        in1 => appear1_channel_dout,
-        in2 => appear2_channel_dout,
-        in3 => appear3_channel_dout,
-        out_r_address0 => reduce_U0_out_r_address0,
-        out_r_ce0 => reduce_U0_out_r_ce0,
-        out_r_we0 => reduce_U0_out_r_we0,
-        out_r_d0 => reduce_U0_out_r_d0,
-        out_r_full_n => reduced_blocks_buf_data_i_full_n,
-        out_r_write => reduce_U0_out_r_write,
-        in0_empty_n => ap_const_logic_0,
-        in1_empty_n => ap_const_logic_0,
-        in2_empty_n => ap_const_logic_0,
-        in3_empty_n => ap_const_logic_0,
-        in0_read => reduce_U0_in0_read,
-        in1_read => reduce_U0_in1_read,
-        in2_read => reduce_U0_in2_read,
-        in3_read => reduce_U0_in3_read);
+        In_r_read => count_U0_In_r_read,
+        appear_address0 => count_U0_appear_address0,
+        appear_ce0 => count_U0_appear_ce0,
+        appear_we0 => count_U0_appear_we0,
+        appear_d0 => count_U0_appear_d0,
+        appear_address1 => count_U0_appear_address1,
+        appear_ce1 => count_U0_appear_ce1,
+        appear_we1 => count_U0_appear_we1,
+        appear_d1 => count_U0_appear_d1,
+        appear_q1 => appear_i_q1);
 
     threshold_U0 : component accelerator_threshold
     port map (
@@ -791,167 +212,24 @@ begin
         ap_continue => threshold_U0_ap_continue,
         ap_idle => threshold_U0_ap_idle,
         ap_ready => threshold_U0_ap_ready,
-        in_r_address0 => threshold_U0_in_r_address0,
-        in_r_ce0 => threshold_U0_in_r_ce0,
-        in_r_q0 => reduced_blocks_buf_data_t_q0,
-        in_r_empty_n => reduced_blocks_buf_data_t_empty_n,
-        in_r_read => threshold_U0_in_r_read,
+        appear_address0 => threshold_U0_appear_address0,
+        appear_ce0 => threshold_U0_appear_ce0,
+        appear_q0 => appear_t_q0,
         Out_r_din => threshold_U0_Out_r_din,
         Out_r_full_n => Out_r_full_n,
         Out_r_write => threshold_U0_Out_r_write);
 
-    appear0_channel_U : component accelerator_fifo_w2048_d2_S
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => count0_U0_out_r,
-        if_full_n => appear0_channel_full_n,
-        if_write => count0_U0_ap_done,
-        if_dout => appear0_channel_dout,
-        if_num_data_valid => appear0_channel_num_data_valid,
-        if_fifo_cap => appear0_channel_fifo_cap,
-        if_empty_n => appear0_channel_empty_n,
-        if_read => reduce_U0_ap_ready);
-
-    appear1_channel_U : component accelerator_fifo_w2048_d2_S
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => count1_U0_out_r,
-        if_full_n => appear1_channel_full_n,
-        if_write => count1_U0_ap_done,
-        if_dout => appear1_channel_dout,
-        if_num_data_valid => appear1_channel_num_data_valid,
-        if_fifo_cap => appear1_channel_fifo_cap,
-        if_empty_n => appear1_channel_empty_n,
-        if_read => reduce_U0_ap_ready);
-
-    appear2_channel_U : component accelerator_fifo_w2048_d2_S
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => count2_U0_out_r,
-        if_full_n => appear2_channel_full_n,
-        if_write => count2_U0_ap_done,
-        if_dout => appear2_channel_dout,
-        if_num_data_valid => appear2_channel_num_data_valid,
-        if_fifo_cap => appear2_channel_fifo_cap,
-        if_empty_n => appear2_channel_empty_n,
-        if_read => reduce_U0_ap_ready);
-
-    appear3_channel_U : component accelerator_fifo_w2048_d2_S
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => count3_U0_out_r,
-        if_full_n => appear3_channel_full_n,
-        if_write => count3_U0_ap_done,
-        if_dout => appear3_channel_dout,
-        if_num_data_valid => appear3_channel_num_data_valid,
-        if_fifo_cap => appear3_channel_fifo_cap,
-        if_empty_n => appear3_channel_empty_n,
-        if_read => reduce_U0_ap_ready);
-
-    start_for_count0_U0_U : component accelerator_start_for_count0_U0
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => start_for_count0_U0_din,
-        if_full_n => start_for_count0_U0_full_n,
-        if_write => split_U0_start_write,
-        if_dout => start_for_count0_U0_dout,
-        if_empty_n => start_for_count0_U0_empty_n,
-        if_read => count0_U0_ap_ready);
-
-    start_for_count1_U0_U : component accelerator_start_for_count1_U0
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => start_for_count1_U0_din,
-        if_full_n => start_for_count1_U0_full_n,
-        if_write => split_U0_start_write,
-        if_dout => start_for_count1_U0_dout,
-        if_empty_n => start_for_count1_U0_empty_n,
-        if_read => count1_U0_ap_ready);
-
-    start_for_count2_U0_U : component accelerator_start_for_count2_U0
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => start_for_count2_U0_din,
-        if_full_n => start_for_count2_U0_full_n,
-        if_write => split_U0_start_write,
-        if_dout => start_for_count2_U0_dout,
-        if_empty_n => start_for_count2_U0_empty_n,
-        if_read => count2_U0_ap_ready);
-
-    start_for_count3_U0_U : component accelerator_start_for_count3_U0
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => start_for_count3_U0_din,
-        if_full_n => start_for_count3_U0_full_n,
-        if_write => split_U0_start_write,
-        if_dout => start_for_count3_U0_dout,
-        if_empty_n => start_for_count3_U0_empty_n,
-        if_read => count3_U0_ap_ready);
-
-    start_for_threshold_U0_U : component accelerator_start_for_threshold_U0
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        if_read_ce => ap_const_logic_1,
-        if_write_ce => ap_const_logic_1,
-        if_din => start_for_threshold_U0_din,
-        if_full_n => start_for_threshold_U0_full_n,
-        if_write => reduce_U0_start_write,
-        if_dout => start_for_threshold_U0_dout,
-        if_empty_n => start_for_threshold_U0_empty_n,
-        if_read => threshold_U0_ap_ready);
 
 
 
-
-    In_r_read <= split_U0_In_r_read;
+    In_r_read <= count_U0_In_r_read;
     Out_r_din <= threshold_U0_Out_r_din;
     Out_r_write <= threshold_U0_Out_r_write;
     ap_done <= threshold_U0_ap_done;
-    ap_idle <= (threshold_U0_ap_idle and split_U0_ap_idle and reduce_U0_ap_idle and (appear3_channel_empty_n xor ap_const_logic_1) and (appear2_channel_empty_n xor ap_const_logic_1) and (appear1_channel_empty_n xor ap_const_logic_1) and (appear0_channel_empty_n xor ap_const_logic_1) and (reduced_blocks_buf_data_t_empty_n xor ap_const_logic_1) and (input3_buf_data_t_empty_n xor ap_const_logic_1) and (input2_buf_data_t_empty_n xor ap_const_logic_1) and (input1_buf_data_t_empty_n xor ap_const_logic_1) and (input0_buf_data_t_empty_n xor ap_const_logic_1) and count3_U0_ap_idle and count2_U0_ap_idle and count1_U0_ap_idle and count0_U0_ap_idle);
-    ap_ready <= split_U0_ap_ready;
-    count0_U0_ap_continue <= appear0_channel_full_n;
-    count0_U0_ap_start <= start_for_count0_U0_empty_n;
-    count1_U0_ap_continue <= appear1_channel_full_n;
-    count1_U0_ap_start <= start_for_count1_U0_empty_n;
-    count2_U0_ap_continue <= appear2_channel_full_n;
-    count2_U0_ap_start <= start_for_count2_U0_empty_n;
-    count3_U0_ap_continue <= appear3_channel_full_n;
-    count3_U0_ap_start <= start_for_count3_U0_empty_n;
-    reduce_U0_ap_continue <= ap_const_logic_1;
-    reduce_U0_ap_start <= (appear3_channel_empty_n and appear2_channel_empty_n and appear1_channel_empty_n and appear0_channel_empty_n);
-    split_U0_ap_continue <= ap_const_logic_1;
-    split_U0_ap_start <= ap_start;
-    split_U0_start_full_n <= (start_for_count3_U0_full_n and start_for_count2_U0_full_n and start_for_count1_U0_full_n and start_for_count0_U0_full_n);
-    start_for_count0_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_count1_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_count2_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_count3_U0_din <= (0=>ap_const_logic_1, others=>'-');
-    start_for_threshold_U0_din <= (0=>ap_const_logic_1, others=>'-');
+    ap_idle <= (threshold_U0_ap_idle and (appear_t_empty_n xor ap_const_logic_1) and count_U0_ap_idle);
+    ap_ready <= count_U0_ap_ready;
+    count_U0_ap_continue <= appear_i_full_n;
+    count_U0_ap_start <= ap_start;
     threshold_U0_ap_continue <= ap_continue;
-    threshold_U0_ap_start <= start_for_threshold_U0_empty_n;
+    threshold_U0_ap_start <= appear_t_empty_n;
 end behav;

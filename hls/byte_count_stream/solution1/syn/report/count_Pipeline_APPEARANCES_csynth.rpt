@@ -1,0 +1,173 @@
+
+
+================================================================
+== Vitis HLS Report for 'count_Pipeline_APPEARANCES'
+================================================================
+* Date:           Mon Jul 25 22:36:29 2022
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        byte_count_stream
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z010i-clg225-1L
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.053 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     1028|     1028|  10.280 us|  10.280 us|  1028|  1028|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- APPEARANCES  |     1026|     1026|         4|          1|          1|  1024|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|     79|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   -|      -|      -|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|     82|    -|
+|Register         |        -|   -|     47|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|     47|    161|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      120|  80|  35200|  17600|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|     ~0|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name           | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |count_1_fu_176_p2                  |         +|   0|  0|  15|           8|           1|
+    |i_3_fu_120_p2                      |         +|   0|  0|  12|          11|           1|
+    |ap_block_pp0                       |       and|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_01001          |       and|   0|  0|   2|           1|           1|
+    |ap_enable_state3_pp0_iter2_stage0  |       and|   0|  0|   2|           1|           1|
+    |ap_enable_state4_pp0_iter3_stage0  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln29_fu_114_p2                |      icmp|   0|  0|  12|          11|          12|
+    |icmp_ln33_fu_126_p2                |      icmp|   0|  0|  11|          11|           1|
+    |icmp_ln37_fu_146_p2                |      icmp|   0|  0|  11|           8|           8|
+    |prev_1_fu_140_p3                   |    select|   0|  0|   8|           1|           8|
+    |ap_enable_pp0                      |       xor|   0|  0|   2|           1|           2|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+    |Total                              |          |   0|  0|  79|          55|          37|
+    +-----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------+----+-----------+-----+-----------+
+    |              Name             | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------+----+-----------+-----+-----------+
+    |In_r_blk_n                     |   9|          2|    1|          2|
+    |ap_done_int                    |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1        |   9|          2|    1|          2|
+    |ap_sig_allocacmp_count_load_1  |  14|          3|    8|         24|
+    |ap_sig_allocacmp_count_load_2  |   9|          2|    8|         16|
+    |ap_sig_allocacmp_i_2           |   9|          2|   11|         22|
+    |count_1_1_fu_52                |  14|          3|    8|         24|
+    |i_fu_48                        |   9|          2|   11|         22|
+    +-------------------------------+----+-----------+-----+-----------+
+    |Total                          |  82|         18|   49|        114|
+    +-------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |count_1_1_fu_52                   |   8|   0|    8|          0|
+    |i_fu_48                           |  11|   0|   11|          0|
+    |icmp_ln29_reg_219                 |   1|   0|    1|          0|
+    |icmp_ln29_reg_219_pp0_iter1_reg   |   1|   0|    1|          0|
+    |icmp_ln33_reg_223                 |   1|   0|    1|          0|
+    |icmp_ln33_reg_223_pp0_iter1_reg   |   1|   0|    1|          0|
+    |icmp_ln37_reg_236                 |   1|   0|    1|          0|
+    |prev_2_reg_228                    |   8|   0|    8|          0|
+    |prev_fu_44                        |   8|   0|    8|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  47|   0|   47|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+----------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
++----------------------+-----+-----+------------+----------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  count_Pipeline_APPEARANCES|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  count_Pipeline_APPEARANCES|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  count_Pipeline_APPEARANCES|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  count_Pipeline_APPEARANCES|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  count_Pipeline_APPEARANCES|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  count_Pipeline_APPEARANCES|  return value|
+|In_r_dout             |   in|    8|     ap_fifo|                        In_r|       pointer|
+|In_r_empty_n          |   in|    1|     ap_fifo|                        In_r|       pointer|
+|In_r_read             |  out|    1|     ap_fifo|                        In_r|       pointer|
+|appear_address0       |  out|    8|   ap_memory|                      appear|         array|
+|appear_ce0            |  out|    1|   ap_memory|                      appear|         array|
+|appear_we0            |  out|    1|   ap_memory|                      appear|         array|
+|appear_d0             |  out|    8|   ap_memory|                      appear|         array|
+|appear_address1       |  out|    8|   ap_memory|                      appear|         array|
+|appear_ce1            |  out|    1|   ap_memory|                      appear|         array|
+|appear_q1             |   in|    8|   ap_memory|                      appear|         array|
+|prev_out              |  out|    8|      ap_vld|                    prev_out|       pointer|
+|prev_out_ap_vld       |  out|    1|      ap_vld|                    prev_out|       pointer|
+|count_1_1_out         |  out|    8|      ap_vld|               count_1_1_out|       pointer|
+|count_1_1_out_ap_vld  |  out|    1|      ap_vld|               count_1_1_out|       pointer|
++----------------------+-----+-----+------------+----------------------------+--------------+
+

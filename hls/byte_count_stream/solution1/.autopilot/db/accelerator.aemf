@@ -1,174 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1658277363577">
-  <ports id="1" name="In_r" type="PortType" coreId="2697681072" bitwidth="32" iftype="IfTypeRom">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1658806591003">
+  <ports id="1" name="In_r" type="PortType" coreId="0" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
   <ports id="2" name="Out_r" type="PortType" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <edges id="61" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
-  <edges id="62" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
-  <edges id="63" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
-  <edges id="64" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
-  <edges id="65" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
-  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
-  <edges id="69" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
-  <edges id="72" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
-  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
-  <edges id="76" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
-  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
-  <edges id="80" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
-  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
-  <edges id="84" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="85" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="86" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="87" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="88" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
-  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@ports.1"/>
-  <edges id="289" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
-  <edges id="290" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="291" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="292" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="293" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="294" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
-  <edges id="295" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
-  <edges id="296" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
-  <edges id="297" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
-  <edges id="298" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="299" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="300" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="301" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="302" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
-  <edges id="303" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
-  <edges id="304" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
-  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="221" RegionName="accelerator">
-    <basic_blocks id="44" name="accelerator" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="3" name="appear3_channel" rtlName="appear3_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" bitwidth="2048" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+  <edges id="19" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="20" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="23" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="24" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@ports.1"/>
+  <edges id="102" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="103" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="59" RegionName="accelerator">
+    <basic_blocks id="14" name="accelerator" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="appear" lineNumber="10" originalName="appear" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="appear_U" coreName="RAM" implIndex="auto" control="no" opType="ram_t2p" coreId="82" contextFuncName="accelerator" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="10" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataOutputObjs>call</dataOutputObjs>
         <dataOutputObjs>call</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="4" name="appear2_channel" rtlName="appear2_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" bitwidth="2048" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-        <dataOutputObjs>call</dataOutputObjs>
-        <dataOutputObjs>call</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="5" name="appear1_channel" rtlName="appear1_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" bitwidth="2048" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-        <dataOutputObjs>call</dataOutputObjs>
-        <dataOutputObjs>call</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="appear0_channel" rtlName="appear0_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" bitwidth="2048" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <dataOutputObjs>call</dataOutputObjs>
-        <dataOutputObjs>call</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="input0_buf_data" lineNumber="14" originalName="input0.buf.data" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="input0_buf_data_U" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="accelerator" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="14" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataOutputObjs>call</dataOutputObjs>
-        <dataOutputObjs>call</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="input1_buf_data" lineNumber="14" originalName="input1.buf.data" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="input1_buf_data_U" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="accelerator" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="14" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataOutputObjs>call</dataOutputObjs>
-        <dataOutputObjs>call</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="input2_buf_data" lineNumber="14" originalName="input2.buf.data" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="input2_buf_data_U" coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="accelerator" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="14" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataOutputObjs>call</dataOutputObjs>
-        <dataOutputObjs>call</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="input3_buf_data" lineNumber="15" originalName="input3.buf.data" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="input3_buf_data_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="accelerator" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="15" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataOutputObjs>call</dataOutputObjs>
-        <dataOutputObjs>call</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="appear0" coreId="0" bitwidth="2048" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="appear1" coreId="0" bitwidth="2048" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="appear2" coreId="1162363731" bitwidth="2048" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="appear3" coreId="0" bitwidth="2048" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="reduced_blocks_buf_data" lineNumber="17" originalName="reduced_blocks.buf.data" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="reduced_blocks_buf_data_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="accelerator" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="17" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataOutputObjs>call</dataOutputObjs>
-        <dataOutputObjs>call</dataOutputObjs>
-        <constName>empty</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln19" lineNumber="19" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="split_U0" coreId="0" contextFuncName="accelerator" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="19" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="_ln12" lineNumber="12" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="count_U0" coreId="3894135184" contextFuncName="accelerator" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="12" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataInputObjs>In_r</dataInputObjs>
         <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <constName>split</constName>
+        <constName>count</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln20" lineNumber="20" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="count0_U0" coreId="1931502947" contextFuncName="accelerator" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="20" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <constName>count0</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln21" lineNumber="21" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="count1_U0" coreId="0" contextFuncName="accelerator" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="21" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <constName>count1</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="_ln22" lineNumber="22" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="count2_U0" coreId="0" contextFuncName="accelerator" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="22" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <constName>count2</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln23" lineNumber="23" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="count3_U0" coreId="0" contextFuncName="accelerator" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="23" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <constName>count3</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="_ln24" lineNumber="24" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="reduce_U0" coreId="0" contextFuncName="accelerator" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="24" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <dataInputObjs>alloca</dataInputObjs>
-        <constName>reduce</constName>
-      </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="_ln25" lineNumber="25" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="threshold_U0" coreId="0" contextFuncName="accelerator" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="25" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="_ln13" lineNumber="13" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="threshold_U0" coreId="3894310176" contextFuncName="accelerator" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="13" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataInputObjs>alloca</dataInputObjs>
         <dataOutputObjs>Out_r</dataOutputObjs>
         <constName>threshold</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="_ln26" lineNumber="26" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="0" contextFuncName="accelerator" opcode="ret" nodeLabel="7.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="26" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="_ln14" lineNumber="14" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="0" contextFuncName="accelerator" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="14" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
       </node_objs>
       <fileValidLineNumbers fileName="byte_count_stream/src/byte_count_stream.cpp">
+        <validLinenumbers>10</validLinenumbers>
+        <validLinenumbers>12</validLinenumbers>
+        <validLinenumbers>13</validLinenumbers>
         <validLinenumbers>14</validLinenumbers>
-        <validLinenumbers>15</validLinenumbers>
-        <validLinenumbers>17</validLinenumbers>
-        <validLinenumbers>19</validLinenumbers>
-        <validLinenumbers>20</validLinenumbers>
-        <validLinenumbers>21</validLinenumbers>
-        <validLinenumbers>22</validLinenumbers>
-        <validLinenumbers>23</validLinenumbers>
-        <validLinenumbers>24</validLinenumbers>
-        <validLinenumbers>25</validLinenumbers>
-        <validLinenumbers>26</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
@@ -176,168 +47,46 @@
   <ScheduleInfo time="1"/>
   <ScheduleInfo time="2"/>
   <ScheduleInfo time="3"/>
-  <ScheduleInfo time="4"/>
-  <ScheduleInfo time="5"/>
-  <ScheduleInfo time="6"/>
-  <ScheduleInfo time="7"/>
-  <regnodes realName="appear2_channel_reg_166">
-    <nodeIds>4</nodeIds>
-  </regnodes>
-  <regnodes realName="appear3_channel_reg_160">
-    <nodeIds>3</nodeIds>
-  </regnodes>
-  <regnodes realName="appear0_channel_reg_178">
-    <nodeIds>6</nodeIds>
-  </regnodes>
-  <regnodes realName="appear0_reg_184">
-    <nodeIds>18</nodeIds>
-  </regnodes>
-  <regnodes realName="appear1_reg_188">
-    <nodeIds>19</nodeIds>
-  </regnodes>
-  <regnodes realName="appear2_reg_192">
-    <nodeIds>20</nodeIds>
-  </regnodes>
-  <regnodes realName="appear3_reg_196">
-    <nodeIds>21</nodeIds>
-  </regnodes>
-  <regnodes realName="appear1_channel_reg_172">
-    <nodeIds>5</nodeIds>
-  </regnodes>
-  <expressionNodes realName="input2_buf_data_alloca_fu_78">
-    <nodeIds>16</nodeIds>
+  <expressionNodes realName="appear_alloca_fu_30">
+    <nodeIds>10</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="appear2_channel_fu_58">
-    <nodeIds>4</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="appear2_fu_94">
-    <nodeIds>20</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="input0_buf_data_alloca_fu_70">
-    <nodeIds>14</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="input3_buf_data_alloca_fu_82">
-    <nodeIds>17</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="appear3_fu_98">
-    <nodeIds>21</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="appear0_channel_fu_66">
-    <nodeIds>6</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="reduced_blocks_buf_data_alloca_fu_102">
-    <nodeIds>22</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="input1_buf_data_alloca_fu_74">
-    <nodeIds>15</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="appear1_channel_fu_62">
-    <nodeIds>5</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="appear3_channel_fu_54">
-    <nodeIds>3</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="appear0_fu_86">
-    <nodeIds>18</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="appear1_fu_90">
-    <nodeIds>19</nodeIds>
-  </expressionNodes>
-  <moduleNodes realName="grp_count2_fu_132">
-    <nodeIds>39</nodeIds>
+  <moduleNodes realName="grp_count_fu_34">
+    <nodeIds>11</nodeIds>
   </moduleNodes>
-  <moduleNodes realName="grp_count0_fu_120">
-    <nodeIds>37</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_reduce_fu_144">
-    <nodeIds>41</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_threshold_fu_153">
-    <nodeIds>42</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_count1_fu_126">
-    <nodeIds>38</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_count3_fu_138">
-    <nodeIds>40</nodeIds>
-  </moduleNodes>
-  <moduleNodes realName="grp_split_fu_106">
-    <nodeIds>36</nodeIds>
+  <moduleNodes realName="grp_threshold_fu_42">
+    <nodeIds>12</nodeIds>
   </moduleNodes>
   <ioPorts name="In_r">
     <contents name="call">
-      <nodeIds>36</nodeIds>
+      <nodeIds>11</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="Out_r">
     <contents name="call">
-      <nodeIds>42</nodeIds>
+      <nodeIds>12</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
     <states id="1">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="11" stage="1" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="12" stage="2" latency="2"/>
+    </states>
+    <states id="4">
       <operations id="3" stage="1" latency="1"/>
       <operations id="4" stage="1" latency="1"/>
       <operations id="5" stage="1" latency="1"/>
       <operations id="6" stage="1" latency="1"/>
-      <operations id="14" stage="1" latency="1"/>
-      <operations id="15" stage="1" latency="1"/>
-      <operations id="16" stage="1" latency="1"/>
-      <operations id="17" stage="1" latency="1"/>
-      <operations id="18" stage="1" latency="1"/>
-      <operations id="19" stage="1" latency="1"/>
-      <operations id="20" stage="1" latency="1"/>
-      <operations id="21" stage="1" latency="1"/>
-      <operations id="22" stage="1" latency="1"/>
-      <operations id="36" stage="2" latency="2"/>
-    </states>
-    <states id="2">
-      <operations id="36" stage="1" latency="2"/>
-    </states>
-    <states id="3">
-      <operations id="37" stage="2" latency="2"/>
-      <operations id="38" stage="2" latency="2"/>
-      <operations id="39" stage="2" latency="2"/>
-      <operations id="40" stage="2" latency="2"/>
-    </states>
-    <states id="4">
-      <operations id="37" stage="1" latency="2"/>
-      <operations id="38" stage="1" latency="2"/>
-      <operations id="39" stage="1" latency="2"/>
-      <operations id="40" stage="1" latency="2"/>
-    </states>
-    <states id="5">
-      <operations id="41" stage="2" latency="2"/>
-    </states>
-    <states id="6">
-      <operations id="41" stage="1" latency="2"/>
-    </states>
-    <states id="7">
-      <operations id="42" stage="2" latency="2"/>
-    </states>
-    <states id="8">
       <operations id="7" stage="1" latency="1"/>
       <operations id="8" stage="1" latency="1"/>
       <operations id="9" stage="1" latency="1"/>
-      <operations id="10" stage="1" latency="1"/>
-      <operations id="11" stage="1" latency="1"/>
-      <operations id="12" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="2"/>
       <operations id="13" stage="1" latency="1"/>
-      <operations id="23" stage="1" latency="1"/>
-      <operations id="24" stage="1" latency="1"/>
-      <operations id="25" stage="1" latency="1"/>
-      <operations id="26" stage="1" latency="1"/>
-      <operations id="27" stage="1" latency="1"/>
-      <operations id="28" stage="1" latency="1"/>
-      <operations id="29" stage="1" latency="1"/>
-      <operations id="30" stage="1" latency="1"/>
-      <operations id="31" stage="1" latency="1"/>
-      <operations id="32" stage="1" latency="1"/>
-      <operations id="33" stage="1" latency="1"/>
-      <operations id="34" stage="1" latency="1"/>
-      <operations id="35" stage="1" latency="1"/>
-      <operations id="42" stage="1" latency="2"/>
-      <operations id="43" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
@@ -348,128 +97,31 @@
     <transitions inState="3" outState="4">
       <condition id="-1"/>
     </transitions>
-    <transitions inState="4" outState="5">
-      <condition id="-1"/>
-    </transitions>
-    <transitions inState="5" outState="6">
-      <condition id="-1"/>
-    </transitions>
-    <transitions inState="6" outState="7">
-      <condition id="-1"/>
-    </transitions>
-    <transitions inState="7" outState="8">
-      <condition id="-1"/>
-    </transitions>
   </fsm>
   <CFGRegionsRoot>
-    <cfgRegions mId="1" mTag="accelerator" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1043" mMaxLatency="1043" mIsDfPipe="true">
-      <basicBlocks>44</basicBlocks>
-      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.6/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.0/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.1/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.2/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.3/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.4/@sink.0/@inst">
-        <processe_list name="split_U0" ssdmobj_id="36">
+    <cfgRegions mId="1" mTag="accelerator" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1158" mMaxLatency="1158" mIsDfPipe="true">
+      <basicBlocks>14</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst">
+        <processe_list name="count_U0" ssdmobj_id="11">
           <pins>
-            <port name="In_r" top_port_object_id="" top_port_object_id_reference="_91" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="split_U0" ssdmobj_id="36" object_id="_96"/>
+            <port name="In_r" top_port_object_id="" top_port_object_id_reference="_22" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="count_U0" ssdmobj_id="11" object_id="_27"/>
           </pins>
         </processe_list>
-        <processe_list name="count0_U0" ssdmobj_id="37"/>
-        <processe_list name="count1_U0" ssdmobj_id="38"/>
-        <processe_list name="count2_U0" ssdmobj_id="39"/>
-        <processe_list name="count3_U0" ssdmobj_id="40"/>
-        <processe_list name="reduce_U0" ssdmobj_id="41"/>
-        <processe_list name="threshold_U0" ssdmobj_id="42">
+        <processe_list name="threshold_U0" ssdmobj_id="12">
           <pins>
-            <port name="Out_r" dir="DirOut" top_port_object_id="" top_port_object_id_reference="_92" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="threshold_U0" ssdmobj_id="42" object_id="_105"/>
+            <port name="Out_r" dir="DirOut" top_port_object_id="" top_port_object_id_reference="_23" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="threshold_U0" ssdmobj_id="12" object_id="_31"/>
           </pins>
         </processe_list>
-        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="1" suggested_depth="2" name="input0_buf_data" ssdmobj_id="14">
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="appear" ssdmobj_id="10">
           <source>
             <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="split_U0" ssdmobj_id="36" object_id="_96"/>
+            <inst name="count_U0" ssdmobj_id="11" object_id="_27"/>
           </source>
           <sink>
             <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="count0_U0" ssdmobj_id="37" object_id="_111"/>
-          </sink>
-        </channel_list>
-        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="1" suggested_depth="2" name="input1_buf_data" ssdmobj_id="15">
-          <source>
-            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="split_U0" ssdmobj_id="36" object_id="_96"/>
-          </source>
-          <sink>
-            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="count1_U0" ssdmobj_id="38" object_id="_117"/>
-          </sink>
-        </channel_list>
-        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="1" suggested_depth="2" name="input2_buf_data" ssdmobj_id="16">
-          <source>
-            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="split_U0" ssdmobj_id="36" object_id="_96"/>
-          </source>
-          <sink>
-            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="count2_U0" ssdmobj_id="39" object_id="_123"/>
-          </sink>
-        </channel_list>
-        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="1" suggested_depth="2" name="input3_buf_data" ssdmobj_id="17">
-          <source>
-            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="split_U0" ssdmobj_id="36" object_id="_96"/>
-          </source>
-          <sink>
-            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="count3_U0" ssdmobj_id="40" object_id="_129"/>
-          </sink>
-        </channel_list>
-        <channel_list depth="2" bitwidth="2048" suggested_type="1" suggested_depth="2" name="appear0_channel" ssdmobj_id="6">
-          <source>
-            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="count0_U0" ssdmobj_id="37" object_id="_111"/>
-          </source>
-          <sink>
-            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="reduce_U0" ssdmobj_id="41" object_id="_135"/>
-          </sink>
-        </channel_list>
-        <channel_list depth="2" bitwidth="2048" suggested_type="1" suggested_depth="2" name="appear1_channel" ssdmobj_id="5">
-          <source>
-            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="count1_U0" ssdmobj_id="38" object_id="_117"/>
-          </source>
-          <sink>
-            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="reduce_U0" ssdmobj_id="41" object_id="_135"/>
-          </sink>
-        </channel_list>
-        <channel_list depth="2" bitwidth="2048" suggested_type="1" suggested_depth="2" name="appear2_channel" ssdmobj_id="4">
-          <source>
-            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="count2_U0" ssdmobj_id="39" object_id="_123"/>
-          </source>
-          <sink>
-            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="reduce_U0" ssdmobj_id="41" object_id="_135"/>
-          </sink>
-        </channel_list>
-        <channel_list depth="2" bitwidth="2048" suggested_type="1" suggested_depth="2" name="appear3_channel" ssdmobj_id="3">
-          <source>
-            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="count3_U0" ssdmobj_id="40" object_id="_129"/>
-          </source>
-          <sink>
-            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="reduce_U0" ssdmobj_id="41" object_id="_135"/>
-          </sink>
-        </channel_list>
-        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="1" suggested_depth="2" name="reduced_blocks_buf_data" ssdmobj_id="22">
-          <source>
-            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="reduce_U0" ssdmobj_id="41" object_id="_135"/>
-          </source>
-          <sink>
-            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="threshold_U0" ssdmobj_id="42" object_id="_105"/>
+            <inst name="threshold_U0" ssdmobj_id="12" object_id="_31"/>
           </sink>
         </channel_list>
       </mDfPipe>

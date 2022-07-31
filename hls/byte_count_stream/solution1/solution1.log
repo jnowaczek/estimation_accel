@@ -9411,3 +9411,532 @@ INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satis
 INFO: [HLS 200-789] **** Estimated Fmax: 90.94 MHz
 INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 12 seconds. CPU system time: 2 seconds. Elapsed time: 37.667 seconds; current allocated memory: 331.652 MB.
 INFO: [HLS 200-112] Total CPU user time: 13 seconds. Total CPU system time: 3 seconds. Total elapsed time: 39.212 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 878.773 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_stream/src/byte_count_stream.cpp' ... 
+WARNING: [HLS 207-5286] expression result unused (byte_count_stream/src/byte_count_stream.cpp:24:12)
+WARNING: [HLS 207-5286] expression result unused (byte_count_stream/src/byte_count_stream.cpp:25:12)
+WARNING: [HLS 207-5286] expression result unused (byte_count_stream/src/byte_count_stream.cpp:26:12)
+WARNING: [HLS 207-5286] expression result unused (byte_count_stream/src/byte_count_stream.cpp:27:12)
+WARNING: [HLS 207-5292] unused parameter 'name' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:309:77)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 6.296 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::ap_bit_ref(ap_int_base<32, false>*, int)' into 'ap_int_base<32, false>::operator[](int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1175:30)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'split(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:27:10)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'split(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:27:10)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'split(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:26:10)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'split(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:26:10)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'split(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:25:10)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'split(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:25:10)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<32, false>::operator bool() const' into 'split(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:24:10)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator[](int)' into 'split(hls::stream<ap_uint<32>, 0>&, hls::stream<unsigned char, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:24:10)
+INFO: [HLS 214-131] Inlining function 'hls::stream_buf<unsigned char [256]>::write_acquire()' into 'hls::stream_of_blocks<unsigned char [256], 2>::write_acquire()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:330:84)
+INFO: [HLS 214-131] Inlining function 'hls::stream_of_blocks<unsigned char [256], 2>::write_acquire()' into 'hls::write_lock<unsigned char [256]>::write_lock(hls::stream_of_blocks<unsigned char [256], 2>&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:284:105)
+INFO: [HLS 214-131] Inlining function 'hls::stream_buf<unsigned char [256]>::write_release()' into 'hls::stream_of_blocks<unsigned char [256], 2>::write_release()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:332:68)
+INFO: [HLS 214-131] Inlining function 'hls::stream_of_blocks<unsigned char [256], 2>::write_release()' into 'hls::write_lock<unsigned char [256]>::~write_lock()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:290:61)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::write_lock(hls::stream_of_blocks<unsigned char [256], 2>&)' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:35:33)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::~write_lock()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:66:1)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:65:2)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:60:12)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:59:4)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:41:2)
+INFO: [HLS 214-131] Inlining function 'hls::stream_buf<unsigned char [256]>::read_acquire()' into 'hls::stream_of_blocks<unsigned char [256], 2>::read_acquire()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:326:83)
+INFO: [HLS 214-131] Inlining function 'hls::stream_of_blocks<unsigned char [256], 2>::read_acquire()' into 'hls::read_lock<unsigned char [256]>::read_lock(hls::stream_of_blocks<unsigned char [256], 2>&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:265:104)
+INFO: [HLS 214-131] Inlining function 'hls::stream_buf<unsigned char [256]>::read_release()' into 'hls::stream_of_blocks<unsigned char [256], 2>::read_release()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:328:67)
+INFO: [HLS 214-131] Inlining function 'hls::stream_of_blocks<unsigned char [256], 2>::read_release()' into 'hls::read_lock<unsigned char [256]>::~read_lock()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:271:60)
+INFO: [HLS 214-131] Inlining function 'hls::read_lock<unsigned char [256]>::read_lock(hls::stream_of_blocks<unsigned char [256], 2>&)' into 'threshold(hls::stream_of_blocks<unsigned char [256], 2>&, hls::stream<int, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:72:32)
+INFO: [HLS 214-131] Inlining function 'hls::read_lock<unsigned char [256]>::~read_lock()' into 'threshold(hls::stream_of_blocks<unsigned char [256], 2>&, hls::stream<int, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:81:1)
+INFO: [HLS 214-131] Inlining function 'hls::read_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'threshold(hls::stream_of_blocks<unsigned char [256], 2>&, hls::stream<int, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:76:7)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_stream/src/byte_count_stream.cpp:39:9) in function 'count' completely with a factor of 256 (byte_count_stream/src/byte_count_stream.cpp:32:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'appear' with compact=bit mode in 2048-bits (byte_count_stream/src/byte_count_stream.cpp:11:39)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Out' with compact=bit mode in 32-bits (byte_count_stream/src/byte_count_stream.cpp:6:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'In' with compact=bit mode in 32-bits (byte_count_stream/src/byte_count_stream.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 9.591 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 1.099 GB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_75_1' (byte_count_stream/src/byte_count_stream.cpp:73) in function 'threshold' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_21_1' (byte_count_stream/src/byte_count_stream.cpp:21) in function 'split' automatically.
+WARNING: [HLS 200-805] An internal stream 'input' (byte_count_stream/src/byte_count_stream.cpp:10) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'accelerator' (byte_count_stream/src/byte_count_stream.cpp:6:1), detected/extracted 3 process function(s): 
+	 'split'
+	 'count'
+	 'threshold'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (byte_count_stream/src/byte_count_stream.cpp:49:9) to (byte_count_stream/src/byte_count_stream.cpp:48:15) in function 'count'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.267 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.106 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'accelerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'split' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_21_1'.
+WARNING: [HLS 200-880] The II Violation in module 'split' (loop 'VITIS_LOOP_21_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between fifo write operation ('input1_write_ln174', C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'input1' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) and fifo write operation ('input1_write_ln174', C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'input1' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'split' (loop 'VITIS_LOOP_21_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between fifo write operation ('input1_write_ln174', C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'input1' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) and fifo write operation ('input1_write_ln174', C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'input1' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+WARNING: [HLS 200-880] The II Violation in module 'split' (loop 'VITIS_LOOP_21_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between fifo write operation ('input1_write_ln174', C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'input1' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) and fifo write operation ('input1_write_ln174', C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'input1' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174).
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 4, Depth = 5, loop 'VITIS_LOOP_21_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.291 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.087 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'APPEARANCES'
+WARNING: [HLS 200-871] Estimated clock period (10.996ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'count' consists of the following:	'load' operation ('count_load_1', byte_count_stream/src/byte_count_stream.cpp:59) on local variable 'count' [21]  (0 ns)
+	'shl' operation ('shl_ln59_1', byte_count_stream/src/byte_count_stream.cpp:59) [34]  (0 ns)
+	'or' operation ('or_ln59', byte_count_stream/src/byte_count_stream.cpp:59) [37]  (3.46 ns)
+	'lshr' operation ('lshr_ln60', byte_count_stream/src/byte_count_stream.cpp:60) [40]  (0 ns)
+	'select' operation ('select_ln56_1', byte_count_stream/src/byte_count_stream.cpp:56) [43]  (0 ns)
+	'add' operation ('count', byte_count_stream/src/byte_count_stream.cpp:44) [44]  (5.94 ns)
+	'store' operation ('count_1_1_write_ln48', byte_count_stream/src/byte_count_stream.cpp:48) of variable 'count', byte_count_stream/src/byte_count_stream.cpp:44 on local variable 'count' [48]  (1.59 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.128 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'threshold_Pipeline_VITIS_LOOP_75_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_75_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_75_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.147 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'accelerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'split' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'split' pipeline 'VITIS_LOOP_21_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'split'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'count/out_r' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.215 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'threshold_Pipeline_VITIS_LOOP_75_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'threshold_Pipeline_VITIS_LOOP_75_1' pipeline 'VITIS_LOOP_75_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold_Pipeline_VITIS_LOOP_75_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.317 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'accelerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/In_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'accelerator' to 'ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'accelerator'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 1.099 GB.
+INFO: [RTMG 210-285] Implementing FIFO 'input_U(accelerator_fifo_w8_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'appear_channel_U(accelerator_fifo_w2048_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_count_U0_U(accelerator_start_for_count_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.595 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.525 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for accelerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for accelerator.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 90.94 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 19.812 seconds; current allocated memory: 261.316 MB.
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 21.62 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 757.559 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_stream/src/byte_count_stream.cpp' ... 
+WARNING: [HLS 207-5292] unused parameter 'name' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:309:77)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.573 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream_buf<unsigned char [256]>::write_acquire()' into 'hls::stream_of_blocks<unsigned char [256], 2>::write_acquire()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:330:84)
+INFO: [HLS 214-131] Inlining function 'hls::stream_of_blocks<unsigned char [256], 2>::write_acquire()' into 'hls::write_lock<unsigned char [256]>::write_lock(hls::stream_of_blocks<unsigned char [256], 2>&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:284:105)
+INFO: [HLS 214-131] Inlining function 'hls::stream_buf<unsigned char [256]>::write_release()' into 'hls::stream_of_blocks<unsigned char [256], 2>::write_release()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:332:68)
+INFO: [HLS 214-131] Inlining function 'hls::stream_of_blocks<unsigned char [256], 2>::write_release()' into 'hls::write_lock<unsigned char [256]>::~write_lock()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:290:61)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::write_lock(hls::stream_of_blocks<unsigned char [256], 2>&)' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:20:33)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::~write_lock()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:51:1)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:50:2)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:45:12)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:44:4)
+INFO: [HLS 214-131] Inlining function 'hls::write_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'count(hls::stream<unsigned char, 0>&, hls::stream_of_blocks<unsigned char [256], 2>&)' (byte_count_stream/src/byte_count_stream.cpp:26:2)
+INFO: [HLS 214-131] Inlining function 'hls::stream_buf<unsigned char [256]>::read_acquire()' into 'hls::stream_of_blocks<unsigned char [256], 2>::read_acquire()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:326:83)
+INFO: [HLS 214-131] Inlining function 'hls::stream_of_blocks<unsigned char [256], 2>::read_acquire()' into 'hls::read_lock<unsigned char [256]>::read_lock(hls::stream_of_blocks<unsigned char [256], 2>&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:265:104)
+INFO: [HLS 214-131] Inlining function 'hls::stream_buf<unsigned char [256]>::read_release()' into 'hls::stream_of_blocks<unsigned char [256], 2>::read_release()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:328:67)
+INFO: [HLS 214-131] Inlining function 'hls::stream_of_blocks<unsigned char [256], 2>::read_release()' into 'hls::read_lock<unsigned char [256]>::~read_lock()' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\hls_streamofblocks.h:271:60)
+INFO: [HLS 214-131] Inlining function 'hls::read_lock<unsigned char [256]>::read_lock(hls::stream_of_blocks<unsigned char [256], 2>&)' into 'threshold(hls::stream_of_blocks<unsigned char [256], 2>&, hls::stream<int, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:57:32)
+INFO: [HLS 214-131] Inlining function 'hls::read_lock<unsigned char [256]>::~read_lock()' into 'threshold(hls::stream_of_blocks<unsigned char [256], 2>&, hls::stream<int, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:66:1)
+INFO: [HLS 214-131] Inlining function 'hls::read_lock<unsigned char [256]>::operator unsigned char (&) [256]()' into 'threshold(hls::stream_of_blocks<unsigned char [256], 2>&, hls::stream<int, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:61:7)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_stream/src/byte_count_stream.cpp:24:9) in function 'count' completely with a factor of 256 (byte_count_stream/src/byte_count_stream.cpp:17:0)
+INFO: [HLS 214-241] Aggregating scalar variable 'appear' with compact=bit mode in 2048-bits (byte_count_stream/src/byte_count_stream.cpp:10:39)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Out' with compact=bit mode in 32-bits (byte_count_stream/src/byte_count_stream.cpp:6:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'In' with compact=bit mode in 8-bits (byte_count_stream/src/byte_count_stream.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 8.74 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.038 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 1.099 GB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_60_1' (byte_count_stream/src/byte_count_stream.cpp:58) in function 'threshold' automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'accelerator' (byte_count_stream/src/byte_count_stream.cpp:6:1), detected/extracted 2 process function(s): 
+	 'count'
+	 'threshold'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (byte_count_stream/src/byte_count_stream.cpp:34:9) to (byte_count_stream/src/byte_count_stream.cpp:33:15) in function 'count'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'accelerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'APPEARANCES'
+WARNING: [HLS 200-871] Estimated clock period (10.996ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'count' consists of the following:	'load' operation ('count_load_1', byte_count_stream/src/byte_count_stream.cpp:44) on local variable 'count' [21]  (0 ns)
+	'shl' operation ('shl_ln44_1', byte_count_stream/src/byte_count_stream.cpp:44) [34]  (0 ns)
+	'or' operation ('or_ln44', byte_count_stream/src/byte_count_stream.cpp:44) [37]  (3.46 ns)
+	'lshr' operation ('lshr_ln45', byte_count_stream/src/byte_count_stream.cpp:45) [40]  (0 ns)
+	'select' operation ('select_ln41_1', byte_count_stream/src/byte_count_stream.cpp:41) [43]  (0 ns)
+	'add' operation ('count', byte_count_stream/src/byte_count_stream.cpp:29) [44]  (5.94 ns)
+	'store' operation ('count_1_1_write_ln33', byte_count_stream/src/byte_count_stream.cpp:33) of variable 'count', byte_count_stream/src/byte_count_stream.cpp:29 on local variable 'count' [48]  (1.59 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'threshold_Pipeline_VITIS_LOOP_60_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_60_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_60_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.157 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.068 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'accelerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'count/out_r' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.225 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'threshold_Pipeline_VITIS_LOOP_60_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'threshold_Pipeline_VITIS_LOOP_60_1' pipeline 'VITIS_LOOP_60_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold_Pipeline_VITIS_LOOP_60_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.325 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.166 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'accelerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/In_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'accelerator' to 'ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'accelerator'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 1.099 GB.
+INFO: [RTMG 210-285] Implementing FIFO 'appear_channel_U(accelerator_fifo_w2048_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.464 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.449 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for accelerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for accelerator.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 90.94 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 17.46 seconds; current allocated memory: 379.043 MB.
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 2 seconds. Total elapsed time: 18.853 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 6.586 seconds; current allocated memory: 95.680 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 10.875 seconds; peak allocated memory: 1.104 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 766.906 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_stream/src/byte_count_stream.cpp' ... 
+ERROR: [HLS 207-3776] use of undeclared identifier 'outL' (byte_count_stream/src/byte_count_stream.cpp:18:33)
+WARNING: [HLS 207-5542] invalid variable expr  (byte_count_stream/src/byte_count_stream.cpp:18:33)
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 1.204 seconds; current allocated memory: 367.660 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 2.829 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 756.250 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_stream/src/byte_count_stream.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 5.942 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_stream/src/byte_count_stream.cpp:20:9) in function 'count' completely with a factor of 256 (byte_count_stream/src/byte_count_stream.cpp:16:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'Out' with compact=bit mode in 32-bits (byte_count_stream/src/byte_count_stream.cpp:6:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'In' with compact=bit mode in 8-bits (byte_count_stream/src/byte_count_stream.cpp:6:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.768 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.12 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 1.099 GB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_1' (byte_count_stream/src/byte_count_stream.cpp:52) in function 'threshold' automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'accelerator' (byte_count_stream/src/byte_count_stream.cpp:6:1), detected/extracted 2 process function(s): 
+	 'count'
+	 'threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appear' (byte_count_stream/src/byte_count_stream.cpp:22:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'appear' (byte_count_stream/src/byte_count_stream.cpp:40:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appear' (byte_count_stream/src/byte_count_stream.cpp:46:15)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'.
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.971 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'accelerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.266 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.658 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.906 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'threshold_Pipeline_VITIS_LOOP_54_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_54_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.405 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'accelerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_Pipeline_APPEARANCES'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.424 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'threshold_Pipeline_VITIS_LOOP_54_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'threshold_Pipeline_VITIS_LOOP_54_1' pipeline 'VITIS_LOOP_54_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold_Pipeline_VITIS_LOOP_54_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.605 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.113 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'accelerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/In_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'accelerator' to 'ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'accelerator'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO accelerator_appear_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'accelerator_appear_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.47 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.455 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for accelerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for accelerator.
+INFO: [HLS 200-789] **** Estimated Fmax: 141.02 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7 seconds. CPU system time: 1 seconds. Elapsed time: 18.169 seconds; current allocated memory: 381.395 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 19.603 seconds; peak allocated memory: 1.099 GB.

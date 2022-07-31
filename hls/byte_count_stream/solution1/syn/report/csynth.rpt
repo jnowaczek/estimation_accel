@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'accelerator'
 ================================================================
 + General Information: 
-    * Date:           Tue Jul 19 19:36:03 2022
+    * Date:           Mon Jul 25 22:36:30 2022
     * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
     * Project:        byte_count_stream
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -15,31 +15,18 @@
 + Performance & Resource Estimates: 
     
     PS: '+' for module; 'o' for loop; '*' for dataflow
-    +-----------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+----+------------+--------------+-----+
-    |                 Modules                 |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |        |    |            |              |     |
-    |                 & Loops                 |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|     FF     |      LUT     | URAM|
-    +-----------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+----+------------+--------------+-----+
-    |+ accelerator*                           |  Timing|  -3.70|     1043|  1.147e+04|         -|      265|     -|  dataflow|  5 (4%)|   -|  8965 (25%)|  69083 (392%)|    -|
-    | + split                                 |       -|   0.57|      258|  2.580e+03|         -|      258|     -|        no|       -|   -|    24 (~0%)|     105 (~0%)|    -|
-    |  o VITIS_LOOP_39_1                      |       -|   7.30|      256|  2.560e+03|         2|        1|   256|       yes|       -|   -|           -|             -|    -|
-    | + count0                                |  Timing|  -3.70|      264|  2.903e+03|         -|      264|     -|        no|       -|   -|   2112 (6%)|   14919 (84%)|    -|
-    |  + count0_Pipeline_APPEARANCES          |  Timing|  -3.70|      259|  2.848e+03|         -|      259|     -|        no|       -|   -|   2096 (5%)|   14829 (84%)|    -|
-    |   o APPEARANCES                         |       -|   7.30|      257|  2.826e+03|         3|        1|   256|       yes|       -|   -|           -|             -|    -|
-    | + count1                                |  Timing|  -3.70|      264|  2.903e+03|         -|      264|     -|        no|       -|   -|   2112 (6%)|   14919 (84%)|    -|
-    |  + count1_Pipeline_APPEARANCES          |  Timing|  -3.70|      259|  2.848e+03|         -|      259|     -|        no|       -|   -|   2096 (5%)|   14829 (84%)|    -|
-    |   o APPEARANCES                         |       -|   7.30|      257|  2.826e+03|         3|        1|   256|       yes|       -|   -|           -|             -|    -|
-    | + count2                                |  Timing|  -3.70|      264|  2.903e+03|         -|      264|     -|        no|       -|   -|   2112 (6%)|   14919 (84%)|    -|
-    |  + count2_Pipeline_APPEARANCES          |  Timing|  -3.70|      259|  2.848e+03|         -|      259|     -|        no|       -|   -|   2096 (5%)|   14829 (84%)|    -|
-    |   o APPEARANCES                         |       -|   7.30|      257|  2.826e+03|         3|        1|   256|       yes|       -|   -|           -|             -|    -|
-    | + count3                                |  Timing|  -3.70|      264|  2.903e+03|         -|      264|     -|        no|       -|   -|   2112 (6%)|   14919 (84%)|    -|
-    |  + count3_Pipeline_APPEARANCES          |  Timing|  -3.70|      259|  2.848e+03|         -|      259|     -|        no|       -|   -|   2096 (5%)|   14829 (84%)|    -|
-    |   o APPEARANCES                         |       -|   7.30|      257|  2.826e+03|         3|        1|   256|       yes|       -|   -|           -|             -|    -|
-    | + reduce                                |       -|   0.38|      258|  2.580e+03|         -|      258|     -|        no|       -|   -|    48 (~0%)|    8807 (50%)|    -|
-    |  o VITIS_LOOP_201_1                     |       -|   7.30|      256|  2.560e+03|         2|        1|   256|       yes|       -|   -|           -|             -|    -|
-    | + threshold                             |       -|   0.21|      260|  2.600e+03|         -|      260|     -|        no|       -|   -|    49 (~0%)|      217 (1%)|    -|
-    |  + threshold_Pipeline_VITIS_LOOP_214_1  |       -|   0.21|      258|  2.580e+03|         -|      258|     -|        no|       -|   -|    44 (~0%)|     154 (~0%)|    -|
-    |   o VITIS_LOOP_214_1                    |       -|   7.30|      256|  2.560e+03|         2|        1|   256|       yes|       -|   -|           -|             -|    -|
-    +-----------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+----+------------+--------------+-----+
+    +----------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+------------+-----+
+    |                 Modules                | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |        |    |           |            |     |
+    |                 & Loops                | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|     FF    |     LUT    | URAM|
+    +----------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+------------+-----+
+    |+ accelerator*                          |     -|  0.21|     1158|  1.158e+04|         -|     1159|     -|  dataflow|  2 (1%)|   -|  229 (~0%)|  2521 (14%)|    -|
+    | + count                                |     -|  1.25|     1158|  1.158e+04|         -|     1158|     -|        no|       -|   -|  180 (~0%)|  2325 (13%)|    -|
+    |  + count_Pipeline_APPEARANCES          |     -|  1.25|     1028|  1.028e+04|         -|     1028|     -|        no|       -|   -|   47 (~0%)|   161 (~0%)|    -|
+    |   o APPEARANCES                        |     -|  7.30|     1026|  1.026e+04|         4|        1|  1024|       yes|       -|   -|          -|           -|    -|
+    | + threshold                            |     -|  0.21|      260|  2.600e+03|         -|      260|     -|        no|       -|   -|   49 (~0%)|    194 (1%)|    -|
+    |  + threshold_Pipeline_VITIS_LOOP_54_1  |     -|  0.21|      258|  2.580e+03|         -|      258|     -|        no|       -|   -|   44 (~0%)|   154 (~0%)|    -|
+    |   o VITIS_LOOP_54_1                    |     -|  7.30|      256|  2.560e+03|         2|        1|   256|       yes|       -|   -|          -|           -|    -|
+    +----------------------------------------+------+------+---------+-----------+----------+---------+------+----------+--------+----+-----------+------------+-----+
 
 
 ================================================================
@@ -49,7 +36,7 @@
 +-----------+------------+
 | Interface | Data Width |
 +-----------+------------+
-| In_r      | 32         |
+| In_r      | 8          |
 | Out_r     | 32         |
 +-----------+------------+
 
@@ -67,12 +54,12 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+----------+-----------+-------------------------+
-| Argument | Direction | Datatype                |
-+----------+-----------+-------------------------+
-| In       | in        | stream<ap_uint<32>, 0>& |
-| Out      | out       | stream<int, 0>&         |
-+----------+-----------+-------------------------+
++----------+-----------+---------------------------+
+| Argument | Direction | Datatype                  |
++----------+-----------+---------------------------+
+| In       | in        | stream<unsigned char, 0>& |
+| Out      | out       | stream<int, 0>&           |
++----------+-----------+---------------------------+
 
 * SW-to-HW Mapping
 +----------+--------------+-----------+
@@ -86,82 +73,46 @@
 ================================================================
 == Bind Op Report
 ================================================================
-+-----------------------------------------+-----+--------+-----------------+------+--------+---------+
-| Name                                    | DSP | Pragma | Variable        | Op   | Impl   | Latency |
-+-----------------------------------------+-----+--------+-----------------+------+--------+---------+
-| + accelerator                           | 0   |        |                 |      |        |         |
-|   appear3_channel_U                     | -   |        | appear3_channel | fifo | srl    | 0       |
-|   appear2_channel_U                     | -   |        | appear2_channel | fifo | srl    | 0       |
-|   appear1_channel_U                     | -   |        | appear1_channel | fifo | srl    | 0       |
-|   appear0_channel_U                     | -   |        | appear0_channel | fifo | srl    | 0       |
-|  + split                                | 0   |        |                 |      |        |         |
-|    add_ln39_fu_204_p2                   | -   |        | add_ln39        | add  | fabric | 0       |
-|  + count0                               | 0   |        |                 |      |        |         |
-|   + count0_Pipeline_APPEARANCES         | 0   |        |                 |      |        |         |
-|     add_ln67_fu_147_p2                  | -   |        | add_ln67        | add  | fabric | 0       |
-|     count_fu_267_p2                     | -   |        | count           | add  | fabric | 0       |
-|  + count1                               | 0   |        |                 |      |        |         |
-|   + count1_Pipeline_APPEARANCES         | 0   |        |                 |      |        |         |
-|     add_ln102_fu_147_p2                 | -   |        | add_ln102       | add  | fabric | 0       |
-|     count_fu_267_p2                     | -   |        | count           | add  | fabric | 0       |
-|  + count2                               | 0   |        |                 |      |        |         |
-|   + count2_Pipeline_APPEARANCES         | 0   |        |                 |      |        |         |
-|     add_ln137_fu_147_p2                 | -   |        | add_ln137       | add  | fabric | 0       |
-|     count_fu_267_p2                     | -   |        | count           | add  | fabric | 0       |
-|  + count3                               | 0   |        |                 |      |        |         |
-|   + count3_Pipeline_APPEARANCES         | 0   |        |                 |      |        |         |
-|     add_ln172_fu_147_p2                 | -   |        | add_ln172       | add  | fabric | 0       |
-|     count_1_fu_267_p2                   | -   |        | count_1         | add  | fabric | 0       |
-|  + reduce                               | 0   |        |                 |      |        |         |
-|    add_ln201_fu_193_p2                  | -   |        | add_ln201       | add  | fabric | 0       |
-|    add_ln202_1_fu_251_p2                | -   |        | add_ln202_1     | add  | fabric | 0       |
-|  + threshold                            | 0   |        |                 |      |        |         |
-|   + threshold_Pipeline_VITIS_LOOP_214_1 | 0   |        |                 |      |        |         |
-|     add_ln214_fu_89_p2                  | -   |        | add_ln214       | add  | fabric | 0       |
-|     add_ln216_fu_118_p2                 | -   |        | add_ln216       | add  | fabric | 0       |
-+-----------------------------------------+-----+--------+-----------------+------+--------+---------+
++----------------------------------------+-----+--------+----------+-----+--------+---------+
+| Name                                   | DSP | Pragma | Variable | Op  | Impl   | Latency |
++----------------------------------------+-----+--------+----------+-----+--------+---------+
+| + accelerator                          | 0   |        |          |     |        |         |
+|  + count                               | 0   |        |          |     |        |         |
+|   + count_Pipeline_APPEARANCES         | 0   |        |          |     |        |         |
+|     i_3_fu_120_p2                      | -   |        | i_3      | add | fabric | 0       |
+|     count_1_fu_176_p2                  | -   |        | count_1  | add | fabric | 0       |
+|  + threshold                           | 0   |        |          |     |        |         |
+|   + threshold_Pipeline_VITIS_LOOP_54_1 | 0   |        |          |     |        |         |
+|     add_ln54_fu_79_p2                  | -   |        | add_ln54 | add | fabric | 0       |
+|     add_ln56_fu_108_p2                 | -   |        | add_ln56 | add | fabric | 0       |
++----------------------------------------+-----+--------+----------+-----+--------+---------+
 
 
 ================================================================
 == Bind Storage Report
 ================================================================
-+-----------------------------+------+------+--------+-------------------------+---------+------+---------+
-| Name                        | BRAM | URAM | Pragma | Variable                | Storage | Impl | Latency |
-+-----------------------------+------+------+--------+-------------------------+---------+------+---------+
-| + accelerator               | 5    | 0    |        |                         |         |      |         |
-|   input3_buf_data_U         | 1    | -    |        | input3_buf_data         | ram_1p  | auto | 1       |
-|   reduced_blocks_buf_data_U | 1    | -    |        | reduced_blocks_buf_data | ram_1p  | auto | 1       |
-+-----------------------------+------+------+--------+-------------------------+---------+------+---------+
++---------------+------+------+--------+----------+---------+------+---------+
+| Name          | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
++---------------+------+------+--------+----------+---------+------+---------+
+| + accelerator | 2    | 0    |        |          |         |      |         |
+|   appear_U    | 1    | -    |        | appear   | ram_t2p | auto | 1       |
++---------------+------+------+--------+----------+---------+------+---------+
 
 
 ================================================================
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+------------+--------------------------------+-----------------------------------------------------------------------+
-| Type       | Options                        | Location                                                              |
-+------------+--------------------------------+-----------------------------------------------------------------------+
-| interface  | mode=ap_ctrl_chain port=return | byte_count_stream/src/byte_count_stream.cpp:11 in accelerator, return |
-| dataflow   |                                | byte_count_stream/src/byte_count_stream.cpp:12 in accelerator         |
-| inline     | off                            | byte_count_stream/src/byte_count_stream.cpp:32 in split               |
-| inline     | off                            | byte_count_stream/src/byte_count_stream.cpp:51 in count0              |
-| dependence | variable=outL intra RAW false  | byte_count_stream/src/byte_count_stream.cpp:56 in count0, outL        |
-| unroll     |                                | byte_count_stream/src/byte_count_stream.cpp:59 in count0              |
-| pipeline   | II=1                           | byte_count_stream/src/byte_count_stream.cpp:68 in count0              |
-| inline     | off                            | byte_count_stream/src/byte_count_stream.cpp:85 in count1              |
-| dependence | variable=outL intra RAW false  | byte_count_stream/src/byte_count_stream.cpp:89 in count1, outL        |
-| unroll     |                                | byte_count_stream/src/byte_count_stream.cpp:92 in count1              |
-| pipeline   | II=1                           | byte_count_stream/src/byte_count_stream.cpp:103 in count1             |
-| inline     | off                            | byte_count_stream/src/byte_count_stream.cpp:120 in count2             |
-| dependence | variable=outL intra RAW false  | byte_count_stream/src/byte_count_stream.cpp:124 in count2, outL       |
-| unroll     |                                | byte_count_stream/src/byte_count_stream.cpp:127 in count2             |
-| pipeline   | II=1                           | byte_count_stream/src/byte_count_stream.cpp:138 in count2             |
-| inline     | off                            | byte_count_stream/src/byte_count_stream.cpp:155 in count3             |
-| dependence | variable=outL intra RAW false  | byte_count_stream/src/byte_count_stream.cpp:159 in count3, outL       |
-| unroll     |                                | byte_count_stream/src/byte_count_stream.cpp:162 in count3             |
-| pipeline   | II=1                           | byte_count_stream/src/byte_count_stream.cpp:173 in count3             |
-| inline     | off                            | byte_count_stream/src/byte_count_stream.cpp:193 in reduce             |
-| inline     | off                            | byte_count_stream/src/byte_count_stream.cpp:209 in threshold          |
-+------------+--------------------------------+-----------------------------------------------------------------------+
++------------+---------------------------------+----------------------------------------------------------------------+
+| Type       | Options                         | Location                                                             |
++------------+---------------------------------+----------------------------------------------------------------------+
+| interface  | mode=ap_ctrl_chain port=return  | byte_count_stream/src/byte_count_stream.cpp:7 in accelerator, return |
+| dataflow   |                                 | byte_count_stream/src/byte_count_stream.cpp:8 in accelerator         |
+| inline     | off                             | byte_count_stream/src/byte_count_stream.cpp:17 in count              |
+| dependence | variable=appear intra RAW false | byte_count_stream/src/byte_count_stream.cpp:18 in count, appear      |
+| unroll     |                                 | byte_count_stream/src/byte_count_stream.cpp:21 in count              |
+| pipeline   | II=1                            | byte_count_stream/src/byte_count_stream.cpp:30 in count              |
+| inline     | off                             | byte_count_stream/src/byte_count_stream.cpp:50 in threshold          |
++------------+---------------------------------+----------------------------------------------------------------------+
 
 

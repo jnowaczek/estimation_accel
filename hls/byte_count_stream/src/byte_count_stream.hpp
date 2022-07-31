@@ -9,7 +9,6 @@
 #include "ap_fixed.h"
 #include "ap_int.h"
 #include "hls_stream.h"
-#include "hls_streamofblocks.h"
 
 #define DATA_T_WIDTH 8
 #define PACKED_T_WIDTH 32
@@ -43,30 +42,8 @@ typedef data_t block_data_t[BLOCK_LENGTH / 2];
 typedef count_t block_count_t[COUNT_BUCKETS];
 
 // Function prototypes
-void split(hls::stream<packed_t> &in, hls::stream_of_blocks<block_data_t> &out0,
-		hls::stream_of_blocks<block_data_t> &out1,
-		hls::stream_of_blocks<block_data_t> &out2,
-		hls::stream_of_blocks<block_data_t> &out3);
+void count(hls::stream<data_t> &in, count_t appear[COUNT_BUCKETS]);
 
-void count0(hls::stream_of_blocks<block_data_t> &in,
-		hls::stream_of_blocks<block_count_t> &out);
-
-void count1(hls::stream_of_blocks<block_data_t> &in,
-		hls::stream_of_blocks<block_count_t> &out);
-
-void count2(hls::stream_of_blocks<block_data_t> &in,
-		hls::stream_of_blocks<block_count_t> &out);
-
-void count3(hls::stream_of_blocks<block_data_t> &in,
-		hls::stream_of_blocks<block_count_t> &out);
-
-void reduce(hls::stream_of_blocks<block_count_t> &in0,
-		hls::stream_of_blocks<block_count_t> &in1,
-		hls::stream_of_blocks<block_count_t> &in2,
-		hls::stream_of_blocks<block_count_t> &in3,
-		hls::stream_of_blocks<block_count_t> &out);
-
-void threshold(hls::stream_of_blocks<block_count_t> &in,
-		hls::stream<result_t> &out);
+void threshold(count_t appear[BLOCK_LENGTH], hls::stream<result_t> &out);
 
 void accelerator(hls::stream<packed_t> &In, hls::stream<result_t> &Out);

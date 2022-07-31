@@ -22,5 +22,4 @@ obj/byte_count_stream_bench.o: ../../../src/byte_count_stream_bench.cpp \
  C:/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_ref.h \
  C:/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_special.h \
  C:/Xilinx/Vitis_HLS/2022.1/include/hls_stream.h \
- C:/Xilinx/Vitis_HLS/2022.1/include/hls_stream_thread_unsafe.h \
- C:/Xilinx/Vitis_HLS/2022.1/include/hls_streamofblocks.h
+ C:/Xilinx/Vitis_HLS/2022.1/include/hls_stream_thread_unsafe.h
