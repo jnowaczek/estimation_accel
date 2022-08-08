@@ -3,14 +3,18 @@
 
 #include "byte_count_stream.hpp"
 
-void accelerator(hls::stream<data_t> &In, hls::stream<result_t> &Out) {
+void accelerator(hls::stream<data_t> &In, unsigned int num_blocks, hls::stream<result_t> &Out) {
 #pragma HLS INTERFACE mode=ap_ctrl_chain port=return
 #pragma HLS DATAFLOW
 
 	count_t appear[COUNT_BUCKETS];
+	unsigned int counter = 0;
 
-	count(In, appear);
-	threshold(appear, Out);
+	while (counter < num_blocks) {
+		count(In, appear);
+		threshold(appear, Out);
+		counter += 1;
+	}
 }
 
 void count(hls::stream<data_t> &in, count_t appear[COUNT_BUCKETS]) {

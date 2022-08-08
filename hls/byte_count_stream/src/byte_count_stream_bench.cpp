@@ -14,10 +14,10 @@ void byte_count_gold(data_t *input, size_t length,
 
 	for (int b = 0; b < length; b += 1024) {
 		int count = 0;
-		int appearances[256] = { };
+		result_t appearances[256] = { };
 
 		for (int i = 0; i < BLOCK_LENGTH; i++) {
-			appearances[input[(1024 * b) + i]] += 1;
+			appearances[input[i]] += 1;
 		}
 
 		for (auto bucket : appearances) {
@@ -25,14 +25,14 @@ void byte_count_gold(data_t *input, size_t length,
 				count += 1;
 			}
 		}
+		input += 1024;
 
 		results.push_back(count);
 	}
 }
 
 int main() {
-	int retval = 0;
-
+	int returnValue = 0;
 	std::vector<std::string> paths = { "tb_data/zeros", "tb_data/count.bin",
 			"tb_data/count_sorted.bin", "tb_data/cantrbry/alice29.txt",
 			"tb_data/cantrbry/asyoulik.txt", "tb_data/cantrbry/cp.html",
@@ -45,12 +45,15 @@ int main() {
 	for (std::string path : paths) {
 		std::ifstream file(path, std::ios::in | std::ios::binary);
 
+		int blockCount;
+
 		if (file.is_open()) {
 			// Yoinked from https://stackoverflow.com/questions/22984956/tellg-function-give-wrong-size-of-file/22986486#22986486
-			file.ignore( std::numeric_limits<std::streamsize>::max() );
+			file.ignore(std::numeric_limits<std::streamsize>::max());
 			std::streamsize length = file.gcount();
 			file.clear();   //  Since ignore will have set eof.
-			int trimmedSize = (length / 1024) * 1024;
+			blockCount = length / 1024;
+			int trimmedSize = blockCount * 1024;
 
 			file.seekg(0, std::ios::beg);
 
@@ -63,27 +66,27 @@ int main() {
 		}
 
 		std::vector<data_t> data(input.begin(), input.end());
-		hls::stream<packed_t> inputStream("Input Stream");
+		hls::stream<data_t> inputStream("Input Stream");
 		hls::stream<result_t> outputStream("Output Stream");
 
-		for (int i = 0; i < data.size(); i += 2) {
-			packed_t upper = data[i];
-			data_t lower = data[i + 1];
-			upper = upper << 8;
-			upper = upper | lower;
-			inputStream << upper;
+		for (int i = 0; i < data.size(); i += 1) {
+			inputStream << data[i];
 		}
 
 		std::vector<result_t> expected;
 		byte_count_gold(data.data(), data.size(), expected);
 
 		std::vector<result_t> actual;
-		accelerator(inputStream, outputStream);
+		accelerator(inputStream, blockCount, outputStream);
+		while (!inputStream.empty()) {
+			usleep(10000);
+		}
+
 		while (!outputStream.empty()) {
 			actual.push_back(outputStream.read());
 		}
 
-		assert(inputStream.empty());
+//		assert(inputStream.empty());
 
 		if (actual == expected) {
 			std::cout << "    *** *** *** *** \n";
@@ -92,7 +95,7 @@ int main() {
 			for (result_t n : actual) {
 				std::cout << n << ", ";
 			}
-			std::cout << "    *** *** *** *** \n";
+			std::cout << "\n    *** *** *** *** \n";
 		} else {
 			std::cout << "    *** *** *** *** \n";
 			std::cout << "    Input file: " << path << "\n";
@@ -105,9 +108,9 @@ int main() {
 				std::cout << n << ", ";
 			}
 			std::cout << "\n    *** *** *** *** \n";
-			retval = 2;
+			returnValue = 2;
 		}
 	}
 
-	return retval;
+	return returnValue;
 }
