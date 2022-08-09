@@ -18,7 +18,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir IO \
     corename appear \
     op interface \
-    ports { appear_address0 { O 8 vector } appear_ce0 { O 1 bit } appear_we0 { O 1 bit } appear_d0 { O 8 vector } appear_address1 { O 8 vector } appear_ce1 { O 1 bit } appear_q1 { I 8 vector } } \
+    ports { appear_address0 { O 8 vector } appear_ce0 { O 1 bit } appear_we0 { O 1 bit } appear_d0 { O 3 vector } appear_address1 { O 8 vector } appear_ce1 { O 1 bit } appear_q1 { I 3 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'appear'"
@@ -60,14 +60,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 4 \
-    name count_1_1_out \
+    name count_V_5_out \
     type other \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_count_1_1_out \
+    corename dc_count_V_5_out \
     op interface \
-    ports { count_1_1_out { O 8 vector } count_1_1_out_ap_vld { O 1 bit } } \
+    ports { count_V_5_out { O 3 vector } count_V_5_out_ap_vld { O 1 bit } } \
 } "
 }
 

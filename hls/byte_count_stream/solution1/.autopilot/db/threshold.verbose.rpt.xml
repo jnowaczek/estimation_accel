@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'threshold'" level="0">
-<item name = "Date">Mon Jul 25 22:36:30 2022
+<item name = "Date">Mon Aug  8 19:27:23 2022
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)</item>
 <item name = "Project">byte_count_stream</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.091 ns, 2.70 ns</column>
+<column name="ap_clk">9.36 ns, 5.739 ns, 2.53 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">260, 260, 2.600 us, 2.600 us, 260, 260, no</column>
+<column name="">260, 260, 2.433 us, 2.433 us, 260, 260, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31">threshold_Pipeline_VITIS_LOOP_54_1, 258, 258, 2.580 us, 2.580 us, 258, 258, no</column>
+<column name="grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31">threshold_Pipeline_VITIS_LOOP_58_1, 258, 258, 2.415 us, 2.415 us, 258, 258, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,7 +50,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 44, 154, -</column>
+<column name="Instance">-, -, 44, 152, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 38, -</column>
 <column name="Register">-, -, 5, -, -</column>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31">threshold_Pipeline_VITIS_LOOP_54_1, 0, 0, 44, 154, 0</column>
+<column name="grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31">threshold_Pipeline_VITIS_LOOP_58_1, 0, 0, 44, 152, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -93,7 +93,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31_ap_start_reg">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -112,7 +112,7 @@
 <column name="ap_ready">out, 1, ap_ctrl_hs, threshold, return value</column>
 <column name="appear_address0">out, 8, ap_memory, appear, array</column>
 <column name="appear_ce0">out, 1, ap_memory, appear, array</column>
-<column name="appear_q0">in, 8, ap_memory, appear, array</column>
+<column name="appear_q0">in, 3, ap_memory, appear, array</column>
 <column name="Out_r_din">out, 32, ap_fifo, Out_r, pointer</column>
 <column name="Out_r_full_n">in, 1, ap_fifo, Out_r, pointer</column>
 <column name="Out_r_write">out, 1, ap_fifo, Out_r, pointer</column>

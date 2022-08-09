@@ -44,9 +44,9 @@ entry:0 %over_thresh_loc = alloca i32 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="32">
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="32">
 <![CDATA[
-entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_54_1, i8 %appear, i32 %over_thresh_loc
+entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i32 %over_thresh_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -62,9 +62,9 @@ entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_54_1, i8 %appear, i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="32">
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="32">
 <![CDATA[
-entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_54_1, i8 %appear, i32 %over_thresh_loc
+entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i32 %over_thresh_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -127,10 +127,10 @@ entry:4 %write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %
 
 <Node id="8" bw="0">
 <![CDATA[
-entry:5 %ret_ln60 = ret
+entry:5 %ret_ln64 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln60"/></StgValue>
+<StgValue><ssdm name="ret_ln64"/></StgValue>
 </operation>
 </state>
 </state_list>

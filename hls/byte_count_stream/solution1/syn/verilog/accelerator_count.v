@@ -174,12 +174,12 @@ output   In_r_read;
 output  [7:0] appear_address0;
 output   appear_ce0;
 output   appear_we0;
-output  [7:0] appear_d0;
+output  [2:0] appear_d0;
 output  [7:0] appear_address1;
 output   appear_ce1;
 output   appear_we1;
-output  [7:0] appear_d1;
-input  [7:0] appear_q1;
+output  [2:0] appear_d1;
+input  [2:0] appear_q1;
 
 reg ap_done;
 reg ap_idle;
@@ -188,7 +188,7 @@ reg In_r_read;
 reg[7:0] appear_address0;
 reg appear_ce0;
 reg appear_we0;
-reg[7:0] appear_d0;
+reg[2:0] appear_d0;
 reg[7:0] appear_address1;
 reg appear_ce1;
 reg appear_we1;
@@ -204,13 +204,13 @@ wire    grp_count_Pipeline_APPEARANCES_fu_2861_In_r_read;
 wire   [7:0] grp_count_Pipeline_APPEARANCES_fu_2861_appear_address0;
 wire    grp_count_Pipeline_APPEARANCES_fu_2861_appear_ce0;
 wire    grp_count_Pipeline_APPEARANCES_fu_2861_appear_we0;
-wire   [7:0] grp_count_Pipeline_APPEARANCES_fu_2861_appear_d0;
+wire   [2:0] grp_count_Pipeline_APPEARANCES_fu_2861_appear_d0;
 wire   [7:0] grp_count_Pipeline_APPEARANCES_fu_2861_appear_address1;
 wire    grp_count_Pipeline_APPEARANCES_fu_2861_appear_ce1;
 wire   [7:0] grp_count_Pipeline_APPEARANCES_fu_2861_prev_out;
 wire    grp_count_Pipeline_APPEARANCES_fu_2861_prev_out_ap_vld;
-wire   [7:0] grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out;
-wire    grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out_ap_vld;
+wire   [2:0] grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out;
+wire    grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out_ap_vld;
 reg    grp_count_Pipeline_APPEARANCES_fu_2861_ap_start_reg;
 wire    ap_CS_fsm_state129;
 wire    ap_CS_fsm_state130;
@@ -341,7 +341,7 @@ wire    ap_CS_fsm_state125;
 wire    ap_CS_fsm_state126;
 wire    ap_CS_fsm_state127;
 wire    ap_CS_fsm_state128;
-wire   [31:0] zext_ln46_fu_2878_p1;
+wire   [31:0] zext_ln50_fu_2878_p1;
 wire    ap_CS_fsm_state131;
 reg    ap_block_state1;
 reg   [130:0] ap_NS_fsm;
@@ -504,8 +504,8 @@ accelerator_count_Pipeline_APPEARANCES grp_count_Pipeline_APPEARANCES_fu_2861(
     .appear_q1(appear_q1),
     .prev_out(grp_count_Pipeline_APPEARANCES_fu_2861_prev_out),
     .prev_out_ap_vld(grp_count_Pipeline_APPEARANCES_fu_2861_prev_out_ap_vld),
-    .count_1_1_out(grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out),
-    .count_1_1_out_ap_vld(grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out_ap_vld)
+    .count_V_5_out(grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out),
+    .count_V_5_out_ap_vld(grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out_ap_vld)
 );
 
 always @ (posedge ap_clk) begin
@@ -848,7 +848,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state131)) begin
-        appear_address0 = zext_ln46_fu_2878_p1;
+        appear_address0 = zext_ln50_fu_2878_p1;
     end else if ((1'b1 == ap_CS_fsm_state128)) begin
         appear_address0 = 32'd255;
     end else if ((1'b1 == ap_CS_fsm_state127)) begin
@@ -1398,9 +1398,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state131)) begin
-        appear_d0 = grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out;
+        appear_d0 = grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out;
     end else if (((1'b1 == ap_CS_fsm_state100) | (1'b1 == ap_CS_fsm_state99) | (1'b1 == ap_CS_fsm_state98) | (1'b1 == ap_CS_fsm_state97) | (1'b1 == ap_CS_fsm_state96) | (1'b1 == ap_CS_fsm_state95) | (1'b1 == ap_CS_fsm_state94) | (1'b1 == ap_CS_fsm_state93) | (1'b1 == ap_CS_fsm_state92) | (1'b1 == ap_CS_fsm_state91) | (1'b1 == ap_CS_fsm_state90) | (1'b1 == ap_CS_fsm_state89) | (1'b1 == ap_CS_fsm_state88) | (1'b1 == ap_CS_fsm_state87) | (1'b1 == ap_CS_fsm_state86) | (1'b1 == ap_CS_fsm_state85) | (1'b1 == ap_CS_fsm_state84) | (1'b1 == ap_CS_fsm_state83) | (1'b1 == ap_CS_fsm_state82) | (1'b1 == ap_CS_fsm_state81) | (1'b1 == ap_CS_fsm_state80) | (1'b1 == ap_CS_fsm_state79) | (1'b1 == ap_CS_fsm_state78) | (1'b1 == ap_CS_fsm_state77) | (1'b1 == ap_CS_fsm_state76) | (1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74) | (1'b1 == ap_CS_fsm_state73) | (1'b1 == ap_CS_fsm_state72) | (1'b1 == ap_CS_fsm_state71) | (1'b1 == ap_CS_fsm_state70) | (1'b1 == ap_CS_fsm_state69) | (1'b1 == ap_CS_fsm_state68) | (1'b1 == ap_CS_fsm_state67) | (1'b1 == ap_CS_fsm_state66) | (1'b1 == ap_CS_fsm_state65) | (1'b1 == ap_CS_fsm_state64) | (1'b1 == ap_CS_fsm_state63) | (1'b1 == ap_CS_fsm_state62) | (1'b1 == ap_CS_fsm_state61) | (1'b1 == ap_CS_fsm_state60) | (1'b1 == ap_CS_fsm_state59) | (1'b1 == ap_CS_fsm_state58) | (1'b1 == ap_CS_fsm_state57) | (1'b1 == ap_CS_fsm_state56) | (1'b1 == ap_CS_fsm_state55) | (1'b1 == ap_CS_fsm_state54) | (1'b1 == ap_CS_fsm_state53) | (1'b1 == ap_CS_fsm_state52) | (1'b1 == ap_CS_fsm_state51) | (1'b1 == ap_CS_fsm_state50) | (1'b1 == ap_CS_fsm_state49) | (1'b1 == ap_CS_fsm_state48) | (1'b1 == ap_CS_fsm_state47) | (1'b1 == ap_CS_fsm_state46) | (1'b1 == ap_CS_fsm_state45) | (1'b1 == ap_CS_fsm_state44) | (1'b1 == ap_CS_fsm_state43) | (1'b1 == ap_CS_fsm_state42) | (1'b1 == ap_CS_fsm_state41) | (1'b1 == ap_CS_fsm_state40) | (1'b1 == ap_CS_fsm_state39) | (1'b1 == ap_CS_fsm_state38) | (1'b1 == ap_CS_fsm_state37) | (1'b1 == ap_CS_fsm_state36) | (1'b1 == ap_CS_fsm_state35) | (1'b1 == ap_CS_fsm_state34) | (1'b1 == ap_CS_fsm_state33) | (1'b1 == ap_CS_fsm_state32) | (1'b1 == ap_CS_fsm_state31) | (1'b1 == ap_CS_fsm_state30) | (1'b1 == ap_CS_fsm_state29) | (1'b1 == ap_CS_fsm_state28) | (1'b1 == ap_CS_fsm_state27) | (1'b1 == ap_CS_fsm_state26) | (1'b1 == ap_CS_fsm_state25) | (1'b1 == ap_CS_fsm_state24) | (1'b1 == ap_CS_fsm_state23) | (1'b1 == ap_CS_fsm_state22) | (1'b1 == ap_CS_fsm_state21) | (1'b1 == ap_CS_fsm_state20) | (1'b1 == ap_CS_fsm_state19) | (1'b1 == ap_CS_fsm_state18) | (1'b1 == ap_CS_fsm_state17) | (1'b1 == ap_CS_fsm_state16) | (1'b1 == ap_CS_fsm_state15) | (1'b1 == ap_CS_fsm_state14) | (1'b1 == ap_CS_fsm_state13) | (1'b1 == ap_CS_fsm_state12) | (1'b1 == ap_CS_fsm_state11) | (1'b1 == ap_CS_fsm_state10) | (1'b1 == ap_CS_fsm_state9) | (1'b1 == ap_CS_fsm_state8) | (1'b1 == ap_CS_fsm_state7) | (1'b1 == ap_CS_fsm_state6) | (1'b1 == ap_CS_fsm_state5) | (1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state2) | (1'b1 == ap_CS_fsm_state1) | (1'b1 == ap_CS_fsm_state128) | (1'b1 == ap_CS_fsm_state127) | (1'b1 == ap_CS_fsm_state126) | (1'b1 == ap_CS_fsm_state125) | (1'b1 == ap_CS_fsm_state124) | (1'b1 == ap_CS_fsm_state123) | (1'b1 == ap_CS_fsm_state122) | (1'b1 == ap_CS_fsm_state121) | (1'b1 == ap_CS_fsm_state120) | (1'b1 == ap_CS_fsm_state119) | (1'b1 == ap_CS_fsm_state118) | (1'b1 == ap_CS_fsm_state117) | (1'b1 == ap_CS_fsm_state116) | (1'b1 == ap_CS_fsm_state115) | (1'b1 == ap_CS_fsm_state114) | (1'b1 == ap_CS_fsm_state113) | (1'b1 == ap_CS_fsm_state112) | (1'b1 == ap_CS_fsm_state111) | (1'b1 == ap_CS_fsm_state110) | (1'b1 == ap_CS_fsm_state109) | (1'b1 == ap_CS_fsm_state108) | (1'b1 == ap_CS_fsm_state107) | (1'b1 == ap_CS_fsm_state106) | (1'b1 == ap_CS_fsm_state105) | (1'b1 == ap_CS_fsm_state104) | (1'b1 == ap_CS_fsm_state103) | (1'b1 == ap_CS_fsm_state102) | (1'b1 == ap_CS_fsm_state101))) begin
-        appear_d0 = 8'd0;
+        appear_d0 = 3'd0;
     end else if ((1'b1 == ap_CS_fsm_state130)) begin
         appear_d0 = grp_count_Pipeline_APPEARANCES_fu_2861_appear_d0;
     end else begin
@@ -2101,10 +2101,10 @@ always @ (*) begin
     ap_block_state1 = ((ap_done_reg == 1'b1) | (ap_start == 1'b0));
 end
 
-assign appear_d1 = 8'd0;
+assign appear_d1 = 3'd0;
 
 assign grp_count_Pipeline_APPEARANCES_fu_2861_ap_start = grp_count_Pipeline_APPEARANCES_fu_2861_ap_start_reg;
 
-assign zext_ln46_fu_2878_p1 = grp_count_Pipeline_APPEARANCES_fu_2861_prev_out;
+assign zext_ln50_fu_2878_p1 = grp_count_Pipeline_APPEARANCES_fu_2861_prev_out;
 
 endmodule //accelerator_count

@@ -9,8 +9,8 @@
 <ProductFamily>zynq</ProductFamily>
 <Part>xc7z010i-clg225-1L</Part>
 <TopModelName>threshold</TopModelName>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>2.70</ClockUncertainty>
+<TargetClockPeriod>9.36</TargetClockPeriod>
+<ClockUncertainty>2.53</ClockUncertainty>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -18,16 +18,16 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>7.091</EstimatedClockPeriod>
+<EstimatedClockPeriod>5.739</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>260</Best-caseLatency>
 <Average-caseLatency>260</Average-caseLatency>
 <Worst-caseLatency>260</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.600 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.600 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.600 us</Worst-caseRealTimeLatency>
+<Best-caseRealTimeLatency>2.433 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.433 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.433 us</Worst-caseRealTimeLatency>
 <Interval-min>260</Interval-min>
 <Interval-max>260</Interval-max>
 </SummaryOfOverallLatency>
@@ -36,7 +36,7 @@
 <AreaEstimates>
 <Resources>
 <FF>49</FF>
-<LUT>194</LUT>
+<LUT>192</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -158,7 +158,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>8</Bits>
+<Bits>3</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

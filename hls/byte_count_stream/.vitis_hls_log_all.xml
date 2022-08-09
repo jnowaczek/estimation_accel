@@ -6,46 +6,18 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-07T20:31:25.763-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim file generation failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-07T20:30:26.283-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="byte_count_stream" solutionName="solution1" date="2022-08-07T20:12:19.377-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="byte_count_stream" solutionName="solution1" date="2022-08-07T20:06:13.594-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="byte_count_stream" solutionName="solution1" date="2022-08-07T19:57:27.146-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors.&#xD;&#xA;" projectName="byte_count_stream" solutionName="solution1" date="2022-08-07T19:54:19.232-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:26:18.110-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors.&#xD;&#xA;" projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:25:07.710-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:24:24.724-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:23:47.586-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:12:25.906-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:05:46.431-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:58:08.581-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:44:45.117-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:44:19.641-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:35:11.074-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:23:20.787-0500"/>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:22:54.965-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:21:53.679-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:20:37.903-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:19:33.142-0500"/>
-        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T16:18:37.306-0500"/>
-      </csimLog>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'." projectName="byte_count_stream" solutionName="solution1" date="2022-07-25T22:36:26.809-0500" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'." projectName="byte_count_stream" solutionName="solution1" date="2022-08-08T19:27:18.958-0500" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog>
-        <logs message="WARNING: Hls::stream 'Output Stream' is read while empty, which may result in RTL simulation hanging.&#xD;&#xA;@E Simulation failed.&#xD;&#xA;" projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:18:15.700-0500" type="Warning"/>
-        <logs message="WARNING: Hls::stream 'Output Stream' contains leftover data, which may result in RTL simulation hanging." projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:18:03.211-0500" type="Warning"/>
-        <logs message="WARNING: Hls::stream 'Output Stream' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/count_sorted.bin&#xD;&#xA;    Result mismatch.&#xD;&#xA;    Actual:&#xD;&#xA;&#xD;&#xA;    Expected:&#xD;&#xA;0, &#xD;&#xA;    *** *** *** *** " projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:18:03.200-0500" type="Warning"/>
-        <logs message="WARNING: Hls::stream 'Output Stream' contains leftover data, which may result in RTL simulation hanging.&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/count.bin&#xD;&#xA;    Result mismatch.&#xD;&#xA;    Actual:&#xD;&#xA;&#xD;&#xA;    Expected:&#xD;&#xA;0, &#xD;&#xA;    *** *** *** *** " projectName="byte_count_stream" solutionName="solution1" date="2022-08-04T17:18:03.189-0500" type="Warning"/>
-      </csimLog>
+      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

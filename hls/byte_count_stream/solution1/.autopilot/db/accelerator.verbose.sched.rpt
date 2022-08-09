@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'accelerator'
 ================================================================
-* Date:           Mon Jul 25 22:36:29 2022
+* Date:           Mon Aug  8 19:27:21 2022
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
 * Project:        byte_count_stream
@@ -17,27 +17,32 @@
 ================================================================
 + Timing: 
     * Summary: 
-    +--------+----------+----------+------------+
-    |  Clock |  Target  | Estimated| Uncertainty|
-    +--------+----------+----------+------------+
-    |ap_clk  |  10.00 ns|  7.091 ns|     2.70 ns|
-    +--------+----------+----------+------------+
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  9.36 ns|  6.659 ns|     2.53 ns|
+    +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+-----------+-----------+------+------+----------+
-    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
-    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
-    +---------+---------+-----------+-----------+------+------+----------+
-    |     1158|     1158|  11.580 us|  11.580 us|  1159|  1159|  dataflow|
-    +---------+---------+-----------+-----------+------+------+----------+
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        N/A
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_10_1  |        ?|        ?|      1160|          -|          -|     ?|        no|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -65,56 +70,60 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 4
+* Number of FSM states : 3
 * Pipeline : 0
 * Dataflow Pipeline: 1
-  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+  DF-Pipeline-0: Size = 2, States = { 2 3 }
 
 * FSM state transitions: 
 1 --> 2 
 2 --> 3 
-3 --> 4 
-4 --> 
+3 --> 2 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%appear = alloca i32 1" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 5 'alloca' 'appear' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln12 = call void @count, i8 %In_r, i8 %appear" [byte_count_stream/src/byte_count_stream.cpp:12]   --->   Operation 6 'call' 'call_ln12' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [byte_count_stream/src/byte_count_stream.cpp:6]   --->   Operation 4 'spectopmodule' 'spectopmodule_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln6 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0" [byte_count_stream/src/byte_count_stream.cpp:6]   --->   Operation 5 'specinterface' 'specinterface_ln6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %In_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %In_r"   --->   Operation 7 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %num_blocks"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %num_blocks, void @empty_1, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Out_r"   --->   Operation 11 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%num_blocks_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %num_blocks" [byte_count_stream/src/byte_count_stream.cpp:6]   --->   Operation 12 'read' 'num_blocks_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.58ns)   --->   "%br_ln10 = br void %for.cond" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 13 'br' 'br_ln10' <Predicate = true> <Delay = 1.58>
 
-State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 7 [1/2] (0.00ns)   --->   "%call_ln12 = call void @count, i8 %In_r, i8 %appear" [byte_count_stream/src/byte_count_stream.cpp:12]   --->   Operation 7 'call' 'call_ln12' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 2 <SV = 1> <Delay = 2.55>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%counter = phi i32 0, void %entry, i32 %counter_1, void %for.body"   --->   Operation 14 'phi' 'counter' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (2.47ns)   --->   "%icmp_ln10 = icmp_eq  i32 %counter, i32 %num_blocks_read" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 15 'icmp' 'icmp_ln10' <Predicate = true> <Delay = 2.47> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln10 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i32 %counter, i32 %num_blocks, i32 1" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 16 'specdataflowpipeline' 'specdataflowpipeline_ln10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (2.55ns)   --->   "%counter_1 = add i32 %counter, i32 1" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 17 'add' 'counter_1' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%br_ln10 = br i1 %icmp_ln10, void %for.body, void %for.end" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 18 'br' 'br_ln10' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln16 = call void @dataflow_in_loop_VITIS_LOOP_10_1, i8 %In_r, i32 %Out_r" [byte_count_stream/src/byte_count_stream.cpp:16]   --->   Operation 19 'call' 'call_ln16' <Predicate = (!icmp_ln10)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%ret_ln18 = ret" [byte_count_stream/src/byte_count_stream.cpp:18]   --->   Operation 20 'ret' 'ret_ln18' <Predicate = (icmp_ln10)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln13 = call void @threshold, i8 %appear, i32 %Out_r" [byte_count_stream/src/byte_count_stream.cpp:13]   --->   Operation 8 'call' 'call_ln13' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-
-State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 9 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln8 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty" [byte_count_stream/src/byte_count_stream.cpp:8]   --->   Operation 9 'specdataflowpipeline' 'specdataflowpipeline_ln8' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%spectopmodule_ln6 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [byte_count_stream/src/byte_count_stream.cpp:6]   --->   Operation 10 'spectopmodule' 'spectopmodule_ln6' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln6 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0" [byte_count_stream/src/byte_count_stream.cpp:6]   --->   Operation 11 'specinterface' 'specinterface_ln6' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %In_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %In_r"   --->   Operation 13 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %Out_r"   --->   Operation 15 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 16 [1/2] (0.00ns)   --->   "%call_ln13 = call void @threshold, i8 %appear, i32 %Out_r" [byte_count_stream/src/byte_count_stream.cpp:13]   --->   Operation 16 'call' 'call_ln13' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%ret_ln14 = ret" [byte_count_stream/src/byte_count_stream.cpp:14]   --->   Operation 17 'ret' 'ret_ln14' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%specloopname_ln13 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [byte_count_stream/src/byte_count_stream.cpp:13]   --->   Operation 21 'specloopname' 'specloopname_ln13' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+ST_3 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln16 = call void @dataflow_in_loop_VITIS_LOOP_10_1, i8 %In_r, i32 %Out_r" [byte_count_stream/src/byte_count_stream.cpp:16]   --->   Operation 22 'call' 'call_ln16' <Predicate = (!icmp_ln10)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%br_ln10 = br void %for.cond" [byte_count_stream/src/byte_count_stream.cpp:10]   --->   Operation 23 'br' 'br_ln10' <Predicate = (!icmp_ln10)> <Delay = 0.00>
 
 
 ============================================================
 + Verbose Summary: Timing violations
 ============================================================
-Target clock period: 10ns, clock uncertainty: 2.7ns.
+Target clock period: 9.36ns, clock uncertainty: 2.53ns.
 
- <State 1>: 0ns
+ <State 1>: 1.59ns
 The critical path consists of the following:
+	multiplexor before 'phi' operation ('counter') with incoming values : ('counter', byte_count_stream/src/byte_count_stream.cpp:10) [15]  (1.59 ns)
 
- <State 2>: 0ns
+ <State 2>: 2.55ns
 The critical path consists of the following:
+	'phi' operation ('counter') with incoming values : ('counter', byte_count_stream/src/byte_count_stream.cpp:10) [15]  (0 ns)
+	'add' operation ('counter', byte_count_stream/src/byte_count_stream.cpp:10) [18]  (2.55 ns)
 
  <State 3>: 0ns
-The critical path consists of the following:
-
- <State 4>: 0ns
 The critical path consists of the following:
 
 
@@ -129,7 +138,6 @@ N/A
 	State 1
 	State 2
 	State 3
-	State 4
 
 
 ============================================================

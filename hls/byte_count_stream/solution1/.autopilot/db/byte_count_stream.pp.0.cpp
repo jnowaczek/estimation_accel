@@ -6423,17 +6423,14 @@ private:
 # 10 "byte_count_stream/src/byte_count_stream.hpp"
 # 1 "C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\\ap_int.h" 1
 # 11 "byte_count_stream/src/byte_count_stream.hpp" 2
-# 28 "byte_count_stream/src/byte_count_stream.hpp"
-typedef ap_uint<32> packed_t;
-
-
-
+# 31 "byte_count_stream/src/byte_count_stream.hpp"
+typedef ap_ufixed<3, 3, AP_TRN, AP_SAT> count_t;
 
 
 
 
 typedef unsigned char data_t;
-typedef unsigned char count_t;
+
 typedef int result_t;
 typedef int iter_t;
 
@@ -6445,25 +6442,29 @@ void count(hls::stream<data_t> &in, count_t appear[256]);
 
 void threshold(count_t appear[1024], hls::stream<result_t> &out);
 
-void accelerator(hls::stream<packed_t> &In, hls::stream<result_t> &Out);
+__attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_t> &In, unsigned int num_blocks, hls::stream<result_t> &Out);
 # 5 "byte_count_stream/src/byte_count_stream.cpp" 2
 
-__attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_t> &In, hls::stream<result_t> &Out) {
+__attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_t> &In, unsigned int num_blocks,
+  hls::stream<result_t> &Out) {
 #line 17 "E:/estimation_accel/hls/byte_count_stream/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=accelerator
-# 6 "byte_count_stream/src/byte_count_stream.cpp"
+# 7 "byte_count_stream/src/byte_count_stream.cpp"
 
 #line 6 "E:/estimation_accel/hls/byte_count_stream/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=accelerator
-# 6 "byte_count_stream/src/byte_count_stream.cpp"
+# 7 "byte_count_stream/src/byte_count_stream.cpp"
 
 #pragma HLS INTERFACE mode=ap_ctrl_chain port=return
+
+ VITIS_LOOP_10_1: for (unsigned int counter = 0; counter < num_blocks; counter++) {
 #pragma HLS DATAFLOW
 
  count_t appear[256];
 
- count(In, appear);
- threshold(appear, Out);
+  count(In, appear);
+  threshold(appear, Out);
+ }
 }
 
 void count(hls::stream<data_t> &in, count_t appear[256]) {
@@ -6504,7 +6505,7 @@ void threshold(count_t appear[1024], hls::stream<result_t> &out) {
 
  result_t over_thresh = 0;
 
- VITIS_LOOP_54_1: for (int i = 0; i < 256; i += 1) {
+ VITIS_LOOP_58_1: for (int i = 0; i < 256; i += 1) {
   if (appear[i] > (1024 / 256)) {
    over_thresh += 1;
   }

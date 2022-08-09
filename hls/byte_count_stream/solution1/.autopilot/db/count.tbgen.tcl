@@ -14,11 +14,11 @@ set C_modelName {count}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ In_r int 8 regular {fifo 0 volatile }  }
-	{ appear int 8 regular {array 256 { 0 2 } 1 1 }  }
+	{ appear int 3 regular {array 256 { 0 2 } 1 1 }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "In_r", "interface" : "fifo", "bitwidth" : 8, "direction" : "READONLY"} , 
- 	{ "Name" : "appear", "interface" : "memory", "bitwidth" : 8, "direction" : "READWRITE"} ]}
+ 	{ "Name" : "appear", "interface" : "memory", "bitwidth" : 3, "direction" : "READWRITE"} ]}
 # RTL Port declarations: 
 set portNum 19
 set portList { 
@@ -35,12 +35,12 @@ set portList {
 	{ appear_address0 sc_out sc_lv 8 signal 1 } 
 	{ appear_ce0 sc_out sc_logic 1 signal 1 } 
 	{ appear_we0 sc_out sc_logic 1 signal 1 } 
-	{ appear_d0 sc_out sc_lv 8 signal 1 } 
+	{ appear_d0 sc_out sc_lv 3 signal 1 } 
 	{ appear_address1 sc_out sc_lv 8 signal 1 } 
 	{ appear_ce1 sc_out sc_logic 1 signal 1 } 
 	{ appear_we1 sc_out sc_logic 1 signal 1 } 
-	{ appear_d1 sc_out sc_lv 8 signal 1 } 
-	{ appear_q1 sc_in sc_lv 8 signal 1 } 
+	{ appear_d1 sc_out sc_lv 3 signal 1 } 
+	{ appear_q1 sc_in sc_lv 3 signal 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -56,12 +56,12 @@ set NewPortList {[
  	{ "name": "appear_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "appear", "role": "address0" }} , 
  	{ "name": "appear_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "appear", "role": "ce0" }} , 
  	{ "name": "appear_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "appear", "role": "we0" }} , 
- 	{ "name": "appear_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "appear", "role": "d0" }} , 
+ 	{ "name": "appear_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "appear", "role": "d0" }} , 
  	{ "name": "appear_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "appear", "role": "address1" }} , 
  	{ "name": "appear_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "appear", "role": "ce1" }} , 
  	{ "name": "appear_we1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "appear", "role": "we1" }} , 
- 	{ "name": "appear_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "appear", "role": "d1" }} , 
- 	{ "name": "appear_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "appear", "role": "q1" }}  ]}
+ 	{ "name": "appear_d1", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "appear", "role": "d1" }} , 
+ 	{ "name": "appear_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "appear", "role": "q1" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -100,14 +100,14 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"DependenceCheck" : [
-			{"FromInitialState" : "ap_enable_state3_pp0_iter2_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter2", "FromInitialOperation" : "ap_enable_operation_31", "FromInitialSV" : "2", "FromFinalState" : "ap_enable_state3_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_31", "FromFinalSV" : "2", "FromAddress" : "appear_address0", "FromType" : "W", "ToInitialState" : "ap_enable_state3_pp0_iter2_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter2", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter3", "ToInitialOperation" : "ap_enable_operation_34", "ToInitialSV" : "2", "ToFinalState" : "ap_enable_state4_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_36", "ToFinalSV" : "3", "ToAddress" : "appear_address1", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "8", "II" : "1", "Pragma" : "(byte_count_stream/src/byte_count_stream.cpp:18:9)", "Type" : "RAW"}],
+			{"FromInitialState" : "ap_enable_state3_pp0_iter2_stage0", "FromInitialIteration" : "ap_enable_reg_pp0_iter2", "FromInitialOperation" : "ap_enable_operation_31", "FromInitialSV" : "2", "FromFinalState" : "ap_enable_state3_pp0_iter2_stage0", "FromFinalIteration" : "ap_enable_reg_pp0_iter2", "FromFinalOperation" : "ap_enable_operation_31", "FromFinalSV" : "2", "FromAddress" : "appear_address0", "FromType" : "W", "ToInitialState" : "ap_enable_state3_pp0_iter2_stage0", "ToInitialIteration" : "ap_enable_reg_pp0_iter2", "ToInitialNextIteration" : "ap_enable_reg_pp0_iter3", "ToInitialOperation" : "ap_enable_operation_34", "ToInitialSV" : "2", "ToFinalState" : "ap_enable_state4_pp0_iter3_stage0", "ToFinalIteration" : "ap_enable_reg_pp0_iter3", "ToFinalOperation" : "ap_enable_operation_44", "ToFinalSV" : "3", "ToAddress" : "appear_address1", "ToType" : "R", "PipelineBlock" : "ap_block_pp0", "AddressWidth" : "8", "II" : "1", "Pragma" : "(byte_count_stream/src/byte_count_stream.cpp:22:9)", "Type" : "RAW"}],
 		"Port" : [
 			{"Name" : "In_r", "Type" : "Fifo", "Direction" : "I",
 				"BlockSignal" : [
 					{"Name" : "In_r_blk_n", "Type" : "RtlSignal"}]},
 			{"Name" : "appear", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "prev_out", "Type" : "Vld", "Direction" : "O"},
-			{"Name" : "count_1_1_out", "Type" : "Vld", "Direction" : "O"}],
+			{"Name" : "count_V_5_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "APPEARANCES", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter3", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter3", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
@@ -122,7 +122,7 @@ set ArgLastReadFirstWriteLatency {
 		In_r {Type I LastRead 1 FirstWrite -1}
 		appear {Type IO LastRead 2 FirstWrite 2}
 		prev_out {Type O LastRead -1 FirstWrite 2}
-		count_1_1_out {Type O LastRead -1 FirstWrite 2}}}
+		count_V_5_out {Type O LastRead -1 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -136,5 +136,5 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	In_r { ap_fifo {  { In_r_dout fifo_port_we 0 8 }  { In_r_empty_n fifo_status 0 1 }  { In_r_read fifo_data 1 1 } } }
-	appear { ap_memory {  { appear_address0 mem_address 1 8 }  { appear_ce0 mem_ce 1 1 }  { appear_we0 mem_we 1 1 }  { appear_d0 mem_din 1 8 }  { appear_address1 MemPortADDR2 1 8 }  { appear_ce1 MemPortCE2 1 1 }  { appear_we1 MemPortWE2 1 1 }  { appear_d1 MemPortDIN2 1 8 }  { appear_q1 MemPortDOUT2 0 8 } } }
+	appear { ap_memory {  { appear_address0 mem_address 1 8 }  { appear_ce0 mem_ce 1 1 }  { appear_we0 mem_we 1 1 }  { appear_d0 mem_din 1 3 }  { appear_address1 MemPortADDR2 1 8 }  { appear_ce1 MemPortCE2 1 1 }  { appear_we1 MemPortWE2 1 1 }  { appear_d1 MemPortDIN2 1 3 }  { appear_q1 MemPortDOUT2 0 3 } } }
 }

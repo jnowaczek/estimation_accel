@@ -6,7 +6,12 @@
           <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0"/>
         </hw>
       </arg>
-      <arg id="1" access_type="w" src_name="Out" src_type="stream&lt;int, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
+      <arg id="1" access_type="r" src_name="num_blocks" src_type="unsigned int" src_isptr="0" src_bitwidth="32" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="num_blocks" hw_bitwidth="32" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="2" access_type="w" src_name="Out" src_type="stream&lt;int, 0&gt;&amp;" src_isptr="1" src_bitwidth="32" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="FIFO" hw_name="Out_r" hw_bitwidth="32" hw_size_or_depth="0" hw_kernel_support="false">
           <constraint constraint_type="pragma interface" mode="ap_fifo" register_option="0"/>
         </hw>

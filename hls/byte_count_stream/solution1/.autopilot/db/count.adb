@@ -34,7 +34,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>1953394531</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -73,7 +73,7 @@
               <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>8</bitwidth>
+            <bitwidth>3</bitwidth>
           </Value>
           <direction>2</direction>
           <if_type>1</if_type>
@@ -92,7 +92,7 @@
             <Obj>
               <type>0</type>
               <id>3</id>
-              <name>count_1_1_loc</name>
+              <name>count_V_5_loc</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -110,10 +110,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1818322464</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>8</bitwidth>
+            <bitwidth>3</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
@@ -152,7 +152,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>858988588</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -179,7 +179,7 @@
               <name>appear_addr</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>46</lineNumber>
+              <lineNumber>50</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -195,7 +195,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>46</second>
+                      <second>50</second>
                     </item>
                   </second>
                 </item>
@@ -208,7 +208,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>539767584</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -234,10 +234,10 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>appear_addr_write_ln22</name>
+              <name>appear_addr_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -253,7 +253,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -282,7 +282,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>4</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -294,7 +294,7 @@
               <name>appear_addr_1</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -310,7 +310,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -323,7 +323,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>858988588</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -349,10 +349,10 @@
             <Obj>
               <type>0</type>
               <id>9</id>
-              <name>appear_addr_1_write_ln22</name>
+              <name>appear_addr_1_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -368,7 +368,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -397,7 +397,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>6</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -409,7 +409,7 @@
               <name>appear_addr_2</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -425,7 +425,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -438,7 +438,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>741487420</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -464,10 +464,10 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>appear_addr_2_write_ln22</name>
+              <name>appear_addr_2_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -483,7 +483,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -512,7 +512,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>8</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -524,7 +524,7 @@
               <name>appear_addr_3</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -540,7 +540,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -553,7 +553,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>858988588</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -579,10 +579,10 @@
             <Obj>
               <type>0</type>
               <id>13</id>
-              <name>appear_addr_3_write_ln22</name>
+              <name>appear_addr_3_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -598,7 +598,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -627,7 +627,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>10</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -639,7 +639,7 @@
               <name>appear_addr_4</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -655,7 +655,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -668,7 +668,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1818322464</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -694,10 +694,10 @@
             <Obj>
               <type>0</type>
               <id>15</id>
-              <name>appear_addr_4_write_ln22</name>
+              <name>appear_addr_4_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -713,7 +713,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -742,7 +742,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>12</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -754,7 +754,7 @@
               <name>appear_addr_5</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -770,7 +770,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -783,7 +783,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1551134572</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -809,10 +809,10 @@
             <Obj>
               <type>0</type>
               <id>17</id>
-              <name>appear_addr_5_write_ln22</name>
+              <name>appear_addr_5_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -828,7 +828,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -857,7 +857,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>14</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -869,7 +869,7 @@
               <name>appear_addr_6</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -885,7 +885,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -898,7 +898,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>858995813</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -924,10 +924,10 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>appear_addr_6_write_ln22</name>
+              <name>appear_addr_6_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -943,7 +943,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -972,7 +972,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>16</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -984,7 +984,7 @@
               <name>appear_addr_7</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1000,7 +1000,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1013,7 +1013,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1885415456</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1039,10 +1039,10 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>appear_addr_7_write_ln22</name>
+              <name>appear_addr_7_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1058,7 +1058,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1087,7 +1087,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>18</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1099,7 +1099,7 @@
               <name>appear_addr_8</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1115,7 +1115,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1128,7 +1128,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1330007625</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1154,10 +1154,10 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>appear_addr_8_write_ln22</name>
+              <name>appear_addr_8_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1173,7 +1173,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1202,7 +1202,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>20</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1214,7 +1214,7 @@
               <name>appear_addr_9</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1230,7 +1230,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1243,7 +1243,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>112</coreId>
+              <coreId>859596147</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1269,10 +1269,10 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>appear_addr_9_write_ln22</name>
+              <name>appear_addr_9_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1288,7 +1288,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1317,7 +1317,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>22</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1329,7 +1329,7 @@
               <name>appear_addr_10</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1345,7 +1345,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1358,7 +1358,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>574449505</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1384,10 +1384,10 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>appear_addr_10_write_ln22</name>
+              <name>appear_addr_10_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1403,7 +1403,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1432,7 +1432,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>24</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1444,7 +1444,7 @@
               <name>appear_addr_11</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1460,7 +1460,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1473,7 +1473,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2742492784</coreId>
+              <coreId>1869438831</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1499,10 +1499,10 @@
             <Obj>
               <type>0</type>
               <id>29</id>
-              <name>appear_addr_11_write_ln22</name>
+              <name>appear_addr_11_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1518,7 +1518,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1547,7 +1547,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>26</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1559,7 +1559,7 @@
               <name>appear_addr_12</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1575,7 +1575,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1588,7 +1588,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>859596147</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1614,10 +1614,10 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>appear_addr_12_write_ln22</name>
+              <name>appear_addr_12_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1633,7 +1633,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1662,7 +1662,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>28</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1674,7 +1674,7 @@
               <name>appear_addr_13</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1690,7 +1690,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1703,7 +1703,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>544</coreId>
+              <coreId>1551134572</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1729,10 +1729,10 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>appear_addr_13_write_ln22</name>
+              <name>appear_addr_13_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1748,7 +1748,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1777,7 +1777,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>30</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1789,7 +1789,7 @@
               <name>appear_addr_14</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1805,7 +1805,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1818,7 +1818,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>404</coreId>
+              <coreId>741552956</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1844,10 +1844,10 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>appear_addr_14_write_ln22</name>
+              <name>appear_addr_14_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1863,7 +1863,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1892,7 +1892,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>32</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1904,7 +1904,7 @@
               <name>appear_addr_15</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1920,7 +1920,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -1933,7 +1933,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>684</coreId>
+              <coreId>1935762015</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -1959,10 +1959,10 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>appear_addr_15_write_ln22</name>
+              <name>appear_addr_15_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -1978,7 +1978,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2007,7 +2007,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>34</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2019,7 +2019,7 @@
               <name>appear_addr_16</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2035,7 +2035,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2048,7 +2048,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>539767603</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2074,10 +2074,10 @@
             <Obj>
               <type>0</type>
               <id>39</id>
-              <name>appear_addr_16_write_ln22</name>
+              <name>appear_addr_16_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2093,7 +2093,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2122,7 +2122,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>36</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2134,7 +2134,7 @@
               <name>appear_addr_17</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2150,7 +2150,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2163,7 +2163,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>121</coreId>
+              <coreId>859596147</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2189,10 +2189,10 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>appear_addr_17_write_ln22</name>
+              <name>appear_addr_17_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2208,7 +2208,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2237,7 +2237,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>38</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2249,7 +2249,7 @@
               <name>appear_addr_18</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2265,7 +2265,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2278,7 +2278,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1226980724</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2304,10 +2304,10 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>appear_addr_18_write_ln22</name>
+              <name>appear_addr_18_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2323,7 +2323,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2352,7 +2352,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>40</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2364,7 +2364,7 @@
               <name>appear_addr_19</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2380,7 +2380,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2393,7 +2393,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2742484784</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2419,10 +2419,10 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>appear_addr_19_write_ln22</name>
+              <name>appear_addr_19_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2438,7 +2438,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2467,7 +2467,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>42</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2479,7 +2479,7 @@
               <name>appear_addr_20</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2495,7 +2495,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2508,7 +2508,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>443</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2534,10 +2534,10 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>appear_addr_20_write_ln22</name>
+              <name>appear_addr_20_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2553,7 +2553,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2582,7 +2582,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>44</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2594,7 +2594,7 @@
               <name>appear_addr_21</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2610,7 +2610,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2623,7 +2623,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2649,10 +2649,10 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>appear_addr_21_write_ln22</name>
+              <name>appear_addr_21_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2668,7 +2668,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2697,7 +2697,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>46</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2709,7 +2709,7 @@
               <name>appear_addr_22</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2725,7 +2725,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2764,10 +2764,10 @@
             <Obj>
               <type>0</type>
               <id>51</id>
-              <name>appear_addr_22_write_ln22</name>
+              <name>appear_addr_22_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2783,7 +2783,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2812,7 +2812,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>48</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2824,7 +2824,7 @@
               <name>appear_addr_23</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2840,7 +2840,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2853,7 +2853,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>162</coreId>
+              <coreId>1613461504</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2879,10 +2879,10 @@
             <Obj>
               <type>0</type>
               <id>53</id>
-              <name>appear_addr_23_write_ln22</name>
+              <name>appear_addr_23_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2898,7 +2898,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2927,7 +2927,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>50</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -2939,7 +2939,7 @@
               <name>appear_addr_24</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -2955,7 +2955,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -2968,7 +2968,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>22</coreId>
+              <coreId>123</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -2994,10 +2994,10 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>appear_addr_24_write_ln22</name>
+              <name>appear_addr_24_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3013,7 +3013,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3042,7 +3042,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>52</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3054,7 +3054,7 @@
               <name>appear_addr_25</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3070,7 +3070,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3109,10 +3109,10 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>appear_addr_25_write_ln22</name>
+              <name>appear_addr_25_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3128,7 +3128,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3157,7 +3157,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>54</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3169,7 +3169,7 @@
               <name>appear_addr_26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3185,7 +3185,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3224,10 +3224,10 @@
             <Obj>
               <type>0</type>
               <id>59</id>
-              <name>appear_addr_26_write_ln22</name>
+              <name>appear_addr_26_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3243,7 +3243,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3272,7 +3272,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>56</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3284,7 +3284,7 @@
               <name>appear_addr_27</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3300,7 +3300,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3313,7 +3313,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3894519328</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -3339,10 +3339,10 @@
             <Obj>
               <type>0</type>
               <id>61</id>
-              <name>appear_addr_27_write_ln22</name>
+              <name>appear_addr_27_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3358,7 +3358,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3387,7 +3387,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>58</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3399,7 +3399,7 @@
               <name>appear_addr_28</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3415,7 +3415,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3454,10 +3454,10 @@
             <Obj>
               <type>0</type>
               <id>63</id>
-              <name>appear_addr_28_write_ln22</name>
+              <name>appear_addr_28_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3473,7 +3473,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3502,7 +3502,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>60</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3514,7 +3514,7 @@
               <name>appear_addr_29</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3530,7 +3530,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3543,7 +3543,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2711228016</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -3569,10 +3569,10 @@
             <Obj>
               <type>0</type>
               <id>65</id>
-              <name>appear_addr_29_write_ln22</name>
+              <name>appear_addr_29_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3588,7 +3588,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3617,7 +3617,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>62</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3629,7 +3629,7 @@
               <name>appear_addr_30</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3645,7 +3645,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3684,10 +3684,10 @@
             <Obj>
               <type>0</type>
               <id>67</id>
-              <name>appear_addr_30_write_ln22</name>
+              <name>appear_addr_30_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3703,7 +3703,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3732,7 +3732,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>64</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3744,7 +3744,7 @@
               <name>appear_addr_31</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3760,7 +3760,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3799,10 +3799,10 @@
             <Obj>
               <type>0</type>
               <id>69</id>
-              <name>appear_addr_31_write_ln22</name>
+              <name>appear_addr_31_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3818,7 +3818,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3847,7 +3847,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>66</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3859,7 +3859,7 @@
               <name>appear_addr_32</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3875,7 +3875,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3888,7 +3888,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>35</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -3914,10 +3914,10 @@
             <Obj>
               <type>0</type>
               <id>71</id>
-              <name>appear_addr_32_write_ln22</name>
+              <name>appear_addr_32_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3933,7 +3933,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -3962,7 +3962,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>68</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3974,7 +3974,7 @@
               <name>appear_addr_33</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -3990,7 +3990,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4003,7 +4003,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>303</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4029,10 +4029,10 @@
             <Obj>
               <type>0</type>
               <id>73</id>
-              <name>appear_addr_33_write_ln22</name>
+              <name>appear_addr_33_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4048,7 +4048,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4077,7 +4077,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>70</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4089,7 +4089,7 @@
               <name>appear_addr_34</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4105,7 +4105,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4144,10 +4144,10 @@
             <Obj>
               <type>0</type>
               <id>75</id>
-              <name>appear_addr_34_write_ln22</name>
+              <name>appear_addr_34_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4163,7 +4163,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4192,7 +4192,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>72</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4204,7 +4204,7 @@
               <name>appear_addr_35</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4220,7 +4220,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4233,7 +4233,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1226980724</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4259,10 +4259,10 @@
             <Obj>
               <type>0</type>
               <id>77</id>
-              <name>appear_addr_35_write_ln22</name>
+              <name>appear_addr_35_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4278,7 +4278,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4307,7 +4307,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>74</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4319,7 +4319,7 @@
               <name>appear_addr_36</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4335,7 +4335,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4348,7 +4348,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1853189987</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4374,10 +4374,10 @@
             <Obj>
               <type>0</type>
               <id>79</id>
-              <name>appear_addr_36_write_ln22</name>
+              <name>appear_addr_36_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4393,7 +4393,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4422,7 +4422,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>76</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4434,7 +4434,7 @@
               <name>appear_addr_37</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4450,7 +4450,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4463,7 +4463,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1767386938</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4489,10 +4489,10 @@
             <Obj>
               <type>0</type>
               <id>81</id>
-              <name>appear_addr_37_write_ln22</name>
+              <name>appear_addr_37_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4508,7 +4508,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4537,7 +4537,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>78</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4549,7 +4549,7 @@
               <name>appear_addr_38</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4565,7 +4565,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4578,7 +4578,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>673280623</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4604,10 +4604,10 @@
             <Obj>
               <type>0</type>
               <id>83</id>
-              <name>appear_addr_38_write_ln22</name>
+              <name>appear_addr_38_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4623,7 +4623,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4652,7 +4652,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>80</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4664,7 +4664,7 @@
               <name>appear_addr_39</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4680,7 +4680,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4693,7 +4693,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1885414944</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4719,10 +4719,10 @@
             <Obj>
               <type>0</type>
               <id>85</id>
-              <name>appear_addr_39_write_ln22</name>
+              <name>appear_addr_39_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4738,7 +4738,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4767,7 +4767,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>82</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4779,7 +4779,7 @@
               <name>appear_addr_40</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4795,7 +4795,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4808,7 +4808,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>944659039</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4834,10 +4834,10 @@
             <Obj>
               <type>0</type>
               <id>87</id>
-              <name>appear_addr_40_write_ln22</name>
+              <name>appear_addr_40_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4853,7 +4853,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4882,7 +4882,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>84</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4894,7 +4894,7 @@
               <name>appear_addr_41</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4910,7 +4910,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4923,7 +4923,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>744846188</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -4949,10 +4949,10 @@
             <Obj>
               <type>0</type>
               <id>89</id>
-              <name>appear_addr_41_write_ln22</name>
+              <name>appear_addr_41_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -4968,7 +4968,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -4997,7 +4997,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>86</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5009,7 +5009,7 @@
               <name>appear_addr_42</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5025,7 +5025,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5038,7 +5038,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1601134448</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -5064,10 +5064,10 @@
             <Obj>
               <type>0</type>
               <id>91</id>
-              <name>appear_addr_42_write_ln22</name>
+              <name>appear_addr_42_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5083,7 +5083,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5112,7 +5112,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>88</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5124,7 +5124,7 @@
               <name>appear_addr_43</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5140,7 +5140,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5153,7 +5153,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>825046065</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -5179,10 +5179,10 @@
             <Obj>
               <type>0</type>
               <id>93</id>
-              <name>appear_addr_43_write_ln22</name>
+              <name>appear_addr_43_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5198,7 +5198,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5227,7 +5227,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>90</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5239,7 +5239,7 @@
               <name>appear_addr_44</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5255,7 +5255,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5294,10 +5294,10 @@
             <Obj>
               <type>0</type>
               <id>95</id>
-              <name>appear_addr_44_write_ln22</name>
+              <name>appear_addr_44_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5313,7 +5313,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5342,7 +5342,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>92</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5354,7 +5354,7 @@
               <name>appear_addr_45</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5370,7 +5370,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5409,10 +5409,10 @@
             <Obj>
               <type>0</type>
               <id>97</id>
-              <name>appear_addr_45_write_ln22</name>
+              <name>appear_addr_45_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5428,7 +5428,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5457,7 +5457,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>94</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5469,7 +5469,7 @@
               <name>appear_addr_46</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5485,7 +5485,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5498,7 +5498,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>673197157</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -5524,10 +5524,10 @@
             <Obj>
               <type>0</type>
               <id>99</id>
-              <name>appear_addr_46_write_ln22</name>
+              <name>appear_addr_46_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5543,7 +5543,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5572,7 +5572,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>96</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5584,7 +5584,7 @@
               <name>appear_addr_47</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5600,7 +5600,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5639,10 +5639,10 @@
             <Obj>
               <type>0</type>
               <id>101</id>
-              <name>appear_addr_47_write_ln22</name>
+              <name>appear_addr_47_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5658,7 +5658,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5687,7 +5687,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>98</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5699,7 +5699,7 @@
               <name>appear_addr_48</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5715,7 +5715,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5728,7 +5728,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1948265523</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -5754,10 +5754,10 @@
             <Obj>
               <type>0</type>
               <id>103</id>
-              <name>appear_addr_48_write_ln22</name>
+              <name>appear_addr_48_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5773,7 +5773,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5802,7 +5802,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>100</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5814,7 +5814,7 @@
               <name>appear_addr_49</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5830,7 +5830,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5843,7 +5843,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1767386938</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -5869,10 +5869,10 @@
             <Obj>
               <type>0</type>
               <id>105</id>
-              <name>appear_addr_49_write_ln22</name>
+              <name>appear_addr_49_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5888,7 +5888,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5917,7 +5917,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>102</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -5929,7 +5929,7 @@
               <name>appear_addr_50</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -5945,7 +5945,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -5958,7 +5958,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1630026612</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -5984,10 +5984,10 @@
             <Obj>
               <type>0</type>
               <id>107</id>
-              <name>appear_addr_50_write_ln22</name>
+              <name>appear_addr_50_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6003,7 +6003,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6032,7 +6032,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>104</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6044,7 +6044,7 @@
               <name>appear_addr_51</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6060,7 +6060,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6073,7 +6073,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>825046065</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6099,10 +6099,10 @@
             <Obj>
               <type>0</type>
               <id>109</id>
-              <name>appear_addr_51_write_ln22</name>
+              <name>appear_addr_51_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6118,7 +6118,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6147,7 +6147,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>106</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6159,7 +6159,7 @@
               <name>appear_addr_52</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6175,7 +6175,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6188,7 +6188,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>542329928</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6214,10 +6214,10 @@
             <Obj>
               <type>0</type>
               <id>111</id>
-              <name>appear_addr_52_write_ln22</name>
+              <name>appear_addr_52_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6233,7 +6233,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6262,7 +6262,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>108</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6274,7 +6274,7 @@
               <name>appear_addr_53</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6290,7 +6290,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6303,7 +6303,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>997485606</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6329,10 +6329,10 @@
             <Obj>
               <type>0</type>
               <id>113</id>
-              <name>appear_addr_53_write_ln22</name>
+              <name>appear_addr_53_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6348,7 +6348,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6377,7 +6377,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>110</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6389,7 +6389,7 @@
               <name>appear_addr_54</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6405,7 +6405,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6418,7 +6418,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1885414944</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6444,10 +6444,10 @@
             <Obj>
               <type>0</type>
               <id>115</id>
-              <name>appear_addr_54_write_ln22</name>
+              <name>appear_addr_54_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6463,7 +6463,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6492,7 +6492,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>112</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6504,7 +6504,7 @@
               <name>appear_addr_55</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6520,7 +6520,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6533,7 +6533,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953244773</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6559,10 +6559,10 @@
             <Obj>
               <type>0</type>
               <id>117</id>
-              <name>appear_addr_55_write_ln22</name>
+              <name>appear_addr_55_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6578,7 +6578,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6607,7 +6607,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>114</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6619,7 +6619,7 @@
               <name>appear_addr_56</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6635,7 +6635,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6648,7 +6648,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1869898098</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6674,10 +6674,10 @@
             <Obj>
               <type>0</type>
               <id>119</id>
-              <name>appear_addr_56_write_ln22</name>
+              <name>appear_addr_56_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6693,7 +6693,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6722,7 +6722,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>116</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6734,7 +6734,7 @@
               <name>appear_addr_57</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6750,7 +6750,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6763,7 +6763,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1869635878</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6789,10 +6789,10 @@
             <Obj>
               <type>0</type>
               <id>121</id>
-              <name>appear_addr_57_write_ln22</name>
+              <name>appear_addr_57_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6808,7 +6808,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6837,7 +6837,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>118</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6849,7 +6849,7 @@
               <name>appear_addr_58</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6865,7 +6865,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6878,7 +6878,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953244733</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -6904,10 +6904,10 @@
             <Obj>
               <type>0</type>
               <id>123</id>
-              <name>appear_addr_58_write_ln22</name>
+              <name>appear_addr_58_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6923,7 +6923,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6952,7 +6952,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>120</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -6964,7 +6964,7 @@
               <name>appear_addr_59</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -6980,7 +6980,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -6993,7 +6993,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>574449505</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -7019,10 +7019,10 @@
             <Obj>
               <type>0</type>
               <id>125</id>
-              <name>appear_addr_59_write_ln22</name>
+              <name>appear_addr_59_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7038,7 +7038,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7067,7 +7067,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>122</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7079,7 +7079,7 @@
               <name>appear_addr_60</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7095,7 +7095,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7108,7 +7108,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1717530721</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -7134,10 +7134,10 @@
             <Obj>
               <type>0</type>
               <id>127</id>
-              <name>appear_addr_60_write_ln22</name>
+              <name>appear_addr_60_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7153,7 +7153,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7182,7 +7182,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>124</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7194,7 +7194,7 @@
               <name>appear_addr_61</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7210,7 +7210,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7223,7 +7223,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>808019300</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -7249,10 +7249,10 @@
             <Obj>
               <type>0</type>
               <id>129</id>
-              <name>appear_addr_61_write_ln22</name>
+              <name>appear_addr_61_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7268,7 +7268,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7297,7 +7297,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>126</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7309,7 +7309,7 @@
               <name>appear_addr_62</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7325,7 +7325,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7364,10 +7364,10 @@
             <Obj>
               <type>0</type>
               <id>131</id>
-              <name>appear_addr_62_write_ln22</name>
+              <name>appear_addr_62_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7383,7 +7383,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7412,7 +7412,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>128</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7424,7 +7424,7 @@
               <name>appear_addr_63</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7440,7 +7440,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7453,7 +7453,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -7479,10 +7479,10 @@
             <Obj>
               <type>0</type>
               <id>133</id>
-              <name>appear_addr_63_write_ln22</name>
+              <name>appear_addr_63_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7498,7 +7498,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7527,7 +7527,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>130</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7539,7 +7539,7 @@
               <name>appear_addr_64</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7555,7 +7555,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7594,10 +7594,10 @@
             <Obj>
               <type>0</type>
               <id>135</id>
-              <name>appear_addr_64_write_ln22</name>
+              <name>appear_addr_64_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7613,7 +7613,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7642,7 +7642,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>132</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7654,7 +7654,7 @@
               <name>appear_addr_65</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7670,7 +7670,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7709,10 +7709,10 @@
             <Obj>
               <type>0</type>
               <id>137</id>
-              <name>appear_addr_65_write_ln22</name>
+              <name>appear_addr_65_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7728,7 +7728,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7757,7 +7757,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>134</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7769,7 +7769,7 @@
               <name>appear_addr_66</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7785,7 +7785,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7824,10 +7824,10 @@
             <Obj>
               <type>0</type>
               <id>139</id>
-              <name>appear_addr_66_write_ln22</name>
+              <name>appear_addr_66_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7843,7 +7843,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7872,7 +7872,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>136</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7884,7 +7884,7 @@
               <name>appear_addr_67</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7900,7 +7900,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7939,10 +7939,10 @@
             <Obj>
               <type>0</type>
               <id>141</id>
-              <name>appear_addr_67_write_ln22</name>
+              <name>appear_addr_67_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -7958,7 +7958,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -7987,7 +7987,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>138</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7999,7 +7999,7 @@
               <name>appear_addr_68</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8015,7 +8015,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8054,10 +8054,10 @@
             <Obj>
               <type>0</type>
               <id>143</id>
-              <name>appear_addr_68_write_ln22</name>
+              <name>appear_addr_68_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8073,7 +8073,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8102,7 +8102,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>140</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -8114,7 +8114,7 @@
               <name>appear_addr_69</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8130,7 +8130,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8169,10 +8169,10 @@
             <Obj>
               <type>0</type>
               <id>145</id>
-              <name>appear_addr_69_write_ln22</name>
+              <name>appear_addr_69_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8188,7 +8188,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8217,7 +8217,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>142</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -8229,7 +8229,7 @@
               <name>appear_addr_70</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8245,7 +8245,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8284,10 +8284,10 @@
             <Obj>
               <type>0</type>
               <id>147</id>
-              <name>appear_addr_70_write_ln22</name>
+              <name>appear_addr_70_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8303,7 +8303,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8332,7 +8332,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>144</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -8344,7 +8344,7 @@
               <name>appear_addr_71</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8360,7 +8360,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8373,7 +8373,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1471</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -8399,10 +8399,10 @@
             <Obj>
               <type>0</type>
               <id>149</id>
-              <name>appear_addr_71_write_ln22</name>
+              <name>appear_addr_71_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8418,7 +8418,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8447,7 +8447,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>146</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -8459,7 +8459,7 @@
               <name>appear_addr_72</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8475,7 +8475,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8514,10 +8514,10 @@
             <Obj>
               <type>0</type>
               <id>151</id>
-              <name>appear_addr_72_write_ln22</name>
+              <name>appear_addr_72_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8533,7 +8533,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8562,7 +8562,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>148</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -8574,7 +8574,7 @@
               <name>appear_addr_73</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8590,7 +8590,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8603,7 +8603,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1756</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -8629,10 +8629,10 @@
             <Obj>
               <type>0</type>
               <id>153</id>
-              <name>appear_addr_73_write_ln22</name>
+              <name>appear_addr_73_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8648,7 +8648,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8677,7 +8677,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>150</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -8689,7 +8689,7 @@
               <name>appear_addr_74</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8705,7 +8705,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8744,10 +8744,10 @@
             <Obj>
               <type>0</type>
               <id>155</id>
-              <name>appear_addr_74_write_ln22</name>
+              <name>appear_addr_74_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8763,7 +8763,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8792,7 +8792,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>152</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -8804,7 +8804,7 @@
               <name>appear_addr_75</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8820,7 +8820,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8859,10 +8859,10 @@
             <Obj>
               <type>0</type>
               <id>157</id>
-              <name>appear_addr_75_write_ln22</name>
+              <name>appear_addr_75_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8878,7 +8878,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8907,7 +8907,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>154</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -8919,7 +8919,7 @@
               <name>appear_addr_76</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8935,7 +8935,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -8948,7 +8948,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -8974,10 +8974,10 @@
             <Obj>
               <type>0</type>
               <id>159</id>
-              <name>appear_addr_76_write_ln22</name>
+              <name>appear_addr_76_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -8993,7 +8993,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9022,7 +9022,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>156</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9034,7 +9034,7 @@
               <name>appear_addr_77</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9050,7 +9050,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9063,7 +9063,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>808019300</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9089,10 +9089,10 @@
             <Obj>
               <type>0</type>
               <id>161</id>
-              <name>appear_addr_77_write_ln22</name>
+              <name>appear_addr_77_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9108,7 +9108,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9137,7 +9137,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>158</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9149,7 +9149,7 @@
               <name>appear_addr_78</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9165,7 +9165,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9178,7 +9178,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1702390118</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9204,10 +9204,10 @@
             <Obj>
               <type>0</type>
               <id>163</id>
-              <name>appear_addr_78_write_ln22</name>
+              <name>appear_addr_78_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9223,7 +9223,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9252,7 +9252,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>160</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9264,7 +9264,7 @@
               <name>appear_addr_79</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9280,7 +9280,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9293,7 +9293,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1702060386</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9319,10 +9319,10 @@
             <Obj>
               <type>0</type>
               <id>165</id>
-              <name>appear_addr_79_write_ln22</name>
+              <name>appear_addr_79_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9338,7 +9338,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9367,7 +9367,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>162</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9379,7 +9379,7 @@
               <name>appear_addr_80</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9395,7 +9395,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9408,7 +9408,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1701999731</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9434,10 +9434,10 @@
             <Obj>
               <type>0</type>
               <id>167</id>
-              <name>appear_addr_80_write_ln22</name>
+              <name>appear_addr_80_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9453,7 +9453,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9482,7 +9482,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>164</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9494,7 +9494,7 @@
               <name>appear_addr_81</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9510,7 +9510,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9523,7 +9523,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1650418789</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9549,10 +9549,10 @@
             <Obj>
               <type>0</type>
               <id>169</id>
-              <name>appear_addr_81_write_ln22</name>
+              <name>appear_addr_81_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9568,7 +9568,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9597,7 +9597,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>166</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9609,7 +9609,7 @@
               <name>appear_addr_82</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9625,7 +9625,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9638,7 +9638,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1869635878</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9664,10 +9664,10 @@
             <Obj>
               <type>0</type>
               <id>171</id>
-              <name>appear_addr_82_write_ln22</name>
+              <name>appear_addr_82_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9683,7 +9683,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9712,7 +9712,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>168</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9724,7 +9724,7 @@
               <name>appear_addr_83</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9740,7 +9740,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9753,7 +9753,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1919950882</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9779,10 +9779,10 @@
             <Obj>
               <type>0</type>
               <id>173</id>
-              <name>appear_addr_83_write_ln22</name>
+              <name>appear_addr_83_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9798,7 +9798,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9827,7 +9827,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>170</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9839,7 +9839,7 @@
               <name>appear_addr_84</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9855,7 +9855,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9868,7 +9868,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>891905380</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -9894,10 +9894,10 @@
             <Obj>
               <type>0</type>
               <id>175</id>
-              <name>appear_addr_84_write_ln22</name>
+              <name>appear_addr_84_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9913,7 +9913,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9942,7 +9942,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>172</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -9954,7 +9954,7 @@
               <name>appear_addr_85</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -9970,7 +9970,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -9983,7 +9983,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953244733</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10009,10 +10009,10 @@
             <Obj>
               <type>0</type>
               <id>177</id>
-              <name>appear_addr_85_write_ln22</name>
+              <name>appear_addr_85_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10028,7 +10028,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10057,7 +10057,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>174</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10069,7 +10069,7 @@
               <name>appear_addr_86</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10085,7 +10085,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10098,7 +10098,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>694510703</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10124,10 +10124,10 @@
             <Obj>
               <type>0</type>
               <id>179</id>
-              <name>appear_addr_86_write_ln22</name>
+              <name>appear_addr_86_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10143,7 +10143,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10172,7 +10172,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>176</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10184,7 +10184,7 @@
               <name>appear_addr_87</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10200,7 +10200,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10213,7 +10213,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1630019628</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10239,10 +10239,10 @@
             <Obj>
               <type>0</type>
               <id>181</id>
-              <name>appear_addr_87_write_ln22</name>
+              <name>appear_addr_87_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10258,7 +10258,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10287,7 +10287,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>178</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10299,7 +10299,7 @@
               <name>appear_addr_88</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10315,7 +10315,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10328,7 +10328,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>859452217</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10354,10 +10354,10 @@
             <Obj>
               <type>0</type>
               <id>183</id>
-              <name>appear_addr_88_write_ln22</name>
+              <name>appear_addr_88_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10373,7 +10373,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10402,7 +10402,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>180</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10414,7 +10414,7 @@
               <name>appear_addr_89</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10430,7 +10430,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10443,7 +10443,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2734737488</coreId>
+              <coreId>674985063</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10469,10 +10469,10 @@
             <Obj>
               <type>0</type>
               <id>185</id>
-              <name>appear_addr_89_write_ln22</name>
+              <name>appear_addr_89_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10488,7 +10488,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10517,7 +10517,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>182</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10529,7 +10529,7 @@
               <name>appear_addr_90</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10545,7 +10545,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10558,7 +10558,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>875639328</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10584,10 +10584,10 @@
             <Obj>
               <type>0</type>
               <id>187</id>
-              <name>appear_addr_90_write_ln22</name>
+              <name>appear_addr_90_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10603,7 +10603,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10632,7 +10632,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>184</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10644,7 +10644,7 @@
               <name>appear_addr_91</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10660,7 +10660,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10673,7 +10673,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>518737952</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10699,10 +10699,10 @@
             <Obj>
               <type>0</type>
               <id>189</id>
-              <name>appear_addr_91_write_ln22</name>
+              <name>appear_addr_91_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10718,7 +10718,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10747,7 +10747,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>186</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10759,7 +10759,7 @@
               <name>appear_addr_92</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10775,7 +10775,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10788,7 +10788,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1650418789</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10814,10 +10814,10 @@
             <Obj>
               <type>0</type>
               <id>191</id>
-              <name>appear_addr_92_write_ln22</name>
+              <name>appear_addr_92_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10833,7 +10833,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10862,7 +10862,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>188</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10874,7 +10874,7 @@
               <name>appear_addr_93</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10890,7 +10890,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10903,7 +10903,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>741548076</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -10929,10 +10929,10 @@
             <Obj>
               <type>0</type>
               <id>193</id>
-              <name>appear_addr_93_write_ln22</name>
+              <name>appear_addr_93_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -10948,7 +10948,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -10977,7 +10977,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>190</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -10989,7 +10989,7 @@
               <name>appear_addr_94</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11005,7 +11005,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11018,7 +11018,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>744846188</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11044,10 +11044,10 @@
             <Obj>
               <type>0</type>
               <id>195</id>
-              <name>appear_addr_94_write_ln22</name>
+              <name>appear_addr_94_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11063,7 +11063,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11092,7 +11092,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>192</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -11104,7 +11104,7 @@
               <name>appear_addr_95</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11120,7 +11120,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11133,7 +11133,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>2020173413</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11159,10 +11159,10 @@
             <Obj>
               <type>0</type>
               <id>197</id>
-              <name>appear_addr_95_write_ln22</name>
+              <name>appear_addr_95_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11178,7 +11178,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11207,7 +11207,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>194</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -11219,7 +11219,7 @@
               <name>appear_addr_96</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11235,7 +11235,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11248,7 +11248,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1600415096</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11274,10 +11274,10 @@
             <Obj>
               <type>0</type>
               <id>199</id>
-              <name>appear_addr_96_write_ln22</name>
+              <name>appear_addr_96_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11293,7 +11293,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11322,7 +11322,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>196</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -11334,7 +11334,7 @@
               <name>appear_addr_97</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11350,7 +11350,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11363,7 +11363,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1701080941</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11389,10 +11389,10 @@
             <Obj>
               <type>0</type>
               <id>201</id>
-              <name>appear_addr_97_write_ln22</name>
+              <name>appear_addr_97_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11408,7 +11408,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11437,7 +11437,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>198</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -11449,7 +11449,7 @@
               <name>appear_addr_98</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11465,7 +11465,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11478,7 +11478,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1734439795</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11504,10 +11504,10 @@
             <Obj>
               <type>0</type>
               <id>203</id>
-              <name>appear_addr_98_write_ln22</name>
+              <name>appear_addr_98_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11523,7 +11523,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11552,7 +11552,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>200</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -11564,7 +11564,7 @@
               <name>appear_addr_99</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11580,7 +11580,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11593,7 +11593,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1885415456</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11619,10 +11619,10 @@
             <Obj>
               <type>0</type>
               <id>205</id>
-              <name>appear_addr_99_write_ln22</name>
+              <name>appear_addr_99_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11638,7 +11638,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11667,7 +11667,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>202</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -11679,7 +11679,7 @@
               <name>appear_addr_100</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11695,7 +11695,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11708,7 +11708,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1935762015</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11734,10 +11734,10 @@
             <Obj>
               <type>0</type>
               <id>207</id>
-              <name>appear_addr_100_write_ln22</name>
+              <name>appear_addr_100_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11753,7 +11753,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11782,7 +11782,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>204</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -11794,7 +11794,7 @@
               <name>appear_addr_101</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11810,7 +11810,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11823,7 +11823,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1646275692</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11849,10 +11849,10 @@
             <Obj>
               <type>0</type>
               <id>209</id>
-              <name>appear_addr_101_write_ln22</name>
+              <name>appear_addr_101_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11868,7 +11868,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11897,7 +11897,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>206</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -11909,7 +11909,7 @@
               <name>appear_addr_102</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11925,7 +11925,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -11938,7 +11938,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>641430631</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -11964,10 +11964,10 @@
             <Obj>
               <type>0</type>
               <id>211</id>
-              <name>appear_addr_102_write_ln22</name>
+              <name>appear_addr_102_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -11983,7 +11983,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12012,7 +12012,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>208</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12024,7 +12024,7 @@
               <name>appear_addr_103</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12040,7 +12040,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12053,7 +12053,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>644182881</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12079,10 +12079,10 @@
             <Obj>
               <type>0</type>
               <id>213</id>
-              <name>appear_addr_103_write_ln22</name>
+              <name>appear_addr_103_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12098,7 +12098,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12127,7 +12127,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>210</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12139,7 +12139,7 @@
               <name>appear_addr_104</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12155,7 +12155,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12168,7 +12168,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1868767291</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12194,10 +12194,10 @@
             <Obj>
               <type>0</type>
               <id>215</id>
-              <name>appear_addr_104_write_ln22</name>
+              <name>appear_addr_104_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12213,7 +12213,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12242,7 +12242,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>212</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12254,7 +12254,7 @@
               <name>appear_addr_105</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12270,7 +12270,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12283,7 +12283,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953244773</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12309,10 +12309,10 @@
             <Obj>
               <type>0</type>
               <id>217</id>
-              <name>appear_addr_105_write_ln22</name>
+              <name>appear_addr_105_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12328,7 +12328,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12357,7 +12357,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>214</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12369,7 +12369,7 @@
               <name>appear_addr_106</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12385,7 +12385,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12398,7 +12398,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1937075312</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12424,10 +12424,10 @@
             <Obj>
               <type>0</type>
               <id>219</id>
-              <name>appear_addr_106_write_ln22</name>
+              <name>appear_addr_106_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12443,7 +12443,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12472,7 +12472,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>216</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12484,7 +12484,7 @@
               <name>appear_addr_107</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12500,7 +12500,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12513,7 +12513,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1920213036</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12539,10 +12539,10 @@
             <Obj>
               <type>0</type>
               <id>221</id>
-              <name>appear_addr_107_write_ln22</name>
+              <name>appear_addr_107_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12558,7 +12558,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12587,7 +12587,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>218</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12599,7 +12599,7 @@
               <name>appear_addr_108</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12615,7 +12615,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12628,7 +12628,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1210187897</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12654,10 +12654,10 @@
             <Obj>
               <type>0</type>
               <id>223</id>
-              <name>appear_addr_108_write_ln22</name>
+              <name>appear_addr_108_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12673,7 +12673,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12702,7 +12702,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>220</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12714,7 +12714,7 @@
               <name>appear_addr_109</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12730,7 +12730,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12743,7 +12743,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>997420912</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12769,10 +12769,10 @@
             <Obj>
               <type>0</type>
               <id>225</id>
-              <name>appear_addr_109_write_ln22</name>
+              <name>appear_addr_109_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12788,7 +12788,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12817,7 +12817,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>222</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12829,7 +12829,7 @@
               <name>appear_addr_110</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12845,7 +12845,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12858,7 +12858,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953067621</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12884,10 +12884,10 @@
             <Obj>
               <type>0</type>
               <id>227</id>
-              <name>appear_addr_110_write_ln22</name>
+              <name>appear_addr_110_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12903,7 +12903,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12932,7 +12932,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>224</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -12944,7 +12944,7 @@
               <name>appear_addr_111</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -12960,7 +12960,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -12973,7 +12973,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>539766825</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -12999,10 +12999,10 @@
             <Obj>
               <type>0</type>
               <id>229</id>
-              <name>appear_addr_111_write_ln22</name>
+              <name>appear_addr_111_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13018,7 +13018,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13047,7 +13047,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>226</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13059,7 +13059,7 @@
               <name>appear_addr_112</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13075,7 +13075,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13088,7 +13088,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>825111090</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -13114,10 +13114,10 @@
             <Obj>
               <type>0</type>
               <id>231</id>
-              <name>appear_addr_112_write_ln22</name>
+              <name>appear_addr_112_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13133,7 +13133,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13162,7 +13162,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>228</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13174,7 +13174,7 @@
               <name>appear_addr_113</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13190,7 +13190,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13203,7 +13203,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>536888653</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -13229,10 +13229,10 @@
             <Obj>
               <type>0</type>
               <id>233</id>
-              <name>appear_addr_113_write_ln22</name>
+              <name>appear_addr_113_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13248,7 +13248,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13277,7 +13277,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>230</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13289,7 +13289,7 @@
               <name>appear_addr_114</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13305,7 +13305,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13318,7 +13318,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1445951598</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -13344,10 +13344,10 @@
             <Obj>
               <type>0</type>
               <id>235</id>
-              <name>appear_addr_114_write_ln22</name>
+              <name>appear_addr_114_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13363,7 +13363,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13392,7 +13392,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>232</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13404,7 +13404,7 @@
               <name>appear_addr_115</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13420,7 +13420,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13433,7 +13433,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1630501223</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -13459,10 +13459,10 @@
             <Obj>
               <type>0</type>
               <id>237</id>
-              <name>appear_addr_115_write_ln22</name>
+              <name>appear_addr_115_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13478,7 +13478,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13507,7 +13507,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>234</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13519,7 +13519,7 @@
               <name>appear_addr_116</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13535,7 +13535,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13548,7 +13548,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1601265520</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -13574,10 +13574,10 @@
             <Obj>
               <type>0</type>
               <id>239</id>
-              <name>appear_addr_116_write_ln22</name>
+              <name>appear_addr_116_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13593,7 +13593,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13622,7 +13622,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>236</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13634,7 +13634,7 @@
               <name>appear_addr_117</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13650,7 +13650,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13663,7 +13663,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1818843183</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -13689,10 +13689,10 @@
             <Obj>
               <type>0</type>
               <id>241</id>
-              <name>appear_addr_117_write_ln22</name>
+              <name>appear_addr_117_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13708,7 +13708,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13737,7 +13737,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>238</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13749,7 +13749,7 @@
               <name>appear_addr_118</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13765,7 +13765,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13778,7 +13778,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1869635878</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -13804,10 +13804,10 @@
             <Obj>
               <type>0</type>
               <id>243</id>
-              <name>appear_addr_118_write_ln22</name>
+              <name>appear_addr_118_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13823,7 +13823,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13852,7 +13852,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>240</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13864,7 +13864,7 @@
               <name>appear_addr_119</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13880,7 +13880,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13893,7 +13893,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>539767603</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -13919,10 +13919,10 @@
             <Obj>
               <type>0</type>
               <id>245</id>
-              <name>appear_addr_119_write_ln22</name>
+              <name>appear_addr_119_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13938,7 +13938,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -13967,7 +13967,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>242</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -13979,7 +13979,7 @@
               <name>appear_addr_120</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -13995,7 +13995,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14008,7 +14008,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>2228334</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14034,10 +14034,10 @@
             <Obj>
               <type>0</type>
               <id>247</id>
-              <name>appear_addr_120_write_ln22</name>
+              <name>appear_addr_120_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14053,7 +14053,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14082,7 +14082,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>244</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -14094,7 +14094,7 @@
               <name>appear_addr_121</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14110,7 +14110,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14123,7 +14123,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>825368659</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14149,10 +14149,10 @@
             <Obj>
               <type>0</type>
               <id>249</id>
-              <name>appear_addr_121_write_ln22</name>
+              <name>appear_addr_121_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14168,7 +14168,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14197,7 +14197,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>246</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -14209,7 +14209,7 @@
               <name>appear_addr_122</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14225,7 +14225,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14238,7 +14238,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>520101888</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14264,10 +14264,10 @@
             <Obj>
               <type>0</type>
               <id>251</id>
-              <name>appear_addr_122_write_ln22</name>
+              <name>appear_addr_122_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14283,7 +14283,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14312,7 +14312,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>248</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -14324,7 +14324,7 @@
               <name>appear_addr_123</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14340,7 +14340,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14353,7 +14353,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1601134448</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14379,10 +14379,10 @@
             <Obj>
               <type>0</type>
               <id>253</id>
-              <name>appear_addr_123_write_ln22</name>
+              <name>appear_addr_123_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14398,7 +14398,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14427,7 +14427,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>250</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -14439,7 +14439,7 @@
               <name>appear_addr_124</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14455,7 +14455,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14468,7 +14468,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1600415096</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14494,10 +14494,10 @@
             <Obj>
               <type>0</type>
               <id>255</id>
-              <name>appear_addr_124_write_ln22</name>
+              <name>appear_addr_124_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14513,7 +14513,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14542,7 +14542,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>252</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -14554,7 +14554,7 @@
               <name>appear_addr_125</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14570,7 +14570,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14583,7 +14583,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1634082860</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14609,10 +14609,10 @@
             <Obj>
               <type>0</type>
               <id>257</id>
-              <name>appear_addr_125_write_ln22</name>
+              <name>appear_addr_125_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14628,7 +14628,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14657,7 +14657,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>254</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -14669,7 +14669,7 @@
               <name>appear_addr_126</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14685,7 +14685,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14698,7 +14698,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1869442415</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14724,10 +14724,10 @@
             <Obj>
               <type>0</type>
               <id>259</id>
-              <name>appear_addr_126_write_ln22</name>
+              <name>appear_addr_126_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14743,7 +14743,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14772,7 +14772,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>256</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -14784,7 +14784,7 @@
               <name>appear_addr_127</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14800,7 +14800,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14813,7 +14813,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1735355503</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14839,10 +14839,10 @@
             <Obj>
               <type>0</type>
               <id>261</id>
-              <name>appear_addr_127_write_ln22</name>
+              <name>appear_addr_127_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14858,7 +14858,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14887,7 +14887,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>258</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -14899,7 +14899,7 @@
               <name>appear_addr_128</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14915,7 +14915,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -14928,7 +14928,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>857746483</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -14954,10 +14954,10 @@
             <Obj>
               <type>0</type>
               <id>263</id>
-              <name>appear_addr_128_write_ln22</name>
+              <name>appear_addr_128_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -14973,7 +14973,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15002,7 +15002,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>260</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15014,7 +15014,7 @@
               <name>appear_addr_129</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15030,7 +15030,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15043,7 +15043,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1853189987</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -15069,10 +15069,10 @@
             <Obj>
               <type>0</type>
               <id>265</id>
-              <name>appear_addr_129_write_ln22</name>
+              <name>appear_addr_129_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15088,7 +15088,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15117,7 +15117,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>262</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15129,7 +15129,7 @@
               <name>appear_addr_130</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15145,7 +15145,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15158,7 +15158,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1929405799</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -15184,10 +15184,10 @@
             <Obj>
               <type>0</type>
               <id>267</id>
-              <name>appear_addr_130_write_ln22</name>
+              <name>appear_addr_130_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15203,7 +15203,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15232,7 +15232,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>264</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15244,7 +15244,7 @@
               <name>appear_addr_131</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15260,7 +15260,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15273,7 +15273,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1869438833</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -15299,10 +15299,10 @@
             <Obj>
               <type>0</type>
               <id>269</id>
-              <name>appear_addr_131_write_ln22</name>
+              <name>appear_addr_131_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15318,7 +15318,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15347,7 +15347,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>266</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15359,7 +15359,7 @@
               <name>appear_addr_132</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15375,7 +15375,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15388,7 +15388,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953396079</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -15414,10 +15414,10 @@
             <Obj>
               <type>0</type>
               <id>271</id>
-              <name>appear_addr_132_write_ln22</name>
+              <name>appear_addr_132_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15433,7 +15433,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15462,7 +15462,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>268</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15474,7 +15474,7 @@
               <name>appear_addr_133</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15490,7 +15490,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15503,7 +15503,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1919251317</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -15529,10 +15529,10 @@
             <Obj>
               <type>0</type>
               <id>273</id>
-              <name>appear_addr_133_write_ln22</name>
+              <name>appear_addr_133_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15548,7 +15548,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15577,7 +15577,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>270</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15589,7 +15589,7 @@
               <name>appear_addr_134</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15605,7 +15605,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15618,7 +15618,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>694510703</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -15644,10 +15644,10 @@
             <Obj>
               <type>0</type>
               <id>275</id>
-              <name>appear_addr_134_write_ln22</name>
+              <name>appear_addr_134_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15663,7 +15663,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15692,7 +15692,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>272</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15704,7 +15704,7 @@
               <name>appear_addr_135</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15720,7 +15720,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15759,10 +15759,10 @@
             <Obj>
               <type>0</type>
               <id>277</id>
-              <name>appear_addr_135_write_ln22</name>
+              <name>appear_addr_135_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15778,7 +15778,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15807,7 +15807,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>274</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15819,7 +15819,7 @@
               <name>appear_addr_136</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15835,7 +15835,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15874,10 +15874,10 @@
             <Obj>
               <type>0</type>
               <id>279</id>
-              <name>appear_addr_136_write_ln22</name>
+              <name>appear_addr_136_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15893,7 +15893,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15922,7 +15922,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>276</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -15934,7 +15934,7 @@
               <name>appear_addr_137</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -15950,7 +15950,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -15989,10 +15989,10 @@
             <Obj>
               <type>0</type>
               <id>281</id>
-              <name>appear_addr_137_write_ln22</name>
+              <name>appear_addr_137_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16008,7 +16008,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16037,7 +16037,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>278</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16049,7 +16049,7 @@
               <name>appear_addr_138</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16065,7 +16065,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16104,10 +16104,10 @@
             <Obj>
               <type>0</type>
               <id>283</id>
-              <name>appear_addr_138_write_ln22</name>
+              <name>appear_addr_138_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16123,7 +16123,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16152,7 +16152,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>280</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16164,7 +16164,7 @@
               <name>appear_addr_139</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16180,7 +16180,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16219,10 +16219,10 @@
             <Obj>
               <type>0</type>
               <id>285</id>
-              <name>appear_addr_139_write_ln22</name>
+              <name>appear_addr_139_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16238,7 +16238,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16267,7 +16267,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>282</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16279,7 +16279,7 @@
               <name>appear_addr_140</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16295,7 +16295,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16308,7 +16308,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>757203060</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -16334,10 +16334,10 @@
             <Obj>
               <type>0</type>
               <id>287</id>
-              <name>appear_addr_140_write_ln22</name>
+              <name>appear_addr_140_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16353,7 +16353,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16382,7 +16382,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>284</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16394,7 +16394,7 @@
               <name>appear_addr_141</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16410,7 +16410,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16449,10 +16449,10 @@
             <Obj>
               <type>0</type>
               <id>289</id>
-              <name>appear_addr_141_write_ln22</name>
+              <name>appear_addr_141_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16468,7 +16468,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16497,7 +16497,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>286</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16509,7 +16509,7 @@
               <name>appear_addr_142</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16525,7 +16525,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16538,7 +16538,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1634562671</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -16564,10 +16564,10 @@
             <Obj>
               <type>0</type>
               <id>291</id>
-              <name>appear_addr_142_write_ln22</name>
+              <name>appear_addr_142_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16583,7 +16583,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16612,7 +16612,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>288</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16624,7 +16624,7 @@
               <name>appear_addr_143</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16640,7 +16640,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16679,10 +16679,10 @@
             <Obj>
               <type>0</type>
               <id>293</id>
-              <name>appear_addr_143_write_ln22</name>
+              <name>appear_addr_143_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16698,7 +16698,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16727,7 +16727,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>290</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16739,7 +16739,7 @@
               <name>appear_addr_144</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16755,7 +16755,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16794,10 +16794,10 @@
             <Obj>
               <type>0</type>
               <id>295</id>
-              <name>appear_addr_144_write_ln22</name>
+              <name>appear_addr_144_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16813,7 +16813,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16842,7 +16842,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>292</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16854,7 +16854,7 @@
               <name>appear_addr_145</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16870,7 +16870,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16909,10 +16909,10 @@
             <Obj>
               <type>0</type>
               <id>297</id>
-              <name>appear_addr_145_write_ln22</name>
+              <name>appear_addr_145_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16928,7 +16928,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -16957,7 +16957,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>294</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -16969,7 +16969,7 @@
               <name>appear_addr_146</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -16985,7 +16985,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17024,10 +17024,10 @@
             <Obj>
               <type>0</type>
               <id>299</id>
-              <name>appear_addr_146_write_ln22</name>
+              <name>appear_addr_146_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17043,7 +17043,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17072,7 +17072,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>296</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -17084,7 +17084,7 @@
               <name>appear_addr_147</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17100,7 +17100,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17139,10 +17139,10 @@
             <Obj>
               <type>0</type>
               <id>301</id>
-              <name>appear_addr_147_write_ln22</name>
+              <name>appear_addr_147_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17158,7 +17158,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17187,7 +17187,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>298</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -17199,7 +17199,7 @@
               <name>appear_addr_148</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17215,7 +17215,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17254,10 +17254,10 @@
             <Obj>
               <type>0</type>
               <id>303</id>
-              <name>appear_addr_148_write_ln22</name>
+              <name>appear_addr_148_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17273,7 +17273,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17302,7 +17302,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>300</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -17314,7 +17314,7 @@
               <name>appear_addr_149</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17330,7 +17330,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17369,10 +17369,10 @@
             <Obj>
               <type>0</type>
               <id>305</id>
-              <name>appear_addr_149_write_ln22</name>
+              <name>appear_addr_149_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17388,7 +17388,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17417,7 +17417,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>302</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -17429,7 +17429,7 @@
               <name>appear_addr_150</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17445,7 +17445,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17484,10 +17484,10 @@
             <Obj>
               <type>0</type>
               <id>307</id>
-              <name>appear_addr_150_write_ln22</name>
+              <name>appear_addr_150_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17503,7 +17503,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17532,7 +17532,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>304</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -17544,7 +17544,7 @@
               <name>appear_addr_151</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17560,7 +17560,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17599,10 +17599,10 @@
             <Obj>
               <type>0</type>
               <id>309</id>
-              <name>appear_addr_151_write_ln22</name>
+              <name>appear_addr_151_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17618,7 +17618,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17647,7 +17647,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>306</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -17659,7 +17659,7 @@
               <name>appear_addr_152</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17675,7 +17675,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17688,7 +17688,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>66050</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -17714,10 +17714,10 @@
             <Obj>
               <type>0</type>
               <id>311</id>
-              <name>appear_addr_152_write_ln22</name>
+              <name>appear_addr_152_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17733,7 +17733,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17762,7 +17762,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>308</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -17774,7 +17774,7 @@
               <name>appear_addr_153</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17790,7 +17790,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17829,10 +17829,10 @@
             <Obj>
               <type>0</type>
               <id>313</id>
-              <name>appear_addr_153_write_ln22</name>
+              <name>appear_addr_153_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17848,7 +17848,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17877,7 +17877,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>310</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -17889,7 +17889,7 @@
               <name>appear_addr_154</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17905,7 +17905,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17944,10 +17944,10 @@
             <Obj>
               <type>0</type>
               <id>315</id>
-              <name>appear_addr_154_write_ln22</name>
+              <name>appear_addr_154_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -17963,7 +17963,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -17992,7 +17992,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>312</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18004,7 +18004,7 @@
               <name>appear_addr_155</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18020,7 +18020,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18059,10 +18059,10 @@
             <Obj>
               <type>0</type>
               <id>317</id>
-              <name>appear_addr_155_write_ln22</name>
+              <name>appear_addr_155_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18078,7 +18078,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18107,7 +18107,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>314</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18119,7 +18119,7 @@
               <name>appear_addr_156</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18135,7 +18135,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18174,10 +18174,10 @@
             <Obj>
               <type>0</type>
               <id>319</id>
-              <name>appear_addr_156_write_ln22</name>
+              <name>appear_addr_156_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18193,7 +18193,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18222,7 +18222,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>316</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18234,7 +18234,7 @@
               <name>appear_addr_157</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18250,7 +18250,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18289,10 +18289,10 @@
             <Obj>
               <type>0</type>
               <id>321</id>
-              <name>appear_addr_157_write_ln22</name>
+              <name>appear_addr_157_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18308,7 +18308,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18337,7 +18337,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>318</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18349,7 +18349,7 @@
               <name>appear_addr_158</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18365,7 +18365,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18404,10 +18404,10 @@
             <Obj>
               <type>0</type>
               <id>323</id>
-              <name>appear_addr_158_write_ln22</name>
+              <name>appear_addr_158_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18423,7 +18423,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18452,7 +18452,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>320</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18464,7 +18464,7 @@
               <name>appear_addr_159</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18480,7 +18480,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18519,10 +18519,10 @@
             <Obj>
               <type>0</type>
               <id>325</id>
-              <name>appear_addr_159_write_ln22</name>
+              <name>appear_addr_159_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18538,7 +18538,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18567,7 +18567,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>322</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18579,7 +18579,7 @@
               <name>appear_addr_160</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18595,7 +18595,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18634,10 +18634,10 @@
             <Obj>
               <type>0</type>
               <id>327</id>
-              <name>appear_addr_160_write_ln22</name>
+              <name>appear_addr_160_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18653,7 +18653,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18682,7 +18682,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>324</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18694,7 +18694,7 @@
               <name>appear_addr_161</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18710,7 +18710,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18749,10 +18749,10 @@
             <Obj>
               <type>0</type>
               <id>329</id>
-              <name>appear_addr_161_write_ln22</name>
+              <name>appear_addr_161_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18768,7 +18768,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18797,7 +18797,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>326</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18809,7 +18809,7 @@
               <name>appear_addr_162</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18825,7 +18825,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18864,10 +18864,10 @@
             <Obj>
               <type>0</type>
               <id>331</id>
-              <name>appear_addr_162_write_ln22</name>
+              <name>appear_addr_162_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18883,7 +18883,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18912,7 +18912,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>328</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -18924,7 +18924,7 @@
               <name>appear_addr_163</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18940,7 +18940,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -18979,10 +18979,10 @@
             <Obj>
               <type>0</type>
               <id>333</id>
-              <name>appear_addr_163_write_ln22</name>
+              <name>appear_addr_163_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -18998,7 +18998,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19027,7 +19027,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>330</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19039,7 +19039,7 @@
               <name>appear_addr_164</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19055,7 +19055,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19068,7 +19068,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -19094,10 +19094,10 @@
             <Obj>
               <type>0</type>
               <id>335</id>
-              <name>appear_addr_164_write_ln22</name>
+              <name>appear_addr_164_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19113,7 +19113,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19142,7 +19142,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>332</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19154,7 +19154,7 @@
               <name>appear_addr_165</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19170,7 +19170,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19209,10 +19209,10 @@
             <Obj>
               <type>0</type>
               <id>337</id>
-              <name>appear_addr_165_write_ln22</name>
+              <name>appear_addr_165_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19228,7 +19228,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19257,7 +19257,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>334</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19269,7 +19269,7 @@
               <name>appear_addr_166</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19285,7 +19285,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19324,10 +19324,10 @@
             <Obj>
               <type>0</type>
               <id>339</id>
-              <name>appear_addr_166_write_ln22</name>
+              <name>appear_addr_166_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19343,7 +19343,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19372,7 +19372,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>336</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19384,7 +19384,7 @@
               <name>appear_addr_167</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19400,7 +19400,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19413,7 +19413,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1423</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -19439,10 +19439,10 @@
             <Obj>
               <type>0</type>
               <id>341</id>
-              <name>appear_addr_167_write_ln22</name>
+              <name>appear_addr_167_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19458,7 +19458,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19487,7 +19487,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>338</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19499,7 +19499,7 @@
               <name>appear_addr_168</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19515,7 +19515,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19528,7 +19528,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1119</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -19554,10 +19554,10 @@
             <Obj>
               <type>0</type>
               <id>343</id>
-              <name>appear_addr_168_write_ln22</name>
+              <name>appear_addr_168_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19573,7 +19573,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19602,7 +19602,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>340</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19614,7 +19614,7 @@
               <name>appear_addr_169</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19630,7 +19630,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19669,10 +19669,10 @@
             <Obj>
               <type>0</type>
               <id>345</id>
-              <name>appear_addr_169_write_ln22</name>
+              <name>appear_addr_169_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19688,7 +19688,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19717,7 +19717,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>342</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19729,7 +19729,7 @@
               <name>appear_addr_170</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19745,7 +19745,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19758,7 +19758,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -19784,10 +19784,10 @@
             <Obj>
               <type>0</type>
               <id>347</id>
-              <name>appear_addr_170_write_ln22</name>
+              <name>appear_addr_170_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19803,7 +19803,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19832,7 +19832,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>344</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19844,7 +19844,7 @@
               <name>appear_addr_171</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19860,7 +19860,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19873,7 +19873,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -19899,10 +19899,10 @@
             <Obj>
               <type>0</type>
               <id>349</id>
-              <name>appear_addr_171_write_ln22</name>
+              <name>appear_addr_171_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19918,7 +19918,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19947,7 +19947,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>346</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -19959,7 +19959,7 @@
               <name>appear_addr_172</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -19975,7 +19975,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -19988,7 +19988,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -20014,10 +20014,10 @@
             <Obj>
               <type>0</type>
               <id>351</id>
-              <name>appear_addr_172_write_ln22</name>
+              <name>appear_addr_172_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20033,7 +20033,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20062,7 +20062,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>348</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20074,7 +20074,7 @@
               <name>appear_addr_173</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20090,7 +20090,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20103,7 +20103,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2734785504</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -20129,10 +20129,10 @@
             <Obj>
               <type>0</type>
               <id>353</id>
-              <name>appear_addr_173_write_ln22</name>
+              <name>appear_addr_173_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20148,7 +20148,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20177,7 +20177,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>350</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20189,7 +20189,7 @@
               <name>appear_addr_174</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20205,7 +20205,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20218,7 +20218,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1073</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -20244,10 +20244,10 @@
             <Obj>
               <type>0</type>
               <id>355</id>
-              <name>appear_addr_174_write_ln22</name>
+              <name>appear_addr_174_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20263,7 +20263,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20292,7 +20292,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>352</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20304,7 +20304,7 @@
               <name>appear_addr_175</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20320,7 +20320,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20333,7 +20333,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -20359,10 +20359,10 @@
             <Obj>
               <type>0</type>
               <id>357</id>
-              <name>appear_addr_175_write_ln22</name>
+              <name>appear_addr_175_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20378,7 +20378,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20407,7 +20407,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>354</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20419,7 +20419,7 @@
               <name>appear_addr_176</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20435,7 +20435,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20448,7 +20448,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -20474,10 +20474,10 @@
             <Obj>
               <type>0</type>
               <id>359</id>
-              <name>appear_addr_176_write_ln22</name>
+              <name>appear_addr_176_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20493,7 +20493,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20522,7 +20522,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>356</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20534,7 +20534,7 @@
               <name>appear_addr_177</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20550,7 +20550,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20589,10 +20589,10 @@
             <Obj>
               <type>0</type>
               <id>361</id>
-              <name>appear_addr_177_write_ln22</name>
+              <name>appear_addr_177_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20608,7 +20608,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20637,7 +20637,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>358</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20649,7 +20649,7 @@
               <name>appear_addr_178</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20665,7 +20665,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20704,10 +20704,10 @@
             <Obj>
               <type>0</type>
               <id>363</id>
-              <name>appear_addr_178_write_ln22</name>
+              <name>appear_addr_178_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20723,7 +20723,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20752,7 +20752,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>360</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20764,7 +20764,7 @@
               <name>appear_addr_179</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20780,7 +20780,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20793,7 +20793,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -20819,10 +20819,10 @@
             <Obj>
               <type>0</type>
               <id>365</id>
-              <name>appear_addr_179_write_ln22</name>
+              <name>appear_addr_179_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20838,7 +20838,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20867,7 +20867,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>362</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20879,7 +20879,7 @@
               <name>appear_addr_180</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20895,7 +20895,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20908,7 +20908,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -20934,10 +20934,10 @@
             <Obj>
               <type>0</type>
               <id>367</id>
-              <name>appear_addr_180_write_ln22</name>
+              <name>appear_addr_180_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -20953,7 +20953,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -20982,7 +20982,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>364</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -20994,7 +20994,7 @@
               <name>appear_addr_181</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21010,7 +21010,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21023,7 +21023,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -21049,10 +21049,10 @@
             <Obj>
               <type>0</type>
               <id>369</id>
-              <name>appear_addr_181_write_ln22</name>
+              <name>appear_addr_181_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21068,7 +21068,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21097,7 +21097,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>366</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -21109,7 +21109,7 @@
               <name>appear_addr_182</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21125,7 +21125,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21138,7 +21138,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -21164,10 +21164,10 @@
             <Obj>
               <type>0</type>
               <id>371</id>
-              <name>appear_addr_182_write_ln22</name>
+              <name>appear_addr_182_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21183,7 +21183,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21212,7 +21212,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>368</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -21224,7 +21224,7 @@
               <name>appear_addr_183</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21240,7 +21240,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21253,7 +21253,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -21279,10 +21279,10 @@
             <Obj>
               <type>0</type>
               <id>373</id>
-              <name>appear_addr_183_write_ln22</name>
+              <name>appear_addr_183_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21298,7 +21298,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21327,7 +21327,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>370</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -21339,7 +21339,7 @@
               <name>appear_addr_184</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21355,7 +21355,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21368,7 +21368,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -21394,10 +21394,10 @@
             <Obj>
               <type>0</type>
               <id>375</id>
-              <name>appear_addr_184_write_ln22</name>
+              <name>appear_addr_184_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21413,7 +21413,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21442,7 +21442,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>372</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -21454,7 +21454,7 @@
               <name>appear_addr_185</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21470,7 +21470,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21483,7 +21483,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -21509,10 +21509,10 @@
             <Obj>
               <type>0</type>
               <id>377</id>
-              <name>appear_addr_185_write_ln22</name>
+              <name>appear_addr_185_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21528,7 +21528,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21557,7 +21557,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>374</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -21569,7 +21569,7 @@
               <name>appear_addr_186</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21585,7 +21585,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21598,7 +21598,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -21624,10 +21624,10 @@
             <Obj>
               <type>0</type>
               <id>379</id>
-              <name>appear_addr_186_write_ln22</name>
+              <name>appear_addr_186_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21643,7 +21643,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21672,7 +21672,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>376</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -21684,7 +21684,7 @@
               <name>appear_addr_187</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21700,7 +21700,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21739,10 +21739,10 @@
             <Obj>
               <type>0</type>
               <id>381</id>
-              <name>appear_addr_187_write_ln22</name>
+              <name>appear_addr_187_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21758,7 +21758,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21787,7 +21787,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>378</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -21799,7 +21799,7 @@
               <name>appear_addr_188</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21815,7 +21815,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21828,7 +21828,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4228300630</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -21854,10 +21854,10 @@
             <Obj>
               <type>0</type>
               <id>383</id>
-              <name>appear_addr_188_write_ln22</name>
+              <name>appear_addr_188_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21873,7 +21873,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21902,7 +21902,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>380</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -21914,7 +21914,7 @@
               <name>appear_addr_189</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21930,7 +21930,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -21943,7 +21943,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1213</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -21969,10 +21969,10 @@
             <Obj>
               <type>0</type>
               <id>385</id>
-              <name>appear_addr_189_write_ln22</name>
+              <name>appear_addr_189_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -21988,7 +21988,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22017,7 +22017,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>382</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22029,7 +22029,7 @@
               <name>appear_addr_190</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22045,7 +22045,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22058,7 +22058,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1493</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -22084,10 +22084,10 @@
             <Obj>
               <type>0</type>
               <id>387</id>
-              <name>appear_addr_190_write_ln22</name>
+              <name>appear_addr_190_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22103,7 +22103,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22132,7 +22132,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>384</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22144,7 +22144,7 @@
               <name>appear_addr_191</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22160,7 +22160,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22173,7 +22173,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1259</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -22199,10 +22199,10 @@
             <Obj>
               <type>0</type>
               <id>389</id>
-              <name>appear_addr_191_write_ln22</name>
+              <name>appear_addr_191_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22218,7 +22218,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22247,7 +22247,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>386</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22259,7 +22259,7 @@
               <name>appear_addr_192</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22275,7 +22275,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22314,10 +22314,10 @@
             <Obj>
               <type>0</type>
               <id>391</id>
-              <name>appear_addr_192_write_ln22</name>
+              <name>appear_addr_192_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22333,7 +22333,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22362,7 +22362,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>388</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22374,7 +22374,7 @@
               <name>appear_addr_193</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22390,7 +22390,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22429,10 +22429,10 @@
             <Obj>
               <type>0</type>
               <id>393</id>
-              <name>appear_addr_193_write_ln22</name>
+              <name>appear_addr_193_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22448,7 +22448,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22477,7 +22477,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>390</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22489,7 +22489,7 @@
               <name>appear_addr_194</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22505,7 +22505,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22544,10 +22544,10 @@
             <Obj>
               <type>0</type>
               <id>395</id>
-              <name>appear_addr_194_write_ln22</name>
+              <name>appear_addr_194_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22563,7 +22563,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22592,7 +22592,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>392</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22604,7 +22604,7 @@
               <name>appear_addr_195</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22620,7 +22620,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22659,10 +22659,10 @@
             <Obj>
               <type>0</type>
               <id>397</id>
-              <name>appear_addr_195_write_ln22</name>
+              <name>appear_addr_195_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22678,7 +22678,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22707,7 +22707,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>394</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22719,7 +22719,7 @@
               <name>appear_addr_196</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22735,7 +22735,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22774,10 +22774,10 @@
             <Obj>
               <type>0</type>
               <id>399</id>
-              <name>appear_addr_196_write_ln22</name>
+              <name>appear_addr_196_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22793,7 +22793,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22822,7 +22822,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>396</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22834,7 +22834,7 @@
               <name>appear_addr_197</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22850,7 +22850,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22889,10 +22889,10 @@
             <Obj>
               <type>0</type>
               <id>401</id>
-              <name>appear_addr_197_write_ln22</name>
+              <name>appear_addr_197_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22908,7 +22908,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -22937,7 +22937,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>398</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -22949,7 +22949,7 @@
               <name>appear_addr_198</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -22965,7 +22965,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23004,10 +23004,10 @@
             <Obj>
               <type>0</type>
               <id>403</id>
-              <name>appear_addr_198_write_ln22</name>
+              <name>appear_addr_198_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23023,7 +23023,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23052,7 +23052,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>400</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23064,7 +23064,7 @@
               <name>appear_addr_199</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23080,7 +23080,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23119,10 +23119,10 @@
             <Obj>
               <type>0</type>
               <id>405</id>
-              <name>appear_addr_199_write_ln22</name>
+              <name>appear_addr_199_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23138,7 +23138,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23167,7 +23167,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>402</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23179,7 +23179,7 @@
               <name>appear_addr_200</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23195,7 +23195,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23234,10 +23234,10 @@
             <Obj>
               <type>0</type>
               <id>407</id>
-              <name>appear_addr_200_write_ln22</name>
+              <name>appear_addr_200_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23253,7 +23253,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23282,7 +23282,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>404</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23294,7 +23294,7 @@
               <name>appear_addr_201</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23310,7 +23310,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23349,10 +23349,10 @@
             <Obj>
               <type>0</type>
               <id>409</id>
-              <name>appear_addr_201_write_ln22</name>
+              <name>appear_addr_201_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23368,7 +23368,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23397,7 +23397,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>406</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23409,7 +23409,7 @@
               <name>appear_addr_202</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23425,7 +23425,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23464,10 +23464,10 @@
             <Obj>
               <type>0</type>
               <id>411</id>
-              <name>appear_addr_202_write_ln22</name>
+              <name>appear_addr_202_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23483,7 +23483,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23512,7 +23512,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>408</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23524,7 +23524,7 @@
               <name>appear_addr_203</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23540,7 +23540,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23579,10 +23579,10 @@
             <Obj>
               <type>0</type>
               <id>413</id>
-              <name>appear_addr_203_write_ln22</name>
+              <name>appear_addr_203_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23598,7 +23598,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23627,7 +23627,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>410</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23639,7 +23639,7 @@
               <name>appear_addr_204</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23655,7 +23655,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23694,10 +23694,10 @@
             <Obj>
               <type>0</type>
               <id>415</id>
-              <name>appear_addr_204_write_ln22</name>
+              <name>appear_addr_204_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23713,7 +23713,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23742,7 +23742,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>412</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23754,7 +23754,7 @@
               <name>appear_addr_205</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23770,7 +23770,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23809,10 +23809,10 @@
             <Obj>
               <type>0</type>
               <id>417</id>
-              <name>appear_addr_205_write_ln22</name>
+              <name>appear_addr_205_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23828,7 +23828,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23857,7 +23857,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>414</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23869,7 +23869,7 @@
               <name>appear_addr_206</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23885,7 +23885,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23924,10 +23924,10 @@
             <Obj>
               <type>0</type>
               <id>419</id>
-              <name>appear_addr_206_write_ln22</name>
+              <name>appear_addr_206_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -23943,7 +23943,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -23972,7 +23972,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>416</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -23984,7 +23984,7 @@
               <name>appear_addr_207</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24000,7 +24000,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24039,10 +24039,10 @@
             <Obj>
               <type>0</type>
               <id>421</id>
-              <name>appear_addr_207_write_ln22</name>
+              <name>appear_addr_207_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24058,7 +24058,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24087,7 +24087,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>418</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -24099,7 +24099,7 @@
               <name>appear_addr_208</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24115,7 +24115,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24154,10 +24154,10 @@
             <Obj>
               <type>0</type>
               <id>423</id>
-              <name>appear_addr_208_write_ln22</name>
+              <name>appear_addr_208_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24173,7 +24173,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24202,7 +24202,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>420</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -24214,7 +24214,7 @@
               <name>appear_addr_209</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24230,7 +24230,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24269,10 +24269,10 @@
             <Obj>
               <type>0</type>
               <id>425</id>
-              <name>appear_addr_209_write_ln22</name>
+              <name>appear_addr_209_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24288,7 +24288,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24317,7 +24317,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>422</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -24329,7 +24329,7 @@
               <name>appear_addr_210</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24345,7 +24345,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24384,10 +24384,10 @@
             <Obj>
               <type>0</type>
               <id>427</id>
-              <name>appear_addr_210_write_ln22</name>
+              <name>appear_addr_210_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24403,7 +24403,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24432,7 +24432,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>424</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -24444,7 +24444,7 @@
               <name>appear_addr_211</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24460,7 +24460,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24499,10 +24499,10 @@
             <Obj>
               <type>0</type>
               <id>429</id>
-              <name>appear_addr_211_write_ln22</name>
+              <name>appear_addr_211_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24518,7 +24518,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24547,7 +24547,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>426</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -24559,7 +24559,7 @@
               <name>appear_addr_212</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24575,7 +24575,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24614,10 +24614,10 @@
             <Obj>
               <type>0</type>
               <id>431</id>
-              <name>appear_addr_212_write_ln22</name>
+              <name>appear_addr_212_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24633,7 +24633,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24662,7 +24662,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>428</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -24674,7 +24674,7 @@
               <name>appear_addr_213</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24690,7 +24690,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24729,10 +24729,10 @@
             <Obj>
               <type>0</type>
               <id>433</id>
-              <name>appear_addr_213_write_ln22</name>
+              <name>appear_addr_213_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24748,7 +24748,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24777,7 +24777,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>430</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -24789,7 +24789,7 @@
               <name>appear_addr_214</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24805,7 +24805,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24844,10 +24844,10 @@
             <Obj>
               <type>0</type>
               <id>435</id>
-              <name>appear_addr_214_write_ln22</name>
+              <name>appear_addr_214_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24863,7 +24863,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24892,7 +24892,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>432</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -24904,7 +24904,7 @@
               <name>appear_addr_215</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24920,7 +24920,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -24959,10 +24959,10 @@
             <Obj>
               <type>0</type>
               <id>437</id>
-              <name>appear_addr_215_write_ln22</name>
+              <name>appear_addr_215_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -24978,7 +24978,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25007,7 +25007,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>434</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25019,7 +25019,7 @@
               <name>appear_addr_216</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25035,7 +25035,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25074,10 +25074,10 @@
             <Obj>
               <type>0</type>
               <id>439</id>
-              <name>appear_addr_216_write_ln22</name>
+              <name>appear_addr_216_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25093,7 +25093,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25122,7 +25122,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>436</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25134,7 +25134,7 @@
               <name>appear_addr_217</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25150,7 +25150,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25189,10 +25189,10 @@
             <Obj>
               <type>0</type>
               <id>441</id>
-              <name>appear_addr_217_write_ln22</name>
+              <name>appear_addr_217_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25208,7 +25208,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25237,7 +25237,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>438</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25249,7 +25249,7 @@
               <name>appear_addr_218</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25265,7 +25265,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25304,10 +25304,10 @@
             <Obj>
               <type>0</type>
               <id>443</id>
-              <name>appear_addr_218_write_ln22</name>
+              <name>appear_addr_218_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25323,7 +25323,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25352,7 +25352,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>440</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25364,7 +25364,7 @@
               <name>appear_addr_219</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25380,7 +25380,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25419,10 +25419,10 @@
             <Obj>
               <type>0</type>
               <id>445</id>
-              <name>appear_addr_219_write_ln22</name>
+              <name>appear_addr_219_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25438,7 +25438,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25467,7 +25467,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>442</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25479,7 +25479,7 @@
               <name>appear_addr_220</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25495,7 +25495,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25534,10 +25534,10 @@
             <Obj>
               <type>0</type>
               <id>447</id>
-              <name>appear_addr_220_write_ln22</name>
+              <name>appear_addr_220_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25553,7 +25553,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25582,7 +25582,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>444</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25594,7 +25594,7 @@
               <name>appear_addr_221</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25610,7 +25610,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25649,10 +25649,10 @@
             <Obj>
               <type>0</type>
               <id>449</id>
-              <name>appear_addr_221_write_ln22</name>
+              <name>appear_addr_221_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25668,7 +25668,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25697,7 +25697,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>446</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25709,7 +25709,7 @@
               <name>appear_addr_222</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25725,7 +25725,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25764,10 +25764,10 @@
             <Obj>
               <type>0</type>
               <id>451</id>
-              <name>appear_addr_222_write_ln22</name>
+              <name>appear_addr_222_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25783,7 +25783,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25812,7 +25812,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>448</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25824,7 +25824,7 @@
               <name>appear_addr_223</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25840,7 +25840,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25879,10 +25879,10 @@
             <Obj>
               <type>0</type>
               <id>453</id>
-              <name>appear_addr_223_write_ln22</name>
+              <name>appear_addr_223_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25898,7 +25898,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25927,7 +25927,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>450</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -25939,7 +25939,7 @@
               <name>appear_addr_224</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -25955,7 +25955,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -25994,10 +25994,10 @@
             <Obj>
               <type>0</type>
               <id>455</id>
-              <name>appear_addr_224_write_ln22</name>
+              <name>appear_addr_224_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26013,7 +26013,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26042,7 +26042,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>452</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26054,7 +26054,7 @@
               <name>appear_addr_225</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26070,7 +26070,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26083,7 +26083,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4080361998</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -26109,10 +26109,10 @@
             <Obj>
               <type>0</type>
               <id>457</id>
-              <name>appear_addr_225_write_ln22</name>
+              <name>appear_addr_225_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26128,7 +26128,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26157,7 +26157,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>454</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26169,7 +26169,7 @@
               <name>appear_addr_226</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26185,7 +26185,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26198,7 +26198,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>593</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -26224,10 +26224,10 @@
             <Obj>
               <type>0</type>
               <id>459</id>
-              <name>appear_addr_226_write_ln22</name>
+              <name>appear_addr_226_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26243,7 +26243,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26272,7 +26272,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>456</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26284,7 +26284,7 @@
               <name>appear_addr_227</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26300,7 +26300,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26339,10 +26339,10 @@
             <Obj>
               <type>0</type>
               <id>461</id>
-              <name>appear_addr_227_write_ln22</name>
+              <name>appear_addr_227_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26358,7 +26358,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26387,7 +26387,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>458</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26399,7 +26399,7 @@
               <name>appear_addr_228</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26415,7 +26415,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26428,7 +26428,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>598200138</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -26454,10 +26454,10 @@
             <Obj>
               <type>0</type>
               <id>463</id>
-              <name>appear_addr_228_write_ln22</name>
+              <name>appear_addr_228_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26473,7 +26473,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26502,7 +26502,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>460</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26514,7 +26514,7 @@
               <name>appear_addr_229</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26530,7 +26530,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26543,7 +26543,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>469</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -26569,10 +26569,10 @@
             <Obj>
               <type>0</type>
               <id>465</id>
-              <name>appear_addr_229_write_ln22</name>
+              <name>appear_addr_229_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26588,7 +26588,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26617,7 +26617,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>462</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26629,7 +26629,7 @@
               <name>appear_addr_230</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26645,7 +26645,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26658,7 +26658,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4038530202</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -26684,10 +26684,10 @@
             <Obj>
               <type>0</type>
               <id>467</id>
-              <name>appear_addr_230_write_ln22</name>
+              <name>appear_addr_230_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26703,7 +26703,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26732,7 +26732,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>464</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26744,7 +26744,7 @@
               <name>appear_addr_231</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26760,7 +26760,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26773,7 +26773,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>3681164636</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -26799,10 +26799,10 @@
             <Obj>
               <type>0</type>
               <id>469</id>
-              <name>appear_addr_231_write_ln22</name>
+              <name>appear_addr_231_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26818,7 +26818,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26847,7 +26847,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>466</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26859,7 +26859,7 @@
               <name>appear_addr_232</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26875,7 +26875,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26888,7 +26888,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>3233435640</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -26914,10 +26914,10 @@
             <Obj>
               <type>0</type>
               <id>471</id>
-              <name>appear_addr_232_write_ln22</name>
+              <name>appear_addr_232_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26933,7 +26933,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -26962,7 +26962,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>468</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -26974,7 +26974,7 @@
               <name>appear_addr_233</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -26990,7 +26990,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27029,10 +27029,10 @@
             <Obj>
               <type>0</type>
               <id>473</id>
-              <name>appear_addr_233_write_ln22</name>
+              <name>appear_addr_233_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27048,7 +27048,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27077,7 +27077,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>470</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -27089,7 +27089,7 @@
               <name>appear_addr_234</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27105,7 +27105,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27118,7 +27118,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4026190254</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -27144,10 +27144,10 @@
             <Obj>
               <type>0</type>
               <id>475</id>
-              <name>appear_addr_234_write_ln22</name>
+              <name>appear_addr_234_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27163,7 +27163,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27192,7 +27192,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>472</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -27204,7 +27204,7 @@
               <name>appear_addr_235</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27220,7 +27220,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27259,10 +27259,10 @@
             <Obj>
               <type>0</type>
               <id>477</id>
-              <name>appear_addr_235_write_ln22</name>
+              <name>appear_addr_235_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27278,7 +27278,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27307,7 +27307,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>474</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -27319,7 +27319,7 @@
               <name>appear_addr_236</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27335,7 +27335,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27374,10 +27374,10 @@
             <Obj>
               <type>0</type>
               <id>479</id>
-              <name>appear_addr_236_write_ln22</name>
+              <name>appear_addr_236_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27393,7 +27393,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27422,7 +27422,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>476</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -27434,7 +27434,7 @@
               <name>appear_addr_237</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27450,7 +27450,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27463,7 +27463,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>2426527309</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -27489,10 +27489,10 @@
             <Obj>
               <type>0</type>
               <id>481</id>
-              <name>appear_addr_237_write_ln22</name>
+              <name>appear_addr_237_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27508,7 +27508,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27537,7 +27537,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>478</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -27549,7 +27549,7 @@
               <name>appear_addr_238</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27565,7 +27565,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27604,10 +27604,10 @@
             <Obj>
               <type>0</type>
               <id>483</id>
-              <name>appear_addr_238_write_ln22</name>
+              <name>appear_addr_238_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27623,7 +27623,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27652,7 +27652,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>480</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -27664,7 +27664,7 @@
               <name>appear_addr_239</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27680,7 +27680,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27693,7 +27693,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1738602575</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -27719,10 +27719,10 @@
             <Obj>
               <type>0</type>
               <id>485</id>
-              <name>appear_addr_239_write_ln22</name>
+              <name>appear_addr_239_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27738,7 +27738,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27767,7 +27767,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>482</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -27779,7 +27779,7 @@
               <name>appear_addr_240</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27795,7 +27795,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27834,10 +27834,10 @@
             <Obj>
               <type>0</type>
               <id>487</id>
-              <name>appear_addr_240_write_ln22</name>
+              <name>appear_addr_240_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27853,7 +27853,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27882,7 +27882,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>484</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -27894,7 +27894,7 @@
               <name>appear_addr_241</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27910,7 +27910,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27923,7 +27923,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1437311593</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -27949,10 +27949,10 @@
             <Obj>
               <type>0</type>
               <id>489</id>
-              <name>appear_addr_241_write_ln22</name>
+              <name>appear_addr_241_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -27968,7 +27968,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -27997,7 +27997,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>486</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28009,7 +28009,7 @@
               <name>appear_addr_242</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28025,7 +28025,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28038,7 +28038,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>2544342211</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -28064,10 +28064,10 @@
             <Obj>
               <type>0</type>
               <id>491</id>
-              <name>appear_addr_242_write_ln22</name>
+              <name>appear_addr_242_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28083,7 +28083,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28112,7 +28112,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>488</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28124,7 +28124,7 @@
               <name>appear_addr_243</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28140,7 +28140,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28179,10 +28179,10 @@
             <Obj>
               <type>0</type>
               <id>493</id>
-              <name>appear_addr_243_write_ln22</name>
+              <name>appear_addr_243_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28198,7 +28198,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28227,7 +28227,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>490</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28239,7 +28239,7 @@
               <name>appear_addr_244</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28255,7 +28255,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28268,7 +28268,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>263339436</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -28294,10 +28294,10 @@
             <Obj>
               <type>0</type>
               <id>495</id>
-              <name>appear_addr_244_write_ln22</name>
+              <name>appear_addr_244_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28313,7 +28313,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28342,7 +28342,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>492</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28354,7 +28354,7 @@
               <name>appear_addr_245</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28370,7 +28370,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28383,7 +28383,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4163667946</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -28409,10 +28409,10 @@
             <Obj>
               <type>0</type>
               <id>497</id>
-              <name>appear_addr_245_write_ln22</name>
+              <name>appear_addr_245_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28428,7 +28428,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28457,7 +28457,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>494</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28469,7 +28469,7 @@
               <name>appear_addr_246</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28485,7 +28485,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28498,7 +28498,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1898679685</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -28524,10 +28524,10 @@
             <Obj>
               <type>0</type>
               <id>499</id>
-              <name>appear_addr_246_write_ln22</name>
+              <name>appear_addr_246_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28543,7 +28543,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28572,7 +28572,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>496</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28584,7 +28584,7 @@
               <name>appear_addr_247</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28600,7 +28600,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28613,7 +28613,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>3904294020</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -28639,10 +28639,10 @@
             <Obj>
               <type>0</type>
               <id>501</id>
-              <name>appear_addr_247_write_ln22</name>
+              <name>appear_addr_247_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28658,7 +28658,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28687,7 +28687,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>498</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28699,7 +28699,7 @@
               <name>appear_addr_248</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28715,7 +28715,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28728,7 +28728,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>2125567071</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -28754,10 +28754,10 @@
             <Obj>
               <type>0</type>
               <id>503</id>
-              <name>appear_addr_248_write_ln22</name>
+              <name>appear_addr_248_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28773,7 +28773,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28802,7 +28802,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>500</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28814,7 +28814,7 @@
               <name>appear_addr_249</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28830,7 +28830,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28843,7 +28843,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4246834248</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -28869,10 +28869,10 @@
             <Obj>
               <type>0</type>
               <id>505</id>
-              <name>appear_addr_249_write_ln22</name>
+              <name>appear_addr_249_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28888,7 +28888,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28917,7 +28917,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>502</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -28929,7 +28929,7 @@
               <name>appear_addr_250</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -28945,7 +28945,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -28984,10 +28984,10 @@
             <Obj>
               <type>0</type>
               <id>507</id>
-              <name>appear_addr_250_write_ln22</name>
+              <name>appear_addr_250_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29003,7 +29003,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29032,7 +29032,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>504</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -29044,7 +29044,7 @@
               <name>appear_addr_251</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29060,7 +29060,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29073,7 +29073,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -29099,10 +29099,10 @@
             <Obj>
               <type>0</type>
               <id>509</id>
-              <name>appear_addr_251_write_ln22</name>
+              <name>appear_addr_251_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29118,7 +29118,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29147,7 +29147,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>506</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -29159,7 +29159,7 @@
               <name>appear_addr_252</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29175,7 +29175,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29214,10 +29214,10 @@
             <Obj>
               <type>0</type>
               <id>511</id>
-              <name>appear_addr_252_write_ln22</name>
+              <name>appear_addr_252_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29233,7 +29233,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29262,7 +29262,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>508</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -29274,7 +29274,7 @@
               <name>appear_addr_253</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29290,7 +29290,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29303,7 +29303,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -29329,10 +29329,10 @@
             <Obj>
               <type>0</type>
               <id>513</id>
-              <name>appear_addr_253_write_ln22</name>
+              <name>appear_addr_253_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29348,7 +29348,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29377,7 +29377,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>510</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -29389,7 +29389,7 @@
               <name>appear_addr_254</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29405,7 +29405,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29418,7 +29418,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>489120064</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -29444,10 +29444,10 @@
             <Obj>
               <type>0</type>
               <id>515</id>
-              <name>appear_addr_254_write_ln22</name>
+              <name>appear_addr_254_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29463,7 +29463,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29492,7 +29492,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>512</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -29504,7 +29504,7 @@
               <name>appear_addr_255</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29520,7 +29520,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29533,7 +29533,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>489105632</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -29559,10 +29559,10 @@
             <Obj>
               <type>0</type>
               <id>517</id>
-              <name>appear_addr_255_write_ln22</name>
+              <name>appear_addr_255_write_ln26</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>22</lineNumber>
+              <lineNumber>26</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -29578,7 +29578,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>22</second>
+                      <second>26</second>
                     </item>
                   </second>
                 </item>
@@ -29607,7 +29607,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>514</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -29634,7 +29634,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>489121664</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30004,7 +30004,7 @@
             <Obj>
               <type>0</type>
               <id>521</id>
-              <name>count_1_1_loc_load</name>
+              <name>count_V_5_loc_load</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -30022,10 +30022,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>489110272</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>8</bitwidth>
+            <bitwidth>3</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -30047,10 +30047,10 @@
             <Obj>
               <type>0</type>
               <id>522</id>
-              <name>zext_ln46</name>
+              <name>zext_ln50</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>46</lineNumber>
+              <lineNumber>50</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -30066,13 +30066,13 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>46</second>
+                      <second>50</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln46_fu_2878_p1</rtlName>
+              <rtlName>zext_ln50_fu_2878_p1</rtlName>
               <control/>
               <opType/>
               <implIndex/>
@@ -30106,7 +30106,7 @@
               <name>appear_addr_256</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>46</lineNumber>
+              <lineNumber>50</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -30122,7 +30122,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>46</second>
+                      <second>50</second>
                     </item>
                   </second>
                 </item>
@@ -30135,7 +30135,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>489117728</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>8</bitwidth>
@@ -30161,10 +30161,10 @@
             <Obj>
               <type>0</type>
               <id>524</id>
-              <name>appear_addr_256_write_ln46</name>
+              <name>appear_addr_256_write_ln50</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>46</lineNumber>
+              <lineNumber>50</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -30180,7 +30180,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>46</second>
+                      <second>50</second>
                     </item>
                   </second>
                 </item>
@@ -30211,7 +30211,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.25</m_delay>
+          <m_delay>2.32</m_delay>
           <m_topoIndex>521</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -30220,10 +30220,10 @@
             <Obj>
               <type>0</type>
               <id>525</id>
-              <name>_ln47</name>
+              <name>_ln51</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>47</lineNumber>
+              <lineNumber>51</lineNumber>
               <contextFuncName>count</contextFuncName>
               <contextNormFuncName>count</contextNormFuncName>
               <inlineStackInfo>
@@ -30239,7 +30239,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>count</second>
                       </first>
-                      <second>47</second>
+                      <second>51</second>
                     </item>
                   </second>
                 </item>
@@ -30252,7 +30252,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>489106176</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -30297,7 +30297,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1953394531</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30328,7 +30328,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>1937011311</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30359,10 +30359,10 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3886817344</coreId>
+              <coreId>1953394531</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>8</bitwidth>
+            <bitwidth>3</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -30390,7 +30390,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30421,7 +30421,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1456514944</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30452,7 +30452,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30483,7 +30483,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1937011311</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30514,7 +30514,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3886817344</coreId>
+              <coreId>257</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30545,7 +30545,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30576,7 +30576,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2742482544</coreId>
+              <coreId>1456482544</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30607,7 +30607,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>48</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30638,7 +30638,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>487564832</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30669,7 +30669,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2711228016</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30700,7 +30700,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>137</coreId>
+              <coreId>1073741823</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30731,7 +30731,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2666926864</coreId>
+              <coreId>487641584</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30793,7 +30793,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>516265776</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30824,7 +30824,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -30917,7 +30917,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>733</coreId>
+              <coreId>1702195828</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31010,7 +31010,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>579</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31041,7 +31041,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>485</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31072,7 +31072,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1981</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31134,7 +31134,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>909</coreId>
+              <coreId>1699560457</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31227,7 +31227,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
+              <coreId>691761261</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31289,7 +31289,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2666049216</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31320,7 +31320,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
+              <coreId>512301664</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31351,7 +31351,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>2043</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31382,7 +31382,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>516588208</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31413,7 +31413,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>661</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31568,7 +31568,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1914699821</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31599,7 +31599,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1668444975</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31630,7 +31630,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1936018748</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31661,7 +31661,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1629954162</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31692,7 +31692,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1635013410</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31723,7 +31723,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>7955819</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31754,7 +31754,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1667457319</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31785,7 +31785,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>825307487</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31816,7 +31816,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1663987041</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31847,7 +31847,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702043696</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31878,7 +31878,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>171847424</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31909,7 +31909,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>659768643</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31940,7 +31940,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1920103779</coreId>
+              <coreId>666</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -31971,7 +31971,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>926166320</coreId>
+              <coreId>520992832</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32002,7 +32002,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702035557</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32033,7 +32033,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>997420912</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32064,7 +32064,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>572</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32095,7 +32095,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>520989360</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32126,7 +32126,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>925</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32188,7 +32188,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>520474256</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32219,7 +32219,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>489068192</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32250,7 +32250,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>520990768</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32281,7 +32281,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1049</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32312,7 +32312,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -32343,7 +32343,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>520991424</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -35350,7 +35350,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>3</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -35381,7 +35381,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1478992832</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -35598,7 +35598,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1639756288</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -35660,7 +35660,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>455329392</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -35722,7 +35722,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>487651952</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -35753,7 +35753,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>518934160</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -35815,7 +35815,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>518935392</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36032,7 +36032,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>329</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36063,7 +36063,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36249,7 +36249,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>594</coreId>
+              <coreId>517627920</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36280,7 +36280,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36342,7 +36342,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>360</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36373,7 +36373,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>188</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36621,7 +36621,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>81</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36652,7 +36652,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>696</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36807,7 +36807,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>205</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36962,7 +36962,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -36993,7 +36993,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>64</coreId>
+              <coreId>0</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -38298,7 +38298,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967288</coreId>
+            <coreId>841962316</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -55261,11 +55261,11 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
-              <second>47</second>
+              <second>42</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>161</second>
+              <second>186</second>
             </item>
           </second>
         </item>
@@ -55480,11 +55480,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>8</second>
+              <second>3</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>32</second>
+              <second>12</second>
             </item>
             <item>
               <first>LUT</first>
@@ -63719,7 +63719,7 @@
         </second>
       </item>
       <item>
-        <first>count_1_1_loc_fu_530</first>
+        <first>count_V_5_loc_fu_530</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -63735,7 +63735,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln46_fu_2878</first>
+        <first>zext_ln50_fu_2878</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -63760,7 +63760,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>count_1_1_loc_load_load_fu_2874</first>
+        <first>count_V_5_loc_load_load_fu_2874</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -64096,7 +64096,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>count_1_1_loc_reg_2883</first>
+        <first>count_V_5_loc_reg_2883</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

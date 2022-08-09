@@ -10,14 +10,14 @@ target triple = "fpga64-xilinx-none"
 declare void @llvm.sideeffect() #0
 
 ; Function Attrs: noinline
-define void @apatb_accelerator_ir(%"class.hls::stream<unsigned char, 0>"* noalias nocapture nonnull dereferenceable(1) %In, %"class.hls::stream<int, 0>"* noalias nocapture nonnull dereferenceable(4) %Out) local_unnamed_addr #1 {
+define void @apatb_accelerator_ir(%"class.hls::stream<unsigned char, 0>"* noalias nocapture nonnull dereferenceable(1) %In, i32 %num_blocks, %"class.hls::stream<int, 0>"* noalias nocapture nonnull dereferenceable(4) %Out) local_unnamed_addr #1 {
 entry:
   %In_copy = alloca i8, align 512
   call void @llvm.sideeffect() #8 [ "stream_interface"(i8* %In_copy, i32 0) ]
   %Out_copy = alloca i32, align 512
   call void @llvm.sideeffect() #9 [ "stream_interface"(i32* %Out_copy, i32 0) ]
   call fastcc void @copy_in(%"class.hls::stream<unsigned char, 0>"* nonnull %In, i8* nonnull align 512 %In_copy, %"class.hls::stream<int, 0>"* nonnull %Out, i32* nonnull align 512 %Out_copy)
-  call void @apatb_accelerator_hw(i8* %In_copy, i32* %Out_copy)
+  call void @apatb_accelerator_hw(i8* %In_copy, i32 %num_blocks, i32* %Out_copy)
   call void @copy_back(%"class.hls::stream<unsigned char, 0>"* %In, i8* %In_copy, %"class.hls::stream<int, 0>"* %Out, i32* %Out_copy)
   ret void
 }
@@ -25,7 +25,7 @@ entry:
 ; Function Attrs: argmemonly noinline
 define internal fastcc void @copy_in(%"class.hls::stream<unsigned char, 0>"* noalias, i8* noalias align 512 "fpga.caller.interfaces"="layout_transformed", %"class.hls::stream<int, 0>"* noalias, i32* noalias align 512 "fpga.caller.interfaces"="layout_transformed") unnamed_addr #2 {
 entry:
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<unsigned char, 0>.16"(i8* align 512 %1, %"class.hls::stream<unsigned char, 0>"* %0)
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<unsigned char, 0>.22"(i8* align 512 %1, %"class.hls::stream<unsigned char, 0>"* %0)
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<int, 0>"(i32* align 512 %3, %"class.hls::stream<int, 0>"* %2)
   ret void
 }
@@ -119,12 +119,12 @@ ret:                                              ; preds = %empty
 define internal fastcc void @copy_out(%"class.hls::stream<unsigned char, 0>"* noalias, i8* noalias align 512 "fpga.caller.interfaces"="layout_transformed", %"class.hls::stream<int, 0>"* noalias, i32* noalias align 512 "fpga.caller.interfaces"="layout_transformed") unnamed_addr #5 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<unsigned char, 0>"(%"class.hls::stream<unsigned char, 0>"* %0, i8* align 512 %1)
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<int, 0>.4"(%"class.hls::stream<int, 0>"* %2, i32* align 512 %3)
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<int, 0>.10"(%"class.hls::stream<int, 0>"* %2, i32* align 512 %3)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<int, 0>.4"(%"class.hls::stream<int, 0>"* noalias "fpga.caller.interfaces"="layout_transformed", i32* noalias align 512 "fpga.caller.interfaces"="layout_transformed") unnamed_addr #3 {
+define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<int, 0>.10"(%"class.hls::stream<int, 0>"* noalias "fpga.caller.interfaces"="layout_transformed", i32* noalias align 512 "fpga.caller.interfaces"="layout_transformed") unnamed_addr #3 {
 entry:
   %2 = icmp eq %"class.hls::stream<int, 0>"* %0, null
   %3 = icmp eq i32* %1, null
@@ -132,7 +132,7 @@ entry:
   br i1 %4, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call fastcc void @"streamcpy_hls.p0class.hls::stream<int, 0>.7"(%"class.hls::stream<int, 0>"* nonnull %0, i32* nonnull align 512 %1)
+  call fastcc void @"streamcpy_hls.p0class.hls::stream<int, 0>.13"(%"class.hls::stream<int, 0>"* nonnull %0, i32* nonnull align 512 %1)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -140,7 +140,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @"streamcpy_hls.p0class.hls::stream<int, 0>.7"(%"class.hls::stream<int, 0>"* noalias nocapture "fpga.caller.interfaces"="layout_transformed", i32* noalias nocapture align 512 "fpga.caller.interfaces"="layout_transformed") unnamed_addr #4 {
+define internal fastcc void @"streamcpy_hls.p0class.hls::stream<int, 0>.13"(%"class.hls::stream<int, 0>"* noalias nocapture "fpga.caller.interfaces"="layout_transformed", i32* noalias nocapture align 512 "fpga.caller.interfaces"="layout_transformed") unnamed_addr #4 {
 entry:
   %2 = alloca i32
   %3 = alloca %"class.hls::stream<int, 0>"
@@ -174,7 +174,7 @@ define internal i32 @"_llvm.fpga.pack.bits.i32.s_class.hls::stream<int, 0>s"(%"c
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<unsigned char, 0>.16"(i8* noalias align 512 "fpga.caller.interfaces"="layout_transformed", %"class.hls::stream<unsigned char, 0>"* noalias "fpga.caller.interfaces"="layout_transformed") unnamed_addr #3 {
+define internal fastcc void @"onebyonecpy_hls.p0class.hls::stream<unsigned char, 0>.22"(i8* noalias align 512 "fpga.caller.interfaces"="layout_transformed", %"class.hls::stream<unsigned char, 0>"* noalias "fpga.caller.interfaces"="layout_transformed") unnamed_addr #3 {
 entry:
   %2 = icmp eq i8* %0, null
   %3 = icmp eq %"class.hls::stream<unsigned char, 0>"* %1, null
@@ -182,7 +182,7 @@ entry:
   br i1 %4, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call fastcc void @"streamcpy_hls.p0class.hls::stream<unsigned char, 0>.19"(i8* nonnull align 512 %0, %"class.hls::stream<unsigned char, 0>"* nonnull %1)
+  call fastcc void @"streamcpy_hls.p0class.hls::stream<unsigned char, 0>.25"(i8* nonnull align 512 %0, %"class.hls::stream<unsigned char, 0>"* nonnull %1)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -190,7 +190,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @"streamcpy_hls.p0class.hls::stream<unsigned char, 0>.19"(i8* noalias nocapture align 512 "fpga.caller.interfaces"="layout_transformed", %"class.hls::stream<unsigned char, 0>"* noalias nocapture "fpga.caller.interfaces"="layout_transformed") unnamed_addr #4 {
+define internal fastcc void @"streamcpy_hls.p0class.hls::stream<unsigned char, 0>.25"(i8* noalias nocapture align 512 "fpga.caller.interfaces"="layout_transformed", %"class.hls::stream<unsigned char, 0>"* noalias nocapture "fpga.caller.interfaces"="layout_transformed") unnamed_addr #4 {
 entry:
   %2 = alloca %"class.hls::stream<unsigned char, 0>"
   %3 = alloca i8
@@ -221,27 +221,27 @@ define internal i8 @"_llvm.fpga.pack.bits.i8.s_class.hls::stream<unsigned char, 
   ret i8 %A.0
 }
 
-declare void @apatb_accelerator_hw(i8*, i32*)
+declare void @apatb_accelerator_hw(i8*, i32, i32*)
 
 ; Function Attrs: argmemonly noinline
 define internal fastcc void @copy_back(%"class.hls::stream<unsigned char, 0>"* noalias, i8* noalias align 512 "fpga.caller.interfaces"="layout_transformed", %"class.hls::stream<int, 0>"* noalias, i32* noalias align 512 "fpga.caller.interfaces"="layout_transformed") unnamed_addr #5 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<unsigned char, 0>"(%"class.hls::stream<unsigned char, 0>"* %0, i8* align 512 %1)
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<int, 0>.4"(%"class.hls::stream<int, 0>"* %2, i32* align 512 %3)
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<int, 0>.10"(%"class.hls::stream<int, 0>"* %2, i32* align 512 %3)
   ret void
 }
 
-define void @accelerator_hw_stub_wrapper(i8*, i32*) #7 {
+define void @accelerator_hw_stub_wrapper(i8*, i32, i32*) #7 {
 entry:
-  %2 = alloca %"class.hls::stream<unsigned char, 0>"
-  %3 = alloca %"class.hls::stream<int, 0>"
-  call void @copy_out(%"class.hls::stream<unsigned char, 0>"* %2, i8* %0, %"class.hls::stream<int, 0>"* %3, i32* %1)
-  call void @accelerator_hw_stub(%"class.hls::stream<unsigned char, 0>"* %2, %"class.hls::stream<int, 0>"* %3)
-  call void @copy_in(%"class.hls::stream<unsigned char, 0>"* %2, i8* %0, %"class.hls::stream<int, 0>"* %3, i32* %1)
+  %3 = alloca %"class.hls::stream<unsigned char, 0>"
+  %4 = alloca %"class.hls::stream<int, 0>"
+  call void @copy_out(%"class.hls::stream<unsigned char, 0>"* %3, i8* %0, %"class.hls::stream<int, 0>"* %4, i32* %2)
+  call void @accelerator_hw_stub(%"class.hls::stream<unsigned char, 0>"* %3, i32 %1, %"class.hls::stream<int, 0>"* %4)
+  call void @copy_in(%"class.hls::stream<unsigned char, 0>"* %3, i8* %0, %"class.hls::stream<int, 0>"* %4, i32* %2)
   ret void
 }
 
-declare void @accelerator_hw_stub(%"class.hls::stream<unsigned char, 0>"*, %"class.hls::stream<int, 0>"*)
+declare void @accelerator_hw_stub(%"class.hls::stream<unsigned char, 0>"*, i32, %"class.hls::stream<int, 0>"*)
 
 declare i1 @fpga_fifo_not_empty_1(i8*)
 

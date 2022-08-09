@@ -24,12 +24,12 @@ port (
     appear_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
     appear_ce0 : OUT STD_LOGIC;
     appear_we0 : OUT STD_LOGIC;
-    appear_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    appear_d0 : OUT STD_LOGIC_VECTOR (2 downto 0);
     appear_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
     appear_ce1 : OUT STD_LOGIC;
     appear_we1 : OUT STD_LOGIC;
-    appear_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    appear_q1 : IN STD_LOGIC_VECTOR (7 downto 0) );
+    appear_d1 : OUT STD_LOGIC_VECTOR (2 downto 0);
+    appear_q1 : IN STD_LOGIC_VECTOR (2 downto 0) );
 end;
 
 
@@ -424,7 +424,7 @@ architecture behav of accelerator_count is
     constant ap_const_lv32_FD : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000011111101";
     constant ap_const_lv32_FE : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000011111110";
     constant ap_const_lv32_FF : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000011111111";
-    constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
 
 attribute shreg_extract : string;
     signal ap_done_reg : STD_LOGIC := '0';
@@ -441,13 +441,13 @@ attribute shreg_extract : string;
     signal grp_count_Pipeline_APPEARANCES_fu_2861_appear_address0 : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_count_Pipeline_APPEARANCES_fu_2861_appear_ce0 : STD_LOGIC;
     signal grp_count_Pipeline_APPEARANCES_fu_2861_appear_we0 : STD_LOGIC;
-    signal grp_count_Pipeline_APPEARANCES_fu_2861_appear_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_count_Pipeline_APPEARANCES_fu_2861_appear_d0 : STD_LOGIC_VECTOR (2 downto 0);
     signal grp_count_Pipeline_APPEARANCES_fu_2861_appear_address1 : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_count_Pipeline_APPEARANCES_fu_2861_appear_ce1 : STD_LOGIC;
     signal grp_count_Pipeline_APPEARANCES_fu_2861_prev_out : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_count_Pipeline_APPEARANCES_fu_2861_prev_out_ap_vld : STD_LOGIC;
-    signal grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out_ap_vld : STD_LOGIC;
+    signal grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out : STD_LOGIC_VECTOR (2 downto 0);
+    signal grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out_ap_vld : STD_LOGIC;
     signal grp_count_Pipeline_APPEARANCES_fu_2861_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state129 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state129 : signal is "none";
@@ -707,7 +707,7 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state127 : signal is "none";
     signal ap_CS_fsm_state128 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state128 : signal is "none";
-    signal zext_ln46_fu_2878_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal zext_ln50_fu_2878_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state131 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state131 : signal is "none";
     signal ap_block_state1 : BOOLEAN;
@@ -859,14 +859,14 @@ attribute shreg_extract : string;
         appear_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
         appear_ce0 : OUT STD_LOGIC;
         appear_we0 : OUT STD_LOGIC;
-        appear_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        appear_d0 : OUT STD_LOGIC_VECTOR (2 downto 0);
         appear_address1 : OUT STD_LOGIC_VECTOR (7 downto 0);
         appear_ce1 : OUT STD_LOGIC;
-        appear_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        appear_q1 : IN STD_LOGIC_VECTOR (2 downto 0);
         prev_out : OUT STD_LOGIC_VECTOR (7 downto 0);
         prev_out_ap_vld : OUT STD_LOGIC;
-        count_1_1_out : OUT STD_LOGIC_VECTOR (7 downto 0);
-        count_1_1_out_ap_vld : OUT STD_LOGIC );
+        count_V_5_out : OUT STD_LOGIC_VECTOR (2 downto 0);
+        count_V_5_out_ap_vld : OUT STD_LOGIC );
     end component;
 
 
@@ -892,8 +892,8 @@ begin
         appear_q1 => appear_q1,
         prev_out => grp_count_Pipeline_APPEARANCES_fu_2861_prev_out,
         prev_out_ap_vld => grp_count_Pipeline_APPEARANCES_fu_2861_prev_out_ap_vld,
-        count_1_1_out => grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out,
-        count_1_1_out_ap_vld => grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out_ap_vld);
+        count_V_5_out => grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out,
+        count_V_5_out_ap_vld => grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out_ap_vld);
 
 
 
@@ -1547,10 +1547,10 @@ begin
     end process;
 
 
-    appear_address0_assign_proc : process(ap_CS_fsm_state1, grp_count_Pipeline_APPEARANCES_fu_2861_appear_address0, ap_CS_fsm_state130, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state7, ap_CS_fsm_state8, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state23, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state26, ap_CS_fsm_state27, ap_CS_fsm_state28, ap_CS_fsm_state29, ap_CS_fsm_state30, ap_CS_fsm_state31, ap_CS_fsm_state32, ap_CS_fsm_state33, ap_CS_fsm_state34, ap_CS_fsm_state35, ap_CS_fsm_state36, ap_CS_fsm_state37, ap_CS_fsm_state38, ap_CS_fsm_state39, ap_CS_fsm_state40, ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, zext_ln46_fu_2878_p1, ap_CS_fsm_state131)
+    appear_address0_assign_proc : process(ap_CS_fsm_state1, grp_count_Pipeline_APPEARANCES_fu_2861_appear_address0, ap_CS_fsm_state130, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state7, ap_CS_fsm_state8, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state23, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state26, ap_CS_fsm_state27, ap_CS_fsm_state28, ap_CS_fsm_state29, ap_CS_fsm_state30, ap_CS_fsm_state31, ap_CS_fsm_state32, ap_CS_fsm_state33, ap_CS_fsm_state34, ap_CS_fsm_state35, ap_CS_fsm_state36, ap_CS_fsm_state37, ap_CS_fsm_state38, ap_CS_fsm_state39, ap_CS_fsm_state40, ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, zext_ln50_fu_2878_p1, ap_CS_fsm_state131)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state131)) then 
-            appear_address0 <= zext_ln46_fu_2878_p1(8 - 1 downto 0);
+            appear_address0 <= zext_ln50_fu_2878_p1(8 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state128)) then 
             appear_address0 <= ap_const_lv32_FF(8 - 1 downto 0);
         elsif ((ap_const_logic_1 = ap_CS_fsm_state127)) then 
@@ -2105,20 +2105,20 @@ begin
     end process;
 
 
-    appear_d0_assign_proc : process(ap_CS_fsm_state1, grp_count_Pipeline_APPEARANCES_fu_2861_appear_d0, grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out, ap_CS_fsm_state130, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state7, ap_CS_fsm_state8, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state23, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state26, ap_CS_fsm_state27, ap_CS_fsm_state28, ap_CS_fsm_state29, ap_CS_fsm_state30, ap_CS_fsm_state31, ap_CS_fsm_state32, ap_CS_fsm_state33, ap_CS_fsm_state34, ap_CS_fsm_state35, ap_CS_fsm_state36, ap_CS_fsm_state37, ap_CS_fsm_state38, ap_CS_fsm_state39, ap_CS_fsm_state40, ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state131)
+    appear_d0_assign_proc : process(ap_CS_fsm_state1, grp_count_Pipeline_APPEARANCES_fu_2861_appear_d0, grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out, ap_CS_fsm_state130, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state7, ap_CS_fsm_state8, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state23, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state26, ap_CS_fsm_state27, ap_CS_fsm_state28, ap_CS_fsm_state29, ap_CS_fsm_state30, ap_CS_fsm_state31, ap_CS_fsm_state32, ap_CS_fsm_state33, ap_CS_fsm_state34, ap_CS_fsm_state35, ap_CS_fsm_state36, ap_CS_fsm_state37, ap_CS_fsm_state38, ap_CS_fsm_state39, ap_CS_fsm_state40, ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state131)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state131)) then 
-            appear_d0 <= grp_count_Pipeline_APPEARANCES_fu_2861_count_1_1_out;
+            appear_d0 <= grp_count_Pipeline_APPEARANCES_fu_2861_count_V_5_out;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state100) or (ap_const_logic_1 = ap_CS_fsm_state99) or (ap_const_logic_1 = ap_CS_fsm_state98) or (ap_const_logic_1 = ap_CS_fsm_state97) or (ap_const_logic_1 = ap_CS_fsm_state96) or (ap_const_logic_1 = ap_CS_fsm_state95) or (ap_const_logic_1 = ap_CS_fsm_state94) or (ap_const_logic_1 = ap_CS_fsm_state93) or (ap_const_logic_1 = ap_CS_fsm_state92) or (ap_const_logic_1 = ap_CS_fsm_state91) or (ap_const_logic_1 = ap_CS_fsm_state90) or (ap_const_logic_1 = ap_CS_fsm_state89) or (ap_const_logic_1 = ap_CS_fsm_state88) or (ap_const_logic_1 = ap_CS_fsm_state87) or (ap_const_logic_1 = ap_CS_fsm_state86) or (ap_const_logic_1 = ap_CS_fsm_state85) or (ap_const_logic_1 = ap_CS_fsm_state84) or (ap_const_logic_1 = ap_CS_fsm_state83) or (ap_const_logic_1 = ap_CS_fsm_state82) or (ap_const_logic_1 = ap_CS_fsm_state81) or (ap_const_logic_1 = ap_CS_fsm_state80) or (ap_const_logic_1 = ap_CS_fsm_state79) or (ap_const_logic_1 = ap_CS_fsm_state78) or (ap_const_logic_1 = ap_CS_fsm_state77) or (ap_const_logic_1 = ap_CS_fsm_state76) or (ap_const_logic_1 = ap_CS_fsm_state75) or (ap_const_logic_1 = ap_CS_fsm_state74) or (ap_const_logic_1 = ap_CS_fsm_state73) or (ap_const_logic_1 = ap_CS_fsm_state72) or (ap_const_logic_1 = ap_CS_fsm_state71) or (ap_const_logic_1 = ap_CS_fsm_state70) or (ap_const_logic_1 = ap_CS_fsm_state69) or (ap_const_logic_1 = ap_CS_fsm_state68) or (ap_const_logic_1 = ap_CS_fsm_state67) or (ap_const_logic_1 = ap_CS_fsm_state66) or (ap_const_logic_1 = ap_CS_fsm_state65) or (ap_const_logic_1 = ap_CS_fsm_state64) or (ap_const_logic_1 = ap_CS_fsm_state63) or (ap_const_logic_1 = ap_CS_fsm_state62) or (ap_const_logic_1 = ap_CS_fsm_state61) or (ap_const_logic_1 = ap_CS_fsm_state60) or (ap_const_logic_1 = ap_CS_fsm_state59) or (ap_const_logic_1 = ap_CS_fsm_state58) or (ap_const_logic_1 = ap_CS_fsm_state57) or (ap_const_logic_1 = ap_CS_fsm_state56) or (ap_const_logic_1 = ap_CS_fsm_state55) or (ap_const_logic_1 = ap_CS_fsm_state54) or (ap_const_logic_1 = ap_CS_fsm_state53) or (ap_const_logic_1 = ap_CS_fsm_state52) or (ap_const_logic_1 = ap_CS_fsm_state51) or (ap_const_logic_1 = ap_CS_fsm_state50) or (ap_const_logic_1 = ap_CS_fsm_state49) or (ap_const_logic_1 = ap_CS_fsm_state48) or (ap_const_logic_1 = ap_CS_fsm_state47) or (ap_const_logic_1 = ap_CS_fsm_state46) or (ap_const_logic_1 = ap_CS_fsm_state45) or (ap_const_logic_1 = ap_CS_fsm_state44) or (ap_const_logic_1 = ap_CS_fsm_state43) or (ap_const_logic_1 = ap_CS_fsm_state42) or (ap_const_logic_1 = ap_CS_fsm_state41) or (ap_const_logic_1 = ap_CS_fsm_state40) or (ap_const_logic_1 = ap_CS_fsm_state39) or (ap_const_logic_1 = ap_CS_fsm_state38) or (ap_const_logic_1 = ap_CS_fsm_state37) or (ap_const_logic_1 = ap_CS_fsm_state36) or (ap_const_logic_1 = ap_CS_fsm_state35) or (ap_const_logic_1 = ap_CS_fsm_state34) or (ap_const_logic_1 = ap_CS_fsm_state33) or (ap_const_logic_1 = ap_CS_fsm_state32) or (ap_const_logic_1 = ap_CS_fsm_state31) or (ap_const_logic_1 = ap_CS_fsm_state30) or (ap_const_logic_1 = ap_CS_fsm_state29) or (ap_const_logic_1 = ap_CS_fsm_state28) or (ap_const_logic_1 = ap_CS_fsm_state27) or (ap_const_logic_1 = ap_CS_fsm_state26) or (ap_const_logic_1 = ap_CS_fsm_state25) or (ap_const_logic_1 = ap_CS_fsm_state24) or (ap_const_logic_1 = ap_CS_fsm_state23) or (ap_const_logic_1 = ap_CS_fsm_state22) or (ap_const_logic_1 = ap_CS_fsm_state21) or (ap_const_logic_1 = ap_CS_fsm_state20) or (ap_const_logic_1 = ap_CS_fsm_state19) or (ap_const_logic_1 = ap_CS_fsm_state18) or (ap_const_logic_1 = ap_CS_fsm_state17) or (ap_const_logic_1 = ap_CS_fsm_state16) or (ap_const_logic_1 = ap_CS_fsm_state15) or (ap_const_logic_1 = ap_CS_fsm_state14) or (ap_const_logic_1 = ap_CS_fsm_state13) or (ap_const_logic_1 = ap_CS_fsm_state12) or (ap_const_logic_1 = ap_CS_fsm_state11) or (ap_const_logic_1 = ap_CS_fsm_state10) or (ap_const_logic_1 = ap_CS_fsm_state9) or (ap_const_logic_1 = ap_CS_fsm_state8) or (ap_const_logic_1 = ap_CS_fsm_state7) or (ap_const_logic_1 = ap_CS_fsm_state6) or (ap_const_logic_1 = ap_CS_fsm_state5) or (ap_const_logic_1 = ap_CS_fsm_state4) or (ap_const_logic_1 = ap_CS_fsm_state3) or (ap_const_logic_1 = ap_CS_fsm_state2) or (ap_const_logic_1 = ap_CS_fsm_state1) or (ap_const_logic_1 = ap_CS_fsm_state128) or (ap_const_logic_1 = ap_CS_fsm_state127) or (ap_const_logic_1 = ap_CS_fsm_state126) or (ap_const_logic_1 = ap_CS_fsm_state125) or (ap_const_logic_1 = ap_CS_fsm_state124) or (ap_const_logic_1 = ap_CS_fsm_state123) or (ap_const_logic_1 = ap_CS_fsm_state122) or (ap_const_logic_1 = ap_CS_fsm_state121) or (ap_const_logic_1 = ap_CS_fsm_state120) or (ap_const_logic_1 = ap_CS_fsm_state119) or (ap_const_logic_1 = ap_CS_fsm_state118) or (ap_const_logic_1 = ap_CS_fsm_state117) or (ap_const_logic_1 = ap_CS_fsm_state116) or (ap_const_logic_1 = ap_CS_fsm_state115) or (ap_const_logic_1 = ap_CS_fsm_state114) or (ap_const_logic_1 = ap_CS_fsm_state113) or (ap_const_logic_1 = ap_CS_fsm_state112) or (ap_const_logic_1 = ap_CS_fsm_state111) or (ap_const_logic_1 = ap_CS_fsm_state110) or (ap_const_logic_1 = ap_CS_fsm_state109) or (ap_const_logic_1 = ap_CS_fsm_state108) or (ap_const_logic_1 = ap_CS_fsm_state107) or (ap_const_logic_1 = ap_CS_fsm_state106) or (ap_const_logic_1 = ap_CS_fsm_state105) or (ap_const_logic_1 = ap_CS_fsm_state104) or (ap_const_logic_1 = ap_CS_fsm_state103) or (ap_const_logic_1 = ap_CS_fsm_state102) or (ap_const_logic_1 = ap_CS_fsm_state101))) then 
-            appear_d0 <= ap_const_lv8_0;
+            appear_d0 <= ap_const_lv3_0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state130)) then 
             appear_d0 <= grp_count_Pipeline_APPEARANCES_fu_2861_appear_d0;
         else 
-            appear_d0 <= "XXXXXXXX";
+            appear_d0 <= "XXX";
         end if; 
     end process;
 
-    appear_d1 <= ap_const_lv8_0;
+    appear_d1 <= ap_const_lv3_0;
 
     appear_we0_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, grp_count_Pipeline_APPEARANCES_fu_2861_appear_we0, ap_CS_fsm_state130, ap_CS_fsm_state2, ap_CS_fsm_state3, ap_CS_fsm_state4, ap_CS_fsm_state5, ap_CS_fsm_state6, ap_CS_fsm_state7, ap_CS_fsm_state8, ap_CS_fsm_state9, ap_CS_fsm_state10, ap_CS_fsm_state11, ap_CS_fsm_state12, ap_CS_fsm_state13, ap_CS_fsm_state14, ap_CS_fsm_state15, ap_CS_fsm_state16, ap_CS_fsm_state17, ap_CS_fsm_state18, ap_CS_fsm_state19, ap_CS_fsm_state20, ap_CS_fsm_state21, ap_CS_fsm_state22, ap_CS_fsm_state23, ap_CS_fsm_state24, ap_CS_fsm_state25, ap_CS_fsm_state26, ap_CS_fsm_state27, ap_CS_fsm_state28, ap_CS_fsm_state29, ap_CS_fsm_state30, ap_CS_fsm_state31, ap_CS_fsm_state32, ap_CS_fsm_state33, ap_CS_fsm_state34, ap_CS_fsm_state35, ap_CS_fsm_state36, ap_CS_fsm_state37, ap_CS_fsm_state38, ap_CS_fsm_state39, ap_CS_fsm_state40, ap_CS_fsm_state41, ap_CS_fsm_state42, ap_CS_fsm_state43, ap_CS_fsm_state44, ap_CS_fsm_state45, ap_CS_fsm_state46, ap_CS_fsm_state47, ap_CS_fsm_state48, ap_CS_fsm_state49, ap_CS_fsm_state50, ap_CS_fsm_state51, ap_CS_fsm_state52, ap_CS_fsm_state53, ap_CS_fsm_state54, ap_CS_fsm_state55, ap_CS_fsm_state56, ap_CS_fsm_state57, ap_CS_fsm_state58, ap_CS_fsm_state59, ap_CS_fsm_state60, ap_CS_fsm_state61, ap_CS_fsm_state62, ap_CS_fsm_state63, ap_CS_fsm_state64, ap_CS_fsm_state65, ap_CS_fsm_state66, ap_CS_fsm_state67, ap_CS_fsm_state68, ap_CS_fsm_state69, ap_CS_fsm_state70, ap_CS_fsm_state71, ap_CS_fsm_state72, ap_CS_fsm_state73, ap_CS_fsm_state74, ap_CS_fsm_state75, ap_CS_fsm_state76, ap_CS_fsm_state77, ap_CS_fsm_state78, ap_CS_fsm_state79, ap_CS_fsm_state80, ap_CS_fsm_state81, ap_CS_fsm_state82, ap_CS_fsm_state83, ap_CS_fsm_state84, ap_CS_fsm_state85, ap_CS_fsm_state86, ap_CS_fsm_state87, ap_CS_fsm_state88, ap_CS_fsm_state89, ap_CS_fsm_state90, ap_CS_fsm_state91, ap_CS_fsm_state92, ap_CS_fsm_state93, ap_CS_fsm_state94, ap_CS_fsm_state95, ap_CS_fsm_state96, ap_CS_fsm_state97, ap_CS_fsm_state98, ap_CS_fsm_state99, ap_CS_fsm_state100, ap_CS_fsm_state101, ap_CS_fsm_state102, ap_CS_fsm_state103, ap_CS_fsm_state104, ap_CS_fsm_state105, ap_CS_fsm_state106, ap_CS_fsm_state107, ap_CS_fsm_state108, ap_CS_fsm_state109, ap_CS_fsm_state110, ap_CS_fsm_state111, ap_CS_fsm_state112, ap_CS_fsm_state113, ap_CS_fsm_state114, ap_CS_fsm_state115, ap_CS_fsm_state116, ap_CS_fsm_state117, ap_CS_fsm_state118, ap_CS_fsm_state119, ap_CS_fsm_state120, ap_CS_fsm_state121, ap_CS_fsm_state122, ap_CS_fsm_state123, ap_CS_fsm_state124, ap_CS_fsm_state125, ap_CS_fsm_state126, ap_CS_fsm_state127, ap_CS_fsm_state128, ap_CS_fsm_state131)
     begin
@@ -2142,5 +2142,5 @@ begin
     end process;
 
     grp_count_Pipeline_APPEARANCES_fu_2861_ap_start <= grp_count_Pipeline_APPEARANCES_fu_2861_ap_start_reg;
-    zext_ln46_fu_2878_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_count_Pipeline_APPEARANCES_fu_2861_prev_out),32));
+    zext_ln50_fu_2878_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_count_Pipeline_APPEARANCES_fu_2861_prev_out),32));
 end behav;

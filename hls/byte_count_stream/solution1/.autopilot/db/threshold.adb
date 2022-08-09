@@ -34,10 +34,10 @@
               <coreName>RAM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>1953394531</coreId>
               <rtlModuleName/>
             </Obj>
-            <bitwidth>8</bitwidth>
+            <bitwidth>3</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>1</if_type>
@@ -70,7 +70,7 @@
               <coreName>FIFO</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>4294967295</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -110,7 +110,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3894198384</coreId>
+              <coreId>741487420</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -145,14 +145,14 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31</rtlName>
+              <rtlName>grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31</rtlName>
               <control/>
               <opType/>
               <implIndex/>
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
+              <coreId>1818322464</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -196,7 +196,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3894313056</coreId>
+              <coreId>539767584</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -270,7 +270,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>3.47</m_delay>
+          <m_delay>3.41</m_delay>
           <m_topoIndex>4</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -279,10 +279,10 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>_ln60</name>
+              <name>_ln64</name>
               <fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>60</lineNumber>
+              <lineNumber>64</lineNumber>
               <contextFuncName>threshold</contextFuncName>
               <contextNormFuncName>threshold</contextNormFuncName>
               <inlineStackInfo>
@@ -298,7 +298,7 @@
                         <first>byte_count_stream/src/byte_count_stream.cpp</first>
                         <second>threshold</second>
                       </first>
-                      <second>60</second>
+                      <second>64</second>
                     </item>
                   </second>
                 </item>
@@ -311,7 +311,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3894293040</coreId>
+              <coreId>858988588</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -369,7 +369,7 @@
             <Obj>
               <type>2</type>
               <id>12</id>
-              <name>threshold_Pipeline_VITIS_LOOP_54_1</name>
+              <name>threshold_Pipeline_VITIS_LOOP_58_1</name>
               <fileName/>
               <fileDirectory/>
               <lineNumber>0</lineNumber>
@@ -387,13 +387,13 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1702129263</coreId>
+              <coreId>1953394531</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:threshold_Pipeline_VITIS_LOOP_54_1&gt;</content>
+          <content>&lt;constant:threshold_Pipeline_VITIS_LOOP_58_1&gt;</content>
         </item>
       </consts>
       <blocks class_id="17" tracking_level="0" version="0">
@@ -421,7 +421,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>3893465568</coreId>
+            <coreId>1835888483</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -624,7 +624,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31 (threshold_Pipeline_VITIS_LOOP_54_1)</first>
+          <first>grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31 (threshold_Pipeline_VITIS_LOOP_58_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>2</count>
             <item_version>0</item_version>
@@ -634,7 +634,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>154</second>
+              <second>152</second>
             </item>
           </second>
         </item>
@@ -789,7 +789,7 @@
           </second>
         </item>
         <item>
-          <first>grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31_ap_start_reg</first>
+          <first>grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -812,7 +812,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31</first>
+          <first>grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -823,7 +823,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31 (threshold_Pipeline_VITIS_LOOP_54_1)</first>
+          <first>grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31 (threshold_Pipeline_VITIS_LOOP_58_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -951,7 +951,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_threshold_Pipeline_VITIS_LOOP_54_1_fu_31</first>
+        <first>grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

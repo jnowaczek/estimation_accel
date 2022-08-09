@@ -6,4 +6,5 @@
 
 extern "C" void AESL_WRAP_accelerator (
 hls::stream<int > In_r,
+int num_blocks,
 hls::stream<int > Out_r);

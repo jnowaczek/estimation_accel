@@ -68370,364 +68370,104 @@ public:
 }
 # 62 "C:/Xilinx/Vitis_HLS/2022.1/include/hls_stream.h" 2
 # 12 "E:/estimation_accel/hls/byte_count_stream/src/byte_count_stream.hpp" 2
-# 1 "C:/Xilinx/Vitis_HLS/2022.1/include/hls_streamofblocks.h" 1
-# 31 "C:/Xilinx/Vitis_HLS/2022.1/include/hls_streamofblocks.h"
-namespace hls {
-template <typename __STREAM_T__>
-class stream_buf {
-
-
-
-  std::string name;
-  std::deque<__STREAM_T__*> data;
-  int readLocks;
-  int writeLocks;
-  bool checkMultiple;
-
-
- public:
-  inline stream_buf(
-  int depth
-
-  ,
-  const char *n
-
-  )
-
-    : name(n ? n : "stream_of_blocks"), readLocks(0), writeLocks(0), checkMultiple(true)
-
-  {
-
-
-
-  }
-
-
-  inline void allow_multiple_locks() { checkMultiple = false; }
-
-
-
-  void write_check() {
-    if (writeLocks <= 0) {
-        std::cerr << "ERROR: writing " << name << " before acquiring." << std::endl;
-        abort();
-    }
-  }
-  void read_check() {
-    if (readLocks <= 0) {
-        std::cerr << "ERROR: reading " << name << " before acquiring." << std::endl;
-        abort();
-    }
-  }
-
-
-  inline __STREAM_T__& read_acquire() {
-
-
-
-
-    if (checkMultiple && readLocks > 0) {
-        std::cerr << "ERROR: acquiring " << name << " for reading more than once before releasing. Use braces to limit the lifetime of the lock object." << std::endl;
-        abort();
-    }
-    readLocks++;
-
-    if (data.empty()) {
-        std::cerr << "ERROR: Reading from empty stream-of-blocks " << name << " (returning garbage data)" << std::endl;
-        return *new __STREAM_T__[1];
-    } else {
-        return *data.front();
-    }
-
-  }
-
-  inline void read_release() {
-
-
-
-    readLocks--;
-    if (checkMultiple && readLocks != 0) {
-        std::cerr << "INTERNAL ERROR: releasing " << name << " for reading too many times." << std::endl;
-        abort();
-    }
-    data.pop_front();
-
-  }
-
-  inline __STREAM_T__& write_acquire() {
-
-
-
-
-    if (checkMultiple && writeLocks > 0) {
-        std::cerr << "ERROR: acquiring " << name << " for writing more than once before releasing. Use braces to limit the lifetime of the lock object." << std::endl;
-        abort();
-    }
-    writeLocks++;
-
-    data.push_back(new __STREAM_T__[1]);
-    return *data.back();
-
-  }
-
-  inline void write_release() {
-
-
-
-    writeLocks--;
-    if (checkMultiple && writeLocks != 0) {
-        std::cerr << "INTERNAL ERROR: releasing " << name << " for writing too many times." << std::endl;
-        abort();
-    }
-
-  }
-
-  inline bool empty() const {
-
-
-
-
-    return data.empty();
-
-  }
-
-  inline bool full() const {
-
-
-
-
-    return false;
-
-  }
-# 166 "C:/Xilinx/Vitis_HLS/2022.1/include/hls_streamofblocks.h"
-  template <typename>
-  friend class read_lock;
-  template <typename>
-  friend class write_lock;
-};
-
-template<typename __STREAM_T__, int DEPTH=2>
-class stream_of_blocks;
-# 259 "C:/Xilinx/Vitis_HLS/2022.1/include/hls_streamofblocks.h"
-template <typename __STREAM_T__>
-class read_lock {
-  stream_of_blocks<__STREAM_T__>& res;
-  __STREAM_T__& buf;
-
- public:
-  inline read_lock(stream_of_blocks<__STREAM_T__>& s) : res(s), buf(res.read_acquire()) {
-
-
-
-  }
-
-  inline ~read_lock() { res.read_release(); }
-
-  inline operator __STREAM_T__&() { return buf; }
-
-  inline __STREAM_T__& operator=(const __STREAM_T__& val) { return buf = val; }
-};
-
-template <typename __STREAM_T__>
-class write_lock {
-  stream_of_blocks<__STREAM_T__>& res;
-  __STREAM_T__& buf;
-
- public:
-  inline write_lock(stream_of_blocks<__STREAM_T__>& s) : res(s), buf(res.write_acquire()) {
-
-
-
-  }
-
-  inline ~write_lock() { res.write_release(); }
-
-  inline operator __STREAM_T__&() { return buf; }
-
-  inline __STREAM_T__& operator=(const __STREAM_T__& val) { return buf = val; }
-};
-
-template <typename __STREAM_T__>
-class stream_of_blocks<__STREAM_T__, 2> {
-
-
-
-
-  friend class read_lock<__STREAM_T__>;
-  friend class write_lock<__STREAM_T__>;
-
-  stream_buf<__STREAM_T__> buf;
-
- public:
-  inline stream_of_blocks(int depth=2, char *name=0): buf(
-
-
-
-    depth, name) { }
-
-
-  inline bool full() { return buf.full(); }
-
-  inline bool empty() { return buf.empty(); }
-
-
-  inline void allow_multiple_locks() { buf.allow_multiple_locks(); }
-
-
-
- private:
-  inline __STREAM_T__& read_acquire() { return buf.read_acquire(); }
-
-  inline void read_release() { buf.read_release(); }
-
-  inline __STREAM_T__& write_acquire() { return buf.write_acquire(); }
-
-  inline void write_release() { buf.write_release(); }
-
-
-
-};
-
-template <typename __STREAM_T__, int DEPTH>
-class stream_of_blocks: public stream_of_blocks<__STREAM_T__, 2> {
-
-
-
-
-  friend class read_lock<__STREAM_T__>;
-  friend class write_lock<__STREAM_T__>;
-
- public:
-  inline stream_of_blocks(): stream_of_blocks<__STREAM_T__, 2>(DEPTH) {}
-};
-
-}
-# 13 "E:/estimation_accel/hls/byte_count_stream/src/byte_count_stream.hpp" 2
-# 29 "E:/estimation_accel/hls/byte_count_stream/src/byte_count_stream.hpp"
-typedef ap_uint<32> packed_t;
-
-
-
+# 31 "E:/estimation_accel/hls/byte_count_stream/src/byte_count_stream.hpp"
+typedef ap_ufixed<3, 3, AP_TRN, AP_SAT> count_t;
 
 
 
 
 typedef unsigned char data_t;
-typedef unsigned char count_t;
+
 typedef int result_t;
 typedef int iter_t;
 
-typedef data_t block_data_t[1024];
+typedef data_t block_data_t[1024 / 2];
 typedef count_t block_count_t[256];
 
 
+void count(hls::stream<data_t> &in, count_t appear[256]);
 
-void split(hls::stream<data_t> &in, hls::stream_of_blocks<block_data_t> &out);
+void threshold(count_t appear[1024], hls::stream<result_t> &out);
 
-void count(hls::stream_of_blocks<block_data_t> &in, hls::stream_of_blocks<block_count_t> &out);
-
-void reduce(hls::stream_of_blocks<block_count_t> &in, hls::stream_of_blocks<block_count_t> &out);
-
-void threshold(hls::stream_of_blocks<block_count_t> &in, hls::stream<result_t> &out);
-
-void accelerator(hls::stream<data_t> &In, hls::stream<result_t> &Out);
+void accelerator(hls::stream<data_t> &In, unsigned int num_blocks, hls::stream<result_t> &Out);
 # 5 "E:/estimation_accel/hls/byte_count_stream/src/byte_count_stream.cpp" 2
 
-
-
-
-
-void accelerator(hls::stream<data_t> &In, hls::stream<result_t> &Out) {
+void accelerator(hls::stream<data_t> &In, unsigned int num_blocks,
+  hls::stream<result_t> &Out) {
 #pragma HLS INTERFACE mode=ap_ctrl_chain port=return
+
+ for (unsigned int counter = 0; counter < num_blocks; counter++) {
 #pragma HLS DATAFLOW
 
- hls::stream_of_blocks<block_data_t> input_blocks;
- hls::stream_of_blocks<block_count_t> count_blocks, reduced_blocks;
+  count_t appear[256];
 
- split(In, input_blocks);
- count(input_blocks, count_blocks);
- reduce(count_blocks, reduced_blocks);
- threshold(reduced_blocks, Out);
+  count(In, appear);
+  threshold(appear, Out);
+ }
 }
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_accelerator_ir(hls::stream<unsigned char, 0> &, hls::stream<int, 0> &);
+void apatb_accelerator_ir(hls::stream<unsigned char, 0> &, unsigned int, hls::stream<int, 0> &);
 #ifdef __cplusplus
 extern "C"
 #endif
-void accelerator_hw_stub(hls::stream<unsigned char, 0> &In, hls::stream<int, 0> &Out){
-accelerator(In, Out);
+void accelerator_hw_stub(hls::stream<unsigned char, 0> &In, unsigned int num_blocks, hls::stream<int, 0> &Out){
+accelerator(In, num_blocks, Out);
 return ;
 }
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_accelerator_sw(hls::stream<unsigned char, 0> &In, hls::stream<int, 0> &Out){
-apatb_accelerator_ir(In, Out);
+void apatb_accelerator_sw(hls::stream<unsigned char, 0> &In, unsigned int num_blocks, hls::stream<int, 0> &Out){
+apatb_accelerator_ir(In, num_blocks, Out);
 return ;
 }
 #endif
-# 21 "E:/estimation_accel/hls/byte_count_stream/src/byte_count_stream.cpp"
+# 18 "E:/estimation_accel/hls/byte_count_stream/src/byte_count_stream.cpp"
 
 
-void split(hls::stream<data_t> &in, hls::stream_of_blocks<block_data_t> &out) {
+void count(hls::stream<data_t> &in, count_t appear[256]) {
 #pragma HLS INLINE off
+#pragma HLS DEPENDENCE variable=appear intra RAW false
 
- hls::write_lock<block_data_t> outL(out);
-
- for (int i = 0; i < 1024; i += 1) {
-  data_t byte = in.read();
-  outL[i] = byte;
+ RESET: for (iter_t i = 0; i < 256; i++) {
+#pragma HLS UNROLL
+  appear[i] = 0;
  }
-}
-
-void count(hls::stream_of_blocks<block_data_t> &in, hls::stream_of_blocks<block_count_t> &out) {
-#pragma HLS INLINE off
-
- hls::read_lock<block_data_t> inL(in);
- hls::write_lock<block_count_t> outL(out);
 
  count_t count = 0;
- data_t prev = inL[0];
- count_t appearances[256] = {0};
 
-#pragma HLS DEPENDENCE variable=appearances intra RAW false
+ data_t prev;
 
  APPEARANCES: for (int i = 0; i < 1024; i++) {
 #pragma HLS PIPELINE II=1
-  data_t byte = inL[i];
+  data_t byte = in.read();
+
+  if (i == 0) {
+   prev = byte;
+  }
 
   if (prev == byte) {
    count += 1;
   } else {
-   outL[prev] = count;
-   count = outL[byte] + 1;
+   appear[prev] = count;
+   count = appear[byte] + 1;
   }
 
   prev = byte;
  }
- outL[prev] = count;
+ appear[prev] = count;
 }
 
-void reduce(hls::stream_of_blocks<block_count_t> &in, hls::stream_of_blocks<block_count_t> &out) {
+void threshold(count_t appear[1024], hls::stream<result_t> &out) {
 #pragma HLS INLINE off
 
- hls::read_lock<block_count_t> inL(in);
- hls::write_lock<block_count_t> outL(out);
-
- for (int i = 0; i < 256; i += 1) {
-  outL[i] = inL[i];
- }
-}
-
-void threshold(hls::stream_of_blocks<block_count_t> &in, hls::stream<result_t> &out) {
- hls::read_lock<block_count_t> inL(in);
  result_t over_thresh = 0;
 
  for (int i = 0; i < 256; i += 1) {
-  if (inL[i] > (1024 / 256)) {
+  if (appear[i] > (1024 / 256)) {
    over_thresh += 1;
   }
  }

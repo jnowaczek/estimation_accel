@@ -9,7 +9,6 @@
 #include "ap_fixed.h"
 #include "ap_int.h"
 #include "hls_stream.h"
-#include "hls_streamofblocks.h"
 
 #define DATA_T_WIDTH 8
 #define PACKED_T_WIDTH 32
@@ -26,30 +25,25 @@
 #define BYTE_COUNT_THRESHOLD (BLOCK_LENGTH / 256)
 
 //typedef ap_uint<DATA_T_WIDTH> data_t;
-typedef ap_uint<PACKED_T_WIDTH> packed_t;
+//typedef ap_uint<PACKED_T_WIDTH> packed_t;
 //// Maximum count value is 7 since we just want to count the number
 //// over the threshold and the amount over the threshold doesn't matter
-//typedef ap_ufixed<COUNT_T_WIDTH, COUNT_T_INT_WIDTH, AP_TRN, AP_SAT> count_t;
+typedef ap_ufixed<COUNT_T_WIDTH, COUNT_T_INT_WIDTH, AP_TRN, AP_SAT> count_t;
 //typedef ap_uint<RESULT_T_WIDTH> result_t;
 //typedef ap_uint<ITER_T_WIDTH> iter_t;
 
 // Debugging types
 typedef unsigned char data_t;
-typedef unsigned char count_t;
+//typedef int count_t;
 typedef int result_t;
 typedef int iter_t;
 
-typedef data_t block_data_t[BLOCK_LENGTH];
+typedef data_t block_data_t[BLOCK_LENGTH / 2];
 typedef count_t block_count_t[COUNT_BUCKETS];
 
-
 // Function prototypes
-void split(hls::stream<data_t> &in, hls::stream_of_blocks<block_data_t> &out);
+void count(hls::stream<data_t> &in, count_t appear[COUNT_BUCKETS]);
 
-void count(hls::stream_of_blocks<block_data_t> &in, hls::stream_of_blocks<block_count_t> &out);
+void threshold(count_t appear[BLOCK_LENGTH], hls::stream<result_t> &out);
 
-void reduce(hls::stream_of_blocks<block_count_t> &in, hls::stream_of_blocks<block_count_t> &out);
-
-void threshold(hls::stream_of_blocks<block_count_t> &in, hls::stream<result_t> &out);
-
-void accelerator(hls::stream<data_t> &In, hls::stream<result_t> &Out);
+void accelerator(hls::stream<data_t> &In, unsigned int num_blocks, hls::stream<result_t> &Out);

@@ -18,7 +18,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir IO \
     corename appear \
     op interface \
-    ports { appear_address0 { O 8 vector } appear_ce0 { O 1 bit } appear_we0 { O 1 bit } appear_d0 { O 8 vector } appear_address1 { O 8 vector } appear_ce1 { O 1 bit } appear_we1 { O 1 bit } appear_d1 { O 8 vector } appear_q1 { I 8 vector } } \
+    ports { appear_address0 { O 8 vector } appear_ce0 { O 1 bit } appear_we0 { O 1 bit } appear_d0 { O 3 vector } appear_address1 { O 8 vector } appear_ce1 { O 1 bit } appear_we1 { O 1 bit } appear_d1 { O 3 vector } appear_q1 { I 3 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'appear'"

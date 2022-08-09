@@ -22,6 +22,8 @@ using namespace sc_dt;
 #define AUTOTB_TVOUT_In_r "../tv/cdatafile/c.accelerator.autotvout_In_r.dat"
 #define WRAPC_STREAM_SIZE_IN_In_r "../tv/stream_size/stream_size_in_In_r.dat"
 #define WRAPC_STREAM_INGRESS_STATUS_In_r "../tv/stream_size/stream_ingress_status_In_r.dat"
+#define AUTOTB_TVIN_num_blocks "../tv/cdatafile/c.accelerator.autotvin_num_blocks.dat"
+#define AUTOTB_TVOUT_num_blocks "../tv/cdatafile/c.accelerator.autotvout_num_blocks.dat"
 #define AUTOTB_TVIN_Out_r "../tv/cdatafile/c.accelerator.autotvin_Out_r.dat"
 #define AUTOTB_TVOUT_Out_r "../tv/cdatafile/c.accelerator.autotvout_Out_r.dat"
 #define WRAPC_STREAM_SIZE_OUT_Out_r "../tv/stream_size/stream_size_out_Out_r.dat"
@@ -31,6 +33,7 @@ using namespace sc_dt;
 
 // tvout file define:
 #define AUTOTB_TVOUT_PC_In_r "../tv/rtldatafile/rtl.accelerator.autotvout_In_r.dat"
+#define AUTOTB_TVOUT_PC_num_blocks "../tv/rtldatafile/rtl.accelerator.autotvout_num_blocks.dat"
 #define AUTOTB_TVOUT_PC_Out_r "../tv/rtldatafile/rtl.accelerator.autotvout_Out_r.dat"
 
 
@@ -262,6 +265,7 @@ class INTER_TCL_FILE {
 INTER_TCL_FILE(const char* name) {
   mName = name; 
   In_r_depth = 0;
+  num_blocks_depth = 0;
   Out_r_depth = 0;
   trans_num =0;
 }
@@ -281,6 +285,7 @@ INTER_TCL_FILE(const char* name) {
 string get_depth_list () {
   stringstream total_list;
   total_list << "{In_r " << In_r_depth << "}\n";
+  total_list << "{num_blocks " << num_blocks_depth << "}\n";
   total_list << "{Out_r " << Out_r_depth << "}\n";
   return total_list.str();
 }
@@ -292,6 +297,7 @@ void set_string(std::string list, std::string* class_list) {
 }
   public:
     int In_r_depth;
+    int num_blocks_depth;
     int Out_r_depth;
     int trans_num;
   private:
@@ -300,9 +306,9 @@ void set_string(std::string list, std::string* class_list) {
 };
 
 
-extern "C" void accelerator_hw_stub_wrapper(volatile void *, volatile void *);
+extern "C" void accelerator_hw_stub_wrapper(volatile void *, int, volatile void *);
 
-extern "C" void apatb_accelerator_hw(volatile void * __xlx_apatb_param_In_r, volatile void * __xlx_apatb_param_Out_r) {
+extern "C" void apatb_accelerator_hw(volatile void * __xlx_apatb_param_In_r, int __xlx_apatb_param_num_blocks, volatile void * __xlx_apatb_param_Out_r) {
   refine_signal_handler();
   fstream wrapc_switch_file_token;
   wrapc_switch_file_token.open(".hls_cosim_wrapc_switch.log");
@@ -454,8 +460,19 @@ std::vector<char> __xlx_apatb_param_In_r_stream_buf;
 long __xlx_apatb_param_In_r_stream_buf_size = ((hls::stream<char>*)__xlx_apatb_param_In_r)->size();
 std::vector<int> __xlx_apatb_param_Out_r_stream_buf;
 long __xlx_apatb_param_Out_r_stream_buf_size = ((hls::stream<int>*)__xlx_apatb_param_Out_r)->size();
+// print num_blocks Transactions
+{
+aesl_fh.write(AUTOTB_TVIN_num_blocks, begin_str(AESL_transaction));
+{
+auto *pos = (unsigned char*)&__xlx_apatb_param_num_blocks;
+aesl_fh.write(AUTOTB_TVIN_num_blocks, formatData(pos, 32));
+}
+  tcl_file.set_num(1, &tcl_file.num_blocks_depth);
+aesl_fh.write(AUTOTB_TVIN_num_blocks, end_str());
+}
+
 CodeState = CALL_C_DUT;
-accelerator_hw_stub_wrapper(__xlx_apatb_param_In_r, __xlx_apatb_param_Out_r);
+accelerator_hw_stub_wrapper(__xlx_apatb_param_In_r, __xlx_apatb_param_num_blocks, __xlx_apatb_param_Out_r);
 CodeState = DUMP_OUTPUTS;
 long __xlx_apatb_param_In_r_stream_buf_final_size = __xlx_apatb_param_In_r_stream_buf_size - ((hls::stream<char>*)__xlx_apatb_param_In_r)->size();
 // print In_r Transactions
