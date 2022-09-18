@@ -5,17 +5,18 @@ set SynModuleInfo {
     }
   }
   {SRCNAME count MODELNAME count RTLNAME accelerator_count}
-  {SRCNAME threshold_Pipeline_VITIS_LOOP_58_1 MODELNAME threshold_Pipeline_VITIS_LOOP_58_1 RTLNAME accelerator_threshold_Pipeline_VITIS_LOOP_58_1}
+  {SRCNAME threshold_Pipeline_VITIS_LOOP_61_1 MODELNAME threshold_Pipeline_VITIS_LOOP_61_1 RTLNAME accelerator_threshold_Pipeline_VITIS_LOOP_61_1}
   {SRCNAME threshold MODELNAME threshold RTLNAME accelerator_threshold}
-  {SRCNAME dataflow_in_loop_VITIS_LOOP_10_1 MODELNAME dataflow_in_loop_VITIS_LOOP_10_1 RTLNAME accelerator_dataflow_in_loop_VITIS_LOOP_10_1
+  {SRCNAME dataflow_in_loop_VITIS_LOOP_13_1 MODELNAME dataflow_in_loop_VITIS_LOOP_13_1 RTLNAME accelerator_dataflow_in_loop_VITIS_LOOP_13_1
     SUBMODULES {
-      {MODELNAME accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore RTLNAME accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
-      {MODELNAME accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W RTLNAME accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2}
+      {MODELNAME accelerator_dataflow_in_loop_VITIS_LOOP_13_1_appear_V_RAM_AUTO_1R1W_memcore RTLNAME accelerator_dataflow_in_loop_VITIS_LOOP_13_1_appear_V_RAM_AUTO_1R1W_memcore BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME accelerator_dataflow_in_loop_VITIS_LOOP_13_1_appear_V_RAM_AUTO_1R1W RTLNAME accelerator_dataflow_in_loop_VITIS_LOOP_13_1_appear_V_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2}
     }
   }
   {SRCNAME accelerator MODELNAME accelerator RTLNAME accelerator IS_TOP 1
     SUBMODULES {
       {MODELNAME accelerator_ap_bound RTLNAME accelerator_ap_bound BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME {$InstName}}
+      {MODELNAME accelerator_control_s_axi RTLNAME accelerator_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
     }
   }
 }

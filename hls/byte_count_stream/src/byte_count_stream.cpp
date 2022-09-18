@@ -5,6 +5,9 @@
 
 void accelerator(hls::stream<data_t> &In, unsigned int num_blocks,
 		hls::stream<result_t> &Out) {
+#pragma HLS INTERFACE mode=axis port=In
+#pragma HLS INTERFACE mode=axis port=Out
+#pragma HLS INTERFACE mode=s_axilite port=num_blocks
 #pragma HLS INTERFACE mode=ap_ctrl_chain port=return
 
 	for (unsigned int counter = 0; counter < num_blocks; counter++) {

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'threshold'
 ================================================================
-* Date:           Mon Aug  8 19:27:21 2022
+* Date:           Sun Sep 18 13:44:06 2022
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
 * Project:        byte_count_stream
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |      260|      260|  2.433 us|  2.433 us|  260|  260|       no|
+    |      261|      261|  2.443 us|  2.443 us|  261|  261|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                              |                                    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |                   Instance                   |               Module               |   min   |   max   |    min   |    max   | min | max |   Type  |
         +----------------------------------------------+------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31  |threshold_Pipeline_VITIS_LOOP_58_1  |      258|      258|  2.415 us|  2.415 us|  258|  258|       no|
+        |grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33  |threshold_Pipeline_VITIS_LOOP_61_1  |      258|      258|  2.415 us|  2.415 us|  258|  258|       no|
         +----------------------------------------------+------------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -70,29 +70,32 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 3
+* Number of FSM states : 4
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
 2 --> 3 
-3 --> 
+3 --> 4 
+4 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%over_thresh_loc = alloca i32 1"   --->   Operation 4 'alloca' 'over_thresh_loc' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i32 %over_thresh_loc"   --->   Operation 5 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%over_thresh_loc = alloca i32 1"   --->   Operation 5 'alloca' 'over_thresh_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_61_1, i3 %appear, i32 %over_thresh_loc"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 3.24>
-ST_2 : Operation 6 [1/2] (3.24ns)   --->   "%call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i32 %over_thresh_loc"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 3.24> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 7 [1/2] (3.24ns)   --->   "%call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_61_1, i3 %appear, i32 %over_thresh_loc"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 3.24> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 3 <SV = 2> <Delay = 3.41>
-ST_3 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+State 3 <SV = 2> <Delay = 0.00>
 ST_3 : Operation 8 [1/1] (0.00ns)   --->   "%over_thresh_loc_load = load i32 %over_thresh_loc"   --->   Operation 8 'load' 'over_thresh_loc_load' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 9 [1/1] (3.41ns)   --->   "%write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %Out_r, i32 %over_thresh_loc_load" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 9 'write' 'write_ln174' <Predicate = true> <Delay = 3.41> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
-ST_3 : Operation 10 [1/1] (0.00ns)   --->   "%ret_ln64 = ret" [byte_count_stream/src/byte_count_stream.cpp:64]   --->   Operation 10 'ret' 'ret_ln64' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%write_ln174 = write void @_ssdm_op_Write.axis.volatile.i32P128A, i32 %Out_r, i32 %over_thresh_loc_load" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 9 'write' 'write_ln174' <Predicate = true> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Out_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%ret_ln67 = ret" [byte_count_stream/src/byte_count_stream.cpp:67]   --->   Operation 11 'ret' 'ret_ln67' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -107,19 +110,19 @@ STG Binding:
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ appear]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=1; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
-Port [ Out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ Out_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
 
 <LifeTime>
 <method=bitvector/>
-over_thresh_loc      (alloca       ) [ 0111]
-call_ln0             (call         ) [ 0000]
-specinterface_ln0    (specinterface) [ 0000]
-over_thresh_loc_load (load         ) [ 0000]
-write_ln174          (write        ) [ 0000]
-ret_ln64             (ret          ) [ 0000]
+over_thresh_loc      (alloca       ) [ 01110]
+call_ln0             (call         ) [ 00000]
+over_thresh_loc_load (load         ) [ 00000]
+write_ln174          (write        ) [ 00000]
+specinterface_ln0    (specinterface) [ 00000]
+ret_ln67             (ret          ) [ 00000]
 </LifeTime>
 
 <model>
@@ -158,16 +161,16 @@ ret_ln64             (ret          ) [ 0000]
 <pin id="7" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="threshold_Pipeline_VITIS_LOOP_58_1"/></StgValue>
+<StgValue><ssdm name="threshold_Pipeline_VITIS_LOOP_61_1"/></StgValue>
 </bind>
 </comp>
 
 <comp id="8" class="1001" name="const_8">
 <pin_list>
-<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Write.axis.volatile.i32P128A"/></StgValue>
 </bind>
 </comp>
 
@@ -176,7 +179,7 @@ ret_ln64             (ret          ) [ 0000]
 <pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
 </bind>
 </comp>
 
@@ -185,7 +188,7 @@ ret_ln64             (ret          ) [ 0000]
 <pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </bind>
 </comp>
 
@@ -194,7 +197,7 @@ ret_ln64             (ret          ) [ 0000]
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -203,23 +206,32 @@ ret_ln64             (ret          ) [ 0000]
 <pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="empty_0"/></StgValue>
 </bind>
 </comp>
 
 <comp id="18" class="1001" name="const_18">
 <pin_list>
-<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Write.ap_fifo.volatile.i32P0A"/></StgValue>
+<StgValue><ssdm name="empty_1"/></StgValue>
 </bind>
 </comp>
 
-<comp id="20" class="1004" name="over_thresh_loc_fu_20">
+<comp id="20" class="1001" name="const_20">
 <pin_list>
-<pin id="21" dir="0" index="0" bw="1" slack="0"/>
-<pin id="22" dir="1" index="1" bw="32" slack="0"/>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1004" name="over_thresh_loc_fu_22">
+<pin_list>
+<pin id="23" dir="0" index="0" bw="1" slack="0"/>
+<pin id="24" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -227,12 +239,12 @@ ret_ln64             (ret          ) [ 0000]
 </bind>
 </comp>
 
-<comp id="24" class="1004" name="write_ln174_write_fu_24">
+<comp id="26" class="1004" name="write_ln174_write_fu_26">
 <pin_list>
-<pin id="25" dir="0" index="0" bw="0" slack="0"/>
-<pin id="26" dir="0" index="1" bw="32" slack="0"/>
-<pin id="27" dir="0" index="2" bw="32" slack="0"/>
-<pin id="28" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="27" dir="0" index="0" bw="0" slack="0"/>
+<pin id="28" dir="0" index="1" bw="32" slack="0"/>
+<pin id="29" dir="0" index="2" bw="32" slack="0"/>
+<pin id="30" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
@@ -240,12 +252,12 @@ ret_ln64             (ret          ) [ 0000]
 </bind>
 </comp>
 
-<comp id="31" class="1004" name="grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31">
+<comp id="33" class="1004" name="grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33">
 <pin_list>
-<pin id="32" dir="0" index="0" bw="0" slack="0"/>
-<pin id="33" dir="0" index="1" bw="3" slack="0"/>
-<pin id="34" dir="0" index="2" bw="32" slack="0"/>
-<pin id="35" dir="1" index="3" bw="0" slack="2147483647"/>
+<pin id="34" dir="0" index="0" bw="0" slack="0"/>
+<pin id="35" dir="0" index="1" bw="3" slack="0"/>
+<pin id="36" dir="0" index="2" bw="32" slack="0"/>
+<pin id="37" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -253,10 +265,10 @@ ret_ln64             (ret          ) [ 0000]
 </bind>
 </comp>
 
-<comp id="38" class="1004" name="over_thresh_loc_load_load_fu_38">
+<comp id="40" class="1004" name="over_thresh_loc_load_load_fu_40">
 <pin_list>
-<pin id="39" dir="0" index="0" bw="32" slack="2"/>
-<pin id="40" dir="1" index="1" bw="32" slack="0"/>
+<pin id="41" dir="0" index="0" bw="32" slack="2"/>
+<pin id="42" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -264,10 +276,10 @@ ret_ln64             (ret          ) [ 0000]
 </bind>
 </comp>
 
-<comp id="42" class="1005" name="over_thresh_loc_reg_42">
+<comp id="44" class="1005" name="over_thresh_loc_reg_44">
 <pin_list>
-<pin id="43" dir="0" index="0" bw="32" slack="0"/>
-<pin id="44" dir="1" index="1" bw="32" slack="0"/>
+<pin id="45" dir="0" index="0" bw="32" slack="0"/>
+<pin id="46" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opset="over_thresh_loc "/>
@@ -277,23 +289,23 @@ ret_ln64             (ret          ) [ 0000]
 </comp_list>
 
 <net_list>
-<net id="23"><net_src comp="4" pin="0"/><net_sink comp="20" pin=0"/></net>
+<net id="25"><net_src comp="4" pin="0"/><net_sink comp="22" pin=0"/></net>
 
-<net id="29"><net_src comp="18" pin="0"/><net_sink comp="24" pin=0"/></net>
+<net id="31"><net_src comp="8" pin="0"/><net_sink comp="26" pin=0"/></net>
 
-<net id="30"><net_src comp="2" pin="0"/><net_sink comp="24" pin=1"/></net>
+<net id="32"><net_src comp="2" pin="0"/><net_sink comp="26" pin=1"/></net>
 
-<net id="36"><net_src comp="6" pin="0"/><net_sink comp="31" pin=0"/></net>
+<net id="38"><net_src comp="6" pin="0"/><net_sink comp="33" pin=0"/></net>
 
-<net id="37"><net_src comp="0" pin="0"/><net_sink comp="31" pin=1"/></net>
+<net id="39"><net_src comp="0" pin="0"/><net_sink comp="33" pin=1"/></net>
 
-<net id="41"><net_src comp="38" pin="1"/><net_sink comp="24" pin=2"/></net>
+<net id="43"><net_src comp="40" pin="1"/><net_sink comp="26" pin=2"/></net>
 
-<net id="45"><net_src comp="20" pin="1"/><net_sink comp="42" pin=0"/></net>
+<net id="47"><net_src comp="22" pin="1"/><net_sink comp="44" pin=0"/></net>
 
-<net id="46"><net_src comp="42" pin="1"/><net_sink comp="31" pin=2"/></net>
+<net id="48"><net_src comp="44" pin="1"/><net_sink comp="33" pin=2"/></net>
 
-<net id="47"><net_src comp="42" pin="1"/><net_sink comp="38" pin=0"/></net>
+<net id="49"><net_src comp="44" pin="1"/><net_sink comp="40" pin=0"/></net>
 
 </net_list>
 
@@ -311,6 +323,7 @@ ret_ln64             (ret          ) [ 0000]
 	State 2
 	State 3
 		write_ln174 : 1
+	State 4
 
 
 ============================================================
@@ -321,9 +334,9 @@ ret_ln64             (ret          ) [ 0000]
 |----------|----------------------------------------------|---------|---------|---------|
 | Operation|                Functional Unit               |  Delay  |    FF   |   LUT   |
 |----------|----------------------------------------------|---------|---------|---------|
-|   call   | grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31 |  1.588  |    49   |   113   |
+|   call   | grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33 |  1.588  |    49   |   113   |
 |----------|----------------------------------------------|---------|---------|---------|
-|   write  |            write_ln174_write_fu_24           |    0    |    0    |    0    |
+|   write  |            write_ln174_write_fu_26           |    0    |    0    |    0    |
 |----------|----------------------------------------------|---------|---------|---------|
 |   Total  |                                              |  1.588  |    49   |   113   |
 |----------|----------------------------------------------|---------|---------|---------|
@@ -335,7 +348,7 @@ N/A
 +----------------------+--------+
 |                      |   FF   |
 +----------------------+--------+
-|over_thresh_loc_reg_42|   32   |
+|over_thresh_loc_reg_44|   32   |
 +----------------------+--------+
 |         Total        |   32   |
 +----------------------+--------+

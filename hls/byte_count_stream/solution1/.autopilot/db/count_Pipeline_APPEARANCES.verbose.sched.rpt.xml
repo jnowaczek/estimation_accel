@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'count_Pipeline_APPEARANCES'" level="0">
-<item name = "Date">Mon Aug  8 19:27:19 2022
+<item name = "Date">Sun Sep 18 13:44:04 2022
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)</item>
 <item name = "Project">byte_count_stream</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1028, 1028, 9.621 us, 9.621 us, 1028, 1028, no</column>
+<column name="">1027, 1027, 9.612 us, 9.612 us, 1027, 1027, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- APPEARANCES">1026, 1026, 4, 1, 1, 1024, yes</column>
+<column name="- APPEARANCES">1025, 1025, 3, 1, 1, 1024, yes</column>
 </table>
 </item>
 </section>

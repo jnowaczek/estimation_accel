@@ -22,22 +22,22 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1028</Best-caseLatency>
-<Average-caseLatency>1028</Average-caseLatency>
-<Worst-caseLatency>1028</Worst-caseLatency>
-<Best-caseRealTimeLatency>9.621 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>9.621 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>9.621 us</Worst-caseRealTimeLatency>
-<Interval-min>1028</Interval-min>
-<Interval-max>1028</Interval-max>
+<Best-caseLatency>1027</Best-caseLatency>
+<Average-caseLatency>1027</Average-caseLatency>
+<Worst-caseLatency>1027</Worst-caseLatency>
+<Best-caseRealTimeLatency>9.612 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>9.612 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>9.612 us</Worst-caseRealTimeLatency>
+<Interval-min>1027</Interval-min>
+<Interval-max>1027</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <APPEARANCES>
 <TripCount>1024</TripCount>
-<Latency>1026</Latency>
-<AbsoluteTimeLatency>9602</AbsoluteTimeLatency>
+<Latency>1025</Latency>
+<AbsoluteTimeLatency>9592</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>4</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 <InstanceList>
 </InstanceList>
 </APPEARANCES>
@@ -46,8 +46,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>42</FF>
-<LUT>186</LUT>
+<FF>38</FF>
+<LUT>190</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -129,33 +129,33 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>In_r_dout</name>
+<name>In_r_TVALID</name>
 <Object>In_r</Object>
 <Type>pointer</Type>
 <Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>8</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>In_r_empty_n</name>
-<Object>In_r</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
+<IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>In_r_read</name>
+<name>In_r_TDATA</name>
 <Object>In_r</Object>
 <Type>pointer</Type>
 <Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
+<IOProtocol>axis</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>In_r_TREADY</name>
+<Object>In_r</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>1</Bits>

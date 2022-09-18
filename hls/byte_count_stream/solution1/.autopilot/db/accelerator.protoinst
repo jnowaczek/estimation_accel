@@ -10,11 +10,11 @@
 						"AP_CONTINUE": { "actual": "ap_continue"},
 						"AP_DONE": { "actual": "ap_done"},
 						"AP_READY": { "actual": "ap_ready"},
-						"AP_RESET": { "actual": "ap_rst"},
+						"AP_RESET": { "actual": "ap_rst_n"},
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"dataflow_in_loop_VITIS_LOOP_10_1_U0/count_U0/count_U0_activity": {
+				"dataflow_in_loop_VITIS_LOOP_13_1_U0/count_U0/count_U0_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -25,7 +25,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"dataflow_in_loop_VITIS_LOOP_10_1_U0/count_U0/grp_count_Pipeline_APPEARANCES_fu_2861/grp_count_Pipeline_APPEARANCES_fu_2861_activity": {
+				"dataflow_in_loop_VITIS_LOOP_13_1_U0/count_U0/grp_count_Pipeline_APPEARANCES_fu_2863/grp_count_Pipeline_APPEARANCES_fu_2863_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -35,7 +35,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"dataflow_in_loop_VITIS_LOOP_10_1_U0/dataflow_in_loop_VITIS_LOOP_10_1_U0_activity": {
+				"dataflow_in_loop_VITIS_LOOP_13_1_U0/dataflow_in_loop_VITIS_LOOP_13_1_U0_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -46,7 +46,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"dataflow_in_loop_VITIS_LOOP_10_1_U0/threshold_U0/grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31/grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31_activity": {
+				"dataflow_in_loop_VITIS_LOOP_13_1_U0/threshold_U0/grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33/grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -56,7 +56,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"dataflow_in_loop_VITIS_LOOP_10_1_U0/threshold_U0/threshold_U0_activity": {
+				"dataflow_in_loop_VITIS_LOOP_13_1_U0/threshold_U0/threshold_U0_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

@@ -6447,7 +6447,7 @@ __attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_
 
 __attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_t> &In, unsigned int num_blocks,
   hls::stream<result_t> &Out) {
-#line 17 "E:/estimation_accel/hls/byte_count_stream/solution1/csynth.tcl"
+#line 18 "E:/estimation_accel/hls/byte_count_stream/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=accelerator
 # 7 "byte_count_stream/src/byte_count_stream.cpp"
 
@@ -6455,9 +6455,12 @@ __attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_
 #pragma HLSDIRECTIVE TOP name=accelerator
 # 7 "byte_count_stream/src/byte_count_stream.cpp"
 
+#pragma HLS INTERFACE mode=axis port=In
+#pragma HLS INTERFACE mode=axis port=Out
+#pragma HLS INTERFACE mode=s_axilite port=num_blocks
 #pragma HLS INTERFACE mode=ap_ctrl_chain port=return
 
- VITIS_LOOP_10_1: for (unsigned int counter = 0; counter < num_blocks; counter++) {
+ VITIS_LOOP_13_1: for (unsigned int counter = 0; counter < num_blocks; counter++) {
 #pragma HLS DATAFLOW
 
  count_t appear[256];
@@ -6505,7 +6508,7 @@ void threshold(count_t appear[1024], hls::stream<result_t> &out) {
 
  result_t over_thresh = 0;
 
- VITIS_LOOP_58_1: for (int i = 0; i < 256; i += 1) {
+ VITIS_LOOP_61_1: for (int i = 0; i < 256; i += 1) {
   if (appear[i] > (1024 / 256)) {
    over_thresh += 1;
   }

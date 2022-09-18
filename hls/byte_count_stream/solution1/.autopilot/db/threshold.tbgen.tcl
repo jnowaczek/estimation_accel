@@ -14,11 +14,11 @@ set C_modelName {threshold}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ appear int 3 regular {array 256 { 1 3 } 1 1 }  }
-	{ Out_r int 32 regular {fifo 1 volatile }  }
+	{ Out_r int 32 regular {axi_s 1 volatile  { Out_r Data } }  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "appear", "interface" : "memory", "bitwidth" : 3, "direction" : "READONLY"} , 
- 	{ "Name" : "Out_r", "interface" : "fifo", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
+ 	{ "Name" : "Out_r", "interface" : "axis", "bitwidth" : 32, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 13
 set portList { 
@@ -32,9 +32,9 @@ set portList {
 	{ appear_address0 sc_out sc_lv 8 signal 0 } 
 	{ appear_ce0 sc_out sc_logic 1 signal 0 } 
 	{ appear_q0 sc_in sc_lv 3 signal 0 } 
-	{ Out_r_din sc_out sc_lv 32 signal 1 } 
-	{ Out_r_full_n sc_in sc_logic 1 signal 1 } 
-	{ Out_r_write sc_out sc_logic 1 signal 1 } 
+	{ Out_r_TDATA sc_out sc_lv 32 signal 1 } 
+	{ Out_r_TVALID sc_out sc_logic 1 outvld 1 } 
+	{ Out_r_TREADY sc_in sc_logic 1 outacc 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -47,9 +47,9 @@ set NewPortList {[
  	{ "name": "appear_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "appear", "role": "address0" }} , 
  	{ "name": "appear_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "appear", "role": "ce0" }} , 
  	{ "name": "appear_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "appear", "role": "q0" }} , 
- 	{ "name": "Out_r_din", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "Out_r", "role": "din" }} , 
- 	{ "name": "Out_r_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Out_r", "role": "full_n" }} , 
- 	{ "name": "Out_r_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "Out_r", "role": "write" }}  ]}
+ 	{ "name": "Out_r_TDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "Out_r", "role": "TDATA" }} , 
+ 	{ "name": "Out_r_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "Out_r", "role": "TVALID" }} , 
+ 	{ "name": "Out_r_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "Out_r", "role": "TREADY" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
@@ -58,7 +58,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "260", "EstimateLatencyMax" : "260",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "261", "EstimateLatencyMax" : "261",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -69,12 +69,12 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "appear", "Type" : "Memory", "Direction" : "I", "DependentProc" : ["0"], "DependentChan" : "0",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31", "Port" : "appear", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
-			{"Name" : "Out_r", "Type" : "Fifo", "Direction" : "O",
+					{"ID" : "1", "SubInstance" : "grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33", "Port" : "appear", "Inst_start_state" : "1", "Inst_end_state" : "2"}]},
+			{"Name" : "Out_r", "Type" : "Axis", "Direction" : "O",
 				"BlockSignal" : [
-					{"Name" : "Out_r_blk_n", "Type" : "RtlSignal"}]}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31", "Parent" : "0", "Child" : ["2"],
-		"CDFG" : "threshold_Pipeline_VITIS_LOOP_58_1",
+					{"Name" : "Out_r_TDATA_blk_n", "Type" : "RtlSignal"}]}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33", "Parent" : "0", "Child" : ["2"],
+		"CDFG" : "threshold_Pipeline_VITIS_LOOP_61_1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
@@ -91,24 +91,24 @@ set RtlHierarchyInfo {[
 			{"Name" : "appear", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "over_thresh_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_58_1", "PipelineType" : "UPC",
+			{"Name" : "VITIS_LOOP_61_1", "PipelineType" : "UPC",
 				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter1", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter0", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_31.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
+	{"ID" : "2", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33.flow_control_loop_pipe_sequential_init_U", "Parent" : "1"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	threshold {
 		appear {Type I LastRead 0 FirstWrite -1}
 		Out_r {Type O LastRead -1 FirstWrite 2}}
-	threshold_Pipeline_VITIS_LOOP_58_1 {
+	threshold_Pipeline_VITIS_LOOP_61_1 {
 		appear {Type I LastRead 0 FirstWrite -1}
 		over_thresh_out {Type O LastRead -1 FirstWrite 0}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "260", "Max" : "260"}
-	, {"Name" : "Interval", "Min" : "260", "Max" : "260"}
+	{"Name" : "Latency", "Min" : "261", "Max" : "261"}
+	, {"Name" : "Interval", "Min" : "261", "Max" : "261"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -116,5 +116,5 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	appear { ap_memory {  { appear_address0 mem_address 1 8 }  { appear_ce0 mem_ce 1 1 }  { appear_q0 mem_dout 0 3 } } }
-	Out_r { ap_fifo {  { Out_r_din fifo_port_we 1 32 }  { Out_r_full_n fifo_status 0 1 }  { Out_r_write fifo_data 1 1 } } }
+	Out_r { axis {  { Out_r_TDATA out_data 1 32 }  { Out_r_TVALID out_vld 1 1 }  { Out_r_TREADY out_acc 0 1 } } }
 }

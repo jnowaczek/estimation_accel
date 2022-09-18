@@ -184,15 +184,17 @@ unsigned int ap_apatb_In_r_cap_bc;
 static AESL_RUNTIME_BC __xlx_In_r_V_size_Reader("../tv/stream_size/stream_size_in_In_r.dat");
 unsigned int ap_apatb_Out_r_cap_bc;
 static AESL_RUNTIME_BC __xlx_Out_r_V_size_Reader("../tv/stream_size/stream_size_out_Out_r.dat");
-extern "C" void accelerator(char*, int, int*);
+struct __cosim_s1__ { char data[1]; };
+struct __cosim_s4__ { char data[4]; };
+extern "C" void accelerator(__cosim_s1__*, int, __cosim_s4__*);
 extern "C" void apatb_accelerator_hw(volatile void * __xlx_apatb_param_In_r, int __xlx_apatb_param_num_blocks, volatile void * __xlx_apatb_param_Out_r) {
-auto* sIn_r = bcsim::createStream((hls::stream<char>*)__xlx_apatb_param_In_r);
+auto* sIn_r = bcsim::createStream((hls::stream<__cosim_s1__>*)__xlx_apatb_param_In_r);
   //Create input buffer for Out_r
   ap_apatb_Out_r_cap_bc = __xlx_Out_r_V_size_Reader.read_size();
-  int* __xlx_Out_r_input_buffer= new int[ap_apatb_Out_r_cap_bc];
-auto* sOut_r = bcsim::createStream((hls::stream<int>*)__xlx_apatb_param_Out_r);
+  __cosim_s4__* __xlx_Out_r_input_buffer= new __cosim_s4__[ap_apatb_Out_r_cap_bc];
+auto* sOut_r = bcsim::createStream((hls::stream<__cosim_s4__>*)__xlx_apatb_param_Out_r);
   // DUT call
-  accelerator(sIn_r->data<char>(), __xlx_apatb_param_num_blocks, sOut_r->data<int>());
-sIn_r->transfer((hls::stream<char>*)__xlx_apatb_param_In_r);
-sOut_r->transfer((hls::stream<int>*)__xlx_apatb_param_Out_r);
+  accelerator(sIn_r->data<__cosim_s1__>(), __xlx_apatb_param_num_blocks, sOut_r->data<__cosim_s4__>());
+sIn_r->transfer((hls::stream<__cosim_s1__>*)__xlx_apatb_param_In_r);
+sOut_r->transfer((hls::stream<__cosim_s4__>*)__xlx_apatb_param_Out_r);
 }

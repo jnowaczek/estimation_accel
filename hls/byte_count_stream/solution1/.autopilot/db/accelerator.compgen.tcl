@@ -82,50 +82,80 @@ if {${::AESL::PGuard_autoexp_gen}} {
 }
 
 set axilite_register_dict [dict create]
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 15 \
-    name In_r \
-    type fifo \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_In_r \
-    op interface \
-    ports { In_r_dout { I 8 vector } In_r_empty_n { I 1 bit } In_r_read { O 1 bit } } \
-} "
+set port_control {
+num_blocks { 
+	dir I
+	width 32
+	depth 1
+	mode ap_none
+	offset 16
+	offset_end 23
+}
+}
+dict set axilite_register_dict control $port_control
+
+
+# Native S_AXILite:
+if {${::AESL::PGuard_simmodel_gen}} {
+	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
+		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
+			id 15 \
+			corename accelerator_control_axilite \
+			name accelerator_control_s_axi \
+			ports {$port_control} \
+			op interface \
+			interrupt_clear_mode COR \
+			interrupt_trigger_type default \
+			is_flushable 0 \
+			is_datawidth64 0 \
+			is_addrwidth64 0 \
+		} "
+	} else {
+		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control'"
+	}
 }
 
-# Direct connection:
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler accelerator_control_s_axi BINDTYPE interface TYPE interface_s_axilite
+}
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 16 \
-    name num_blocks \
-    type other \
-    dir I \
-    reset_level 1 \
+    name In_r \
+    reset_level 0 \
     sync_rst true \
-    corename dc_num_blocks \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { num_blocks { I 32 vector } } \
+    ports { In_r_TDATA { I 8 vector } In_r_TVALID { I 1 bit } In_r_TREADY { O 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'In_r'"
+}
 }
 
-# Direct connection:
+
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 17 \
     name Out_r \
-    type fifo \
-    dir O \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
-    corename dc_Out_r \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { Out_r_din { O 32 vector } Out_r_full_n { I 1 bit } Out_r_write { O 1 bit } } \
+    ports { Out_r_TDATA { O 32 vector } Out_r_TVALID { O 1 bit } Out_r_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'Out_r'"
 }
+}
+
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
@@ -133,7 +163,7 @@ eval "cg_default_interface_gen_dc { \
     id -1 \
     name ap_ctrl \
     type ap_ctrl \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
     corename ap_ctrl \
     op interface \
@@ -150,7 +180,7 @@ if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_cloc
 eval "cg_default_interface_gen_clock { \
     id -2 \
     name ${PortName} \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
     corename apif_ap_clk \
     data_wd ${DataWd} \
@@ -163,16 +193,16 @@ puts "@W \[IMPL-113\] Cannot find bus interface model in the library. Ignored ge
 
 
 # Adapter definition:
-set PortName ap_rst
+set PortName ap_rst_n
 set DataWd 1 
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
     id -3 \
     name ${PortName} \
-    reset_level 1 \
+    reset_level 0 \
     sync_rst true \
-    corename apif_ap_rst \
+    corename apif_ap_rst_n \
     data_wd ${DataWd} \
     op interface \
 }"

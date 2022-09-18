@@ -22,7 +22,7 @@
           "functionLabel": "",
           "id": "2",
           "sourceFile": "E:\/estimation_accel\/hls\/byte_count_stream\/solution1\/csynth.tcl",
-          "sourceLine": "17",
+          "sourceLine": "18",
           "pragma": {
             "name": "TOP",
             "option": [{

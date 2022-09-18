@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394531</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -70,13 +70,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
-				<if_type>3</if_type>
+				<if_type>0</if_type>
 				<array_size>0</array_size>
 				<bit_vecs>
 					<count>0</count>
@@ -110,7 +110,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -152,7 +152,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -196,7 +196,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -205,7 +205,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>16</item>
-					<item>45</item>
+					<item>46</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -253,7 +253,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -270,7 +270,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>3.41</m_delay>
+				<m_delay>0.00</m_delay>
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -279,10 +279,10 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>_ln64</name>
+						<name>_ln67</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>67</lineNumber>
 						<contextFuncName>threshold</contextFuncName>
 						<contextNormFuncName>threshold</contextNormFuncName>
 						<inlineStackInfo>
@@ -298,7 +298,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>threshold</second>
 										</first>
-										<second>64</second>
+										<second>67</second>
 									</item>
 								</second>
 							</item>
@@ -311,7 +311,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -356,7 +356,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -369,7 +369,7 @@
 					<Obj>
 						<type>2</type>
 						<id>12</id>
-						<name>threshold_Pipeline_VITIS_LOOP_58_1</name>
+						<name>threshold_Pipeline_VITIS_LOOP_61_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -387,13 +387,13 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953394531</coreId>
+						<coreId>1701601889</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:threshold_Pipeline_VITIS_LOOP_58_1&gt;</content>
+				<content>&lt;constant:threshold_Pipeline_VITIS_LOOP_61_1&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -488,7 +488,7 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_18">
-				<id>45</id>
+				<id>46</id>
 				<edge_type>4</edge_type>
 				<source_obj>5</source_obj>
 				<sink_obj>6</sink_obj>
@@ -517,8 +517,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>260</mMinLatency>
-			<mMaxLatency>260</mMaxLatency>
+			<mMinLatency>261</mMinLatency>
+			<mMaxLatency>261</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -559,7 +559,7 @@
 		<item>
 			<first>8</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -571,7 +571,7 @@
 			<first>9</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>2</second>
+				<second>3</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

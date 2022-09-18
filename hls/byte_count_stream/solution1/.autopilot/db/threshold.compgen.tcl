@@ -26,20 +26,24 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 
 
-# Direct connection:
+# Native AXIS:
 if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
+if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
+eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     id 10 \
     name Out_r \
-    type fifo \
-    dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_Out_r \
+    corename {} \
+    metadata {  } \
     op interface \
-    ports { Out_r_din { O 32 vector } Out_r_full_n { I 1 bit } Out_r_write { O 1 bit } } \
+    ports { Out_r_TDATA { O 32 vector } Out_r_TVALID { O 1 bit } Out_r_TREADY { I 1 bit } } \
 } "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'Out_r'"
 }
+}
+
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {

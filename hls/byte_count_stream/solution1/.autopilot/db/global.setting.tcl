@@ -14,7 +14,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 0
-set ResetLevelFlag 1
+set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -45,7 +45,7 @@ set TargetInfo xc7z010i:-clg225:-1L
 set SourceFiles {sc {} c ../src/byte_count_stream.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile E:/estimation_accel/hls/byte_count_stream/solution1/solution1.directive
-set TBFiles {verilog {../../tb_data ../src/byte_count_stream_bench.cpp} bc {../../tb_data ../src/byte_count_stream_bench.cpp} sc {../../tb_data ../src/byte_count_stream_bench.cpp} vhdl {../../tb_data ../src/byte_count_stream_bench.cpp} c {} cas {../../tb_data ../src/byte_count_stream_bench.cpp}}
+set TBFiles {verilog {../src/byte_count_stream_bench.cpp ../../tb_data} bc {../src/byte_count_stream_bench.cpp ../../tb_data} sc {../src/byte_count_stream_bench.cpp ../../tb_data} vhdl {../src/byte_count_stream_bench.cpp ../../tb_data} c {} cas {../src/byte_count_stream_bench.cpp ../../tb_data}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

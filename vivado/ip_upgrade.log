@@ -1,6 +1,644 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Sun Sep 18 13:46:49 2022
+| Host         : Omnya running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_accelerator_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_accelerator_0_0 (jnowaczek:byte_count_stream:accelerator:1.0) from (Rev. 5) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_accelerator_0_0'.
+
+
+-Upgrade has removed interface 'num_blocks'
+
+-Upgrade has added interface 's_axi_control' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'num_blocks'
+
+-Upgrade has added port 's_axi_control_ARADDR'
+
+-Upgrade has added port 's_axi_control_ARREADY'
+
+-Upgrade has added port 's_axi_control_ARVALID'
+
+-Upgrade has added port 's_axi_control_AWADDR'
+
+-Upgrade has added port 's_axi_control_AWREADY'
+
+-Upgrade has added port 's_axi_control_AWVALID'
+
+-Upgrade has added port 's_axi_control_BREADY'
+
+-Upgrade has added port 's_axi_control_BRESP'
+
+-Upgrade has added port 's_axi_control_BVALID'
+
+-Upgrade has added port 's_axi_control_RDATA'
+
+-Upgrade has added port 's_axi_control_RREADY'
+
+-Upgrade has added port 's_axi_control_RRESP'
+
+-Upgrade has added port 's_axi_control_RVALID'
+
+-Upgrade has added port 's_axi_control_WDATA'
+
+-Upgrade has added port 's_axi_control_WREADY'
+
+-Upgrade has added port 's_axi_control_WSTRB'
+
+-Upgrade has added port 's_axi_control_WVALID'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Aug 17 19:34:55 2022
+| Host         : Omnya running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_accelerator_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_accelerator_0_0 (jnowaczek:byte_count_stream:accelerator:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_accelerator_0_0'.
+
+
+-Upgrade has removed interface 's_axi_num_blocks'
+
+-Upgrade has added interface 'num_blocks' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 's_axi_num_blocks_ARADDR'
+
+-Upgrade has removed port 's_axi_num_blocks_ARREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_ARVALID'
+
+-Upgrade has removed port 's_axi_num_blocks_AWADDR'
+
+-Upgrade has removed port 's_axi_num_blocks_AWREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_AWVALID'
+
+-Upgrade has removed port 's_axi_num_blocks_BREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_BRESP'
+
+-Upgrade has removed port 's_axi_num_blocks_BVALID'
+
+-Upgrade has removed port 's_axi_num_blocks_RDATA'
+
+-Upgrade has removed port 's_axi_num_blocks_RREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_RRESP'
+
+-Upgrade has removed port 's_axi_num_blocks_RVALID'
+
+-Upgrade has removed port 's_axi_num_blocks_WDATA'
+
+-Upgrade has removed port 's_axi_num_blocks_WREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_WSTRB'
+
+-Upgrade has removed port 's_axi_num_blocks_WVALID'
+
+-Upgrade has added port 'num_blocks'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_num_blocks/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Aug 17 19:34:54 2022
+| Host         : Omnya running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'stream_adapter_system_accelerator_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of stream_adapter_system_accelerator_0_0 (jnowaczek:byte_count_stream:accelerator:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'stream_adapter_system_accelerator_0_0'.
+
+
+-Upgrade has removed interface 's_axi_num_blocks'
+
+-Upgrade has added interface 'num_blocks' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'stream_adapter_system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 's_axi_num_blocks_ARADDR'
+
+-Upgrade has removed port 's_axi_num_blocks_ARREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_ARVALID'
+
+-Upgrade has removed port 's_axi_num_blocks_AWADDR'
+
+-Upgrade has removed port 's_axi_num_blocks_AWREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_AWVALID'
+
+-Upgrade has removed port 's_axi_num_blocks_BREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_BRESP'
+
+-Upgrade has removed port 's_axi_num_blocks_BVALID'
+
+-Upgrade has removed port 's_axi_num_blocks_RDATA'
+
+-Upgrade has removed port 's_axi_num_blocks_RREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_RRESP'
+
+-Upgrade has removed port 's_axi_num_blocks_RVALID'
+
+-Upgrade has removed port 's_axi_num_blocks_WDATA'
+
+-Upgrade has removed port 's_axi_num_blocks_WREADY'
+
+-Upgrade has removed port 's_axi_num_blocks_WSTRB'
+
+-Upgrade has removed port 's_axi_num_blocks_WVALID'
+
+-Upgrade has added port 'num_blocks'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'stream_adapter_system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_num_blocks/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Aug 17 19:25:20 2022
+| Host         : Omnya running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_accelerator_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_accelerator_0_0 (jnowaczek:byte_count_stream:accelerator:1.0) from (Rev. 2) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_accelerator_0_0'.
+
+
+-Upgrade has removed interface 's_axi_control'
+
+-Upgrade has added interface 's_axi_num_blocks' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 's_axi_control_ARADDR'
+
+-Upgrade has removed port 's_axi_control_ARREADY'
+
+-Upgrade has removed port 's_axi_control_ARVALID'
+
+-Upgrade has removed port 's_axi_control_AWADDR'
+
+-Upgrade has removed port 's_axi_control_AWREADY'
+
+-Upgrade has removed port 's_axi_control_AWVALID'
+
+-Upgrade has removed port 's_axi_control_BREADY'
+
+-Upgrade has removed port 's_axi_control_BRESP'
+
+-Upgrade has removed port 's_axi_control_BVALID'
+
+-Upgrade has removed port 's_axi_control_RDATA'
+
+-Upgrade has removed port 's_axi_control_RREADY'
+
+-Upgrade has removed port 's_axi_control_RRESP'
+
+-Upgrade has removed port 's_axi_control_RVALID'
+
+-Upgrade has removed port 's_axi_control_WDATA'
+
+-Upgrade has removed port 's_axi_control_WREADY'
+
+-Upgrade has removed port 's_axi_control_WSTRB'
+
+-Upgrade has removed port 's_axi_control_WVALID'
+
+-Upgrade has added port 'ap_continue'
+
+-Upgrade has added port 's_axi_num_blocks_ARADDR'
+
+-Upgrade has added port 's_axi_num_blocks_ARREADY'
+
+-Upgrade has added port 's_axi_num_blocks_ARVALID'
+
+-Upgrade has added port 's_axi_num_blocks_AWADDR'
+
+-Upgrade has added port 's_axi_num_blocks_AWREADY'
+
+-Upgrade has added port 's_axi_num_blocks_AWVALID'
+
+-Upgrade has added port 's_axi_num_blocks_BREADY'
+
+-Upgrade has added port 's_axi_num_blocks_BRESP'
+
+-Upgrade has added port 's_axi_num_blocks_BVALID'
+
+-Upgrade has added port 's_axi_num_blocks_RDATA'
+
+-Upgrade has added port 's_axi_num_blocks_RREADY'
+
+-Upgrade has added port 's_axi_num_blocks_RRESP'
+
+-Upgrade has added port 's_axi_num_blocks_RVALID'
+
+-Upgrade has added port 's_axi_num_blocks_WDATA'
+
+-Upgrade has added port 's_axi_num_blocks_WREADY'
+
+-Upgrade has added port 's_axi_num_blocks_WSTRB'
+
+-Upgrade has added port 's_axi_num_blocks_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_control/Reg'
+
+-Upgrade has added address block 's_axi_num_blocks/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Aug 17 19:25:18 2022
+| Host         : Omnya running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'stream_adapter_system_accelerator_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of stream_adapter_system_accelerator_0_0 (jnowaczek:byte_count_stream:accelerator:1.0) from (Rev. 2) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'stream_adapter_system_accelerator_0_0'.
+
+
+-Upgrade has removed interface 's_axi_control'
+
+-Upgrade has added interface 's_axi_num_blocks' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'stream_adapter_system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 's_axi_control_ARADDR'
+
+-Upgrade has removed port 's_axi_control_ARREADY'
+
+-Upgrade has removed port 's_axi_control_ARVALID'
+
+-Upgrade has removed port 's_axi_control_AWADDR'
+
+-Upgrade has removed port 's_axi_control_AWREADY'
+
+-Upgrade has removed port 's_axi_control_AWVALID'
+
+-Upgrade has removed port 's_axi_control_BREADY'
+
+-Upgrade has removed port 's_axi_control_BRESP'
+
+-Upgrade has removed port 's_axi_control_BVALID'
+
+-Upgrade has removed port 's_axi_control_RDATA'
+
+-Upgrade has removed port 's_axi_control_RREADY'
+
+-Upgrade has removed port 's_axi_control_RRESP'
+
+-Upgrade has removed port 's_axi_control_RVALID'
+
+-Upgrade has removed port 's_axi_control_WDATA'
+
+-Upgrade has removed port 's_axi_control_WREADY'
+
+-Upgrade has removed port 's_axi_control_WSTRB'
+
+-Upgrade has removed port 's_axi_control_WVALID'
+
+-Upgrade has added port 'ap_continue'
+
+-Upgrade has added port 's_axi_num_blocks_ARADDR'
+
+-Upgrade has added port 's_axi_num_blocks_ARREADY'
+
+-Upgrade has added port 's_axi_num_blocks_ARVALID'
+
+-Upgrade has added port 's_axi_num_blocks_AWADDR'
+
+-Upgrade has added port 's_axi_num_blocks_AWREADY'
+
+-Upgrade has added port 's_axi_num_blocks_AWVALID'
+
+-Upgrade has added port 's_axi_num_blocks_BREADY'
+
+-Upgrade has added port 's_axi_num_blocks_BRESP'
+
+-Upgrade has added port 's_axi_num_blocks_BVALID'
+
+-Upgrade has added port 's_axi_num_blocks_RDATA'
+
+-Upgrade has added port 's_axi_num_blocks_RREADY'
+
+-Upgrade has added port 's_axi_num_blocks_RRESP'
+
+-Upgrade has added port 's_axi_num_blocks_RVALID'
+
+-Upgrade has added port 's_axi_num_blocks_WDATA'
+
+-Upgrade has added port 's_axi_num_blocks_WREADY'
+
+-Upgrade has added port 's_axi_num_blocks_WSTRB'
+
+-Upgrade has added port 's_axi_num_blocks_WVALID'
+
+
+4. Addressing Information
+-------------------------
+
+Detected addressing differences while upgrading 'stream_adapter_system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed address block 's_axi_control/Reg'
+
+-Upgrade has added address block 's_axi_num_blocks/Reg'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Aug 16 19:24:15 2022
+| Host         : Omnya running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_accelerator_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_accelerator_0_0 (jnowaczek:byte_count_stream:accelerator:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'ap_continue'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Tue Aug 16 18:36:20 2022
+| Host         : Omnya running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_accelerator_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_accelerator_0_0 (jnowaczek:byte_count_stream:accelerator:1.0) to (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'system_accelerator_0_0'.
+
+
+-Upgraded interface 'In_r' (xilinx.com:interface:axis:1.0) differs from original interface 'xilinx.com:interface:acc_fifo_read:1.0'
+
+-Upgraded interface 'Out_r' (xilinx.com:interface:axis:1.0) differs from original interface 'xilinx.com:interface:acc_fifo_write:1.0'
+
+-Upgrade has removed interface 'ap_rst'
+
+-Upgrade has removed interface 'num_blocks'
+
+-Upgrade has added interface 'ap_rst_n' (xilinx.com:signal:reset:1.0)
+
+-Upgrade has added interface 's_axi_control' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_accelerator_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'In_r_dout'
+
+-Upgrade has removed port 'In_r_empty_n'
+
+-Upgrade has removed port 'In_r_read'
+
+-Upgrade has removed port 'Out_r_din'
+
+-Upgrade has removed port 'Out_r_full_n'
+
+-Upgrade has removed port 'Out_r_write'
+
+-Upgrade has removed port 'ap_rst'
+
+-Upgrade has removed port 'num_blocks'
+
+-Upgrade has added port 'In_r_TDATA'
+
+-Upgrade has added port 'In_r_TREADY'
+
+-Upgrade has added port 'In_r_TVALID'
+
+-Upgrade has added port 'Out_r_TDATA'
+
+-Upgrade has added port 'Out_r_TREADY'
+
+-Upgrade has added port 'Out_r_TVALID'
+
+-Upgrade has added port 'ap_rst_n'
+
+-Upgrade has added port 's_axi_control_ARADDR'
+
+-Upgrade has added port 's_axi_control_ARREADY'
+
+-Upgrade has added port 's_axi_control_ARVALID'
+
+-Upgrade has added port 's_axi_control_AWADDR'
+
+-Upgrade has added port 's_axi_control_AWREADY'
+
+-Upgrade has added port 's_axi_control_AWVALID'
+
+-Upgrade has added port 's_axi_control_BREADY'
+
+-Upgrade has added port 's_axi_control_BRESP'
+
+-Upgrade has added port 's_axi_control_BVALID'
+
+-Upgrade has added port 's_axi_control_RDATA'
+
+-Upgrade has added port 's_axi_control_RREADY'
+
+-Upgrade has added port 's_axi_control_RRESP'
+
+-Upgrade has added port 's_axi_control_RVALID'
+
+-Upgrade has added port 's_axi_control_WDATA'
+
+-Upgrade has added port 's_axi_control_WREADY'
+
+-Upgrade has added port 's_axi_control_WSTRB'
+
+-Upgrade has added port 's_axi_control_WVALID'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
 | Date         : Sun Jun  5 15:13:58 2022
 | Host         : Omnya running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

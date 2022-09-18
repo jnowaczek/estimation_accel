@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1660004843760">
-  <ports id="1" name="In_r" type="PortType" coreId="1953394531" bitwidth="8" iftype="IfTypeRom">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1663526649493">
+  <ports id="1" name="In_r" type="PortType" originalName="In" coreId="0" bitwidth="8">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="num_blocks" type="PortType" originalName="num_blocks" coreId="1528853351" bitwidth="32">
+  <ports id="2" name="num_blocks" type="PortType" originalName="num_blocks" coreId="1702129263" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="Out_r" type="PortType" coreId="1953394531" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+  <ports id="3" name="Out_r" type="PortType" originalName="Out" coreId="1702129263" bitwidth="32" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <edges id="29" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
-  <edges id="30" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.1"/>
-  <edges id="33" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
-  <edges id="34" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
-  <edges id="35" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
-  <edges id="36" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
-  <edges id="37" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
-  <edges id="38" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
-  <edges id="41" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="42" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="43" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
-  <edges id="46" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
-  <edges id="47" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.2"/>
-  <edges id="48" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
-  <edges id="155" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
-  <edges id="156" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="157" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
-  <edges id="158" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
-  <blocks id="14" name="entry" type="BlockType">
+  <edges id="30" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="31" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="34" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="35" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="36" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="37" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="39" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="42" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="43" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="44" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="47" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.2"/>
+  <edges id="49" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="179" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="180" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="181" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="182" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="15" name="entry" type="BlockType">
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>for.cond</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="num_blocks_read" lineNumber="6" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="539767584" contextFuncName="accelerator" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="num_blocks_read" lineNumber="6" originalName="num_blocks" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="accelerator" bitwidth="32" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="6" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
       <dataInputObjs>num_blocks</dataInputObjs>
       <dataOutputObjs>icmp</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln10" lineNumber="10" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="1818322464" contextFuncName="accelerator" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="10" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="br_ln13" lineNumber="13" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="858988588" contextFuncName="accelerator" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="13" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
       <controlInputObjs>for.cond</controlInputObjs>
     </node_objs>
     <fileValidLineNumbers fileName="byte_count_stream/src/byte_count_stream.cpp">
       <validLinenumbers>6</validLinenumbers>
-      <validLinenumbers>10</validLinenumbers>
+      <validLinenumbers>13</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <blocks id="26" name="for.end" type="BlockType">
+  <blocks id="27" name="for.end" type="BlockType">
     <controlInputObjs>for.cond</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln18" lineNumber="18" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="858988588" contextFuncName="accelerator" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="18" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="_ln21" lineNumber="21" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="1818322464" contextFuncName="accelerator" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="21" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
     </node_objs>
     <fileValidLineNumbers fileName="byte_count_stream/src/byte_count_stream.cpp">
-      <validLinenumbers>18</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
-  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="83" RegionName="VITIS_LOOP_10_1">
-    <basic_blocks id="20" name="for.cond" type="BlockType">
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="86" RegionName="VITIS_LOOP_13_1">
+    <basic_blocks id="21" name="for.cond" type="BlockType">
       <controlInputObjs>entry</controlInputObjs>
       <controlInputObjs>for.body</controlInputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.end</controlOutputObjs>
       <controlOutputObjs>for.body</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="counter" originalName="counter" coreId="1818322464" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="counter" originalName="counter" coreId="1818322464" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -70,92 +70,93 @@
         <controlInputObjs>for.body</controlInputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="icmp_ln10" lineNumber="10" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="accelerator" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.47" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="10" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="icmp_ln13" lineNumber="13" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="accelerator" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.47" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="13" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataInputObjs>read</dataInputObjs>
         <dataOutputObjs>br</dataOutputObjs>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="counter_1" lineNumber="10" originalName="counter" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="accelerator" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.55" m_topoIndex="5" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="10" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="counter_1" lineNumber="13" originalName="counter" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="accelerator" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.55" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="13" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataInputObjs>phi</dataInputObjs>
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="br_ln10" lineNumber="10" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="539767584" contextFuncName="accelerator" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="10" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="br_ln13" lineNumber="13" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="741487420" contextFuncName="accelerator" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="13" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>for.body</controlInputObjs>
         <controlInputObjs>for.end</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="byte_count_stream/src/byte_count_stream.cpp">
-        <validLinenumbers>10</validLinenumbers>
+        <validLinenumbers>13</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
-    <basic_blocks id="24" name="for.body" type="BlockType">
+    <basic_blocks id="25" name="for.body" type="BlockType">
       <controlInputObjs>for.cond</controlInputObjs>
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.cond</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="_ln16" lineNumber="16" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="dataflow_in_loop_VITIS_LOOP_10_1_U0" coreId="1818322464" contextFuncName="accelerator" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="16" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln19" lineNumber="19" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="dataflow_in_loop_VITIS_LOOP_13_1_U0" coreId="858988588" contextFuncName="accelerator" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="19" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataInputObjs>In_r</dataInputObjs>
         <dataOutputObjs>Out_r</dataOutputObjs>
-        <constName>dataflow_in_loop_VITIS_LOOP_10_1</constName>
+        <constName>dataflow_in_loop_VITIS_LOOP_13_1</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln10" lineNumber="10" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="741487420" contextFuncName="accelerator" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="10" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="br_ln13" lineNumber="13" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="539767584" contextFuncName="accelerator" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="13" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <controlInputObjs>for.cond</controlInputObjs>
       </node_objs>
       <fileValidLineNumbers fileName="byte_count_stream/src/byte_count_stream.cpp">
-        <validLinenumbers>16</validLinenumbers>
-        <validLinenumbers>10</validLinenumbers>
+        <validLinenumbers>19</validLinenumbers>
+        <validLinenumbers>13</validLinenumbers>
       </fileValidLineNumbers>
     </basic_blocks>
   </regions>
   <ScheduleInfo time="0"/>
   <ScheduleInfo time="1"/>
   <ScheduleInfo time="2"/>
-  <regnodes realName="counter_1_reg_85">
-    <nodeIds>18</nodeIds>
-  </regnodes>
-  <regnodes realName="num_blocks_read_reg_76">
-    <nodeIds>12</nodeIds>
-  </regnodes>
-  <regnodes realName="counter_reg_46">
-    <nodeIds>15</nodeIds>
-  </regnodes>
-  <regnodes realName="icmp_ln10_reg_81">
+  <ScheduleInfo time="3"/>
+  <regnodes realName="counter_reg_54">
     <nodeIds>16</nodeIds>
   </regnodes>
-  <expressionNodes realName="counter_phi_fu_50">
-    <nodeIds>15</nodeIds>
+  <regnodes realName="num_blocks_read_reg_84">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln13_reg_89">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="counter_1_reg_93">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <expressionNodes realName="counter_1_fu_78">
+    <nodeIds>19</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="counter_1_fu_70">
-    <nodeIds>18</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="icmp_ln10_fu_65">
+  <expressionNodes realName="counter_phi_fu_58">
     <nodeIds>16</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_dataflow_in_loop_VITIS_LOOP_10_1_fu_57">
-    <nodeIds>22</nodeIds>
+  <expressionNodes realName="icmp_ln13_fu_73">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_dataflow_in_loop_VITIS_LOOP_13_1_fu_65">
+    <nodeIds>23</nodeIds>
   </moduleNodes>
-  <ioNodes realName="num_blocks_read_read_fu_40">
-    <nodeIds>12</nodeIds>
+  <ioNodes realName="num_blocks_read_read_fu_48">
+    <nodeIds>13</nodeIds>
   </ioNodes>
   <ioPorts name="In_r">
     <contents name="call">
-      <nodeIds>22</nodeIds>
+      <nodeIds>23</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="Out_r">
     <contents name="call">
-      <nodeIds>22</nodeIds>
+      <nodeIds>23</nodeIds>
     </contents>
   </ioPorts>
   <ioPorts name="num_blocks">
     <contents name="read">
-      <nodeIds>12</nodeIds>
+      <nodeIds>13</nodeIds>
     </contents>
   </ioPorts>
   <fsm>
@@ -170,25 +171,31 @@
       <operations id="11" stage="1" latency="1"/>
       <operations id="12" stage="1" latency="1"/>
       <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
     </states>
     <states id="2">
-      <operations id="15" stage="1" latency="1"/>
       <operations id="16" stage="1" latency="1"/>
       <operations id="17" stage="1" latency="1"/>
       <operations id="18" stage="1" latency="1"/>
       <operations id="19" stage="1" latency="1"/>
-      <operations id="22" stage="2" latency="2"/>
-      <operations id="25" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="23" stage="2" latency="2"/>
     </states>
     <states id="3">
-      <operations id="21" stage="1" latency="1"/>
-      <operations id="22" stage="1" latency="2"/>
-      <operations id="23" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="2"/>
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="26" stage="1" latency="1"/>
     </states>
     <transitions inState="1" outState="2">
       <condition id="-1"/>
     </transitions>
     <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="4">
       <condition id="-1"/>
     </transitions>
     <transitions inState="3" outState="2">
@@ -203,27 +210,27 @@
       <mDfPipe/>
     </cfgRegions>
     <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>14</basicBlocks>
+      <basicBlocks>15</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
-    <cfgRegions mId="3" mTag="VITIS_LOOP_10_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mIsDfPipe="true" mType="1">
-      <basicBlocks>20</basicBlocks>
-      <basicBlocks>24</basicBlocks>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_13_1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mIsDfPipe="true" mType="1">
+      <basicBlocks>21</basicBlocks>
+      <basicBlocks>25</basicBlocks>
       <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.2/@mDfPipe/@processe_list.0/@pins.0/@inst">
-        <processe_list name="dataflow_in_loop_VITIS_LOOP_10_1_U0" ssdmobj_id="22">
+        <processe_list name="dataflow_in_loop_VITIS_LOOP_13_1_U0" ssdmobj_id="23">
           <pins>
-            <port name="In_r" top_port_object_id="" top_port_object_id_reference="_45" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="dataflow_in_loop_VITIS_LOOP_10_1_U0" ssdmobj_id="22" object_id="_51"/>
+            <port name="In_r" type="SIOType" top_port_object_id="" top_port_object_id_reference="_45" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dataflow_in_loop_VITIS_LOOP_13_1_U0" ssdmobj_id="23" object_id="_51"/>
           </pins>
           <pins>
-            <port name="Out_r" dir="DirOut" top_port_object_id="" top_port_object_id_reference="_47" chan_object_id="" chan_object_id_reference=""/>
-            <inst name="dataflow_in_loop_VITIS_LOOP_10_1_U0" ssdmobj_id="22" object_id="_51"/>
+            <port name="Out_r" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_47" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dataflow_in_loop_VITIS_LOOP_13_1_U0" ssdmobj_id="23" object_id="_51"/>
           </pins>
         </processe_list>
       </mDfPipe>
     </cfgRegions>
     <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
-      <basicBlocks>26</basicBlocks>
+      <basicBlocks>27</basicBlocks>
       <mDfPipe/>
     </cfgRegions>
   </CFGRegionsRoot>

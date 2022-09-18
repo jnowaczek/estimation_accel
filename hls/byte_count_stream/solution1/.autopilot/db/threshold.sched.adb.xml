@@ -3,13 +3,19 @@
 
 <trans_list>
 
-<trans id="11" from="1" to="2">
+<trans id="12" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="12" from="2" to="3">
+<trans id="13" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="14" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -22,7 +28,7 @@
 
 <state id="1" st_id="1">
 
-<operation id="4" st_id="1" stage="1" lat="1">
+<operation id="5" st_id="1" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -37,7 +43,7 @@ entry:0 %over_thresh_loc = alloca i32 1
 <StgValue><ssdm name="over_thresh_loc"/></StgValue>
 </operation>
 
-<operation id="5" st_id="1" stage="2" lat="2">
+<operation id="6" st_id="1" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -46,7 +52,7 @@ entry:0 %over_thresh_loc = alloca i32 1
 
 <Node id="5" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="32">
 <![CDATA[
-entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i32 %over_thresh_loc
+entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_61_1, i3 %appear, i32 %over_thresh_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -55,7 +61,7 @@ entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i
 
 <state id="2" st_id="2">
 
-<operation id="6" st_id="2" stage="1" lat="2">
+<operation id="7" st_id="2" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -64,7 +70,7 @@ entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i
 
 <Node id="5" bw="0" op_0_bw="0" op_1_bw="3" op_2_bw="32">
 <![CDATA[
-entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i32 %over_thresh_loc
+entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_61_1, i3 %appear, i32 %over_thresh_loc
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -72,21 +78,6 @@ entry:2 %call_ln0 = call void @threshold_Pipeline_VITIS_LOOP_58_1, i3 %appear, i
 </state>
 
 <state id="3" st_id="3">
-
-<operation id="7" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
-<![CDATA[
-entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Out_r, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty, i32 4294967295, i32 0
-
-]]></Node>
-<StgValue><ssdm name="specinterface_ln0"/></StgValue>
-</operation>
 
 <operation id="8" st_id="3" stage="1" lat="1">
 <core>NULL</core>
@@ -104,7 +95,7 @@ entry:3 %over_thresh_loc_load = load i32 %over_thresh_loc
 </operation>
 
 <operation id="9" st_id="3" stage="1" lat="1">
-<core>FIFO</core>
+<core>axis</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
@@ -112,13 +103,31 @@ entry:3 %over_thresh_loc_load = load i32 %over_thresh_loc
 
 <Node id="7" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-entry:4 %write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %Out_r, i32 %over_thresh_loc_load
+entry:4 %write_ln174 = write void @_ssdm_op_Write.axis.volatile.i32P128A, i32 %Out_r, i32 %over_thresh_loc_load
 
 ]]></Node>
 <StgValue><ssdm name="write_ln174"/></StgValue>
 </operation>
+</state>
 
-<operation id="10" st_id="3" stage="1" lat="1">
+<state id="4" st_id="4">
+
+<operation id="10" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<![CDATA[
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %Out_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="11" st_id="4" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -127,10 +136,10 @@ entry:4 %write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %
 
 <Node id="8" bw="0">
 <![CDATA[
-entry:5 %ret_ln64 = ret
+entry:5 %ret_ln67 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln64"/></StgValue>
+<StgValue><ssdm name="ret_ln67"/></StgValue>
 </operation>
 </state>
 </state_list>
