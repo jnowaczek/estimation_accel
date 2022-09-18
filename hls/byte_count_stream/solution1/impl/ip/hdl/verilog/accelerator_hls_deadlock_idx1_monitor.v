@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ps
 
-module accelerator_hls_deadlock_idx1_monitor ( // for module accelerator_accelerator_inst.dataflow_in_loop_VITIS_LOOP_13_1_U0
+module accelerator_hls_deadlock_idx1_monitor ( // for module accelerator_accelerator_inst.dataflow_in_loop_VITIS_LOOP_10_1_U0
     input wire clock,
     input wire reset,
     input wire [1:0] axis_block_sigs,

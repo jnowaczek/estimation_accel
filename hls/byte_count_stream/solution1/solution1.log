@@ -14423,3 +14423,506 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
 INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
 INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 11.49 seconds; current allocated memory: 342.934 MB.
 INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 13.021 seconds; peak allocated memory: 1.109 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.002 seconds; current allocated memory: 355.363 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 4.723 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.958 seconds; current allocated memory: 376.688 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.556 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 4.466 seconds; current allocated memory: 355.504 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 6.084 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 10.34 seconds; current allocated memory: 354.930 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 11.836 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 1.814 seconds; current allocated memory: 403.617 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 3.344 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.797 seconds; current allocated memory: 369.508 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 3.279 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 4.862 seconds; current allocated memory: 397.430 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.374 seconds; peak allocated memory: 1.100 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 9.778 seconds; current allocated memory: 405.250 MB.
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 11.3 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.6
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.6 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 794.848 MB.
+INFO: [HLS 200-10] Analyzing design file 'byte_count_stream/src/byte_count_stream.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 6.402 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_int_base<32, false>::RType<32, false>::arg1 operator>><32, false>(ap_int_base<32, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1715:558)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi3ELb0EEC2EDq3_j' into 'ap_int_base<3, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<3, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust(bool, bool, bool, bool)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:403:23)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust(bool, bool, bool, bool)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:949:7)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, false>::operator==<32, false>(ap_int_base<32, false> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:923:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::RType<32, false>::arg1 operator>><32, false>(ap_int_base<32, false> const&, int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:923:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:921:38)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<32, false>::operator==<32, false>(ap_int_base<32, false> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:915:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::RType<32, false>::arg1 operator>><32, false>(ap_int_base<32, false> const&, int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:915:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:913:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:910:36)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base(int)' into 'ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_ufixed(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:346:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:576:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator!() const' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi33ELb1EEC2EDq33_i' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:325)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<33, 33, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:385)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:345)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393:333)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi33ELb0EEC2EDq33_j' into 'ap_int_base<33, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::ap_int_base(int)' into 'ap_int_base<33, false>::RType<33, false>::arg1 operator>><33, false>(ap_int_base<33, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1715:558)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:854:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust(bool, bool, bool, bool)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:949:7)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, false>::operator==<33, false>(ap_int_base<33, false> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:923:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::RType<33, false>::arg1 operator>><33, false>(ap_int_base<33, false> const&, int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:923:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:921:38)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<33, false>::operator==<33, false>(ap_int_base<33, false> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:915:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::RType<33, false>::arg1 operator>><33, false>(ap_int_base<33, false> const&, int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:915:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:913:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, false>::ap_int_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:910:36)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1413:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1413:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& operator+=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:2422:6825)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& operator+=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:2422:6813)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<($_0)32, ($_0)32, true>::plus operator+<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:2422:347)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::RType<32, 32, true>::plus ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator+<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<($_0)32, ($_0)32, true>::plus operator+<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:2422:336)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi3ELb0EEC2EDq3_j' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:447:80)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator=<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:449:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_ufixed<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:247:9)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_ufixed(int)' into 'count(hls::stream<unsigned char, 0>&, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count_stream/src/byte_count_stream.cpp:26:14)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_ufixed<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'count(hls::stream<unsigned char, 0>&, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count_stream/src/byte_count_stream.cpp:45:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<($_0)32, ($_0)32, true>::plus operator+<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' into 'count(hls::stream<unsigned char, 0>&, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count_stream/src/byte_count_stream.cpp:45:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>& operator+=<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>&, int)' into 'count(hls::stream<unsigned char, 0>&, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count_stream/src/byte_count_stream.cpp:42:10)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_ufixed(int)' into 'count(hls::stream<unsigned char, 0>&, ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*)' (byte_count_stream/src/byte_count_stream.cpp:29:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'bool operator><3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:2422:9949)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>::operator><32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'bool operator><3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:2422:9938)
+INFO: [HLS 214-131] Inlining function 'ssdm_int<8, false>::ssdm_int(unsigned char)' into 'ap_int_base<8, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base(int)' into 'ap_uint<8>::ap_uint(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int.h:333:58)
+INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_uint<1>::ap_uint(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int.h:333:58)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'bool operator><3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:59:17)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:68:6)
+INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_stream/src/byte_count_stream.cpp:24:9) in function 'count' completely with a factor of 256 (byte_count_stream/src/byte_count_stream.cpp:20:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint<8>s' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.243 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.288 seconds; current allocated memory: 1.099 GB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_1' (byte_count_stream/src/byte_count_stream.cpp:56) in function 'threshold' automatically.
+INFO: [XFORM 203-721] Extract dataflow region from loop VITIS_LOOP_10_1 (byte_count_stream/src/byte_count_stream.cpp:13)  of function 'accelerator'.
+INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_VITIS_LOOP_10_1' (byte_count_stream/src/byte_count_stream.cpp:11:3), detected/extracted 2 process function(s): 
+	 'count'
+	 'threshold'.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.545 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-472] Inferring partial write operation for 'appear' (byte_count_stream/src/byte_count_stream.cpp:26:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'appear' (byte_count_stream/src/byte_count_stream.cpp:44:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'appear' (byte_count_stream/src/byte_count_stream.cpp:50:15)
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'.
+WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.154 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'accelerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'APPEARANCES'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.36 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.694 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.918 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'threshold_Pipeline_VITIS_LOOP_58_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_58_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.43 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.074 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.099 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.089 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dataflow_in_loop_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.076 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'accelerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 1.099 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count_Pipeline_APPEARANCES' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count_Pipeline_APPEARANCES'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'count' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'count'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.49 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'threshold_Pipeline_VITIS_LOOP_58_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'threshold_Pipeline_VITIS_LOOP_58_1' pipeline 'VITIS_LOOP_58_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold_Pipeline_VITIS_LOOP_58_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.838 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'threshold' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dataflow_in_loop_VITIS_LOOP_10_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_VITIS_LOOP_10_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'accelerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/In_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/num_blocks' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'accelerator' to 'ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'num_blocks' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'accelerator'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-740] Implementing PIPO accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore using a separate memory for each block
+INFO: [RTMG 210-278] Implementing memory 'accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'ap_bound_U(accelerator_ap_bound)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.676 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.692 seconds; current allocated memory: 1.099 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for accelerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for accelerator.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 150.17 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 12 seconds. CPU system time: 0 seconds. Elapsed time: 23.588 seconds; current allocated memory: 342.938 MB.
+INFO: [HLS 200-112] Total CPU user time: 14 seconds. Total CPU system time: 2 seconds. Total elapsed time: 25.404 seconds; peak allocated memory: 1.099 GB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.7
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.7 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/vivado/ip_repo/ 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 11.352 seconds; current allocated memory: 385.004 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 12.983 seconds; peak allocated memory: 1.109 GB.

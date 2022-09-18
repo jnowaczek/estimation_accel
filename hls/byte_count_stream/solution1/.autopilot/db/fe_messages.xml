@@ -116,34 +116,34 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/estimation_accel/hls/byte_count_stream/solution1/directives.tcl:6:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=accelerator" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:8:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:5:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=In" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:9:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:6:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=Out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:10:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:7:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=num_blocks" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:11:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:8:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=ap_ctrl_chain port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:14:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:11:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="accelerator" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:24:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:21:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="count" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:25:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:22:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="count" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=appear intra RAW false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:28:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:25:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="count" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:37:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:34:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="count" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:57:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="byte_count_stream/src/byte_count_stream.cpp:54:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function 'ssdm_int&lt;32, false&gt;::ssdm_int(unsigned int)' into 'ap_int_base&lt;32, false&gt;::ap_int_base(int)'">
@@ -284,19 +284,19 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed.h:247:9" msg_body="Inlining function 'ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)'">
         <args Callee="ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller="ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:29:14" msg_body="Inlining function 'ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed(int)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:26:14" msg_body="Inlining function 'ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed(int)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
         <args Callee="ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed(int)" Caller="count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:48:12" msg_body="Inlining function 'ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:45:12" msg_body="Inlining function 'ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
         <args Callee="ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;33, 33, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller="count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:48:25" msg_body="Inlining function 'ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;($_0)32, ($_0)32, true&gt;::plus operator+&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:45:25" msg_body="Inlining function 'ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;($_0)32, ($_0)32, true&gt;::plus operator+&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
         <args Callee="ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::RType&lt;($_0)32, ($_0)32, true&gt;::plus operator+&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)" Caller="count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:45:10" msg_body="Inlining function 'ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;&amp; operator+=&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;&amp;, int)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:42:10" msg_body="Inlining function 'ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;&amp; operator+=&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;&amp;, int)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
         <args Callee="ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;&amp; operator+=&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;&amp;, int)" Caller="count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:32:18" msg_body="Inlining function 'ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed(int)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:29:18" msg_body="Inlining function 'ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed(int)' into 'count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)'">
         <args Callee="ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::ap_ufixed(int)" Caller="count(hls::stream&lt;unsigned char, 0&gt;&amp;, ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*)"/>
     </msg>
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:2422:9949" msg_body="Inlining function 'ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;::ap_fixed_base(int)' into 'bool operator&gt;&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)'">
@@ -305,11 +305,53 @@
     <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:2422:9938" msg_body="Inlining function 'bool ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::operator&gt;&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const' into 'bool operator&gt;&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)'">
         <args Callee="bool ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;::operator&gt;&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt;(ap_fixed_base&lt;32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;) const" Caller="bool operator&gt;&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:62:17" msg_body="Inlining function 'bool operator&gt;&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)' into 'threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;int, 0&gt;&amp;)'">
-        <args Callee="bool operator&gt;&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)" Caller="threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;int, 0&gt;&amp;)"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function 'ssdm_int&lt;8, false&gt;::ssdm_int(unsigned char)' into 'ap_int_base&lt;8, false&gt;::ap_int_base(int)'">
+        <args Callee="ssdm_int&lt;8, false&gt;::ssdm_int(unsigned char)" Caller="ap_int_base&lt;8, false&gt;::ap_int_base(int)"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:23:0" msg_body="Unrolling loop 'RESET' (byte_count_stream/src/byte_count_stream.cpp:27:9) in function 'count' completely with a factor of 256">
-        <args Factor="256" LoopLoc="byte_count_stream/src/byte_count_stream.cpp:27:9" LoopName="RESET"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::ap_int_base(int)' into 'ap_uint&lt;8&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;8, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;8&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67" msg_body="Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base&lt;1, false&gt;::ap_int_base(int)'">
+        <args Callee="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" Caller="ap_int_base&lt;1, false&gt;::ap_int_base(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int.h:333:58" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base(int)' into 'ap_uint&lt;1&gt;::ap_uint(int)'">
+        <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base(int)" Caller="ap_uint&lt;1&gt;::ap_uint(int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:51" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:307:26" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:68" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:37" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:40" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:24" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:262:86" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::operator&lt;&lt;(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::operator&lt;&lt;(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:59:17" msg_body="Inlining function 'bool operator&gt;&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)' into 'threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="bool operator&gt;&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt;(ap_fixed_base&lt;3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0&gt; const&amp;, int)" Caller="threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:68:6" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::operator&lt;&lt;(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)' into 'threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::operator&lt;&lt;(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)" Caller="threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="byte_count_stream/src/byte_count_stream.cpp:20:0" msg_body="Unrolling loop 'RESET' (byte_count_stream/src/byte_count_stream.cpp:24:9) in function 'count' completely with a factor of 256">
+        <args Factor="256" LoopLoc="byte_count_stream/src/byte_count_stream.cpp:24:9" LoopName="RESET"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s' into 'threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s" Caller="threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s' into 'threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
+        <args Callee="_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s" Caller="threshold(ap_ufixed&lt;3, 3, (ap_q_mode)5, (ap_o_mode)0, 0&gt;*, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

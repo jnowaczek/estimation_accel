@@ -20,7 +20,10 @@ module accelerator_threshold (
         appear_q0,
         Out_r_TDATA,
         Out_r_TVALID,
-        Out_r_TREADY
+        Out_r_TREADY,
+        Out_r_TKEEP,
+        Out_r_TSTRB,
+        Out_r_TLAST
 );
 
 parameter    ap_ST_fsm_state1 = 4'd1;
@@ -38,9 +41,12 @@ output   ap_ready;
 output  [7:0] appear_address0;
 output   appear_ce0;
 input  [2:0] appear_q0;
-output  [31:0] Out_r_TDATA;
+output  [7:0] Out_r_TDATA;
 output   Out_r_TVALID;
 input   Out_r_TREADY;
+output  [0:0] Out_r_TKEEP;
+output  [0:0] Out_r_TSTRB;
+output  [0:0] Out_r_TLAST;
 
 reg ap_done;
 reg ap_idle;
@@ -52,17 +58,18 @@ reg    ap_done_reg;
 wire    ap_CS_fsm_state1;
 reg    Out_r_TDATA_blk_n;
 wire    ap_CS_fsm_state3;
-wire    grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start;
-wire    grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_done;
-wire    grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_idle;
-wire    grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_ready;
-wire   [7:0] grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_appear_address0;
-wire    grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_appear_ce0;
-wire   [31:0] grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_over_thresh_out;
-wire    grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_over_thresh_out_ap_vld;
-reg    grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start_reg;
+wire    grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start;
+wire    grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_done;
+wire    grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_idle;
+wire    grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_ready;
+wire   [7:0] grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_appear_address0;
+wire    grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_appear_ce0;
+wire   [7:0] grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_over_thresh_out;
+wire    grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_over_thresh_out_ap_vld;
+reg    grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start_reg;
 reg    ap_block_state1_ignore_call2;
 wire    ap_CS_fsm_state2;
+reg   [7:0] over_thresh_loc_fu_32;
 wire    ap_CS_fsm_state4;
 reg   [3:0] ap_NS_fsm;
 reg    ap_block_state1;
@@ -76,21 +83,21 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 4'd1;
-#0 grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start_reg = 1'b0;
+#0 grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start_reg = 1'b0;
 end
 
-accelerator_threshold_Pipeline_VITIS_LOOP_61_1 grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33(
+accelerator_threshold_Pipeline_VITIS_LOOP_58_1 grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start),
-    .ap_done(grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_done),
-    .ap_idle(grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_idle),
-    .ap_ready(grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_ready),
-    .appear_address0(grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_appear_address0),
-    .appear_ce0(grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_appear_ce0),
+    .ap_start(grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start),
+    .ap_done(grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_done),
+    .ap_idle(grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_idle),
+    .ap_ready(grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_ready),
+    .appear_address0(grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_appear_address0),
+    .appear_ce0(grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_appear_ce0),
     .appear_q0(appear_q0),
-    .over_thresh_out(grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_over_thresh_out),
-    .over_thresh_out_ap_vld(grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_over_thresh_out_ap_vld)
+    .over_thresh_out(grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_over_thresh_out),
+    .over_thresh_out_ap_vld(grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_over_thresh_out_ap_vld)
 );
 
 always @ (posedge ap_clk) begin
@@ -115,13 +122,19 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start_reg <= 1'b0;
+        grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start_reg <= 1'b0;
     end else begin
         if ((~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start_reg <= 1'b1;
-        end else if ((grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_ready == 1'b1)) begin
-            grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start_reg <= 1'b0;
+            grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start_reg <= 1'b1;
+        end else if ((grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_ready == 1'b1)) begin
+            grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start_reg <= 1'b0;
         end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_over_thresh_out_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+        over_thresh_loc_fu_32 <= grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_over_thresh_out;
     end
 end
 
@@ -150,7 +163,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_done == 1'b0)) begin
+    if ((grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_done == 1'b0)) begin
         ap_ST_fsm_state2_blk = 1'b1;
     end else begin
         ap_ST_fsm_state2_blk = 1'b0;
@@ -201,7 +214,7 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -223,7 +236,13 @@ always @ (*) begin
     endcase
 end
 
-assign Out_r_TDATA = grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_over_thresh_out;
+assign Out_r_TDATA = over_thresh_loc_fu_32;
+
+assign Out_r_TKEEP = 1'd0;
+
+assign Out_r_TLAST = 1'd1;
+
+assign Out_r_TSTRB = 1'd0;
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -241,10 +260,10 @@ always @ (*) begin
     ap_block_state1_ignore_call2 = ((ap_start == 1'b0) | (ap_done_reg == 1'b1));
 end
 
-assign appear_address0 = grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_appear_address0;
+assign appear_address0 = grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_appear_address0;
 
-assign appear_ce0 = grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_appear_ce0;
+assign appear_ce0 = grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_appear_ce0;
 
-assign grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start = grp_threshold_Pipeline_VITIS_LOOP_61_1_fu_33_ap_start_reg;
+assign grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start = grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start_reg;
 
 endmodule //accelerator_threshold

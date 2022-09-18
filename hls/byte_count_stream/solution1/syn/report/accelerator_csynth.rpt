@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'accelerator'
 ================================================================
-* Date:           Sun Sep 18 13:44:09 2022
+* Date:           Sun Sep 18 15:33:18 2022
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
 * Project:        byte_count_stream
@@ -38,7 +38,7 @@
         |                                     |                                  |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
         |               Instance              |              Module              |   min   |   max   |    min    |    max    |  min |  max |   Type   |
         +-------------------------------------+----------------------------------+---------+---------+-----------+-----------+------+------+----------+
-        |dataflow_in_loop_VITIS_LOOP_13_1_U0  |dataflow_in_loop_VITIS_LOOP_13_1  |     1157|     1157|  10.828 us|  10.828 us|  1158|  1158|  dataflow|
+        |dataflow_in_loop_VITIS_LOOP_10_1_U0  |dataflow_in_loop_VITIS_LOOP_10_1  |     1157|     1157|  10.828 us|  10.828 us|  1158|  1158|  dataflow|
         +-------------------------------------+----------------------------------+---------+---------+-----------+-----------+------+------+----------+
 
         * Loop: 
@@ -46,7 +46,7 @@
         |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_13_1  |        ?|        ?|      1159|          -|          -|     ?|        no|
+        |- VITIS_LOOP_10_1  |        ?|        ?|      1159|          -|          -|     ?|        no|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -61,12 +61,12 @@
 |DSP              |        -|   -|      -|      -|    -|
 |Expression       |        -|   -|    592|    148|    -|
 |FIFO             |        -|   -|      -|      -|    -|
-|Instance         |        0|   -|    301|   2681|    0|
+|Instance         |        0|   -|    311|   2681|    0|
 |Memory           |        -|   -|      -|      -|    -|
 |Multiplexer      |        -|   -|      -|     27|    -|
 |Register         |        -|   -|     65|      -|    -|
 +-----------------+---------+----+-------+-------+-----+
-|Total            |        0|   0|    958|   2856|    0|
+|Total            |        0|   0|    968|   2856|    0|
 +-----------------+---------+----+-------+-------+-----+
 |Available        |      120|  80|  35200|  17600|    0|
 +-----------------+---------+----+-------+-------+-----+
@@ -79,9 +79,9 @@
     |               Instance              |              Module              | BRAM_18K| DSP|  FF |  LUT | URAM|
     +-------------------------------------+----------------------------------+---------+----+-----+------+-----+
     |control_s_axi_U                      |control_s_axi                     |        0|   0|   68|   104|    0|
-    |dataflow_in_loop_VITIS_LOOP_13_1_U0  |dataflow_in_loop_VITIS_LOOP_13_1  |        0|   0|  233|  2577|    0|
+    |dataflow_in_loop_VITIS_LOOP_10_1_U0  |dataflow_in_loop_VITIS_LOOP_10_1  |        0|   0|  243|  2577|    0|
     +-------------------------------------+----------------------------------+---------+----+-----+------+-----+
-    |Total                                |                                  |        0|   0|  301|  2681|    0|
+    |Total                                |                                  |        0|   0|  311|  2681|    0|
     +-------------------------------------+----------------------------------+---------+----+-----+------+-----+
 
     * DSP: 
@@ -135,38 +135,41 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------------+-----+-----+---------------+--------------+--------------+
-|       RTL Ports       | Dir | Bits|    Protocol   | Source Object|    C Type    |
-+-----------------------+-----+-----+---------------+--------------+--------------+
-|s_axi_control_AWVALID  |   in|    1|          s_axi|       control|        scalar|
-|s_axi_control_AWREADY  |  out|    1|          s_axi|       control|        scalar|
-|s_axi_control_AWADDR   |   in|    5|          s_axi|       control|        scalar|
-|s_axi_control_WVALID   |   in|    1|          s_axi|       control|        scalar|
-|s_axi_control_WREADY   |  out|    1|          s_axi|       control|        scalar|
-|s_axi_control_WDATA    |   in|   32|          s_axi|       control|        scalar|
-|s_axi_control_WSTRB    |   in|    4|          s_axi|       control|        scalar|
-|s_axi_control_ARVALID  |   in|    1|          s_axi|       control|        scalar|
-|s_axi_control_ARREADY  |  out|    1|          s_axi|       control|        scalar|
-|s_axi_control_ARADDR   |   in|    5|          s_axi|       control|        scalar|
-|s_axi_control_RVALID   |  out|    1|          s_axi|       control|        scalar|
-|s_axi_control_RREADY   |   in|    1|          s_axi|       control|        scalar|
-|s_axi_control_RDATA    |  out|   32|          s_axi|       control|        scalar|
-|s_axi_control_RRESP    |  out|    2|          s_axi|       control|        scalar|
-|s_axi_control_BVALID   |  out|    1|          s_axi|       control|        scalar|
-|s_axi_control_BREADY   |   in|    1|          s_axi|       control|        scalar|
-|s_axi_control_BRESP    |  out|    2|          s_axi|       control|        scalar|
-|ap_clk                 |   in|    1|  ap_ctrl_chain|   accelerator|  return value|
-|ap_rst_n               |   in|    1|  ap_ctrl_chain|   accelerator|  return value|
-|ap_start               |   in|    1|  ap_ctrl_chain|   accelerator|  return value|
-|ap_done                |  out|    1|  ap_ctrl_chain|   accelerator|  return value|
-|ap_ready               |  out|    1|  ap_ctrl_chain|   accelerator|  return value|
-|ap_idle                |  out|    1|  ap_ctrl_chain|   accelerator|  return value|
-|ap_continue            |   in|    1|  ap_ctrl_chain|   accelerator|  return value|
-|In_r_TDATA             |   in|    8|           axis|          In_r|       pointer|
-|In_r_TVALID            |   in|    1|           axis|          In_r|       pointer|
-|In_r_TREADY            |  out|    1|           axis|          In_r|       pointer|
-|Out_r_TDATA            |  out|   32|           axis|         Out_r|       pointer|
-|Out_r_TVALID           |  out|    1|           axis|         Out_r|       pointer|
-|Out_r_TREADY           |   in|    1|           axis|         Out_r|       pointer|
-+-----------------------+-----+-----+---------------+--------------+--------------+
++-----------------------+-----+-----+---------------+----------------+--------------+
+|       RTL Ports       | Dir | Bits|    Protocol   |  Source Object |    C Type    |
++-----------------------+-----+-----+---------------+----------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|          s_axi|         control|        scalar|
+|s_axi_control_AWREADY  |  out|    1|          s_axi|         control|        scalar|
+|s_axi_control_AWADDR   |   in|    5|          s_axi|         control|        scalar|
+|s_axi_control_WVALID   |   in|    1|          s_axi|         control|        scalar|
+|s_axi_control_WREADY   |  out|    1|          s_axi|         control|        scalar|
+|s_axi_control_WDATA    |   in|   32|          s_axi|         control|        scalar|
+|s_axi_control_WSTRB    |   in|    4|          s_axi|         control|        scalar|
+|s_axi_control_ARVALID  |   in|    1|          s_axi|         control|        scalar|
+|s_axi_control_ARREADY  |  out|    1|          s_axi|         control|        scalar|
+|s_axi_control_ARADDR   |   in|    5|          s_axi|         control|        scalar|
+|s_axi_control_RVALID   |  out|    1|          s_axi|         control|        scalar|
+|s_axi_control_RREADY   |   in|    1|          s_axi|         control|        scalar|
+|s_axi_control_RDATA    |  out|   32|          s_axi|         control|        scalar|
+|s_axi_control_RRESP    |  out|    2|          s_axi|         control|        scalar|
+|s_axi_control_BVALID   |  out|    1|          s_axi|         control|        scalar|
+|s_axi_control_BREADY   |   in|    1|          s_axi|         control|        scalar|
+|s_axi_control_BRESP    |  out|    2|          s_axi|         control|        scalar|
+|ap_clk                 |   in|    1|  ap_ctrl_chain|     accelerator|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_chain|     accelerator|  return value|
+|ap_start               |   in|    1|  ap_ctrl_chain|     accelerator|  return value|
+|ap_done                |  out|    1|  ap_ctrl_chain|     accelerator|  return value|
+|ap_ready               |  out|    1|  ap_ctrl_chain|     accelerator|  return value|
+|ap_idle                |  out|    1|  ap_ctrl_chain|     accelerator|  return value|
+|ap_continue            |   in|    1|  ap_ctrl_chain|     accelerator|  return value|
+|In_r_TDATA             |   in|    8|           axis|            In_r|       pointer|
+|In_r_TVALID            |   in|    1|           axis|            In_r|       pointer|
+|In_r_TREADY            |  out|    1|           axis|            In_r|       pointer|
+|Out_r_TDATA            |  out|    8|           axis|  Out_r_V_data_V|       pointer|
+|Out_r_TKEEP            |  out|    1|           axis|  Out_r_V_keep_V|       pointer|
+|Out_r_TSTRB            |  out|    1|           axis|  Out_r_V_strb_V|       pointer|
+|Out_r_TLAST            |  out|    1|           axis|  Out_r_V_last_V|       pointer|
+|Out_r_TVALID           |  out|    1|           axis|  Out_r_V_last_V|       pointer|
+|Out_r_TREADY           |   in|    1|           axis|  Out_r_V_last_V|       pointer|
++-----------------------+-----+-----+---------------+----------------+--------------+
 

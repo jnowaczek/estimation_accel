@@ -341,7 +341,7 @@ wire    ap_CS_fsm_state125;
 wire    ap_CS_fsm_state126;
 wire    ap_CS_fsm_state127;
 wire    ap_CS_fsm_state128;
-wire   [31:0] zext_ln53_fu_2880_p1;
+wire   [31:0] zext_ln50_fu_2880_p1;
 wire    ap_CS_fsm_state131;
 reg    ap_block_state1;
 reg   [130:0] ap_NS_fsm;
@@ -848,7 +848,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state131)) begin
-        appear_address0 = zext_ln53_fu_2880_p1;
+        appear_address0 = zext_ln50_fu_2880_p1;
     end else if ((1'b1 == ap_CS_fsm_state128)) begin
         appear_address0 = 32'd255;
     end else if ((1'b1 == ap_CS_fsm_state127)) begin
@@ -2105,6 +2105,6 @@ assign appear_d1 = 3'd0;
 
 assign grp_count_Pipeline_APPEARANCES_fu_2863_ap_start = grp_count_Pipeline_APPEARANCES_fu_2863_ap_start_reg;
 
-assign zext_ln53_fu_2880_p1 = grp_count_Pipeline_APPEARANCES_fu_2863_prev_out;
+assign zext_ln50_fu_2880_p1 = grp_count_Pipeline_APPEARANCES_fu_2863_prev_out;
 
 endmodule //accelerator_count

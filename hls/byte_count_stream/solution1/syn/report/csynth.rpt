@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'accelerator'
 ================================================================
 + General Information: 
-    * Date:           Sun Sep 18 13:44:09 2022
+    * Date:           Sun Sep 18 15:33:19 2022
     * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
     * Project:        byte_count_stream
     * Solution:       solution1 (Vivado IP Flow Target)
@@ -19,15 +19,15 @@
     |                  Modules                 | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |    |           |            |     |
     |                  & Loops                 | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
     +------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+-----------+------------+-----+
-    |+ accelerator                             |     -|  0.17|        -|          -|         -|        -|     -|        no|     -|   -|   958 (2%)|  2856 (16%)|    -|
-    | o VITIS_LOOP_13_1                        |     -|  6.83|        -|          -|      1159|        -|     -|        no|     -|   -|          -|           -|    -|
-    |  + dataflow_in_loop_VITIS_LOOP_13_1*     |     -|  0.17|     1157|  1.083e+04|         -|     1158|     -|  dataflow|     -|   -|  233 (~0%)|  2577 (14%)|    -|
+    |+ accelerator                             |     -|  0.17|        -|          -|         -|        -|     -|        no|     -|   -|   968 (2%)|  2856 (16%)|    -|
+    | o VITIS_LOOP_10_1                        |     -|  6.83|        -|          -|      1159|        -|     -|        no|     -|   -|          -|           -|    -|
+    |  + dataflow_in_loop_VITIS_LOOP_10_1*     |     -|  0.17|     1157|  1.083e+04|         -|     1158|     -|  dataflow|     -|   -|  243 (~0%)|  2577 (14%)|    -|
     |   + count                                |     -|  0.17|     1157|  1.083e+04|         -|     1157|     -|        no|     -|   -|  171 (~0%)|  2354 (13%)|    -|
     |    + count_Pipeline_APPEARANCES          |     -|  0.17|     1027|  9.612e+03|         -|     1027|     -|        no|     -|   -|   38 (~0%)|    190 (1%)|    -|
     |     o APPEARANCES                        |     -|  6.83|     1025|  9.593e+03|         3|        1|  1024|       yes|     -|   -|          -|           -|    -|
-    |   + threshold                            |     -|  1.09|      261|  2.443e+03|         -|      261|     -|        no|     -|   -|   50 (~0%)|    197 (1%)|    -|
-    |    + threshold_Pipeline_VITIS_LOOP_61_1  |     -|  1.09|      258|  2.415e+03|         -|      258|     -|        no|     -|   -|   44 (~0%)|   152 (~0%)|    -|
-    |     o VITIS_LOOP_61_1                    |     -|  6.83|      256|  2.396e+03|         2|        1|   256|       yes|     -|   -|          -|           -|    -|
+    |   + threshold                            |     -|  1.09|      262|  2.452e+03|         -|      262|     -|        no|     -|   -|   60 (~0%)|    197 (1%)|    -|
+    |    + threshold_Pipeline_VITIS_LOOP_58_1  |     -|  1.09|      259|  2.424e+03|         -|      259|     -|        no|     -|   -|   46 (~0%)|   152 (~0%)|    -|
+    |     o VITIS_LOOP_58_1                    |     -|  6.83|      257|  2.405e+03|         2|        1|   256|       yes|     -|   -|          -|           -|    -|
     +------------------------------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+-----------+------------+-----+
 
 
@@ -49,12 +49,12 @@
 +---------------+------------+--------+-------+--------+---------------------------+
 
 * AXIS
-+-----------+---------------+-------+--------+--------+
-| Interface | Register Mode | TDATA | TREADY | TVALID |
-+-----------+---------------+-------+--------+--------+
-| In_r      | both          | 8     | 1      | 1      |
-| Out_r     | both          | 32    | 1      | 1      |
-+-----------+---------------+-------+--------+--------+
++-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++-----------+---------------+-------+-------+-------+--------+-------+--------+
+| In_r      | both          | 8     |       |       | 1      |       | 1      |
+| Out_r     | both          | 8     | 1     | 1     | 1      | 1     | 1      |
++-----------+---------------+-------+-------+-------+--------+-------+--------+
 
 * TOP LEVEL CONTROL
 +-----------+---------------+-----------------------------------------------+
@@ -70,21 +70,21 @@
 == SW I/O Information
 ================================================================
 * Top Function Arguments
-+------------+-----------+---------------------------+
-| Argument   | Direction | Datatype                  |
-+------------+-----------+---------------------------+
-| In         | in        | stream<unsigned char, 0>& |
-| num_blocks | in        | unsigned int              |
-| Out        | out       | stream<int, 0>&           |
-+------------+-----------+---------------------------+
++------------+-----------+--------------------------------------------+
+| Argument   | Direction | Datatype                                   |
++------------+-----------+--------------------------------------------+
+| In         | in        | stream<unsigned char, 0>&                  |
+| Out        | out       | stream<hls::axis<ap_uint<8>, 0, 0, 0>, 0>& |
+| num_blocks | in        | unsigned int                               |
++------------+-----------+--------------------------------------------+
 
 * SW-to-HW Mapping
 +------------+---------------+-----------+--------------------------------------+
 | Argument   | HW Interface  | HW Type   | HW Info                              |
 +------------+---------------+-----------+--------------------------------------+
 | In         | In_r          | interface |                                      |
-| num_blocks | s_axi_control | register  | name=num_blocks offset=0x10 range=32 |
 | Out        | Out_r         | interface |                                      |
+| num_blocks | s_axi_control | register  | name=num_blocks offset=0x10 range=32 |
 +------------+---------------+-----------+--------------------------------------+
 
 
@@ -102,7 +102,7 @@
 | Name                                    | DSP | Pragma | Variable  | Op  | Impl   | Latency |
 +-----------------------------------------+-----+--------+-----------+-----+--------+---------+
 | + accelerator                           | 0   |        |           |     |        |         |
-|  + dataflow_in_loop_VITIS_LOOP_13_1     | 0   |        |           |     |        |         |
+|  + dataflow_in_loop_VITIS_LOOP_10_1     | 0   |        |           |     |        |         |
 |   + count                               | 0   |        |           |     |        |         |
 |    + count_Pipeline_APPEARANCES         | 0   |        |           |     |        |         |
 |      i_3_fu_132_p2                      | -   |        | i_3       | add | fabric | 0       |
@@ -111,9 +111,9 @@
 |      ret_V_fu_180_p2                    | -   |        | ret_V     | add | fabric | 0       |
 |      count_V_fu_186_p2                  | -   |        | count_V   | add | fabric | 0       |
 |   + threshold                           | 0   |        |           |     |        |         |
-|    + threshold_Pipeline_VITIS_LOOP_61_1 | 0   |        |           |     |        |         |
-|      add_ln61_fu_79_p2                  | -   |        | add_ln61  | add | fabric | 0       |
-|      add_ln63_fu_108_p2                 | -   |        | add_ln63  | add | fabric | 0       |
+|    + threshold_Pipeline_VITIS_LOOP_58_1 | 0   |        |           |     |        |         |
+|      add_ln58_fu_79_p2                  | -   |        | add_ln58  | add | fabric | 0       |
+|      add_ln60_fu_113_p2                 | -   |        | add_ln60  | add | fabric | 0       |
 +-----------------------------------------+-----+--------+-----------+-----+--------+---------+
 
 
@@ -124,7 +124,7 @@
 | Name                                | BRAM | URAM | Pragma | Variable | Storage | Impl | Latency |
 +-------------------------------------+------+------+--------+----------+---------+------+---------+
 | + accelerator                       | 0    | 0    |        |          |         |      |         |
-|  + dataflow_in_loop_VITIS_LOOP_13_1 | 0    | 0    |        |          |         |      |         |
+|  + dataflow_in_loop_VITIS_LOOP_10_1 | 0    | 0    |        |          |         |      |         |
 |    appear_V_U                       | 1    | -    |        | appear_V | ram_t2p | auto | 1       |
 +-------------------------------------+------+------+--------+----------+---------+------+---------+
 
@@ -133,19 +133,19 @@
 == Pragma Report
 ================================================================
 * Valid Pragma Syntax
-+------------+---------------------------------+---------------------------------------------------------------------------+
-| Type       | Options                         | Location                                                                  |
-+------------+---------------------------------+---------------------------------------------------------------------------+
-| interface  | mode=axis port=In               | byte_count_stream/src/byte_count_stream.cpp:8 in accelerator, In          |
-| interface  | mode=axis port=Out              | byte_count_stream/src/byte_count_stream.cpp:9 in accelerator, Out         |
-| interface  | mode=s_axilite port=num_blocks  | byte_count_stream/src/byte_count_stream.cpp:10 in accelerator, num_blocks |
-| interface  | mode=ap_ctrl_chain port=return  | byte_count_stream/src/byte_count_stream.cpp:11 in accelerator, return     |
-| dataflow   |                                 | byte_count_stream/src/byte_count_stream.cpp:14 in accelerator             |
-| inline     | off                             | byte_count_stream/src/byte_count_stream.cpp:24 in count                   |
-| dependence | variable=appear intra RAW false | byte_count_stream/src/byte_count_stream.cpp:25 in count, appear           |
-| unroll     |                                 | byte_count_stream/src/byte_count_stream.cpp:28 in count                   |
-| pipeline   | II=1                            | byte_count_stream/src/byte_count_stream.cpp:37 in count                   |
-| inline     | off                             | byte_count_stream/src/byte_count_stream.cpp:57 in threshold               |
-+------------+---------------------------------+---------------------------------------------------------------------------+
++------------+---------------------------------+--------------------------------------------------------------------------+
+| Type       | Options                         | Location                                                                 |
++------------+---------------------------------+--------------------------------------------------------------------------+
+| interface  | mode=axis port=In               | byte_count_stream/src/byte_count_stream.cpp:5 in accelerator, In         |
+| interface  | mode=axis port=Out              | byte_count_stream/src/byte_count_stream.cpp:6 in accelerator, Out        |
+| interface  | mode=s_axilite port=num_blocks  | byte_count_stream/src/byte_count_stream.cpp:7 in accelerator, num_blocks |
+| interface  | mode=ap_ctrl_chain port=return  | byte_count_stream/src/byte_count_stream.cpp:8 in accelerator, return     |
+| dataflow   |                                 | byte_count_stream/src/byte_count_stream.cpp:11 in accelerator            |
+| inline     | off                             | byte_count_stream/src/byte_count_stream.cpp:21 in count                  |
+| dependence | variable=appear intra RAW false | byte_count_stream/src/byte_count_stream.cpp:22 in count, appear          |
+| unroll     |                                 | byte_count_stream/src/byte_count_stream.cpp:25 in count                  |
+| pipeline   | II=1                            | byte_count_stream/src/byte_count_stream.cpp:34 in count                  |
+| inline     | off                             | byte_count_stream/src/byte_count_stream.cpp:54 in threshold              |
++------------+---------------------------------+--------------------------------------------------------------------------+
 
 

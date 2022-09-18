@@ -67,7 +67,7 @@ int main() {
 
 		std::vector<data_t> data(input.begin(), input.end());
 		hls::stream<data_t> inputStream("Input Stream");
-		hls::stream<result_t> outputStream("Output Stream");
+		hls::stream<out_pkt> outputStream("Output Stream");
 
 		for (int i = 0; i < data.size(); i += 1) {
 			inputStream << data[i];
@@ -77,13 +77,16 @@ int main() {
 		byte_count_gold(data.data(), data.size(), expected);
 
 		std::vector<result_t> actual;
-		accelerator(inputStream, blockCount, outputStream);
+		std::vector<out_pkt> rawOutput;
+		accelerator(inputStream, outputStream, blockCount);
 		while (!inputStream.empty()) {
 			usleep(10000);
 		}
 
 		while (!outputStream.empty()) {
-			actual.push_back(outputStream.read());
+			out_pkt pkt = outputStream.read();
+			rawOutput.push_back(pkt);
+			actual.push_back(pkt.data.to_char());
 		}
 
 //		assert(inputStream.empty());

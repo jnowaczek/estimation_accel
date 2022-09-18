@@ -44,27 +44,27 @@
     wire token_clear;
     reg [1:0] origin;
 
-    reg ap_done_reg_0;// for module dataflow_in_loop_VITIS_LOOP_13_1_U0.count_U0
+    reg ap_done_reg_0;// for module dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_0 <= 'b0;
         end
         else begin
-            ap_done_reg_0 <= dataflow_in_loop_VITIS_LOOP_13_1_U0.count_U0.ap_done & ~dataflow_in_loop_VITIS_LOOP_13_1_U0.count_U0.ap_continue;
+            ap_done_reg_0 <= dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0.ap_done & ~dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_1;// for module dataflow_in_loop_VITIS_LOOP_13_1_U0.threshold_U0
+    reg ap_done_reg_1;// for module dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_1 <= 'b0;
         end
         else begin
-            ap_done_reg_1 <= dataflow_in_loop_VITIS_LOOP_13_1_U0.threshold_U0.ap_done & ~dataflow_in_loop_VITIS_LOOP_13_1_U0.threshold_U0.ap_continue;
+            ap_done_reg_1 <= dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0.ap_done & ~dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0.ap_continue;
         end
     end
 
-    // Process: dataflow_in_loop_VITIS_LOOP_13_1_U0.count_U0
+    // Process: dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0
     accelerator_hls_deadlock_detect_unit #(2, 0, 1, 1) accelerator_hls_deadlock_detect_unit_0 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -81,7 +81,7 @@
         .dl_detect_out(dl_in_vec[0]));
 
     assign proc_0_data_FIFO_blk[0] = 1'b0;
-    assign proc_0_data_PIPO_blk[0] = 1'b0 | (~dataflow_in_loop_VITIS_LOOP_13_1_U0.appear_V_U.i_full_n & dataflow_in_loop_VITIS_LOOP_13_1_U0.count_U0.ap_done & ap_done_reg_0 & ~dataflow_in_loop_VITIS_LOOP_13_1_U0.appear_V_U.t_read);
+    assign proc_0_data_PIPO_blk[0] = 1'b0 | (~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.i_full_n & dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0.ap_done & ap_done_reg_0 & ~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.t_read);
     assign proc_0_start_FIFO_blk[0] = 1'b0;
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;
     assign proc_0_input_sync_blk[0] = 1'b0;
@@ -102,7 +102,7 @@
     assign dep_chan_data_0_1 = out_chan_dep_data_0;
     assign token_0_1 = token_out_vec_0[0];
 
-    // Process: dataflow_in_loop_VITIS_LOOP_13_1_U0.threshold_U0
+    // Process: dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0
     accelerator_hls_deadlock_detect_unit #(2, 1, 1, 1) accelerator_hls_deadlock_detect_unit_1 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -119,7 +119,7 @@
         .dl_detect_out(dl_in_vec[1]));
 
     assign proc_1_data_FIFO_blk[0] = 1'b0;
-    assign proc_1_data_PIPO_blk[0] = 1'b0 | (~dataflow_in_loop_VITIS_LOOP_13_1_U0.appear_V_U.t_empty_n & dataflow_in_loop_VITIS_LOOP_13_1_U0.threshold_U0.ap_idle & ~dataflow_in_loop_VITIS_LOOP_13_1_U0.appear_V_U.i_write);
+    assign proc_1_data_PIPO_blk[0] = 1'b0 | (~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.t_empty_n & dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0.ap_idle & ~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.i_write);
     assign proc_1_start_FIFO_blk[0] = 1'b0;
     assign proc_1_TLF_FIFO_blk[0] = 1'b0;
     assign proc_1_input_sync_blk[0] = 1'b0;

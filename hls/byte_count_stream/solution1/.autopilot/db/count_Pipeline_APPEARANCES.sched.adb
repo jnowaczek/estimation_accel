@@ -182,7 +182,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -224,7 +224,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -266,7 +266,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -308,7 +308,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -351,7 +351,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -394,7 +394,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -421,7 +421,7 @@
 						<name>i_2</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -437,7 +437,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>36</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -450,7 +450,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -475,10 +475,10 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>icmp_ln36</name>
+						<name>icmp_ln33</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -494,7 +494,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>36</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -507,7 +507,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -535,7 +535,7 @@
 						<name>i_3</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -551,7 +551,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>36</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -564,7 +564,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -589,10 +589,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>br_ln36</name>
+						<name>br_ln33</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -608,7 +608,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>36</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -621,7 +621,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -650,7 +650,7 @@
 						<name>prev_load_1</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -666,7 +666,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>40</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -679,7 +679,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -760,10 +760,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>icmp_ln40</name>
+						<name>icmp_ln37</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -779,7 +779,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>40</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -792,7 +792,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -820,7 +820,7 @@
 						<name>prev_1</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>40</lineNumber>
+						<lineNumber>37</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -836,7 +836,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>40</second>
+										<second>37</second>
 									</item>
 								</second>
 							</item>
@@ -849,7 +849,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -875,10 +875,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>icmp_ln44</name>
+						<name>icmp_ln41</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>44</lineNumber>
+						<lineNumber>41</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -894,7 +894,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>44</second>
+										<second>41</second>
 									</item>
 								</second>
 							</item>
@@ -964,7 +964,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -989,7 +989,65 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>br_ln44</name>
+						<name>br_ln41</name>
+						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
+						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
+						<lineNumber>41</lineNumber>
+						<contextFuncName>count</contextFuncName>
+						<contextNormFuncName>count</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>E:\estimation_accel\hls</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>count</second>
+										</first>
+										<second>41</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>1818322464</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>128</item>
+					<item>129</item>
+					<item>130</item>
+				</oprand_edges>
+				<opcode>br</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>18</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_22">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>29</id>
+						<name>zext_ln44</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
 						<lineNumber>44</lineNumber>
@@ -1021,65 +1079,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>0</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>3</count>
-					<item_version>0</item_version>
-					<item>128</item>
-					<item>129</item>
-					<item>130</item>
-				</oprand_edges>
-				<opcode>br</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.00</m_delay>
-				<m_topoIndex>18</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_22">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>29</id>
-						<name>zext_ln47</name>
-						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
-						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>47</lineNumber>
-						<contextFuncName>count</contextFuncName>
-						<contextNormFuncName>count</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>E:\estimation_accel\hls</first>
-								<second>
-									<count>1</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>byte_count_stream/src/byte_count_stream.cpp</first>
-											<second>count</second>
-										</first>
-										<second>47</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1106,7 +1106,7 @@
 						<name>appear_addr</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -1122,7 +1122,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>47</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1135,7 +1135,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1161,10 +1161,10 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>appear_addr_write_ln47</name>
+						<name>appear_addr_write_ln44</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>47</lineNumber>
+						<lineNumber>44</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -1180,7 +1180,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>47</second>
+										<second>44</second>
 									</item>
 								</second>
 							</item>
@@ -1250,7 +1250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1306,7 +1306,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -1364,7 +1364,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -1420,7 +1420,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -1476,7 +1476,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -1533,7 +1533,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -1590,7 +1590,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1648,7 +1648,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -1706,7 +1706,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1751,7 +1751,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1807,7 +1807,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -1863,7 +1863,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -1920,7 +1920,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2500003056</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -1977,7 +1977,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2500957450</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2035,7 +2035,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -2061,10 +2061,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>lhs_write_ln46</name>
+						<name>lhs_write_ln43</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -2080,7 +2080,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>46</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -2093,7 +2093,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2120,10 +2120,10 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>br_ln46</name>
+						<name>br_ln43</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>46</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -2139,7 +2139,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>46</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -2176,10 +2176,10 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>i_write_ln36</name>
+						<name>i_write_ln33</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -2195,7 +2195,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>36</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2235,10 +2235,10 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>prev_write_ln36</name>
+						<name>prev_write_ln33</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -2254,7 +2254,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>36</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2267,7 +2267,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2293,10 +2293,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>br_ln36</name>
+						<name>br_ln33</name>
 						<fileName>byte_count_stream/src/byte_count_stream.cpp</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
-						<lineNumber>36</lineNumber>
+						<lineNumber>33</lineNumber>
 						<contextFuncName>count</contextFuncName>
 						<contextNormFuncName>count</contextNormFuncName>
 						<inlineStackInfo>
@@ -2312,7 +2312,7 @@
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
 											<second>count</second>
 										</first>
-										<second>36</second>
+										<second>33</second>
 									</item>
 								</second>
 							</item>
@@ -2367,7 +2367,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -2410,7 +2410,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -2496,7 +2496,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2501546538</coreId>
+						<coreId>59878266</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2540,7 +2540,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2517072522</coreId>
+						<coreId>574453865</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -2585,7 +2585,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1684890463</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2647,7 +2647,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741552928</coreId>
+						<coreId>1768316784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -2678,7 +2678,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3667711280</coreId>
+						<coreId>1650422894</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2709,7 +2709,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1684371561</coreId>
+						<coreId>997484326</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2740,7 +2740,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953392928</coreId>
+						<coreId>1868767266</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>4</bitwidth>
@@ -2771,7 +2771,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>543236198</coreId>
+						<coreId>1953394531</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -2802,7 +2802,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2517801776</coreId>
+						<coreId>1953459305</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2833,7 +2833,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2545175168</coreId>
+						<coreId>1936482662</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -2864,7 +2864,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1769239916</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -2934,7 +2934,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1835888483</coreId>
+					<coreId>775041584</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3005,7 +3005,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>775041584</coreId>
+					<coreId>1835888483</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -3048,7 +3048,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>775041584</coreId>
+					<coreId>1835888483</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

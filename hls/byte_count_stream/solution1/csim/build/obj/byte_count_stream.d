@@ -1,4 +1,5 @@
 obj/byte_count_stream.o: ../../../src/byte_count_stream.cpp \
+ ../../../src/byte_count_stream.hpp \
  C:/Xilinx/Vitis_HLS/2022.1/include/ap_axi_sdata.h \
  C:/Xilinx/Vitis_HLS/2022.1/include/ap_int.h \
  C:/Xilinx/Vitis_HLS/2022.1/include/ap_common.h \
@@ -22,6 +23,5 @@ obj/byte_count_stream.o: ../../../src/byte_count_stream.cpp \
  C:/Xilinx/Vitis_HLS/2022.1/include/ap_int.h \
  C:/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_ref.h \
  C:/Xilinx/Vitis_HLS/2022.1/include/ap_fixed_special.h \
- ../../../src/byte_count_stream.hpp \
  C:/Xilinx/Vitis_HLS/2022.1/include/hls_stream.h \
  C:/Xilinx/Vitis_HLS/2022.1/include/hls_stream_thread_unsafe.h

@@ -1,10 +1,7 @@
-#include "ap_axi_sdata.h"
-#include "ap_int.h"
-
 #include "byte_count_stream.hpp"
 
-void accelerator(hls::stream<data_t> &In, unsigned int num_blocks,
-		hls::stream<result_t> &Out) {
+void accelerator(hls::stream<data_t> &In, hls::stream<out_pkt> &Out,
+		unsigned int num_blocks) {
 #pragma HLS INTERFACE mode=axis port=In
 #pragma HLS INTERFACE mode=axis port=Out
 #pragma HLS INTERFACE mode=s_axilite port=num_blocks
@@ -53,7 +50,7 @@ void count(hls::stream<data_t> &in, count_t appear[COUNT_BUCKETS]) {
 	appear[prev] = count;
 }
 
-void threshold(count_t appear[BLOCK_LENGTH], hls::stream<result_t> &out) {
+void threshold(count_t appear[BLOCK_LENGTH], hls::stream<out_pkt> &out) {
 #pragma HLS INLINE off
 
 	result_t over_thresh = 0;
@@ -63,5 +60,10 @@ void threshold(count_t appear[BLOCK_LENGTH], hls::stream<result_t> &out) {
 			over_thresh += 1;
 		}
 	}
-	out << over_thresh;
+
+	out_pkt pkt;
+	pkt.data = over_thresh;
+	pkt.last = 1;
+
+	out << pkt;
 }

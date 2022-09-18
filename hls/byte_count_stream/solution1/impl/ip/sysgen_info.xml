@@ -18,17 +18,32 @@
       </RtlPort>
       <RtlPort>
         <name>Out_r_TDATA</name>
-        <type>Signed</type>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>Out_r_TKEEP</name>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>Out_r_TLAST</name>
+        <type>Unsigned</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>Out_r_TREADY</name>
-        <type>Signed</type>
+        <type>Unsigned</type>
+        <fractionWidth>0</fractionWidth>
+      </RtlPort>
+      <RtlPort>
+        <name>Out_r_TSTRB</name>
+        <type>Unsigned</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>
         <name>Out_r_TVALID</name>
-        <type>Signed</type>
+        <type>Unsigned</type>
         <fractionWidth>0</fractionWidth>
       </RtlPort>
       <RtlPort>

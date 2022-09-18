@@ -22,20 +22,20 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>261</Best-caseLatency>
-<Average-caseLatency>261</Average-caseLatency>
-<Worst-caseLatency>261</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.443 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.443 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.443 us</Worst-caseRealTimeLatency>
-<Interval-min>261</Interval-min>
-<Interval-max>261</Interval-max>
+<Best-caseLatency>262</Best-caseLatency>
+<Average-caseLatency>262</Average-caseLatency>
+<Worst-caseLatency>262</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.452 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.452 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.452 us</Worst-caseRealTimeLatency>
+<Interval-min>262</Interval-min>
+<Interval-max>262</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>50</FF>
+<FF>60</FF>
 <LUT>197</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
@@ -163,29 +163,18 @@
 </RtlPorts>
 <RtlPorts>
 <name>Out_r_TDATA</name>
-<Object>Out_r</Object>
+<Object>Out_r_V_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>32</Bits>
+<Bits>8</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>Out_r_TVALID</name>
-<Object>Out_r</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>axis</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>Out_r_TREADY</name>
-<Object>Out_r</Object>
+<Object>Out_r_V_data_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -193,6 +182,50 @@
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>Out_r_TVALID</name>
+<Object>Out_r_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>Out_r_TLAST</name>
+<Object>Out_r_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>Out_r_TKEEP</name>
+<Object>Out_r_V_keep_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>Out_r_TSTRB</name>
+<Object>Out_r_V_strb_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>
 

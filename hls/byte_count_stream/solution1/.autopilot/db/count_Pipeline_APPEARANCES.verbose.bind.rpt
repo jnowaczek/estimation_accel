@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'count_Pipeline_APPEARANCES'
 ================================================================
-* Date:           Sun Sep 18 13:44:04 2022
+* Date:           Sun Sep 18 15:33:14 2022
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
 * Project:        byte_count_stream
@@ -93,53 +93,53 @@ ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface v
 ST_1 : Operation 10 [1/1] (1.58ns)   --->   "%store_ln0 = store i11 0, i11 %i"   --->   Operation 10 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
 ST_1 : Operation 11 [1/1] (1.70ns)   --->   "%store_ln0 = store i3 0, i3 %lhs"   --->   Operation 11 'store' 'store_ln0' <Predicate = true> <Delay = 1.70>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body5"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%i_2 = load i11 %i" [byte_count_stream/src/byte_count_stream.cpp:36]   --->   Operation 13 'load' 'i_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (1.88ns)   --->   "%icmp_ln36 = icmp_eq  i11 %i_2, i11 1024" [byte_count_stream/src/byte_count_stream.cpp:36]   --->   Operation 14 'icmp' 'icmp_ln36' <Predicate = true> <Delay = 1.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%i_2 = load i11 %i" [byte_count_stream/src/byte_count_stream.cpp:33]   --->   Operation 13 'load' 'i_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (1.88ns)   --->   "%icmp_ln33 = icmp_eq  i11 %i_2, i11 1024" [byte_count_stream/src/byte_count_stream.cpp:33]   --->   Operation 14 'icmp' 'icmp_ln33' <Predicate = true> <Delay = 1.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 1024, i64 1024, i64 1024"   --->   Operation 15 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (1.63ns)   --->   "%i_3 = add i11 %i_2, i11 1" [byte_count_stream/src/byte_count_stream.cpp:36]   --->   Operation 16 'add' 'i_3' <Predicate = true> <Delay = 1.63> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln36 = br i1 %icmp_ln36, void %for.body5.split, void %for.end20.exitStub" [byte_count_stream/src/byte_count_stream.cpp:36]   --->   Operation 17 'br' 'br_ln36' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%prev_2 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %In_r" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 18 'read' 'prev_2' <Predicate = (!icmp_ln36)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_1 : Operation 19 [1/1] (1.88ns)   --->   "%icmp_ln40 = icmp_eq  i11 %i_2, i11 0" [byte_count_stream/src/byte_count_stream.cpp:40]   --->   Operation 19 'icmp' 'icmp_ln40' <Predicate = (!icmp_ln36)> <Delay = 1.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 20 [1/1] (1.58ns)   --->   "%store_ln36 = store i11 %i_3, i11 %i" [byte_count_stream/src/byte_count_stream.cpp:36]   --->   Operation 20 'store' 'store_ln36' <Predicate = (!icmp_ln36)> <Delay = 1.58>
+ST_1 : Operation 16 [1/1] (1.63ns)   --->   "%i_3 = add i11 %i_2, i11 1" [byte_count_stream/src/byte_count_stream.cpp:33]   --->   Operation 16 'add' 'i_3' <Predicate = true> <Delay = 1.63> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.63> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln33 = br i1 %icmp_ln33, void %for.body5.split, void %for.end20.exitStub" [byte_count_stream/src/byte_count_stream.cpp:33]   --->   Operation 17 'br' 'br_ln33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%prev_2 = read i8 @_ssdm_op_Read.axis.volatile.i8P128A, i8 %In_r" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 18 'read' 'prev_2' <Predicate = (!icmp_ln33)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 19 [1/1] (1.88ns)   --->   "%icmp_ln37 = icmp_eq  i11 %i_2, i11 0" [byte_count_stream/src/byte_count_stream.cpp:37]   --->   Operation 19 'icmp' 'icmp_ln37' <Predicate = (!icmp_ln33)> <Delay = 1.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (1.58ns)   --->   "%store_ln33 = store i11 %i_3, i11 %i" [byte_count_stream/src/byte_count_stream.cpp:33]   --->   Operation 20 'store' 'store_ln33' <Predicate = (!icmp_ln33)> <Delay = 1.58>
 
 State 2 <SV = 1> <Delay = 5.12>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%prev_load_1 = load i8 %prev" [byte_count_stream/src/byte_count_stream.cpp:40]   --->   Operation 21 'load' 'prev_load_1' <Predicate = (!icmp_ln40)> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln37 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_1" [byte_count_stream/src/byte_count_stream.cpp:37]   --->   Operation 22 'specpipeline' 'specpipeline_ln37' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0]   --->   Operation 23 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 24 [1/1] (1.24ns)   --->   "%prev_1 = select i1 %icmp_ln40, i8 %prev_2, i8 %prev_load_1" [byte_count_stream/src/byte_count_stream.cpp:40]   --->   Operation 24 'select' 'prev_1' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] (1.55ns)   --->   "%icmp_ln44 = icmp_eq  i8 %prev_1, i8 %prev_2" [byte_count_stream/src/byte_count_stream.cpp:44]   --->   Operation 25 'icmp' 'icmp_ln44' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%prev_load_1 = load i8 %prev" [byte_count_stream/src/byte_count_stream.cpp:37]   --->   Operation 21 'load' 'prev_load_1' <Predicate = (!icmp_ln37)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln34 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_1" [byte_count_stream/src/byte_count_stream.cpp:34]   --->   Operation 22 'specpipeline' 'specpipeline_ln34' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0]   --->   Operation 23 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (1.24ns)   --->   "%prev_1 = select i1 %icmp_ln37, i8 %prev_2, i8 %prev_load_1" [byte_count_stream/src/byte_count_stream.cpp:37]   --->   Operation 24 'select' 'prev_1' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (1.55ns)   --->   "%icmp_ln41 = icmp_eq  i8 %prev_1, i8 %prev_2" [byte_count_stream/src/byte_count_stream.cpp:41]   --->   Operation 25 'icmp' 'icmp_ln41' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%lhs_load_1 = load i3 %lhs"   --->   Operation 26 'load' 'lhs_load_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln44 = br i1 %icmp_ln44, void %if.else, void %_ZN13ap_fixed_baseILi33ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit.i.i.i" [byte_count_stream/src/byte_count_stream.cpp:44]   --->   Operation 27 'br' 'br_ln44' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i8 %prev_1" [byte_count_stream/src/byte_count_stream.cpp:47]   --->   Operation 28 'zext' 'zext_ln47' <Predicate = (!icmp_ln44)> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%appear_addr = getelementptr i3 %appear, i32 0, i32 %zext_ln47" [byte_count_stream/src/byte_count_stream.cpp:47]   --->   Operation 29 'getelementptr' 'appear_addr' <Predicate = (!icmp_ln44)> <Delay = 0.00>
-ST_2 : Operation 30 [1/1] (2.32ns)   --->   "%store_ln47 = store i3 %lhs_load_1, i8 %appear_addr" [byte_count_stream/src/byte_count_stream.cpp:47]   --->   Operation 30 'store' 'store_ln47' <Predicate = (!icmp_ln44)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 3> <Depth = 256> <RAM>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln859 = zext i8 %prev_2"   --->   Operation 31 'zext' 'zext_ln859' <Predicate = (!icmp_ln44)> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%appear_addr_1 = getelementptr i3 %appear, i32 0, i32 %zext_ln859"   --->   Operation 32 'getelementptr' 'appear_addr_1' <Predicate = (!icmp_ln44)> <Delay = 0.00>
-ST_2 : Operation 33 [2/2] (2.32ns)   --->   "%lhs_1 = load i8 %appear_addr_1"   --->   Operation 33 'load' 'lhs_1' <Predicate = (!icmp_ln44)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 3> <Depth = 256> <RAM>
-ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln1393 = zext i3 %lhs_load_1"   --->   Operation 34 'zext' 'zext_ln1393' <Predicate = (icmp_ln44)> <Delay = 0.00>
-ST_2 : Operation 35 [1/1] (1.65ns)   --->   "%ret_V = add i4 %zext_ln1393, i4 1"   --->   Operation 35 'add' 'ret_V' <Predicate = (icmp_ln44)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 36 [1/1] (1.65ns)   --->   "%count_V = add i3 %lhs_load_1, i3 1"   --->   Operation 36 'add' 'count_V' <Predicate = (icmp_ln44)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%overflow = bitselect i1 @_ssdm_op_BitSelect.i1.i4.i32, i4 %ret_V, i32 3"   --->   Operation 37 'bitselect' 'overflow' <Predicate = (icmp_ln44)> <Delay = 0.00>
-ST_2 : Operation 38 [1/1] (0.98ns)   --->   "%count_V_1 = select i1 %overflow, i3 7, i3 %count_V"   --->   Operation 38 'select' 'count_V_1' <Predicate = (icmp_ln44)> <Delay = 0.98> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 39 [1/1] (1.70ns)   --->   "%store_ln46 = store i3 %count_V_1, i3 %lhs" [byte_count_stream/src/byte_count_stream.cpp:46]   --->   Operation 39 'store' 'store_ln46' <Predicate = (icmp_ln44)> <Delay = 1.70>
-ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln46 = br void %for.inc18" [byte_count_stream/src/byte_count_stream.cpp:46]   --->   Operation 40 'br' 'br_ln46' <Predicate = (icmp_ln44)> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%store_ln36 = store i8 %prev_2, i8 %prev" [byte_count_stream/src/byte_count_stream.cpp:36]   --->   Operation 41 'store' 'store_ln36' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln36 = br void %for.body5" [byte_count_stream/src/byte_count_stream.cpp:36]   --->   Operation 42 'br' 'br_ln36' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%lhs_load = load i3 %lhs"   --->   Operation 51 'load' 'lhs_load' <Predicate = (icmp_ln36)> <Delay = 0.00>
-ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%prev_load = load i8 %prev"   --->   Operation 52 'load' 'prev_load' <Predicate = (icmp_ln36)> <Delay = 0.00>
-ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %prev_out, i8 %prev_load"   --->   Operation 53 'write' 'write_ln0' <Predicate = (icmp_ln36)> <Delay = 0.00>
-ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i3P0A, i3 %count_V_5_out, i3 %lhs_load"   --->   Operation 54 'write' 'write_ln0' <Predicate = (icmp_ln36)> <Delay = 0.00>
-ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 55 'ret' 'ret_ln0' <Predicate = (icmp_ln36)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln41 = br i1 %icmp_ln41, void %if.else, void %_ZN13ap_fixed_baseILi33ELi33ELb1EL9ap_q_mode5EL9ap_o_mode3ELi0EEC2Ei.exit.i.i.i" [byte_count_stream/src/byte_count_stream.cpp:41]   --->   Operation 27 'br' 'br_ln41' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln44 = zext i8 %prev_1" [byte_count_stream/src/byte_count_stream.cpp:44]   --->   Operation 28 'zext' 'zext_ln44' <Predicate = (!icmp_ln41)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%appear_addr = getelementptr i3 %appear, i32 0, i32 %zext_ln44" [byte_count_stream/src/byte_count_stream.cpp:44]   --->   Operation 29 'getelementptr' 'appear_addr' <Predicate = (!icmp_ln41)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (2.32ns)   --->   "%store_ln44 = store i3 %lhs_load_1, i8 %appear_addr" [byte_count_stream/src/byte_count_stream.cpp:44]   --->   Operation 30 'store' 'store_ln44' <Predicate = (!icmp_ln41)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 3> <Depth = 256> <RAM>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln859 = zext i8 %prev_2"   --->   Operation 31 'zext' 'zext_ln859' <Predicate = (!icmp_ln41)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%appear_addr_1 = getelementptr i3 %appear, i32 0, i32 %zext_ln859"   --->   Operation 32 'getelementptr' 'appear_addr_1' <Predicate = (!icmp_ln41)> <Delay = 0.00>
+ST_2 : Operation 33 [2/2] (2.32ns)   --->   "%lhs_1 = load i8 %appear_addr_1"   --->   Operation 33 'load' 'lhs_1' <Predicate = (!icmp_ln41)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 3> <Depth = 256> <RAM>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln1393 = zext i3 %lhs_load_1"   --->   Operation 34 'zext' 'zext_ln1393' <Predicate = (icmp_ln41)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (1.65ns)   --->   "%ret_V = add i4 %zext_ln1393, i4 1"   --->   Operation 35 'add' 'ret_V' <Predicate = (icmp_ln41)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (1.65ns)   --->   "%count_V = add i3 %lhs_load_1, i3 1"   --->   Operation 36 'add' 'count_V' <Predicate = (icmp_ln41)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%overflow = bitselect i1 @_ssdm_op_BitSelect.i1.i4.i32, i4 %ret_V, i32 3"   --->   Operation 37 'bitselect' 'overflow' <Predicate = (icmp_ln41)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.98ns)   --->   "%count_V_1 = select i1 %overflow, i3 7, i3 %count_V"   --->   Operation 38 'select' 'count_V_1' <Predicate = (icmp_ln41)> <Delay = 0.98> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 39 [1/1] (1.70ns)   --->   "%store_ln43 = store i3 %count_V_1, i3 %lhs" [byte_count_stream/src/byte_count_stream.cpp:43]   --->   Operation 39 'store' 'store_ln43' <Predicate = (icmp_ln41)> <Delay = 1.70>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln43 = br void %for.inc18" [byte_count_stream/src/byte_count_stream.cpp:43]   --->   Operation 40 'br' 'br_ln43' <Predicate = (icmp_ln41)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%store_ln33 = store i8 %prev_2, i8 %prev" [byte_count_stream/src/byte_count_stream.cpp:33]   --->   Operation 41 'store' 'store_ln33' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln33 = br void %for.body5" [byte_count_stream/src/byte_count_stream.cpp:33]   --->   Operation 42 'br' 'br_ln33' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%lhs_load = load i3 %lhs"   --->   Operation 51 'load' 'lhs_load' <Predicate = (icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%prev_load = load i8 %prev"   --->   Operation 52 'load' 'prev_load' <Predicate = (icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i8P0A, i8 %prev_out, i8 %prev_load"   --->   Operation 53 'write' 'write_ln0' <Predicate = (icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i3P0A, i3 %count_V_5_out, i3 %lhs_load"   --->   Operation 54 'write' 'write_ln0' <Predicate = (icmp_ln33)> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 55 'ret' 'ret_ln0' <Predicate = (icmp_ln33)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 6.65>
-ST_3 : Operation 43 [1/2] (2.32ns)   --->   "%lhs_1 = load i8 %appear_addr_1"   --->   Operation 43 'load' 'lhs_1' <Predicate = (!icmp_ln44)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 3> <Depth = 256> <RAM>
-ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln1393_1 = zext i3 %lhs_1"   --->   Operation 44 'zext' 'zext_ln1393_1' <Predicate = (!icmp_ln44)> <Delay = 0.00>
-ST_3 : Operation 45 [1/1] (1.65ns)   --->   "%ret_V_1 = add i4 %zext_ln1393_1, i4 1"   --->   Operation 45 'add' 'ret_V_1' <Predicate = (!icmp_ln44)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 46 [1/1] (1.65ns)   --->   "%add_ln859 = add i3 %lhs_1, i3 1"   --->   Operation 46 'add' 'add_ln859' <Predicate = (!icmp_ln44)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%overflow_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i4.i32, i4 %ret_V_1, i32 3"   --->   Operation 47 'bitselect' 'overflow_1' <Predicate = (!icmp_ln44)> <Delay = 0.00>
-ST_3 : Operation 48 [1/1] (0.98ns)   --->   "%count_V_2 = select i1 %overflow_1, i3 7, i3 %add_ln859"   --->   Operation 48 'select' 'count_V_2' <Predicate = (!icmp_ln44)> <Delay = 0.98> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 49 [1/1] (1.70ns)   --->   "%store_ln348 = store i3 %count_V_2, i3 %lhs"   --->   Operation 49 'store' 'store_ln348' <Predicate = (!icmp_ln44)> <Delay = 1.70>
-ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc18"   --->   Operation 50 'br' 'br_ln0' <Predicate = (!icmp_ln44)> <Delay = 0.00>
+ST_3 : Operation 43 [1/2] (2.32ns)   --->   "%lhs_1 = load i8 %appear_addr_1"   --->   Operation 43 'load' 'lhs_1' <Predicate = (!icmp_ln41)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 3> <Depth = 256> <RAM>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln1393_1 = zext i3 %lhs_1"   --->   Operation 44 'zext' 'zext_ln1393_1' <Predicate = (!icmp_ln41)> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (1.65ns)   --->   "%ret_V_1 = add i4 %zext_ln1393_1, i4 1"   --->   Operation 45 'add' 'ret_V_1' <Predicate = (!icmp_ln41)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (1.65ns)   --->   "%add_ln859 = add i3 %lhs_1, i3 1"   --->   Operation 46 'add' 'add_ln859' <Predicate = (!icmp_ln41)> <Delay = 1.65> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.65> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%overflow_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i4.i32, i4 %ret_V_1, i32 3"   --->   Operation 47 'bitselect' 'overflow_1' <Predicate = (!icmp_ln41)> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.98ns)   --->   "%count_V_2 = select i1 %overflow_1, i3 7, i3 %add_ln859"   --->   Operation 48 'select' 'count_V_2' <Predicate = (!icmp_ln41)> <Delay = 0.98> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 49 [1/1] (1.70ns)   --->   "%store_ln348 = store i3 %count_V_2, i3 %lhs"   --->   Operation 49 'store' 'store_ln348' <Predicate = (!icmp_ln41)> <Delay = 1.70>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc18"   --->   Operation 50 'br' 'br_ln0' <Predicate = (!icmp_ln41)> <Delay = 0.00>
 
 
 ============================================================
@@ -171,23 +171,23 @@ store_ln0         (store            ) [ 0000]
 store_ln0         (store            ) [ 0000]
 br_ln0            (br               ) [ 0000]
 i_2               (load             ) [ 0000]
-icmp_ln36         (icmp             ) [ 0110]
+icmp_ln33         (icmp             ) [ 0110]
 empty             (speclooptripcount) [ 0000]
 i_3               (add              ) [ 0000]
-br_ln36           (br               ) [ 0000]
+br_ln33           (br               ) [ 0000]
 prev_2            (read             ) [ 0110]
-icmp_ln40         (icmp             ) [ 0110]
-store_ln36        (store            ) [ 0000]
+icmp_ln37         (icmp             ) [ 0110]
+store_ln33        (store            ) [ 0000]
 prev_load_1       (load             ) [ 0000]
-specpipeline_ln37 (specpipeline     ) [ 0000]
+specpipeline_ln34 (specpipeline     ) [ 0000]
 specloopname_ln0  (specloopname     ) [ 0000]
 prev_1            (select           ) [ 0000]
-icmp_ln44         (icmp             ) [ 0111]
+icmp_ln41         (icmp             ) [ 0111]
 lhs_load_1        (load             ) [ 0000]
-br_ln44           (br               ) [ 0000]
-zext_ln47         (zext             ) [ 0000]
+br_ln41           (br               ) [ 0000]
+zext_ln44         (zext             ) [ 0000]
 appear_addr       (getelementptr    ) [ 0000]
-store_ln47        (store            ) [ 0000]
+store_ln44        (store            ) [ 0000]
 zext_ln859        (zext             ) [ 0000]
 appear_addr_1     (getelementptr    ) [ 0101]
 zext_ln1393       (zext             ) [ 0000]
@@ -195,10 +195,10 @@ ret_V             (add              ) [ 0000]
 count_V           (add              ) [ 0000]
 overflow          (bitselect        ) [ 0000]
 count_V_1         (select           ) [ 0000]
-store_ln46        (store            ) [ 0000]
-br_ln46           (br               ) [ 0000]
-store_ln36        (store            ) [ 0000]
-br_ln36           (br               ) [ 0000]
+store_ln43        (store            ) [ 0000]
+br_ln43           (br               ) [ 0000]
+store_ln33        (store            ) [ 0000]
+br_ln33           (br               ) [ 0000]
 lhs_1             (load             ) [ 0000]
 zext_ln1393_1     (zext             ) [ 0000]
 ret_V_1           (add              ) [ 0000]
@@ -403,7 +403,7 @@ ret_ln0           (ret              ) [ 0000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_9"/></StgValue>
+<StgValue><ssdm name="empty_10"/></StgValue>
 </bind>
 </comp>
 
@@ -567,7 +567,7 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="load"/>
-<opset="store_ln47/2 lhs_1/2 "/>
+<opset="store_ln44/2 lhs_1/2 "/>
 </bind>
 </comp>
 
@@ -619,7 +619,7 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="126" class="1004" name="icmp_ln36_fu_126">
+<comp id="126" class="1004" name="icmp_ln33_fu_126">
 <pin_list>
 <pin id="127" dir="0" index="0" bw="11" slack="0"/>
 <pin id="128" dir="0" index="1" bw="11" slack="0"/>
@@ -627,7 +627,7 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln36/1 "/>
+<opset="icmp_ln33/1 "/>
 </bind>
 </comp>
 
@@ -643,7 +643,7 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="138" class="1004" name="icmp_ln40_fu_138">
+<comp id="138" class="1004" name="icmp_ln37_fu_138">
 <pin_list>
 <pin id="139" dir="0" index="0" bw="11" slack="0"/>
 <pin id="140" dir="0" index="1" bw="1" slack="0"/>
@@ -651,11 +651,11 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln40/1 "/>
+<opset="icmp_ln37/1 "/>
 </bind>
 </comp>
 
-<comp id="144" class="1004" name="store_ln36_store_fu_144">
+<comp id="144" class="1004" name="store_ln33_store_fu_144">
 <pin_list>
 <pin id="145" dir="0" index="0" bw="11" slack="0"/>
 <pin id="146" dir="0" index="1" bw="11" slack="0"/>
@@ -663,7 +663,7 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln36/1 "/>
+<opset="store_ln33/1 "/>
 </bind>
 </comp>
 
@@ -691,7 +691,7 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="158" class="1004" name="icmp_ln44_fu_158">
+<comp id="158" class="1004" name="icmp_ln41_fu_158">
 <pin_list>
 <pin id="159" dir="0" index="0" bw="8" slack="0"/>
 <pin id="160" dir="0" index="1" bw="8" slack="1"/>
@@ -699,7 +699,7 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln44/2 "/>
+<opset="icmp_ln41/2 "/>
 </bind>
 </comp>
 
@@ -714,14 +714,14 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="167" class="1004" name="zext_ln47_fu_167">
+<comp id="167" class="1004" name="zext_ln44_fu_167">
 <pin_list>
 <pin id="168" dir="0" index="0" bw="8" slack="0"/>
 <pin id="169" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln47/2 "/>
+<opset="zext_ln44/2 "/>
 </bind>
 </comp>
 
@@ -797,7 +797,7 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="208" class="1004" name="store_ln46_store_fu_208">
+<comp id="208" class="1004" name="store_ln43_store_fu_208">
 <pin_list>
 <pin id="209" dir="0" index="0" bw="3" slack="0"/>
 <pin id="210" dir="0" index="1" bw="3" slack="1"/>
@@ -805,11 +805,11 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln46/2 "/>
+<opset="store_ln43/2 "/>
 </bind>
 </comp>
 
-<comp id="213" class="1004" name="store_ln36_store_fu_213">
+<comp id="213" class="1004" name="store_ln33_store_fu_213">
 <pin_list>
 <pin id="214" dir="0" index="0" bw="8" slack="1"/>
 <pin id="215" dir="0" index="1" bw="8" slack="1"/>
@@ -817,7 +817,7 @@ ret_ln0           (ret              ) [ 0000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln36/2 "/>
+<opset="store_ln33/2 "/>
 </bind>
 </comp>
 
@@ -946,13 +946,13 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="285" class="1005" name="icmp_ln36_reg_285">
+<comp id="285" class="1005" name="icmp_ln33_reg_285">
 <pin_list>
 <pin id="286" dir="0" index="0" bw="1" slack="1"/>
 <pin id="287" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln36 "/>
+<opset="icmp_ln33 "/>
 </bind>
 </comp>
 
@@ -966,23 +966,23 @@ ret_ln0           (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="297" class="1005" name="icmp_ln40_reg_297">
+<comp id="297" class="1005" name="icmp_ln37_reg_297">
 <pin_list>
 <pin id="298" dir="0" index="0" bw="1" slack="1"/>
 <pin id="299" dir="1" index="1" bw="1" slack="1"/>
 </pin_list>
 <bind>
-<opset="icmp_ln40 "/>
+<opset="icmp_ln37 "/>
 </bind>
 </comp>
 
-<comp id="302" class="1005" name="icmp_ln44_reg_302">
+<comp id="302" class="1005" name="icmp_ln41_reg_302">
 <pin_list>
 <pin id="303" dir="0" index="0" bw="1" slack="1"/>
 <pin id="304" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln44 "/>
+<opset="icmp_ln41 "/>
 </bind>
 </comp>
 
@@ -1179,18 +1179,18 @@ ret_ln0           (ret              ) [ 0000]
 		store_ln0 : 1
 		store_ln0 : 1
 		i_2 : 1
-		icmp_ln36 : 2
+		icmp_ln33 : 2
 		i_3 : 2
-		br_ln36 : 3
-		icmp_ln40 : 2
-		store_ln36 : 3
+		br_ln33 : 3
+		icmp_ln37 : 2
+		store_ln33 : 3
 	State 2
 		prev_1 : 1
-		icmp_ln44 : 2
-		br_ln44 : 3
-		zext_ln47 : 2
+		icmp_ln41 : 2
+		br_ln41 : 3
+		zext_ln44 : 2
 		appear_addr : 3
-		store_ln47 : 4
+		store_ln44 : 4
 		appear_addr_1 : 1
 		lhs_1 : 2
 		zext_ln1393 : 1
@@ -1198,7 +1198,7 @@ ret_ln0           (ret              ) [ 0000]
 		count_V : 1
 		overflow : 3
 		count_V_1 : 4
-		store_ln46 : 5
+		store_ln43 : 5
 		write_ln0 : 1
 		write_ln0 : 1
 	State 3
@@ -1224,9 +1224,9 @@ ret_ln0           (ret              ) [ 0000]
 |          |     ret_V_1_fu_221    |    0    |    11   |
 |          |    add_ln859_fu_227   |    0    |    11   |
 |----------|-----------------------|---------|---------|
-|          |    icmp_ln36_fu_126   |    0    |    11   |
-|   icmp   |    icmp_ln40_fu_138   |    0    |    11   |
-|          |    icmp_ln44_fu_158   |    0    |    11   |
+|          |    icmp_ln33_fu_126   |    0    |    11   |
+|   icmp   |    icmp_ln37_fu_138   |    0    |    11   |
+|          |    icmp_ln41_fu_158   |    0    |    11   |
 |----------|-----------------------|---------|---------|
 |          |     prev_1_fu_152     |    0    |    8    |
 |  select  |    count_V_1_fu_200   |    0    |    3    |
@@ -1237,7 +1237,7 @@ ret_ln0           (ret              ) [ 0000]
 |   write  | write_ln0_write_fu_74 |    0    |    0    |
 |          | write_ln0_write_fu_81 |    0    |    0    |
 |----------|-----------------------|---------|---------|
-|          |    zext_ln47_fu_167   |    0    |    0    |
+|          |    zext_ln44_fu_167   |    0    |    0    |
 |   zext   |   zext_ln859_fu_172   |    0    |    0    |
 |          |   zext_ln1393_fu_176  |    0    |    0    |
 |          |  zext_ln1393_1_fu_217 |    0    |    0    |
@@ -1257,9 +1257,9 @@ N/A
 +---------------------+--------+
 |appear_addr_1_reg_306|    8   |
 |      i_reg_278      |   11   |
-|  icmp_ln36_reg_285  |    1   |
-|  icmp_ln40_reg_297  |    1   |
-|  icmp_ln44_reg_302  |    1   |
+|  icmp_ln33_reg_285  |    1   |
+|  icmp_ln37_reg_297  |    1   |
+|  icmp_ln41_reg_302  |    1   |
 |     lhs_reg_262     |    3   |
 |    prev_2_reg_289   |    8   |
 |     prev_reg_271    |    8   |

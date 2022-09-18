@@ -6,12 +6,12 @@
 #include "/tools/Xilinx/Vitis_HLS/2021.2/include/gmp.h"
 #endif
 
+#include "ap_axi_sdata.h"
 #include "ap_fixed.h"
 #include "ap_int.h"
 #include "hls_stream.h"
 
 #define DATA_T_WIDTH 8
-#define PACKED_T_WIDTH 32
 #define RESULT_T_WIDTH 8
 #define ITER_T_WIDTH 11
 
@@ -26,8 +26,8 @@
 
 //typedef ap_uint<DATA_T_WIDTH> data_t;
 //typedef ap_uint<PACKED_T_WIDTH> packed_t;
-//// Maximum count value is 7 since we just want to count the number
-//// over the threshold and the amount over the threshold doesn't matter
+// Maximum count value is 7 since we just want to count the number
+// over the threshold and the amount over the threshold doesn't matter
 typedef ap_ufixed<COUNT_T_WIDTH, COUNT_T_INT_WIDTH, AP_TRN, AP_SAT> count_t;
 //typedef ap_uint<RESULT_T_WIDTH> result_t;
 //typedef ap_uint<ITER_T_WIDTH> iter_t;
@@ -38,12 +38,12 @@ typedef unsigned char data_t;
 typedef int result_t;
 typedef int iter_t;
 
-typedef data_t block_data_t[BLOCK_LENGTH / 2];
-typedef count_t block_count_t[COUNT_BUCKETS];
+typedef ap_axiu<DATA_T_WIDTH, 0, 0, 0> in_pkt;
+typedef ap_axiu<RESULT_T_WIDTH, 0, 0, 0> out_pkt;
 
 // Function prototypes
 void count(hls::stream<data_t> &in, count_t appear[COUNT_BUCKETS]);
 
-void threshold(count_t appear[BLOCK_LENGTH], hls::stream<result_t> &out);
+void threshold(count_t appear[BLOCK_LENGTH], hls::stream<out_pkt> &out);
 
-void accelerator(hls::stream<data_t> &In, unsigned int num_blocks, hls::stream<result_t> &Out);
+void accelerator(hls::stream<data_t> &In, hls::stream<out_pkt> &Out, unsigned int num_blocks);
