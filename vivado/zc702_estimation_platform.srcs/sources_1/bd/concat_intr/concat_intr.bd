@@ -1,0 +1,91 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD34F78E279C6C2E2",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../zc702_estimation_platform.gen/sources_1/bd/concat_intr",
+      "name": "concat_intr",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xlconcat_0": ""
+    },
+    "ports": {
+      "Intr_in_0": {
+        "type": "intr",
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "Intr_in_1": {
+        "type": "intr",
+        "direction": "I",
+        "parameters": {
+          "PortWidth": {
+            "value": "1",
+            "value_src": "default_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH",
+            "value_src": "default"
+          }
+        }
+      },
+      "Intr_out": {
+        "type": "intr",
+        "direction": "O",
+        "left": "1",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "2",
+            "value_src": "ip_prop"
+          },
+          "SENSITIVITY": {
+            "value": "LEVEL_HIGH:LEVEL_HIGH",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "concat_intr_xlconcat_0_0",
+        "xci_path": "ip\\concat_intr_xlconcat_0_0\\concat_intr_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0"
+      }
+    },
+    "nets": {
+      "Intr_in_0_1": {
+        "ports": [
+          "Intr_in_0",
+          "xlconcat_0/In0"
+        ]
+      },
+      "Intr_in_1_1": {
+        "ports": [
+          "Intr_in_1",
+          "xlconcat_0/In1"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "Intr_out"
+        ]
+      }
+    }
+  }
+}

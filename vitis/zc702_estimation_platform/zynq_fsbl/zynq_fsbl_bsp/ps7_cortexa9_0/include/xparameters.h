@@ -31,21 +31,71 @@
  
  
 /******************************************************************/
-/* Definitions for driver BYTE_COUNT */
-#define XPAR_XBYTE_COUNT_NUM_INSTANCES 1
+/* Definitions for driver ACCELERATOR */
+#define XPAR_XACCELERATOR_NUM_INSTANCES 1
 
-/* Definitions for peripheral BYTE_COUNT_0 */
-#define XPAR_BYTE_COUNT_0_DEVICE_ID 0
-#define XPAR_BYTE_COUNT_0_S_AXI_CONTROL_BASEADDR 0x40000000
-#define XPAR_BYTE_COUNT_0_S_AXI_CONTROL_HIGHADDR 0x4000FFFF
+/* Definitions for peripheral ACCELERATOR_0 */
+#define XPAR_ACCELERATOR_0_DEVICE_ID 0
+#define XPAR_ACCELERATOR_0_S_AXI_CONTROL_BASEADDR 0x40000000
+#define XPAR_ACCELERATOR_0_S_AXI_CONTROL_HIGHADDR 0x4000FFFF
 
 
 /******************************************************************/
 
-/* Canonical definitions for peripheral BYTE_COUNT_0 */
-#define XPAR_XBYTE_COUNT_0_DEVICE_ID XPAR_BYTE_COUNT_0_DEVICE_ID
-#define XPAR_XBYTE_COUNT_0_S_AXI_CONTROL_BASEADDR 0x40000000
-#define XPAR_XBYTE_COUNT_0_S_AXI_CONTROL_HIGHADDR 0x4000FFFF
+/* Canonical definitions for peripheral ACCELERATOR_0 */
+#define XPAR_XACCELERATOR_0_DEVICE_ID XPAR_ACCELERATOR_0_DEVICE_ID
+#define XPAR_XACCELERATOR_0_S_AXI_CONTROL_BASEADDR 0x40000000
+#define XPAR_XACCELERATOR_0_S_AXI_CONTROL_HIGHADDR 0x4000FFFF
+
+
+/******************************************************************/
+
+/* Definitions for driver AXIDMA */
+#define XPAR_XAXIDMA_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_DMA */
+#define XPAR_AXI_DMA_DEVICE_ID 0
+#define XPAR_AXI_DMA_BASEADDR 0x41E00000
+#define XPAR_AXI_DMA_HIGHADDR 0x41E0FFFF
+#define XPAR_AXI_DMA_SG_INCLUDE_STSCNTRL_STRM 0
+#define XPAR_AXI_DMA_INCLUDE_MM2S_DRE 0
+#define XPAR_AXI_DMA_INCLUDE_S2MM_DRE 0
+#define XPAR_AXI_DMA_INCLUDE_MM2S 1
+#define XPAR_AXI_DMA_INCLUDE_S2MM 1
+#define XPAR_AXI_DMA_M_AXI_MM2S_DATA_WIDTH 64
+#define XPAR_AXI_DMA_M_AXI_S2MM_DATA_WIDTH 32
+#define XPAR_AXI_DMA_INCLUDE_SG 0
+#define XPAR_AXI_DMA_ENABLE_MULTI_CHANNEL 0
+#define XPAR_AXI_DMA_NUM_MM2S_CHANNELS 1
+#define XPAR_AXI_DMA_NUM_S2MM_CHANNELS 1
+#define XPAR_AXI_DMA_MM2S_BURST_SIZE 16
+#define XPAR_AXI_DMA_S2MM_BURST_SIZE 16
+#define XPAR_AXI_DMA_MICRO_DMA 0
+#define XPAR_AXI_DMA_ADDR_WIDTH 32
+#define XPAR_AXI_DMA_SG_LENGTH_WIDTH 14
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_DMA */
+#define XPAR_AXIDMA_0_DEVICE_ID XPAR_AXI_DMA_DEVICE_ID
+#define XPAR_AXIDMA_0_BASEADDR 0x41E00000
+#define XPAR_AXIDMA_0_SG_INCLUDE_STSCNTRL_STRM 0
+#define XPAR_AXIDMA_0_INCLUDE_MM2S 1
+#define XPAR_AXIDMA_0_INCLUDE_MM2S_DRE 0
+#define XPAR_AXIDMA_0_M_AXI_MM2S_DATA_WIDTH 64
+#define XPAR_AXIDMA_0_INCLUDE_S2MM 1
+#define XPAR_AXIDMA_0_INCLUDE_S2MM_DRE 0
+#define XPAR_AXIDMA_0_M_AXI_S2MM_DATA_WIDTH 32
+#define XPAR_AXIDMA_0_INCLUDE_SG 0
+#define XPAR_AXIDMA_0_ENABLE_MULTI_CHANNEL 0
+#define XPAR_AXIDMA_0_NUM_MM2S_CHANNELS 1
+#define XPAR_AXIDMA_0_NUM_S2MM_CHANNELS 1
+#define XPAR_AXIDMA_0_MM2S_BURST_SIZE 16
+#define XPAR_AXIDMA_0_S2MM_BURST_SIZE 16
+#define XPAR_AXIDMA_0_MICRO_DMA 0
+#define XPAR_AXIDMA_0_c_addr_width 32
+#define XPAR_AXIDMA_0_c_sg_length_width 14
 
 
 /******************************************************************/
@@ -366,12 +416,12 @@
 /******************************************************************/
 
 /* Definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_BYTE_COUNT_0_INTERRUPT_INTR 61U
+#define XPAR_FABRIC_CONCAT_INTR_0_INTR_OUT_0_INTR 61U
+#define XPAR_FABRIC_CONCAT_INTR_0_INTR_OUT_1_INTR 62U
 
 /******************************************************************/
 
 /* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
-#define XPAR_FABRIC_BYTE_COUNT_0_VEC_ID XPAR_FABRIC_BYTE_COUNT_0_INTERRUPT_INTR
 
 /******************************************************************/
 
@@ -533,6 +583,8 @@
 
 /* Xilinx FAT File System Library (XilFFs) User Settings */
 #define FILE_SYSTEM_INTERFACE_SD
+#define FILE_SYSTEM_FS_EXFAT
+#define FILE_SYSTEM_USE_LFN 1
 #define FILE_SYSTEM_USE_MKFS
 #define FILE_SYSTEM_NUM_LOGIC_VOL 2
 #define FILE_SYSTEM_USE_STRFUNC 0
