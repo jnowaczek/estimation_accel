@@ -1999,13 +1999,13 @@
             "value": "1"
           },
           "c_include_mm2s_dre": {
-            "value": "0"
+            "value": "1"
           },
           "c_include_s2mm": {
             "value": "1"
           },
           "c_include_s2mm_dre": {
-            "value": "0"
+            "value": "1"
           },
           "c_include_sg": {
             "value": "0"
