@@ -288,10 +288,10 @@ for.body:3 %specpipeline_ln0 = specpipeline void @_ssdm_op_SpecPipeline, i32 429
 
 <Node id="14" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.body:5 %empty_14 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 256, i64 256, i64 256
+for.body:5 %empty_13 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 256, i64 256, i64 256
 
 ]]></Node>
-<StgValue><ssdm name="empty_14"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </operation>
 
 <operation id="23" st_id="2" stage="1" lat="1">
@@ -304,7 +304,7 @@ for.body:5 %empty_14 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 25
 
 <Node id="18" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body.split:0 %specloopname_ln56 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9
+for.body.split:0 %specloopname_ln56 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln56"/></StgValue>
@@ -509,17 +509,17 @@ for.end.exitStub:1 %ret_ln0 = ret
 </dataflow>
 <dataflow id="78" from="p_str" to="specpipeline_ln0" fromId="77" toId="21">
 </dataflow>
-<dataflow id="80" from="_ssdm_op_SpecLoopTripCount" to="empty_14" fromId="79" toId="22">
+<dataflow id="80" from="_ssdm_op_SpecLoopTripCount" to="empty_13" fromId="79" toId="22">
 </dataflow>
-<dataflow id="82" from="StgValue_81" to="empty_14" fromId="81" toId="22">
+<dataflow id="82" from="StgValue_81" to="empty_13" fromId="81" toId="22">
 </dataflow>
-<dataflow id="83" from="StgValue_81" to="empty_14" fromId="81" toId="22">
+<dataflow id="83" from="StgValue_81" to="empty_13" fromId="81" toId="22">
 </dataflow>
-<dataflow id="84" from="StgValue_81" to="empty_14" fromId="81" toId="22">
+<dataflow id="84" from="StgValue_81" to="empty_13" fromId="81" toId="22">
 </dataflow>
 <dataflow id="86" from="_ssdm_op_SpecLoopName" to="specloopname_ln56" fromId="85" toId="23">
 </dataflow>
-<dataflow id="88" from="empty_9" to="specloopname_ln56" fromId="87" toId="23">
+<dataflow id="88" from="empty_8" to="specloopname_ln56" fromId="87" toId="23">
 </dataflow>
 <dataflow id="89" from="appear_addr" to="appear_load" fromId="16" toId="24">
 </dataflow>

@@ -22,6 +22,7 @@
 #endif
 
 #define DMA_TX_INTR_ID XPAR_FABRIC_CONCAT_INTR_0_INTR_OUT_0_INTR
+#define DMA_RX_INTR_ID XPAR_FABRIC_CONCAT_INTR_0_INTR_OUT_1_INTR
 
 // AXI DMA driver
 XAxiDma AxiDma;
@@ -44,32 +45,30 @@ XTime volatile end_time;
 
 /*****************************************************************************/
 /*
-*
-* This is the DMA TX Interrupt handler function.
-*
-* It gets the interrupt status from the hardware, acknowledges it, and if any
-* error happens, it resets the hardware. Otherwise, if a completion interrupt
-* is present, then sets the TxDone.flag
-*
-* @param	Callback is a pointer to TX channel of the DMA engine.
-*
-* @return	None.
-*
-* @note		None.
-*
-******************************************************************************/
-static void TxIntrHandler(void *Callback)
-{
+ *
+ * This is the DMA TX Interrupt handler function.
+ *
+ * It gets the interrupt status from the hardware, acknowledges it, and if any
+ * error happens, it resets the hardware. Otherwise, if a completion interrupt
+ * is present, then sets the TxDone.flag
+ *
+ * @param	Callback is a pointer to TX channel of the DMA engine.
+ *
+ * @return	None.
+ *
+ * @note		None.
+ *
+ ******************************************************************************/
+static void TxIntrHandler(void *Callback) {
 
 	u32 IrqStatus;
 	int TimeOut;
-	XAxiDma *AxiDmaInst = (XAxiDma *)Callback;
+	XAxiDma *AxiDmaInst = (XAxiDma *) Callback;
 
 	/* Read pending interrupts */
 	IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, XAXIDMA_DMA_TO_DEVICE);
 
 	/* Acknowledge pending interrupts */
-
 
 	XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, XAXIDMA_DMA_TO_DEVICE);
 
@@ -114,6 +113,76 @@ static void TxIntrHandler(void *Callback)
 	if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
 
 		int TxDone = 1;
+	}
+}
+
+/*****************************************************************************/
+/*
+ *
+ * This is the DMA RX interrupt handler function
+ *
+ * It gets the interrupt status from the hardware, acknowledges it, and if any
+ * error happens, it resets the hardware. Otherwise, if a completion interrupt
+ * is present, then it sets the RxDone flag.
+ *
+ * @param	Callback is a pointer to RX channel of the DMA engine.
+ *
+ * @return	None.
+ *
+ * @note		None.
+ *
+ ******************************************************************************/
+static void RxIntrHandler(void *Callback) {
+	u32 IrqStatus;
+	int TimeOut;
+	XAxiDma *AxiDmaInst = (XAxiDma *) Callback;
+
+	/* Read pending interrupts */
+	IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, XAXIDMA_DEVICE_TO_DMA);
+
+	/* Acknowledge pending interrupts */
+	XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, XAXIDMA_DEVICE_TO_DMA);
+
+	/*
+	 * If no interrupt is asserted, we do not do anything
+	 */
+	if (!(IrqStatus & XAXIDMA_IRQ_ALL_MASK)) {
+		return;
+	}
+
+	/*
+	 * If error interrupt is asserted, raise error flag, reset the
+	 * hardware to recover from the error, and return with no further
+	 * processing.
+	 */
+	if ((IrqStatus & XAXIDMA_IRQ_ERROR_MASK)) {
+
+		int Error = 1;
+
+		/* Reset could fail and hang
+		 * NEED a way to handle this or do not call it??
+		 */
+		XAxiDma_Reset(AxiDmaInst);
+
+		TimeOut = 10000;
+
+		while (TimeOut) {
+			if (XAxiDma_ResetIsDone(AxiDmaInst)) {
+				break;
+			}
+
+			TimeOut -= 1;
+		}
+
+		return;
+	}
+
+	/*
+	 * If completion interrupt is asserted, then set RxDone flag
+	 */
+	if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
+
+		int RxDone = 1;
 	}
 }
 
@@ -191,17 +260,24 @@ int PlInterruptSetup() {
 		return XST_FAILURE;
 	}
 
-	XScuGic_SetPriorityTriggerType(&InterruptController, DMA_TX_INTR_ID, 0xA0, 0x3);
+	XScuGic_SetPriorityTriggerType(&InterruptController, DMA_TX_INTR_ID, 0xA0,
+			0x3);
+	XScuGic_SetPriorityTriggerType(&InterruptController, DMA_RX_INTR_ID, 0xA0,
+			0x3);
 
 	/*
 	 * Connect a device driver handler that will be called when an
 	 * interrupt for the device occurs, the device driver handler performs
 	 * the specific interrupt processing for the device
 	 */
-	Status = XScuGic_Connect(&InterruptController,
-			DMA_TX_INTR_ID,
-			(Xil_InterruptHandler) TxIntrHandler,
-			&AxiDma);
+	Status = XScuGic_Connect(&InterruptController, DMA_TX_INTR_ID,
+			(Xil_InterruptHandler) TxIntrHandler, &AxiDma);
+
+	if (Status != XST_SUCCESS) {
+		return Status;
+	}
+	Status = XScuGic_Connect(&InterruptController, DMA_RX_INTR_ID,
+			(Xil_InterruptHandler) RxIntrHandler, &AxiDma);
 
 	if (Status != XST_SUCCESS) {
 		return Status;
@@ -210,15 +286,15 @@ int PlInterruptSetup() {
 	/*
 	 * Enable the interrupt for the device
 	 */
-	XScuGic_Enable(&InterruptController,
-			DMA_TX_INTR_ID);
+	XScuGic_Enable(&InterruptController, DMA_TX_INTR_ID);
+	XScuGic_Enable(&InterruptController, DMA_RX_INTR_ID);
 
 	/* Enable interrupts from the hardware */
 
 	Xil_ExceptionInit();
 	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
-			(Xil_ExceptionHandler)XScuGic_InterruptHandler,
-			(void *)&InterruptController);
+			(Xil_ExceptionHandler) XScuGic_InterruptHandler,
+			(void *) &InterruptController);
 
 	Xil_ExceptionEnable();
 
@@ -243,8 +319,8 @@ int DmaSetup() {
 		return Status;
 	}
 
-	if(XAxiDma_HasSg(&AxiDma)){
-		xil_printf("Device configured as SG mode \r\n");
+	if (XAxiDma_HasSg(&AxiDma)) {
+		xil_printf("Device configured in Scatter-Gather mode \r\n");
 		return XST_FAILURE;
 	}
 
@@ -260,17 +336,17 @@ FRESULT cleanupFS() {
 }
 
 int main(void) {
-
-	// Don't judge me
-	std::cout
-			<< "                  █▀▀ █▀█ █▀▄▀█ █▀█ █▀█ █▀▀ █▀ █▀ █ █▀█ █▄░█\n"
-			<< "                  █▄▄ █▄█ █░▀░█ █▀▀ █▀▄ ██▄ ▄█ ▄█ █ █▄█ █░▀█\n"
-			<< "                    █▀▀ █▀ ▀█▀ █ █▀▄▀█ ▄▀█ ▀█▀ █ █▀█ █▄░█\n"
-			<< "                    ██▄ ▄█ ░█░ █ █░▀░█ █▀█ ░█░ █ █▄█ █░▀█\n"
-			<< "                ▄▀█ █▀▀ █▀▀ █▀▀ █░░ █▀▀ █▀█ ▄▀█ ▀█▀ █ █▀█ █▄░█\n"
-			<< "                █▀█ █▄▄ █▄▄ ██▄ █▄▄ ██▄ █▀▄ █▀█ ░█░ █ █▄█ █░▀█\n"
-			<< "                    █▄▄ █▀▀ █▄░█ █▀▀ █░█ █▀▄▀█ ▄▀█ █▀█ █▄▀\n"
-			<< "                    █▄█ ██▄ █░▀█ █▄▄ █▀█ █░▀░█ █▀█ █▀▄ █░█\n";
+	std::cout << " _______________\n";
+	std::cout << "/ Compression   \\\n";
+	std::cout << "|  Estimation   |\n";
+	std::cout << "|   Accelerator |\n";
+	std::cout << "\\    Benchmark  /\n";
+	std::cout << " ---------------\n";
+	std::cout << "        \\   ^__^\n";
+	std::cout << "         \\  (oo)\\_______\n";
+	std::cout << "            (__)\\       )\\/\\\n";
+	std::cout << "                ||----w |\n";
+	std::cout << "                ||     ||\n";
 
 	int Status;
 
@@ -284,32 +360,49 @@ int main(void) {
 	std::vector<std::string> testFiles;
 	listTests("/test_data", testFiles);
 
-	std::cout << "\nIndexed " << testFiles.size() << " test files\n";
-	if (VERBOSE == 1) {
+	std::cout << "\n== INDEXING TEST DATA ==\n\n";
+
+	std::cout << "Indexed " << testFiles.size() << " test files\n";
+	if (VERBOSE) {
 		for (std::string file : testFiles) {
 			std::cout << " |  " << file << "\n";
 		}
 	}
 
+	std::cout << "\n== CONFIGURING DEVICE ==\n\n";
+
 	Status = XAccelerator_Initialize(&AcceleratorHandle,
-		XPAR_ACCELERATOR_0_DEVICE_ID);
+	XPAR_ACCELERATOR_0_DEVICE_ID);
 
 	if (Status != XST_SUCCESS) {
 		std::cerr << "Accelerator initialization failed: " << Status;
 		return Status;
 	}
 
-	if (VERBOSE)
-		std::cout << "\nAccelerator initialization succeeded:\n"
-				<< " |  Device ID: 0x" << std::hex << AccelConfig->DeviceId
-				<< std::dec << "\n" << " |  Base Address: 0x" << std::hex
+	std::cout << "Accelerator initialization succeeded\n";
+	if (VERBOSE) {
+		std::cout << " |  Device ID: 0x" << std::hex << AccelConfig->DeviceId
+				<< std::dec << "\n";
+		std::cout << " |  Base Address: 0x" << std::hex
 				<< AccelConfig->Control_BaseAddress << std::dec << "\n";
+	}
 
 	Status = DmaSetup();
 
 	if (Status != XST_SUCCESS) {
-		std::cerr << "DMA set-up failed: " << Status;
+		std::cerr << "DMA setup failed: " << Status;
 		return Status;
+	}
+
+	std::cout << "\nDMA setup succeeded\n";
+	if (VERBOSE) {
+		std::cout << " | " << AxiDmaConfig->Mm2sNumChannels
+				<< " MM2S channel(s), " << AxiDmaConfig->Mm2SDataWidth
+				<< "b wide, " << AxiDmaConfig->Mm2SBurstSize
+				<< " word max burst size\n" << " | "
+				<< AxiDmaConfig->S2MmNumChannels << " S2MM channel(s), "
+				<< AxiDmaConfig->S2MmDataWidth << "b wide, "
+				<< AxiDmaConfig->S2MmBurstSize << " word max burst size\n";
 	}
 
 	Status = PlInterruptSetup();
@@ -319,50 +412,56 @@ int main(void) {
 		return Status;
 	}
 
-	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
-								XAXIDMA_DMA_TO_DEVICE);
+	XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
 
 //	while (!XByte_count_IsReady(&AcceleratorHandle)) {
 //		std::cerr << "Accelerator not ready";
 //		usleep(10);
 //	}
 
-	std::cout << "\n== BEGIN TESTS ==\n";
+	std::cout << "\n== BEGIN TESTS ==\n\n";
 
-//	for (std::string test : testFiles) {
-//		alignedDataVector_t testData;
-//		try {
-//			testData = alignedDataVector_t(1024);
-//			loadTest(test, testData);
-//		} catch (std::bad_alloc& e) {
-//			std::cerr << "Failed to test buffer: " << e.what() << "\n";
-//			continue;
-//		}
-//
-//		std::cout << " |  First byte of test data: 0x" << std::hex
-//				<< (int) testData[0] << std::dec << "\n";
-//
-//		while (!XByte_count_IsReady(&AcceleratorHandle)) {
-//			std::cerr << "Accelerator not ready";
-//			usleep(10);
-//		}
-//
-//		std::vector<uint8_t> truncatedData = std::vector<uint8_t>(
-//				testData.begin(), testData.begin() + BLOCK_LENGTH);
-//
-//		XByte_count_Set_input_r(&AcceleratorHandle, (u32) testData.data());
-//		XTime_GetTime(&start_time);
-//		XByte_count_Start(&AcceleratorHandle);
-//
-//		uint32_t result;
-//		while (!XByte_count_IsDone(&AcceleratorHandle))
-//			usleep(10);
-//		result = XByte_count_Get_return(&AcceleratorHandle);
-//		std::cout << "\nAccelerator complete" << "\n";
-//		std::cout << " |  Result = " << result << "\n";
-//		std::cout << " |  Took "
-//				<< 1.0 * (end_time - start_time) / (COUNTS_PER_SECOND / 1000000)
-//				<< "μs \n";
+	for (std::string test : testFiles) {
+		alignedDataVector_t testData;
+		alignedDataVector_t result;
+		try {
+			testData = alignedDataVector_t(1024);
+			loadTest(test, testData);
+		} catch (std::bad_alloc& e) {
+			std::cerr << "Failed to allocate test buffer: " << e.what() << "\n";
+			continue;
+		}
+
+		if (VERBOSE == 1) {
+			std::cout << " |  First byte of test data: 0x" << std::hex
+					<< (int) testData[0] << std::dec << "\n";
+		}
+
+		Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) testData.data(), 1024,
+				XAXIDMA_DEVICE_TO_DMA);
+
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) &result,
+					1024, XAXIDMA_DMA_TO_DEVICE);
+
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+		XAccelerator_Set_num_blocks(&AcceleratorHandle, 1);
+		XTime_GetTime(&start_time);
+		XAccelerator_Start(&AcceleratorHandle);
+
+		while (!XAccelerator_IsDone(&AcceleratorHandle))
+			usleep(10);
+		std::cout << "\nAccelerator complete" << "\n";
+		std::cout << " |  Result = " << result[0] << "\n";
+		std::cout << " |  Took "
+				<< 1.0 * (end_time - start_time) / (COUNTS_PER_SECOND / 1000000)
+				<< "μs \n";
 //
 //		XTime_GetTime(&start_time);
 //		int softwareResult = ByteCountGold(testData.data());
@@ -372,7 +471,7 @@ int main(void) {
 //		std::cout << " |  Took "
 //				<< 1.0 * (end_time - start_time) / (COUNTS_PER_SECOND / 1000000)
 //				<< "μs \n\n";
-//	}
+	}
 
 	Fr = cleanupFS();
 	if (Fr != FR_OK)

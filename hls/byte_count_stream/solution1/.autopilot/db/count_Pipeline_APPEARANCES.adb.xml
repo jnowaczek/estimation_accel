@@ -293,7 +293,7 @@ for.body5.split:1 %specpipeline_ln34 = specpipeline void @_ssdm_op_SpecPipeline,
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body5.split:2 %specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10
+for.body5.split:2 %specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln0"/></StgValue>
@@ -929,7 +929,7 @@ if.else:12 %br_ln0 = br void %for.inc18
 </dataflow>
 <dataflow id="138" from="_ssdm_op_SpecLoopName" to="specloopname_ln0" fromId="137" toId="23">
 </dataflow>
-<dataflow id="140" from="empty_10" to="specloopname_ln0" fromId="139" toId="23">
+<dataflow id="140" from="empty_9" to="specloopname_ln0" fromId="139" toId="23">
 </dataflow>
 <dataflow id="141" from="icmp_ln37" to="prev_1" fromId="19" toId="24">
 </dataflow>

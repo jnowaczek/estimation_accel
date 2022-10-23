@@ -13,6 +13,8 @@
                     					
                     <extension id="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" point="org.eclipse.cdt.core.BinaryParser"/>
                     					
+                    <extension id="com.xilinx.sdk.managedbuilder.XELF.arm" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
                     <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
                     					
                     <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
@@ -35,17 +37,11 @@
                         						
                         <toolChain id="xilinx.gnu.armv7.exe.debug.toolchain.636417593" name="Xilinx ARM v7 GNU Toolchain" superClass="xilinx.gnu.armv7.exe.debug.toolchain">
                             							
-                            <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" id="xilinx.armv7.target.gnu.base.debug.326600962" isAbstract="false" name="Debug Platform" superClass="xilinx.armv7.target.gnu.base.debug"/>
+                            <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32;com.xilinx.sdk.managedbuilder.XELF.arm" id="xilinx.armv7.target.gnu.base.debug.326600962" isAbstract="false" name="Debug Platform" superClass="xilinx.armv7.target.gnu.base.debug"/>
                             							
-                            <builder buildPath="${workspace_loc:/estimation}/Debug" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.debug.1951784595" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.armv7.toolchain.builder.debug"/>
+                            <builder buildPath="${workspace_loc:/estimation}/Debug" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.debug.1951784595" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="xilinx.gnu.armv7.toolchain.builder.debug"/>
                             							
-                            <tool id="xilinx.gnu.armv7.c.toolchain.assembler.debug.1206189095" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.debug">
-                                								
-                                <option id="xilinx.gnu.both.asm.option.include.paths.1850319151" name="Include Paths (-I)" superClass="xilinx.gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-                                    									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/estimation/include}&quot;"/>
-                                    								
-                                </option>
+                            <tool command="arm-none-eabi-gcc" commandLinePattern="${COMMAND} -c ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="xilinx.gnu.armv7.c.toolchain.assembler.debug.1206189095" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.debug">
                                 								
                                 <inputType id="xilinx.gnu.assembler.input.935273742" superClass="xilinx.gnu.assembler.input"/>
                                 							
@@ -65,7 +61,7 @@
                                 								
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.flags.144199758" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value=" " valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.compiler.misc.other.989939333" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -std=c\+\+2a" valueType="string"/>
+                                <option id="xilinx.gnu.compiler.misc.other.989939333" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -std=c++11" valueType="string"/>
                                 								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.1402033933" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
@@ -77,27 +73,19 @@
                                 								
                                 <option id="xilinx.gnu.compiler.option.debugging.level.1869972781" name="Debug Level" superClass="xilinx.gnu.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
                                 								
-                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1961204246" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" useByScannerDiscovery="false" valueType="includePath">
-                                    									
-                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=estimation,fileType=bspInclude}"/>
-                                    								
-                                </option>
-                                								
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.flags.2030370525" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" useByScannerDiscovery="false" value=" " valueType="string"/>
                                 								
                                 <option id="xilinx.gnu.compiler.misc.other.997309550" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -std=c++11" valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.compiler.dircategory.includes.378109770" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
-                                    									
-                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=estimation,fileType=bspInclude}"/>
+                                <option id="xilinx.gnu.compiler.dircategory.includes.49933239" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/estimation/include}&quot;"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.compiler.symbols.defined.1536140427" name="Defined symbols (-D)" superClass="xilinx.gnu.compiler.symbols.defined" useByScannerDiscovery="false" valueType="definedSymbols">
+                                <option id="xilinx.gnu.compiler.inferred.swplatform.includes.303322782" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="VERBOSE=1"/>
+                                    <listOptionValue builtIn="false" value="${resolvePlatformFile:project=estimation,fileType=bspInclude}"/>
                                     								
                                 </option>
                                 								
@@ -125,6 +113,20 @@
                                 								
                                 <option id="xilinx.gnu.c.linker.option.lscript.1115423458" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
                                 								
+                                <option id="xilinx.gnu.c.link.option.paths.16246383" name="Library search path (-L)" superClass="xilinx.gnu.c.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.link.option.libs.1152221232" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="boost_log"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.link.option.ldflags.1261276632" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
+                                								
                                 <inputType id="xilinx.gnu.linker.input.1041572309" superClass="xilinx.gnu.linker.input">
                                     									
                                     <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -139,23 +141,23 @@
                             							
                             <tool id="xilinx.gnu.armv7.cxx.toolchain.linker.debug.1073321756" name="ARM v7 g++ linker" superClass="xilinx.gnu.armv7.cxx.toolchain.linker.debug">
                                 								
-                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.395589790" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" useByScannerDiscovery="false" valueType="libPaths">
+                                <option id="xilinx.gnu.c.linker.option.lscript.1119370305" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" useByScannerDiscovery="false" value="../src/lscript.ld" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.c.link.option.ldflags.292146121" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" useByScannerDiscovery="false" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.linker.inferred.swplatform.lpath.1230745375" name="Software Platform Library Path" superClass="xilinx.gnu.linker.inferred.swplatform.lpath" useByScannerDiscovery="false" valueType="libPaths">
                                     									
                                     <listOptionValue builtIn="false" value="${resolvePlatformFile:project=estimation,fileType=bspLib}"/>
                                     								
                                 </option>
                                 								
-                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.726284921" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" useByScannerDiscovery="false" valueType="libs">
+                                <option id="xilinx.gnu.linker.inferred.swplatform.flags.246637409" name="Software Platform Inferred Flags" superClass="xilinx.gnu.linker.inferred.swplatform.flags" valueType="libs">
                                     									
                                     <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group"/>
                                     									
                                     <listOptionValue builtIn="false" value="-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group"/>
                                     								
                                 </option>
-                                								
-                                <option id="xilinx.gnu.c.linker.option.lscript.1119370305" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" useByScannerDiscovery="false" value="../src/lscript.ld" valueType="string"/>
-                                								
-                                <option id="xilinx.gnu.c.link.option.ldflags.292146121" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" useByScannerDiscovery="false" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
                                 								
                                 <inputType id="xilinx.gnu.linker.input.1838924067" superClass="xilinx.gnu.linker.input">
                                     									
@@ -174,18 +176,14 @@
                         </toolChain>
                         					
                     </folderInfo>
-                    					
-                    <sourceEntries>
-                        						
-                        <entry excluding="_ide" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
-                        					
-                    </sourceEntries>
                     				
                 </configuration>
                 			
             </storageModule>
             			
             <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            			
+            <storageModule moduleId="ilg.gnuarmeclipse.managedbuild.packs"/>
             		
         </cconfiguration>
         		
@@ -198,6 +196,8 @@
                 <extensions>
                     					
                     <extension id="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="com.xilinx.sdk.managedbuilder.XELF.arm" point="org.eclipse.cdt.core.BinaryParser"/>
                     					
                     <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
                     					
@@ -221,9 +221,9 @@
                         						
                         <toolChain id="xilinx.gnu.armv7.exe.release.toolchain.1552626103" name="Xilinx ARM v7 GNU Toolchain" superClass="xilinx.gnu.armv7.exe.release.toolchain">
                             							
-                            <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32" id="xilinx.armv7.target.gnu.base.release.806929726" isAbstract="false" name="Release Platform" superClass="xilinx.armv7.target.gnu.base.release"/>
+                            <targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.arm.a53.x32;com.xilinx.sdk.managedbuilder.XELF.arm" id="xilinx.armv7.target.gnu.base.release.806929726" isAbstract="false" name="Release Platform" superClass="xilinx.armv7.target.gnu.base.release"/>
                             							
-                            <builder buildPath="${workspace_loc:/estimation}/Release" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.release.2105843564" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" superClass="xilinx.gnu.armv7.toolchain.builder.release"/>
+                            <builder buildPath="${workspace_loc:/estimation}/Release" enableAutoBuild="true" id="xilinx.gnu.armv7.toolchain.builder.release.2105843564" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="GNU make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="xilinx.gnu.armv7.toolchain.builder.release"/>
                             							
                             <tool id="xilinx.gnu.armv7.c.toolchain.assembler.release.79954241" name="ARM v7 gcc assembler" superClass="xilinx.gnu.armv7.c.toolchain.assembler.release">
                                 								
@@ -251,7 +251,7 @@
                                 								
                                 <option id="xilinx.gnu.compiler.inferred.swplatform.flags.441567518" name="Software Platform Inferred Flags" superClass="xilinx.gnu.compiler.inferred.swplatform.flags" value=" " valueType="string"/>
                                 								
-                                <option id="xilinx.gnu.compiler.misc.other.145202083" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -std=c\+\+2a" valueType="string"/>
+                                <option id="xilinx.gnu.compiler.misc.other.145202083" name="Other flags" superClass="xilinx.gnu.compiler.misc.other" value="-c -fmessage-length=0 -MT&quot;$@&quot; -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -std=c++11" valueType="string"/>
                                 								
                                 <inputType id="xilinx.gnu.armv7.c.compiler.input.273251556" name="C source files" superClass="xilinx.gnu.armv7.c.compiler.input"/>
                                 							
@@ -278,6 +278,8 @@
                                     <listOptionValue builtIn="false" value="${resolvePlatformFile:project=estimation,fileType=bspInclude}"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/estimation/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/estimation/include/boost}&quot;"/>
                                     								
                                 </option>
                                 								
@@ -311,6 +313,20 @@
                                 								
                                 <option id="xilinx.gnu.c.linker.option.lscript.795480875" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
                                 								
+                                <option id="xilinx.gnu.c.link.option.paths.989199446" name="Library search path (-L)" superClass="xilinx.gnu.c.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.link.option.libs.1409794015" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="boost_log"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.link.option.ldflags.1782503769" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
+                                								
                                 <inputType id="xilinx.gnu.linker.input.1215550845" superClass="xilinx.gnu.linker.input">
                                     									
                                     <additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -342,6 +358,24 @@
                                 <option id="xilinx.gnu.c.linker.option.lscript.247777050" name="Linker Script" superClass="xilinx.gnu.c.linker.option.lscript" value="../src/lscript.ld" valueType="string"/>
                                 								
                                 <option id="xilinx.gnu.c.link.option.ldflags.2127987764" name="Linker Flags" superClass="xilinx.gnu.c.link.option.ldflags" value=" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec" valueType="string"/>
+                                								
+                                <option id="xilinx.gnu.c.link.option.paths.1292721901" name="Library search path (-L)" superClass="xilinx.gnu.c.link.option.paths" valueType="libPaths">
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/include}&quot;"/>
+                                    								
+                                </option>
+                                								
+                                <option id="xilinx.gnu.c.link.option.libs.2010030197" name="Libraries (-l)" superClass="xilinx.gnu.c.link.option.libs" valueType="libs">
+                                    									
+                                    <listOptionValue builtIn="false" value="boost_log"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="-Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="-Wl,-lboost_log"/>
+                                    								
+                                </option>
                                 								
                                 <inputType id="xilinx.gnu.linker.input.446764241" superClass="xilinx.gnu.linker.input">
                                     									
@@ -385,7 +419,21 @@
         	
     </storageModule>
     	
-    <storageModule moduleId="refreshScope"/>
+    <storageModule moduleId="refreshScope" versionNumber="2">
+        		
+        <configuration configurationName="Debug">
+            			
+            <resource resourceType="PROJECT" workspacePath="/estimation"/>
+            		
+        </configuration>
+        		
+        <configuration configurationName="Release">
+            			
+            <resource resourceType="PROJECT" workspacePath="/estimation"/>
+            		
+        </configuration>
+        	
+    </storageModule>
     	
     <storageModule moduleId="scannerConfiguration">
         		

@@ -41,7 +41,7 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>0</BRAM_18K>
-            <FF>968</FF>
+            <FF>974</FF>
             <LUT>2856</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
@@ -64,7 +64,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_AWREADY</name>
@@ -75,7 +75,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_AWADDR</name>
@@ -86,7 +86,7 @@
             <Bits>5</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_WVALID</name>
@@ -97,7 +97,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_WREADY</name>
@@ -108,7 +108,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_WDATA</name>
@@ -119,7 +119,7 @@
             <Bits>32</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_WSTRB</name>
@@ -130,7 +130,7 @@
             <Bits>4</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_ARVALID</name>
@@ -141,7 +141,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_ARREADY</name>
@@ -152,7 +152,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_ARADDR</name>
@@ -163,7 +163,7 @@
             <Bits>5</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_RVALID</name>
@@ -174,7 +174,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_RREADY</name>
@@ -185,7 +185,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_RDATA</name>
@@ -196,7 +196,7 @@
             <Bits>32</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_RRESP</name>
@@ -207,7 +207,7 @@
             <Bits>2</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_BVALID</name>
@@ -218,7 +218,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_BREADY</name>
@@ -229,7 +229,7 @@
             <Bits>1</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>s_axi_control_BRESP</name>
@@ -240,14 +240,14 @@
             <Bits>2</Bits>
             <Attribute>unknown</Attribute>
             <CType>int</CType>
-            <HasCtrl>0</HasCtrl>
+            <HasCtrl>1</HasCtrl>
         </RtlPorts>
         <RtlPorts>
             <name>ap_clk</name>
             <Object>accelerator</Object>
             <Type>return value</Type>
             <Scope/>
-            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
             <Bits>1</Bits>
@@ -258,66 +258,22 @@
             <Object>accelerator</Object>
             <Type>return value</Type>
             <Scope/>
-            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
             <IOConfig/>
             <Dir>in</Dir>
             <Bits>1</Bits>
             <Attribute>control</Attribute>
         </RtlPorts>
         <RtlPorts>
-            <name>ap_start</name>
+            <name>interrupt</name>
             <Object>accelerator</Object>
             <Type>return value</Type>
             <Scope/>
-            <IOProtocol>ap_ctrl_chain</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
-        </RtlPorts>
-        <RtlPorts>
-            <name>ap_done</name>
-            <Object>accelerator</Object>
-            <Type>return value</Type>
-            <Scope/>
-            <IOProtocol>ap_ctrl_chain</IOProtocol>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>control</Attribute>
-        </RtlPorts>
-        <RtlPorts>
-            <name>ap_ready</name>
-            <Object>accelerator</Object>
-            <Type>return value</Type>
-            <Scope/>
-            <IOProtocol>ap_ctrl_chain</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
-        </RtlPorts>
-        <RtlPorts>
-            <name>ap_idle</name>
-            <Object>accelerator</Object>
-            <Type>return value</Type>
-            <Scope/>
-            <IOProtocol>ap_ctrl_chain</IOProtocol>
-            <IOConfig/>
-            <Dir>out</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
-        </RtlPorts>
-        <RtlPorts>
-            <name>ap_continue</name>
-            <Object>accelerator</Object>
-            <Type>return value</Type>
-            <Scope/>
-            <IOProtocol>ap_ctrl_chain</IOProtocol>
-            <IOConfig/>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
+            <Attribute>unknown</Attribute>
         </RtlPorts>
         <RtlPorts>
             <name>In_r_TDATA</name>
@@ -436,7 +392,7 @@
                     <InstName>dataflow_in_loop_VITIS_LOOP_10_1_U0</InstName>
                     <ModuleName>dataflow_in_loop_VITIS_LOOP_10_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>71</ID>
+                    <ID>69</ID>
                     <InstancesList>
                         <Instance>
                             <InstName>count_U0</InstName>
@@ -756,7 +712,7 @@
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>120</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
-                    <FF>968</FF>
+                    <FF>974</FF>
                     <AVAIL_FF>35200</AVAIL_FF>
                     <UTIL_FF>2</UTIL_FF>
                     <LUT>2856</LUT>
@@ -808,7 +764,7 @@
         <config_storage>
             <ENTRY auto_srl_max_bits="1024 fifo" auto_srl_max_depth="2 fifo" impl="autosrl fifo" type="fifo"/>
         </config_storage>
-        <config_export display_name="Byte Count Stream" library="byte_count_stream" output="E:/estimation_accel/vivado/ip_repo/" vendor="jnowaczek" version="1.0.6"/>
+        <config_export display_name="Byte Count Stream" library="byte_count_stream" output="E:/estimation_accel/vivado/ip_repo/" vendor="jnowaczek" version="1.0.9"/>
         <config_interface m_axi_addr64="0"/>
     </UserConfigCommands>
     <Args>
@@ -850,6 +806,39 @@
                 <port>s_axi_control_WVALID</port>
             </ports>
             <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="R" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="R" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
                 <register offset="0x10" name="num_blocks" access="W" description="Data signal of num_blocks" range="32">
                     <fields>
                         <field offset="0" width="32" name="num_blocks" access="W" description="Bit 31 to 0 of num_blocks"/>
@@ -883,20 +872,15 @@
                 <port>ap_rst_n</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
             <portMaps>
-                <portMap portMapName="ap_start">start</portMap>
-                <portMap portMapName="ap_done">done</portMap>
-                <portMap portMapName="ap_ready">ready</portMap>
-                <portMap portMapName="ap_idle">idle</portMap>
-                <portMap portMapName="ap_continue">continue</portMap>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
             </portMaps>
             <ports>
-                <port>ap_continue</port>
-                <port>ap_done</port>
-                <port>ap_idle</port>
-                <port>ap_ready</port>
-                <port>ap_start</port>
+                <port>interrupt</port>
             </ports>
         </Interface>
         <Interface InterfaceName="In_r" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="8" portPrefix="In_r_">
@@ -933,7 +917,11 @@
             </item>
             <item name="S_AXILITE Registers">
                 <table isCollapsed="0">
-                    <keys size="6">Interface, Register, Offset, Width, Access, Description</keys>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_control">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
                     <column name="s_axi_control">num_blocks, 0x10, 32, W, Data signal of num_blocks, </column>
                 </table>
             </item>
@@ -949,7 +937,8 @@
                     <keys size="3">Interface, Type, Ports</keys>
                     <column name="ap_clk">clock, ap_clk, </column>
                     <column name="ap_rst_n">reset, ap_rst_n, </column>
-                    <column name="ap_ctrl">ap_ctrl_chain, ap_continue ap_done ap_idle ap_ready ap_start, </column>
+                    <column name="interrupt">interrupt, interrupt, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, , </column>
                 </table>
             </item>
         </section>
@@ -981,7 +970,7 @@
         <Pragma type="interface" location="byte_count_stream/src/byte_count_stream.cpp:5" status="valid" parentFunction="accelerator" variable="In" isDirective="0" options="mode=axis port=In"/>
         <Pragma type="interface" location="byte_count_stream/src/byte_count_stream.cpp:6" status="valid" parentFunction="accelerator" variable="Out" isDirective="0" options="mode=axis port=Out"/>
         <Pragma type="interface" location="byte_count_stream/src/byte_count_stream.cpp:7" status="valid" parentFunction="accelerator" variable="num_blocks" isDirective="0" options="mode=s_axilite port=num_blocks"/>
-        <Pragma type="interface" location="byte_count_stream/src/byte_count_stream.cpp:8" status="valid" parentFunction="accelerator" variable="return" isDirective="0" options="mode=ap_ctrl_chain port=return"/>
+        <Pragma type="interface" location="byte_count_stream/src/byte_count_stream.cpp:8" status="valid" parentFunction="accelerator" variable="return" isDirective="0" options="mode=s_axilite port=return"/>
         <Pragma type="dataflow" location="byte_count_stream/src/byte_count_stream.cpp:11" status="valid" parentFunction="accelerator" variable="" isDirective="0" options=""/>
         <Pragma type="inline" location="byte_count_stream/src/byte_count_stream.cpp:21" status="valid" parentFunction="count" variable="" isDirective="0" options="off"/>
         <Pragma type="dependence" location="byte_count_stream/src/byte_count_stream.cpp:22" status="valid" parentFunction="count" variable="appear" isDirective="0" options="variable=appear intra RAW false"/>

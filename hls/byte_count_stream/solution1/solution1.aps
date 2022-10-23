@@ -8,7 +8,7 @@
     <synthesis askAgain="true"/>
     <config>
         <config_interface m_axi_addr64="0"/>
-        <config_export display_name="Byte Count Stream" format="ip_catalog" library="byte_count_stream" output="E:/estimation_accel/vivado/ip_repo/" rtl="verilog" vendor="jnowaczek" version="1.0.7"/>
+        <config_export display_name="Byte Count Stream" format="ip_catalog" library="byte_count_stream" output="E:/estimation_accel/vivado/ip_repo/" rtl="verilog" vendor="jnowaczek" version="1.0.10"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
@@ -42,7 +42,7 @@
         </UIAutoSimConf>
     </UIConfigurations>
     <ExportDesign askAgain="true" evaluate="false" flow="false" flowChoice="syn" formatName="ip_catalog" output="E:/estimation_accel/vivado/ip_repo/" rtl="verilog" rtlButton="true" rtlCombo="verilog">
-        <Format display_name="Byte Count Stream" formatName="ip_catalog" library="byte_count_stream" vendor="jnowaczek" version="1.0.7" description="" ipname="accelerator" taxonomy=""/>
+        <Format display_name="Byte Count Stream" formatName="ip_catalog" library="byte_count_stream" vendor="jnowaczek" version="1.0.10" description="" ipname="accelerator" taxonomy=""/>
         <Format formatName="sysgen"/>
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>

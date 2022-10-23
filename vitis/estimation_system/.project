@@ -4,6 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>estimation</project>
+		<project>zc702_estimation_platform</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

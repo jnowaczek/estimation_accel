@@ -8,6 +8,8 @@ BEGIN OS
  PARAMETER PROC_INSTANCE = ps7_cortexa9_0
  PARAMETER stdin = ps7_uart_1
  PARAMETER stdout = ps7_uart_1
+ PARAMETER xil_interrupt = true
+ PARAMETER zynqmp_fsbl_bsp = true
 END
 
 
@@ -15,6 +17,7 @@ BEGIN PROCESSOR
  PARAMETER DRIVER_NAME = cpu_cortexa9
  PARAMETER DRIVER_VER = 2.11
  PARAMETER HW_INSTANCE = ps7_cortexa9_0
+ PARAMETER extra_compiler_flags = -DDEBUG -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra -fno-tree-loop-distribute-patterns
 END
 
 

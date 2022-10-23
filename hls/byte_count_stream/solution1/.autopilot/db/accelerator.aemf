@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1663533199219">
-  <ports id="1" name="In_r" type="PortType" originalName="In" coreId="1634103909" bitwidth="8">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1665362193428">
+  <ports id="1" name="In_r" type="PortType" originalName="In" coreId="4294967295" bitwidth="8">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
   <ports id="2" name="Out_r_V_data_V" type="PortType" originalName="Out" coreId="1702129263" bitwidth="8" direction="DirOut">
@@ -9,13 +9,13 @@
   <ports id="3" name="Out_r_V_keep_V" type="PortType" originalName="Out" coreId="1702129263" bitwidth="1" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="4" name="Out_r_V_strb_V" type="PortType" originalName="Out" coreId="1702129263" bitwidth="1" direction="DirOut">
+  <ports id="4" name="Out_r_V_strb_V" type="PortType" originalName="Out" coreId="0" bitwidth="1" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="5" name="Out_r_V_last_V" type="PortType" originalName="Out" coreId="0" bitwidth="1" direction="DirOut">
+  <ports id="5" name="Out_r_V_last_V" type="PortType" originalName="Out" coreId="1702129263" bitwidth="1" direction="DirOut">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="6" name="num_blocks" type="PortType" originalName="num_blocks" coreId="1702129263" bitwidth="32">
+  <ports id="6" name="num_blocks" type="PortType" originalName="num_blocks" coreId="1885430849" bitwidth="32">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <edges id="36" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -35,10 +35,10 @@
   <edges id="56" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.3"/>
   <edges id="57" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@ports.4"/>
   <edges id="58" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
-  <edges id="197" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
-  <edges id="198" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
-  <edges id="199" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
-  <edges id="200" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="196" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="198" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="199" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
   <blocks id="21" name="entry" type="BlockType">
     <controlOutputObjs>phi</controlOutputObjs>
     <controlOutputObjs>for.cond</controlOutputObjs>
@@ -59,7 +59,7 @@
   <blocks id="33" name="for.end" type="BlockType">
     <controlInputObjs>for.cond</controlInputObjs>
     <controlOutputObjs>br</controlOutputObjs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln18" lineNumber="18" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="741487420" contextFuncName="accelerator" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln18" lineNumber="18" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="1818322464" contextFuncName="accelerator" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="18" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
     </node_objs>
     <fileValidLineNumbers fileName="byte_count_stream/src/byte_count_stream.cpp">
@@ -74,7 +74,7 @@
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.end</controlOutputObjs>
       <controlOutputObjs>for.body</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="counter" originalName="counter" coreId="539767584" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="counter" originalName="counter" coreId="1818322464" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
         <dataInputObjs>add</dataInputObjs>
         <dataOutputObjs>icmp</dataOutputObjs>
         <dataOutputObjs>add</dataOutputObjs>
@@ -94,7 +94,7 @@
         <dataOutputObjs>phi</dataOutputObjs>
         <constName>empty</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln10" lineNumber="10" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="1818322464" contextFuncName="accelerator" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln10" lineNumber="10" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="741487420" contextFuncName="accelerator" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="10" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataInputObjs>icmp</dataInputObjs>
         <controlInputObjs>for.body</controlInputObjs>
@@ -109,7 +109,7 @@
       <controlOutputObjs>phi</controlOutputObjs>
       <controlOutputObjs>br</controlOutputObjs>
       <controlOutputObjs>for.cond</controlOutputObjs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln16" lineNumber="16" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="dataflow_in_loop_VITIS_LOOP_10_1_U0" coreId="1818322464" contextFuncName="accelerator" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln16" lineNumber="16" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." rtlName="dataflow_in_loop_VITIS_LOOP_10_1_U0" coreId="858988588" contextFuncName="accelerator" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="16" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <dataInputObjs>In_r</dataInputObjs>
         <dataOutputObjs>Out_r_V_data_V</dataOutputObjs>
@@ -118,7 +118,7 @@
         <dataOutputObjs>Out_r_V_last_V</dataOutputObjs>
         <constName>dataflow_in_loop_VITIS_LOOP_10_1</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="br_ln10" lineNumber="10" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="1818322464" contextFuncName="accelerator" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="br_ln10" lineNumber="10" fileName="byte_count_stream/src/byte_count_stream.cpp" fileDirectory=".." coreId="741487420" contextFuncName="accelerator" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
         <inlineStackInfo fileName="byte_count_stream/src/byte_count_stream.cpp" linenumber="10" fileDirectory="E:\estimation_accel\hls" functionName="accelerator"/>
         <controlInputObjs>for.cond</controlInputObjs>
       </node_objs>
@@ -132,31 +132,31 @@
   <ScheduleInfo time="1"/>
   <ScheduleInfo time="2"/>
   <ScheduleInfo time="3"/>
-  <regnodes realName="icmp_ln10_reg_101">
+  <regnodes realName="icmp_ln10_reg_99">
     <nodeIds>23</nodeIds>
   </regnodes>
-  <regnodes realName="num_blocks_read_reg_96">
+  <regnodes realName="counter_1_reg_103">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="num_blocks_read_reg_94">
     <nodeIds>19</nodeIds>
   </regnodes>
-  <regnodes realName="counter_reg_60">
+  <regnodes realName="counter_reg_58">
     <nodeIds>22</nodeIds>
   </regnodes>
-  <regnodes realName="counter_1_reg_105">
-    <nodeIds>25</nodeIds>
-  </regnodes>
-  <expressionNodes realName="counter_1_fu_90">
-    <nodeIds>25</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="counter_phi_fu_64">
+  <expressionNodes realName="counter_phi_fu_62">
     <nodeIds>22</nodeIds>
   </expressionNodes>
-  <expressionNodes realName="icmp_ln10_fu_85">
+  <expressionNodes realName="icmp_ln10_fu_83">
     <nodeIds>23</nodeIds>
   </expressionNodes>
-  <moduleNodes realName="grp_dataflow_in_loop_VITIS_LOOP_10_1_fu_71">
+  <expressionNodes realName="counter_1_fu_88">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_dataflow_in_loop_VITIS_LOOP_10_1_fu_69">
     <nodeIds>29</nodeIds>
   </moduleNodes>
-  <ioNodes realName="num_blocks_read_read_fu_54">
+  <ioNodes realName="num_blocks_read_read_fu_52">
     <nodeIds>19</nodeIds>
   </ioNodes>
   <ioPorts name="In_r">

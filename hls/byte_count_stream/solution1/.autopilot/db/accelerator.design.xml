@@ -8,7 +8,7 @@
 <InstName>dataflow_in_loop_VITIS_LOOP_10_1_U0</InstName>
 <ModuleName>dataflow_in_loop_VITIS_LOOP_10_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>71</ID>
+<ID>69</ID>
 <InstancesList>
 <Instance>
 <InstName>count_U0</InstName>
@@ -1226,7 +1226,7 @@
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>120</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
-<FF>968</FF>
+<FF>974</FF>
 <AVAIL_FF>35200</AVAIL_FF>
 <UTIL_FF>2</UTIL_FF>
 <LUT>2856</LUT>
@@ -1250,7 +1250,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_AWREADY</name>
@@ -1261,7 +1261,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_AWADDR</name>
@@ -1272,7 +1272,7 @@
 <Bits>5</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_WVALID</name>
@@ -1283,7 +1283,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_WREADY</name>
@@ -1294,7 +1294,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_WDATA</name>
@@ -1305,7 +1305,7 @@
 <Bits>32</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_WSTRB</name>
@@ -1316,7 +1316,7 @@
 <Bits>4</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_ARVALID</name>
@@ -1327,7 +1327,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_ARREADY</name>
@@ -1338,7 +1338,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_ARADDR</name>
@@ -1349,7 +1349,7 @@
 <Bits>5</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_RVALID</name>
@@ -1360,7 +1360,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_RREADY</name>
@@ -1371,7 +1371,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_RDATA</name>
@@ -1382,7 +1382,7 @@
 <Bits>32</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_RRESP</name>
@@ -1393,7 +1393,7 @@
 <Bits>2</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_BVALID</name>
@@ -1404,7 +1404,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_BREADY</name>
@@ -1415,7 +1415,7 @@
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>s_axi_control_BRESP</name>
@@ -1426,14 +1426,14 @@
 <Bits>2</Bits>
 <Attribute>unknown</Attribute>
 <CType>int</CType>
-<HasCtrl>0</HasCtrl>
+<HasCtrl>1</HasCtrl>
 </RtlPorts>
 <RtlPorts>
 <name>ap_clk</name>
 <Object>accelerator</Object>
 <Type>return value</Type>
 <Scope></Scope>
-<IOProtocol>ap_ctrl_chain</IOProtocol>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>1</Bits>
@@ -1444,66 +1444,22 @@
 <Object>accelerator</Object>
 <Type>return value</Type>
 <Scope></Scope>
-<IOProtocol>ap_ctrl_chain</IOProtocol>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ap_start</name>
+<name>interrupt</name>
 <Object>accelerator</Object>
 <Type>return value</Type>
 <Scope></Scope>
-<IOProtocol>ap_ctrl_chain</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>accelerator</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_chain</IOProtocol>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>accelerator</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_chain</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>accelerator</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_chain</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_continue</name>
-<Object>accelerator</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_chain</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
+<Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>In_r_TDATA</name>

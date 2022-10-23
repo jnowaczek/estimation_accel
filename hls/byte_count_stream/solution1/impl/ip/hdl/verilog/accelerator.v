@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=9.359000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.659300,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=968,HLS_SYN_LUT=2856,HLS_VERSION=2022_1}" *)
+(* CORE_GENERATION_INFO="accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=9.359000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.659300,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=974,HLS_SYN_LUT=2856,HLS_VERSION=2022_1}" *)
 
 module accelerator (
         s_axi_control_AWVALID,
@@ -29,6 +29,7 @@ module accelerator (
         s_axi_control_BRESP,
         ap_clk,
         ap_rst_n,
+        interrupt,
         In_r_TDATA,
         Out_r_TDATA,
         Out_r_TKEEP,
@@ -37,12 +38,7 @@ module accelerator (
         In_r_TVALID,
         In_r_TREADY,
         Out_r_TVALID,
-        Out_r_TREADY,
-        ap_start,
-        ap_done,
-        ap_ready,
-        ap_idle,
-        ap_continue
+        Out_r_TREADY
 );
 
 parameter    C_S_AXI_CONTROL_DATA_WIDTH = 32;
@@ -71,6 +67,7 @@ input   s_axi_control_BREADY;
 output  [1:0] s_axi_control_BRESP;
 input   ap_clk;
 input   ap_rst_n;
+output   interrupt;
 input  [7:0] In_r_TDATA;
 output  [7:0] Out_r_TDATA;
 output  [0:0] Out_r_TKEEP;
@@ -80,16 +77,13 @@ input   In_r_TVALID;
 output   In_r_TREADY;
 output   Out_r_TVALID;
 input   Out_r_TREADY;
-input   ap_start;
-output   ap_done;
-output   ap_ready;
-output   ap_idle;
-input   ap_continue;
-
-reg ap_idle;
 
  reg    ap_rst_n_inv;
 wire   [31:0] num_blocks;
+wire    ap_start;
+wire    ap_ready;
+wire    ap_done;
+reg    ap_idle;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDATA;
 wire   [0:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TKEEP;
 wire   [0:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TSTRB;
@@ -100,7 +94,7 @@ wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TVALID;
 wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done;
 wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready;
 wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_idle;
-reg    dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue;
+wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue;
 wire    ap_bound_full_n;
 reg    ap_bound_write;
 wire   [31:0] ap_bound_dout;
@@ -149,7 +143,12 @@ control_s_axi_U(
     .ACLK(ap_clk),
     .ARESET(ap_rst_n_inv),
     .ACLK_EN(1'b1),
-    .num_blocks(num_blocks)
+    .num_blocks(num_blocks),
+    .ap_start(ap_start),
+    .interrupt(interrupt),
+    .ap_ready(ap_ready),
+    .ap_done(ap_done),
+    .ap_idle(ap_idle)
 );
 
 accelerator_dataflow_in_loop_VITIS_LOOP_10_1 dataflow_in_loop_VITIS_LOOP_10_1_U0(
@@ -229,7 +228,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_loop_dataflow_output_count == 32'd0) & (ap_start == 1'b0) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_idle == 1'b1) & (1'b0 == ap_bound_empty_n))) begin
+    if (((ap_loop_dataflow_output_count == 32'd0) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_idle == 1'b1) & (ap_start == 1'b0) & (1'b0 == ap_bound_empty_n))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -268,13 +267,7 @@ always @ (*) begin
     end
 end
 
-always @ (*) begin
-    if ((~(ap_loop_dataflow_output_count == ap_bound_minus_1_output) | (ap_continue == 1'b1))) begin
-        dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue = 1'b1;
-    end else begin
-        dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue = 1'b0;
-    end
-end
+assign dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue = 1'b1;
 
 assign In_r_TREADY = dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY;
 
@@ -294,7 +287,7 @@ assign ap_bound_minus_1 = (num_blocks - 32'd1);
 
 assign ap_bound_minus_1_output = (ap_bound_dout - 32'd1);
 
-assign ap_bound_read = (ap_internal_done & ap_continue & ap_bound_empty_n);
+assign ap_bound_read = (ap_internal_done & ap_bound_empty_n);
 
 assign ap_done = ap_internal_done;
 

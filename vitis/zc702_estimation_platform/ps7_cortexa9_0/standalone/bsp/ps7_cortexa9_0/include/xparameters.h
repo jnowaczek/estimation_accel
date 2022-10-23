@@ -26,6 +26,9 @@
 /* Platform specific definitions */
 #define PLATFORM_ZYNQ
  
+/* Definition for xilinx interrupt wrapper support  */
+#define XIL_INTERRUPT
+ 
 /* Definitions for sleep timer configuration */
 #define XSLEEP_TIMER_IS_DEFAULT_TIMER
  
@@ -446,6 +449,7 @@
 
 /******************************************************************/
 
+#define XPAR_SCUGIC
 /* Definitions for driver SCUTIMER */
 #define XPAR_XSCUTIMER_NUM_INSTANCES 1
 
@@ -465,6 +469,8 @@
 
 /******************************************************************/
 
+#define XPAR_PS7_SCUTIMER_0_INTERRUPT XPAR_PS7_SCUTIMER_0_INTERRUPT_ID
+#define XPAR_PS7_SCUTIMER_0_INTR_PARENT 0xF8F01000
 /* Definitions for driver SCUWDT */
 #define XPAR_XSCUWDT_NUM_INSTANCES 1
 

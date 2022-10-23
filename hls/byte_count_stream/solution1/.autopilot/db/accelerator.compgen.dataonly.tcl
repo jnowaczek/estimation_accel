@@ -10,6 +10,12 @@ num_blocks {
 	offset 16
 	offset_end 23
 }
+ap_start { }
+ap_done { }
+ap_ready { }
+ap_idle { }
+interrupt {
+}
 }
 dict set axilite_register_dict control $port_control
 

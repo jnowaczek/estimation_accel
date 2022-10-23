@@ -8,6 +8,11 @@
 
 #include "ByteCountTypes.hpp"
 
+#ifndef SD_VERBOSE
+// Default to verbose mode
+#define SD_VERBOSE 1
+#endif
+
 FRESULT listTests(std::string path, std::vector<std::string> &fileList) {
 	FRESULT res;
 	DIR dir;
@@ -49,7 +54,7 @@ void loadTest(std::string path, alignedDataVector_t &data) {
 	FIL fil;
 	UINT bytesRead;
 
-	if (VERBOSE)
+	if (SD_VERBOSE)
 		std::cout << "Reading test file '" << path << "'\n";
 
 	res = f_open(&fil, path.c_str(), FA_READ);
@@ -58,7 +63,7 @@ void loadTest(std::string path, alignedDataVector_t &data) {
 		std::cerr << "Failed to load test data '" << path << "'\n";
 
 	UINT fileSize = f_size(&fil);
-	if (VERBOSE)
+	if (SD_VERBOSE)
 		std::cout << " |  Test size: " << fileSize << " bytes (" << 1024
 				<< " bytes testable)\n";
 

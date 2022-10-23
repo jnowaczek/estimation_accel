@@ -4,7 +4,7 @@ set isCombinational 0
 set isDatapathOnly 0
 set isPipelined 1
 set pipeline_type none
-set FunctionProtocol ap_ctrl_chain
+set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
 set ProfileFlag 0
 set StallSigGenFlag 0
@@ -28,7 +28,7 @@ set C_modelArgMapList {[
  	{ "Name" : "Out_r_V_last_V", "interface" : "axis", "bitwidth" : 1, "direction" : "WRITEONLY"} , 
  	{ "Name" : "num_blocks", "interface" : "axi_slave", "bundle":"control","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "offset" : {"in":16}, "offset_end" : {"in":23}} ]}
 # RTL Port declarations: 
-set portNum 33
+set portNum 29
 set portList { 
 	{ s_axi_control_AWVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_AWREADY sc_out sc_logic 1 signal -1 } 
@@ -49,6 +49,7 @@ set portList {
 	{ s_axi_control_BRESP sc_out sc_lv 2 signal -1 } 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
+	{ interrupt sc_out sc_logic 1 signal -1 } 
 	{ In_r_TDATA sc_in sc_lv 8 signal 0 } 
 	{ Out_r_TDATA sc_out sc_lv 8 signal 1 } 
 	{ Out_r_TKEEP sc_out sc_lv 1 signal 2 } 
@@ -58,21 +59,16 @@ set portList {
 	{ In_r_TREADY sc_out sc_logic 1 inacc 0 } 
 	{ Out_r_TVALID sc_out sc_logic 1 outvld 4 } 
 	{ Out_r_TREADY sc_in sc_logic 1 outacc 4 } 
-	{ ap_start sc_in sc_logic 1 start -1 } 
-	{ ap_done sc_out sc_logic 1 predone -1 } 
-	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ ap_idle sc_out sc_logic 1 done -1 } 
-	{ ap_continue sc_in sc_logic 1 continue -1 } 
 }
 set NewPortList {[ 
-	{ "name": "s_axi_control_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "control", "role": "AWADDR" },"address":[{"name":"num_blocks","role":"data","value":"16"}] },
+	{ "name": "s_axi_control_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "control", "role": "AWADDR" },"address":[{"name":"accelerator","role":"start","value":"0","valid_bit":"0"},{"name":"accelerator","role":"continue","value":"0","valid_bit":"4"},{"name":"accelerator","role":"auto_start","value":"0","valid_bit":"7"},{"name":"num_blocks","role":"data","value":"16"}] },
 	{ "name": "s_axi_control_AWVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "AWVALID" } },
 	{ "name": "s_axi_control_AWREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "AWREADY" } },
 	{ "name": "s_axi_control_WVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "WVALID" } },
 	{ "name": "s_axi_control_WREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "WREADY" } },
 	{ "name": "s_axi_control_WDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "control", "role": "WDATA" } },
 	{ "name": "s_axi_control_WSTRB", "direction": "in", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "control", "role": "WSTRB" } },
-	{ "name": "s_axi_control_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "control", "role": "ARADDR" },"address":[] },
+	{ "name": "s_axi_control_ARADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":5, "type": "signal", "bundle":{"name": "control", "role": "ARADDR" },"address":[{"name":"accelerator","role":"start","value":"0","valid_bit":"0"},{"name":"accelerator","role":"done","value":"0","valid_bit":"1"},{"name":"accelerator","role":"idle","value":"0","valid_bit":"2"},{"name":"accelerator","role":"ready","value":"0","valid_bit":"3"},{"name":"accelerator","role":"auto_start","value":"0","valid_bit":"7"}] },
 	{ "name": "s_axi_control_ARVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "ARVALID" } },
 	{ "name": "s_axi_control_ARREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "ARREADY" } },
 	{ "name": "s_axi_control_RVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "RVALID" } },
@@ -81,7 +77,8 @@ set NewPortList {[
 	{ "name": "s_axi_control_RRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "control", "role": "RRESP" } },
 	{ "name": "s_axi_control_BVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "BVALID" } },
 	{ "name": "s_axi_control_BREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "BREADY" } },
-	{ "name": "s_axi_control_BRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "control", "role": "BRESP" } }, 
+	{ "name": "s_axi_control_BRESP", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "control", "role": "BRESP" } },
+	{ "name": "interrupt", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "interrupt" } }, 
  	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
  	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
  	{ "name": "In_r_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "In_r", "role": "TDATA" }} , 
@@ -92,18 +89,13 @@ set NewPortList {[
  	{ "name": "In_r_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "In_r", "role": "TVALID" }} , 
  	{ "name": "In_r_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "In_r", "role": "TREADY" }} , 
  	{ "name": "Out_r_TVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "Out_r_V_last_V", "role": "default" }} , 
- 	{ "name": "Out_r_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "Out_r_V_last_V", "role": "default" }} , 
- 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
- 	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
- 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
- 	{ "name": "ap_continue", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "continue", "bundle":{"name": "ap_continue", "role": "default" }}  ]}
+ 	{ "name": "Out_r_TREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "outacc", "bundle":{"name": "Out_r_V_last_V", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "10"],
 		"CDFG" : "accelerator",
-		"Protocol" : "ap_ctrl_chain",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "1", "ap_idle" : "1", "real_start" : "0",
+		"Protocol" : "ap_ctrl_hs",
+		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "Dataflow", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "1",
 		"II" : "0",
 		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
@@ -137,7 +129,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "num_blocks", "Type" : "None", "Direction" : "I"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_10_1", "PipelineType" : "dataflow",
-				"LoopDec" : {"InfiniteLoop" : "0", "BodyInst" : "dataflow_in_loop_VITIS_LOOP_10_1_U0", "has_continue" : "1"}}]},
+				"LoopDec" : {"InfiniteLoop" : "0", "BodyInst" : "dataflow_in_loop_VITIS_LOOP_10_1_U0", "has_continue" : "0"}}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.dataflow_in_loop_VITIS_LOOP_10_1_U0", "Parent" : "0", "Child" : ["3", "4", "7"],
 		"CDFG" : "dataflow_in_loop_VITIS_LOOP_10_1",

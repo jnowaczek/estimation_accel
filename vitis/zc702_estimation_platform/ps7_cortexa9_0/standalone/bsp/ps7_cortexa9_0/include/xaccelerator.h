@@ -81,9 +81,23 @@ int XAccelerator_Initialize(XAccelerator *InstancePtr, const char* InstanceName)
 int XAccelerator_Release(XAccelerator *InstancePtr);
 #endif
 
+void XAccelerator_Start(XAccelerator *InstancePtr);
+u32 XAccelerator_IsDone(XAccelerator *InstancePtr);
+u32 XAccelerator_IsIdle(XAccelerator *InstancePtr);
+u32 XAccelerator_IsReady(XAccelerator *InstancePtr);
+void XAccelerator_EnableAutoRestart(XAccelerator *InstancePtr);
+void XAccelerator_DisableAutoRestart(XAccelerator *InstancePtr);
 
 void XAccelerator_Set_num_blocks(XAccelerator *InstancePtr, u32 Data);
 u32 XAccelerator_Get_num_blocks(XAccelerator *InstancePtr);
+
+void XAccelerator_InterruptGlobalEnable(XAccelerator *InstancePtr);
+void XAccelerator_InterruptGlobalDisable(XAccelerator *InstancePtr);
+void XAccelerator_InterruptEnable(XAccelerator *InstancePtr, u32 Mask);
+void XAccelerator_InterruptDisable(XAccelerator *InstancePtr, u32 Mask);
+void XAccelerator_InterruptClear(XAccelerator *InstancePtr, u32 Mask);
+u32 XAccelerator_InterruptGetEnabled(XAccelerator *InstancePtr);
+u32 XAccelerator_InterruptGetStatus(XAccelerator *InstancePtr);
 
 #ifdef __cplusplus
 }

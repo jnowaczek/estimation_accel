@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'count_Pipeline_APPEARANCES'
 ================================================================
-* Date:           Sun Sep 18 15:33:14 2022
+* Date:           Sun Oct  9 19:36:28 2022
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
 * Project:        byte_count_stream
@@ -105,7 +105,7 @@ ST_1 : Operation 20 [1/1] (1.58ns)   --->   "%store_ln33 = store i11 %i_3, i11 %
 State 2 <SV = 1> <Delay = 5.12>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%prev_load_1 = load i8 %prev" [byte_count_stream/src/byte_count_stream.cpp:37]   --->   Operation 21 'load' 'prev_load_1' <Predicate = (!icmp_ln37)> <Delay = 0.00>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%specpipeline_ln34 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_1" [byte_count_stream/src/byte_count_stream.cpp:34]   --->   Operation 22 'specpipeline' 'specpipeline_ln34' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0]   --->   Operation 23 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0]   --->   Operation 23 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 24 [1/1] (1.24ns)   --->   "%prev_1 = select i1 %icmp_ln37, i8 %prev_2, i8 %prev_load_1" [byte_count_stream/src/byte_count_stream.cpp:37]   --->   Operation 24 'select' 'prev_1' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 25 [1/1] (1.55ns)   --->   "%icmp_ln41 = icmp_eq  i8 %prev_1, i8 %prev_2" [byte_count_stream/src/byte_count_stream.cpp:41]   --->   Operation 25 'icmp' 'icmp_ln41' <Predicate = true> <Delay = 1.55> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.55> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%lhs_load_1 = load i3 %lhs"   --->   Operation 26 'load' 'lhs_load_1' <Predicate = true> <Delay = 0.00>
@@ -403,7 +403,7 @@ ret_ln0           (ret              ) [ 0000]
 <pin id="41" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_9"/></StgValue>
 </bind>
 </comp>
 

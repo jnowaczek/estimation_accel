@@ -6463,7 +6463,7 @@ __attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_
 #pragma HLS INTERFACE mode=axis port=In
 #pragma HLS INTERFACE mode=axis port=Out
 #pragma HLS INTERFACE mode=s_axilite port=num_blocks
-#pragma HLS INTERFACE mode=ap_ctrl_chain port=return
+#pragma HLS INTERFACE mode=s_axilite port=return
 
  VITIS_LOOP_10_1: for (unsigned int counter = 0; counter < num_blocks; counter++) {
 #pragma HLS DATAFLOW
