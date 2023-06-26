@@ -4,8 +4,8 @@ module accelerator_hls_deadlock_idx0_monitor ( // for module accelerator_acceler
     input wire clock,
     input wire reset,
     input wire [1:0] axis_block_sigs,
-    input wire [7:0] inst_idle_sigs,
-    input wire [2:0] inst_block_sigs,
+    input wire [8:0] inst_idle_sigs,
+    input wire [3:0] inst_block_sigs,
     output wire block
 );
 

@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>appear</name>
+						<name>appear_V1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>559</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1887244816</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -110,7 +110,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -152,7 +152,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -194,7 +194,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -280,7 +280,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>741487420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -379,7 +379,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -422,7 +422,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1818322464</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -458,8 +458,15 @@
 							<item>
 								<first>E:\estimation_accel\hls</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>accelerator</second>
+										</first>
+										<second>16</second>
+									</item>
 									<item>
 										<first>
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
@@ -478,7 +485,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -515,8 +522,15 @@
 							<item>
 								<first>E:\estimation_accel\hls</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>accelerator</second>
+										</first>
+										<second>16</second>
+									</item>
 									<item>
 										<first>
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
@@ -535,7 +549,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>1818322464</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -572,8 +586,15 @@
 							<item>
 								<first>E:\estimation_accel\hls</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>accelerator</second>
+										</first>
+										<second>16</second>
+									</item>
 									<item>
 										<first>
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
@@ -650,7 +671,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>858988588</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -730,7 +751,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>appear_addr</name>
+						<name>appear_V1_addr</name>
 						<fileName>C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
 						<lineNumber>1695</lineNumber>
@@ -762,7 +783,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>539767584</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>8</bitwidth>
@@ -788,7 +809,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>appear_load</name>
+						<name>appear_V1_load</name>
 						<fileName>C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h</fileName>
 						<fileDirectory>E:\estimation_accel\hls</fileDirectory>
 						<lineNumber>1695</lineNumber>
@@ -876,7 +897,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>623895248</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -913,8 +934,15 @@
 							<item>
 								<first>E:\estimation_accel\hls</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>accelerator</second>
+										</first>
+										<second>16</second>
+									</item>
 									<item>
 										<first>
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
@@ -933,7 +961,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>575773264</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -970,8 +998,15 @@
 							<item>
 								<first>E:\estimation_accel\hls</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>accelerator</second>
+										</first>
+										<second>16</second>
+									</item>
 									<item>
 										<first>
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
@@ -990,7 +1025,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>858988588</coreId>
+						<coreId>623891552</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1028,8 +1063,15 @@
 							<item>
 								<first>E:\estimation_accel\hls</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>accelerator</second>
+										</first>
+										<second>16</second>
+									</item>
 									<item>
 										<first>
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
@@ -1048,7 +1090,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>623916000</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1087,8 +1129,15 @@
 							<item>
 								<first>E:\estimation_accel\hls</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>accelerator</second>
+										</first>
+										<second>16</second>
+									</item>
 									<item>
 										<first>
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
@@ -1107,7 +1156,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>623918720</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1146,8 +1195,15 @@
 							<item>
 								<first>E:\estimation_accel\hls</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>byte_count_stream/src/byte_count_stream.cpp</first>
+											<second>accelerator</second>
+										</first>
+										<second>16</second>
+									</item>
 									<item>
 										<first>
 											<first>byte_count_stream/src/byte_count_stream.cpp</first>
@@ -1166,7 +1222,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539767584</coreId>
+						<coreId>623909272</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1208,7 +1264,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741487420</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1252,7 +1308,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>386</coreId>
+						<coreId>620196832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1297,7 +1353,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1965922640</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1328,7 +1384,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1887244880</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -1359,7 +1415,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1887242928</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1390,7 +1446,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1887244816</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -1421,7 +1477,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1966895328</coreId>
+						<coreId>1528853351</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>9</bitwidth>
@@ -1452,7 +1508,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1966913152</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -1486,7 +1542,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>1835888483</coreId>
+					<coreId>775041584</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1503,7 +1559,7 @@
 				<Obj>
 					<type>3</type>
 					<id>17</id>
-					<name>for.body</name>
+					<name>for.body.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1539,7 +1595,7 @@
 				<Obj>
 					<type>3</type>
 					<id>29</id>
-					<name>for.body.split</name>
+					<name>for.body.split.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1579,7 +1635,7 @@
 				<Obj>
 					<type>3</type>
 					<id>32</id>
-					<name>for.end.exitStub</name>
+					<name>threshold.exit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -1597,7 +1653,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>841962316</coreId>
+					<coreId>1835888483</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>

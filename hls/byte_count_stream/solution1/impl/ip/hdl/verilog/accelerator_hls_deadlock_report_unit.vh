@@ -1,5 +1,5 @@
    
-    parameter PROC_NUM = 2;
+    parameter PROC_NUM = 3;
     parameter ST_IDLE = 3'b000;
     parameter ST_FILTER_FAKE = 3'b001;
     parameter ST_DL_DETECTED = 3'b010;
@@ -185,15 +185,18 @@
     endfunction
 
     // get the proc path based on dl vector
-    function [616:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
+    function [624:0] proc_path(input [PROC_NUM - 1:0] dl_vec);
         integer index;
         begin
             index = proc_index(dl_vec);
             case (index)
                 0 : begin
-                    proc_path = "accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0";
+                    proc_path = "accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0";
                 end
                 1 : begin
+                    proc_path = "accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0";
+                end
+                2 : begin
                     proc_path = "accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0";
                 end
                 default : begin
@@ -214,7 +217,7 @@
     endtask
 
     // print the start of a cycle
-    task print_cycle_start(input reg [616:0] proc_path, input integer cycle_id);
+    task print_cycle_start(input reg [624:0] proc_path, input integer cycle_id);
         begin
             $display("/////////////////////////");
             $display("// Dependence cycle %0d:", cycle_id);
@@ -239,7 +242,7 @@
     endtask
 
     // print one proc component in the cycle
-    task print_cycle_proc_comp(input reg [616:0] proc_path, input integer cycle_comp_id);
+    task print_cycle_proc_comp(input reg [624:0] proc_path, input integer cycle_comp_id);
         begin
             $display("// (%0d): Process: %0s", cycle_comp_id, proc_path);
             $fdisplay(fp, "Dependence_Process_ID %0d", cycle_comp_id);
@@ -249,7 +252,7 @@
 
     // print one channel component in the cycle
     task print_cycle_chan_comp(input [PROC_NUM - 1:0] dl_vec1, input [PROC_NUM - 1:0] dl_vec2);
-        reg [600:0] chan_path;
+        reg [632:0] chan_path;
         integer index1;
         integer index2;
         begin
@@ -258,7 +261,42 @@
             case (index1)
                 0 : begin
                     case(index2)
+                    2: begin
+                        if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0.counter_c_blk_n) begin
+                            if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U' written by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U' read by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+                        if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0.num_blocks_c_blk_n) begin
+                            if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U' written by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U' read by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+                    end
                     1: begin
+                        if (dataflow_in_loop_VITIS_LOOP_10_1_U0.ap_sync_entry_proc_U0_ap_ready & dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0.ap_idle & ~dataflow_in_loop_VITIS_LOOP_10_1_U0.ap_sync_count_U0_ap_ready) begin
+                            $display("//      Blocked by input sync logic with process : 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0'");
+                        end
+                    end
+                    endcase
+                end
+                1 : begin
+                    case(index2)
+                    2: begin
                         if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.i_full_n & dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0.ap_done & ap_done_reg_0 & ~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.t_read) begin
                             if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.t_empty_n) begin
                                 $display("//      Blocked by empty input PIPO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U' written by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0'");
@@ -272,11 +310,16 @@
                             end
                         end
                     end
+                    0: begin
+                        if (dataflow_in_loop_VITIS_LOOP_10_1_U0.ap_sync_count_U0_ap_ready & dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0.ap_idle & ~dataflow_in_loop_VITIS_LOOP_10_1_U0.ap_sync_entry_proc_U0_ap_ready) begin
+                            $display("//      Blocked by input sync logic with process : 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0'");
+                        end
+                    end
                     endcase
                 end
-                1 : begin
+                2 : begin
                     case(index2)
-                    0: begin
+                    1: begin
                         if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.t_empty_n & dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0.ap_idle & ~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.i_write) begin
                             if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.t_empty_n) begin
                                 $display("//      Blocked by empty input PIPO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U' written by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0'");
@@ -286,6 +329,32 @@
                             else if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U.i_full_n) begin
                                 $display("//      Blocked by full output PIPO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U' read by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.count_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.appear_V_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+                    end
+                    0: begin
+                        if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0.counter_blk_n) begin
+                            if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U' written by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U' read by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.counter_c_U");
+                                $fdisplay(fp, "Dependence_Channel_status FULL");
+                            end
+                        end
+                        if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.threshold_U0.num_blocks_blk_n) begin
+                            if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U' written by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U");
+                                $fdisplay(fp, "Dependence_Channel_status EMPTY");
+                            end
+                            else if (~dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U' read by process 'accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.entry_proc_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path accelerator_accelerator.dataflow_in_loop_VITIS_LOOP_10_1_U0.num_blocks_c_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end

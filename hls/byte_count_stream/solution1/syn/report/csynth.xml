@@ -41,8 +41,8 @@
     <AreaEstimates>
         <Resources>
             <BRAM_18K>0</BRAM_18K>
-            <FF>974</FF>
-            <LUT>2856</LUT>
+            <FF>1240</FF>
+            <LUT>3126</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -348,6 +348,18 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>Out_r_TUSER</name>
+            <Object>Out_r_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>Out_r_TLAST</name>
             <Object>Out_r_V_last_V</Object>
             <Type>pointer</Type>
@@ -360,8 +372,32 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>Out_r_TID</name>
+            <Object>Out_r_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>Out_r_TDEST</name>
+            <Object>Out_r_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>Out_r_TVALID</name>
-            <Object>Out_r_V_last_V</Object>
+            <Object>Out_r_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -373,7 +409,7 @@
         </RtlPorts>
         <RtlPorts>
             <name>Out_r_TREADY</name>
-            <Object>Out_r_V_last_V</Object>
+            <Object>Out_r_V_dest_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
@@ -392,13 +428,13 @@
                     <InstName>dataflow_in_loop_VITIS_LOOP_10_1_U0</InstName>
                     <ModuleName>dataflow_in_loop_VITIS_LOOP_10_1</ModuleName>
                     <IsCompInst>true</IsCompInst>
-                    <ID>69</ID>
+                    <ID>76</ID>
                     <InstancesList>
                         <Instance>
                             <InstName>count_U0</InstName>
                             <ModuleName>count</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>34</ID>
+                            <ID>84</ID>
                             <InstancesList>
                                 <Instance>
                                     <InstName>grp_count_Pipeline_APPEARANCES_fu_2863</InstName>
@@ -410,27 +446,73 @@
                             </InstancesList>
                         </Instance>
                         <Instance>
+                            <InstName>entry_proc_U0</InstName>
+                            <ModuleName>entry_proc</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>92</ID>
+                        </Instance>
+                        <Instance>
                             <InstName>threshold_U0</InstName>
                             <ModuleName>threshold</ModuleName>
                             <IsCompInst>true</IsCompInst>
-                            <ID>42</ID>
+                            <ID>102</ID>
                             <InstancesList>
                                 <Instance>
-                                    <InstName>grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55</InstName>
+                                    <InstName>grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_98</InstName>
                                     <ModuleName>threshold_Pipeline_VITIS_LOOP_58_1</ModuleName>
                                     <IsCompInst>true</IsCompInst>
-                                    <ID>55</ID>
+                                    <ID>98</ID>
                                     <BindInstances>add_ln58_fu_79_p2 add_ln60_fu_113_p2</BindInstances>
                                 </Instance>
                             </InstancesList>
+                            <BindInstances>sub_fu_105_p2</BindInstances>
                         </Instance>
                     </InstancesList>
-                    <BindInstances>appear_V_U</BindInstances>
+                    <BindInstances>num_blocks_c_U counter_c_U appear_V_U</BindInstances>
                 </Instance>
             </InstancesList>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
+        <Module>
+            <Name>entry_proc</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>9.36</TargetClockPeriod>
+                    <ClockUncertainty>2.53</ClockUncertainty>
+                    <EstimatedClockPeriod>3.416</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>0</Best-caseLatency>
+                    <Average-caseLatency>0</Average-caseLatency>
+                    <Worst-caseLatency>0</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>0</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>2</FF>
+                    <AVAIL_FF>35200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>29</LUT>
+                    <AVAIL_LUT>17600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>120</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>80</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
         <Module>
             <Name>count_Pipeline_APPEARANCES</Name>
             <Loops>
@@ -610,10 +692,10 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>60</FF>
+                    <FF>124</FF>
                     <AVAIL_FF>35200</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>197</LUT>
+                    <LUT>274</LUT>
                     <AVAIL_LUT>17600</AVAIL_LUT>
                     <UTIL_LUT>1</UTIL_LUT>
                     <BRAM_18K>0</BRAM_18K>
@@ -627,6 +709,9 @@
                     <UTIL_URAM>0</UTIL_URAM>
                 </Resources>
             </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="sub_fu_105_p2" SOURCE="" URAM="0" VARIABLE="sub"/>
+            </BindNodes>
         </Module>
         <Module>
             <Name>dataflow_in_loop_VITIS_LOOP_10_1</Name>
@@ -653,12 +738,12 @@
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>120</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
-                    <FF>243</FF>
+                    <FF>509</FF>
                     <AVAIL_FF>35200</AVAIL_FF>
-                    <UTIL_FF>~0</UTIL_FF>
-                    <LUT>2577</LUT>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>2847</LUT>
                     <AVAIL_LUT>17600</AVAIL_LUT>
-                    <UTIL_LUT>14</UTIL_LUT>
+                    <UTIL_LUT>16</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>0</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
@@ -668,6 +753,8 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="num_blocks_c_U" SOURCE="" URAM="0" VARIABLE="num_blocks_c"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage fifo" DSP="0" ID="" IMPL="srl" LATENCY="0" LOOP="" OPTYPE="fifo" PRAGMA="" RTLNAME="counter_c_U" SOURCE="" URAM="0" VARIABLE="counter_c"/>
                 <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="appear_V_U" SOURCE="byte_count_stream/src/byte_count_stream.cpp:13" URAM="0" VARIABLE="appear_V"/>
             </BindNodes>
         </Module>
@@ -712,12 +799,12 @@
                     <BRAM_18K>0</BRAM_18K>
                     <AVAIL_BRAM>120</AVAIL_BRAM>
                     <UTIL_BRAM>0</UTIL_BRAM>
-                    <FF>974</FF>
+                    <FF>1240</FF>
                     <AVAIL_FF>35200</AVAIL_FF>
-                    <UTIL_FF>2</UTIL_FF>
-                    <LUT>2856</LUT>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>3126</LUT>
                     <AVAIL_LUT>17600</AVAIL_LUT>
-                    <UTIL_LUT>16</UTIL_LUT>
+                    <UTIL_LUT>17</UTIL_LUT>
                     <URAM>0</URAM>
                     <AVAIL_URAM>0</AVAIL_URAM>
                     <UTIL_URAM>0</UTIL_URAM>
@@ -764,7 +851,7 @@
         <config_storage>
             <ENTRY auto_srl_max_bits="1024 fifo" auto_srl_max_depth="2 fifo" impl="autosrl fifo" type="fifo"/>
         </config_storage>
-        <config_export display_name="Byte Count Stream" library="byte_count_stream" output="E:/estimation_accel/vivado/ip_repo/" vendor="jnowaczek" version="1.0.9"/>
+        <config_export display_name="Byte Count Stream" library="byte_count_stream" output="E:/estimation_accel/vivado/ip_repo/" vendor="jnowaczek" version="1.0.13"/>
         <config_interface m_axi_addr64="0"/>
     </UserConfigCommands>
     <Args>
@@ -773,7 +860,7 @@
                 <hwRef type="interface" interface="In_r" name="" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="Out" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0, 0, 0&gt;, 0&gt;&amp;" srcSize="56">
+        <Arg ArgName="Out" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 1, 1, 1&gt;, 0&gt;&amp;" srcSize="56">
             <hwRefs>
                 <hwRef type="interface" interface="Out_r" name="" usage="data" direction="out"/>
             </hwRefs>
@@ -896,10 +983,13 @@
         <Interface InterfaceName="Out_r" type="axi4stream" busTypeName="axis" mode="master" dataWidth="8" portPrefix="Out_r_">
             <ports>
                 <port>Out_r_TDATA</port>
+                <port>Out_r_TDEST</port>
+                <port>Out_r_TID</port>
                 <port>Out_r_TKEEP</port>
                 <port>Out_r_TLAST</port>
                 <port>Out_r_TREADY</port>
                 <port>Out_r_TSTRB</port>
+                <port>Out_r_TUSER</port>
                 <port>Out_r_TVALID</port>
             </ports>
             <constraints>
@@ -927,9 +1017,9 @@
             </item>
             <item name="AXIS">
                 <table isCollapsed="0">
-                    <keys size="8">Interface, Register Mode, TDATA, TKEEP, TLAST, TREADY, TSTRB, TVALID</keys>
-                    <column name="In_r">both, 8, , , 1, , 1, , , , </column>
-                    <column name="Out_r">both, 8, 1, 1, 1, 1, 1, , , , </column>
+                    <keys size="11">Interface, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="In_r">both, 8, , , , , 1, , , 1, </column>
+                    <column name="Out_r">both, 8, 1, 1, 1, 1, 1, 1, 1, 1, </column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -949,7 +1039,7 @@
                 <table isCollapsed="1">
                     <keys size="3">Argument, Direction, Datatype</keys>
                     <column name="In">in, stream&lt;unsigned char 0&gt;&amp;</column>
-                    <column name="Out">out, stream&lt;hls::axis&lt;ap_uint&lt;8&gt; 0 0 0&gt; 0&gt;&amp;</column>
+                    <column name="Out">out, stream&lt;hls::axis&lt;ap_uint&lt;8&gt; 1 1 1&gt; 0&gt;&amp;</column>
                     <column name="num_blocks">in, unsigned int</column>
                 </table>
             </item>

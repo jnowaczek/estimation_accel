@@ -38,7 +38,10 @@ port (
     Out_r_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
     Out_r_TKEEP : OUT STD_LOGIC_VECTOR (0 downto 0);
     Out_r_TSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+    Out_r_TUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
     Out_r_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
+    Out_r_TID : OUT STD_LOGIC_VECTOR (0 downto 0);
+    Out_r_TDEST : OUT STD_LOGIC_VECTOR (0 downto 0);
     In_r_TVALID : IN STD_LOGIC;
     In_r_TREADY : OUT STD_LOGIC;
     Out_r_TVALID : OUT STD_LOGIC;
@@ -49,7 +52,7 @@ end;
 architecture behav of accelerator is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=9.359000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.659300,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=974,HLS_SYN_LUT=2856,HLS_VERSION=2022_1}";
+    "accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=9.359000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.659300,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=1240,HLS_SYN_LUT=3126,HLS_VERSION=2022_1}";
     constant C_S_AXI_DATA_WIDTH : INTEGER range 63 downto 0 := 20;
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_boolean_1 : BOOLEAN := true;
@@ -66,9 +69,12 @@ architecture behav of accelerator is
     signal dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDATA : STD_LOGIC_VECTOR (7 downto 0);
     signal dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TKEEP : STD_LOGIC_VECTOR (0 downto 0);
     signal dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TSTRB : STD_LOGIC_VECTOR (0 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TLAST : STD_LOGIC_VECTOR (0 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TID : STD_LOGIC_VECTOR (0 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDEST : STD_LOGIC_VECTOR (0 downto 0);
     signal dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_start : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY : STD_LOGIC;
     signal dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TVALID : STD_LOGIC;
     signal dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done : STD_LOGIC;
     signal dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready : STD_LOGIC;
@@ -99,10 +105,17 @@ architecture behav of accelerator is
         Out_r_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
         Out_r_TKEEP : OUT STD_LOGIC_VECTOR (0 downto 0);
         Out_r_TSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+        Out_r_TUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
         Out_r_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
+        Out_r_TID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        Out_r_TDEST : OUT STD_LOGIC_VECTOR (0 downto 0);
+        counter : IN STD_LOGIC_VECTOR (31 downto 0);
+        num_blocks : IN STD_LOGIC_VECTOR (31 downto 0);
+        counter_ap_vld : IN STD_LOGIC;
+        num_blocks_ap_vld : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
         In_r_TVALID : IN STD_LOGIC;
         In_r_TREADY : OUT STD_LOGIC;
-        ap_start : IN STD_LOGIC;
         Out_r_TVALID : OUT STD_LOGIC;
         Out_r_TREADY : IN STD_LOGIC;
         ap_done : OUT STD_LOGIC;
@@ -203,10 +216,17 @@ begin
         Out_r_TDATA => dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDATA,
         Out_r_TKEEP => dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TKEEP,
         Out_r_TSTRB => dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TSTRB,
+        Out_r_TUSER => dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TUSER,
         Out_r_TLAST => dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TLAST,
+        Out_r_TID => dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TID,
+        Out_r_TDEST => dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDEST,
+        counter => ap_loop_dataflow_input_count,
+        num_blocks => num_blocks,
+        counter_ap_vld => ap_const_logic_0,
+        num_blocks_ap_vld => ap_const_logic_1,
+        ap_start => dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_start,
         In_r_TVALID => In_r_TVALID,
         In_r_TREADY => dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY,
-        ap_start => dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_start,
         Out_r_TVALID => dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TVALID,
         Out_r_TREADY => Out_r_TREADY,
         ap_done => dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done,
@@ -237,7 +257,7 @@ begin
             if (ap_rst_n_inv = '1') then
                 ap_bound_reg_ack <= ap_const_logic_0;
             else
-                if (((ap_internal_ready = ap_const_logic_0) and (ap_start = ap_const_logic_1))) then 
+                if (((ap_start = ap_const_logic_1) and (ap_internal_ready = ap_const_logic_0))) then 
                     ap_bound_reg_ack <= ap_bound_ack;
                 else 
                     ap_bound_reg_ack <= ap_const_logic_0;
@@ -253,9 +273,9 @@ begin
             if (ap_rst_n_inv = '1') then
                 ap_loop_dataflow_input_count <= ap_const_lv32_0;
             else
-                if ((not((ap_loop_dataflow_input_count = ap_bound_minus_1)) and (ap_real_start = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready = ap_const_logic_1))) then 
+                if ((not((ap_loop_dataflow_input_count = ap_bound_minus_1)) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready = ap_const_logic_1) and (ap_real_start = ap_const_logic_1))) then 
                     ap_loop_dataflow_input_count <= std_logic_vector(unsigned(ap_loop_dataflow_input_count) + unsigned(ap_const_lv32_1));
-                elsif (((ap_real_start = ap_const_logic_1) and (ap_loop_dataflow_input_count = ap_bound_minus_1) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready = ap_const_logic_1))) then 
+                elsif (((ap_loop_dataflow_input_count = ap_bound_minus_1) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready = ap_const_logic_1) and (ap_real_start = ap_const_logic_1))) then 
                     ap_loop_dataflow_input_count <= ap_const_lv32_0;
                 end if; 
             end if;
@@ -271,7 +291,7 @@ begin
             else
                 if ((not((unsigned(ap_bound_dout) <= unsigned(ap_const_lv32_0))) and not((ap_loop_dataflow_output_count = ap_bound_minus_1_output)) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_bound_empty_n))) then 
                     ap_loop_dataflow_output_count <= std_logic_vector(unsigned(ap_loop_dataflow_output_count) + unsigned(ap_const_lv32_1));
-                elsif ((not((unsigned(ap_bound_dout) <= unsigned(ap_const_lv32_0))) and (ap_loop_dataflow_output_count = ap_bound_minus_1_output) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_bound_empty_n))) then 
+                elsif ((not((unsigned(ap_bound_dout) <= unsigned(ap_const_lv32_0))) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done = ap_const_logic_1) and (ap_const_logic_1 = ap_bound_empty_n) and (ap_loop_dataflow_output_count = ap_bound_minus_1_output))) then 
                     ap_loop_dataflow_output_count <= ap_const_lv32_0;
                 end if; 
             end if;
@@ -280,9 +300,12 @@ begin
 
     In_r_TREADY <= dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY;
     Out_r_TDATA <= dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDATA;
+    Out_r_TDEST <= dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDEST;
+    Out_r_TID <= dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TID;
     Out_r_TKEEP <= dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TKEEP;
     Out_r_TLAST <= dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TLAST;
     Out_r_TSTRB <= dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TSTRB;
+    Out_r_TUSER <= dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TUSER;
     Out_r_TVALID <= dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TVALID;
     ap_bound_ack <= (ap_bound_reg_ack or ap_bound_full_n);
     ap_bound_minus_1 <= std_logic_vector(unsigned(num_blocks) - unsigned(ap_const_lv32_1));
@@ -302,7 +325,7 @@ begin
 
     ap_idle_assign_proc : process(ap_start, dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_idle, ap_bound_empty_n, ap_loop_dataflow_output_count)
     begin
-        if (((ap_loop_dataflow_output_count = ap_const_lv32_0) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_idle = ap_const_logic_1) and (ap_start = ap_const_logic_0) and (ap_const_logic_0 = ap_bound_empty_n))) then 
+        if (((dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_idle = ap_const_logic_1) and (ap_start = ap_const_logic_0) and (ap_const_logic_0 = ap_bound_empty_n) and (ap_loop_dataflow_output_count = ap_const_lv32_0))) then 
             ap_idle <= ap_const_logic_1;
         else 
             ap_idle <= ap_const_logic_0;
@@ -312,7 +335,7 @@ begin
 
     ap_internal_done_assign_proc : process(dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done, ap_bound_dout, ap_bound_empty_n, ap_loop_dataflow_output_count, ap_bound_minus_1_output)
     begin
-        if (((ap_const_logic_1 = ap_bound_empty_n) and ((ap_const_lv32_0 = ap_bound_dout) or ((ap_loop_dataflow_output_count = ap_bound_minus_1_output) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done = ap_const_logic_1))))) then 
+        if (((ap_const_logic_1 = ap_bound_empty_n) and ((ap_const_lv32_0 = ap_bound_dout) or ((dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done = ap_const_logic_1) and (ap_loop_dataflow_output_count = ap_bound_minus_1_output))))) then 
             ap_internal_done <= ap_const_logic_1;
         else 
             ap_internal_done <= ap_const_logic_0;
@@ -332,7 +355,7 @@ begin
 
     ap_partial_ready_assign_proc : process(dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready, ap_loop_dataflow_input_count, ap_bound_minus_1, ap_real_start)
     begin
-        if (((ap_real_start = ap_const_logic_1) and (ap_loop_dataflow_input_count = ap_bound_minus_1) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready = ap_const_logic_1))) then 
+        if (((ap_loop_dataflow_input_count = ap_bound_minus_1) and (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready = ap_const_logic_1) and (ap_real_start = ap_const_logic_1))) then 
             ap_partial_ready <= ap_const_logic_1;
         else 
             ap_partial_ready <= ap_const_logic_0;

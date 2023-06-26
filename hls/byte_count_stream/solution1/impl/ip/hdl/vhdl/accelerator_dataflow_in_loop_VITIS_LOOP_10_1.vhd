@@ -17,10 +17,17 @@ port (
     Out_r_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
     Out_r_TKEEP : OUT STD_LOGIC_VECTOR (0 downto 0);
     Out_r_TSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
+    Out_r_TUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
     Out_r_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
+    Out_r_TID : OUT STD_LOGIC_VECTOR (0 downto 0);
+    Out_r_TDEST : OUT STD_LOGIC_VECTOR (0 downto 0);
+    counter : IN STD_LOGIC_VECTOR (31 downto 0);
+    num_blocks : IN STD_LOGIC_VECTOR (31 downto 0);
+    counter_ap_vld : IN STD_LOGIC;
+    num_blocks_ap_vld : IN STD_LOGIC;
+    ap_start : IN STD_LOGIC;
     In_r_TVALID : IN STD_LOGIC;
     In_r_TREADY : OUT STD_LOGIC;
-    ap_start : IN STD_LOGIC;
     Out_r_TVALID : OUT STD_LOGIC;
     Out_r_TREADY : IN STD_LOGIC;
     ap_done : OUT STD_LOGIC;
@@ -35,12 +42,22 @@ architecture behav of accelerator_dataflow_in_loop_VITIS_LOOP_10_1 is
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
     constant ap_const_logic_0 : STD_LOGIC := '0';
+    constant ap_const_boolean_1 : BOOLEAN := true;
 
 attribute shreg_extract : string;
     signal appear_V_i_q0 : STD_LOGIC_VECTOR (2 downto 0);
     signal appear_V_i_q1 : STD_LOGIC_VECTOR (2 downto 0);
     signal appear_V_t_q0 : STD_LOGIC_VECTOR (2 downto 0);
     signal appear_V_t_q1 : STD_LOGIC_VECTOR (2 downto 0);
+    signal entry_proc_U0_ap_start : STD_LOGIC;
+    signal entry_proc_U0_ap_done : STD_LOGIC;
+    signal entry_proc_U0_ap_continue : STD_LOGIC;
+    signal entry_proc_U0_ap_idle : STD_LOGIC;
+    signal entry_proc_U0_ap_ready : STD_LOGIC;
+    signal entry_proc_U0_counter_c_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal entry_proc_U0_counter_c_write : STD_LOGIC;
+    signal entry_proc_U0_num_blocks_c_din : STD_LOGIC_VECTOR (31 downto 0);
+    signal entry_proc_U0_num_blocks_c_write : STD_LOGIC;
     signal count_U0_ap_start : STD_LOGIC;
     signal count_U0_ap_done : STD_LOGIC;
     signal count_U0_ap_continue : STD_LOGIC;
@@ -60,15 +77,60 @@ attribute shreg_extract : string;
     signal threshold_U0_ap_continue : STD_LOGIC;
     signal threshold_U0_ap_idle : STD_LOGIC;
     signal threshold_U0_ap_ready : STD_LOGIC;
-    signal threshold_U0_appear_address0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal threshold_U0_appear_ce0 : STD_LOGIC;
+    signal threshold_U0_appear_V1_address0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal threshold_U0_appear_V1_ce0 : STD_LOGIC;
     signal threshold_U0_Out_r_TDATA : STD_LOGIC_VECTOR (7 downto 0);
     signal threshold_U0_Out_r_TVALID : STD_LOGIC;
     signal threshold_U0_Out_r_TKEEP : STD_LOGIC_VECTOR (0 downto 0);
     signal threshold_U0_Out_r_TSTRB : STD_LOGIC_VECTOR (0 downto 0);
+    signal threshold_U0_Out_r_TUSER : STD_LOGIC_VECTOR (0 downto 0);
     signal threshold_U0_Out_r_TLAST : STD_LOGIC_VECTOR (0 downto 0);
+    signal threshold_U0_Out_r_TID : STD_LOGIC_VECTOR (0 downto 0);
+    signal threshold_U0_Out_r_TDEST : STD_LOGIC_VECTOR (0 downto 0);
+    signal threshold_U0_counter_read : STD_LOGIC;
+    signal threshold_U0_num_blocks_read : STD_LOGIC;
     signal appear_V_i_full_n : STD_LOGIC;
     signal appear_V_t_empty_n : STD_LOGIC;
+    signal counter_c_full_n : STD_LOGIC;
+    signal counter_c_dout : STD_LOGIC_VECTOR (31 downto 0);
+    signal counter_c_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal counter_c_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal counter_c_empty_n : STD_LOGIC;
+    signal num_blocks_c_full_n : STD_LOGIC;
+    signal num_blocks_c_dout : STD_LOGIC_VECTOR (31 downto 0);
+    signal num_blocks_c_num_data_valid : STD_LOGIC_VECTOR (2 downto 0);
+    signal num_blocks_c_fifo_cap : STD_LOGIC_VECTOR (2 downto 0);
+    signal num_blocks_c_empty_n : STD_LOGIC;
+    signal ap_sync_ready : STD_LOGIC;
+    signal ap_sync_reg_entry_proc_U0_ap_ready : STD_LOGIC := '0';
+    signal ap_sync_entry_proc_U0_ap_ready : STD_LOGIC;
+    signal ap_sync_reg_count_U0_ap_ready : STD_LOGIC := '0';
+    signal ap_sync_count_U0_ap_ready : STD_LOGIC;
+    signal ap_ce_reg : STD_LOGIC;
+
+    component accelerator_entry_proc IS
+    port (
+        ap_clk : IN STD_LOGIC;
+        ap_rst : IN STD_LOGIC;
+        ap_start : IN STD_LOGIC;
+        ap_done : OUT STD_LOGIC;
+        ap_continue : IN STD_LOGIC;
+        ap_idle : OUT STD_LOGIC;
+        ap_ready : OUT STD_LOGIC;
+        counter : IN STD_LOGIC_VECTOR (31 downto 0);
+        counter_c_din : OUT STD_LOGIC_VECTOR (31 downto 0);
+        counter_c_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        counter_c_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        counter_c_full_n : IN STD_LOGIC;
+        counter_c_write : OUT STD_LOGIC;
+        num_blocks : IN STD_LOGIC_VECTOR (31 downto 0);
+        num_blocks_c_din : OUT STD_LOGIC_VECTOR (31 downto 0);
+        num_blocks_c_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        num_blocks_c_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        num_blocks_c_full_n : IN STD_LOGIC;
+        num_blocks_c_write : OUT STD_LOGIC );
+    end component;
+
 
     component accelerator_count IS
     port (
@@ -103,15 +165,28 @@ attribute shreg_extract : string;
         ap_continue : IN STD_LOGIC;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
-        appear_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        appear_ce0 : OUT STD_LOGIC;
-        appear_q0 : IN STD_LOGIC_VECTOR (2 downto 0);
+        appear_V1_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        appear_V1_ce0 : OUT STD_LOGIC;
+        appear_V1_q0 : IN STD_LOGIC_VECTOR (2 downto 0);
         Out_r_TDATA : OUT STD_LOGIC_VECTOR (7 downto 0);
         Out_r_TVALID : OUT STD_LOGIC;
         Out_r_TREADY : IN STD_LOGIC;
         Out_r_TKEEP : OUT STD_LOGIC_VECTOR (0 downto 0);
         Out_r_TSTRB : OUT STD_LOGIC_VECTOR (0 downto 0);
-        Out_r_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0) );
+        Out_r_TUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
+        Out_r_TLAST : OUT STD_LOGIC_VECTOR (0 downto 0);
+        Out_r_TID : OUT STD_LOGIC_VECTOR (0 downto 0);
+        Out_r_TDEST : OUT STD_LOGIC_VECTOR (0 downto 0);
+        counter_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+        counter_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        counter_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        counter_empty_n : IN STD_LOGIC;
+        counter_read : OUT STD_LOGIC;
+        num_blocks_dout : IN STD_LOGIC_VECTOR (31 downto 0);
+        num_blocks_num_data_valid : IN STD_LOGIC_VECTOR (2 downto 0);
+        num_blocks_fifo_cap : IN STD_LOGIC_VECTOR (2 downto 0);
+        num_blocks_empty_n : IN STD_LOGIC;
+        num_blocks_read : OUT STD_LOGIC );
     end component;
 
 
@@ -152,6 +227,23 @@ attribute shreg_extract : string;
     end component;
 
 
+    component accelerator_fifo_w32_d3_S IS
+    port (
+        clk : IN STD_LOGIC;
+        reset : IN STD_LOGIC;
+        if_read_ce : IN STD_LOGIC;
+        if_write_ce : IN STD_LOGIC;
+        if_din : IN STD_LOGIC_VECTOR (31 downto 0);
+        if_full_n : OUT STD_LOGIC;
+        if_write : IN STD_LOGIC;
+        if_dout : OUT STD_LOGIC_VECTOR (31 downto 0);
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (2 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (2 downto 0);
+        if_empty_n : OUT STD_LOGIC;
+        if_read : IN STD_LOGIC );
+    end component;
+
+
 
 begin
     appear_V_U : component accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W
@@ -172,8 +264,8 @@ begin
         i_we1 => count_U0_appear_we1,
         i_d1 => count_U0_appear_d1,
         i_q1 => appear_V_i_q1,
-        t_address0 => threshold_U0_appear_address0,
-        t_ce0 => threshold_U0_appear_ce0,
+        t_address0 => threshold_U0_appear_V1_address0,
+        t_ce0 => threshold_U0_appear_V1_ce0,
         t_we0 => ap_const_logic_0,
         t_d0 => ap_const_lv3_0,
         t_q0 => appear_V_t_q0,
@@ -188,6 +280,28 @@ begin
         i_write => count_U0_ap_done,
         t_empty_n => appear_V_t_empty_n,
         t_read => threshold_U0_ap_ready);
+
+    entry_proc_U0 : component accelerator_entry_proc
+    port map (
+        ap_clk => ap_clk,
+        ap_rst => ap_rst,
+        ap_start => entry_proc_U0_ap_start,
+        ap_done => entry_proc_U0_ap_done,
+        ap_continue => entry_proc_U0_ap_continue,
+        ap_idle => entry_proc_U0_ap_idle,
+        ap_ready => entry_proc_U0_ap_ready,
+        counter => counter,
+        counter_c_din => entry_proc_U0_counter_c_din,
+        counter_c_num_data_valid => counter_c_num_data_valid,
+        counter_c_fifo_cap => counter_c_fifo_cap,
+        counter_c_full_n => counter_c_full_n,
+        counter_c_write => entry_proc_U0_counter_c_write,
+        num_blocks => num_blocks,
+        num_blocks_c_din => entry_proc_U0_num_blocks_c_din,
+        num_blocks_c_num_data_valid => num_blocks_c_num_data_valid,
+        num_blocks_c_fifo_cap => num_blocks_c_fifo_cap,
+        num_blocks_c_full_n => num_blocks_c_full_n,
+        num_blocks_c_write => entry_proc_U0_num_blocks_c_write);
 
     count_U0 : component accelerator_count
     port map (
@@ -220,30 +334,113 @@ begin
         ap_continue => threshold_U0_ap_continue,
         ap_idle => threshold_U0_ap_idle,
         ap_ready => threshold_U0_ap_ready,
-        appear_address0 => threshold_U0_appear_address0,
-        appear_ce0 => threshold_U0_appear_ce0,
-        appear_q0 => appear_V_t_q0,
+        appear_V1_address0 => threshold_U0_appear_V1_address0,
+        appear_V1_ce0 => threshold_U0_appear_V1_ce0,
+        appear_V1_q0 => appear_V_t_q0,
         Out_r_TDATA => threshold_U0_Out_r_TDATA,
         Out_r_TVALID => threshold_U0_Out_r_TVALID,
         Out_r_TREADY => Out_r_TREADY,
         Out_r_TKEEP => threshold_U0_Out_r_TKEEP,
         Out_r_TSTRB => threshold_U0_Out_r_TSTRB,
-        Out_r_TLAST => threshold_U0_Out_r_TLAST);
+        Out_r_TUSER => threshold_U0_Out_r_TUSER,
+        Out_r_TLAST => threshold_U0_Out_r_TLAST,
+        Out_r_TID => threshold_U0_Out_r_TID,
+        Out_r_TDEST => threshold_U0_Out_r_TDEST,
+        counter_dout => counter_c_dout,
+        counter_num_data_valid => counter_c_num_data_valid,
+        counter_fifo_cap => counter_c_fifo_cap,
+        counter_empty_n => counter_c_empty_n,
+        counter_read => threshold_U0_counter_read,
+        num_blocks_dout => num_blocks_c_dout,
+        num_blocks_num_data_valid => num_blocks_c_num_data_valid,
+        num_blocks_fifo_cap => num_blocks_c_fifo_cap,
+        num_blocks_empty_n => num_blocks_c_empty_n,
+        num_blocks_read => threshold_U0_num_blocks_read);
+
+    counter_c_U : component accelerator_fifo_w32_d3_S
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        if_read_ce => ap_const_logic_1,
+        if_write_ce => ap_const_logic_1,
+        if_din => entry_proc_U0_counter_c_din,
+        if_full_n => counter_c_full_n,
+        if_write => entry_proc_U0_counter_c_write,
+        if_dout => counter_c_dout,
+        if_num_data_valid => counter_c_num_data_valid,
+        if_fifo_cap => counter_c_fifo_cap,
+        if_empty_n => counter_c_empty_n,
+        if_read => threshold_U0_counter_read);
+
+    num_blocks_c_U : component accelerator_fifo_w32_d3_S
+    port map (
+        clk => ap_clk,
+        reset => ap_rst,
+        if_read_ce => ap_const_logic_1,
+        if_write_ce => ap_const_logic_1,
+        if_din => entry_proc_U0_num_blocks_c_din,
+        if_full_n => num_blocks_c_full_n,
+        if_write => entry_proc_U0_num_blocks_c_write,
+        if_dout => num_blocks_c_dout,
+        if_num_data_valid => num_blocks_c_num_data_valid,
+        if_fifo_cap => num_blocks_c_fifo_cap,
+        if_empty_n => num_blocks_c_empty_n,
+        if_read => threshold_U0_num_blocks_read);
 
 
 
+
+
+    ap_sync_reg_count_U0_ap_ready_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                ap_sync_reg_count_U0_ap_ready <= ap_const_logic_0;
+            else
+                if (((ap_sync_ready and ap_start) = ap_const_logic_1)) then 
+                    ap_sync_reg_count_U0_ap_ready <= ap_const_logic_0;
+                else 
+                    ap_sync_reg_count_U0_ap_ready <= ap_sync_count_U0_ap_ready;
+                end if; 
+            end if;
+        end if;
+    end process;
+
+
+    ap_sync_reg_entry_proc_U0_ap_ready_assign_proc : process(ap_clk)
+    begin
+        if (ap_clk'event and ap_clk =  '1') then
+            if (ap_rst = '1') then
+                ap_sync_reg_entry_proc_U0_ap_ready <= ap_const_logic_0;
+            else
+                if (((ap_sync_ready and ap_start) = ap_const_logic_1)) then 
+                    ap_sync_reg_entry_proc_U0_ap_ready <= ap_const_logic_0;
+                else 
+                    ap_sync_reg_entry_proc_U0_ap_ready <= ap_sync_entry_proc_U0_ap_ready;
+                end if; 
+            end if;
+        end if;
+    end process;
 
     In_r_TREADY <= count_U0_In_r_TREADY;
     Out_r_TDATA <= threshold_U0_Out_r_TDATA;
+    Out_r_TDEST <= threshold_U0_Out_r_TDEST;
+    Out_r_TID <= threshold_U0_Out_r_TID;
     Out_r_TKEEP <= threshold_U0_Out_r_TKEEP;
     Out_r_TLAST <= threshold_U0_Out_r_TLAST;
     Out_r_TSTRB <= threshold_U0_Out_r_TSTRB;
+    Out_r_TUSER <= threshold_U0_Out_r_TUSER;
     Out_r_TVALID <= threshold_U0_Out_r_TVALID;
     ap_done <= threshold_U0_ap_done;
-    ap_idle <= (threshold_U0_ap_idle and (appear_V_t_empty_n xor ap_const_logic_1) and count_U0_ap_idle);
-    ap_ready <= count_U0_ap_ready;
+    ap_idle <= (threshold_U0_ap_idle and (appear_V_t_empty_n xor ap_const_logic_1) and entry_proc_U0_ap_idle and count_U0_ap_idle);
+    ap_ready <= ap_sync_ready;
+    ap_sync_count_U0_ap_ready <= (count_U0_ap_ready or ap_sync_reg_count_U0_ap_ready);
+    ap_sync_entry_proc_U0_ap_ready <= (entry_proc_U0_ap_ready or ap_sync_reg_entry_proc_U0_ap_ready);
+    ap_sync_ready <= (ap_sync_entry_proc_U0_ap_ready and ap_sync_count_U0_ap_ready);
     count_U0_ap_continue <= appear_V_i_full_n;
-    count_U0_ap_start <= ap_start;
+    count_U0_ap_start <= ((ap_sync_reg_count_U0_ap_ready xor ap_const_logic_1) and ap_start);
+    entry_proc_U0_ap_continue <= ap_const_logic_1;
+    entry_proc_U0_ap_start <= ((ap_sync_reg_entry_proc_U0_ap_ready xor ap_const_logic_1) and ap_start);
     threshold_U0_ap_continue <= ap_continue;
     threshold_U0_ap_start <= appear_V_t_empty_n;
 end behav;

@@ -1,0 +1,125 @@
+
+
+================================================================
+== Synthesis Summary Report of 'make_go_fast'
+================================================================
++ General Information: 
+    * Date:           Sun Jan 29 14:07:10 2023
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+    * Project:        Byte_Count_Really_Good_This_Time
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |                     Modules                     | Issue|      | Latency | Latency| Iteration|         | Trip |          |         |    |           |           |     |
+    |                     & Loops                     | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |    LUT    | URAM|
+    +-------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+    |+ make_go_fast*                                  |     -|  3.76|        -|       -|         -|        -|     -|  dataflow|  1 (~0%)|   -|  225 (~0%)|  246 (~0%)|    -|
+    | + split_input_stream                            |     -|  3.76|        -|       -|         -|        -|     -|        no|        -|   -|   26 (~0%)|   78 (~0%)|    -|
+    |  + split_input_stream_Pipeline_VITIS_LOOP_16_1  |     -|  3.76|        -|       -|         -|        -|     -|        no|        -|   -|    2 (~0%)|   20 (~0%)|    -|
+    |   o VITIS_LOOP_16_1                             |     -|  7.30|        -|       -|         1|        1|     -|       yes|        -|   -|          -|          -|    -|
+    | + process_split_stream                          |     -|  3.76|        1|  10.000|         -|        1|     -|        no|        -|   -|    4 (~0%)|   49 (~0%)|    -|
+    +-------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+---------+----+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+
+| Interface     | Data Width | Address Width |
++---------------+------------+---------------+
+| s_axi_control | 32         | 4             |
++---------------+------------+---------------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-----------+---------------+-------+-------+-------+--------+-------+--------+
+| Interface | Register Mode | TDATA | TKEEP | TLAST | TREADY | TSTRB | TVALID |
++-----------+---------------+-------+-------+-------+--------+-------+--------+
+| InStream  | both          | 8     | 1     | 1     | 1      | 1     | 1      |
+| OutStream | both          | 8     | 1     | 1     | 1      | 1     | 1      |
++-----------+---------------+-------+-------+-------+--------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+--------------------------------------------+
+| Argument  | Direction | Datatype                                   |
++-----------+-----------+--------------------------------------------+
+| InStream  | in        | stream<hls::axis<ap_uint<8>, 0, 0, 0>, 0>& |
+| OutStream | out       | stream<hls::axis<ap_uint<8>, 0, 0, 0>, 0>& |
++-----------+-----------+--------------------------------------------+
+
+* SW-to-HW Mapping
++-----------+--------------+-----------+
+| Argument  | HW Interface | HW Type   |
++-----------+--------------+-----------+
+| InStream  | InStream     | interface |
+| OutStream | OutStream    | interface |
++-----------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Bind Storage Report
+================================================================
++------------------+------+------+--------+--------------+---------+--------+---------+
+| Name             | BRAM | URAM | Pragma | Variable     | Storage | Impl   | Latency |
++------------------+------+------+--------+--------------+---------+--------+---------+
+| + make_go_fast   | 1    | 0    |        |              |         |        |         |
+|   split_buffer_U | 1    | -    |        | split_buffer | fifo    | memory | 0       |
++------------------+------+------+--------+--------------+---------+--------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+-------------------------------------------------+--------------------------------------------------------------------------------+
+| Type      | Options                                         | Location                                                                       |
++-----------+-------------------------------------------------+--------------------------------------------------------------------------------+
+| interface | axis register_mode=both register port=InStream  | Byte_Count_Really_Good_This_Time/accelerator.cpp:36 in make_go_fast, InStream  |
+| interface | axis register_mode=both register port=OutStream | Byte_Count_Really_Good_This_Time/accelerator.cpp:37 in make_go_fast, OutStream |
+| interface | s_axilite port=return                           | Byte_Count_Really_Good_This_Time/accelerator.cpp:38 in make_go_fast, return    |
+| dataflow  |                                                 | Byte_Count_Really_Good_This_Time/accelerator.cpp:40 in make_go_fast            |
++-----------+-------------------------------------------------+--------------------------------------------------------------------------------+
+
+

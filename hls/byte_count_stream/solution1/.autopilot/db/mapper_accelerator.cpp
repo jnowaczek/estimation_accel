@@ -188,17 +188,17 @@ unsigned int ap_apatb_Out_V_keep_V_cap_bc;
 static AESL_RUNTIME_BC __xlx_Out_V_keep_V_V_size_Reader("../tv/stream_size/stream_size_out_Out_V_keep_V.dat");
 unsigned int ap_apatb_Out_V_strb_V_cap_bc;
 static AESL_RUNTIME_BC __xlx_Out_V_strb_V_V_size_Reader("../tv/stream_size/stream_size_out_Out_V_strb_V.dat");
-unsigned int ap_apatb__cap_bc;
-static AESL_RUNTIME_BC __xlx__V_size_Reader("../tv/stream_size/stream_size_out_.dat");
+unsigned int ap_apatb_Out_V_user_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_Out_V_user_V_V_size_Reader("../tv/stream_size/stream_size_out_Out_V_user_V.dat");
 unsigned int ap_apatb_Out_V_last_V_cap_bc;
 static AESL_RUNTIME_BC __xlx_Out_V_last_V_V_size_Reader("../tv/stream_size/stream_size_out_Out_V_last_V.dat");
-unsigned int ap_apatb__cap_bc;
-static AESL_RUNTIME_BC __xlx__V_size_Reader("../tv/stream_size/stream_size_out_.dat");
-unsigned int ap_apatb__cap_bc;
-static AESL_RUNTIME_BC __xlx__V_size_Reader("../tv/stream_size/stream_size_out_.dat");
+unsigned int ap_apatb_Out_V_id_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_Out_V_id_V_V_size_Reader("../tv/stream_size/stream_size_out_Out_V_id_V.dat");
+unsigned int ap_apatb_Out_V_dest_V_cap_bc;
+static AESL_RUNTIME_BC __xlx_Out_V_dest_V_V_size_Reader("../tv/stream_size/stream_size_out_Out_V_dest_V.dat");
 struct __cosim_s1__ { char data[1]; };
-extern "C" void accelerator(__cosim_s1__*, volatile void *, volatile void *, volatile void *, , volatile void *, , , int);
-extern "C" void apatb_accelerator_hw(volatile void * __xlx_apatb_param_In_r, volatile void * __xlx_apatb_param_Out_V_data_V, volatile void * __xlx_apatb_param_Out_V_keep_V, volatile void * __xlx_apatb_param_Out_V_strb_V, volatile void * __xlx_apatb_param_Out_V_last_V, int __xlx_apatb_param_num_blocks) {
+extern "C" void accelerator(__cosim_s1__*, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, int);
+extern "C" void apatb_accelerator_hw(volatile void * __xlx_apatb_param_In_r, volatile void * __xlx_apatb_param_Out_V_data_V, volatile void * __xlx_apatb_param_Out_V_keep_V, volatile void * __xlx_apatb_param_Out_V_strb_V, volatile void * __xlx_apatb_param_Out_V_user_V, volatile void * __xlx_apatb_param_Out_V_last_V, volatile void * __xlx_apatb_param_Out_V_id_V, volatile void * __xlx_apatb_param_Out_V_dest_V, int __xlx_apatb_param_num_blocks) {
 auto* sIn_r = bcsim::createStream((hls::stream<__cosim_s1__>*)__xlx_apatb_param_In_r);
   //Create input buffer for Out_V_data_V
   ap_apatb_Out_V_data_V_cap_bc = __xlx_Out_V_data_V_V_size_Reader.read_size();
@@ -212,18 +212,30 @@ auto* sOut_V_keep_V = bcsim::createStream((hls::stream<char>*)__xlx_apatb_param_
   ap_apatb_Out_V_strb_V_cap_bc = __xlx_Out_V_strb_V_V_size_Reader.read_size();
   char* __xlx_Out_V_strb_V_input_buffer= new char[ap_apatb_Out_V_strb_V_cap_bc];
 auto* sOut_V_strb_V = bcsim::createStream((hls::stream<char>*)__xlx_apatb_param_Out_V_strb_V);
+  //Create input buffer for Out_V_user_V
+  ap_apatb_Out_V_user_V_cap_bc = __xlx_Out_V_user_V_V_size_Reader.read_size();
+  char* __xlx_Out_V_user_V_input_buffer= new char[ap_apatb_Out_V_user_V_cap_bc];
+auto* sOut_V_user_V = bcsim::createStream((hls::stream<char>*)__xlx_apatb_param_Out_V_user_V);
   //Create input buffer for Out_V_last_V
   ap_apatb_Out_V_last_V_cap_bc = __xlx_Out_V_last_V_V_size_Reader.read_size();
   char* __xlx_Out_V_last_V_input_buffer= new char[ap_apatb_Out_V_last_V_cap_bc];
 auto* sOut_V_last_V = bcsim::createStream((hls::stream<char>*)__xlx_apatb_param_Out_V_last_V);
+  //Create input buffer for Out_V_id_V
+  ap_apatb_Out_V_id_V_cap_bc = __xlx_Out_V_id_V_V_size_Reader.read_size();
+  char* __xlx_Out_V_id_V_input_buffer= new char[ap_apatb_Out_V_id_V_cap_bc];
+auto* sOut_V_id_V = bcsim::createStream((hls::stream<char>*)__xlx_apatb_param_Out_V_id_V);
+  //Create input buffer for Out_V_dest_V
+  ap_apatb_Out_V_dest_V_cap_bc = __xlx_Out_V_dest_V_V_size_Reader.read_size();
+  char* __xlx_Out_V_dest_V_input_buffer= new char[ap_apatb_Out_V_dest_V_cap_bc];
+auto* sOut_V_dest_V = bcsim::createStream((hls::stream<char>*)__xlx_apatb_param_Out_V_dest_V);
   // DUT call
-  accelerator(sIn_r->data<__cosim_s1__>(), sOut_V_data_V->data<char>(), sOut_V_keep_V->data<char>(), sOut_V_strb_V->data<char>(), sOut_V_last_V->data<char>(), __xlx_apatb_param_num_blocks);
+  accelerator(sIn_r->data<__cosim_s1__>(), sOut_V_data_V->data<char>(), sOut_V_keep_V->data<char>(), sOut_V_strb_V->data<char>(), sOut_V_user_V->data<char>(), sOut_V_last_V->data<char>(), sOut_V_id_V->data<char>(), sOut_V_dest_V->data<char>(), __xlx_apatb_param_num_blocks);
 sIn_r->transfer((hls::stream<__cosim_s1__>*)__xlx_apatb_param_In_r);
 sOut_V_data_V->transfer((hls::stream<char>*)__xlx_apatb_param_Out_V_data_V);
 sOut_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_Out_V_keep_V);
 sOut_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_Out_V_strb_V);
-s->transfer((hls::stream<char>*)__xlx_apatb_param_);
+sOut_V_user_V->transfer((hls::stream<char>*)__xlx_apatb_param_Out_V_user_V);
 sOut_V_last_V->transfer((hls::stream<char>*)__xlx_apatb_param_Out_V_last_V);
-s->transfer((hls::stream<char>*)__xlx_apatb_param_);
-s->transfer((hls::stream<char>*)__xlx_apatb_param_);
+sOut_V_id_V->transfer((hls::stream<char>*)__xlx_apatb_param_Out_V_id_V);
+sOut_V_dest_V->transfer((hls::stream<char>*)__xlx_apatb_param_Out_V_dest_V);
 }

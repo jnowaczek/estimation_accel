@@ -13,7 +13,7 @@ open_solution "solution1" -flow_target vivado
 set_part {xc7z010i-clg225-1L}
 create_clock -period 9.359 -name default
 config_interface -m_axi_addr64=0
-config_export -display_name {Byte Count Stream} -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.10
+config_export -display_name {Byte Count Stream} -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.14
 source "./byte_count_stream/solution1/directives.tcl"
 csim_design
 csynth_design

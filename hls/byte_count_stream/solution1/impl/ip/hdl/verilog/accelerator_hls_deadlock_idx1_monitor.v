@@ -4,8 +4,8 @@ module accelerator_hls_deadlock_idx1_monitor ( // for module accelerator_acceler
     input wire clock,
     input wire reset,
     input wire [1:0] axis_block_sigs,
-    input wire [7:0] inst_idle_sigs,
-    input wire [2:0] inst_block_sigs,
+    input wire [8:0] inst_idle_sigs,
+    input wire [3:0] inst_block_sigs,
     output wire block
 );
 
@@ -13,23 +13,26 @@ module accelerator_hls_deadlock_idx1_monitor ( // for module accelerator_acceler
 reg monitor_find_block;
 wire idx2_block;
 wire idx4_block;
-wire [1:0] process_idle_vec;
-wire [1:0] process_chan_block_vec;
-wire [1:0] process_axis_block_vec;
+wire [2:0] process_idle_vec;
+wire [2:0] process_chan_block_vec;
+wire [2:0] process_axis_block_vec;
 wire df_has_axis_block;
 wire all_process_stop;
 
 assign block = monitor_find_block;
 assign idx2_block = axis_block_sigs[-1];
 assign idx4_block = axis_block_sigs[1];
-assign process_axis_block_vec[0] = idx2_block & (1'b0 | axis_block_sigs[-1]);
+assign process_axis_block_vec[0] = 1'b0;
 assign process_idle_vec[0] = inst_idle_sigs[1];
 assign process_chan_block_vec[0] = inst_block_sigs[1];
-assign process_axis_block_vec[1] = idx4_block & (1'b0 | axis_block_sigs[1]);
+assign process_axis_block_vec[1] = idx2_block & (1'b0 | axis_block_sigs[-1]);
 assign process_idle_vec[1] = inst_idle_sigs[2];
 assign process_chan_block_vec[1] = inst_block_sigs[2];
+assign process_axis_block_vec[2] = idx4_block & (1'b0 | axis_block_sigs[1]);
+assign process_idle_vec[2] = inst_idle_sigs[3];
+assign process_chan_block_vec[2] = inst_block_sigs[3];
 assign df_has_axis_block = |{process_axis_block_vec};
-assign all_process_stop = (process_idle_vec[0] | process_chan_block_vec[0] | process_axis_block_vec[0]) & (process_idle_vec[1] | process_chan_block_vec[1] | process_axis_block_vec[1]);
+assign all_process_stop = (process_idle_vec[0] | process_chan_block_vec[0] | process_axis_block_vec[0]) & (process_idle_vec[1] | process_chan_block_vec[1] | process_axis_block_vec[1]) & (process_idle_vec[2] | process_chan_block_vec[2] | process_axis_block_vec[2]);
 
 always @(posedge clock) begin
     if (reset == 1'b1)

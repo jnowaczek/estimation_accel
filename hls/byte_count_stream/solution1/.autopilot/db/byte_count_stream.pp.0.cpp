@@ -6439,13 +6439,13 @@ typedef unsigned char data_t;
 typedef int result_t;
 typedef int iter_t;
 
-typedef ap_axiu<8, 0, 0, 0> in_pkt;
-typedef ap_axiu<8, 0, 0, 0> out_pkt;
+typedef ap_axiu<8, 1, 1, 1> in_pkt;
+typedef ap_axiu<8, 1, 1, 1> out_pkt;
 
 
 void count(hls::stream<data_t> &in, count_t appear[256]);
 
-void threshold(count_t appear[1024], hls::stream<out_pkt> &out);
+void threshold(count_t appear[1024], hls::stream<out_pkt> &out, bool last_block);
 
 __attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_t> &In, hls::stream<out_pkt> &Out, unsigned int num_blocks);
 # 2 "byte_count_stream/src/byte_count_stream.cpp" 2
@@ -6467,11 +6467,11 @@ __attribute__((sdx_kernel("accelerator", 0))) void accelerator(hls::stream<data_
 
  VITIS_LOOP_10_1: for (unsigned int counter = 0; counter < num_blocks; counter++) {
 #pragma HLS DATAFLOW
-
- count_t appear[256];
+ bool last_block = counter == num_blocks - 1;
+  count_t appear[256];
 
   count(In, appear);
-  threshold(appear, Out);
+  threshold(appear, Out, last_block);
  }
 }
 
@@ -6508,7 +6508,7 @@ void count(hls::stream<data_t> &in, count_t appear[256]) {
  appear[prev] = count;
 }
 
-void threshold(count_t appear[1024], hls::stream<out_pkt> &out) {
+void threshold(count_t appear[1024], hls::stream<out_pkt> &out, bool last_block) {
 #pragma HLS INLINE off
 
  result_t over_thresh = 0;
@@ -6521,7 +6521,7 @@ void threshold(count_t appear[1024], hls::stream<out_pkt> &out) {
 
  out_pkt pkt;
  pkt.data = over_thresh;
- pkt.last = 1;
+ pkt.last = (int) last_block;
 
  out << pkt;
 }

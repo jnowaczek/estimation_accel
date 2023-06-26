@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_10_1'" level="0">
-<item name = "Date">Sun Oct  9 19:36:32 2022
+<item name = "Date">Thu Dec  1 21:55:43 2022
 </item>
 <item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)</item>
 <item name = "Project">byte_count_stream</item>
@@ -32,6 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="count_U0">count, 1157, 1157, 10.828 us, 10.828 us, 1157, 1157, no</column>
+<column name="entry_proc_U0">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
 <column name="threshold_U0">threshold, 262, 262, 2.452 us, 2.452 us, 262, 262, no</column>
 </table>
 </item>
@@ -49,14 +50,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 2, -</column>
-<column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 231, 2551, -</column>
+<column name="Expression">-, -, 0, 12, -</column>
+<column name="FIFO">-, -, 198, 136, -</column>
+<column name="Instance">-, -, 297, 2657, -</column>
 <column name="Memory">0, -, 12, 24, 0</column>
-<column name="Multiplexer">-, -, -, -, -</column>
-<column name="Register">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 18, -</column>
+<column name="Register">-, -, 2, -, -</column>
 <specialColumn name="Available">120, 80, 35200, 17600, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, ~0, 14, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 1, 16, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -64,7 +65,8 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="count_U0">count, 0, 0, 171, 2354, 0</column>
-<column name="threshold_U0">threshold, 0, 0, 60, 197, 0</column>
+<column name="entry_proc_U0">entry_proc, 0, 0, 2, 29, 0</column>
+<column name="threshold_U0">threshold, 0, 0, 124, 274, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -78,19 +80,30 @@
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="counter_c_U">0, 99, 0, -, 3, 32, 96</column>
+<column name="num_blocks_c_U">0, 99, 0, -, 3, 32, 96</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="count_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="entry_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_count_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_entry_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_count_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_entry_proc_U0_ap_ready">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_count_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_entry_proc_U0_ap_ready">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -113,9 +126,16 @@
 <column name="Out_r_TDATA">out, 8, axis, Out_r_V_data_V, pointer</column>
 <column name="Out_r_TKEEP">out, 1, axis, Out_r_V_keep_V, pointer</column>
 <column name="Out_r_TSTRB">out, 1, axis, Out_r_V_strb_V, pointer</column>
+<column name="Out_r_TUSER">out, 1, axis, Out_r_V_user_V, pointer</column>
 <column name="Out_r_TLAST">out, 1, axis, Out_r_V_last_V, pointer</column>
-<column name="Out_r_TVALID">out, 1, axis, Out_r_V_last_V, pointer</column>
-<column name="Out_r_TREADY">in, 1, axis, Out_r_V_last_V, pointer</column>
+<column name="Out_r_TID">out, 1, axis, Out_r_V_id_V, pointer</column>
+<column name="Out_r_TDEST">out, 1, axis, Out_r_V_dest_V, pointer</column>
+<column name="Out_r_TVALID">out, 1, axis, Out_r_V_dest_V, pointer</column>
+<column name="Out_r_TREADY">in, 1, axis, Out_r_V_dest_V, pointer</column>
+<column name="counter">in, 32, ap_none, counter, scalar</column>
+<column name="counter_ap_vld">in, 1, ap_none, counter, scalar</column>
+<column name="num_blocks">in, 32, ap_none, num_blocks, scalar</column>
+<column name="num_blocks_ap_vld">in, 1, ap_none, num_blocks, scalar</column>
 </table>
 </item>
 </section>

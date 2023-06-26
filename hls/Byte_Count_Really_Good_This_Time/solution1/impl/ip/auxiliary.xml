@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="make_go_fast" xd:componentRef="make_go_fast" xd:initiationInterval="x" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="InStream" xd:originalName="InStream" xd:direction="in" xd:interfaceRef="InStream" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="OutStream" xd:originalName="OutStream" xd:direction="out" xd:interfaceRef="OutStream" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="246" xd:FF="225" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,34 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog" --include "../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0_stub.sv" \
+
+verilog xil_defaultlib  --include "../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog" --include "../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_xlconstant_0_0/sim/system_xlconstant_0_0.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_ap_bound.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_control_s_axi.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_count.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_count_Pipeline_APPEARANCES.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_dataflow_in_loop_VITIS_LOOP_10_1.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_flow_control_loop_pipe_sequential_init.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_hls_deadlock_detection_unit.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_hls_deadlock_idx0_monitor.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_hls_deadlock_idx1_monitor.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_threshold.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_threshold_Pipeline_VITIS_LOOP_58_1.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator.v" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_accelerator_0_0/sim/system_accelerator_0_0.v" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_xbar_2/sim/system_xbar_2.v" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_xbar_3/sim/system_xbar_3.v" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_auto_us_2/sim/system_auto_us_2.v" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_auto_pc_4/sim/system_auto_pc_4.v" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_auto_pc_5/sim/system_auto_pc_5.v" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/sim/system.v" \
+"../../../../zc702_estimation_platform.gen/sources_1/bd/system/hdl/system_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

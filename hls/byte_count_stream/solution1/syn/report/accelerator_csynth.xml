@@ -46,8 +46,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>0</BRAM_18K>
-<FF>974</FF>
-<LUT>2856</LUT>
+<FF>1240</FF>
+<LUT>3126</LUT>
 <URAM>0</URAM>
 <DSP>0</DSP>
 </Resources>
@@ -354,6 +354,18 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
+<name>Out_r_TUSER</name>
+<Object>Out_r_V_user_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
 <name>Out_r_TLAST</name>
 <Object>Out_r_V_last_V</Object>
 <Type>pointer</Type>
@@ -366,8 +378,32 @@
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>
+<name>Out_r_TID</name>
+<Object>Out_r_V_id_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>Out_r_TDEST</name>
+<Object>Out_r_V_dest_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>axis</IOProtocol>
+<IOConfig>register, both mode</IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
 <name>Out_r_TVALID</name>
-<Object>Out_r_V_last_V</Object>
+<Object>Out_r_V_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>
@@ -379,7 +415,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>Out_r_TREADY</name>
-<Object>Out_r_V_last_V</Object>
+<Object>Out_r_V_dest_V</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>axis</IOProtocol>

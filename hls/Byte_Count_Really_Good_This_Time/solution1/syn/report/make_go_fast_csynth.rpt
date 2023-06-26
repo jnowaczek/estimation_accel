@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vitis HLS Report for 'make_go_fast'
+================================================================
+* Date:           Sun Jan 29 14:07:10 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
+* Project:        Byte_Count_Really_Good_This_Time
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.538 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                         |                      |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |         Instance        |        Module        |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +-------------------------+----------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |split_input_stream_U0    |split_input_stream    |        ?|        ?|          ?|          ?|    ?|    ?|       no|
+        |process_split_stream_U0  |process_split_stream  |        1|        1|  10.000 ns|  10.000 ns|    1|    1|       no|
+        +-------------------------+----------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        1|    -|     159|     77|    -|
+|Instance         |        0|    -|      66|    167|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        1|    0|     225|    246|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+----+----+----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP| FF | LUT| URAM|
+    +-------------------------+----------------------+---------+----+----+----+-----+
+    |control_s_axi_U          |control_s_axi         |        0|   0|  36|  40|    0|
+    |process_split_stream_U0  |process_split_stream  |        0|   0|   4|  49|    0|
+    |split_input_stream_U0    |split_input_stream    |        0|   0|  26|  78|    0|
+    +-------------------------+----------------------+---------+----+----+----+-----+
+    |Total                    |                      |        0|   0|  66| 167|    0|
+    +-------------------------+----------------------+---------+----+----+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +----------------+---------+-----+----+-----+------+-----+---------+
+    |      Name      | BRAM_18K|  FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +----------------+---------+-----+----+-----+------+-----+---------+
+    |split_buffer_U  |        1|  159|   0|    -|   256|    9|     2304|
+    +----------------+---------+-----+----+-----+------+-----+---------+
+    |Total           |        1|  159|   0|    0|   256|    9|     2304|
+    +----------------+---------+-----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++-----------------------+-----+-----+------------+--------------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|       s_axi|             control|   return void|
+|s_axi_control_AWREADY  |  out|    1|       s_axi|             control|   return void|
+|s_axi_control_AWADDR   |   in|    4|       s_axi|             control|   return void|
+|s_axi_control_WVALID   |   in|    1|       s_axi|             control|   return void|
+|s_axi_control_WREADY   |  out|    1|       s_axi|             control|   return void|
+|s_axi_control_WDATA    |   in|   32|       s_axi|             control|   return void|
+|s_axi_control_WSTRB    |   in|    4|       s_axi|             control|   return void|
+|s_axi_control_ARVALID  |   in|    1|       s_axi|             control|   return void|
+|s_axi_control_ARREADY  |  out|    1|       s_axi|             control|   return void|
+|s_axi_control_ARADDR   |   in|    4|       s_axi|             control|   return void|
+|s_axi_control_RVALID   |  out|    1|       s_axi|             control|   return void|
+|s_axi_control_RREADY   |   in|    1|       s_axi|             control|   return void|
+|s_axi_control_RDATA    |  out|   32|       s_axi|             control|   return void|
+|s_axi_control_RRESP    |  out|    2|       s_axi|             control|   return void|
+|s_axi_control_BVALID   |  out|    1|       s_axi|             control|   return void|
+|s_axi_control_BREADY   |   in|    1|       s_axi|             control|   return void|
+|s_axi_control_BRESP    |  out|    2|       s_axi|             control|   return void|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|        make_go_fast|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|        make_go_fast|  return value|
+|interrupt              |  out|    1|  ap_ctrl_hs|        make_go_fast|  return value|
+|InStream_TDATA         |   in|    8|        axis|   InStream_V_data_V|       pointer|
+|InStream_TKEEP         |   in|    1|        axis|   InStream_V_keep_V|       pointer|
+|InStream_TSTRB         |   in|    1|        axis|   InStream_V_strb_V|       pointer|
+|InStream_TLAST         |   in|    1|        axis|   InStream_V_last_V|       pointer|
+|InStream_TVALID        |   in|    1|        axis|   InStream_V_last_V|       pointer|
+|InStream_TREADY        |  out|    1|        axis|   InStream_V_last_V|       pointer|
+|OutStream_TDATA        |  out|    8|        axis|  OutStream_V_data_V|       pointer|
+|OutStream_TKEEP        |  out|    1|        axis|  OutStream_V_keep_V|       pointer|
+|OutStream_TSTRB        |  out|    1|        axis|  OutStream_V_strb_V|       pointer|
+|OutStream_TLAST        |  out|    1|        axis|  OutStream_V_last_V|       pointer|
+|OutStream_TVALID       |  out|    1|        axis|  OutStream_V_last_V|       pointer|
+|OutStream_TREADY       |   in|    1|        axis|  OutStream_V_last_V|       pointer|
++-----------------------+-----+-----+------------+--------------------+--------------+
+

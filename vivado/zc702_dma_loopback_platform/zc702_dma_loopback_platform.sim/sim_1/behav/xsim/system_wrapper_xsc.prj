@@ -1,0 +1,4 @@
+# compile SystemC design source files
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim_tlm/processing_system7_v5_5_tlm.cpp"
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0_sc.cpp"
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.cpp"

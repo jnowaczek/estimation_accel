@@ -11,17 +11,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 7 \
-    name appear \
+    id 11 \
+    name appear_V1 \
     reset_level 1 \
     sync_rst true \
     dir I \
-    corename appear \
+    corename appear_V1 \
     op interface \
-    ports { appear_address0 { O 8 vector } appear_ce0 { O 1 bit } appear_q0 { I 3 vector } } \
+    ports { appear_V1_address0 { O 8 vector } appear_V1_ce0 { O 1 bit } appear_V1_q0 { I 3 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'appear'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'appear_V1'"
 }
 }
 
@@ -29,7 +29,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 12 \
     name over_thresh_out \
     type other \
     dir O \

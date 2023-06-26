@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=9.359000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.659300,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=974,HLS_SYN_LUT=2856,HLS_VERSION=2022_1}" *)
+(* CORE_GENERATION_INFO="accelerator_accelerator,hls_ip_2022_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7z010i-clg225-1L,HLS_INPUT_CLOCK=9.359000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=6.659300,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=1240,HLS_SYN_LUT=3126,HLS_VERSION=2022_1}" *)
 
 module accelerator (
         s_axi_control_AWVALID,
@@ -34,7 +34,10 @@ module accelerator (
         Out_r_TDATA,
         Out_r_TKEEP,
         Out_r_TSTRB,
+        Out_r_TUSER,
         Out_r_TLAST,
+        Out_r_TID,
+        Out_r_TDEST,
         In_r_TVALID,
         In_r_TREADY,
         Out_r_TVALID,
@@ -72,7 +75,10 @@ input  [7:0] In_r_TDATA;
 output  [7:0] Out_r_TDATA;
 output  [0:0] Out_r_TKEEP;
 output  [0:0] Out_r_TSTRB;
+output  [0:0] Out_r_TUSER;
 output  [0:0] Out_r_TLAST;
+output  [0:0] Out_r_TID;
+output  [0:0] Out_r_TDEST;
 input   In_r_TVALID;
 output   In_r_TREADY;
 output   Out_r_TVALID;
@@ -87,9 +93,12 @@ reg    ap_idle;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDATA;
 wire   [0:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TKEEP;
 wire   [0:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TSTRB;
+wire   [0:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TUSER;
 wire   [0:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TLAST;
-wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY;
+wire   [0:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TID;
+wire   [0:0] dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDEST;
 wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_start;
+wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY;
 wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TVALID;
 wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done;
 wire    dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready;
@@ -158,10 +167,17 @@ accelerator_dataflow_in_loop_VITIS_LOOP_10_1 dataflow_in_loop_VITIS_LOOP_10_1_U0
     .Out_r_TDATA(dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDATA),
     .Out_r_TKEEP(dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TKEEP),
     .Out_r_TSTRB(dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TSTRB),
+    .Out_r_TUSER(dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TUSER),
     .Out_r_TLAST(dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TLAST),
+    .Out_r_TID(dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TID),
+    .Out_r_TDEST(dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDEST),
+    .counter(ap_loop_dataflow_input_count),
+    .num_blocks(num_blocks),
+    .counter_ap_vld(1'b0),
+    .num_blocks_ap_vld(1'b1),
+    .ap_start(dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_start),
     .In_r_TVALID(In_r_TVALID),
     .In_r_TREADY(dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY),
-    .ap_start(dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_start),
     .Out_r_TVALID(dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TVALID),
     .Out_r_TREADY(Out_r_TREADY),
     .ap_done(dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done),
@@ -187,7 +203,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         ap_bound_reg_ack <= 1'b0;
     end else begin
-        if (((ap_internal_ready == 1'b0) & (ap_start == 1'b1))) begin
+        if (((ap_start == 1'b1) & (ap_internal_ready == 1'b0))) begin
             ap_bound_reg_ack <= ap_bound_ack;
         end else begin
             ap_bound_reg_ack <= 1'b0;
@@ -199,9 +215,9 @@ always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
         ap_loop_dataflow_input_count <= 32'd0;
     end else begin
-        if ((~(ap_loop_dataflow_input_count == ap_bound_minus_1) & (ap_real_start == 1'b1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready == 1'b1))) begin
+        if ((~(ap_loop_dataflow_input_count == ap_bound_minus_1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready == 1'b1) & (ap_real_start == 1'b1))) begin
             ap_loop_dataflow_input_count <= (ap_loop_dataflow_input_count + 32'd1);
-        end else if (((ap_real_start == 1'b1) & (ap_loop_dataflow_input_count == ap_bound_minus_1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready == 1'b1))) begin
+        end else if (((ap_loop_dataflow_input_count == ap_bound_minus_1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready == 1'b1) & (ap_real_start == 1'b1))) begin
             ap_loop_dataflow_input_count <= 32'd0;
         end
     end
@@ -213,7 +229,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((~(ap_bound_dout <= 32'd0) & ~(ap_loop_dataflow_output_count == ap_bound_minus_1_output) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue == 1'b1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done == 1'b1) & (1'b1 == ap_bound_empty_n))) begin
             ap_loop_dataflow_output_count <= (ap_loop_dataflow_output_count + 32'd1);
-        end else if ((~(ap_bound_dout <= 32'd0) & (ap_loop_dataflow_output_count == ap_bound_minus_1_output) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue == 1'b1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done == 1'b1) & (1'b1 == ap_bound_empty_n))) begin
+        end else if ((~(ap_bound_dout <= 32'd0) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_continue == 1'b1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done == 1'b1) & (1'b1 == ap_bound_empty_n) & (ap_loop_dataflow_output_count == ap_bound_minus_1_output))) begin
             ap_loop_dataflow_output_count <= 32'd0;
         end
     end
@@ -228,7 +244,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_loop_dataflow_output_count == 32'd0) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_idle == 1'b1) & (ap_start == 1'b0) & (1'b0 == ap_bound_empty_n))) begin
+    if (((dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_idle == 1'b1) & (ap_start == 1'b0) & (1'b0 == ap_bound_empty_n) & (ap_loop_dataflow_output_count == 32'd0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -236,7 +252,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_bound_empty_n) & ((32'd0 == ap_bound_dout) | ((ap_loop_dataflow_output_count == ap_bound_minus_1_output) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done == 1'b1))))) begin
+    if (((1'b1 == ap_bound_empty_n) & ((32'd0 == ap_bound_dout) | ((dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_done == 1'b1) & (ap_loop_dataflow_output_count == ap_bound_minus_1_output))))) begin
         ap_internal_done = 1'b1;
     end else begin
         ap_internal_done = 1'b0;
@@ -252,7 +268,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((ap_real_start == 1'b1) & (ap_loop_dataflow_input_count == ap_bound_minus_1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready == 1'b1))) begin
+    if (((ap_loop_dataflow_input_count == ap_bound_minus_1) & (dataflow_in_loop_VITIS_LOOP_10_1_U0_ap_ready == 1'b1) & (ap_real_start == 1'b1))) begin
         ap_partial_ready = 1'b1;
     end else begin
         ap_partial_ready = 1'b0;
@@ -273,11 +289,17 @@ assign In_r_TREADY = dataflow_in_loop_VITIS_LOOP_10_1_U0_In_r_TREADY;
 
 assign Out_r_TDATA = dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDATA;
 
+assign Out_r_TDEST = dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TDEST;
+
+assign Out_r_TID = dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TID;
+
 assign Out_r_TKEEP = dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TKEEP;
 
 assign Out_r_TLAST = dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TLAST;
 
 assign Out_r_TSTRB = dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TSTRB;
+
+assign Out_r_TUSER = dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TUSER;
 
 assign Out_r_TVALID = dataflow_in_loop_VITIS_LOOP_10_1_U0_Out_r_TVALID;
 

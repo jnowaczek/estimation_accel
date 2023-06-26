@@ -1,0 +1,15 @@
+In file included from ../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.cpp:54:0:
+../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim_tlm/processing_system7_v5_5_tlm.h:63:21: fatal error: genattr.h: No such file or directory
+ #include "genattr.h"
+                     ^
+In file included from ../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0_sc.cpp:52:0:
+../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim_tlm/processing_system7_v5_5_tlm.h:63:21: fatal error: genattr.h: No such file or directory
+ #include "genattr.h"
+                     ^
+compilation terminated.
+compilation terminated.
+In file included from ../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim_tlm/processing_system7_v5_5_tlm.cpp:50:0:
+../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim_tlm/processing_system7_v5_5_tlm.h:63:21: fatal error: genattr.h: No such file or directory
+ #include "genattr.h"
+                     ^
+compilation terminated.

@@ -12,8 +12,10 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="byte_count_stream" solutionName="solution1" date="2022-10-09T19:36:33.083-0500" type="Warning"/>
-        <logs message="WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'." projectName="byte_count_stream" solutionName="solution1" date="2022-10-09T19:36:28.125-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="byte_count_stream" solutionName="solution1" date="2022-12-01T21:55:43.698-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1614] Cosimulation may deadlock if process dataflow_in_loop_VITIS_LOOP_10_1 has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream" projectName="byte_count_stream" solutionName="solution1" date="2022-12-01T21:55:38.976-0600" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1449] Process dataflow_in_loop_VITIS_LOOP_10_1 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process." projectName="byte_count_stream" solutionName="solution1" date="2022-12-01T21:55:38.961-0600" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'." projectName="byte_count_stream" solutionName="solution1" date="2022-12-01T21:55:38.945-0600" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

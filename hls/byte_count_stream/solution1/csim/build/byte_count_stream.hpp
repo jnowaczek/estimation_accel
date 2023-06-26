@@ -38,12 +38,12 @@ typedef unsigned char data_t;
 typedef int result_t;
 typedef int iter_t;
 
-typedef ap_axiu<DATA_T_WIDTH, 0, 0, 0> in_pkt;
-typedef ap_axiu<RESULT_T_WIDTH, 0, 0, 0> out_pkt;
+typedef ap_axiu<DATA_T_WIDTH, 1, 1, 1> in_pkt;
+typedef ap_axiu<RESULT_T_WIDTH, 1, 1, 1> out_pkt;
 
 // Function prototypes
 void count(hls::stream<data_t> &in, count_t appear[COUNT_BUCKETS]);
 
-void threshold(count_t appear[BLOCK_LENGTH], hls::stream<out_pkt> &out);
+void threshold(count_t appear[BLOCK_LENGTH], hls::stream<out_pkt> &out, bool last_block);
 
 void accelerator(hls::stream<data_t> &In, hls::stream<out_pkt> &Out, unsigned int num_blocks);

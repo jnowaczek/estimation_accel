@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="storage" DISPLAY="bind_storage fifo" ID="" IMPL="memory" LATENCY="0" OPTYPE="fifo" PRAGMA="" RTLNAME="split_buffer_U" SOURCE="" VARIABLE="split_buffer" MODULE="make_go_fast" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="1" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="make_go_fast" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

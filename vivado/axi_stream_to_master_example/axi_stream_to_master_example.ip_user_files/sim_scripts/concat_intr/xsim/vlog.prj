@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../bd/concat_intr/ip/concat_intr_xlconcat_0_0/sim/concat_intr_xlconcat_0_0.v" \
+"../../../bd/concat_intr/sim/concat_intr.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

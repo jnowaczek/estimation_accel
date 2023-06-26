@@ -1,0 +1,53 @@
+<pragmas>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="231" pragmaType="inline" parentfunction="ap_int_base<1, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="173" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="587" pragmaType="inline" parentfunction="ap_int_base<1, false>::operator unsigned long long() const" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="154" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="144" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="567" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int(unsigned long)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="173" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="154" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="559" pragmaType="inline" parentfunction="_ZN8ssdm_intILi1ELb1EEC2EDq1_i" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="231" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base<64, false>(ap_int_base<64, false> const&)" off="0" region="0" recursive="0"/>
+<pragma file="example.cpp" line="25" pragmaType="pipeline" parentfunction="streamtoparallelwithburst" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="238" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint<64>(ap_int<64> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="144" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="67" pragmaType="inline" parentfunction="ap_int<64>::ap_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="67" pragmaType="inline" parentfunction="ap_int<1>::ap_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="85" pragmaType="inline" parentfunction="ap_int<64>::ap_int<64>(ap_uint<64> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h" line="291" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="947" pragmaType="inline" parentfunction="ap_int_base<1, false>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="947" pragmaType="inline" parentfunction="ap_int_base<1, true>::operator!() const" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="231" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base<64, true>(ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<1, true>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="example.cpp" line="39" pragmaType="pipeline" parentfunction="getinstream" off="0" ii="-1" rewind="0" style=""/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="85" pragmaType="inline" parentfunction="ap_int<1>::ap_int<1>(ap_uint<1> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<64, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="208" pragmaType="inline" parentfunction="hls::stream<int, 64>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="208" pragmaType="inline" parentfunction="hls::stream<data, 4096>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="example.cpp" line="58" pragmaType="dataflow" parentfunction="example" disable_start_propagation="0"/>
+<pragma file="example.cpp" line="53" pragmaType="interface" parentfunction="example" mode="axis" port="inStreamTop" register="1" register_mode="both" name="" depth="-1"/>
+<pragma file="example.cpp" line="54" pragmaType="interface" parentfunction="example" mode="m_axi" port="outTop" bundle="gmem0" offset="" name="" depth="1024" num_read_outstanding="-1" num_write_outstanding="-1" max_burst_read_length="-1" max_burst_write_length="256" latency="10" max_widen_bitwidth="-1"/>
+<pragma file="example.cpp" line="55" pragmaType="interface" parentfunction="example" mode="s_axilite" port="outTop" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="example.cpp" line="56" pragmaType="interface" parentfunction="example" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="559" pragmaType="inline" parentfunction="ssdm_int<64, true>::ssdm_int(long)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="221" pragmaType="inline" parentfunction="ap_int_base<8, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="103" pragmaType="inline" parentfunction="hls::stream<data, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" line="103" pragmaType="inline" parentfunction="hls::stream<int, 0>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="230" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="230" pragmaType="inline" parentfunction="ap_uint<64>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h" line="230" pragmaType="inline" parentfunction="ap_uint<8>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<1, true>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<8, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<1, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<64, true>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<64, false>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+</pragmas>

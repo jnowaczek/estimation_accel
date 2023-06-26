@@ -13,11 +13,11 @@ set hasInterrupt 0
 set C_modelName {threshold_Pipeline_VITIS_LOOP_58_1}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ appear int 3 regular {array 256 { 1 3 } 1 1 }  }
+	{ appear_V1 int 3 regular {array 256 { 1 3 } 1 1 }  }
 	{ over_thresh_out int 8 regular {pointer 1}  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "appear", "interface" : "memory", "bitwidth" : 3, "direction" : "READONLY"} , 
+	{ "Name" : "appear_V1", "interface" : "memory", "bitwidth" : 3, "direction" : "READONLY"} , 
  	{ "Name" : "over_thresh_out", "interface" : "wire", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 11
@@ -28,9 +28,9 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ appear_address0 sc_out sc_lv 8 signal 0 } 
-	{ appear_ce0 sc_out sc_logic 1 signal 0 } 
-	{ appear_q0 sc_in sc_lv 3 signal 0 } 
+	{ appear_V1_address0 sc_out sc_lv 8 signal 0 } 
+	{ appear_V1_ce0 sc_out sc_logic 1 signal 0 } 
+	{ appear_V1_q0 sc_in sc_lv 3 signal 0 } 
 	{ over_thresh_out sc_out sc_lv 8 signal 1 } 
 	{ over_thresh_out_ap_vld sc_out sc_logic 1 outvld 1 } 
 }
@@ -41,9 +41,9 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "appear_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "appear", "role": "address0" }} , 
- 	{ "name": "appear_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "appear", "role": "ce0" }} , 
- 	{ "name": "appear_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "appear", "role": "q0" }} , 
+ 	{ "name": "appear_V1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "appear_V1", "role": "address0" }} , 
+ 	{ "name": "appear_V1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "appear_V1", "role": "ce0" }} , 
+ 	{ "name": "appear_V1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "appear_V1", "role": "q0" }} , 
  	{ "name": "over_thresh_out", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "over_thresh_out", "role": "default" }} , 
  	{ "name": "over_thresh_out_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "over_thresh_out", "role": "ap_vld" }}  ]}
 
@@ -63,7 +63,7 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "appear", "Type" : "Memory", "Direction" : "I"},
+			{"Name" : "appear_V1", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "over_thresh_out", "Type" : "Vld", "Direction" : "O"}],
 		"Loop" : [
 			{"Name" : "VITIS_LOOP_58_1", "PipelineType" : "UPC",
@@ -73,7 +73,7 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	threshold_Pipeline_VITIS_LOOP_58_1 {
-		appear {Type I LastRead 0 FirstWrite -1}
+		appear_V1 {Type I LastRead 0 FirstWrite -1}
 		over_thresh_out {Type O LastRead -1 FirstWrite 1}}}
 
 set hasDtUnsupportedChannel 0
@@ -88,6 +88,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	appear { ap_memory {  { appear_address0 mem_address 1 8 }  { appear_ce0 mem_ce 1 1 }  { appear_q0 in_data 0 3 } } }
+	appear_V1 { ap_memory {  { appear_V1_address0 mem_address 1 8 }  { appear_V1_ce0 mem_ce 1 1 }  { appear_V1_q0 in_data 0 3 } } }
 	over_thresh_out { ap_vld {  { over_thresh_out out_data 1 8 }  { over_thresh_out_ap_vld out_vld 1 1 } } }
 }

@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace E:/estimation_accel/hls/byte_count_stream/solution1 opened at Sun Oct 09 19:36:10 -0500 2022
+INFO-FLOW: Workspace E:/estimation_accel/hls/byte_count_stream/solution1 opened at Thu Dec 01 21:55:21 -0600 2022
 Execute     ap_set_clock -name default -period 9.359 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
 Execute     set_part xc7z010i-clg225-1L 
@@ -7,7 +7,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.1\lib\win
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
-Command       create_platform done; 0.512 sec.
+Command       create_platform done; 0.548 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
@@ -18,13 +18,12 @@ Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/inter
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.106 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.151 sec.
+Command       ap_source done; 0.134 sec.
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.677 sec.
+Command     set_part done; 0.694 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Execute     get_config_interface -m_axi_latency 
@@ -53,10 +52,10 @@ Execute     config_export -rtl=verilog
 Execute     send_msg_by_id INFO @200-1464@%s config_export -vendor=jnowaczek 
 INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
 Execute     config_export -vendor=jnowaczek 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.0.9 
-INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.9
-Execute     config_export -version=1.0.9 
-Command   open_solution done; 0.716 sec.
+Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.0.13 
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.13
+Execute     config_export -version=1.0.13 
+Command   open_solution done; 0.727 sec.
 Execute   set_part xc7z010i-clg225-1L 
 INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
 Execute     create_platform xc7z010i-clg225-1L -board  
@@ -72,16 +71,16 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.118 sec.
+Command     ap_source done; 0.131 sec.
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.136 sec.
+Command   set_part done; 0.148 sec.
 Execute   create_clock -period 9.359 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
 Execute   config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
-Execute   config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.9 
-INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.9 
+Execute   config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.13 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.13 
 Execute   source ./byte_count_stream/solution1/directives.tcl 
 INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
 Execute     set_directive_top -name accelerator accelerator 
@@ -100,7 +99,7 @@ Execute     get_config_compile -skip_transform
 Execute     get_config_compile -pre_tcl 
 Execute     get_config_compile -keep_printf 
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.015 seconds; current allocated memory: 743.594 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 736.660 MB.
 INFO: [HLS 200-10] Analyzing design file 'byte_count_stream/src/byte_count_stream.cpp' ... 
 INFO-FLOW: Compiling one TU...
 Execute       get_config_compile -pragma_strict_mode 
@@ -116,33 +115,33 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/huddle
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
 INFO-FLOW: Source syntax check for synthesis
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/clang.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/clang.err.log 
-Command       ap_eval done; 0.751 sec.
+Command       ap_eval done; 0.727 sec.
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/.systemc_flag -fix-errors E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.764 sec.
+Command       clang_tidy done; 0.694 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/all.directive.json -fix-errors E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.92 sec.
+Command       clang_tidy done; 0.953 sec.
 Execute       clang_tidy xilinx-remove-assert -desc remove-assert E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-remove-assert -fix-errors E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.72 sec.
+Command       clang_tidy done; 0.689 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.6 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp std=gnu++14 -target fpga  
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.clang-tidy.loop-label.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.clang-tidy.loop-label.err.log 
-Command         ap_eval done; 1.117 sec.
+Command         ap_eval done; 1.09 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Command       clang_tidy done; 1.179 sec.
+Command       clang_tidy done; 1.146 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.xilinx-dataflow-lawyer.err.log 
-Command       ap_eval done; 0.668 sec.
+Command       ap_eval done; 0.646 sec.
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
 INFO-FLOW: compiling source code to llvm bc
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.clang.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.pp.0.cpp.clang.err.log 
-Command       ap_eval done; 0.776 sec.
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 6.172 seconds; current allocated memory: 1.099 GB.
+Command       ap_eval done; 0.806 sec.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 6.012 seconds; current allocated memory: 1.099 GB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.0.bc -args  "E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/byte_count_stream.g.bc"  
@@ -154,19 +153,19 @@ INFO-FLOW:
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.2.m1.bc -args E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsmc++_39.bc 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libhlsmc++_39.bc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.2.m1.bc > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log 
-Command         ap_eval done; 3.028 sec.
+Command         ap_eval done; 3.027 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 3.033 sec.
+Command       run_link_or_opt done; 3.03 sec.
 Execute       run_link_or_opt -opt -out E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=accelerator -reflow-float-conversion 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=accelerator -reflow-float-conversion -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.3.fpc.bc > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log 
-Command         ap_eval done; 1.261 sec.
+Command         ap_eval done; 1.185 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 1.267 sec.
+Command       run_link_or_opt done; 1.188 sec.
 Execute       run_link_or_opt -out E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.4.m2.bc -args E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libfloatconversion_39.bc 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2022.1/win64/lib/libfloatconversion_39.bc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.4.m2.bc > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log 
-Command         ap_eval done; 0.149 sec.
+Command         ap_eval done; 0.131 sec.
 INFO-FLOW: 
-Command       run_link_or_opt done; 0.153 sec.
+Command       run_link_or_opt done; 0.133 sec.
 Execute       run_link_or_opt -opt -out E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=accelerator 
 Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=accelerator -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.5.gdce.bc > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log 
 INFO-FLOW: 
@@ -213,7 +212,7 @@ Execute       is_m_axi_addr64
 Execute       get_clock_period -ns -default 
 INFO-FLOW: Doing LTO.
 Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2022.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.0.bc.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=accelerator -mllvm -hls-db-dir -mllvm E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=2 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-array-partition=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -reflow-enable-maxi-addr-32bits -x ir E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.lto.bc -hls-platform-db-name=C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/platform.db -hls-platform-name=zynq_slow -device-resource-info=BRAM_120.000000_DSP_80.000000_FF_35200.000000_LUT_17600.000000_SLICE_4400.000000_URAM_0.000000 > E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.0.bc.clang.out.log 2> E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.ld.0.bc.clang.err.log 
-Command       ap_eval done; 0.719 sec.
+Command       ap_eval done; 0.839 sec.
 INFO: [HLS 214-131] Inlining function 'ssdm_int<32, false>::ssdm_int(unsigned int)' into 'ap_int_base<32, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
 INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base(int)' into 'ap_int_base<32, false>::RType<32, false>::arg1 operator>><32, false>(ap_int_base<32, false> const&, int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:1715:558)
 INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi3ELb0EEC2EDq3_j' into 'ap_int_base<3, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
@@ -271,49 +270,51 @@ INFO: [HLS 214-131] Inlining function 'ssdm_int<8, false>::ssdm_int(unsigned cha
 INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base(int)' into 'ap_uint<8>::ap_uint(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int.h:333:58)
 INFO: [HLS 214-131] Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base<1, false>::ap_int_base(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:260:67)
 INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_uint<1>::ap_uint(int)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int.h:333:58)
-INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
-INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
-INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
-INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
-INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
-INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
-INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:262:86)
-INFO: [HLS 214-131] Inlining function 'bool operator><3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:59:17)
-INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::operator<<(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&)' (byte_count_stream/src/byte_count_stream.cpp:68:6)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' into 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:262:86)
+INFO: [HLS 214-131] Inlining function 'bool operator><3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0>(ap_fixed_base<3, 3, false, (ap_q_mode)5, (ap_o_mode)0, 0> const&, int)' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>&, bool)' (byte_count_stream/src/byte_count_stream.cpp:59:17)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>::operator<<(hls::axis<ap_uint<8>, 1ul, 1ul, 1ul> const&)' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>&, bool)' (byte_count_stream/src/byte_count_stream.cpp:68:6)
 INFO: [HLS 214-186] Unrolling loop 'RESET' (byte_count_stream/src/byte_count_stream.cpp:24:9) in function 'count' completely with a factor of 256 (byte_count_stream/src/byte_count_stream.cpp:20:0)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint<8>s' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
-INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint<8>s' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>&, bool)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint<1>s' into 'threshold(ap_ufixed<3, 3, (ap_q_mode)5, (ap_o_mode)0, 0>*, hls::stream<hls::axis<ap_uint<8>, 1ul, 1ul, 1ul>, 0>&, bool)' (C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.427 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 8.562 seconds; current allocated memory: 1.099 GB.
 INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 1.099 GB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top accelerator -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.0.bc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 0.125 sec.
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.146 seconds; current allocated memory: 1.099 GB.
+Command         transform done; 0.179 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.201 seconds; current allocated memory: 1.099 GB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.1.bc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 0.15 sec.
+Command         transform done; 0.155 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.2.prechk.bc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.258 seconds; current allocated memory: 1.099 GB.
+Command         transform done; 0.11 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.273 seconds; current allocated memory: 1.099 GB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.g.1.bc to E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -scalar-auto-dep-elim -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.o.1.bc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.o.1.tmp.bc -f 
 INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_58_1' (byte_count_stream/src/byte_count_stream.cpp:56) in function 'threshold' automatically.
-INFO: [XFORM 203-721] Extract dataflow region from loop VITIS_LOOP_10_1 (byte_count_stream/src/byte_count_stream.cpp:13)  of function 'accelerator'.
-INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_VITIS_LOOP_10_1' (byte_count_stream/src/byte_count_stream.cpp:11:3), detected/extracted 2 process function(s): 
+INFO: [XFORM 203-721] Extract dataflow region from loop VITIS_LOOP_10_1 (byte_count_stream/src/byte_count_stream.cpp:12)  of function 'accelerator'.
+INFO: [XFORM 203-712] Applying dataflow to function 'dataflow_in_loop_VITIS_LOOP_10_1' (byte_count_stream/src/byte_count_stream.cpp:11:3), detected/extracted 3 process function(s): 
+	 'entry_proc'
 	 'count'
 	 'threshold'.
-Command         transform done; 0.459 sec.
+Command         transform done; 0.382 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.o.1.tmp.bc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-Command         transform done; 0.191 sec.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.652 seconds; current allocated memory: 1.099 GB.
+Command         transform done; 0.179 sec.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.564 seconds; current allocated memory: 1.099 GB.
 Execute         get_config_compile -enable_auto_rewind 
 Execute         get_config_compile -enable_loop_extract 
 INFO-FLOW: Building ssdm...
@@ -323,13 +324,15 @@ INFO: [HLS 200-472] Inferring partial write operation for 'appear' (byte_count_s
 INFO: [HLS 200-472] Inferring partial write operation for 'appear' (byte_count_stream/src/byte_count_stream.cpp:50:15)
 WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'.
 WARNING: [ANALYSIS 214-52] Found false 'RAW' intra dependency for variable 'appear'.
-Command         transform done; 1.137 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.139 seconds; current allocated memory: 1.099 GB.
+WARNING: [HLS 200-1449] Process dataflow_in_loop_VITIS_LOOP_10_1 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.
+WARNING: [HLS 200-1614] Cosimulation may deadlock if process dataflow_in_loop_VITIS_LOOP_10_1 has a streamed top-level array input and has predecessor processes. If a deadlock occurs, please consider converting the streamed array into an hls::stream
+Command         transform done; 1.049 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.051 seconds; current allocated memory: 1.099 GB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 2.205 sec.
-Command     elaborate done; 16.825 sec.
+Command       opt_and_import_c done; 2.109 sec.
+Command     elaborate done; 16.703 sec.
 Execute     ap_eval exec zip -j E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
-Command     ap_eval done; 0.11 sec.
+Command     ap_eval done; 0.128 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -342,8 +345,12 @@ Execute       preproc_iomode -model threshold
 Execute       preproc_iomode -model threshold_Pipeline_VITIS_LOOP_58_1 
 Execute       preproc_iomode -model count 
 Execute       preproc_iomode -model count_Pipeline_APPEARANCES 
+Execute       preproc_iomode -model entry_proc 
 Execute       get_model_list accelerator -filter all-wo-channel 
-INFO-FLOW: Model list for configure: count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: Model list for configure: entry_proc count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: Configuring Module : entry_proc ...
+Execute       set_default_model entry_proc 
+Execute       apply_spec_resource_limit entry_proc 
 INFO-FLOW: Configuring Module : count_Pipeline_APPEARANCES ...
 Execute       set_default_model count_Pipeline_APPEARANCES 
 Execute       apply_spec_resource_limit count_Pipeline_APPEARANCES 
@@ -362,7 +369,11 @@ Execute       apply_spec_resource_limit dataflow_in_loop_VITIS_LOOP_10_1
 INFO-FLOW: Configuring Module : accelerator ...
 Execute       set_default_model accelerator 
 Execute       apply_spec_resource_limit accelerator 
-INFO-FLOW: Model list for preprocess: count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: Model list for preprocess: entry_proc count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: Preprocessing Module: entry_proc ...
+Execute       set_default_model entry_proc 
+Execute       cdfg_preprocess -model entry_proc 
+Execute       rtl_gen_preprocess entry_proc 
 INFO-FLOW: Preprocessing Module: count_Pipeline_APPEARANCES ...
 Execute       set_default_model count_Pipeline_APPEARANCES 
 Execute       cdfg_preprocess -model count_Pipeline_APPEARANCES 
@@ -387,7 +398,33 @@ INFO-FLOW: Preprocessing Module: accelerator ...
 Execute       set_default_model accelerator 
 Execute       cdfg_preprocess -model accelerator 
 Execute       rtl_gen_preprocess accelerator 
-INFO-FLOW: Model list for synthesis: count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: Model list for synthesis: entry_proc count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model entry_proc 
+Execute       schedule -model entry_proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.245 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling entry_proc.
+Execute       set_default_model entry_proc 
+Execute       bind -model entry_proc 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 1.099 GB.
+Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.bind.adb -f 
+INFO-FLOW: Finish binding entry_proc.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'count_Pipeline_APPEARANCES' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -397,7 +434,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'APPEARANCES'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'APPEARANCES'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.247 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count_Pipeline_APPEARANCES.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -423,8 +460,8 @@ Execute       set_default_model count
 Execute       schedule -model count 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.594 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.676 seconds; current allocated memory: 1.099 GB.
+Command       schedule done; 0.59 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.67 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -438,14 +475,14 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-Command       bind done; 0.328 sec.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.874 seconds; current allocated memory: 1.099 GB.
+Command       bind done; 0.276 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.824 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.203 sec.
+Command       syn_report done; 0.168 sec.
 Execute       db_write -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.bind.adb -f 
-Command       db_write done; 0.122 sec.
+Command       db_write done; 0.111 sec.
 INFO-FLOW: Finish binding count.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'threshold_Pipeline_VITIS_LOOP_58_1' 
@@ -456,7 +493,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_58_1'.
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_58_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.417 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.355 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold_Pipeline_VITIS_LOOP_58_1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -469,7 +506,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold_Pipeline_VITIS_LOOP_58_1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -482,7 +519,7 @@ Execute       set_default_model threshold
 Execute       schedule -model threshold 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.109 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.075 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -495,7 +532,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.066 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -508,7 +545,7 @@ Execute       set_default_model dataflow_in_loop_VITIS_LOOP_10_1
 Execute       schedule -model dataflow_in_loop_VITIS_LOOP_10_1 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.082 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/dataflow_in_loop_VITIS_LOOP_10_1.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -521,7 +558,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/dataflow_in_loop_VITIS_LOOP_10_1.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -534,7 +571,7 @@ Execute       set_default_model accelerator
 Execute       schedule -model accelerator 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.14 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.verbose.sched.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -547,7 +584,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.101 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 1.099 GB.
 Execute       syn_report -verbosereport -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.verbose.bind.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
@@ -555,13 +592,39 @@ Execute       db_write -o E:/estimation_accel/hls/byte_count_stream/solution1/.a
 INFO-FLOW: Finish binding accelerator.
 Execute       get_model_list accelerator -filter all-wo-channel 
 INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess entry_proc 
 Execute       rtl_gen_preprocess count_Pipeline_APPEARANCES 
 Execute       rtl_gen_preprocess count 
 Execute       rtl_gen_preprocess threshold_Pipeline_VITIS_LOOP_58_1 
 Execute       rtl_gen_preprocess threshold 
 Execute       rtl_gen_preprocess dataflow_in_loop_VITIS_LOOP_10_1 
 Execute       rtl_gen_preprocess accelerator 
-INFO-FLOW: Model list for RTL generation: count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: Model list for RTL generation: entry_proc count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model entry_proc -top_prefix accelerator_ -sub_prefix accelerator_ -mg_file E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 1.099 GB.
+Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.rtl_wrap.cfg.tcl 
+Execute       gen_rtl entry_proc -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/vhdl/accelerator_entry_proc 
+Execute       gen_rtl entry_proc -style xilinx -f -lang vlog -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/verilog/accelerator_entry_proc 
+Execute       syn_report -csynth -model entry_proc -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/report/entry_proc_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model entry_proc -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/report/entry_proc_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model entry_proc -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model entry_proc -f -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.adb 
+Execute       db_write -model entry_proc -bindview -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info entry_proc -p E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'count_Pipeline_APPEARANCES' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -572,7 +635,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model count_Pipeline_APPEARANCES -top_prefix accelerator_ -sub_prefix accelerator_ -mg_file E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count_Pipeline_APPEARANCES.compgen.tcl 
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'count_Pipeline_APPEARANCES' pipeline 'APPEARANCES' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'count_Pipeline_APPEARANCES'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.079 seconds; current allocated memory: 1.099 GB.
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.rtl_wrap.cfg.tcl 
 Execute       gen_rtl count_Pipeline_APPEARANCES -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/vhdl/accelerator_count_Pipeline_APPEARANCES 
 Execute       gen_rtl count_Pipeline_APPEARANCES -style xilinx -f -lang vlog -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/verilog/accelerator_count_Pipeline_APPEARANCES 
@@ -597,8 +660,8 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model count -top_prefix accelerator_ -sub_prefix accelerator_ -mg_file E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'count'.
-Command       create_rtl_model done; 0.262 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.528 seconds; current allocated memory: 1.099 GB.
+Command       create_rtl_model done; 0.218 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.424 seconds; current allocated memory: 1.099 GB.
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.rtl_wrap.cfg.tcl 
 Execute       gen_rtl count -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/vhdl/accelerator_count 
 Execute       gen_rtl count -style xilinx -f -lang vlog -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/verilog/accelerator_count 
@@ -611,9 +674,9 @@ Execute           get_solution -flow_target
 Execute       syn_report -verbosereport -model count -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.verbose.rpt 
 Execute         AP::get_flow_target_display_name
 Execute           get_solution -flow_target 
-Command       syn_report done; 0.187 sec.
+Command       syn_report done; 0.18 sec.
 Execute       db_write -model count -f -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.adb 
-Command       db_write done; 0.156 sec.
+Command       db_write done; 0.109 sec.
 Execute       db_write -model count -bindview -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/design.bindinfo.xml 
 Execute       gen_tb_info count -p E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db -o E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -626,7 +689,7 @@ Execute       get_config_rtl -module_auto_prefix
 Execute       create_rtl_model threshold_Pipeline_VITIS_LOOP_58_1 -top_prefix accelerator_ -sub_prefix accelerator_ -mg_file E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold_Pipeline_VITIS_LOOP_58_1.compgen.tcl 
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'threshold_Pipeline_VITIS_LOOP_58_1' pipeline 'VITIS_LOOP_58_1' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold_Pipeline_VITIS_LOOP_58_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.849 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.674 seconds; current allocated memory: 1.099 GB.
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.rtl_wrap.cfg.tcl 
 Execute       gen_rtl threshold_Pipeline_VITIS_LOOP_58_1 -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/vhdl/accelerator_threshold_Pipeline_VITIS_LOOP_58_1 
 Execute       gen_rtl threshold_Pipeline_VITIS_LOOP_58_1 -style xilinx -f -lang vlog -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/verilog/accelerator_threshold_Pipeline_VITIS_LOOP_58_1 
@@ -651,7 +714,7 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model threshold -top_prefix accelerator_ -sub_prefix accelerator_ -mg_file E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'threshold'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.124 seconds; current allocated memory: 1.099 GB.
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.rtl_wrap.cfg.tcl 
 Execute       gen_rtl threshold -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/vhdl/accelerator_threshold 
 Execute       gen_rtl threshold -style xilinx -f -lang vlog -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/verilog/accelerator_threshold 
@@ -676,7 +739,7 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_auto_prefix 
 Execute       create_rtl_model dataflow_in_loop_VITIS_LOOP_10_1 -top_prefix accelerator_ -sub_prefix accelerator_ -mg_file E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/dataflow_in_loop_VITIS_LOOP_10_1.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dataflow_in_loop_VITIS_LOOP_10_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 1.099 GB.
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.rtl_wrap.cfg.tcl 
 Execute       gen_rtl dataflow_in_loop_VITIS_LOOP_10_1 -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/vhdl/accelerator_dataflow_in_loop_VITIS_LOOP_10_1 
 Execute       gen_rtl dataflow_in_loop_VITIS_LOOP_10_1 -style xilinx -f -lang vlog -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/verilog/accelerator_dataflow_in_loop_VITIS_LOOP_10_1 
@@ -704,13 +767,16 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/In_r' to 'axis
 INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_data_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_keep_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_user_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/Out_r_V_dest_V' to 'axis' (register, both mode).
 INFO: [RTGEN 206-500] Setting interface mode on port 'accelerator/num_blocks' to 's_axilite & ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'accelerator' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'num_blocks' and 'return' to AXI-Lite port control.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'accelerator'.
-Command       create_rtl_model done; 0.121 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.237 seconds; current allocated memory: 1.099 GB.
+Command       create_rtl_model done; 0.14 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.29 seconds; current allocated memory: 1.099 GB.
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.rtl_wrap.cfg.tcl 
 Execute       gen_rtl accelerator -istop -style xilinx -f -lang vhdl -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/vhdl/accelerator 
 Execute       gen_rtl accelerator -istop -style xilinx -f -lang vlog -o E:/estimation_accel/hls/byte_count_stream/solution1/syn/verilog/accelerator 
@@ -741,7 +807,9 @@ Execute       get_config_rtl -module_prefix
 Execute       get_config_rtl -module_prefix 
 Execute       get_config_rtl -module_auto_prefix 
 Execute       sc_get_portdomain accelerator 
-INFO-FLOW: Model list for RTL component generation: count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: Model list for RTL component generation: entry_proc count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: Handling components in module [entry_proc] ... 
+Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.compgen.tcl 
 INFO-FLOW: Handling components in module [count_Pipeline_APPEARANCES] ... 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count_Pipeline_APPEARANCES.compgen.tcl 
 INFO-FLOW: Found component accelerator_flow_control_loop_pipe_sequential_init.
@@ -760,12 +828,17 @@ INFO-FLOW: Found component accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V
 INFO-FLOW: Append model accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore
 INFO-FLOW: Found component accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W.
 INFO-FLOW: Append model accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W
+INFO-FLOW: Found component accelerator_fifo_w32_d3_S.
+INFO-FLOW: Append model accelerator_fifo_w32_d3_S
+INFO-FLOW: Found component accelerator_fifo_w32_d3_S.
+INFO-FLOW: Append model accelerator_fifo_w32_d3_S
 INFO-FLOW: Handling components in module [accelerator] ... 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.compgen.tcl 
 INFO-FLOW: Found component accelerator_ap_bound.
 INFO-FLOW: Append model accelerator_ap_bound
 INFO-FLOW: Found component accelerator_control_s_axi.
 INFO-FLOW: Append model accelerator_control_s_axi
+INFO-FLOW: Append model entry_proc
 INFO-FLOW: Append model count_Pipeline_APPEARANCES
 INFO-FLOW: Append model count
 INFO-FLOW: Append model threshold_Pipeline_VITIS_LOOP_58_1
@@ -773,14 +846,17 @@ INFO-FLOW: Append model threshold
 INFO-FLOW: Append model dataflow_in_loop_VITIS_LOOP_10_1
 INFO-FLOW: Append model accelerator
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: accelerator_flow_control_loop_pipe_sequential_init accelerator_flow_control_loop_pipe_sequential_init accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W accelerator_ap_bound accelerator_control_s_axi count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
+INFO-FLOW: All models in this session: accelerator_flow_control_loop_pipe_sequential_init accelerator_flow_control_loop_pipe_sequential_init accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W accelerator_fifo_w32_d3_S accelerator_fifo_w32_d3_S accelerator_ap_bound accelerator_control_s_axi entry_proc count_Pipeline_APPEARANCES count threshold_Pipeline_VITIS_LOOP_58_1 threshold dataflow_in_loop_VITIS_LOOP_10_1 accelerator
 INFO-FLOW: Generating E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/autopilot.rtl.models.txt file...
 INFO-FLOW: To file: write model accelerator_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model accelerator_flow_control_loop_pipe_sequential_init
 INFO-FLOW: To file: write model accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore
 INFO-FLOW: To file: write model accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W
+INFO-FLOW: To file: write model accelerator_fifo_w32_d3_S
+INFO-FLOW: To file: write model accelerator_fifo_w32_d3_S
 INFO-FLOW: To file: write model accelerator_ap_bound
 INFO-FLOW: To file: write model accelerator_control_s_axi
+INFO-FLOW: To file: write model entry_proc
 INFO-FLOW: To file: write model count_Pipeline_APPEARANCES
 INFO-FLOW: To file: write model count
 INFO-FLOW: To file: write model threshold_Pipeline_VITIS_LOOP_58_1
@@ -819,14 +895,17 @@ Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/ut
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.129 sec.
+Command       ap_source done; 0.118 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=9.359 (was NA)
 INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/vhdl' dstVlogDir='E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/vlog' tclDir='E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db' modelList='accelerator_flow_control_loop_pipe_sequential_init
 accelerator_flow_control_loop_pipe_sequential_init
 accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore
 accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W
+accelerator_fifo_w32_d3_S
+accelerator_fifo_w32_d3_S
 accelerator_ap_bound
 accelerator_control_s_axi
+entry_proc
 count_Pipeline_APPEARANCES
 count
 threshold_Pipeline_VITIS_LOOP_58_1
@@ -839,6 +918,7 @@ Execute       ap_part_info -name xc7z010i-clg225-1L -data names -quiet
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/global.setting.tcl 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/global.setting.tcl 
+Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.compgen.tcl 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count_Pipeline_APPEARANCES.compgen.tcl 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.compgen.tcl 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold_Pipeline_VITIS_LOOP_58_1.compgen.tcl 
@@ -849,18 +929,24 @@ INFO: [HLS 200-740] Implementing PIPO accelerator_dataflow_in_loop_VITIS_LOOP_10
 INFO: [RTMG 210-278] Implementing memory 'accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore_ram (RAM)' using auto RAMs.
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'counter_c_U(accelerator_fifo_w32_d3_S)' using Shift Registers.
+Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
+Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'num_blocks_c_U(accelerator_fifo_w32_d3_S)' using Shift Registers.
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.compgen.tcl 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data names -quiet 
 Execute         ap_part_info -name xc7z010i-clg225-1L -data info -quiet 
 INFO: [RTMG 210-285] Implementing FIFO 'ap_bound_U(accelerator_ap_bound)' using Shift Registers.
 Execute         source ./control.slave.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.664 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.697 seconds; current allocated memory: 1.099 GB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='accelerator_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: No bind nodes found for module_name entry_proc
 INFO-FLOW: No bind nodes found for module_name count
-INFO-FLOW: No bind nodes found for module_name threshold
 INFO-FLOW: No bind nodes found for module_name accelerator
 INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml config info
@@ -1043,8 +1129,11 @@ INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' gene
 accelerator_flow_control_loop_pipe_sequential_init
 accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore
 accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W
+accelerator_fifo_w32_d3_S
+accelerator_fifo_w32_d3_S
 accelerator_ap_bound
 accelerator_control_s_axi
+entry_proc
 count_Pipeline_APPEARANCES
 count
 threshold_Pipeline_VITIS_LOOP_58_1
@@ -1072,6 +1161,7 @@ Execute       get_config_export -ipname
 Execute       get_config_export -taxonomy 
 Execute       get_config_export -description 
 Execute       get_config_export -display_name 
+Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.tbgen.tcl 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count_Pipeline_APPEARANCES.tbgen.tcl 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.tbgen.tcl 
 Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold_Pipeline_VITIS_LOOP_58_1.tbgen.tcl 
@@ -1092,24 +1182,24 @@ Execute       source E:/estimation_accel/hls/byte_count_stream/solution1/.autopi
 Execute       get_config_export -ip_xdc_file 
 Execute       get_config_export -ip_xdc_ooc_file 
 Execute       get_config_debug -directory 
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE accelerator LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST accelerator MODULE2INSTS {accelerator accelerator dataflow_in_loop_VITIS_LOOP_10_1 dataflow_in_loop_VITIS_LOOP_10_1_U0 count count_U0 count_Pipeline_APPEARANCES grp_count_Pipeline_APPEARANCES_fu_2863 threshold threshold_U0 threshold_Pipeline_VITIS_LOOP_58_1 grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55} INST2MODULE {accelerator accelerator dataflow_in_loop_VITIS_LOOP_10_1_U0 dataflow_in_loop_VITIS_LOOP_10_1 count_U0 count grp_count_Pipeline_APPEARANCES_fu_2863 count_Pipeline_APPEARANCES threshold_U0 threshold grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55 threshold_Pipeline_VITIS_LOOP_58_1} INSTDATA {accelerator {DEPTH 1 CHILDREN dataflow_in_loop_VITIS_LOOP_10_1_U0} dataflow_in_loop_VITIS_LOOP_10_1_U0 {DEPTH 2 CHILDREN {count_U0 threshold_U0}} count_U0 {DEPTH 3 CHILDREN grp_count_Pipeline_APPEARANCES_fu_2863} grp_count_Pipeline_APPEARANCES_fu_2863 {DEPTH 4 CHILDREN {}} threshold_U0 {DEPTH 3 CHILDREN grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55} grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55 {DEPTH 4 CHILDREN {}}} MODULEDATA {count_Pipeline_APPEARANCES {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_3_fu_132_p2 SOURCE byte_count_stream/src/byte_count_stream.cpp:33 VARIABLE i_3 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ret_V_1_fu_221_p2 SOURCE {C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393} VARIABLE ret_V_1 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln859_fu_227_p2 SOURCE {C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859} VARIABLE add_ln859 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ret_V_fu_180_p2 SOURCE {C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393} VARIABLE ret_V LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME count_V_fu_186_p2 SOURCE {C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859} VARIABLE count_V LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} threshold_Pipeline_VITIS_LOOP_58_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln58_fu_79_p2 SOURCE byte_count_stream/src/byte_count_stream.cpp:58 VARIABLE add_ln58 LOOP VITIS_LOOP_58_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln60_fu_113_p2 SOURCE byte_count_stream/src/byte_count_stream.cpp:60 VARIABLE add_ln60 LOOP VITIS_LOOP_58_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} dataflow_in_loop_VITIS_LOOP_10_1 {BINDINFO {{BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME appear_V_U SOURCE byte_count_stream/src/byte_count_stream.cpp:13 VARIABLE appear_V LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 DISPNAME {bind_storage ram_t2p}}} AREA {DSP 0 BRAM 0 URAM 0}} count {AREA {DSP 0 BRAM 0 URAM 0}} threshold {AREA {DSP 0 BRAM 0 URAM 0}} accelerator {AREA {DSP 0 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter DISPLAY {bind_adapter axilite} ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA yes RTLNAME control_s_axi_U SOURCE {} VARIABLE {} MODULE accelerator LOOP {} BUNDLEDNAME control DSP 0 BRAM 0 URAM 0}} report_dict {TOPINST accelerator MODULE2INSTS {accelerator accelerator dataflow_in_loop_VITIS_LOOP_10_1 dataflow_in_loop_VITIS_LOOP_10_1_U0 count count_U0 count_Pipeline_APPEARANCES grp_count_Pipeline_APPEARANCES_fu_2863 entry_proc entry_proc_U0 threshold threshold_U0 threshold_Pipeline_VITIS_LOOP_58_1 grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_98} INST2MODULE {accelerator accelerator dataflow_in_loop_VITIS_LOOP_10_1_U0 dataflow_in_loop_VITIS_LOOP_10_1 count_U0 count grp_count_Pipeline_APPEARANCES_fu_2863 count_Pipeline_APPEARANCES entry_proc_U0 entry_proc threshold_U0 threshold grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_98 threshold_Pipeline_VITIS_LOOP_58_1} INSTDATA {accelerator {DEPTH 1 CHILDREN dataflow_in_loop_VITIS_LOOP_10_1_U0} dataflow_in_loop_VITIS_LOOP_10_1_U0 {DEPTH 2 CHILDREN {count_U0 entry_proc_U0 threshold_U0}} count_U0 {DEPTH 3 CHILDREN grp_count_Pipeline_APPEARANCES_fu_2863} grp_count_Pipeline_APPEARANCES_fu_2863 {DEPTH 4 CHILDREN {}} entry_proc_U0 {DEPTH 3 CHILDREN {}} threshold_U0 {DEPTH 3 CHILDREN grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_98} grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_98 {DEPTH 4 CHILDREN {}}} MODULEDATA {count_Pipeline_APPEARANCES {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_3_fu_132_p2 SOURCE byte_count_stream/src/byte_count_stream.cpp:33 VARIABLE i_3 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ret_V_1_fu_221_p2 SOURCE {C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393} VARIABLE ret_V_1 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln859_fu_227_p2 SOURCE {C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859} VARIABLE add_ln859 LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME ret_V_fu_180_p2 SOURCE {C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:1393} VARIABLE ret_V LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME count_V_fu_186_p2 SOURCE {C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_fixed_base.h:859} VARIABLE count_V LOOP APPEARANCES BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} threshold_Pipeline_VITIS_LOOP_58_1 {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln58_fu_79_p2 SOURCE byte_count_stream/src/byte_count_stream.cpp:58 VARIABLE add_ln58 LOOP VITIS_LOOP_58_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln60_fu_113_p2 SOURCE byte_count_stream/src/byte_count_stream.cpp:60 VARIABLE add_ln60 LOOP VITIS_LOOP_58_1 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} threshold {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME sub_fu_105_p2 SOURCE {} VARIABLE sub LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_op add}}} AREA {DSP 0 BRAM 0 URAM 0}} dataflow_in_loop_VITIS_LOOP_10_1 {BINDINFO {{BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME num_blocks_c_U SOURCE {} VARIABLE num_blocks_c LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL srl LATENCY 0 OPTYPE fifo PRAGMA {} RTLNAME counter_c_U SOURCE {} VARIABLE counter_c LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 DISPNAME {bind_storage fifo}} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE ram_t2p PRAGMA {} RTLNAME appear_V_U SOURCE byte_count_stream/src/byte_count_stream.cpp:13 VARIABLE appear_V LOOP {} BUNDLEDNAME {} DSP 0 BRAM 1 URAM 0 DISPNAME {bind_storage ram_t2p}}} AREA {DSP 0 BRAM 0 URAM 0}} entry_proc {AREA {DSP 0 BRAM 0 URAM 0}} count {AREA {DSP 0 BRAM 0 URAM 0}} accelerator {AREA {DSP 0 BRAM 0 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.756 seconds; current allocated memory: 1.099 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.739 seconds; current allocated memory: 1.099 GB.
 INFO: [VHDL 208-304] Generating VHDL RTL for accelerator.
 INFO: [VLOG 209-307] Generating Verilog RTL for accelerator.
 Execute       syn_report -model accelerator -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 150.17 MHz
-Command     autosyn done; 6.446 sec.
-Command   csynth_design done; 23.389 sec.
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 12 seconds. CPU system time: 1 seconds. Elapsed time: 23.389 seconds; current allocated memory: 394.410 MB.
-Command ap_source done; 24.302 sec.
+Command     autosyn done; 6.226 sec.
+Command   csynth_design done; 23.066 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 12 seconds. CPU system time: 1 seconds. Elapsed time: 23.066 seconds; current allocated memory: 400.898 MB.
+Command ap_source done; 23.994 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace E:/estimation_accel/hls/byte_count_stream/solution1 opened at Sun Oct 09 19:38:59 -0500 2022
+INFO-FLOW: Workspace E:/estimation_accel/hls/byte_count_stream/solution1 opened at Thu Dec 01 21:55:55 -0600 2022
 Execute     ap_set_clock -name default -period 9.359 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
 Execute     set_part xc7z010i-clg225-1L 
@@ -1118,7 +1208,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.1\lib\win
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
-Command       create_platform done; 0.551 sec.
+Command       create_platform done; 0.588 sec.
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
@@ -1129,13 +1219,13 @@ Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/inter
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.115 sec.
+Command         ap_source done; 0.109 sec.
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.15 sec.
+Command       ap_source done; 0.152 sec.
 Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.714 sec.
+Command     set_part done; 0.748 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Execute     get_config_interface -m_axi_latency 
@@ -1164,10 +1254,10 @@ Execute     config_export -rtl=verilog
 Execute     send_msg_by_id INFO @200-1464@%s config_export -vendor=jnowaczek 
 INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
 Execute     config_export -vendor=jnowaczek 
-Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.0.10 
-INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.10
-Execute     config_export -version=1.0.10 
-Command   open_solution done; 0.757 sec.
+Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.0.13 
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.13
+Execute     config_export -version=1.0.13 
+Command   open_solution done; 0.774 sec.
 Execute   set_part xc7z010i-clg225-1L 
 INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
 Execute     create_platform xc7z010i-clg225-1L -board  
@@ -1183,16 +1273,119 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.123 sec.
+Command     ap_source done; 0.132 sec.
 Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
 Execute     config_compile -quiet -complex-mul-dsp=0 
-Command   set_part done; 0.14 sec.
+Command   set_part done; 0.144 sec.
 Execute   create_clock -period 9.359 -name default 
 INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
 Execute   config_interface -m_axi_addr64=0 
 INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
-Execute   config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.10 
-INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.10 
+Execute   config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.13 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.13 
+Execute   source ./byte_count_stream/solution1/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
+Execute     set_directive_top -name accelerator accelerator 
+INFO: [HLS 200-1510] Running: set_directive_top -name accelerator accelerator 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 2.894 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 9.561 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 9.562 seconds; current allocated memory: 415.359 MB.
+Command ap_source done; 10.556 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace E:/estimation_accel/hls/byte_count_stream/solution1 opened at Thu Dec 01 21:56:13 -0600 2022
+Execute     ap_set_clock -name default -period 9.359 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 9.359ns.
+Execute     set_part xc7z010i-clg225-1L 
+Execute       create_platform xc7z010i-clg225-1L -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2022.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z010i-clg225-1L'
+Command       create_platform done; 0.493 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.128 sec.
+Execute       ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.632 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Execute     send_msg_by_id INFO @200-1464@%s config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=0
+Execute     config_interface -m_axi_addr64=0 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -display_name {Byte Count Stream} 
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {Byte Count Stream}
+Execute     config_export -display_name Byte Count Stream 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -library=byte_count_stream 
+INFO: [HLS 200-1464] Running solution command: config_export -library=byte_count_stream
+Execute     config_export -library=byte_count_stream 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=E:/estimation_accel/vivado/ip_repo/ 
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/estimation_accel/vivado/ip_repo/
+Execute     config_export -output=E:/estimation_accel/vivado/ip_repo/ 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -vendor=jnowaczek 
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=jnowaczek
+Execute     config_export -vendor=jnowaczek 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -version=1.0.14 
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.14
+Execute     config_export -version=1.0.14 
+Command   open_solution done; 0.664 sec.
+Execute   set_part xc7z010i-clg225-1L 
+INFO: [HLS 200-1510] Running: set_part xc7z010i-clg225-1L 
+Execute     create_platform xc7z010i-clg225-1L -board  
+Execute     source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.102 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.139 sec.
+Execute     ap_part_info -name xc7z010i-clg225-1L -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.155 sec.
+Execute   create_clock -period 9.359 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 9.359 -name default 
+Execute   config_interface -m_axi_addr64=0 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=0 
+Execute   config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.14 
+INFO: [HLS 200-1510] Running: config_export -display_name Byte Count Stream -format ip_catalog -library byte_count_stream -output E:/estimation_accel/vivado/ip_repo/ -rtl verilog -vendor jnowaczek -version 1.0.14 
 Execute   source ./byte_count_stream/solution1/directives.tcl 
 INFO: [HLS 200-1510] Running: source ./byte_count_stream/solution1/directives.tcl
 Execute     set_directive_top -name accelerator accelerator 
@@ -1208,7 +1401,7 @@ Execute     get_config_export -vendor
 Execute     get_config_export -version 
 Execute     get_config_export -xo 
 Execute     config_export -format=ip_catalog -output=E:/estimation_accel/vivado/ip_repo/ -rtl=verilog 
-INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog -vendor jnowaczek -library byte_count_stream -version 1.0.10 -display_name {Byte Count Stream}
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog -vendor jnowaczek -library byte_count_stream -version 1.0.14 -display_name {Byte Count Stream}
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/global.setting.tcl 
 Execute     get_config_export -vivado_clock 
 Execute     get_top 
@@ -1253,7 +1446,7 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.141 sec.
+Command     ap_source done; 0.128 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=9.359 (was NA)
 INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=accelerator xml_exists=0
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.rtl_wrap.cfg.tcl 
@@ -1269,14 +1462,17 @@ Execute     get_config_rtl -deadlock_detection
 Execute     get_config_rtl -module_prefix 
 INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to accelerator
 Execute     get_config_rtl -deadlock_detection 
-INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=6
-INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=12 #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=9
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=15 #gSsdmPorts=0
 INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='accelerator_flow_control_loop_pipe_sequential_init
 accelerator_flow_control_loop_pipe_sequential_init
 accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore
 accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W
+accelerator_fifo_w32_d3_S
+accelerator_fifo_w32_d3_S
 accelerator_ap_bound
 accelerator_control_s_axi
+entry_proc
 count_Pipeline_APPEARANCES
 count
 threshold_Pipeline_VITIS_LOOP_58_1
@@ -1306,6 +1502,7 @@ Execute     get_config_export -ipname
 Execute     get_config_export -taxonomy 
 Execute     get_config_export -description 
 Execute     get_config_export -display_name 
+Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/entry_proc.tbgen.tcl 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count_Pipeline_APPEARANCES.tbgen.tcl 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/count.tbgen.tcl 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/threshold_Pipeline_VITIS_LOOP_58_1.tbgen.tcl 
@@ -1326,7 +1523,6 @@ Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilo
 Execute     get_config_export -ip_xdc_file 
 Execute     get_config_export -ip_xdc_ooc_file 
 Execute     get_config_debug -directory 
-Command     get_config_debug done; 0.178 sec.
 Execute     get_config_rtl -deadlock_detection 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/global.setting.tcl 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.tbgen.tcl 
@@ -1346,6 +1542,9 @@ Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilo
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.compgen.dataonly.tcl 
 Execute     get_config_interface -s_axilite_interrupt_mode 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.compgen.dataonly.tcl 
+Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.tbgen.tcl 
+Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.tbgen.tcl 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.tbgen.tcl 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.tbgen.tcl 
 Execute     source E:/estimation_accel/hls/byte_count_stream/solution1/.autopilot/db/accelerator.tbgen.tcl 
@@ -1407,13 +1606,13 @@ Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/util
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfft.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis_HLS/2022.1/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.116 sec.
+Command     ap_source done; 0.119 sec.
 INFO-FLOW: DBG:PUTS:     IP package: exec E:/estimation_accel/hls/byte_count_stream/solution1/impl/ip/pack.bat
 INFO-FLOW: DBG:PUTS:     IP package: success E:/estimation_accel/hls/byte_count_stream/solution1/impl/ip/pack.bat
 Execute     get_config_export -output 
 Execute     send_msg_by_id INFO @200-802@%s E:/estimation_accel/vivado/ip_repo/export.zip 
 INFO: [HLS 200-802] Generated output file E:/estimation_accel/vivado/ip_repo/export.zip
-Command   export_design done; 11.453 sec.
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 11.453 seconds; current allocated memory: 336.816 MB.
-Command ap_source done; 12.405 sec.
+Command   export_design done; 12.42 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 12.42 seconds; current allocated memory: 371.195 MB.
+Command ap_source done; 13.296 sec.
 Execute cleanup_all 

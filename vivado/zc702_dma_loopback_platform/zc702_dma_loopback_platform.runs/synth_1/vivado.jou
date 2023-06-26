@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Nov  6 11:12:00 2022
+# Process ID: 73708
+# Current directory: E:/estimation_accel/vivado/zc702_dma_loopback_platform/zc702_dma_loopback_platform.runs/synth_1
+# Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: E:/estimation_accel/vivado/zc702_dma_loopback_platform/zc702_dma_loopback_platform.runs/synth_1/system_wrapper.vds
+# Journal file: E:/estimation_accel/vivado/zc702_dma_loopback_platform/zc702_dma_loopback_platform.runs/synth_1\vivado.jou
+# Running On: Omnya, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 6, Host memory: 17087 MB
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

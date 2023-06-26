@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'threshold'
 ================================================================
-* Date:           Sun Oct  9 19:36:32 2022
+* Date:           Thu Dec  1 21:55:43 2022
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
 * Project:        byte_count_stream
@@ -38,7 +38,7 @@
         |                                              |                                    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
         |                   Instance                   |               Module               |   min   |   max   |    min   |    max   | min | max |   Type  |
         +----------------------------------------------+------------------------------------+---------+---------+----------+----------+-----+-----+---------+
-        |grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55  |threshold_Pipeline_VITIS_LOOP_58_1  |      259|      259|  2.424 us|  2.424 us|  259|  259|       no|
+        |grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_98  |threshold_Pipeline_VITIS_LOOP_58_1  |      259|      259|  2.424 us|  2.424 us|  259|  259|       no|
         +----------------------------------------------+------------------------------------+---------+---------+----------+----------+-----+-----+---------+
 
         * Loop: 
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
 +-----------------+---------+----+-------+-------+-----+
 |DSP              |        -|   -|      -|      -|    -|
-|Expression       |        -|   -|      0|      2|    -|
+|Expression       |        -|   -|      0|     61|    -|
 |FIFO             |        -|   -|      -|      -|    -|
 |Instance         |        -|   -|     46|    152|    -|
 |Memory           |        -|   -|      -|      -|    -|
-|Multiplexer      |        -|   -|      -|     43|    -|
-|Register         |        -|   -|     14|      -|    -|
+|Multiplexer      |        -|   -|      -|     61|    -|
+|Register         |        -|   -|     78|      -|    -|
 +-----------------+---------+----+-------+-------+-----+
-|Total            |        0|   0|     60|    197|    0|
+|Total            |        0|   0|    124|    274|    0|
 +-----------------+---------+----+-------+-------+-----+
 |Available        |      120|  80|  35200|  17600|    0|
 +-----------------+---------+----+-------+-------+-----+
@@ -73,7 +73,7 @@
     +----------------------------------------------+------------------------------------+---------+----+----+-----+-----+
     |                   Instance                   |               Module               | BRAM_18K| DSP| FF | LUT | URAM|
     +----------------------------------------------+------------------------------------+---------+----+----+-----+-----+
-    |grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55  |threshold_Pipeline_VITIS_LOOP_58_1  |        0|   0|  46|  152|    0|
+    |grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_98  |threshold_Pipeline_VITIS_LOOP_58_1  |        0|   0|  46|  152|    0|
     +----------------------------------------------+------------------------------------+---------+----+----+-----+-----+
     |Total                                         |                                    |        0|   0|  46|  152|    0|
     +----------------------------------------------+------------------------------------+---------+----+----+-----+-----+
@@ -91,9 +91,12 @@
     +-----------------+----------+----+---+----+------------+------------+
     |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +-----------------+----------+----+---+----+------------+------------+
+    |sub_fu_105_p2    |         +|   0|  0|  39|          32|           2|
+    |Out_r_TLAST      |      icmp|   0|  0|  18|          32|          32|
     |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2  |        or|   0|  0|   2|           1|           1|
     +-----------------+----------+----+---+----+------------+------------+
-    |Total            |          |   0|  0|   2|           1|           1|
+    |Total            |          |   0|  0|  61|          66|          36|
     +-----------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -103,21 +106,25 @@
     |Out_r_TDATA_blk_n  |   9|          2|    1|          2|
     |ap_NS_fsm          |  25|          5|    1|          5|
     |ap_done            |   9|          2|    1|          2|
+    |counter_blk_n      |   9|          2|    1|          2|
+    |num_blocks_blk_n   |   9|          2|    1|          2|
     +-------------------+----+-----------+-----+-----------+
-    |Total              |  43|          9|    3|          9|
+    |Total              |  61|         13|    5|         13|
     +-------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +-----------------------------------------------------------+---+----+-----+-----------+
-    |                            Name                           | FF| LUT| Bits| Const Bits|
-    +-----------------------------------------------------------+---+----+-----+-----------+
-    |ap_CS_fsm                                                  |  4|   0|    4|          0|
-    |ap_done_reg                                                |  1|   0|    1|          0|
-    |grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_55_ap_start_reg  |  1|   0|    1|          0|
-    |over_thresh_loc_fu_32                                      |  8|   0|    8|          0|
-    +-----------------------------------------------------------+---+----+-----+-----------+
-    |Total                                                      | 14|   0|   14|          0|
-    +-----------------------------------------------------------+---+----+-----+-----------+
+    +-----------------------------------------------------------+----+----+-----+-----------+
+    |                            Name                           | FF | LUT| Bits| Const Bits|
+    +-----------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                  |   4|   0|    4|          0|
+    |ap_done_reg                                                |   1|   0|    1|          0|
+    |counter_read_reg_131                                       |  32|   0|   32|          0|
+    |grp_threshold_Pipeline_VITIS_LOOP_58_1_fu_98_ap_start_reg  |   1|   0|    1|          0|
+    |num_blocks_read_reg_126                                    |  32|   0|   32|          0|
+    |over_thresh_loc_fu_52                                      |   8|   0|    8|          0|
+    +-----------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                      |  78|   0|   78|          0|
+    +-----------------------------------------------------------+----+----+-----+-----------+
 
 
 
@@ -125,24 +132,37 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------+-----+-----+------------+----------------+--------------+
-|    RTL Ports    | Dir | Bits|  Protocol  |  Source Object |    C Type    |
-+-----------------+-----+-----+------------+----------------+--------------+
-|ap_clk           |   in|    1|  ap_ctrl_hs|       threshold|  return value|
-|ap_rst           |   in|    1|  ap_ctrl_hs|       threshold|  return value|
-|ap_start         |   in|    1|  ap_ctrl_hs|       threshold|  return value|
-|ap_done          |  out|    1|  ap_ctrl_hs|       threshold|  return value|
-|ap_continue      |   in|    1|  ap_ctrl_hs|       threshold|  return value|
-|ap_idle          |  out|    1|  ap_ctrl_hs|       threshold|  return value|
-|ap_ready         |  out|    1|  ap_ctrl_hs|       threshold|  return value|
-|appear_address0  |  out|    8|   ap_memory|          appear|         array|
-|appear_ce0       |  out|    1|   ap_memory|          appear|         array|
-|appear_q0        |   in|    3|   ap_memory|          appear|         array|
-|Out_r_TDATA      |  out|    8|        axis|  Out_r_V_data_V|       pointer|
-|Out_r_TREADY     |   in|    1|        axis|  Out_r_V_data_V|       pointer|
-|Out_r_TVALID     |  out|    1|        axis|  Out_r_V_last_V|       pointer|
-|Out_r_TLAST      |  out|    1|        axis|  Out_r_V_last_V|       pointer|
-|Out_r_TKEEP      |  out|    1|        axis|  Out_r_V_keep_V|       pointer|
-|Out_r_TSTRB      |  out|    1|        axis|  Out_r_V_strb_V|       pointer|
-+-----------------+-----+-----+------------+----------------+--------------+
++---------------------------+-----+-----+------------+----------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++---------------------------+-----+-----+------------+----------------+--------------+
+|ap_clk                     |   in|    1|  ap_ctrl_hs|       threshold|  return value|
+|ap_rst                     |   in|    1|  ap_ctrl_hs|       threshold|  return value|
+|ap_start                   |   in|    1|  ap_ctrl_hs|       threshold|  return value|
+|ap_done                    |  out|    1|  ap_ctrl_hs|       threshold|  return value|
+|ap_continue                |   in|    1|  ap_ctrl_hs|       threshold|  return value|
+|ap_idle                    |  out|    1|  ap_ctrl_hs|       threshold|  return value|
+|ap_ready                   |  out|    1|  ap_ctrl_hs|       threshold|  return value|
+|appear_V1_address0         |  out|    8|   ap_memory|       appear_V1|         array|
+|appear_V1_ce0              |  out|    1|   ap_memory|       appear_V1|         array|
+|appear_V1_q0               |   in|    3|   ap_memory|       appear_V1|         array|
+|Out_r_TDATA                |  out|    8|        axis|  Out_r_V_data_V|       pointer|
+|Out_r_TREADY               |   in|    1|        axis|  Out_r_V_data_V|       pointer|
+|Out_r_TVALID               |  out|    1|        axis|  Out_r_V_dest_V|       pointer|
+|Out_r_TDEST                |  out|    1|        axis|  Out_r_V_dest_V|       pointer|
+|Out_r_TKEEP                |  out|    1|        axis|  Out_r_V_keep_V|       pointer|
+|Out_r_TSTRB                |  out|    1|        axis|  Out_r_V_strb_V|       pointer|
+|Out_r_TUSER                |  out|    1|        axis|  Out_r_V_user_V|       pointer|
+|Out_r_TLAST                |  out|    1|        axis|  Out_r_V_last_V|       pointer|
+|Out_r_TID                  |  out|    1|        axis|    Out_r_V_id_V|       pointer|
+|counter_dout               |   in|   32|     ap_fifo|         counter|       pointer|
+|counter_num_data_valid     |   in|    3|     ap_fifo|         counter|       pointer|
+|counter_fifo_cap           |   in|    3|     ap_fifo|         counter|       pointer|
+|counter_empty_n            |   in|    1|     ap_fifo|         counter|       pointer|
+|counter_read               |  out|    1|     ap_fifo|         counter|       pointer|
+|num_blocks_dout            |   in|   32|     ap_fifo|      num_blocks|       pointer|
+|num_blocks_num_data_valid  |   in|    3|     ap_fifo|      num_blocks|       pointer|
+|num_blocks_fifo_cap        |   in|    3|     ap_fifo|      num_blocks|       pointer|
+|num_blocks_empty_n         |   in|    1|     ap_fifo|      num_blocks|       pointer|
+|num_blocks_read            |  out|    1|     ap_fifo|      num_blocks|       pointer|
++---------------------------+-----+-----+------------+----------------+--------------+
 

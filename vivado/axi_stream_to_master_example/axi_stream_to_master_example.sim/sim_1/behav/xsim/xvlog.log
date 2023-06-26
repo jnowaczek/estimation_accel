@@ -1,0 +1,59 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/ip/system_xlconstant_0_0/sim/system_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_ap_bound.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_ap_bound_shiftReg
+INFO: [VRFC 10-311] analyzing module accelerator_ap_bound
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_control_s_axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_count.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_count_Pipeline_APPEARANCES.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_count_Pipeline_APPEARANCES
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_dataflow_in_loop_VITIS_LOOP_10_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_dataflow_in_loop_VITIS_LOOP_10_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W_memcore
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_hls_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_hls_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_hls_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_hls_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_hls_deadlock_idx1_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_hls_deadlock_idx1_monitor
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_threshold.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_threshold
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator_threshold_Pipeline_VITIS_LOOP_58_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_threshold_Pipeline_VITIS_LOOP_58_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/ipshared/616b/hdl/verilog/accelerator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/ip/system_accelerator_0_0/sim/system_accelerator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_accelerator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/ip/system_xbar_2/sim/system_xbar_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_xbar_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/ip/system_xbar_3/sim/system_xbar_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_xbar_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/ip/system_auto_us_2/sim/system_auto_us_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_auto_us_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/ip/system_auto_pc_4/sim/system_auto_pc_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_auto_pc_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/ip/system_auto_pc_5/sim/system_auto_pc_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_auto_pc_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.ip_user_files/bd/system/sim/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1H7AUOX
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1TEAG88
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_4Y7TYO
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_11SE3QO
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_1P403ZT
+INFO: [VRFC 10-311] analyzing module s01_couplers_imp_VQ497S
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module system_axi_mem_intercon_2
+INFO: [VRFC 10-311] analyzing module system_ps7_0_axi_periph_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.gen/sources_1/bd/system/hdl/system_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/estimation_accel/vivado/zc702_estimation_platform.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

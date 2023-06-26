@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'accelerator'
 ================================================================
-* Date:           Sun Oct  9 19:36:33 2022
+* Date:           Thu Dec  1 21:55:43 2022
 
 * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:48:16 MDT 2022)
 * Project:        byte_count_stream
@@ -61,16 +61,16 @@
 |DSP              |        -|   -|      -|      -|    -|
 |Expression       |        -|   -|    592|    148|    -|
 |FIFO             |        -|   -|      -|      -|    -|
-|Instance         |        0|   -|    317|   2681|    0|
+|Instance         |        0|   -|    583|   2951|    0|
 |Memory           |        -|   -|      -|      -|    -|
 |Multiplexer      |        -|   -|      -|     27|    -|
 |Register         |        -|   -|     65|      -|    -|
 +-----------------+---------+----+-------+-------+-----+
-|Total            |        0|   0|    974|   2856|    0|
+|Total            |        0|   0|   1240|   3126|    0|
 +-----------------+---------+----+-------+-------+-----+
 |Available        |      120|  80|  35200|  17600|    0|
 +-----------------+---------+----+-------+-------+-----+
-|Utilization (%)  |        0|   0|      2|     16|    0|
+|Utilization (%)  |        0|   0|      3|     17|    0|
 +-----------------+---------+----+-------+-------+-----+
 
 + Detail: 
@@ -79,9 +79,9 @@
     |               Instance              |              Module              | BRAM_18K| DSP|  FF |  LUT | URAM|
     +-------------------------------------+----------------------------------+---------+----+-----+------+-----+
     |control_s_axi_U                      |control_s_axi                     |        0|   0|   74|   104|    0|
-    |dataflow_in_loop_VITIS_LOOP_10_1_U0  |dataflow_in_loop_VITIS_LOOP_10_1  |        0|   0|  243|  2577|    0|
+    |dataflow_in_loop_VITIS_LOOP_10_1_U0  |dataflow_in_loop_VITIS_LOOP_10_1  |        0|   0|  509|  2847|    0|
     +-------------------------------------+----------------------------------+---------+----+-----+------+-----+
-    |Total                                |                                  |        0|   0|  317|  2681|    0|
+    |Total                                |                                  |        0|   0|  583|  2951|    0|
     +-------------------------------------+----------------------------------+---------+----+-----+------+-----+
 
     * DSP: 
@@ -164,8 +164,11 @@
 |Out_r_TDATA            |  out|    8|        axis|  Out_r_V_data_V|       pointer|
 |Out_r_TKEEP            |  out|    1|        axis|  Out_r_V_keep_V|       pointer|
 |Out_r_TSTRB            |  out|    1|        axis|  Out_r_V_strb_V|       pointer|
+|Out_r_TUSER            |  out|    1|        axis|  Out_r_V_user_V|       pointer|
 |Out_r_TLAST            |  out|    1|        axis|  Out_r_V_last_V|       pointer|
-|Out_r_TVALID           |  out|    1|        axis|  Out_r_V_last_V|       pointer|
-|Out_r_TREADY           |   in|    1|        axis|  Out_r_V_last_V|       pointer|
+|Out_r_TID              |  out|    1|        axis|    Out_r_V_id_V|       pointer|
+|Out_r_TDEST            |  out|    1|        axis|  Out_r_V_dest_V|       pointer|
+|Out_r_TVALID           |  out|    1|        axis|  Out_r_V_dest_V|       pointer|
+|Out_r_TREADY           |   in|    1|        axis|  Out_r_V_dest_V|       pointer|
 +-----------------------+-----+-----+------------+----------------+--------------+
 

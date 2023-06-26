@@ -14,10 +14,17 @@ module accelerator_dataflow_in_loop_VITIS_LOOP_10_1 (
         Out_r_TDATA,
         Out_r_TKEEP,
         Out_r_TSTRB,
+        Out_r_TUSER,
         Out_r_TLAST,
+        Out_r_TID,
+        Out_r_TDEST,
+        counter,
+        num_blocks,
+        counter_ap_vld,
+        num_blocks_ap_vld,
+        ap_start,
         In_r_TVALID,
         In_r_TREADY,
-        ap_start,
         Out_r_TVALID,
         Out_r_TREADY,
         ap_done,
@@ -33,10 +40,17 @@ input  [7:0] In_r_TDATA;
 output  [7:0] Out_r_TDATA;
 output  [0:0] Out_r_TKEEP;
 output  [0:0] Out_r_TSTRB;
+output  [0:0] Out_r_TUSER;
 output  [0:0] Out_r_TLAST;
+output  [0:0] Out_r_TID;
+output  [0:0] Out_r_TDEST;
+input  [31:0] counter;
+input  [31:0] num_blocks;
+input   counter_ap_vld;
+input   num_blocks_ap_vld;
+input   ap_start;
 input   In_r_TVALID;
 output   In_r_TREADY;
-input   ap_start;
 output   Out_r_TVALID;
 input   Out_r_TREADY;
 output   ap_done;
@@ -48,6 +62,15 @@ wire   [2:0] appear_V_i_q0;
 wire   [2:0] appear_V_i_q1;
 wire   [2:0] appear_V_t_q0;
 wire   [2:0] appear_V_t_q1;
+wire    entry_proc_U0_ap_start;
+wire    entry_proc_U0_ap_done;
+wire    entry_proc_U0_ap_continue;
+wire    entry_proc_U0_ap_idle;
+wire    entry_proc_U0_ap_ready;
+wire   [31:0] entry_proc_U0_counter_c_din;
+wire    entry_proc_U0_counter_c_write;
+wire   [31:0] entry_proc_U0_num_blocks_c_din;
+wire    entry_proc_U0_num_blocks_c_write;
 wire    count_U0_ap_start;
 wire    count_U0_ap_done;
 wire    count_U0_ap_continue;
@@ -67,15 +90,42 @@ wire    threshold_U0_ap_done;
 wire    threshold_U0_ap_continue;
 wire    threshold_U0_ap_idle;
 wire    threshold_U0_ap_ready;
-wire   [7:0] threshold_U0_appear_address0;
-wire    threshold_U0_appear_ce0;
+wire   [7:0] threshold_U0_appear_V1_address0;
+wire    threshold_U0_appear_V1_ce0;
 wire   [7:0] threshold_U0_Out_r_TDATA;
 wire    threshold_U0_Out_r_TVALID;
 wire   [0:0] threshold_U0_Out_r_TKEEP;
 wire   [0:0] threshold_U0_Out_r_TSTRB;
+wire   [0:0] threshold_U0_Out_r_TUSER;
 wire   [0:0] threshold_U0_Out_r_TLAST;
+wire   [0:0] threshold_U0_Out_r_TID;
+wire   [0:0] threshold_U0_Out_r_TDEST;
+wire    threshold_U0_counter_read;
+wire    threshold_U0_num_blocks_read;
 wire    appear_V_i_full_n;
 wire    appear_V_t_empty_n;
+wire    counter_c_full_n;
+wire   [31:0] counter_c_dout;
+wire   [2:0] counter_c_num_data_valid;
+wire   [2:0] counter_c_fifo_cap;
+wire    counter_c_empty_n;
+wire    num_blocks_c_full_n;
+wire   [31:0] num_blocks_c_dout;
+wire   [2:0] num_blocks_c_num_data_valid;
+wire   [2:0] num_blocks_c_fifo_cap;
+wire    num_blocks_c_empty_n;
+wire    ap_sync_ready;
+reg    ap_sync_reg_entry_proc_U0_ap_ready;
+wire    ap_sync_entry_proc_U0_ap_ready;
+reg    ap_sync_reg_count_U0_ap_ready;
+wire    ap_sync_count_U0_ap_ready;
+wire    ap_ce_reg;
+
+// power-on initialization
+initial begin
+#0 ap_sync_reg_entry_proc_U0_ap_ready = 1'b0;
+#0 ap_sync_reg_count_U0_ap_ready = 1'b0;
+end
 
 accelerator_dataflow_in_loop_VITIS_LOOP_10_1_appear_V_RAM_AUTO_1R1W #(
     .DataWidth( 3 ),
@@ -94,8 +144,8 @@ appear_V_U(
     .i_we1(count_U0_appear_we1),
     .i_d1(count_U0_appear_d1),
     .i_q1(appear_V_i_q1),
-    .t_address0(threshold_U0_appear_address0),
-    .t_ce0(threshold_U0_appear_ce0),
+    .t_address0(threshold_U0_appear_V1_address0),
+    .t_ce0(threshold_U0_appear_V1_ce0),
     .t_we0(1'b0),
     .t_d0(3'd0),
     .t_q0(appear_V_t_q0),
@@ -110,6 +160,28 @@ appear_V_U(
     .i_write(count_U0_ap_done),
     .t_empty_n(appear_V_t_empty_n),
     .t_read(threshold_U0_ap_ready)
+);
+
+accelerator_entry_proc entry_proc_U0(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(entry_proc_U0_ap_start),
+    .ap_done(entry_proc_U0_ap_done),
+    .ap_continue(entry_proc_U0_ap_continue),
+    .ap_idle(entry_proc_U0_ap_idle),
+    .ap_ready(entry_proc_U0_ap_ready),
+    .counter(counter),
+    .counter_c_din(entry_proc_U0_counter_c_din),
+    .counter_c_num_data_valid(counter_c_num_data_valid),
+    .counter_c_fifo_cap(counter_c_fifo_cap),
+    .counter_c_full_n(counter_c_full_n),
+    .counter_c_write(entry_proc_U0_counter_c_write),
+    .num_blocks(num_blocks),
+    .num_blocks_c_din(entry_proc_U0_num_blocks_c_din),
+    .num_blocks_c_num_data_valid(num_blocks_c_num_data_valid),
+    .num_blocks_c_fifo_cap(num_blocks_c_fifo_cap),
+    .num_blocks_c_full_n(num_blocks_c_full_n),
+    .num_blocks_c_write(entry_proc_U0_num_blocks_c_write)
 );
 
 accelerator_count count_U0(
@@ -142,20 +214,91 @@ accelerator_threshold threshold_U0(
     .ap_continue(threshold_U0_ap_continue),
     .ap_idle(threshold_U0_ap_idle),
     .ap_ready(threshold_U0_ap_ready),
-    .appear_address0(threshold_U0_appear_address0),
-    .appear_ce0(threshold_U0_appear_ce0),
-    .appear_q0(appear_V_t_q0),
+    .appear_V1_address0(threshold_U0_appear_V1_address0),
+    .appear_V1_ce0(threshold_U0_appear_V1_ce0),
+    .appear_V1_q0(appear_V_t_q0),
     .Out_r_TDATA(threshold_U0_Out_r_TDATA),
     .Out_r_TVALID(threshold_U0_Out_r_TVALID),
     .Out_r_TREADY(Out_r_TREADY),
     .Out_r_TKEEP(threshold_U0_Out_r_TKEEP),
     .Out_r_TSTRB(threshold_U0_Out_r_TSTRB),
-    .Out_r_TLAST(threshold_U0_Out_r_TLAST)
+    .Out_r_TUSER(threshold_U0_Out_r_TUSER),
+    .Out_r_TLAST(threshold_U0_Out_r_TLAST),
+    .Out_r_TID(threshold_U0_Out_r_TID),
+    .Out_r_TDEST(threshold_U0_Out_r_TDEST),
+    .counter_dout(counter_c_dout),
+    .counter_num_data_valid(counter_c_num_data_valid),
+    .counter_fifo_cap(counter_c_fifo_cap),
+    .counter_empty_n(counter_c_empty_n),
+    .counter_read(threshold_U0_counter_read),
+    .num_blocks_dout(num_blocks_c_dout),
+    .num_blocks_num_data_valid(num_blocks_c_num_data_valid),
+    .num_blocks_fifo_cap(num_blocks_c_fifo_cap),
+    .num_blocks_empty_n(num_blocks_c_empty_n),
+    .num_blocks_read(threshold_U0_num_blocks_read)
 );
+
+accelerator_fifo_w32_d3_S counter_c_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(entry_proc_U0_counter_c_din),
+    .if_full_n(counter_c_full_n),
+    .if_write(entry_proc_U0_counter_c_write),
+    .if_dout(counter_c_dout),
+    .if_num_data_valid(counter_c_num_data_valid),
+    .if_fifo_cap(counter_c_fifo_cap),
+    .if_empty_n(counter_c_empty_n),
+    .if_read(threshold_U0_counter_read)
+);
+
+accelerator_fifo_w32_d3_S num_blocks_c_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .if_read_ce(1'b1),
+    .if_write_ce(1'b1),
+    .if_din(entry_proc_U0_num_blocks_c_din),
+    .if_full_n(num_blocks_c_full_n),
+    .if_write(entry_proc_U0_num_blocks_c_write),
+    .if_dout(num_blocks_c_dout),
+    .if_num_data_valid(num_blocks_c_num_data_valid),
+    .if_fifo_cap(num_blocks_c_fifo_cap),
+    .if_empty_n(num_blocks_c_empty_n),
+    .if_read(threshold_U0_num_blocks_read)
+);
+
+always @ (posedge ap_clk) begin
+    if (ap_rst == 1'b1) begin
+        ap_sync_reg_count_U0_ap_ready <= 1'b0;
+    end else begin
+        if (((ap_sync_ready & ap_start) == 1'b1)) begin
+            ap_sync_reg_count_U0_ap_ready <= 1'b0;
+        end else begin
+            ap_sync_reg_count_U0_ap_ready <= ap_sync_count_U0_ap_ready;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (ap_rst == 1'b1) begin
+        ap_sync_reg_entry_proc_U0_ap_ready <= 1'b0;
+    end else begin
+        if (((ap_sync_ready & ap_start) == 1'b1)) begin
+            ap_sync_reg_entry_proc_U0_ap_ready <= 1'b0;
+        end else begin
+            ap_sync_reg_entry_proc_U0_ap_ready <= ap_sync_entry_proc_U0_ap_ready;
+        end
+    end
+end
 
 assign In_r_TREADY = count_U0_In_r_TREADY;
 
 assign Out_r_TDATA = threshold_U0_Out_r_TDATA;
+
+assign Out_r_TDEST = threshold_U0_Out_r_TDEST;
+
+assign Out_r_TID = threshold_U0_Out_r_TID;
 
 assign Out_r_TKEEP = threshold_U0_Out_r_TKEEP;
 
@@ -163,17 +306,29 @@ assign Out_r_TLAST = threshold_U0_Out_r_TLAST;
 
 assign Out_r_TSTRB = threshold_U0_Out_r_TSTRB;
 
+assign Out_r_TUSER = threshold_U0_Out_r_TUSER;
+
 assign Out_r_TVALID = threshold_U0_Out_r_TVALID;
 
 assign ap_done = threshold_U0_ap_done;
 
-assign ap_idle = (threshold_U0_ap_idle & (appear_V_t_empty_n ^ 1'b1) & count_U0_ap_idle);
+assign ap_idle = (threshold_U0_ap_idle & (appear_V_t_empty_n ^ 1'b1) & entry_proc_U0_ap_idle & count_U0_ap_idle);
 
-assign ap_ready = count_U0_ap_ready;
+assign ap_ready = ap_sync_ready;
+
+assign ap_sync_count_U0_ap_ready = (count_U0_ap_ready | ap_sync_reg_count_U0_ap_ready);
+
+assign ap_sync_entry_proc_U0_ap_ready = (entry_proc_U0_ap_ready | ap_sync_reg_entry_proc_U0_ap_ready);
+
+assign ap_sync_ready = (ap_sync_entry_proc_U0_ap_ready & ap_sync_count_U0_ap_ready);
 
 assign count_U0_ap_continue = appear_V_i_full_n;
 
-assign count_U0_ap_start = ap_start;
+assign count_U0_ap_start = ((ap_sync_reg_count_U0_ap_ready ^ 1'b1) & ap_start);
+
+assign entry_proc_U0_ap_continue = 1'b1;
+
+assign entry_proc_U0_ap_start = ((ap_sync_reg_entry_proc_U0_ap_ready ^ 1'b1) & ap_start);
 
 assign threshold_U0_ap_continue = ap_continue;
 

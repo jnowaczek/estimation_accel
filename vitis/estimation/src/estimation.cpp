@@ -43,6 +43,13 @@ FATFS FatFs;
 XTime start_time;
 XTime volatile end_time;
 
+/*
+ * Flags interrupt handlers use to notify the application context the events.
+ */
+volatile int TxDone;
+volatile int RxDone;
+volatile int Error;
+
 /*****************************************************************************/
 /*
  *
@@ -87,7 +94,7 @@ static void TxIntrHandler(void *Callback) {
 	 */
 	if ((IrqStatus & XAXIDMA_IRQ_ERROR_MASK)) {
 
-		int Error = 1;
+		Error = 1;
 
 		/*
 		 * Reset should never fail for transmit channel
@@ -112,7 +119,7 @@ static void TxIntrHandler(void *Callback) {
 	 */
 	if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
 
-		int TxDone = 1;
+		TxDone = 1;
 	}
 }
 
@@ -157,7 +164,7 @@ static void RxIntrHandler(void *Callback) {
 	 */
 	if ((IrqStatus & XAXIDMA_IRQ_ERROR_MASK)) {
 
-		int Error = 1;
+		Error = 1;
 
 		/* Reset could fail and hang
 		 * NEED a way to handle this or do not call it??
@@ -182,7 +189,7 @@ static void RxIntrHandler(void *Callback) {
 	 */
 	if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
 
-		int RxDone = 1;
+		RxDone = 1;
 	}
 }
 
@@ -252,17 +259,9 @@ int PlInterruptSetup() {
 		return XST_FAILURE;
 	}
 
-	/*
-	 * Setup the PS Interrupt System
-	 */
-	Status = PsInterruptSetup(&InterruptController);
-	if (Status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
-
 	XScuGic_SetPriorityTriggerType(&InterruptController, DMA_TX_INTR_ID, 0xA0,
 			0x3);
-	XScuGic_SetPriorityTriggerType(&InterruptController, DMA_RX_INTR_ID, 0xA0,
+	XScuGic_SetPriorityTriggerType(&InterruptController, DMA_RX_INTR_ID, 0xA8,
 			0x3);
 
 	/*
@@ -323,6 +322,16 @@ int DmaSetup() {
 		xil_printf("Device configured in Scatter-Gather mode \r\n");
 		return XST_FAILURE;
 	}
+
+	Status = XAxiDma_Selftest(&AxiDma);
+
+	if (Status != XST_SUCCESS) {
+		xil_printf("DMA device did not pass self test\r\n");
+		return Status;
+	}
+
+	XAxiDma_IntrEnable(&AxiDma, (XAXIDMA_IRQ_IOC_MASK | XAXIDMA_IRQ_ERROR_MASK), XAXIDMA_DMA_TO_DEVICE);
+	XAxiDma_IntrEnable(&AxiDma, (XAXIDMA_IRQ_IOC_MASK | XAXIDMA_IRQ_ERROR_MASK), XAXIDMA_DEVICE_TO_DMA);
 
 	return XST_SUCCESS;
 }
@@ -421,14 +430,19 @@ int main(void) {
 
 	std::cout << "\n== BEGIN TESTS ==\n\n";
 
+	TxDone = 0;
+	RxDone = 0;
+	Error = 0;
+
 	for (std::string test : testFiles) {
 		alignedDataVector_t testData;
 		alignedDataVector_t result;
 		try {
 			testData = alignedDataVector_t(1024);
+			result = alignedDataVector_t(1);
 			loadTest(test, testData);
 		} catch (std::bad_alloc& e) {
-			std::cerr << "Failed to allocate test buffer: " << e.what() << "\n";
+			std::cerr << "Failed to allocate buffer: " << e.what() << "\n";
 			continue;
 		}
 
@@ -437,15 +451,25 @@ int main(void) {
 					<< (int) testData[0] << std::dec << "\n";
 		}
 
-		Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) testData.data(), 1024,
-				XAXIDMA_DEVICE_TO_DMA);
+		uint8_t *txBufferPtr = testData.data();
+		uint8_t *rxBufferPtr = result.data();
 
-		if (Status != XST_SUCCESS) {
-			return XST_FAILURE;
+		Xil_DCacheFlushRange((UINTPTR) txBufferPtr, 1024);
+		Xil_DCacheFlushRange((UINTPTR) rxBufferPtr, 1);
+
+		while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)
+				|| XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {
+			if (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA) == TRUE) {
+				std::cout << "S2MM channel is busy...\r\n";
+			}
+
+			if (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {
+				std::cout << "MM2S channel is busy...\r\n";
+			}
 		}
 
-		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) &result,
-					1024, XAXIDMA_DMA_TO_DEVICE);
+		Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) txBufferPtr, 1024,
+		XAXIDMA_DEVICE_TO_DMA);
 
 		if (Status != XST_SUCCESS) {
 			return XST_FAILURE;
@@ -455,13 +479,46 @@ int main(void) {
 		XTime_GetTime(&start_time);
 		XAccelerator_Start(&AcceleratorHandle);
 
-		while (!XAccelerator_IsDone(&AcceleratorHandle))
-			usleep(10);
+		Status = XAxiDma_SimpleTransfer(&AxiDma, (UINTPTR) rxBufferPtr, 1024,
+		XAXIDMA_DMA_TO_DEVICE);
+
+		if (Status != XST_SUCCESS) {
+			return XST_FAILURE;
+		}
+
+		while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)
+				|| XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {
+			if (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA) == TRUE) {
+				std::cout << "S2MM channel is busy...\r\n";
+			}
+
+			if (XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {
+				std::cout << "MM2S channel is busy...\r\n";
+			}
+		}
+
+		if (Error) {
+			xil_printf("Failed test transmit%s done, "
+					"receive%s done\r\n", TxDone ? "" : " not",
+					RxDone ? "" : " not");
+
+			return XST_FAILURE;
+		}
+
 		std::cout << "\nAccelerator complete" << "\n";
 		std::cout << " |  Result = " << result[0] << "\n";
 		std::cout << " |  Took "
 				<< 1.0 * (end_time - start_time) / (COUNTS_PER_SECOND / 1000000)
 				<< "μs \n";
+
+		while (XAxiDma_Busy(&AxiDma, XAXIDMA_DEVICE_TO_DMA)
+				|| XAxiDma_Busy(&AxiDma, XAXIDMA_DMA_TO_DEVICE)) {
+			// nothin
+		}
+
+		TxDone = 0;
+		RxDone = 0;
+		Error = 0;
 //
 //		XTime_GetTime(&start_time);
 //		int softwareResult = ByteCountGold(testData.data());

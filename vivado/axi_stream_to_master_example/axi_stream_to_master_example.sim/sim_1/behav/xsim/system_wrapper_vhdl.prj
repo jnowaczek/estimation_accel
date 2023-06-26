@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_rst_ps7_0_50M_1/sim/system_rst_ps7_0_50M_1.vhd" \
+"../../../../zc702_estimation_platform.ip_user_files/bd/system/ip/system_axi_dma_1/sim/system_axi_dma_1.vhd" \
+
+# Do not sort compile order
+nosort

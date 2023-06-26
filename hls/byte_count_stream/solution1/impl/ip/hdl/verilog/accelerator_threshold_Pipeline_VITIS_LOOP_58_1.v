@@ -14,9 +14,9 @@ module accelerator_threshold_Pipeline_VITIS_LOOP_58_1 (
         ap_done,
         ap_idle,
         ap_ready,
-        appear_address0,
-        appear_ce0,
-        appear_q0,
+        appear_V1_address0,
+        appear_V1_ce0,
+        appear_V1_q0,
         over_thresh_out,
         over_thresh_out_ap_vld
 );
@@ -29,14 +29,14 @@ input   ap_start;
 output   ap_done;
 output   ap_idle;
 output   ap_ready;
-output  [7:0] appear_address0;
-output   appear_ce0;
-input  [2:0] appear_q0;
+output  [7:0] appear_V1_address0;
+output   appear_V1_ce0;
+input  [2:0] appear_V1_q0;
 output  [7:0] over_thresh_out;
 output   over_thresh_out_ap_vld;
 
 reg ap_idle;
-reg appear_ce0;
+reg appear_V1_ce0;
 reg over_thresh_out_ap_vld;
 
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
@@ -212,9 +212,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        appear_ce0 = 1'b1;
+        appear_V1_ce0 = 1'b1;
     end else begin
-        appear_ce0 = 1'b0;
+        appear_V1_ce0 = 1'b0;
     end
 end
 
@@ -261,9 +261,9 @@ assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
 assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign appear_address0 = zext_ln1695_fu_89_p1;
+assign appear_V1_address0 = zext_ln1695_fu_89_p1;
 
-assign icmp_ln1695_fu_107_p2 = ((appear_q0 > 3'd4) ? 1'b1 : 1'b0);
+assign icmp_ln1695_fu_107_p2 = ((appear_V1_q0 > 3'd4) ? 1'b1 : 1'b0);
 
 assign icmp_ln58_fu_73_p2 = ((ap_sig_allocacmp_i_1 == 9'd256) ? 1'b1 : 1'b0);
 

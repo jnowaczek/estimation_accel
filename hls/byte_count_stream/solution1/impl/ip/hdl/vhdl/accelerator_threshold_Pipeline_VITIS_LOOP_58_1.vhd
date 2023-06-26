@@ -17,9 +17,9 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
-    appear_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    appear_ce0 : OUT STD_LOGIC;
-    appear_q0 : IN STD_LOGIC_VECTOR (2 downto 0);
+    appear_V1_address0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    appear_V1_ce0 : OUT STD_LOGIC;
+    appear_V1_q0 : IN STD_LOGIC_VECTOR (2 downto 0);
     over_thresh_out : OUT STD_LOGIC_VECTOR (7 downto 0);
     over_thresh_out_ap_vld : OUT STD_LOGIC );
 end;
@@ -287,18 +287,18 @@ begin
         end if; 
     end process;
 
-    appear_address0 <= zext_ln1695_fu_89_p1(8 - 1 downto 0);
+    appear_V1_address0 <= zext_ln1695_fu_89_p1(8 - 1 downto 0);
 
-    appear_ce0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
+    appear_V1_ce0_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            appear_ce0 <= ap_const_logic_1;
+            appear_V1_ce0 <= ap_const_logic_1;
         else 
-            appear_ce0 <= ap_const_logic_0;
+            appear_V1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
-    icmp_ln1695_fu_107_p2 <= "1" when (unsigned(appear_q0) > unsigned(ap_const_lv3_4)) else "0";
+    icmp_ln1695_fu_107_p2 <= "1" when (unsigned(appear_V1_q0) > unsigned(ap_const_lv3_4)) else "0";
     icmp_ln58_fu_73_p2 <= "1" when (ap_sig_allocacmp_i_1 = ap_const_lv9_100) else "0";
     over_thresh_3_fu_119_p3 <= 
         add_ln60_fu_113_p2 when (icmp_ln1695_fu_107_p2(0) = '1') else 
