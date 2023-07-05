@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="accelerator.cpp" path="E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.cpp"/>
+    <originFiles name="accelerator.cpp" path="C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.cpp"/>
+    <originFiles name="accelerator.h" path="C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.h"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="tb.cpp" path="C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\tb.cpp"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

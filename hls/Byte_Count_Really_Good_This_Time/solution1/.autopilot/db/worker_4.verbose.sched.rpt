@@ -1,0 +1,114 @@
+
+
+================================================================
+== Vitis HLS Report for 'worker_4'
+================================================================
+* Date:           Tue Jun 27 13:52:02 2023
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        Byte_Count_Really_Good_This_Time
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.650 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.65>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %split_out_3, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 2 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %merge_in_3, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 3 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (1.82ns)   --->   "%split_out_3_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %split_out_3" [Byte_Count_Really_Good_This_Time/accelerator.cpp:17]   --->   Operation 4 'read' 'split_out_3_read' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%shl_ln19 = shl i8 %split_out_3_read, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 5 'shl' 'shl_ln19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%or_ln19 = or i8 %shl_ln19, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 6 'or' 'or_ln19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.82ns)   --->   "%write_ln19 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %merge_in_3, i8 %or_ln19" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 7 'write' 'write_ln19' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln20 = ret" [Byte_Count_Really_Good_This_Time/accelerator.cpp:20]   --->   Operation 8 'ret' 'ret_ln20' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 3.650ns
+The critical path consists of the following:
+	fifo read operation ('split_out_3_read', Byte_Count_Really_Good_This_Time/accelerator.cpp:17) on port 'split_out_3' (Byte_Count_Really_Good_This_Time/accelerator.cpp:17) [5]  (1.825 ns)
+	'shl' operation ('shl_ln19', Byte_Count_Really_Good_This_Time/accelerator.cpp:19) [6]  (0.000 ns)
+	'or' operation ('or_ln19', Byte_Count_Really_Good_This_Time/accelerator.cpp:19) [7]  (0.000 ns)
+	fifo write operation ('write_ln19', Byte_Count_Really_Good_This_Time/accelerator.cpp:19) on port 'merge_in_3' (Byte_Count_Really_Good_This_Time/accelerator.cpp:19) [8]  (1.825 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

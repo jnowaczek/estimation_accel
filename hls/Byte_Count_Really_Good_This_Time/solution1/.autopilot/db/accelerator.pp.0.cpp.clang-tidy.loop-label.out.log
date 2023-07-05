@@ -1,0 +1,40 @@
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:1323:7: warning: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1213_1: 
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:1323:7: note: FIX-IT applied suggested code changes
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:2297:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:2297:5: note: FIX-IT applied suggested code changes
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:2311:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:2311:5: note: FIX-IT applied suggested code changes
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:2325:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:2325:5: note: FIX-IT applied suggested code changes
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:3936:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:3936:7: note: FIX-IT applied suggested code changes
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:27712:2: warning: Added loop label VITIS_LOOP_5_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 512 / 8; i++) {
+ ^~~
+ VITIS_LOOP_5_1: 
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:27712:2: note: FIX-IT applied suggested code changes
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:27718:2: warning: Added loop label VITIS_LOOP_11_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 512 / 8; i++) {
+ ^~~
+ VITIS_LOOP_11_1: 
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:27718:2: note: FIX-IT applied suggested code changes
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:27748:2: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 8; i++) {
+ ^~~
+ VITIS_LOOP_33_1: 
+C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp:27748:2: note: FIX-IT applied suggested code changes

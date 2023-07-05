@@ -4,7 +4,7 @@
     "xci_name": "system_axi_mem_intercon_2",
     "cell_name": "axi_mem_intercon",
     "component_reference": "xilinx.com:ip:axi_interconnect:2.1",
-    "ip_revision": "28",
+    "ip_revision": "29",
     "gen_directory": "../../../../../../zc702_estimation_platform.gen/sources_1/bd/system/ip/system_axi_mem_intercon_2",
     "parameters": {
       "component_parameters": {
@@ -341,12 +341,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator_AppCore" } ],
-        "IPREVISION": [ { "value": "28" } ],
+        "IPREVISION": [ { "value": "29" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../zc702_estimation_platform.gen/sources_1/bd/system/ip/system_axi_mem_intercon_2" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2022.2" } ],
+        "SWVERSION": [ { "value": "2023.1" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     }

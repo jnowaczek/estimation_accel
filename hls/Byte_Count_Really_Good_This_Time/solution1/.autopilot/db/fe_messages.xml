@@ -1,237 +1,157 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:724:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:738:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_ref.h:752:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:27:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:76:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:80:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:130:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:84:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:160:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:114:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_strb_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:164:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:118:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:168:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:122:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_id_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:172:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:126:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_dest_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:178:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:132:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:182:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:136:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:186:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:140:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:191:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:145:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:195:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="set_keep" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:199:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:153:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="set_last" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:203:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:157:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:209:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:163:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:213:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:167:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:217:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:171:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:222:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:176:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:181:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="qdma_axis&lt;WData, 0, 0, 0&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:231:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:185:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="operator=" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:220:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:273:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:227:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:235:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:291:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:245:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:302:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:256:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:312:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:266:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:327:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:281:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:317:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:370:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:324:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:378:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:332:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:388:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:342:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:399:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:353:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:409:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:363:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:425:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:379:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl:13:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_np_channel.h:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_balance&lt;T, N_OUT_PORTS, DEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_np_channel.h:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="round_robin&lt;T, N_OUT_PORTS, ONEPORT_DEPTH, NPORT_DEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_np_channel.h:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="load_balance&lt;T, N_IN_PORTS, DEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_np_channel.h:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="round_robin&lt;T, N_IN_PORTS, ONEPORT_DEPTH, NPORT_DEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h:86:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="operator()" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h:91:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="task" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=make_go_fast" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:36:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register_mode=both register port=InStream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=make_go_fast" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:37:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register_mode=both register port=OutStream" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi max_read_burst_length=64 port=in offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:38:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi max_write_burst_length=64 port=out offset=slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:40:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:27:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:293:50" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:296:25" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-273" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h:85:0" msg_body="In function 'void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;&gt;(void (&amp;)(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form">
+        <args Function="void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;&gt;(void (&amp;)(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;)" Function-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h} Line 85 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:295:67" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:35:2" msg_body="Inlining function 'void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;&gt;(void (&amp;)(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;)' into 'make_go_fast(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*)'">
+        <args Callee="void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;&gt;(void (&amp;)(hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;)" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h} Line 85 Column 0" Caller="make_go_fast(ap_uint&lt;8&gt;*, ap_uint&lt;8&gt;*)" Caller-DebugLoc="File Byte_Count_Really_Good_This_Time/accelerator.cpp Line 22 Column 0"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:295:36" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:22:0" msg_body="Unrolling loop 'VITIS_LOOP_33_1' (Byte_Count_Really_Good_This_Time/accelerator.cpp:33:19) in function 'make_go_fast' completely with a factor of 8">
+        <args Factor="8" LoopLoc="Byte_Count_Really_Good_This_Time/accelerator.cpp:33:19" LoopName="VITIS_LOOP_33_1"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:294:39" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:25:35" msg_body="Applying array_partition to 'split.out': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="split.out"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:294:23" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function 'ssdm_int&lt;8, true&gt;::ssdm_int(signed char)' into 'ap_int_base&lt;8, true&gt;::ap_int_base&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)'">
-        <args Callee="ssdm_int&lt;8, true&gt;::ssdm_int(signed char)" Caller="ap_int_base&lt;8, true&gt;::ap_int_base&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:85:90" msg_body="Inlining function 'ap_int_base&lt;8, true&gt;::ap_int_base&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)' into 'ap_int&lt;8&gt;::ap_int&lt;8&gt;(ap_uint&lt;8&gt; const&amp;)'">
-        <args Callee="ap_int_base&lt;8, true&gt;::ap_int_base&lt;8, false&gt;(ap_int_base&lt;8, false&gt; const&amp;)" Caller="ap_int&lt;8&gt;::ap_int&lt;8&gt;(ap_uint&lt;8&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function '_ZN8ssdm_intILi1ELb1EEC2EDq1_i' into 'ap_int_base&lt;1, true&gt;::ap_int_base&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)'">
-        <args Callee="_ZN8ssdm_intILi1ELb1EEC2EDq1_i" Caller="ap_int_base&lt;1, true&gt;::ap_int_base&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:85:90" msg_body="Inlining function 'ap_int_base&lt;1, true&gt;::ap_int_base&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)' into 'ap_int&lt;1&gt;::ap_int&lt;1&gt;(ap_uint&lt;1&gt; const&amp;)'">
-        <args Callee="ap_int_base&lt;1, true&gt;::ap_int_base&lt;1, false&gt;(ap_int_base&lt;1, false&gt; const&amp;)" Caller="ap_int&lt;1&gt;::ap_int&lt;1&gt;(ap_uint&lt;1&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:14:36" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()' into 'split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;)'">
-        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::read()" Caller="split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:21:11" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::operator!() const' into 'split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;)'">
-        <args Callee="ap_int_base&lt;1, false&gt;::operator!() const" Caller="split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:18:36" msg_body="Inlining function 'ap_int&lt;1&gt;::ap_int&lt;1&gt;(ap_uint&lt;1&gt; const&amp;)' into 'split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;)'">
-        <args Callee="ap_int&lt;1&gt;::ap_int&lt;1&gt;(ap_uint&lt;1&gt; const&amp;)" Caller="split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:18:21" msg_body="Inlining function 'ap_int&lt;8&gt;::ap_int&lt;8&gt;(ap_uint&lt;8&gt; const&amp;)' into 'split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;)'">
-        <args Callee="ap_int&lt;8&gt;::ap_int&lt;8&gt;(ap_uint&lt;8&gt; const&amp;)" Caller="split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function 'ssdm_int&lt;8, false&gt;::ssdm_int(unsigned char)' into 'ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)'">
-        <args Callee="ssdm_int&lt;8, false&gt;::ssdm_int(unsigned char)" Caller="ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:238:89" msg_body="Inlining function 'ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)' into 'ap_uint&lt;8&gt;::ap_uint&lt;8&gt;(ap_int&lt;8&gt; const&amp;)'">
-        <args Callee="ap_int_base&lt;8, false&gt;::ap_int_base&lt;8, true&gt;(ap_int_base&lt;8, true&gt; const&amp;)" Caller="ap_uint&lt;8&gt;::ap_uint&lt;8&gt;(ap_int&lt;8&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int_base.h:231:106" msg_body="Inlining function '_ZN8ssdm_intILi1ELb0EEC2EDq1_j' into 'ap_int_base&lt;1, false&gt;::ap_int_base&lt;1, true&gt;(ap_int_base&lt;1, true&gt; const&amp;)'">
-        <args Callee="_ZN8ssdm_intILi1ELb0EEC2EDq1_j" Caller="ap_int_base&lt;1, false&gt;::ap_int_base&lt;1, true&gt;(ap_int_base&lt;1, true&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_int.h:238:89" msg_body="Inlining function 'ap_int_base&lt;1, false&gt;::ap_int_base&lt;1, true&gt;(ap_int_base&lt;1, true&gt; const&amp;)' into 'ap_uint&lt;1&gt;::ap_uint&lt;1&gt;(ap_int&lt;1&gt; const&amp;)'">
-        <args Callee="ap_int_base&lt;1, false&gt;::ap_int_base&lt;1, true&gt;(ap_int_base&lt;1, true&gt; const&amp;)" Caller="ap_uint&lt;1&gt;::ap_uint&lt;1&gt;(ap_int&lt;1&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:51" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:307:26" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:68" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:306:37" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_user_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:40" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_dest_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:305:24" msg_body="Inlining function 'hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()' into 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)'">
-        <args Callee="hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;::get_id_ptr()" Caller="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:30:17" msg_body="Inlining function 'hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)' into 'process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;::write(hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt; const&amp;)" Caller="process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:29:41" msg_body="Inlining function 'ap_uint&lt;1&gt;::ap_uint&lt;1&gt;(ap_int&lt;1&gt; const&amp;)' into 'process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="ap_uint&lt;1&gt;::ap_uint&lt;1&gt;(ap_int&lt;1&gt; const&amp;)" Caller="process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:29:26" msg_body="Inlining function 'ap_uint&lt;8&gt;::ap_uint&lt;8&gt;(ap_int&lt;8&gt; const&amp;)' into 'process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="ap_uint&lt;8&gt;::ap_uint&lt;8&gt;(ap_int&lt;8&gt; const&amp;)" Caller="process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:28:6" msg_body="Inlining function 'ap_int_base&lt;1, true&gt;::operator long long() const' into 'process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="ap_int_base&lt;1, true&gt;::operator long long() const" Caller="process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)"/>
-    </msg>
-    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:42:25" msg_body="Aggregating fifo (hls::stream) variable 'split_buffer' with compact=bit mode in 9-bits">
-        <args AggregateTypeName="compact=bit" Bitwidth="9" HwTyName="fifo (hls::stream)" Name="split_buffer"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;8&gt;s.i8' into 'split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;) (.1)'">
-        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;8&gt;s.i8" Caller="split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;) (.1)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.bits.i9.s_struct.datas.1' into 'split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;) (.1)'">
-        <args Callee="_llvm.fpga.pack.bits.i9.s_struct.datas.1" Caller="split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;) (.1)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:293:5" msg_body="Inlining function '_llvm.fpga.unpack.none.s_struct.ap_uint&lt;1&gt;s.i1' into 'split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;) (.1)'">
-        <args Callee="_llvm.fpga.unpack.none.s_struct.ap_uint&lt;1&gt;s.i1" Caller="split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;) (.1)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i16.s_struct.datas' into 'split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;) (.1)'">
-        <args Callee="_llvm.fpga.pack.none.i16.s_struct.datas" Caller="split_input_stream(hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, hls::stream&lt;data, 0&gt;&amp;) (.1)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9" msg_body="Inlining function '_llvm.fpga.unpack.bits.s_struct.datas.i9.1' into 'process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;) (.1)'">
-        <args Callee="_llvm.fpga.unpack.bits.s_struct.datas.i9.1" Caller="process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;) (.1)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s' into 'process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;) (.1)'">
-        <args Callee="_llvm.fpga.pack.none.i1.s_struct.ap_uint&lt;1&gt;s" Caller="process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;) (.1)"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot\ap_axi_sdata.h:304:5" msg_body="Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s' into 'process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;) (.1)'">
-        <args Callee="_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s" Caller="process_split_stream(hls::stream&lt;data, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;) (.1)"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:26:52" msg_body="Applying array_partition to 'merge.in': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="merge.in"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

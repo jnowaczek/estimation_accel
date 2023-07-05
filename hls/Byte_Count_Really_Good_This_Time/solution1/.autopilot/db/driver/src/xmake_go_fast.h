@@ -1,7 +1,9 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
-// Tool Version Limit: 2022.04
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
+// Tool Version Limit: 2023.05
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// 
 // ==============================================================
 #ifndef XMAKE_GO_FAST_H
 #define XMAKE_GO_FAST_H
@@ -81,21 +83,11 @@ int XMake_go_fast_Initialize(XMake_go_fast *InstancePtr, const char* InstanceNam
 int XMake_go_fast_Release(XMake_go_fast *InstancePtr);
 #endif
 
-void XMake_go_fast_Start(XMake_go_fast *InstancePtr);
-u32 XMake_go_fast_IsDone(XMake_go_fast *InstancePtr);
-u32 XMake_go_fast_IsIdle(XMake_go_fast *InstancePtr);
-u32 XMake_go_fast_IsReady(XMake_go_fast *InstancePtr);
-void XMake_go_fast_EnableAutoRestart(XMake_go_fast *InstancePtr);
-void XMake_go_fast_DisableAutoRestart(XMake_go_fast *InstancePtr);
 
-
-void XMake_go_fast_InterruptGlobalEnable(XMake_go_fast *InstancePtr);
-void XMake_go_fast_InterruptGlobalDisable(XMake_go_fast *InstancePtr);
-void XMake_go_fast_InterruptEnable(XMake_go_fast *InstancePtr, u32 Mask);
-void XMake_go_fast_InterruptDisable(XMake_go_fast *InstancePtr, u32 Mask);
-void XMake_go_fast_InterruptClear(XMake_go_fast *InstancePtr, u32 Mask);
-u32 XMake_go_fast_InterruptGetEnabled(XMake_go_fast *InstancePtr);
-u32 XMake_go_fast_InterruptGetStatus(XMake_go_fast *InstancePtr);
+void XMake_go_fast_Set_in_r(XMake_go_fast *InstancePtr, u64 Data);
+u64 XMake_go_fast_Get_in_r(XMake_go_fast *InstancePtr);
+void XMake_go_fast_Set_out_r(XMake_go_fast *InstancePtr, u64 Data);
+u64 XMake_go_fast_Get_out_r(XMake_go_fast *InstancePtr);
 
 #ifdef __cplusplus
 }

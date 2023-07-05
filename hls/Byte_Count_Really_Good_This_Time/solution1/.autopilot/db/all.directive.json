@@ -1,18 +1,44 @@
-{"sourceFile": [{
-      "name": "",
-      "directive": [{
-          "functionName": "make_go_fast",
-          "label": "",
-          "functionLabel": "",
-          "id": "1",
-          "sourceFile": "E:\/estimation_accel\/hls\/Byte_Count_Really_Good_This_Time\/solution1\/csynth.tcl",
-          "sourceLine": "13",
-          "pragma": {
-            "name": "TOP",
-            "option": [{
-                "name": "name",
-                "value": "make_go_fast"
-              }]
-          }
-        }]
-    }]}
+[
+  {
+    "functionLabel": "",
+    "functionName": "make_go_fast",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "make_go_fast"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "make_go_fast",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "make_go_fast"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]
