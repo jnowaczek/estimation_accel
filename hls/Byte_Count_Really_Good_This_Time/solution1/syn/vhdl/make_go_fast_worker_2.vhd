@@ -44,7 +44,7 @@ attribute shreg_extract : string;
     signal split_out_1_blk_n : STD_LOGIC;
     signal merge_in_1_blk_n : STD_LOGIC;
     signal ap_block_state1 : BOOLEAN;
-    signal shl_ln19_fu_33_p2 : STD_LOGIC_VECTOR (7 downto 0);
+    signal shl_ln24_fu_33_p2 : STD_LOGIC_VECTOR (7 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
@@ -149,7 +149,7 @@ begin
         end if; 
     end process;
 
-    merge_in_1_din <= (shl_ln19_fu_33_p2 or ap_const_lv8_1);
+    merge_in_1_din <= (shl_ln24_fu_33_p2 or ap_const_lv8_1);
 
     merge_in_1_write_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, split_out_1_empty_n, merge_in_1_full_n)
     begin
@@ -160,7 +160,7 @@ begin
         end if; 
     end process;
 
-    shl_ln19_fu_33_p2 <= std_logic_vector(shift_left(unsigned(split_out_1_dout),to_integer(unsigned('0' & ap_const_lv8_1(8-1 downto 0)))));
+    shl_ln24_fu_33_p2 <= std_logic_vector(shift_left(unsigned(split_out_1_dout),to_integer(unsigned('0' & ap_const_lv8_1(8-1 downto 0)))));
 
     split_out_1_blk_n_assign_proc : process(ap_start, ap_done_reg, ap_CS_fsm_state1, split_out_1_empty_n)
     begin

@@ -7,5 +7,6 @@
 // ==============================================================
 
 extern "C" void AESL_WRAP_make_go_fast (
-volatile void* in_r,
-volatile void* out_r);
+hls::stream<struct ap_axis<32, 0, 0, 0 > > (&in_r),
+int n,
+hls::stream<struct ap_axis<32, 0, 0, 0 > > (&out_r));

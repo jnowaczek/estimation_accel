@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'make_go_fast'" level="0">
-<item name = "Date">Tue Jun 27 13:52:03 2023
+<item name = "Date">Thu Jul 13 17:54:59 2023
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">Byte_Count_Really_Good_This_Time</item>
@@ -24,16 +24,16 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">75, 75, 0.375 us, 0.375 us, 76, 76, dataflow</column>
+<column name="">?, ?, ?, ?, ?, ?, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_read_in_fu_152">read_in, 75, 75, 0.375 us, 0.375 us, 75, 75, no</column>
-<column name="grp_write_out_fu_161">write_out, 72, 72, 0.360 us, 0.360 us, 72, 72, no</column>
-<column name="call_ln87_KPN_fu_170">KPN, 0, 0, 0 ns, 0 ns, 1, 1, dataflow</column>
+<column name="grp_read_in_fu_146">read_in, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_write_out_fu_161">write_out, ?, ?, ?, ?, ?, ?, no</column>
+<column name="call_ln87_KPN_fu_176">KPN, 0, 0, 0 ns, 0 ns, 1, 1, dataflow</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

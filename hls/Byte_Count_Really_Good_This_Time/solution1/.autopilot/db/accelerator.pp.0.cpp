@@ -27702,53 +27702,60 @@ public:
 
 
 
-typedef ap_uint<8> data;
+typedef ap_axis<8, 0, 0, 0> data_pkt;
+typedef ap_int<8> data_t;
 
-__attribute__((sdx_kernel("make_go_fast", 0))) void make_go_fast(data in[512 / 8], data out[512 / 8]);
+__attribute__((sdx_kernel("make_go_fast", 0))) void make_go_fast(hls::stream<data_pkt> &in, int n, hls::stream<data_pkt> &out);
 # 2 "Byte_Count_Really_Good_This_Time/accelerator.cpp" 2
 
-
-void read_in(data *in, hls::stream<data> &out) {
- VITIS_LOOP_5_1: for (int i = 0; i < 512 / 8; i++) {
-  out.write(in[i]);
+void read_in(hls::stream<data_pkt> &in, int n, hls::stream<data_t> &out) {
+ VITIS_LOOP_4_1: for (int i = 0; i < n; i++) {
+  data_pkt temp_pkt;
+  data_t temp;
+  in.read(temp_pkt);
+  temp = temp_pkt.data;
+  out.write(temp);
  }
 }
 
-void write_out(hls::stream<data> &in, data *out) {
- VITIS_LOOP_11_1: for (int i = 0; i < 512 / 8; i++) {
-  out[i] = in.read();
+void write_out(hls::stream<data_t> &in, int n, hls::stream<data_pkt> &out) {
+ VITIS_LOOP_14_1: for (int i = 0; i < n; i++) {
+  data_t temp = in.read();
+  data_pkt temp_pkt;
+  temp_pkt.data = temp;
+  out.write(temp_pkt);
  }
 }
 
-void worker(hls::stream<data> &in, hls::stream<data> &out) {
- int i = in.read();
- int o = i * 2 + 1;
- out.write(o);
+void worker(hls::stream<data_t> &in, hls::stream<data_t> &out) {
+ data_t temp = in.read();
+ temp = temp * 2 + 1;
+ out.write(temp);
 }
 
-__attribute__((sdx_kernel("make_go_fast", 0))) void make_go_fast(data in[64], data out[64]) {
-#line 18 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl"
+__attribute__((sdx_kernel("make_go_fast", 0))) void make_go_fast(hls::stream<data_pkt> &in, int n, hls::stream<data_pkt> &out) {
+#line 18 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl"
 #pragma HLSDIRECTIVE TOP name=make_go_fast
-# 22 "Byte_Count_Really_Good_This_Time/accelerator.cpp"
+# 28 "Byte_Count_Really_Good_This_Time/accelerator.cpp"
 
-#line 7 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl"
+#line 7 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl"
 #pragma HLSDIRECTIVE TOP name=make_go_fast
-# 22 "Byte_Count_Really_Good_This_Time/accelerator.cpp"
+# 28 "Byte_Count_Really_Good_This_Time/accelerator.cpp"
 
-#pragma HLS INTERFACE mode=m_axi max_read_burst_length=64 port=in offset=slave
-#pragma HLS INTERFACE mode=m_axi max_write_burst_length=64 port=out offset=slave
- hls::split::round_robin<data, 8> split;
-                  hls::merge::round_robin<data, 8> merge;
+#pragma HLS INTERFACE mode=axis port=in
+#pragma HLS INTERFACE mode=axis port=out
+ hls::split::round_robin<data_t, 8> split;
+                  hls::merge::round_robin<data_t, 8> merge;
 #pragma HLS DATAFLOW
 
- read_in(in, split.in);
+ read_in(in, n, split.in);
 
                   hls::task tasks[8];
 
- VITIS_LOOP_33_1: for (int i = 0; i < 8; i++) {
+ VITIS_LOOP_39_1: for (int i = 0; i < 8; i++) {
 #pragma HLS unroll
  tasks[i](worker, split.out[i], merge.in[i]);
  }
 
- write_out(merge.out, out);
+ write_out(merge.out, n, out);
 }

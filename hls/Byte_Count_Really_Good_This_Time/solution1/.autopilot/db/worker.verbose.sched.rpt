@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'worker'
 ================================================================
-* Date:           Tue Jun 27 13:52:02 2023
+* Date:           Thu Jul 13 17:54:59 2023
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        Byte_Count_Really_Good_This_Time
@@ -75,13 +75,13 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.65>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %split_out_7, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 2 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %merge_in_7, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 3 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (1.82ns)   --->   "%split_out_7_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %split_out_7" [Byte_Count_Really_Good_This_Time/accelerator.cpp:17]   --->   Operation 4 'read' 'split_out_7_read' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%shl_ln19 = shl i8 %split_out_7_read, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 5 'shl' 'shl_ln19' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%or_ln19 = or i8 %shl_ln19, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 6 'or' 'or_ln19' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (1.82ns)   --->   "%write_ln19 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %merge_in_7, i8 %or_ln19" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 7 'write' 'write_ln19' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln20 = ret" [Byte_Count_Really_Good_This_Time/accelerator.cpp:20]   --->   Operation 8 'ret' 'ret_ln20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %split_out_7, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 2 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %merge_in_7, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 3 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (1.82ns)   --->   "%temp = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %split_out_7" [Byte_Count_Really_Good_This_Time/accelerator.cpp:23]   --->   Operation 4 'read' 'temp' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%shl_ln24 = shl i8 %temp, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:24]   --->   Operation 5 'shl' 'shl_ln24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%temp_8 = or i8 %shl_ln24, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:24]   --->   Operation 6 'or' 'temp_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.82ns)   --->   "%write_ln25 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %merge_in_7, i8 %temp_8" [Byte_Count_Really_Good_This_Time/accelerator.cpp:25]   --->   Operation 7 'write' 'write_ln25' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln26 = ret" [Byte_Count_Really_Good_This_Time/accelerator.cpp:26]   --->   Operation 8 'ret' 'ret_ln26' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -91,10 +91,10 @@ Target clock period: 5.000ns, clock uncertainty: 1.350ns.
 
  <State 1>: 3.650ns
 The critical path consists of the following:
-	fifo read operation ('split_out_7_read', Byte_Count_Really_Good_This_Time/accelerator.cpp:17) on port 'split_out_7' (Byte_Count_Really_Good_This_Time/accelerator.cpp:17) [5]  (1.825 ns)
-	'shl' operation ('shl_ln19', Byte_Count_Really_Good_This_Time/accelerator.cpp:19) [6]  (0.000 ns)
-	'or' operation ('or_ln19', Byte_Count_Really_Good_This_Time/accelerator.cpp:19) [7]  (0.000 ns)
-	fifo write operation ('write_ln19', Byte_Count_Really_Good_This_Time/accelerator.cpp:19) on port 'merge_in_7' (Byte_Count_Really_Good_This_Time/accelerator.cpp:19) [8]  (1.825 ns)
+	fifo read operation ('temp', Byte_Count_Really_Good_This_Time/accelerator.cpp:23) on port 'split_out_7' (Byte_Count_Really_Good_This_Time/accelerator.cpp:23) [5]  (1.825 ns)
+	'shl' operation ('shl_ln24', Byte_Count_Really_Good_This_Time/accelerator.cpp:24) [6]  (0.000 ns)
+	'or' operation ('temp', Byte_Count_Really_Good_This_Time/accelerator.cpp:24) [7]  (0.000 ns)
+	fifo write operation ('write_ln25', Byte_Count_Really_Good_This_Time/accelerator.cpp:25) on port 'merge_in_7' (Byte_Count_Really_Good_This_Time/accelerator.cpp:25) [8]  (1.825 ns)
 
 
 ============================================================

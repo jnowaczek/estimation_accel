@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1687891924712">
-  <ports id="1" name="split_out_7" type="PortType" originalName="in" coreName="FIFO" coreId="1919897660" bitwidth="8" iftype="IfTypeRom">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1689288901375">
+  <ports id="1" name="split_out_7" type="PortType" originalName="in" coreName="FIFO" coreId="1966088236" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="merge_in_7" type="PortType" originalName="out" coreName="FIFO" coreId="1852142702" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="2" name="merge_in_7" type="PortType" originalName="out" coreName="FIFO" coreId="1966088236" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>write</dataInputObjs>
   </ports>
   <edges id="13" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
@@ -12,48 +12,49 @@
   <edges id="21" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@ports.1"/>
   <edges id="22" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
   <blocks id="10" name="worker" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="split_out_7_read" lineNumber="17" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="worker" bitwidth="8" opcode="read" m_display="0" m_delay="1.82" m_topoIndex="1" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="17" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="worker"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="temp" lineNumber="23" originalName="temp" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="worker" bitwidth="8" opcode="read" m_display="0" m_delay="1.82" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="23" fileDirectory="E:\estimation_accel\hls" functionName="worker"/>
       <dataInputObjs>split_out_7</dataInputObjs>
       <dataOutputObjs>shl</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="shl_ln19" lineNumber="19" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="shl_ln19_fu_33_p2" coreId="1600417647" contextFuncName="worker" bitwidth="8" opcode="shl" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="19" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="worker"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="shl_ln24" lineNumber="24" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="shl_ln24_fu_33_p2" coreId="0" contextFuncName="worker" bitwidth="8" opcode="shl" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="24" fileDirectory="E:\estimation_accel\hls" functionName="worker"/>
       <dataInputObjs>read</dataInputObjs>
       <dataOutputObjs>or</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="or_ln19" lineNumber="19" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="merge_in_7_din" coreId="543434016" contextFuncName="worker" bitwidth="8" opcode="or" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="19" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="worker"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="temp_8" lineNumber="24" originalName="temp" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="merge_in_7_din" coreId="1633907488" contextFuncName="worker" bitwidth="8" opcode="or" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="24" fileDirectory="E:\estimation_accel\hls" functionName="worker"/>
       <dataInputObjs>shl</dataInputObjs>
       <dataOutputObjs>write</dataOutputObjs>
       <constName>empty</constName>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="merge_in_7_write_ln19" lineNumber="19" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="worker" opcode="write" m_display="0" m_delay="1.82" m_topoIndex="4" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="19" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="worker"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="merge_in_7_write_ln25" lineNumber="25" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="worker" opcode="write" m_display="0" m_delay="1.82" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="25" fileDirectory="E:\estimation_accel\hls" functionName="worker"/>
       <dataInputObjs>or</dataInputObjs>
       <dataOutputObjs>merge_in_7</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="_ln20" lineNumber="20" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." coreId="2053729641" contextFuncName="worker" opcode="ret" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="20" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="worker"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="_ln26" lineNumber="26" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." coreId="0" contextFuncName="worker" opcode="ret" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="26" fileDirectory="E:\estimation_accel\hls" functionName="worker"/>
     </node_objs>
     <fileValidLineNumbers fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp">
-      <validLinenumbers>17</validLinenumbers>
-      <validLinenumbers>19</validLinenumbers>
-      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>23</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
     </fileValidLineNumbers>
   </blocks>
   <ScheduleInfo time="0"/>
-  <expressionNodes realName="or_ln19_fu_39">
-    <nodeIds>7</nodeIds>
-  </expressionNodes>
-  <expressionNodes realName="shl_ln19_fu_33">
+  <expressionNodes realName="shl_ln24_fu_33">
     <nodeIds>6</nodeIds>
   </expressionNodes>
-  <ioNodes realName="split_out_7_read_read_fu_20">
+  <expressionNodes realName="temp_8_fu_39">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="temp_read_fu_20">
     <nodeIds>5</nodeIds>
   </ioNodes>
-  <ioNodes realName="write_ln19_write_fu_26">
+  <ioNodes realName="write_ln25_write_fu_26">
     <nodeIds>8</nodeIds>
   </ioNodes>
   <ioPorts name="merge_in_7">

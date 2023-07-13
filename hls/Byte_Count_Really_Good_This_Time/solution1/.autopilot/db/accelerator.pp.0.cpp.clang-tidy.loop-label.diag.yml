@@ -1,12 +1,12 @@
 ---
-MainSourceFile:  'C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/.autopilot/db/accelerator.pp.0.cpp'
+MainSourceFile:  'E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/.autopilot/db/accelerator.pp.0.cpp'
 Diagnostics:     
   - DiagnosticName:  xilinx-label-all-loops
     Message:         'Added loop label VITIS_LOOP_1213_1:  '
     FileOffset:      1213
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_int_base.h'
     Replacements:    
-      - FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
+      - FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
         Offset:          55377
         Length:          0
         ReplacementText: 'VITIS_LOOP_1213_1: '
@@ -15,7 +15,7 @@ Diagnostics:
     FileOffset:      676
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
+      - FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
         Offset:          282701
         Length:          0
         ReplacementText: 'VITIS_LOOP_676_1: '
@@ -24,7 +24,7 @@ Diagnostics:
     FileOffset:      690
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
+      - FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
         Offset:          283165
         Length:          0
         ReplacementText: 'VITIS_LOOP_690_1: '
@@ -33,7 +33,7 @@ Diagnostics:
     FileOffset:      704
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_int_ref.h'
     Replacements:    
-      - FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
+      - FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
         Offset:          283630
         Length:          0
         ReplacementText: 'VITIS_LOOP_704_1: '
@@ -42,35 +42,35 @@ Diagnostics:
     FileOffset:      1247
     FilePath:        'C:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_fixed_base.h'
     Replacements:    
-      - FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
+      - FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
         Offset:          566307
         Length:          0
         ReplacementText: 'VITIS_LOOP_1247_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_5_1:  '
-    FileOffset:      5
-    FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.cpp'
+    Message:         'Added loop label VITIS_LOOP_4_1:  '
+    FileOffset:      4
+    FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.cpp'
     Replacements:    
-      - FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
-        Offset:          1601069
+      - FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1601158
         Length:          0
-        ReplacementText: 'VITIS_LOOP_5_1: '
+        ReplacementText: 'VITIS_LOOP_4_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_11_1:  '
-    FileOffset:      11
-    FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.cpp'
+    Message:         'Added loop label VITIS_LOOP_14_1:  '
+    FileOffset:      14
+    FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.cpp'
     Replacements:    
-      - FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
-        Offset:          1601183
+      - FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1601372
         Length:          0
-        ReplacementText: 'VITIS_LOOP_11_1: '
+        ReplacementText: 'VITIS_LOOP_14_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_33_1:  '
-    FileOffset:      33
-    FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.cpp'
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\accelerator.cpp'
     Replacements:    
-      - FilePath:        'C:\byte_count\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
-        Offset:          1602209
+      - FilePath:        'E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\.autopilot\db\accelerator.pp.0.cpp'
+        Offset:          1602421
         Length:          0
-        ReplacementText: 'VITIS_LOOP_33_1: '
+        ReplacementText: 'VITIS_LOOP_39_1: '
 ...

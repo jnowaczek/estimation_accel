@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jul 13 17:56:17 2023
+# Process ID: 19408
+# Current directory: E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/make_go_fast/xsim_script.tcl}
+# Log file: E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/xsim.log
+# Journal file: E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog\xsim.jou
+# Running On: Omnya, OS: Windows, CPU Frequency: 3500 MHz, CPU Physical cores: 6, Host memory: 17087 MB
+#-----------------------------------------------------------
+source xsim.dir/make_go_fast/xsim_script.tcl
+# xsim {make_go_fast} -autoloadwcfg -tclbatch {make_go_fast.tcl}
+Time resolution is 1 ps
+source make_go_fast.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "113000"
+// RTL Simulation : 1 / 1 [n/a] @ "5273000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 5302500 ps : File "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast.autotb.v" Line 357
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jul 13 17:56:19 2023...

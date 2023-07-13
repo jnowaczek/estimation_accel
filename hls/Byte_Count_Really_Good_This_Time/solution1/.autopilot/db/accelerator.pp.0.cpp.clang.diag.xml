@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/.autopilot/db/accelerator.pp.0.cpp</string>
+  <string>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/.autopilot/db/accelerator.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -647,7 +647,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl</string>
+      <string>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl</string>
       <key>line</key>
       <integer>18</integer>
       <key>column</key>
@@ -663,7 +663,7 @@
       <key>level</key>
       <string>warning</string>
       <key>filename</key>
-      <string>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl</string>
+      <string>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl</string>
       <key>line</key>
       <integer>7</integer>
       <key>column</key>
@@ -681,11 +681,11 @@
       <key>filename</key>
       <string>Byte_Count_Really_Good_This_Time/accelerator.cpp</string>
       <key>line</key>
-      <integer>23</integer>
+      <integer>29</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=make_go_fast_XLX_SEP_ PragmaOptions=mode=m_axi max_read_burst_length=64 port=in offset=slave_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=make_go_fast_XLX_SEP_ PragmaOptions=mode=axis port=in_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -697,11 +697,11 @@
       <key>filename</key>
       <string>Byte_Count_Really_Good_This_Time/accelerator.cpp</string>
       <key>line</key>
-      <integer>24</integer>
+      <integer>30</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=make_go_fast_XLX_SEP_ PragmaOptions=mode=m_axi max_write_burst_length=64 port=out offset=slave_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=make_go_fast_XLX_SEP_ PragmaOptions=mode=axis port=out_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>
@@ -713,7 +713,7 @@
       <key>filename</key>
       <string>Byte_Count_Really_Good_This_Time/accelerator.cpp</string>
       <key>line</key>
-      <integer>27</integer>
+      <integer>33</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -729,7 +729,7 @@
       <key>filename</key>
       <string>Byte_Count_Really_Good_This_Time/accelerator.cpp</string>
       <key>line</key>
-      <integer>34</integer>
+      <integer>40</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>

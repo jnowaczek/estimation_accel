@@ -1,8 +1,8 @@
-# 1 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.cpp"
+# 1 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.cpp"
-# 1 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 1
+# 1 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.cpp"
+# 1 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 1
        
 
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
@@ -55363,7 +55363,7 @@ inline bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 2
-# 4 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 4 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h" 1
 # 41 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/include/c++/6.2.0/climits" 1 3
@@ -55526,7 +55526,7 @@ template <std::size_t WData> struct qdma_axis<WData, 0, 0, 0> {
     return *this;
   }
 };
-# 5 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 5 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_np_channel.h" 1
 # 25 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_np_channel.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h" 1
@@ -78529,9 +78529,9 @@ public:
 };
 }
 }
-# 6 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 6 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h" 1
-# 7 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 7 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_task.h" 1
 # 40 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_task.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_streamofblocks.h" 1
@@ -78829,42 +78829,51 @@ private:
 
 
 }
-# 8 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 8 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 
 
 
 
 
-typedef ap_uint<8> data;
+typedef ap_axis<8, 0, 0, 0> data_pkt;
+typedef ap_int<8> data_t;
 
-void make_go_fast(data in[512 / 8], data out[512 / 8]);
-# 2 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.cpp" 2
+void make_go_fast(hls::stream<data_pkt> &in, int n, hls::stream<data_pkt> &out);
+# 2 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.cpp" 2
 
-
-void read_in(data *in, hls::stream<data> &out) {
- for (int i = 0; i < 512 / 8; i++) {
-  out.write(in[i]);
+void read_in(hls::stream<data_pkt> &in, int n, hls::stream<data_t> &out) {
+ for (int i = 0; i < n; i++) {
+  data_pkt temp_pkt;
+  data_t temp;
+  in.read(temp_pkt);
+  temp = temp_pkt.data;
+  out.write(temp);
  }
 }
 
-void write_out(hls::stream<data> &in, data *out) {
- for (int i = 0; i < 512 / 8; i++) {
-  out[i] = in.read();
+void write_out(hls::stream<data_t> &in, int n, hls::stream<data_pkt> &out) {
+ for (int i = 0; i < n; i++) {
+  data_t temp = in.read();
+  data_pkt temp_pkt;
+  temp_pkt.data = temp;
+  out.write(temp_pkt);
  }
 }
 
-void worker(hls::stream<data> &in, hls::stream<data> &out) {
- int i = in.read();
- int o = i * 2 + 1;
- out.write(o);
+void worker(hls::stream<data_t> &in, hls::stream<data_t> &out) {
+ data_t temp = in.read();
+ temp = temp * 2 + 1;
+ out.write(temp);
 }
 
-void make_go_fast(data in[64], data out[64]) {
- thread_local hls::split::round_robin<data, 8> split;
- thread_local hls::merge::round_robin<data, 8> merge;
+void make_go_fast(hls::stream<data_pkt> &in, int n, hls::stream<data_pkt> &out) {
+#pragma HLS INTERFACE mode=axis port=in
+#pragma HLS INTERFACE mode=axis port=out
+ thread_local hls::split::round_robin<data_t, 8> split;
+ thread_local hls::merge::round_robin<data_t, 8> merge;
 #pragma HLS DATAFLOW
 
- read_in(in, split.in);
+ read_in(in, n, split.in);
 
  thread_local hls::task tasks[8];
 
@@ -78873,5 +78882,5 @@ void make_go_fast(data in[64], data out[64]) {
   tasks[i](worker, split.out[i], merge.in[i]);
  }
 
- write_out(merge.out, out);
+ write_out(merge.out, n, out);
 }

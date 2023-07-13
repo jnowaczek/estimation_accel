@@ -19,7 +19,7 @@
 
 <Node id="3" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %split_out_3, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %split_out_3, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -34,7 +34,7 @@ entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %spl
 
 <Node id="4" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %merge_in_3, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0
+entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %merge_in_3, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -49,10 +49,10 @@ entry:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %mer
 
 <Node id="5" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-entry:2 %split_out_3_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %split_out_3
+entry:2 %temp = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %split_out_3
 
 ]]></Node>
-<StgValue><ssdm name="split_out_3_read"/></StgValue>
+<StgValue><ssdm name="temp"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -64,10 +64,10 @@ entry:2 %split_out_3_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %s
 
 <Node id="6" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-entry:3 %shl_ln19 = shl i8 %split_out_3_read, i8 1
+entry:3 %shl_ln24 = shl i8 %temp, i8 1
 
 ]]></Node>
-<StgValue><ssdm name="shl_ln19"/></StgValue>
+<StgValue><ssdm name="shl_ln24"/></StgValue>
 </operation>
 
 <operation id="6" st_id="1" stage="1" lat="1">
@@ -79,10 +79,10 @@ entry:3 %shl_ln19 = shl i8 %split_out_3_read, i8 1
 
 <Node id="7" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-entry:4 %or_ln19 = or i8 %shl_ln19, i8 1
+entry:4 %temp_4 = or i8 %shl_ln24, i8 1
 
 ]]></Node>
-<StgValue><ssdm name="or_ln19"/></StgValue>
+<StgValue><ssdm name="temp_4"/></StgValue>
 </operation>
 
 <operation id="7" st_id="1" stage="1" lat="1">
@@ -94,10 +94,10 @@ entry:4 %or_ln19 = or i8 %shl_ln19, i8 1
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-entry:5 %write_ln19 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %merge_in_3, i8 %or_ln19
+entry:5 %write_ln25 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %merge_in_3, i8 %temp_4
 
 ]]></Node>
-<StgValue><ssdm name="write_ln19"/></StgValue>
+<StgValue><ssdm name="write_ln25"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -109,10 +109,10 @@ entry:5 %write_ln19 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %mer
 
 <Node id="9" bw="0">
 <![CDATA[
-entry:6 %ret_ln20 = ret
+entry:6 %ret_ln26 = ret
 
 ]]></Node>
-<StgValue><ssdm name="ret_ln20"/></StgValue>
+<StgValue><ssdm name="ret_ln26"/></StgValue>
 </operation>
 </state>
 </state_list>

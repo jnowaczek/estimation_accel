@@ -1,33 +1,38 @@
 #include "accelerator.h"
 
-void read_in(hls::axis<data, 0, 0, 0> &in, hls::stream<data> &out) {
-	for (int i = 0; i < INTERFACE_WIDTH / NUM_WORKERS; i++) {
-		auto packet;
-		in.read(packet);
-		out.write(packet.data);
+void read_in(hls::stream<data_pkt> &in, int n, hls::stream<data_t> &out) {
+	for (int i = 0; i < n; i++) {
+		data_pkt temp_pkt;
+		data_t temp;
+		in.read(temp_pkt);
+		temp = temp_pkt.data;
+		out.write(temp);
 	}
 }
 
-void write_out(hls::stream<data> &in, hls::axis<data, 0, 0, 0> &out) {
-	for (int i = 0; i < INTERFACE_WIDTH / NUM_WORKERS; i++) {
-		out[i] = in.read();
+void write_out(hls::stream<data_t> &in, int n, hls::stream<data_pkt> &out) {
+	for (int i = 0; i < n; i++) {
+		data_t temp = in.read();
+		data_pkt temp_pkt;
+		temp_pkt.data = temp;
+		out.write(temp_pkt);
 	}
 }
 
-void worker(hls::stream<data> &in, hls::stream<data> &out) {
-	int i = in.read();
-	int o = i * 2 + 1;
-	out.write(o);
+void worker(hls::stream<data_t> &in, hls::stream<data_t> &out) {
+	data_t temp = in.read();
+	temp = temp * 2 + 1;
+	out.write(temp);
 }
 
-void make_go_fast(hls::axis<data, 0, 0, 0> &in, hls::axis<data, 0, 0, 0> &out) {
+void make_go_fast(hls::stream<data_pkt> &in, int n, hls::stream<data_pkt> &out) {
 #pragma HLS INTERFACE mode=axis port=in
 #pragma HLS INTERFACE mode=axis port=out
-	hls_thread_local hls::split::round_robin<data, NUM_WORKERS> split;
-	hls_thread_local hls::merge::round_robin<data, NUM_WORKERS> merge;
+	hls_thread_local hls::split::round_robin<data_t, NUM_WORKERS> split;
+	hls_thread_local hls::merge::round_robin<data_t, NUM_WORKERS> merge;
 #pragma HLS DATAFLOW
 
-	read_in(in, split.in);
+	read_in(in, n, split.in);
 
 	hls_thread_local hls::task tasks[NUM_WORKERS];
 
@@ -36,6 +41,6 @@ void make_go_fast(hls::axis<data, 0, 0, 0> &in, hls::axis<data, 0, 0, 0> &out) {
 		tasks[i](worker, split.out[i], merge.in[i]);
 	}
 
-	write_out(merge.out, out);
+	write_out(merge.out, n, out);
 }
 

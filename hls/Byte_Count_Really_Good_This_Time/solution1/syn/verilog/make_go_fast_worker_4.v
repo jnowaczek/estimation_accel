@@ -50,7 +50,7 @@ wire    ap_CS_fsm_state1;
 reg    split_out_3_blk_n;
 reg    merge_in_3_blk_n;
 reg    ap_block_state1;
-wire   [7:0] shl_ln19_fu_33_p2;
+wire   [7:0] shl_ln24_fu_33_p2;
 reg   [0:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ce_reg;
@@ -162,8 +162,8 @@ always @ (*) begin
     ap_block_state1 = ((ap_start == 1'b0) | (merge_in_3_full_n == 1'b0) | (split_out_3_empty_n == 1'b0) | (ap_done_reg == 1'b1));
 end
 
-assign merge_in_3_din = (shl_ln19_fu_33_p2 | 8'd1);
+assign merge_in_3_din = (shl_ln24_fu_33_p2 | 8'd1);
 
-assign shl_ln19_fu_33_p2 = split_out_3_dout << 8'd1;
+assign shl_ln24_fu_33_p2 = split_out_3_dout << 8'd1;
 
 endmodule //make_go_fast_worker_4

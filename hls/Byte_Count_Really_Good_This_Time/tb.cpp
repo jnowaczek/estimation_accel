@@ -17,19 +17,35 @@
 #include "accelerator.h"
 #include <cstdio>
 
-int main() {
-    data a[INTERFACE_WIDTH / DATA_WIDTH];
-    data b[INTERFACE_WIDTH / DATA_WIDTH];
+#define TEST_SIZE 1024
 
-    for (int i = 0; i<INTERFACE_WIDTH / DATA_WIDTH; i++)
-        a[i] = i;
-    make_go_fast(a, b);
-    for (int i = 0; i<INTERFACE_WIDTH / DATA_WIDTH; i++) {
-        if (b[i] != a[i] * 2 + 1) {
-            printf("i=%d %d!=%d FAIL\n", i, b[i], a[i]*2+1);
-            return 1;
-        }
-    }
-    return 0;
+int main() {
+	hls::stream<data_pkt> in, out, software;
+
+	for (int i = 0; i < TEST_SIZE; i++) {
+		data_pkt temp;
+		temp.data = i;
+		temp.last = (i == (TEST_SIZE - 1) ? 1 : 0);
+		in.write(temp);
+	}
+
+	for (int i = 0; i < TEST_SIZE; i++) {
+		data_pkt temp;
+		temp.data = i * 2 + 1;
+		temp.last = (i == (TEST_SIZE - 1) ? 1 : 0);
+		software.write(temp);
+	}
+
+	make_go_fast(in, TEST_SIZE, out);
+
+	for (int i = 0; i < TEST_SIZE; i++) {
+		data_pkt result = out.read();
+		data_pkt expected = software.read();
+		if (result.data != expected.data) {
+			printf("i=%d %d!=%d FAIL\n", i, result.data, expected.data);
+			return 1;
+		}
+	}
+	return 0;
 }
 

@@ -29,47 +29,52 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/.apc/.src</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/.apc/.tb</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/.apc/.tb</location>
+		</link>
+		<link>
+			<name>.reference/ap_axi_sdata.h</name>
+			<type>1</type>
+			<location>C:/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/.tcls</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/accelerator.cpp</name>
 			<type>1</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.cpp</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.cpp</location>
 		</link>
 		<link>
 			<name>source/accelerator.h</name>
 			<type>1</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h</location>
 		</link>
 		<link>
 			<name>testbench/tb.cpp</name>
 			<type>1</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/solution1.directive</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/script.tcl</location>
+			<location>E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

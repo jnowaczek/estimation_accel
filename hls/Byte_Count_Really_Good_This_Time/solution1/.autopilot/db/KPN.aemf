@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1687891924846">
-  <ports id="1" name="split_out_0" type="PortType" coreId="1852142702" bitwidth="8" iftype="IfTypeRom">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1689288901500">
+  <ports id="1" name="split_out_0" type="PortType" coreId="1966088236" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="2" name="merge_in_0" type="PortType" coreId="4228300630" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="2" name="merge_in_0" type="PortType" coreId="1966088236" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="3" name="split_out_1" type="PortType" coreId="3143995000" bitwidth="8" iftype="IfTypeRom">
+  <ports id="3" name="split_out_1" type="PortType" coreId="977479712" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="4" name="merge_in_1" type="PortType" coreId="542462019" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="4" name="merge_in_1" type="PortType" coreId="1836008224" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="5" name="split_out_2" type="PortType" coreId="1852142702" bitwidth="8" iftype="IfTypeRom">
+  <ports id="5" name="split_out_2" type="PortType" coreId="1966088236" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="6" name="merge_in_2" type="PortType" coreId="943486062" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="6" name="merge_in_2" type="PortType" coreId="2386307688" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="7" name="split_out_3" type="PortType" coreId="795765090" bitwidth="8" iftype="IfTypeRom">
+  <ports id="7" name="split_out_3" type="PortType" coreId="1734702190" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="8" name="merge_in_3" type="PortType" coreId="1718558820" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="8" name="merge_in_3" type="PortType" coreId="0" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="9" name="split_out_4" type="PortType" coreId="1919252069" bitwidth="8" iftype="IfTypeRom">
+  <ports id="9" name="split_out_4" type="PortType" coreId="1966088236" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="10" name="merge_in_4" type="PortType" coreId="1835619423" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="10" name="merge_in_4" type="PortType" coreId="1966088236" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="11" name="split_out_5" type="PortType" coreId="539111470" bitwidth="8" iftype="IfTypeRom">
+  <ports id="11" name="split_out_5" type="PortType" coreId="2387053696" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="12" name="merge_in_5" type="PortType" coreId="1701999221" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="12" name="merge_in_5" type="PortType" coreId="977479712" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="13" name="split_out_6" type="PortType" coreId="1397508130" bitwidth="8" iftype="IfTypeRom">
+  <ports id="13" name="split_out_6" type="PortType" coreId="977479712" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="14" name="merge_in_6" type="PortType" coreId="1869881445" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="14" name="merge_in_6" type="PortType" coreId="977479712" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
-  <ports id="15" name="split_out_7" type="PortType" coreId="1936018748" bitwidth="8" iftype="IfTypeRom">
+  <ports id="15" name="split_out_7" type="PortType" coreId="0" bitwidth="8" iftype="IfTypeRom">
     <dataOutputObjs>call</dataOutputObjs>
   </ports>
-  <ports id="16" name="merge_in_7" type="PortType" coreId="1684367475" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+  <ports id="16" name="merge_in_7" type="PortType" coreId="977479712" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
     <dataInputObjs>call</dataInputObjs>
   </ports>
   <edges id="47" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
@@ -66,55 +66,55 @@
   <edges id="76" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@ports.15"/>
   <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="155" RegionName="KPN">
     <basic_blocks id="44" name="KPN" type="BlockType">
-      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_1_U0" coreId="1143094631" contextFuncName="p_Z12make_go_fastP7ap_uintILi8EES1_RegionBB" opcode="call" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="_Z12make_go_fastP7ap_uintILi8EES1__RegionBB"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_1_U0" coreId="1414750023" contextFuncName="p_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_RegionBB" opcode="call" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="E:\estimation_accel\hls" functionName="_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB"/>
         <dataInputObjs>split_out_0</dataInputObjs>
         <dataOutputObjs>merge_in_0</dataOutputObjs>
         <constName>worker_1</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_2_U0" coreId="825913456" contextFuncName="p_Z12make_go_fastP7ap_uintILi8EES1_RegionBB" opcode="call" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="_Z12make_go_fastP7ap_uintILi8EES1__RegionBB"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_2_U0" coreId="1634035310" contextFuncName="p_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_RegionBB" opcode="call" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="E:\estimation_accel\hls" functionName="_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB"/>
         <dataInputObjs>split_out_1</dataInputObjs>
         <dataOutputObjs>merge_in_1</dataOutputObjs>
         <constName>worker_2</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_3_U0" coreId="624059954" contextFuncName="p_Z12make_go_fastP7ap_uintILi8EES1_RegionBB" opcode="call" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="_Z12make_go_fastP7ap_uintILi8EES1__RegionBB"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_3_U0" coreId="1885414944" contextFuncName="p_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_RegionBB" opcode="call" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="E:\estimation_accel\hls" functionName="_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB"/>
         <dataInputObjs>split_out_2</dataInputObjs>
         <dataOutputObjs>merge_in_2</dataOutputObjs>
         <constName>worker_3</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_4_U0" coreId="1634030175" contextFuncName="p_Z12make_go_fastP7ap_uintILi8EES1_RegionBB" opcode="call" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="_Z12make_go_fastP7ap_uintILi8EES1__RegionBB"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_4_U0" coreId="0" contextFuncName="p_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_RegionBB" opcode="call" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="E:\estimation_accel\hls" functionName="_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB"/>
         <dataInputObjs>split_out_3</dataInputObjs>
         <dataOutputObjs>merge_in_3</dataOutputObjs>
         <constName>worker_4</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_5_U0" coreId="539780901" contextFuncName="p_Z12make_go_fastP7ap_uintILi8EES1_RegionBB" opcode="call" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="_Z12make_go_fastP7ap_uintILi8EES1__RegionBB"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_5_U0" coreId="757935405" contextFuncName="p_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_RegionBB" opcode="call" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="E:\estimation_accel\hls" functionName="_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB"/>
         <dataInputObjs>split_out_4</dataInputObjs>
         <dataOutputObjs>merge_in_4</dataOutputObjs>
         <constName>worker_5</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_6_U0" coreId="1797268061" contextFuncName="p_Z12make_go_fastP7ap_uintILi8EES1_RegionBB" opcode="call" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="_Z12make_go_fastP7ap_uintILi8EES1__RegionBB"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_6_U0" coreId="1769169250" contextFuncName="p_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_RegionBB" opcode="call" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="E:\estimation_accel\hls" functionName="_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB"/>
         <dataInputObjs>split_out_5</dataInputObjs>
         <dataOutputObjs>merge_in_5</dataOutputObjs>
         <constName>worker_6</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_7_U0" coreId="1096045407" contextFuncName="p_Z12make_go_fastP7ap_uintILi8EES1_RegionBB" opcode="call" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="_Z12make_go_fastP7ap_uintILi8EES1__RegionBB"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_7_U0" coreId="2377530368" contextFuncName="p_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_RegionBB" opcode="call" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="E:\estimation_accel\hls" functionName="_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB"/>
         <dataInputObjs>split_out_6</dataInputObjs>
         <dataOutputObjs>merge_in_6</dataOutputObjs>
         <constName>worker_7</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_U0" coreId="1415541609" contextFuncName="p_Z12make_go_fastP7ap_uintILi8EES1_RegionBB" opcode="call" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
-        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="C:\byte_count\estimation_accel\hls" functionName="_Z12make_go_fastP7ap_uintILi8EES1__RegionBB"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="_ln87" lineNumber="87" fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" fileDirectory="../." rtlName="worker_U0" coreId="32" contextFuncName="p_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_RegionBB" opcode="call" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp" linenumber="87" fileDirectory="E:\estimation_accel\hls" functionName="_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB"/>
         <dataInputObjs>split_out_7</dataInputObjs>
         <dataOutputObjs>merge_in_7</dataOutputObjs>
         <constName>worker</constName>
       </node_objs>
-      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="_ln0" coreId="976909164" opcode="ret" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1"/>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="_ln0" coreId="1769104758" opcode="ret" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1"/>
       <fileValidLineNumbers fileName="Byte_Count_Really_Good_This_Time/accelerator.cpp">
         <validLinenumbers>87</validLinenumbers>
       </fileValidLineNumbers>

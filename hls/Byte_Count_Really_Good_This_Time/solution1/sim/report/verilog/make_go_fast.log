@@ -1,0 +1,161 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_make_go_fast_util.cpp
+   Compiling accelerator.cpp_pre.cpp.tb.cpp
+   Compiling tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_make_go_fast.cpp
+   Compiling apatb_make_go_fast_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1024
+
+E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\sim\verilog>set PATH= 
+
+E:\estimation_accel\hls\Byte_Count_Really_Good_This_Time\solution1\sim\verilog>call C:/Xilinx/Vivado/2023.1/bin/xelab xil_defaultlib.apatb_make_go_fast_top glbl -Oenable_linking_all_libraries  -prj make_go_fast.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib "ieee_proposed=./ieee_proposed" -s make_go_fast  
+ECHO is off.
+ECHO is off.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_make_go_fast_top glbl -Oenable_linking_all_libraries -prj make_go_fast.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s make_go_fast 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/AESL_axi_s_in_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/AESL_axi_s_out_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_make_go_fast_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_KPN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_KPN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_merge_8I1O_w8_d0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_merge_8I1O_w8_d0
+INFO: [VRFC 10-311] analyzing module make_go_fast_merge_8I1O_w8_d0_channel
+INFO: [VRFC 10-311] analyzing module make_go_fast_merge_8I1O_w8_d0_arbiter
+INFO: [VRFC 10-311] analyzing module make_go_fast_merge_8I1O_w8_d0_regslice
+INFO: [VRFC 10-311] analyzing module make_go_fast_merge_8I1O_w8_d0_fifo
+INFO: [VRFC 10-311] analyzing module make_go_fast_merge_8I1O_w8_d0_srl
+INFO: [VRFC 10-311] analyzing module make_go_fast_merge_8I1O_w8_d0_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_read_in.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_read_in
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_regslice_both
+INFO: [VRFC 10-311] analyzing module make_go_fast_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_split_1I8O_w8_d0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_split_1I8O_w8_d0
+INFO: [VRFC 10-311] analyzing module make_go_fast_split_1I8O_w8_d0_channel
+INFO: [VRFC 10-311] analyzing module make_go_fast_split_1I8O_w8_d0_arbiter
+INFO: [VRFC 10-311] analyzing module make_go_fast_split_1I8O_w8_d0_regslice
+INFO: [VRFC 10-311] analyzing module make_go_fast_split_1I8O_w8_d0_fifo
+INFO: [VRFC 10-311] analyzing module make_go_fast_split_1I8O_w8_d0_srl
+INFO: [VRFC 10-311] analyzing module make_go_fast_split_1I8O_w8_d0_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_worker.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_worker
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_worker_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_worker_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_worker_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_worker_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_worker_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_worker_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_worker_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_worker_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_worker_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_worker_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_worker_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_worker_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_worker_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_worker_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast_write_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module make_go_fast_write_out
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.make_go_fast_flow_control_loop_p...
+Compiling module xil_defaultlib.make_go_fast_regslice_both(DataW...
+Compiling module xil_defaultlib.make_go_fast_regslice_both(DataW...
+Compiling module xil_defaultlib.make_go_fast_read_in
+Compiling module xil_defaultlib.make_go_fast_worker_1
+Compiling module xil_defaultlib.make_go_fast_worker_2
+Compiling module xil_defaultlib.make_go_fast_worker_3
+Compiling module xil_defaultlib.make_go_fast_worker_4
+Compiling module xil_defaultlib.make_go_fast_worker_5
+Compiling module xil_defaultlib.make_go_fast_worker_6
+Compiling module xil_defaultlib.make_go_fast_worker_7
+Compiling module xil_defaultlib.make_go_fast_worker
+Compiling module xil_defaultlib.make_go_fast_KPN
+Compiling module xil_defaultlib.make_go_fast_write_out
+Compiling module xil_defaultlib.make_go_fast_split_1I8O_w8_d0_sr...
+Compiling module xil_defaultlib.make_go_fast_split_1I8O_w8_d0_fi...
+Compiling module xil_defaultlib.make_go_fast_split_1I8O_w8_d0_ar...
+Compiling module xil_defaultlib.make_go_fast_split_1I8O_w8_d0_re...
+Compiling module xil_defaultlib.make_go_fast_split_1I8O_w8_d0_ch...
+Compiling module xil_defaultlib.make_go_fast_split_1I8O_w8_d0
+Compiling module xil_defaultlib.make_go_fast_merge_8I1O_w8_d0_re...
+Compiling module xil_defaultlib.make_go_fast_merge_8I1O_w8_d0_ar...
+Compiling module xil_defaultlib.make_go_fast_merge_8I1O_w8_d0_sr...
+Compiling module xil_defaultlib.make_go_fast_merge_8I1O_w8_d0_fi...
+Compiling module xil_defaultlib.make_go_fast_merge_8I1O_w8_d0_ch...
+Compiling module xil_defaultlib.make_go_fast_merge_8I1O_w8_d0
+Compiling module xil_defaultlib.make_go_fast
+Compiling module xil_defaultlib.fifo(DEPTH=1024)
+Compiling module xil_defaultlib.fifo(DEPTH=1024,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_in_r
+Compiling module xil_defaultlib.AESL_axi_s_out_r
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_make_go_fast_top
+Compiling module work.glbl
+Built simulation snapshot make_go_fast
+ECHO is off.
+ECHO is off.
+
+****** xsim v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/make_go_fast/xsim_script.tcl
+# xsim {make_go_fast} -autoloadwcfg -tclbatch {make_go_fast.tcl}
+Time resolution is 1 ps
+source make_go_fast.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "113000"
+// RTL Simulation : 1 / 1 [n/a] @ "5273000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 5302500 ps : File "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/sim/verilog/make_go_fast.autotb.v" Line 357
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jul 13 17:56:19 2023...
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1024
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

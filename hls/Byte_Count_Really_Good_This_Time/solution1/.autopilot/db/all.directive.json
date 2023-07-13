@@ -16,7 +16,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl",
+    "sourceFile": "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl",
     "sourceLine": 7,
     "success": true
   },
@@ -37,7 +37,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl",
+    "sourceFile": "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl",
     "sourceLine": 18,
     "success": true
   }

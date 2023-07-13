@@ -1,71 +1,8 @@
 {
     "1": {
-        "name": "write_out",
-        "file": "accelerator.cpp",
-        "fileloc": "10",
-        "instructions": "27",
-        "total_instructions": "27",
-        "calls": "",
-        "basicblocks": "8",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "2": {
         "name": "worker",
         "file": "accelerator.cpp",
-        "fileloc": "16",
-        "instructions": "7",
-        "total_instructions": "7",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "3": {
-        "name": "worker",
-        "file": "accelerator.cpp",
-        "fileloc": "16",
-        "instructions": "7",
-        "total_instructions": "7",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "4": {
-        "name": "worker",
-        "file": "accelerator.cpp",
-        "fileloc": "16",
-        "instructions": "7",
-        "total_instructions": "7",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "5": {
-        "name": "_Z12make_go_fastP7ap_uintILi8EES1__RegionBB",
-        "file": "accelerator.cpp",
-        "fileloc": "0",
-        "instructions": "27",
-        "total_instructions": "83",
-        "calls": "11 8 3 4 10 6 7 2",
-        "basicblocks": "1"
-    },
-    "6": {
-        "name": "worker",
-        "file": "accelerator.cpp",
-        "fileloc": "16",
-        "instructions": "7",
-        "total_instructions": "7",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "7": {
-        "name": "worker",
-        "file": "accelerator.cpp",
-        "fileloc": "16",
+        "fileloc": "22",
         "instructions": "7",
         "total_instructions": "7",
         "calls": "",
@@ -74,29 +11,29 @@
     "0": {
         "name": "make_go_fast",
         "file": "accelerator.cpp",
-        "fileloc": "22",
-        "instructions": "54",
-        "total_instructions": "187",
-        "calls": "9 5 1",
+        "fileloc": "28",
+        "instructions": "59",
+        "total_instructions": "181",
+        "calls": "7 5 3",
         "basicblocks": "1"
     },
-    "8": {
+    "2": {
         "name": "worker",
         "file": "accelerator.cpp",
-        "fileloc": "16",
+        "fileloc": "22",
         "instructions": "7",
         "total_instructions": "7",
         "calls": "",
         "basicblocks": "1"
     },
-    "9": {
-        "name": "read_in",
+    "3": {
+        "name": "write_out",
         "file": "accelerator.cpp",
-        "fileloc": "4",
-        "instructions": "23",
-        "total_instructions": "23",
+        "fileloc": "13",
+        "instructions": "19",
+        "total_instructions": "19",
         "calls": "",
-        "basicblocks": "6",
+        "basicblocks": "4",
         "loads": {
             "L": "1"
         },
@@ -107,10 +44,73 @@
             "L": "1"
         }
     },
+    "4": {
+        "name": "worker",
+        "file": "accelerator.cpp",
+        "fileloc": "22",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB",
+        "file": "accelerator.cpp",
+        "fileloc": "0",
+        "instructions": "27",
+        "total_instructions": "83",
+        "calls": "11 2 8 1 10 6 4 9",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "worker",
+        "file": "accelerator.cpp",
+        "fileloc": "22",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "read_in",
+        "file": "accelerator.cpp",
+        "fileloc": "3",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "worker",
+        "file": "accelerator.cpp",
+        "fileloc": "22",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "9": {
+        "name": "worker",
+        "file": "accelerator.cpp",
+        "fileloc": "22",
+        "instructions": "7",
+        "total_instructions": "7",
+        "calls": "",
+        "basicblocks": "1"
+    },
     "10": {
         "name": "worker",
         "file": "accelerator.cpp",
-        "fileloc": "16",
+        "fileloc": "22",
         "instructions": "7",
         "total_instructions": "7",
         "calls": "",
@@ -119,7 +119,7 @@
     "11": {
         "name": "worker",
         "file": "accelerator.cpp",
-        "fileloc": "16",
+        "fileloc": "22",
         "instructions": "7",
         "total_instructions": "7",
         "calls": "",

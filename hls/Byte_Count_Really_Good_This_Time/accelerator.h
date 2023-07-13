@@ -10,6 +10,7 @@
 #define NUM_WORKERS 8
 #define DATA_WIDTH 8
 
-typedef ap_uint<DATA_WIDTH> data;
+typedef ap_axis<DATA_WIDTH, 0, 0, 0> data_pkt;
+typedef ap_int<DATA_WIDTH> data_t;
 
-void make_go_fast(hls::axis<data, 0, 0, 0> &in, hls::axis<data, 0, 0, 0> &out);
+void make_go_fast(hls::stream<data_pkt> &in, int n, hls::stream<data_pkt> &out);

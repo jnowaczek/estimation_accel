@@ -3,10 +3,10 @@ set ModuleHierarchy {[{
 "SubInsts" : [
 	{"Name" : "read_in_U0","ID" : "1","Type" : "sequential",
 		"SubLoops" : [
-		{"Name" : "VITIS_LOOP_5_1","ID" : "2","Type" : "pipeline"},]},
+		{"Name" : "VITIS_LOOP_4_1","ID" : "2","Type" : "pipeline"},]},
 	{"Name" : "write_out_U0","ID" : "3","Type" : "sequential",
 		"SubLoops" : [
-		{"Name" : "VITIS_LOOP_11_1","ID" : "4","Type" : "pipeline"},]},
+		{"Name" : "VITIS_LOOP_14_1","ID" : "4","Type" : "pipeline"},]},
 	{"Name" : "KPN_U0","ID" : "5","Type" : "dataflow",
 		"SubInsts" : [
 		{"Name" : "worker_1_U0","ID" : "6","Type" : "sequential"},

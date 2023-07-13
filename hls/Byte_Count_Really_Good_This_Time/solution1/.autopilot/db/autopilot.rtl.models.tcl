@@ -1,6 +1,7 @@
 set SynModuleInfo {
   {SRCNAME read_in MODELNAME read_in RTLNAME make_go_fast_read_in
     SUBMODULES {
+      {MODELNAME make_go_fast_regslice_both RTLNAME make_go_fast_regslice_both BINDTYPE interface TYPE interface_regslice INSTNAME make_go_fast_regslice_both_U}
       {MODELNAME make_go_fast_flow_control_loop_pipe RTLNAME make_go_fast_flow_control_loop_pipe BINDTYPE interface TYPE internal_upc_flow_control INSTNAME make_go_fast_flow_control_loop_pipe_U}
     }
   }
@@ -18,9 +19,6 @@ set SynModuleInfo {
     SUBMODULES {
       {MODELNAME make_go_fast_split_1I8O_w8_d0 RTLNAME make_go_fast_split_1I8O_w8_d0 BINDTYPE op TYPE channel IMPL simo}
       {MODELNAME make_go_fast_merge_8I1O_w8_d0 RTLNAME make_go_fast_merge_8I1O_w8_d0 BINDTYPE op TYPE channel IMPL miso}
-      {MODELNAME make_go_fast_gmem_m_axi RTLNAME make_go_fast_gmem_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
-      {MODELNAME make_go_fast_gmem0_m_axi RTLNAME make_go_fast_gmem0_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
-      {MODELNAME make_go_fast_control_s_axi RTLNAME make_go_fast_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
     }
   }
 }

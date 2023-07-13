@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'worker'
 ================================================================
-* Date:           Tue Jun 27 13:52:02 2023
+* Date:           Thu Jul 13 17:54:59 2023
 
 * Version:        2023.1 (Build 3854077 on May  4 2023)
 * Project:        Byte_Count_Really_Good_This_Time
@@ -75,13 +75,13 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.65>
-ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %split_out_7, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 2 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %merge_in_7, void @empty_10, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 3 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 4 [1/1] (1.82ns)   --->   "%split_out_7_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %split_out_7" [Byte_Count_Really_Good_This_Time/accelerator.cpp:17]   --->   Operation 4 'read' 'split_out_7_read' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%shl_ln19 = shl i8 %split_out_7_read, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 5 'shl' 'shl_ln19' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%or_ln19 = or i8 %shl_ln19, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 6 'or' 'or_ln19' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (1.82ns)   --->   "%write_ln19 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %merge_in_7, i8 %or_ln19" [Byte_Count_Really_Good_This_Time/accelerator.cpp:19]   --->   Operation 7 'write' 'write_ln19' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln20 = ret" [Byte_Count_Really_Good_This_Time/accelerator.cpp:20]   --->   Operation 8 'ret' 'ret_ln20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %split_out_7, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 2 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %merge_in_7, void @empty_3, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 3 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (1.82ns)   --->   "%temp = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %split_out_7" [Byte_Count_Really_Good_This_Time/accelerator.cpp:23]   --->   Operation 4 'read' 'temp' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%shl_ln24 = shl i8 %temp, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:24]   --->   Operation 5 'shl' 'shl_ln24' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%temp_8 = or i8 %shl_ln24, i8 1" [Byte_Count_Really_Good_This_Time/accelerator.cpp:24]   --->   Operation 6 'or' 'temp_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.82ns)   --->   "%write_ln25 = write void @_ssdm_op_Write.ap_fifo.volatile.i8P0A, i8 %merge_in_7, i8 %temp_8" [Byte_Count_Really_Good_This_Time/accelerator.cpp:25]   --->   Operation 7 'write' 'write_ln25' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%ret_ln26 = ret" [Byte_Count_Really_Good_This_Time/accelerator.cpp:26]   --->   Operation 8 'ret' 'ret_ln26' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -105,11 +105,11 @@ Port [ merge_in_7]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0;
 <method=bitvector/>
 specinterface_ln0 (specinterface) [ 00]
 specinterface_ln0 (specinterface) [ 00]
-split_out_7_read  (read         ) [ 00]
-shl_ln19          (shl          ) [ 00]
-or_ln19           (or           ) [ 00]
-write_ln19        (write        ) [ 00]
-ret_ln20          (ret          ) [ 00]
+temp              (read         ) [ 00]
+shl_ln24          (shl          ) [ 00]
+temp_8            (or           ) [ 00]
+write_ln25        (write        ) [ 00]
+ret_ln26          (ret          ) [ 00]
 </LifeTime>
 
 <model>
@@ -147,7 +147,7 @@ ret_ln20          (ret          ) [ 00]
 <pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_3"/></StgValue>
 </bind>
 </comp>
 
@@ -165,7 +165,7 @@ ret_ln20          (ret          ) [ 00]
 <pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_0"/></StgValue>
+<StgValue><ssdm name="empty_1"/></StgValue>
 </bind>
 </comp>
 
@@ -205,7 +205,7 @@ ret_ln20          (ret          ) [ 00]
 </bind>
 </comp>
 
-<comp id="20" class="1004" name="split_out_7_read_read_fu_20">
+<comp id="20" class="1004" name="temp_read_fu_20">
 <pin_list>
 <pin id="21" dir="0" index="0" bw="8" slack="0"/>
 <pin id="22" dir="0" index="1" bw="8" slack="0"/>
@@ -213,11 +213,11 @@ ret_ln20          (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="split_out_7_read/1 "/>
+<opset="temp/1 "/>
 </bind>
 </comp>
 
-<comp id="26" class="1004" name="write_ln19_write_fu_26">
+<comp id="26" class="1004" name="write_ln25_write_fu_26">
 <pin_list>
 <pin id="27" dir="0" index="0" bw="0" slack="0"/>
 <pin id="28" dir="0" index="1" bw="8" slack="0"/>
@@ -226,11 +226,11 @@ ret_ln20          (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln19/1 "/>
+<opset="write_ln25/1 "/>
 </bind>
 </comp>
 
-<comp id="33" class="1004" name="shl_ln19_fu_33">
+<comp id="33" class="1004" name="shl_ln24_fu_33">
 <pin_list>
 <pin id="34" dir="0" index="0" bw="8" slack="0"/>
 <pin id="35" dir="0" index="1" bw="1" slack="0"/>
@@ -238,11 +238,11 @@ ret_ln20          (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="shl(20) " fcode="shl"/>
-<opset="shl_ln19/1 "/>
+<opset="shl_ln24/1 "/>
 </bind>
 </comp>
 
-<comp id="39" class="1004" name="or_ln19_fu_39">
+<comp id="39" class="1004" name="temp_8_fu_39">
 <pin_list>
 <pin id="40" dir="0" index="0" bw="8" slack="0"/>
 <pin id="41" dir="0" index="1" bw="1" slack="0"/>
@@ -250,7 +250,7 @@ ret_ln20          (ret          ) [ 00]
 </pin_list>
 <bind>
 <opcode="or(24) " fcode="or"/>
-<opset="or_ln19/1 "/>
+<opset="temp_8/1 "/>
 </bind>
 </comp>
 
@@ -294,19 +294,19 @@ ret_ln20          (ret          ) [ 00]
 ============================================================
 
 * Functional unit list:
-|----------|-----------------------------|
-| Operation|       Functional Unit       |
-|----------|-----------------------------|
-|   read   | split_out_7_read_read_fu_20 |
-|----------|-----------------------------|
-|   write  |    write_ln19_write_fu_26   |
-|----------|-----------------------------|
-|    shl   |        shl_ln19_fu_33       |
-|----------|-----------------------------|
-|    or    |        or_ln19_fu_39        |
-|----------|-----------------------------|
-|   Total  |                             |
-|----------|-----------------------------|
+|----------|------------------------|
+| Operation|     Functional Unit    |
+|----------|------------------------|
+|   read   |     temp_read_fu_20    |
+|----------|------------------------|
+|   write  | write_ln25_write_fu_26 |
+|----------|------------------------|
+|    shl   |     shl_ln24_fu_33     |
+|----------|------------------------|
+|    or    |      temp_8_fu_39      |
+|----------|------------------------|
+|   Total  |                        |
+|----------|------------------------|
 
 Memories:
 N/A

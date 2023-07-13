@@ -5,12 +5,12 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
-# 1 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
+# 1 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
-# 17 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
-# 1 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 1
+# 1 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
+# 17 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
+# 1 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 1
        
 
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 1
@@ -55371,7 +55371,7 @@ inline bool operator!=(
 }
 # 366 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_fixed.h" 2
 # 361 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_int.h" 2
-# 4 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 4 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h" 1
 # 41 "C:/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/include/c++/6.2.0/climits" 1 3
@@ -55534,7 +55534,7 @@ template <std::size_t WData> struct qdma_axis<WData, 0, 0, 0> {
     return *this;
   }
 };
-# 5 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 5 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_np_channel.h" 1
 # 25 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_np_channel.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h" 1
@@ -78537,9 +78537,9 @@ public:
 };
 }
 }
-# 6 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 6 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h" 1
-# 7 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 7 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_task.h" 1
 # 40 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_task.h"
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/include/hls_streamofblocks.h" 1
@@ -78837,56 +78837,73 @@ private:
 
 
 }
-# 8 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
+# 8 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h" 2
 
 
 
 
 
-typedef ap_uint<8> data;
+typedef ap_axis<8, 0, 0, 0> data_pkt;
+typedef ap_int<8> data_t;
 
 
 #ifndef HLS_FASTSIM
 #ifdef __cplusplus
 extern "C"
 #endif
-void apatb_make_go_fast_sw(ap_uint<8> *, ap_uint<8> *);
+void apatb_make_go_fast_sw(hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0> &, int, hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0> &);
 #endif
-# 15 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h"
-void make_go_fast(data in[512 / 8], data out[512 / 8]);
-# 18 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp" 2
+# 16 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/accelerator.h"
+void make_go_fast(hls::stream<data_pkt> &in, int n, hls::stream<data_pkt> &out);
+# 18 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp" 2
 # 1 "C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/include/c++/6.2.0/cstdio" 1 3
 # 39 "C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/include/c++/6.2.0/cstdio" 3
        
 # 40 "C:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/include/c++/6.2.0/cstdio" 3
-# 19 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp" 2
+# 19 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp" 2
+
+
 
 
 #ifndef HLS_FASTSIM
-# 20 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
+# 22 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
 int main() {
-    data a[512 / 8];
-    data b[512 / 8];
+ hls::stream<data_pkt> in, out, software;
 
-    for (int i = 0; i<512 / 8; i++)
-        a[i] = i;
-    
+ for (int i = 0; i < 1024; i++) {
+  data_pkt temp;
+  temp.data = i;
+  temp.last = (i == (1024 - 1) ? 1 : 0);
+  in.write(temp);
+ }
+
+ for (int i = 0; i < 1024; i++) {
+  data_pkt temp;
+  temp.data = i * 2 + 1;
+  temp.last = (i == (1024 - 1) ? 1 : 0);
+  software.write(temp);
+ }
+
+ 
 #ifndef HLS_FASTSIM
 #define make_go_fast apatb_make_go_fast_sw
 #endif
-# 26 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
-make_go_fast(a, b);
+# 39 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
+make_go_fast(in, 1024, out);
 #undef make_go_fast
-# 26 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
+# 39 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
 
-    for (int i = 0; i<512 / 8; i++) {
-        if (b[i] != a[i] * 2 + 1) {
-            printf("i=%d %d!=%d FAIL\n", i, b[i], a[i]*2+1);
-            return 1;
-        }
-    }
-    return 0;
+
+ for (int i = 0; i < 1024; i++) {
+  data_pkt result = out.read();
+  data_pkt expected = software.read();
+  if (result.data != expected.data) {
+   printf("i=%d %d!=%d FAIL\n", i, result.data, expected.data);
+   return 1;
+  }
+ }
+ return 0;
 }
 #endif
-# 34 "C:/byte_count/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
+# 50 "E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/tb.cpp"
 
