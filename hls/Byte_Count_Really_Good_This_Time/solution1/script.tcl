@@ -17,5 +17,5 @@ config_cosim -tool xsim
 source "./Byte_Count_Really_Good_This_Time/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -tool xsim
 export_design -rtl verilog -format ip_catalog -output E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time
