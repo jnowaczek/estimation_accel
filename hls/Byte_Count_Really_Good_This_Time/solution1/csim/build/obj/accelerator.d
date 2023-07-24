@@ -24,5 +24,6 @@ obj/accelerator.o: ../../../accelerator.cpp ../../../accelerator.h \
  C:/Xilinx/Vitis_HLS/2023.1/include/hls_np_channel.h \
  C:/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h \
  C:/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h \
+ C:/Xilinx/Vitis_HLS/2023.1/include/hls_streamofblocks.h \
  C:/Xilinx/Vitis_HLS/2023.1/include/hls_task.h \
  C:/Xilinx/Vitis_HLS/2023.1/include/hls_streamofblocks.h

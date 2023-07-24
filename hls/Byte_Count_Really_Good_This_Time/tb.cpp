@@ -36,7 +36,7 @@ int main() {
 		software.write(temp);
 	}
 
-	make_go_fast(in, TEST_SIZE, out);
+	make_go_fast(in, out);
 
 	for (int i = 0; i < TEST_SIZE; i++) {
 		data_pkt result = out.read();
