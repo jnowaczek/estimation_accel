@@ -2,33 +2,25 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog/>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:50:54.952-0500"/>
+        <logs message="ERROR: acquiring stream_of_blocks for writing more than once before releasing. Use braces to limit the lifetime of the lock object.&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/zeros&#xD;&#xA;    Mismatch: result=0, expected=1&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/count.bin&#xD;&#xA;    Mismatch: result=12, expected=0&#xD;&#xA;    *** *** *** *** &#xD;&#xA;@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:50:54.899-0500"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:50:30.141-0500"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:48:46.349-0500"/>
+        <logs message="ERROR: acquiring stream_of_blocks for writing more than once before releasing. Use braces to limit the lifetime of the lock object.&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/zeros&#xD;&#xA;    Mismatch: result=0, expected=1&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/count.bin&#xD;&#xA;    Results are good: expected == actual == 0&#xD;&#xA;    *** *** *** *** &#xD;&#xA;@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:48:46.342-0500"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:48:04.279-0500"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:46:27.946-0500"/>
+        <logs message="ERROR: acquiring stream_of_blocks for writing more than once before releasing. Use braces to limit the lifetime of the lock object.&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/zeros&#xD;&#xA;    Mismatch: result=0, expected=1&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/count.bin&#xD;&#xA;    Mismatch: result=17, expected=0&#xD;&#xA;    *** *** *** *** &#xD;&#xA;@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:46:27.936-0500"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:45:56.343-0500"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:39:35.520-0500"/>
+        <logs message="ERROR: acquiring stream_of_blocks for writing more than once before releasing. Use braces to limit the lifetime of the lock object.&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/zeros&#xD;&#xA;    Mismatch: result=37, expected=1&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/count.bin&#xD;&#xA;    Results are good: expected == actual == 0&#xD;&#xA;    *** *** *** *** &#xD;&#xA;@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:39:35.504-0500"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:36:00.299-0500"/>
+        <logs message="ERROR: acquiring stream_of_blocks for writing more than once before releasing. Use braces to limit the lifetime of the lock object.&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/zeros&#xD;&#xA;    Results are good: expected == actual == 1&#xD;&#xA;    *** *** *** *** &#xD;&#xA;    Input file: tb_data/count.bin&#xD;&#xA;@E Simulation failed: Function 'main' returns nonzero value '3'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-24T14:36:00.288-0500"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:55:01.734-0500" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'KPN/ap_ready' to 0." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:55:01.436-0500" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'worker.7' to 'worker_7'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.838-0500" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'worker.6' to 'worker_6'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.817-0500" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'worker.5' to 'worker_5'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.805-0500" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'worker.4' to 'worker_4'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.792-0500" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'worker.3' to 'worker_3'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.773-0500" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'worker.2' to 'worker_2'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.757-0500" type="Warning"/>
-        <logs message="WARNING: [SYN 201-103] Legalizing function name 'worker.1' to 'worker_1'." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.745-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 200-1449] Process write_out has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process." projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.616-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 214-273] In function 'void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_int&lt;8>, 0>&amp;, hls::stream&lt;ap_int&lt;8>, 0>&amp;), hls::stream&lt;ap_int&lt;8>, 0>&amp;, hls::stream&lt;ap_int&lt;8>, 0>&amp;>(void (&amp;)(hls::stream&lt;ap_int&lt;8>, 0>&amp;, hls::stream&lt;ap_int&lt;8>, 0>&amp;), hls::stream&lt;ap_int&lt;8>, 0>&amp;, hls::stream&lt;ap_int&lt;8>, 0>&amp;)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form (C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h:85:0)" projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:57.079-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file Byte_Count_Really_Good_This_Time/accelerator.cpp&#xD;&#xA;Resolution: For help on HLS 200-471 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-471.html" projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:53.067-0500" type="Warning"/>
-        <logs message="WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (Byte_Count_Really_Good_This_Time/accelerator.cpp:33:9)&#xD;&#xA;Resolution: For help on HLS 214-114 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-114.html" projectName="Byte_Count_Really_Good_This_Time" solutionName="solution1" date="2023-07-13T17:54:51.886-0500" type="Warning"/>
-      </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
       <csimLog/>
     </logs>
   </warningLogs>
