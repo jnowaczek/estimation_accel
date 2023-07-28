@@ -11,9 +11,9 @@ void read_in(hls::stream<data_pkt> &in, hls::stream<data_t> &out) {
 }
 
 void threshold(hls::stream_of_blocks<count_buf_t> &in, hls::stream<uint8_t> &out) {
-	hls::read_lock<count_buf_t> inL(in);
 	result_t over_thresh = 0;
 	for (int i = 0; i < 256; i++) {
+		hls::read_lock<count_buf_t> inL(in);
 		if (inL[i] > BLOCK_LENGTH / 256) {
 			over_thresh += 1;
 		}
@@ -21,20 +21,28 @@ void threshold(hls::stream_of_blocks<count_buf_t> &in, hls::stream<uint8_t> &out
 	out.write(over_thresh);
 }
 
+void clear_appearances(hls::stream_of_blocks<count_buf_t> &appearances) {
+#pragma HLS INLINE off
+	for (int i = 0; i < 256; i++) {
+		hls::write_lock<count_buf_t> appL(appearances);
+		appL[i] = 0;
+	}
+}
+
 void count_appearances(hls::stream<data_t> &in, hls::stream_of_blocks<count_buf_t> &appearances) {
+#pragma HLS INLINE off
 	data_t prev = 0;
 	count_t count = 0;
 	data_t byte;
 
-	hls::write_lock<count_buf_t> appL(appearances);
-
 	// Assume fixed length blocks for now
-	for (int i = 0; i < BLOCK_LENGTH / NUM_WORKERS; i++) {
+	for (int i = 0; i < BLOCK_LENGTH; i++) {
 		byte = in.read();
 
 		if (prev == byte) {
 			count += 1;
 		} else {
+			hls::write_lock<count_buf_t> appL(appearances);
 			appL[prev] = count;
 			count_t current = appL[byte];
 			count = current + 1;
@@ -42,6 +50,7 @@ void count_appearances(hls::stream<data_t> &in, hls::stream_of_blocks<count_buf_
 
 		prev = byte;
 	}
+	hls::write_lock<count_buf_t> appL(appearances);
 	appL[prev] = count;
 }
 
@@ -60,6 +69,7 @@ void count_appearances(hls::stream<data_t> &in, hls::stream_of_blocks<count_buf_
 //}
 
 void reduce_appearances(hls::stream_of_blocks<count_buf_t> &appearances0, hls::stream_of_blocks<count_buf_t> &combined_apperances) {
+#pragma HLS INLINE off
 	hls::read_lock<count_buf_t> inL0(appearances0);
 	hls::write_lock<count_buf_t> outL(combined_apperances);
 
@@ -71,19 +81,19 @@ void reduce_appearances(hls::stream_of_blocks<count_buf_t> &appearances0, hls::s
 void make_go_fast(hls::stream<data_pkt> &in, hls::stream<result_t> &out) {
 #pragma HLS INTERFACE mode=axis port=in
 #pragma HLS INTERFACE mode=axis port=out
+#pragma HLS DATAFLOW
 
 	hls_thread_local hls::split::round_robin<data_t, NUM_WORKERS> split;
 	hls_thread_local hls::stream_of_blocks<count_buf_t, 4> appearances;
-	hls_thread_local hls::stream_of_blocks<count_buf_t> combined;
-	hls_thread_local hls::task tasks[NUM_WORKERS];
+	hls_thread_local hls::stream_of_blocks<count_buf_t, 4> combined;
 
-#pragma HLS DATAFLOW
-	read_in(in, split.in);
+	hls_thread_local hls::task readTask;
+	hls_thread_local hls::task clearTasks[NUM_WORKERS];
+	hls_thread_local hls::task countTasks[NUM_WORKERS];
 
-	for (int i = 0; i < NUM_WORKERS; i++) {
-#pragma HLS unroll
-		tasks[i](count_appearances, split.out[i], appearances);
-	}
+	readTask(read_in, in, split.in);
+	clearTasks[0](clear_appearances, appearances);
+//	countTasks[0](count_appearances, split.out[0], appearances);
 
 	reduce_appearances(appearances, combined);
 

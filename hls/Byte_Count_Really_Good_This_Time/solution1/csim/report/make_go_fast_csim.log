@@ -3,13 +3,5 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../tb.cpp in debug mode
    Compiling ../../../accelerator.cpp in debug mode
    Generating csim.exe
-    *** *** *** *** 
-    Input file: tb_data/zeros
-    Mismatch: result=0, expected=1
-    *** *** *** *** 
-    *** *** *** *** 
-    Input file: tb_data/count.bin
-    Mismatch: result=12, expected=0
-    *** *** *** *** 
 ERR: [SIM 100] 'csim_design' failed: nonzero return value.
 INFO: [SIM 3] *************** CSIM finish ***************
