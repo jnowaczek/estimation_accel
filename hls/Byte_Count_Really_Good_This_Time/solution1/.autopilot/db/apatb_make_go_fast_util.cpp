@@ -1,5 +1,4 @@
 #include <iostream>
-#include "hls_task.h"
 #include "hls_stream.h"
 
 using namespace std;

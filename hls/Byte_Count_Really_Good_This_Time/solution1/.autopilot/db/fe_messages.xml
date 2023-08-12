@@ -1,5 +1,4 @@
 <xilinx:hls_fe_msgs>
-    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-114" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:33:9" msg_body="Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region"/>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\ap_axi_sdata.h:76:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="get_user_ptr" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
@@ -114,44 +113,35 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_np_channel.h:58:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="round_robin&lt;T, N_IN_PORTS, ONEPORT_DEPTH, NPORT_DEPTH&gt;" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h:86:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="operator()" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count_appearances" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h:91:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="task" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="count_appearances" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=appL intra raw false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="reduce_appearances" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/csynth.tcl:19:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=make_go_fast" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="E:/estimation_accel/hls/Byte_Count_Really_Good_This_Time/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=make_go_fast" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:29:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:77:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:30:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:78:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=axis port=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:33:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:79:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:40:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="make_go_fast" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-273" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h:85:0" msg_body="In function 'void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;&gt;(void (&amp;)(hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form">
-        <args Function="void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;&gt;(void (&amp;)(hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;)" Function-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h} Line 85 Column 0"/>
-    </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:41:2" msg_body="Inlining function 'void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;&gt;(void (&amp;)(hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;)' into 'make_go_fast(hls::stream&lt;hls::axis&lt;ap_int&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, int, hls::stream&lt;hls::axis&lt;ap_int&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)'">
-        <args Callee="void hls::task::operator()&lt;void (&amp;)(hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;&gt;(void (&amp;)(hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;), hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;8&gt;, 0&gt;&amp;)" Callee-DebugLoc="File {C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h} Line 85 Column 0" Caller="make_go_fast(hls::stream&lt;hls::axis&lt;ap_int&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;, int, hls::stream&lt;hls::axis&lt;ap_int&lt;8&gt;, 0ul, 0ul, 0ul&gt;, 0&gt;&amp;)" Caller-DebugLoc="File Byte_Count_Really_Good_This_Time/accelerator.cpp Line 28 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:28:0" msg_body="Unrolling loop 'VITIS_LOOP_39_1' (Byte_Count_Really_Good_This_Time/accelerator.cpp:39:19) in function 'make_go_fast' completely with a factor of 8">
-        <args Factor="8" LoopLoc="Byte_Count_Really_Good_This_Time/accelerator.cpp:39:19" LoopName="VITIS_LOOP_39_1"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:31:37" msg_body="Applying array_partition to 'split.out': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="split.out"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:32:54" msg_body="Applying array_partition to 'merge.in': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="merge.in"/>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="Byte_Count_Really_Good_This_Time/accelerator.cpp:82:42" msg_body="Aggregating stream-of-blocks variable 'appearances' with compact=bit mode in 4096-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="4096" HwTyName="stream-of-blocks" Name="appearances"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

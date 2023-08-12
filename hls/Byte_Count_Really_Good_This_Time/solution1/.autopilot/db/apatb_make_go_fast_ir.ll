@@ -12,36 +12,29 @@ target triple = "fpga64-xilinx-none"
 %"struct.ap_int_base<1, false>" = type { %"struct.ssdm_int<1, false>" }
 %"struct.ssdm_int<1, false>" = type { i1 }
 
+; Function Attrs: inaccessiblememonly nounwind
+declare void @llvm.sideeffect() #0
+
 ; Function Attrs: noinline
-define void @apatb_make_go_fast_ir(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias nocapture nonnull dereferenceable(7) %in, i32 %n, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias nocapture nonnull dereferenceable(7) %out) local_unnamed_addr #0 {
+define void @apatb_make_go_fast_ir(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias nocapture nonnull dereferenceable(7) %in, %"struct.ssdm_int<8, true>"* noalias nocapture nonnull dereferenceable(1) %out) local_unnamed_addr #1 {
 entry:
   %in_copy.data = alloca i8
   %in_copy.keep = alloca i1
   %in_copy.strb = alloca i1
   %in_copy.last = alloca i1
-  %out_copy.data = alloca i8
-  %out_copy.keep = alloca i1
-  %out_copy.strb = alloca i1
-  %out_copy.last = alloca i1
-  call fastcc void @copy_in(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* nonnull %in, i8* %in_copy.data, i1* %in_copy.keep, i1* %in_copy.strb, i1* %in_copy.last, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* nonnull %out, i8* %out_copy.data, i1* %out_copy.keep, i1* %out_copy.strb, i1* %out_copy.last)
-  call void @apatb_make_go_fast_hw(i8* %in_copy.data, i1* %in_copy.keep, i1* %in_copy.strb, i1* %in_copy.last, i32 %n, i8* %out_copy.data, i1* %out_copy.keep, i1* %out_copy.strb, i1* %out_copy.last)
-  call void @copy_back(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %in, i8* %in_copy.data, i1* %in_copy.keep, i1* %in_copy.strb, i1* %in_copy.last, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %out, i8* %out_copy.data, i1* %out_copy.keep, i1* %out_copy.strb, i1* %out_copy.last)
+  %out_copy = alloca i8, align 512
+  call void @llvm.sideeffect() #7 [ "stream_interface"(i8* %out_copy, i32 0) ]
+  call fastcc void @copy_in(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* nonnull %in, i8* %in_copy.data, i1* %in_copy.keep, i1* %in_copy.strb, i1* %in_copy.last, %"struct.ssdm_int<8, true>"* nonnull %out, i8* nonnull align 512 %out_copy)
+  call void @apatb_make_go_fast_hw(i8* %in_copy.data, i1* %in_copy.keep, i1* %in_copy.strb, i1* %in_copy.last, i8* %out_copy)
+  call void @copy_back(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %in, i8* %in_copy.data, i1* %in_copy.keep, i1* %in_copy.strb, i1* %in_copy.last, %"struct.ssdm_int<8, true>"* %out, i8* %out_copy)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @copy_in(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias, i8* noalias "unpacked"="1.0" %_V_data_V, i1* noalias "unpacked"="1.1" %_V_keep_V, i1* noalias "unpacked"="1.2" %_V_strb_V, i1* noalias "unpacked"="1.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias, i8* noalias "unpacked"="6.0" %_V_data_V1, i1* noalias "unpacked"="6.1" %_V_keep_V2, i1* noalias "unpacked"="6.2" %_V_strb_V3, i1* noalias "unpacked"="6.3" %_V_last_V4) unnamed_addr #1 {
+define internal fastcc void @copy_in(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias "unpacked"="0", i8* noalias "unpacked"="1.0" %_V_data_V, i1* noalias "unpacked"="1.1" %_V_keep_V, i1* noalias "unpacked"="1.2" %_V_strb_V, i1* noalias "unpacked"="1.3" %_V_last_V, %"struct.ssdm_int<8, true>"* noalias "unpacked"="2", i8* noalias nocapture align 512 "unpacked"="3.0") unnamed_addr #2 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>.24"(i8* %_V_data_V, i1* %_V_keep_V, i1* %_V_strb_V, i1* %_V_last_V, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %0)
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>.24"(i8* %_V_data_V1, i1* %_V_keep_V2, i1* %_V_strb_V3, i1* %_V_last_V4, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %1)
-  ret void
-}
-
-; Function Attrs: argmemonly noinline
-define internal fastcc void @copy_out(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias, i8* noalias "unpacked"="1.0" %_V_data_V, i1* noalias "unpacked"="1.1" %_V_keep_V, i1* noalias "unpacked"="1.2" %_V_strb_V, i1* noalias "unpacked"="1.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias, i8* noalias "unpacked"="6.0" %_V_data_V1, i1* noalias "unpacked"="6.1" %_V_keep_V2, i1* noalias "unpacked"="6.2" %_V_strb_V3, i1* noalias "unpacked"="6.3" %_V_last_V4) unnamed_addr #2 {
-entry:
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %0, i8* %_V_data_V, i1* %_V_keep_V, i1* %_V_strb_V, i1* %_V_last_V)
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %1, i8* %_V_data_V1, i1* %_V_keep_V2, i1* %_V_strb_V3, i1* %_V_last_V4)
+  call fastcc void @"onebyonecpy_hls.p0struct.ssdm_int<8, true>"(i8* align 512 %2, %"struct.ssdm_int<8, true>"* %1)
   ret void
 }
 
@@ -53,7 +46,7 @@ entry:
   br i1 %1, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call fastcc void @"streamcpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>.18"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* nonnull align 512 %dst, i8* %src_V_data_V, i1* %src_V_keep_V, i1* %src_V_strb_V, i1* %src_V_last_V)
+  call fastcc void @"streamcpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* nonnull align 512 %dst, i8* %src_V_data_V, i1* %src_V_keep_V, i1* %src_V_strb_V, i1* %src_V_last_V)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -61,7 +54,7 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @"streamcpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>.18"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias nocapture align 512, i8* noalias nocapture "unpacked"="1.0" %_V_data_V, i1* noalias nocapture "unpacked"="1.1" %_V_keep_V, i1* noalias nocapture "unpacked"="1.2" %_V_strb_V, i1* noalias nocapture "unpacked"="1.3" %_V_last_V) unnamed_addr #4 {
+define internal fastcc void @"streamcpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias nocapture align 512, i8* noalias nocapture "unpacked"="1.0" %_V_data_V, i1* noalias nocapture "unpacked"="1.1" %_V_keep_V, i1* noalias nocapture "unpacked"="1.2" %_V_strb_V, i1* noalias nocapture "unpacked"="1.3" %_V_last_V) unnamed_addr #4 {
 entry:
   %1 = alloca %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"
   %2 = alloca i8
@@ -111,6 +104,93 @@ push:                                             ; preds = %empty
   %32 = bitcast %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %0 to i8*
   call void @fpga_fifo_push_7(i8* %31, i8* %32)
   br label %empty, !llvm.loop !5
+
+ret:                                              ; preds = %empty
+  ret void
+}
+
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"onebyonecpy_hls.p0struct.ssdm_int<8, true>"(i8* noalias nocapture align 512 "unpacked"="0.0" %dst, %"struct.ssdm_int<8, true>"* noalias "unpacked"="1" %src) unnamed_addr #3 {
+entry:
+  %0 = icmp eq %"struct.ssdm_int<8, true>"* %src, null
+  br i1 %0, label %ret, label %copy
+
+copy:                                             ; preds = %entry
+  call fastcc void @"streamcpy_hls.p0struct.ssdm_int<8, true>"(i8* align 512 %dst, %"struct.ssdm_int<8, true>"* nonnull %src)
+  br label %ret
+
+ret:                                              ; preds = %copy, %entry
+  ret void
+}
+
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"streamcpy_hls.p0struct.ssdm_int<8, true>"(i8* noalias nocapture align 512 "unpacked"="0.0", %"struct.ssdm_int<8, true>"* noalias nocapture "unpacked"="1") unnamed_addr #4 {
+entry:
+  %2 = alloca %"struct.ssdm_int<8, true>"
+  %3 = alloca i8
+  br label %empty
+
+empty:                                            ; preds = %push, %entry
+  %4 = bitcast %"struct.ssdm_int<8, true>"* %1 to i8*
+  %5 = call i1 @fpga_fifo_not_empty_1(i8* %4)
+  br i1 %5, label %push, label %ret
+
+push:                                             ; preds = %empty
+  %6 = bitcast %"struct.ssdm_int<8, true>"* %2 to i8*
+  %7 = bitcast %"struct.ssdm_int<8, true>"* %1 to i8*
+  call void @fpga_fifo_pop_1(i8* %6, i8* %7)
+  %8 = load volatile %"struct.ssdm_int<8, true>", %"struct.ssdm_int<8, true>"* %2
+  %.evi = extractvalue %"struct.ssdm_int<8, true>" %8, 0
+  store i8 %.evi, i8* %3
+  call void @fpga_fifo_push_1(i8* %3, i8* %0)
+  br label %empty, !llvm.loop !7
+
+ret:                                              ; preds = %empty
+  ret void
+}
+
+; Function Attrs: argmemonly noinline
+define internal fastcc void @copy_out(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias "unpacked"="0", i8* noalias "unpacked"="1.0" %_V_data_V, i1* noalias "unpacked"="1.1" %_V_keep_V, i1* noalias "unpacked"="1.2" %_V_strb_V, i1* noalias "unpacked"="1.3" %_V_last_V, %"struct.ssdm_int<8, true>"* noalias "unpacked"="2", i8* noalias nocapture align 512 "unpacked"="3.0") unnamed_addr #5 {
+entry:
+  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %0, i8* %_V_data_V, i1* %_V_keep_V, i1* %_V_strb_V, i1* %_V_last_V)
+  call fastcc void @"onebyonecpy_hls.p0struct.ssdm_int<8, true>.10"(%"struct.ssdm_int<8, true>"* %1, i8* align 512 %2)
+  ret void
+}
+
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"onebyonecpy_hls.p0struct.ssdm_int<8, true>.10"(%"struct.ssdm_int<8, true>"* noalias "unpacked"="0" %dst, i8* noalias nocapture align 512 "unpacked"="1.0" %src) unnamed_addr #3 {
+entry:
+  %0 = icmp eq %"struct.ssdm_int<8, true>"* %dst, null
+  br i1 %0, label %ret, label %copy
+
+copy:                                             ; preds = %entry
+  call fastcc void @"streamcpy_hls.p0struct.ssdm_int<8, true>.13"(%"struct.ssdm_int<8, true>"* nonnull %dst, i8* align 512 %src)
+  br label %ret
+
+ret:                                              ; preds = %copy, %entry
+  ret void
+}
+
+; Function Attrs: argmemonly noinline
+define internal fastcc void @"streamcpy_hls.p0struct.ssdm_int<8, true>.13"(%"struct.ssdm_int<8, true>"* noalias nocapture "unpacked"="0", i8* noalias nocapture align 512 "unpacked"="1.0") unnamed_addr #4 {
+entry:
+  %2 = alloca i8
+  %3 = alloca %"struct.ssdm_int<8, true>"
+  br label %empty
+
+empty:                                            ; preds = %push, %entry
+  %4 = call i1 @fpga_fifo_not_empty_1(i8* %1)
+  br i1 %4, label %push, label %ret
+
+push:                                             ; preds = %empty
+  call void @fpga_fifo_pop_1(i8* %2, i8* %1)
+  %5 = load volatile i8, i8* %2
+  %.ivi = insertvalue %"struct.ssdm_int<8, true>" undef, i8 %5, 0
+  store %"struct.ssdm_int<8, true>" %.ivi, %"struct.ssdm_int<8, true>"* %3
+  %6 = bitcast %"struct.ssdm_int<8, true>"* %3 to i8*
+  %7 = bitcast %"struct.ssdm_int<8, true>"* %0 to i8*
+  call void @fpga_fifo_push_1(i8* %6, i8* %7)
+  br label %empty, !llvm.loop !8
 
 ret:                                              ; preds = %empty
   ret void
@@ -173,27 +253,27 @@ ret:                                              ; preds = %empty
   ret void
 }
 
-declare void @apatb_make_go_fast_hw(i8*, i1*, i1*, i1*, i32, i8*, i1*, i1*, i1*)
+declare void @apatb_make_go_fast_hw(i8*, i1*, i1*, i1*, i8*)
 
 ; Function Attrs: argmemonly noinline
-define internal fastcc void @copy_back(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias, i8* noalias "unpacked"="1.0" %_V_data_V, i1* noalias "unpacked"="1.1" %_V_keep_V, i1* noalias "unpacked"="1.2" %_V_strb_V, i1* noalias "unpacked"="1.3" %_V_last_V, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias, i8* noalias "unpacked"="6.0" %_V_data_V1, i1* noalias "unpacked"="6.1" %_V_keep_V2, i1* noalias "unpacked"="6.2" %_V_strb_V3, i1* noalias "unpacked"="6.3" %_V_last_V4) unnamed_addr #2 {
+define internal fastcc void @copy_back(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* noalias "unpacked"="0", i8* noalias "unpacked"="1.0" %_V_data_V, i1* noalias "unpacked"="1.1" %_V_keep_V, i1* noalias "unpacked"="1.2" %_V_strb_V, i1* noalias "unpacked"="1.3" %_V_last_V, %"struct.ssdm_int<8, true>"* noalias "unpacked"="2", i8* noalias nocapture align 512 "unpacked"="3.0") unnamed_addr #5 {
 entry:
   call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %0, i8* %_V_data_V, i1* %_V_keep_V, i1* %_V_strb_V, i1* %_V_last_V)
-  call fastcc void @"onebyonecpy_hls.p0class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %1, i8* %_V_data_V1, i1* %_V_keep_V2, i1* %_V_strb_V3, i1* %_V_last_V4)
+  call fastcc void @"onebyonecpy_hls.p0struct.ssdm_int<8, true>.10"(%"struct.ssdm_int<8, true>"* %1, i8* align 512 %2)
   ret void
 }
 
-define void @make_go_fast_hw_stub_wrapper(i8*, i1*, i1*, i1*, i32, i8*, i1*, i1*, i1*) #5 {
+define void @make_go_fast_hw_stub_wrapper(i8*, i1*, i1*, i1*, i8*) #6 {
 entry:
-  %9 = alloca %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"
-  %10 = alloca %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"
-  call void @copy_out(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %9, i8* %0, i1* %1, i1* %2, i1* %3, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %10, i8* %5, i1* %6, i1* %7, i1* %8)
-  call void @make_go_fast_hw_stub(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %9, i32 %4, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %10)
-  call void @copy_in(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %9, i8* %0, i1* %1, i1* %2, i1* %3, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %10, i8* %5, i1* %6, i1* %7, i1* %8)
+  %5 = alloca %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"
+  %6 = alloca %"struct.ssdm_int<8, true>"
+  call void @copy_out(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %5, i8* %0, i1* %1, i1* %2, i1* %3, %"struct.ssdm_int<8, true>"* %6, i8* %4)
+  call void @make_go_fast_hw_stub(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %5, %"struct.ssdm_int<8, true>"* %6)
+  call void @copy_in(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"* %5, i8* %0, i1* %1, i1* %2, i1* %3, %"struct.ssdm_int<8, true>"* %6, i8* %4)
   ret void
 }
 
-declare void @make_go_fast_hw_stub(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"*, i32, %"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"*)
+declare void @make_go_fast_hw_stub(%"class.hls::stream<hls::axis<ap_int<8>, 0, 0, 0>, 0>"*, %"struct.ssdm_int<8, true>"*)
 
 declare i1 @fpga_fifo_not_empty_7(i8*)
 
@@ -203,22 +283,23 @@ declare void @fpga_fifo_pop_7(i8*, i8*)
 
 declare void @fpga_fifo_pop_1(i8*, i8*)
 
-declare void @fpga_fifo_push_7(i8*, i8*)
-
 declare void @fpga_fifo_push_1(i8*, i8*)
 
-attributes #0 = { noinline "fpga.wrapper.func"="wrapper" }
-attributes #1 = { argmemonly noinline "fpga.wrapper.func"="copyin" }
-attributes #2 = { argmemonly noinline "fpga.wrapper.func"="copyout" }
+declare void @fpga_fifo_push_7(i8*, i8*)
+
+attributes #0 = { inaccessiblememonly nounwind }
+attributes #1 = { noinline "fpga.wrapper.func"="wrapper" }
+attributes #2 = { argmemonly noinline "fpga.wrapper.func"="copyin" }
 attributes #3 = { argmemonly noinline "fpga.wrapper.func"="onebyonecpy_hls" }
 attributes #4 = { argmemonly noinline "fpga.wrapper.func"="streamcpy_hls" }
-attributes #5 = { "fpga.wrapper.func"="stub" }
+attributes #5 = { argmemonly noinline "fpga.wrapper.func"="copyout" }
+attributes #6 = { "fpga.wrapper.func"="stub" }
+attributes #7 = { inaccessiblememonly nounwind "xlx.port.bitwidth"="8" "xlx.source"="user" }
 
 !llvm.dbg.cu = !{}
 !llvm.ident = !{!0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0, !0}
 !llvm.module.flags = !{!1, !2, !3}
 !blackbox_cfg = !{!4}
-!has_MT_tasks = !{}
 
 !0 = !{!"clang version 7.0.0 "}
 !1 = !{i32 2, !"Dwarf Version", i32 4}
@@ -227,3 +308,5 @@ attributes #5 = { "fpga.wrapper.func"="stub" }
 !4 = !{}
 !5 = distinct !{!5, !6}
 !6 = !{!"llvm.loop.rotate.disable"}
+!7 = distinct !{!7, !6}
+!8 = distinct !{!8, !6}

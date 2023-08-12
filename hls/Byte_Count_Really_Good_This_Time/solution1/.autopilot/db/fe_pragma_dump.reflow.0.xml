@@ -1,43 +1,48 @@
 <pragmas>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<41, true>::ap_int_base<40, true>(ap_int_base<40, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<40, true>::RType<32, true>::plus operator+<40, true, 32, true>(ap_int_base<40, true> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::RType<32, true>::mult operator*<8, true, 32, true>(ap_int_base<8, true> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<41, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<41, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi40ELb1EEC2EDq40_i" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<40, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="33" pragmaType="dataflow" parentfunction="make_go_fast" disable_start_propagation="0"/>
-<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="40" pragmaType="unroll" parentfunction="make_go_fast" factor="-1" skip_exit_check="0"/>
-<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="29" pragmaType="interface" parentfunction="make_go_fast" mode="axis" port="in" register="0" register_mode="both" name="" depth="-1"/>
-<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="30" pragmaType="interface" parentfunction="make_go_fast" mode="axis" port="out" register="0" register_mode="both" name="" depth="-1"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<41>::ap_int<41, true>(ap_int_base<41, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<40, true>::ap_int_base<8, true>(ap_int_base<8, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int(signed char)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<40, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="_ZN8ssdm_intILi41ELb1EEC2EDq41_i" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<40>::ap_int<40, true>(ap_int_base<40, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h" line="86" pragmaType="inline" parentfunction="void hls::task::operator()<void (&)(hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&), hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&>(void (&)(hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&), hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base<41, true>(ap_int_base<41, true> const&)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base()" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint()" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base()" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<40, true>::RType<($_0)32, true>::plus operator+<40, true>(ap_int_base<40, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::write_lock<unsigned short [256]>::~write_lock()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<8, true>::operator==<8, true>(ap_int_base<8, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<8>::ap_int()" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::RType<($_0)32, true>::mult operator*<8, true>(ap_int_base<8, true> const&, int)" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<8>::ap_int<41>(ap_int<41> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::write_lock<unsigned short [256]>::write_lock(hls::stream_of_blocks<unsigned short [256], 2>&)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<1, false>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_uint<1>::ap_uint()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="14" pragmaType="inline" parentfunction="count_appearances" off="1" region="0" recursive="0"/>
+<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="23" pragmaType="dependence" parentfunction="count_appearances" class="" direction="RAW" type="intra" distance="0" variable="appL"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<8>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::write_lock<unsigned short [256]>::operator unsigned short (&) [256]()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write_release" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write_acquire" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write_acquire" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="515" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int(signed char)" off="0" region="0" recursive="0"/>
+<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="39" pragmaType="inline" parentfunction="threshold" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<8, true>::ap_int_base()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<ap_int<8>, 1024>::stream()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::read_lock<unsigned short [256]>::~read_lock()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read_acquire" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
+<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="79" pragmaType="dataflow" parentfunction="make_go_fast" disable_start_propagation="0"/>
+<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="77" pragmaType="interface" parentfunction="make_go_fast" mode="axis" port="in" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="78" pragmaType="interface" parentfunction="make_go_fast" mode="axis" port="out" register="0" register_mode="both" name="" depth="-1"/>
+<pragma file="Byte_Count_Really_Good_This_Time/accelerator.cpp" line="67" pragmaType="inline" parentfunction="reduce_appearances" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream_buf<unsigned short [256]>::stream_buf(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read_acquire" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="read_release" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream_of_blocks<unsigned short [256], 256>::stream_of_blocks()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::read_lock<unsigned short [256]>::operator unsigned short (&) [256]()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::read_lock<unsigned short [256]>::read_lock(hls::stream_of_blocks<unsigned short [256], 2>&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream<ap_int<8>, 0>::stream()" off="0" region="0" recursive="0"/>
 <pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<1, false>::ssdm_int()" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="hls::merge::round_robin<ap_int<8>, 8u, 2u, 0u>::round_robin(char const*)" off="0" region="0" recursive="0"/>
+<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="get_user_ptr" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="hls::stream_of_blocks<unsigned short [256], 2>::stream_of_blocks(int, char*)" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="get_id_ptr" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="get_dest_ptr" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
-<pragma file="" line="0" pragmaType="inline" parentfunction="hls::split::round_robin<ap_int<8>, 8u, 2u, 0u>::round_robin(char const*)" off="0" region="0" recursive="0"/>
-<pragma file="C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\etc/ap_common.h" line="0" pragmaType="inline" parentfunction="ssdm_int<8, true>::ssdm_int()" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
 </pragmas>

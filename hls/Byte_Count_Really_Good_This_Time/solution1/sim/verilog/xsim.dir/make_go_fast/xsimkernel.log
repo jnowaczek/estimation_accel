@@ -1,7 +1,0 @@
-Running: xsim.dir/make_go_fast/xsimk.exe -simmode gui -wdb make_go_fast.wdb -simrunnum 0 -socket 62735
-Design successfully loaded
-Design Loading Memory Usage: 8388 KB (Peak: 8388 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 11060 KB (Peak: 11060 KB)
-Simulation CPU Usage: 140 ms

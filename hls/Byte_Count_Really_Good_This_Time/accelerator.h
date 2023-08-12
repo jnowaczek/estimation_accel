@@ -1,11 +1,13 @@
 #pragma once
 
+#include <cstdint>
+
 #include "ap_int.h"
 #include "ap_axi_sdata.h"
 #include "hls_np_channel.h"
 #include "hls_stream.h"
 #include "hls_streamofblocks.h"
-#include "hls_task.h"
+//#include "hls_task.h"
 
 #define BLOCK_LENGTH 1024
 

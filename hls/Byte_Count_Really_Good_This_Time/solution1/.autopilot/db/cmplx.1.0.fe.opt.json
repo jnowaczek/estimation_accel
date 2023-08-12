@@ -1,42 +1,42 @@
 {
   "0": {
-    "basicblocks": 10,
-    "calls": "3 2",
+    "basicblocks": 1,
+    "calls": "3 2 1 4",
     "file": "accelerator.cpp",
-    "fileloc": 28,
-    "instructions": 65,
+    "fileloc": 76,
+    "instructions": 47,
     "name": "make_go_fast",
-    "total_instructions": 422
+    "total_instructions": 598
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 30,
-    "loads": {
-      "L": 1
-    },
-    "name": "worker",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 279
-  },
-  "2": {
     "basicblocks": 7,
     "calls": "",
     "file": "accelerator.cpp",
-    "fileloc": 13,
-    "instructions": 26,
+    "fileloc": 66,
+    "instructions": 32,
     "loads": {
       "L": 1
     },
-    "name": "write_out",
+    "name": "reduce_appearances",
     "stores": {
       "L": 1
     },
-    "total_instructions": 140
+    "total_instructions": 88
+  },
+  "2": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "accelerator.cpp",
+    "fileloc": 13,
+    "instructions": 69,
+    "loads": {
+      "L": 3
+    },
+    "name": "count_appearances",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 166
   },
   "3": {
     "basicblocks": 7,
@@ -52,5 +52,20 @@
       "L": 1
     },
     "total_instructions": 203
+  },
+  "4": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "accelerator.cpp",
+    "fileloc": 38,
+    "instructions": 35,
+    "loads": {
+      "L": 2
+    },
+    "name": "threshold",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 67
   }
 }

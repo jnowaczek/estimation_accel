@@ -1,88 +1,34 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "4 10 9",
+    "calls": "2 1 3 4",
     "file": "accelerator.cpp",
-    "fileloc": 28,
-    "instructions": 77,
+    "fileloc": 76,
+    "instructions": 28,
     "name": "make_go_fast",
-    "total_instructions": 247
+    "total_instructions": 156
   },
   "1": {
-    "basicblocks": 1,
+    "basicblocks": 7,
     "calls": "",
     "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 12,
+    "fileloc": 13,
+    "instructions": 55,
     "loads": {
-      "L": 1
+      "L": 3
     },
-    "name": "worker",
+    "name": "count_appearances",
     "stores": {
-      "L": 1
+      "L": 2
     },
-    "total_instructions": 12
-  },
-  "10": {
-    "basicblocks": 1,
-    "calls": "8 2 1 5 3 6 7 11",
-    "file": "accelerator.cpp",
-    "fileloc": 0,
-    "instructions": 12,
-    "name": "_Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6__RegionBB",
-    "total_instructions": 108
-  },
-  "11": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 12,
-    "loads": {
-      "L": 1
-    },
-    "name": "worker",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 12
+    "total_instructions": 55
   },
   "2": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 12,
-    "loads": {
-      "L": 1
-    },
-    "name": "worker",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 12
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 12,
-    "loads": {
-      "L": 1
-    },
-    "name": "worker",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 12
-  },
-  "4": {
     "basicblocks": 4,
     "calls": "",
     "file": "accelerator.cpp",
     "fileloc": 3,
-    "instructions": 28,
+    "instructions": 29,
     "loads": {
       "L": 4
     },
@@ -90,81 +36,36 @@
     "stores": {
       "L": 5
     },
-    "total_instructions": 28
+    "total_instructions": 29
   },
-  "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 12,
-    "loads": {
-      "L": 1
-    },
-    "name": "worker",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 12
-  },
-  "6": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 12,
-    "loads": {
-      "L": 1
-    },
-    "name": "worker",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 12
-  },
-  "7": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 12,
-    "loads": {
-      "L": 1
-    },
-    "name": "worker",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 12
-  },
-  "8": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "accelerator.cpp",
-    "fileloc": 22,
-    "instructions": 12,
-    "loads": {
-      "L": 1
-    },
-    "name": "worker",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 12
-  },
-  "9": {
+  "3": {
     "basicblocks": 4,
     "calls": "",
     "file": "accelerator.cpp",
-    "fileloc": 13,
-    "instructions": 34,
+    "fileloc": 66,
+    "instructions": 21,
     "loads": {
       "L": 1
     },
-    "name": "write_out",
+    "name": "reduce_appearances",
     "stores": {
-      "L": 11
+      "L": 1
     },
-    "total_instructions": 34
+    "total_instructions": 21
+  },
+  "4": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "accelerator.cpp",
+    "fileloc": 38,
+    "instructions": 23,
+    "loads": {
+      "L": 1
+    },
+    "name": "threshold",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 23
   }
 }

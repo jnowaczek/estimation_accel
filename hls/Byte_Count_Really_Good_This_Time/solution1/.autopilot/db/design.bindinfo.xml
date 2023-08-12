@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BindInfo>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln4_fu_93_p2" SOURCE="Byte_Count_Really_Good_This_Time/accelerator.cpp:4" VARIABLE="icmp_ln4" MODULE="read_in" LOOP="VITIS_LOOP_4_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_99_p2" SOURCE="" VARIABLE="i_2" MODULE="read_in" LOOP="VITIS_LOOP_4_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln14_fu_102_p2" SOURCE="Byte_Count_Really_Good_This_Time/accelerator.cpp:14" VARIABLE="icmp_ln14" MODULE="write_out" LOOP="VITIS_LOOP_14_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_1_fu_108_p2" SOURCE="" VARIABLE="i_1" MODULE="write_out" LOOP="VITIS_LOOP_14_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op fifo" ID="" IMPL="memory" LATENCY="0" OPTYPE="fifo" PRAGMA="" RTLNAME="split_U" SOURCE="Byte_Count_Really_Good_This_Time/accelerator.cpp:31" VARIABLE="split_in" MODULE="make_go_fast" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op fifo" ID="" IMPL="memory" LATENCY="0" OPTYPE="fifo" PRAGMA="" RTLNAME="merge_U" SOURCE="Byte_Count_Really_Good_This_Time/accelerator.cpp:32" VARIABLE="merge_in" MODULE="make_go_fast" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-</BindInfo>

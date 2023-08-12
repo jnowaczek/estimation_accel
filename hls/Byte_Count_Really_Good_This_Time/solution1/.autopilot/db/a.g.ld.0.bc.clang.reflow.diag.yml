@@ -1,91 +1,17 @@
 --- !Passed
-Pass:            reflow-pragma-conflict-handle
-Name:            FunctionPragmaConflictWarn
-DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h', 
-                   Line: 85, Column: 0 }
-Function:        _ZN3hls4taskclIRFvRNS_6streamI6ap_intILi8EELi0EEES6_EJS6_S6_EEEvOT_DpOT0_
-Args:            
-  - String:          'In function '''
-  - Function:        'void hls::task::operator()<void (&)(hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&), hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&>(void (&)(hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&), hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&)'
-    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h', 
-                       Line: 85, Column: 0 }
-  - String:          ''', '
-  - String:          'Pragma conflict happens on '''
-  - String:          INLINE
-  - String:          ''' and '
-  - String:          DATAFLOW
-  - String:          ' pragmas: '
-  - String:          Inline into dataflow region may break the canonical form
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
+Pass:            reflow-aggr
+Name:            AggrSucc
 DebugLoc:        { File: Byte_Count_Really_Good_This_Time/accelerator.cpp, 
-                   Line: 41, Column: 2 }
-Function:        _Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_
+                   Line: 82, Column: 42 }
+Function:        _Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEERNS0_IhLi0EEE
 Args:            
-  - String:          'Inlining function '''
-  - Callee:          'void hls::task::operator()<void (&)(hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&), hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&>(void (&)(hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&), hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>&)'
-    DebugLoc:        { File: 'C:/Xilinx/Vitis_HLS/2023.1/common/technology/autopilot\hls_task.h', 
-                       Line: 85, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'make_go_fast(hls::stream<hls::axis<ap_int<8>, 0ul, 0ul, 0ul>, 0>&, int, hls::stream<hls::axis<ap_int<8>, 0ul, 0ul, 0ul>, 0>&)'
-    DebugLoc:        { File: Byte_Count_Really_Good_This_Time/accelerator.cpp, 
-                       Line: 28, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-pragma-loop-unroll
-Name:            PragmaFullyUnroll
-DebugLoc:        { File: Byte_Count_Really_Good_This_Time/accelerator.cpp, 
-                   Line: 28, Column: 0 }
-Function:        _Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_
-Args:            
-  - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_39_1
-  - String:          ''' ('
-  - LoopLoc:         'Byte_Count_Really_Good_This_Time/accelerator.cpp:39:19'
-  - String:          ') '
-  - String:          'in function '''
-  - String:          make_go_fast
-  - String:          ''' completely with a factor of '
-  - Factor:          '8'
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: Byte_Count_Really_Good_This_Time/accelerator.cpp, 
-                   Line: 31, Column: 37 }
-Function:        _Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          split.out
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: Byte_Count_Really_Good_This_Time/accelerator.cpp, 
-                   Line: 32, Column: 54 }
-Function:        _Z12make_go_fastRN3hls6streamINS_4axisI6ap_intILi8EELm0ELm0ELm0EEELi0EEEiS6_
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          merge.in
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Complete
-  - String:          ' partitioning'
-  - String:          ' on dimension '
-  - Dim:             '1'
-  - String:          .
+  - String:          'Aggregating '
+  - HwTyName:        stream-of-blocks
+  - String:          ' variable '''
+  - Name:            appearances
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '4096'
+  - String:          '-bits'
 ...
